@@ -42,6 +42,8 @@ export default function BlogShell({
           <img
             src={heroImage}
             alt={heroAlt}
+            width={720}
+            height={480}
             className="w-full rounded-[18px] mb-12 object-cover"
             style={{ maxHeight: "480px" }}
           />
@@ -63,13 +65,13 @@ export default function BlogShell({
           <div className="flex flex-wrap items-center justify-center gap-4">
             <Link
               href="/free-report"
-              className="btn-press inline-block bg-black text-white text-[17px] font-semibold rounded-full px-[22px] py-[11px] hover:bg-white hover:text-black transition-colors duration-150"
+              className="btn-press inline-block bg-black text-white text-[17px] font-semibold rounded-full px-[22px] py-[11px] hover:bg-white hover:text-black motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:ring-offset-[#18b5d8] [touch-action:manipulation]"
             >
               Get the Free Report
             </Link>
             <Link
               href="/contact"
-              className="btn-press inline-block border-2 border-black text-black text-[17px] font-semibold rounded-full px-[22px] py-[11px] hover:bg-black hover:text-white transition-colors duration-150"
+              className="btn-press inline-block border-2 border-black text-black text-[17px] font-semibold rounded-full px-[22px] py-[11px] hover:bg-black hover:text-white motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:ring-offset-[#18b5d8] [touch-action:manipulation]"
             >
               Speak with the Team
             </Link>
@@ -82,7 +84,7 @@ export default function BlogShell({
         <div className="max-w-[720px] mx-auto flex items-center justify-between">
           <Link
             href="/resources"
-            className="flex items-center gap-2 text-[14px] font-semibold text-[#1d1d1f] hover:text-[#18b5d8] transition-colors"
+            className="flex items-center gap-2 text-[14px] font-semibold text-[#1d1d1f] hover:text-[#18b5d8] motion-safe:transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 rounded"
           >
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
               <path

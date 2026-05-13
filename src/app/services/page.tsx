@@ -173,7 +173,7 @@ export default function ServicesPage() {
             </ul>
             <Link
               href={s.href}
-              className="btn-press inline-block bg-[#18b5d8] text-white text-[17px] font-semibold rounded-full px-[22px] py-[11px] hover:bg-[#1ec8ee] transition-colors duration-150"
+              className="btn-press inline-block bg-[#18b5d8] text-white text-[17px] font-semibold rounded-full px-[22px] py-[11px] hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 [touch-action:manipulation]"
             >
               {s.cta}
             </Link>
@@ -226,7 +226,7 @@ export default function ServicesPage() {
                 </ul>
                 <Link
                   href="/contact"
-                  className="btn-press mt-8 block text-center bg-[#18b5d8] text-white text-[17px] font-semibold rounded-full px-[22px] py-[11px] hover:bg-[#1ec8ee] transition-colors duration-150"
+                  className="btn-press mt-8 block text-center bg-[#18b5d8] text-white text-[17px] font-semibold rounded-full px-[22px] py-[11px] hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 [touch-action:manipulation]"
                 >
                   Get Started
                 </Link>
@@ -247,7 +247,7 @@ export default function ServicesPage() {
           </p>
           <Link
             href="/free-report"
-            className="btn-press inline-block bg-black text-white text-[18px] font-semibold rounded-full px-[28px] py-[14px] hover:bg-white hover:text-black transition-colors duration-150"
+            className="btn-press inline-block bg-black text-white text-[18px] font-semibold rounded-full px-[28px] py-[14px] hover:bg-white hover:text-black motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:ring-offset-[#18b5d8] [touch-action:manipulation]"
           >
             Get My Free Report
           </Link>

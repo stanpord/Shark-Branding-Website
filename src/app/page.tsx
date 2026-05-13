@@ -107,9 +107,9 @@ export default function Home() {
               <Link
                 key={s.href}
                 href={s.href}
-                className="group bg-[#091c24] rounded-[18px] p-8 border border-white/5 hover:border-[#18b5d8]/40 transition-colors duration-200"
+                className="group bg-[#091c24] rounded-[18px] p-8 border border-white/5 hover:border-[#18b5d8]/40 motion-safe:transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 focus-visible:ring-offset-[#07141a]"
               >
-                <h3 className="text-[21px] font-semibold text-white mb-3 group-hover:text-[#18b5d8] transition-colors duration-150">
+                <h3 className="text-[21px] font-semibold text-white mb-3 group-hover:text-[#18b5d8] motion-safe:transition-colors duration-150">
                   {s.title}
                 </h3>
                 <p className="body-copy text-[#cccccc]">{s.body}</p>

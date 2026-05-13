@@ -122,12 +122,14 @@ export default function ResourcesPage() {
           </p>
           <Link
             href="/resources/blog-ntbc-ai-ready-partnership"
-            className="group flex flex-col md:flex-row gap-8 bg-white rounded-[22px] overflow-hidden border border-[#e0e0e0] hover:border-[#18b5d8]/50 transition-colors duration-200"
+            className="group flex flex-col md:flex-row gap-8 bg-white rounded-[22px] overflow-hidden border border-[#e0e0e0] hover:border-[#18b5d8]/50 motion-safe:transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2"
           >
             <div className="md:w-[42%] shrink-0">
               <img
                 src="https://cdn.marblism.com/Nco3hsiA150.webp"
                 alt="Shark Branding Solutions Partners with North Tampa Bay Chamber"
+                width={420}
+                height={360}
                 className="w-full h-full object-cover"
                 style={{ minHeight: "240px", maxHeight: "360px" }}
               />
@@ -163,8 +165,8 @@ export default function ResourcesPage() {
                 className={`text-[13px] font-semibold rounded-full px-4 py-1.5 border ${
                   i === 0
                     ? "bg-[#18b5d8] text-white border-[#18b5d8]"
-                    : "text-[#333333] border-[#e0e0e0] hover:border-[#18b5d8] hover:text-[#18b5d8]"
-                } motion-safe:transition-colors cursor-pointer`}
+                    : "text-[#333333] border-[#e0e0e0]"
+                }`}
               >
                 {cat}
               </span>
@@ -177,7 +179,7 @@ export default function ResourcesPage() {
               <Link
                 key={post.slug}
                 href={`/resources/${post.slug}`}
-                className="group flex flex-col border border-[#e0e0e0] rounded-[18px] p-7 hover:border-[#18b5d8]/40 motion-safe:transition-colors duration-200"
+                className="group flex flex-col border border-[#e0e0e0] rounded-[18px] p-7 hover:border-[#18b5d8]/40 motion-safe:transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2"
               >
                 <span className="text-[#18b5d8] text-[12px] font-semibold uppercase tracking-wide mb-3">
                   {post.category}

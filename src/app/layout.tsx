@@ -86,7 +86,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} h-full`}>
       <head>
-        <meta name="theme-color" content="#000000" />
+        <meta name="theme-color" content="#ffffff" />
         <link rel="preconnect" href="https://cdn.apigateway.co" />
         <script
           type="application/ld+json"

@@ -13,7 +13,7 @@ const services = [
 ];
 
 const inputClass =
-  "w-full border border-[#e0e0e0] rounded-[11px] px-4 py-3 text-[17px] text-[#1d1d1f] placeholder:text-[#cccccc] focus:outline-none focus:border-[#18b5d8] focus:ring-2 focus:ring-[#18b5d8]/20 motion-safe:transition-[border-color,box-shadow] [touch-action:manipulation]";
+  "w-full border border-[#e0e0e0] rounded-[11px] px-4 py-3 text-[17px] text-[#1d1d1f] bg-white placeholder:text-[#cccccc] focus-visible:outline-none focus-visible:border-[#18b5d8] focus-visible:ring-2 focus-visible:ring-[#18b5d8]/20 motion-safe:transition-[border-color,box-shadow] [touch-action:manipulation]";
 
 export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false);

@@ -28,7 +28,7 @@ export default function Footer() {
                 <li key={s.href}>
                   <Link
                     href={s.href}
-                    className="text-[17px] text-[#333333] hover:text-[#18b5d8] transition-colors leading-[2.41]"
+                    className="text-[17px] text-[#333333] hover:text-[#18b5d8] motion-safe:transition-colors leading-[2.41]"
                   >
                     {s.label}
                   </Link>
@@ -46,7 +46,7 @@ export default function Footer() {
                 <li key={c.href}>
                   <Link
                     href={c.href}
-                    className="text-[17px] text-[#333333] hover:text-[#18b5d8] transition-colors leading-[2.41]"
+                    className="text-[17px] text-[#333333] hover:text-[#18b5d8] motion-safe:transition-colors leading-[2.41]"
                   >
                     {c.label}
                   </Link>
@@ -63,7 +63,7 @@ export default function Footer() {
               <li>
                 <a
                   href="tel:+17278556505"
-                  className="text-[17px] text-[#333333] hover:text-[#18b5d8] transition-colors leading-[2.41]"
+                  className="text-[17px] text-[#333333] hover:text-[#18b5d8] motion-safe:transition-colors leading-[2.41]"
                 >
                   (727) 855-6505
                 </a>
@@ -71,7 +71,7 @@ export default function Footer() {
               <li>
                 <a
                   href="mailto:info@sharkbrandingsolutions.com"
-                  className="text-[17px] text-[#333333] hover:text-[#18b5d8] transition-colors leading-[2.41] break-all"
+                  className="text-[17px] text-[#333333] hover:text-[#18b5d8] motion-safe:transition-colors leading-[2.41] break-all"
                 >
                   info@sharkbrandingsolutions.com
                 </a>

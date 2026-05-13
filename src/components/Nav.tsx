@@ -52,7 +52,7 @@ export default function Nav() {
               >
                 {l.accent && (
                   <span className="relative flex h-2 w-2">
-                    <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#9dff42] opacity-75" />
+                    <span className="absolute inline-flex h-full w-full motion-safe:animate-ping rounded-full bg-[#9dff42] opacity-75" />
                     <span className="relative inline-flex h-2 w-2 rounded-full bg-[#9dff42]" />
                   </span>
                 )}
