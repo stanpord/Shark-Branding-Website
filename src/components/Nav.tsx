@@ -46,10 +46,16 @@ export default function Nav() {
                 href={l.href}
                 className={`nav-link rounded motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 ${
                   l.accent
-                    ? "text-[#9dff42] hover:text-[#7cff00]"
+                    ? "flex items-center gap-1.5 font-semibold text-[#9dff42] hover:text-[#7cff00]"
                     : "text-[#1d1d1f] hover:text-[#18b5d8]"
                 }`}
               >
+                {l.accent && (
+                  <span className="relative flex h-2 w-2">
+                    <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#9dff42] opacity-75" />
+                    <span className="relative inline-flex h-2 w-2 rounded-full bg-[#9dff42]" />
+                  </span>
+                )}
                 {l.label}
               </Link>
             </li>
