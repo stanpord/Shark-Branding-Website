@@ -10,7 +10,7 @@ const TICKER = [
   "Live Call Chaos",
   "Sales Evaluation",
   "Unreleased Technology",
-  "52 Seats Only",
+  "45 Seats Only",
   "May 26, 2026",
   "Zephyrhills, FL",
 ];
@@ -27,7 +27,7 @@ export default function HackathonBanner() {
     <Link
       href="/Hackathon"
       className="group block bg-black focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-inset"
-      aria-label="Shark AI Hackathon — May 26, 2026 — Click to learn more and reserve your spot"
+      aria-label="Shark AI Hackathon — May 26, 2026 — Come Try to Break Our AI Employees. Click to learn more and reserve your spot"
     >
       {/* ── Scrolling ticker ── */}
       <div className="overflow-hidden border-b border-white/10 py-3">
@@ -70,7 +70,7 @@ export default function HackathonBanner() {
 
             {/* Sub-copy */}
             <p className="mb-7 max-w-[680px] text-[1rem] leading-7 text-white/55">
-              Get hands-on with live, unreleased AI — four pressure-test arenas, real business use cases, and only 52 seats. Most people will read about this technology. You&apos;ll be in the room with it.
+              Get hands-on with live, unreleased AI — five pressure-test arenas, real business use cases, and only 45 seats. Most people will read about this technology. You&apos;ll be in the room with it.
             </p>
 
             {/* Arena pills */}
@@ -113,7 +113,7 @@ export default function HackathonBanner() {
               {/* Stats row */}
               <div className="mb-5 grid grid-cols-3 divide-x divide-white/8 rounded-[14px] border border-white/8 bg-white/4">
                 {[
-                  { v: "52", l: "Seats" },
+                  { v: "45", l: "Seats" },
                   { v: "4", l: "Arenas" },
                   { v: "2hr", l: "Event" },
                 ].map((s) => (
