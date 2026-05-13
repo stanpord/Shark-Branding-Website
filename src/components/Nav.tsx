@@ -9,6 +9,7 @@ const links = [
   { href: "/services", label: "Services" },
   { href: "/operations", label: "Operations" },
   { href: "/marketing", label: "Marketing" },
+  { href: "/Hackathon", label: "Hackathon", accent: true },
   { href: "/case-studies", label: "Case Studies" },
   { href: "/resources", label: "Resources" },
   { href: "/about", label: "About" },
@@ -43,7 +44,11 @@ export default function Nav() {
             <li key={l.href}>
               <Link
                 href={l.href}
-                className="nav-link text-[#1d1d1f] hover:text-[#18b5d8] motion-safe:transition-colors duration-150 rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2"
+                className={`nav-link rounded motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 ${
+                  l.accent
+                    ? "text-[#9dff42] hover:text-[#7cff00]"
+                    : "text-[#1d1d1f] hover:text-[#18b5d8]"
+                }`}
               >
                 {l.label}
               </Link>
@@ -82,7 +87,11 @@ export default function Nav() {
               key={l.href}
               href={l.href}
               onClick={() => setOpen(false)}
-              className="text-[#1d1d1f] hover:text-[#18b5d8] text-base motion-safe:transition-colors rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2"
+              className={`text-base motion-safe:transition-colors rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 ${
+                l.accent
+                  ? "text-[#72d400] hover:text-[#4d9900] font-semibold"
+                  : "text-[#1d1d1f] hover:text-[#18b5d8]"
+              }`}
             >
               {l.label}
             </Link>
