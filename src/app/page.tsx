@@ -1,4 +1,5 @@
 import Link from "next/link";
+import HackathonBanner from "@/components/HackathonBanner";
 
 const stats = [
   { value: "#2", label: "Google ranking in 30 days", sub: "from #32" },
@@ -68,6 +69,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* ── Hackathon banner ── */}
+      <HackathonBanner />
 
       {/* ── Stats — light tile ── */}
       <section className="bg-white py-20 px-6">

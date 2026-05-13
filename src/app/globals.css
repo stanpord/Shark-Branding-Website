@@ -105,6 +105,12 @@ body {
   letter-spacing: -0.12px;
 }
 
+/* Marquee scroll animation */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
 /* Button micro-interaction — system-wide (scale(0.95) on press) */
 @media (prefers-reduced-motion: no-preference) {
   .btn-press:active {
