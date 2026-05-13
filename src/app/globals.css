@@ -1,26 +1,113 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-inter);
+
+  /* Brand Colors — Shark Branding (Apple design system adapted) */
+  --color-accent: #18b5d8;
+  --color-accent-focus: #1ec8ee;
+  --color-accent-dark: #3dd5f3;
+  --color-ink: #1d1d1f;
+  --color-ink-80: #333333;
+  --color-ink-48: #7a7a7a;
+  --color-canvas: #ffffff;
+  --color-parchment: #f5f5f7;
+  --color-pearl: #fafafc;
+  --color-hairline: #e0e0e0;
+  --color-divider: #f0f0f0;
+  --color-tile-1: #07141a;
+  --color-tile-2: #091c24;
+  --color-tile-3: #051015;
+  --color-void: #000000;
+  --color-chip: #d2d2d7;
+  --color-muted: #cccccc;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #000000;
+  color: #1d1d1f;
+  font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── Typography — exact DESIGN.md px values ── */
+
+/* hero-display: 56px / 600 / 1.07 / -0.28px */
+.display-hero {
+  font-size: clamp(2.125rem, 5vw, 3.5rem);
+  font-weight: 600;
+  line-height: 1.07;
+  letter-spacing: -0.28px;
+}
+
+/* display-lg: 40px / 600 / 1.10 / 0 */
+.display-lg {
+  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: 0px;
+}
+
+/* display-md: 34px / 600 / 1.47 / -0.374px */
+.display-md {
+  font-size: clamp(1.5rem, 2.8vw, 2.125rem);
+  font-weight: 600;
+  line-height: 1.47;
+  letter-spacing: -0.374px;
+}
+
+/* lead: 28px / 400 / 1.14 / 0.196px */
+.lead {
+  font-size: clamp(1.2rem, 2vw, 1.75rem);
+  font-weight: 400;
+  line-height: 1.14;
+  letter-spacing: 0.196px;
+}
+
+/* lead-airy: 24px / 300 / 1.5 / 0 */
+.lead-airy {
+  font-size: clamp(1.0625rem, 1.8vw, 1.5rem);
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0px;
+}
+
+/* tagline: 21px / 600 / 1.19 / 0.231px */
+.tagline {
+  font-size: 1.3125rem;
+  font-weight: 600;
+  line-height: 1.19;
+  letter-spacing: 0.231px;
+}
+
+/* body: 17px / 400 / 1.47 / -0.374px */
+.body-copy {
+  font-size: 1.0625rem;
+  font-weight: 400;
+  line-height: 1.47;
+  letter-spacing: -0.374px;
+}
+
+/* nav-link: 12px / 400 / 1.0 / -0.12px */
+.nav-link {
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.0;
+  letter-spacing: -0.12px;
+}
+
+/* Button micro-interaction — system-wide (scale(0.95) on press) */
+@media (prefers-reduced-motion: no-preference) {
+  .btn-press:active {
+    transform: scale(0.95);
+  }
 }

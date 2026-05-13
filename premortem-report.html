@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Premortem Report — Shark Branding Solutions Website & Funnel</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #07101a; color: #e8eaf0; font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif; font-size: 15px; line-height: 1.6; }
+  a { color: #18b5d8; }
+
+  .page { max-width: 960px; margin: 0 auto; padding: 48px 24px 80px; }
+
+  /* Header */
+  .header { border-bottom: 1px solid #1e3040; padding-bottom: 32px; margin-bottom: 40px; }
+  .header-eyebrow { font-size: 11px; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: #18b5d8; margin-bottom: 12px; }
+  .header h1 { font-size: 28px; font-weight: 700; color: #ffffff; line-height: 1.2; margin-bottom: 8px; }
+  .header-meta { font-size: 13px; color: #6b8fa8; }
+
+  /* Frame box */
+  .frame-box { background: #0c1c2a; border: 1px solid #18b5d8; border-left: 4px solid #18b5d8; border-radius: 8px; padding: 20px 24px; margin-bottom: 40px; }
+  .frame-box p { color: #ccddea; font-size: 14px; line-height: 1.7; }
+  .frame-box strong { color: #ffffff; }
+
+  /* Vendasta callout */
+  .resolved-box { background: #0a2010; border: 1px solid #22c55e; border-left: 4px solid #22c55e; border-radius: 8px; padding: 16px 20px; margin-bottom: 40px; }
+  .resolved-box .resolved-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: #22c55e; margin-bottom: 6px; }
+  .resolved-box p { font-size: 13px; color: #a3d9a5; line-height: 1.6; }
+
+  /* Synthesis */
+  .synthesis { margin-bottom: 48px; }
+  .section-title { font-size: 12px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #18b5d8; margin-bottom: 20px; }
+  .synthesis-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
+  @media (max-width: 600px) { .synthesis-grid { grid-template-columns: 1fr; } }
+
+  .synth-card { background: #0c1c2a; border: 1px solid #1e3040; border-radius: 10px; padding: 20px; }
+  .synth-card.danger { border-color: #ef4444; }
+  .synth-card.warning { border-color: #f59e0b; }
+  .synth-card.insight { border-color: #a855f7; }
+  .synth-card.action { border-color: #18b5d8; grid-column: 1 / -1; }
+
+  .synth-card-label { font-size: 10px; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 8px; }
+  .synth-card.danger .synth-card-label { color: #ef4444; }
+  .synth-card.warning .synth-card-label { color: #f59e0b; }
+  .synth-card.insight .synth-card-label { color: #a855f7; }
+  .synth-card.action .synth-card-label { color: #18b5d8; }
+
+  .synth-card h3 { font-size: 16px; font-weight: 700; color: #ffffff; margin-bottom: 8px; }
+  .synth-card p { font-size: 13px; color: #8daec4; line-height: 1.6; }
+
+  /* Checklist */
+  .checklist { background: #0c1c2a; border: 1px solid #1e3040; border-radius: 10px; padding: 24px; margin-bottom: 48px; }
+  .checklist ul { list-style: none; display: flex; flex-direction: column; gap: 12px; margin-top: 16px; }
+  .checklist li { display: flex; align-items: flex-start; gap: 12px; font-size: 13px; color: #ccd8e4; }
+  .checklist li::before { content: ''; display: block; width: 18px; height: 18px; border: 2px solid #18b5d8; border-radius: 4px; flex-shrink: 0; margin-top: 1px; }
+  .checklist li strong { color: #ffffff; display: block; margin-bottom: 2px; }
+
+  /* Failure cards */
+  .failures-title { margin-bottom: 20px; }
+  .failures-grid { display: flex; flex-direction: column; gap: 20px; }
+
+  .failure-card { background: #0c1c2a; border: 1px solid #1e3040; border-radius: 10px; overflow: hidden; }
+  .failure-card.resolved { opacity: 0.5; border-color: #22c55e33; }
+  .failure-card-header { display: flex; align-items: center; gap: 14px; padding: 16px 20px; border-bottom: 1px solid #1e3040; }
+  .failure-number { font-size: 11px; font-weight: 700; letter-spacing: 0.1em; }
+  .failure-card-header h3 { font-size: 15px; font-weight: 700; color: #ffffff; flex: 1; }
+  .severity { font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 3px 8px; border-radius: 4px; white-space: nowrap; }
+  .sev-critical { background: #ef444420; color: #ef4444; border: 1px solid #ef444440; }
+  .sev-high { background: #f59e0b20; color: #f59e0b; border: 1px solid #f59e0b40; }
+  .sev-medium { background: #6366f120; color: #818cf8; border: 1px solid #6366f140; }
+  .sev-resolved { background: #22c55e20; color: #22c55e; border: 1px solid #22c55e40; }
+
+  .failure-card-body { padding: 20px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  @media (max-width: 600px) { .failure-card-body { grid-template-columns: 1fr; } }
+
+  .failure-section-label { font-size: 10px; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: #18b5d8; margin-bottom: 6px; }
+  .failure-card-body p, .failure-card-body li { font-size: 13px; color: #8daec4; line-height: 1.6; }
+  .assumption-box { background: #07101a; border-radius: 6px; padding: 12px; }
+  .assumption-box p { color: #ccd8e4; font-style: italic; }
+
+  .warning-list { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+  .warning-list li { display: flex; align-items: flex-start; gap: 8px; }
+  .warning-list li::before { content: '⚠'; font-size: 12px; margin-top: 1px; flex-shrink: 0; }
+
+  /* Colors per card */
+  .c1 .failure-number { color: #ef4444; }
+  .c2 .failure-number { color: #f59e0b; }
+  .c3 .failure-number { color: #22c55e; }
+  .c4 .failure-number { color: #a855f7; }
+  .c5 .failure-number { color: #06b6d4; }
+  .c6 .failure-number { color: #f97316; }
+  .c7 .failure-number { color: #ec4899; }
+  .c8 .failure-number { color: #84cc16; }
+  .c9 .failure-number { color: #8b5cf6; }
+
+  .footer { border-top: 1px solid #1e3040; padding-top: 24px; margin-top: 48px; display: flex; justify-content: space-between; align-items: center; flex-wrap: gap; gap: 8px; }
+  .footer p { font-size: 11px; color: #4a6880; }
+
+  .agents-badge { display: flex; align-items: center; gap: 8px; background: #0c1c2a; border: 1px solid #1e3040; border-radius: 6px; padding: 8px 14px; font-size: 11px; color: #4a6880; }
+  .agents-badge strong { color: #18b5d8; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- Header -->
+  <div class="header">
+    <p class="header-eyebrow">Premortem Analysis</p>
+    <h1>Shark Branding Solutions<br>Website &amp; Lead Funnel</h1>
+    <p class="header-meta">Generated: May 2026 &nbsp;·&nbsp; 9 failure agents &nbsp;·&nbsp; Analyst: Claude Sonnet 4.6</p>
+  </div>
+
+  <!-- Frame -->
+  <div class="frame-box">
+    <p><strong>Premortem Frame:</strong> It is 6 months from now. The Shark Branding Solutions website has launched and the lead funnel is live. It has failed — leads are thin, revenue hasn't followed, and the free report promise has either burned trust or strained Michelle's capacity. We are looking back to understand exactly why.</p>
+  </div>
+
+  <!-- Vendasta resolved callout -->
+  <div class="resolved-box">
+    <div class="resolved-label">Updated Context — Failures #1 &amp; #2 Resolved</div>
+    <p>The free visibility report is delivered via a <strong>Vendasta acquisition widget</strong>, not a custom form. This eliminates the dead-end form risk (#1) and the report delivery infrastructure risk (#2). Vendasta handles lead capture, CRM entry, and report fulfillment. The remaining 7 failure modes are active.</p>
+  </div>
+
+  <!-- Synthesis -->
+  <div class="synthesis">
+    <p class="section-title">Synthesis</p>
+    <div class="synthesis-grid">
+      <div class="synth-card warning">
+        <div class="synth-card-label">Most Likely Failure</div>
+        <h3>No traffic reaches the funnel</h3>
+        <p>A brand-new domain with no blog, no backlinks, no Google Ads, and no local SEO schema will rank for nothing. The Vendasta widget and the beautiful website are irrelevant if no one visits. This is the single most probable reason the funnel produces zero leads in months 1–3.</p>
+      </div>
+      <div class="synth-card danger">
+        <div class="synth-card-label">Most Dangerous Failure</div>
+        <h3>Michelle is the ceiling</h3>
+        <p>If traffic does arrive and leads do convert, Michelle is the only person who can deliver the $2,000/mo fully managed service, run workshops, take discovery calls, and grow the business simultaneously. A capacity crunch at 4–5 clients creates burnout, missed deliverables, and negative reviews — compounding damage that kills referral momentum.</p>
+      </div>
+      <div class="synth-card insight">
+        <div class="synth-card-label">Hidden Assumption</div>
+        <h3>"AI visibility" means something to the buyer</h3>
+        <p>The entire funnel assumes that a drywall contractor or HVAC owner in Wesley Chapel understands why they need "AI visibility consulting." They don't. They know they want more calls. The positioning is fluent in marketing-speak but foreign to the blue-collar local business owners who are the actual target buyer. Every page needs to lead with the outcome (more calls, more jobs) not the mechanism (AI platforms).</p>
+      </div>
+    </div>
+
+    <!-- Revised plan -->
+    <div class="synth-card action">
+      <div class="synth-card-label">Revised Plan — 5 Concrete Changes</div>
+      <h3>What to do differently before this goes live</h3>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:12px;">
+        <div>
+          <p style="color:#ffffff;font-weight:600;margin-bottom:4px;">1. Rewrite the hero for the buyer, not the marketer</p>
+          <p>Replace "AI Visibility Consulting" with "More Calls. More Jobs. More Revenue." Lead with the HVAC #32→#2 story on the homepage — that's the hook that makes a plumber stop scrolling. Save the AI explanation for paragraph 3.</p>
+        </div>
+        <div>
+          <p style="color:#ffffff;font-weight:600;margin-bottom:4px;">2. Install Google Analytics + Search Console before launch</p>
+          <p>Add GA4 and connect Google Search Console on day one. Without this, every marketing decision for the next 6 months is a guess. Takes 20 minutes and is non-negotiable.</p>
+        </div>
+        <div>
+          <p style="color:#ffffff;font-weight:600;margin-bottom:4px;">3. Launch with a traffic plan, not just a website</p>
+          <p>Pick one channel and commit: Google Ads targeting "marketing agency Wesley Chapel" + "get more customers Tampa Bay," or a 4-week LinkedIn campaign targeting Tampa Bay business owners. The site needs a traffic source on day one.</p>
+        </div>
+        <div>
+          <p style="color:#ffffff;font-weight:600;margin-bottom:4px;">4. Build a post-report email sequence (3 emails minimum)</p>
+          <p>Day 0: report delivery + what to do next. Day 3: case study (the HVAC #32→#2 story in detail). Day 7: limited offer or call booking link. Most buyers need 3–5 touches before saying yes.</p>
+        </div>
+        <div style="grid-column:1/-1;">
+          <p style="color:#ffffff;font-weight:600;margin-bottom:4px;">5. Cap fully managed at 3 clients until there's a delivery system</p>
+          <p>Define exactly what "fully managed" means as a repeatable process with documented SOPs before selling a 4th seat. Otherwise a good month of sales creates a terrible month of delivery.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pre-launch checklist -->
+  <div class="checklist">
+    <p class="section-title">Pre-Launch Checklist</p>
+    <ul>
+      <li>
+        <div>
+          <strong>Deploy to Vercel + point domain</strong>
+          The site is still on localhost. Nothing else in this checklist matters until it's live at sharkbrandingsolutions.com.
+        </div>
+      </li>
+      <li>
+        <div>
+          <strong>Install GA4 + Google Search Console</strong>
+          Add the GA4 measurement tag to the Next.js layout. Submit the sitemap to Search Console. Set up a conversion event for Vendasta widget submissions.
+        </div>
+      </li>
+      <li>
+        <div>
+          <strong>Rewrite homepage hero to lead with outcomes</strong>
+          Test: "More Calls. More Jobs. More Revenue." vs current. Add the HVAC story (#32 → #2) as the first proof point above the fold.
+        </div>
+      </li>
+      <li>
+        <div>
+          <strong>Set up post-report email sequence in Vendasta or a connected ESP</strong>
+          Minimum 3 emails: report delivery → case study → CTA. Without this, leads who aren't ready to buy that week are lost forever.
+        </div>
+      </li>
+      <li>
+        <div>
+          <strong>Choose one paid traffic channel and fund it for 60 days</strong>
+          Google Ads or LinkedIn. Set a $500–$1,000/mo test budget. Organic SEO on a new domain takes 6–12 months — you need paid traffic while SEO builds.
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Failure cards -->
+  <p class="section-title failures-title">All 9 Failure Scenarios</p>
+  <div class="failures-grid">
+
+    <!-- #1 RESOLVED -->
+    <div class="failure-card c1 resolved">
+      <div class="failure-card-header">
+        <span class="failure-number">#1</span>
+        <h3>Dead-end contact form</h3>
+        <span class="severity sev-resolved">RESOLVED</span>
+      </div>
+      <div class="failure-card-body" style="grid-template-columns:1fr;">
+        <p>Vendasta acquisition widget replaces the custom form. Lead capture, CRM entry, and report delivery are handled by Vendasta's infrastructure. This failure mode is eliminated.</p>
+      </div>
+    </div>
+
+    <!-- #2 RESOLVED -->
+    <div class="failure-card c2 resolved">
+      <div class="failure-card-header">
+        <span class="failure-number">#2</span>
+        <h3>No report delivery infrastructure</h3>
+        <span class="severity sev-resolved">RESOLVED</span>
+      </div>
+      <div class="failure-card-body" style="grid-template-columns:1fr;">
+        <p>Vendasta handles report generation and delivery. The 48-hour promise is backed by platform infrastructure, not manual effort alone. This failure mode is eliminated.</p>
+      </div>
+    </div>
+
+    <!-- #3 -->
+    <div class="failure-card c3">
+      <div class="failure-card-header">
+        <span class="failure-number">#3</span>
+        <h3>Site never deployed — still on localhost</h3>
+        <span class="severity sev-critical">CRITICAL</span>
+      </div>
+      <div class="failure-card-body">
+        <div>
+          <p class="failure-section-label">The Story</p>
+          <p>The Vercel deployment was interrupted mid-session in favor of a design tweak. Michelle noted she'd do it "later this week." That week became two weeks. There were logo adjustments, a copy revision, a question about the chatbot. Three weeks after the build session, the site still lived at localhost:3000 on one laptop. A chamber networking event happened — Michelle mentioned the new website and sent people to sharkbrandingsolutions.com. It showed a Vercel 404. Five warm contacts bounced. One of them hired a competitor before the site ever went live.</p>
+        </div>
+        <div>
+          <p class="failure-section-label">Underlying Assumption</p>
+          <div class="assumption-box"><p>"Deployment is a 10-minute task I can do anytime" — but every "anytime" became "not right now."</p></div>
+          <p class="failure-section-label" style="margin-top:16px;">Early Warning Signs</p>
+          <ul class="warning-list">
+            <li>It's been more than 48 hours since the build and no Vercel project exists</li>
+            <li>You're still making design changes instead of shipping — the perfect is blocking the live</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- #4 -->
+    <div class="failure-card c4">
+      <div class="failure-card-header">
+        <span class="failure-number">#4</span>
+        <h3>No traffic strategy — new domain, zero authority</h3>
+        <span class="severity sev-critical">CRITICAL</span>
+      </div>
+      <div class="failure-card-body">
+        <div>
+          <p class="failure-section-label">The Story</p>
+          <p>The site launched clean and fast. Google crawled it within a week. It ranked for "Shark Branding Solutions" (the brand name) and nothing else. For "AI marketing consultant Wesley Chapel" — page 6. For "get more customers Tampa Bay" — not indexed. Month one: 47 visitors, 38 of whom were Michelle and her web developer. Month two: 61 visitors. Month three: Michelle lowered her Google Ads budget because "it wasn't working" after spending $200 with no setup, no keyword research, and no conversion tracking. At month six, organic traffic was 90 visitors/month — not enough to sustain even one new client per month from the funnel.</p>
+        </div>
+        <div>
+          <p class="failure-section-label">Underlying Assumption</p>
+          <div class="assumption-box"><p>"Having a great website means people will find it" — but search engines don't reward quality, they reward authority, and new domains have none.</p></div>
+          <p class="failure-section-label" style="margin-top:16px;">Early Warning Signs</p>
+          <ul class="warning-list">
+            <li>Google Search Console shows fewer than 200 impressions/month after 60 days</li>
+            <li>No paid channel is live and no content calendar exists 2 weeks post-launch</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- #5 -->
+    <div class="failure-card c5">
+      <div class="failure-card-header">
+        <span class="failure-number">#5</span>
+        <h3>"AI visibility" value prop doesn't land with local SMBs</h3>
+        <span class="severity sev-high">HIGH</span>
+      </div>
+      <div class="failure-card-body">
+        <div>
+          <p class="failure-section-label">The Story</p>
+          <p>A roofing contractor in Land O' Lakes found the site via a chamber referral. He read the hero: "Get Found. Get Trusted. Get Chosen." and the sub-copy about ChatGPT and Perplexity. He thought it was a tech company. He didn't know what Perplexity was. He skimmed the services page, saw "$2,000/month," and closed the tab. He later hired a local SEO agency for $800/month because their homepage said "We get roofers to the top of Google." Same outcome, clearer language, lower price. Meanwhile Michelle's funnel kept sending qualified traffic to a headline written for a marketing director at a SaaS company, not a guy who runs a 6-person roofing crew.</p>
+        </div>
+        <div>
+          <p class="failure-section-label">Underlying Assumption</p>
+          <div class="assumption-box"><p>"The buyer wants to understand the mechanism (AI platforms) not just the result (more calls)."</p></div>
+          <p class="failure-section-label" style="margin-top:16px;">Early Warning Signs</p>
+          <ul class="warning-list">
+            <li>High bounce rate on homepage (&gt;70%) with low time-on-page (&lt;30 seconds)</li>
+            <li>Free report requests come from marketers and agency owners, not local service businesses</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- #6 -->
+    <div class="failure-card c6">
+      <div class="failure-card-header">
+        <span class="failure-number">#6</span>
+        <h3>No nurture sequence after report delivery</h3>
+        <span class="severity sev-high">HIGH</span>
+      </div>
+      <div class="failure-card-body">
+        <div>
+          <p class="failure-section-label">The Story</p>
+          <p>Vendasta delivered 23 free visibility reports in month two. Michelle personally followed up with each one via email within 24 hours. Nine responded. Four booked calls. Two converted to paying clients. The other 19 — the majority — received their report, said "very interesting, I'll think about it," and were never contacted again. No drip sequence, no case study email, no "did you have questions about your report?" follow-up at day 7. Six weeks later, three of those 19 mentioned in a chamber meeting they'd hired someone else. They hadn't forgotten about Michelle. They just weren't reminded at the right moment.</p>
+        </div>
+        <div>
+          <p class="failure-section-label">Underlying Assumption</p>
+          <div class="assumption-box"><p>"If the free report is good enough, interested prospects will reach back out when they're ready."</p></div>
+          <p class="failure-section-label" style="margin-top:16px;">Early Warning Signs</p>
+          <ul class="warning-list">
+            <li>Report delivery rate is healthy but conversion to booked call is below 20%</li>
+            <li>No email sequence exists beyond the initial report delivery message</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- #7 -->
+    <div class="failure-card c7">
+      <div class="failure-card-header">
+        <span class="failure-number">#7</span>
+        <h3>Pricing shown before trust is earned</h3>
+        <span class="severity sev-medium">MEDIUM</span>
+      </div>
+      <div class="failure-card-body">
+        <div>
+          <p class="failure-section-label">The Story</p>
+          <p>A landscaping company owner in Lutz found the services page via Google. He scrolled through the service descriptions and hit the pricing section: $2,000/month for fully managed. He'd been burned by a $1,500/month SEO agency two years prior — paid for 8 months, saw nothing. One testimonial from a drywall contractor didn't move the needle. He needed to see his own industry represented, see a before-and-after, understand exactly what $2,000/month bought him week by week. He closed the tab and bookmarked "questions to ask a marketing consultant" instead. The pricing wasn't the objection. The lack of proof at the moment of pricing was.</p>
+        </div>
+        <div>
+          <p class="failure-section-label">Underlying Assumption</p>
+          <div class="assumption-box"><p>"One testimonial and one stat are enough for a skeptical local business owner to justify $2,000/month."</p></div>
+          <p class="failure-section-label" style="margin-top:16px;">Early Warning Signs</p>
+          <ul class="warning-list">
+            <li>High scroll depth on services page but low CTA click-through rate</li>
+            <li>Discovery calls frequently ask "can you show me an example?" or "who else have you worked with?"</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- #8 -->
+    <div class="failure-card c8">
+      <div class="failure-card-header">
+        <span class="failure-number">#8</span>
+        <h3>No analytics — optimizing blind</h3>
+        <span class="severity sev-high">HIGH</span>
+      </div>
+      <div class="failure-card-body">
+        <div>
+          <p class="failure-section-label">The Story</p>
+          <p>Three months in, Michelle knew the funnel "wasn't performing well" but couldn't say why. Was it traffic? Was it the homepage? Was it the pricing page? Was it the Vendasta widget placement? She redesigned the homepage based on a gut feeling. It didn't help. She changed the CTA copy. No measurable effect. At month five, a consultant she hired to audit the funnel asked for Google Analytics access. There was none. He asked for Search Console data. Not connected. He asked for heatmap data. Never installed. He told her: "You've been flying the plane with the instruments off for 5 months. We have to start from zero." That delay cost her 5 months of learnings she'll never get back.</p>
+        </div>
+        <div>
+          <p class="failure-section-label">Underlying Assumption</p>
+          <div class="assumption-box"><p>"I'll know if it's working by whether the phone rings — I don't need dashboards."</p></div>
+          <p class="failure-section-label" style="margin-top:16px;">Early Warning Signs</p>
+          <ul class="warning-list">
+            <li>You can't answer "how many people visited the site last week" with a number</li>
+            <li>You're making design or copy changes without a baseline to measure against</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- #9 -->
+    <div class="failure-card c9">
+      <div class="failure-card-header">
+        <span class="failure-number">#9</span>
+        <h3>Michelle is the single point of delivery</h3>
+        <span class="severity sev-high">HIGH</span>
+      </div>
+      <div class="failure-card-body">
+        <div>
+          <p class="failure-section-label">The Story</p>
+          <p>Month four: the funnel started working. Eight active clients, two workshops booked, a steady flow of free report requests. Michelle was working 60-hour weeks. A fully managed client at $2,000/month emailed on a Tuesday asking for their monthly report. Michelle responded Friday. They cancelled at month 5. Another client noticed their ranking improvements had stalled — Michelle hadn't had time to run the monthly optimization cycle. Two negative reviews appeared. At the exact moment the business was gaining traction, the quality ceiling hit. The business couldn't grow past what one person could personally do in a week. The funnel was working. The delivery system wasn't built to receive what the funnel sent.</p>
+        </div>
+        <div>
+          <p class="failure-section-label">Underlying Assumption</p>
+          <div class="assumption-box"><p>"I can scale delivery by working harder" — but working harder has a hard ceiling at about 5 fully managed clients for one person.</p></div>
+          <p class="failure-section-label" style="margin-top:16px;">Early Warning Signs</p>
+          <ul class="warning-list">
+            <li>Response time to client emails creeps past 48 hours regularly</li>
+            <li>You feel relieved when a prospect doesn't convert instead of disappointed</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>Shark Branding Solutions &nbsp;·&nbsp; Premortem generated May 2026</p>
+    <div class="agents-badge">
+      <strong>9</strong> failure scenarios analyzed &nbsp;·&nbsp; <strong>2</strong> resolved via Vendasta &nbsp;·&nbsp; <strong>7</strong> active
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
