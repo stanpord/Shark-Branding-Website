@@ -59,7 +59,7 @@ export default function OperationsPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-black min-h-[50vh] flex items-center justify-center text-center px-6 pt-24 pb-20">
+      <section className="bg-white min-h-[50vh] flex items-center justify-center text-center px-6 pt-24 pb-20">
         <div className="max-w-[680px] mx-auto">
           <p className="text-[#18b5d8] text-[14px] font-semibold tracking-[0.15em] uppercase mb-3">
             Shark AI Solutions &mdash; Operations
@@ -70,8 +70,7 @@ export default function OperationsPage() {
             <br />
             <span className="text-[#18b5d8]">back office for you.</span>
           </h1>
-          <p className="lead-airy text-[#cccccc]">
-            CRM, sales coaching, and custom automation — deployed in days, not
+          <p className="lead-airy text-[#333333]">\r\n            CRM, sales coaching, and custom automation — deployed in days, not
             months. Your team does the work only humans can do.
           </p>
         </div>
@@ -137,3 +136,4 @@ export default function OperationsPage() {
     </>
   );
 }
+

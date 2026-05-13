@@ -109,17 +109,17 @@ export default function ServicesPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-black min-h-[50vh] flex items-center justify-center text-center px-6 pt-24 pb-20">
+      <section className="bg-white min-h-[50vh] flex items-center justify-center text-center px-6 pt-24 pb-20">
         <div className="max-w-[680px] mx-auto">
           <p className="text-[#18b5d8] text-[14px] font-semibold tracking-[0.15em] uppercase mb-5">
             Services
           </p>
-          <h1 className="display-hero text-white mb-5">
+          <h1 className="display-hero text-[#0a0a0a] mb-5">
             AI Solutions Built for
             <br />
             <span className="text-[#18b5d8]">Real Results.</span>
           </h1>
-          <p className="lead-airy text-[#cccccc]">
+          <p className="lead-airy text-[#333333]">
             Every service we offer is designed around one outcome: your business
             getting found, trusted, and chosen — by humans and AI alike.
           </p>
@@ -237,17 +237,17 @@ export default function ServicesPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-[#07141a] py-24 px-6 text-center">
+      <section className="bg-[#18b5d8] py-24 px-6 text-center">
         <div className="max-w-[560px] mx-auto">
-          <h2 className="display-lg text-white mb-5">
+          <h2 className="display-lg text-black mb-5">
             Not sure where to start?
           </h2>
-          <p className="lead-airy text-[#cccccc] mb-10">
+          <p className="lead-airy text-black/65 mb-10">
             Start with the free report. Zero commitment, maximum clarity.
           </p>
           <Link
             href="/free-report"
-            className="btn-press inline-block bg-[#18b5d8] text-white text-[18px] font-light rounded-full px-[28px] py-[14px] hover:bg-[#1ec8ee] transition-colors duration-150"
+            className="btn-press inline-block bg-black text-white text-[18px] font-semibold rounded-full px-[28px] py-[14px] hover:bg-white hover:text-black transition-colors duration-150"
           >
             Get My Free Report
           </Link>

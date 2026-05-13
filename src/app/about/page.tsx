@@ -30,17 +30,17 @@ export default function AboutPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-black min-h-[50vh] flex items-center justify-center text-center px-6 pt-24 pb-20">
+      <section className="bg-white min-h-[50vh] flex items-center justify-center text-center px-6 pt-24 pb-20">
         <div className="max-w-[680px] mx-auto">
           <p className="text-[#18b5d8] text-[14px] font-semibold tracking-[0.15em] uppercase mb-5">
             About Us
           </p>
-          <h1 className="display-hero text-white mb-5">
+          <h1 className="display-hero text-[#0a0a0a] mb-5">
             We make businesses
             <br />
             <span className="text-[#18b5d8]">impossible to ignore.</span>
           </h1>
-          <p className="lead-airy text-[#cccccc]">
+          <p className="lead-airy text-[#333333]">
             Shark Branding Solutions was built on a simple belief: every great
             business deserves to be found — by the right people, at the right
             moment, on every platform.
@@ -159,23 +159,23 @@ export default function AboutPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-[#07141a] py-24 px-6 text-center">
+      <section className="bg-[#18b5d8] py-24 px-6 text-center">
         <div className="max-w-[560px] mx-auto">
-          <h2 className="display-lg text-white mb-5">Ready to work together?</h2>
-          <p className="lead-airy text-[#cccccc] mb-10">
+          <h2 className="display-lg text-black mb-5">Ready to work together?</h2>
+          <p className="lead-airy text-black/65 mb-10">
             Start with a free visibility report or reach out directly.
             We&rsquo;ll make it simple.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
             <Link
               href="/free-report"
-              className="btn-press inline-block bg-[#18b5d8] text-white text-[18px] font-light rounded-full px-[28px] py-[14px] hover:bg-[#1ec8ee] transition-colors duration-150"
+              className="btn-press inline-block bg-black text-white text-[18px] font-semibold rounded-full px-[28px] py-[14px] hover:bg-white hover:text-black transition-colors duration-150"
             >
               Get Free Report
             </Link>
             <a
               href="tel:+17278556505"
-              className="btn-press inline-block text-[#18b5d8] text-[17px] border border-[#18b5d8] rounded-full px-[22px] py-[11px] hover:bg-[#18b5d8]/10 transition-colors duration-150"
+              className="btn-press inline-block text-black text-[17px] border-2 border-black rounded-full px-[22px] py-[11px] hover:bg-black hover:text-white transition-colors duration-150"
             >
               (727) 855-6505
             </a>

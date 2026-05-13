@@ -74,7 +74,7 @@ export default function MarketingPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-black min-h-[50vh] flex items-center justify-center text-center px-6 pt-24 pb-20">
+      <section className="bg-white min-h-[50vh] flex items-center justify-center text-center px-6 pt-24 pb-20">
         <div className="max-w-[680px] mx-auto">
           <p className="text-[#18b5d8] text-[14px] font-semibold tracking-[0.15em] uppercase mb-3">
             Shark AI Solutions &mdash; Marketing
@@ -85,8 +85,7 @@ export default function MarketingPage() {
             <br />
             <span className="text-[#18b5d8]">business 24/7.</span>
           </h1>
-          <p className="lead-airy text-[#cccccc]">
-            CMO strategy, AI visibility, and content automation — so your brand
+          <p className="lead-airy text-[#333333]">\r\n            CMO strategy, AI visibility, and content automation — so your brand
             keeps growing even when you&rsquo;re not working.
           </p>
         </div>
@@ -160,3 +159,4 @@ export default function MarketingPage() {
     </>
   );
 }
+

@@ -37,31 +37,31 @@ const services = [
 export default function Home() {
   return (
     <>
-      {/* ── Hero tile — pure black ── */}
-      <section className="min-h-screen bg-black flex flex-col items-center justify-center text-center px-6 pt-24 pb-20">
+      {/* ── Hero tile ── */}
+      <section className="min-h-screen bg-white flex flex-col items-center justify-center text-center px-6 pt-24 pb-20">
         <div className="max-w-[760px] mx-auto">
           <p className="text-[#18b5d8] text-[14px] font-semibold tracking-[0.15em] uppercase mb-6">
             AI Business Consulting
           </p>
-          <h1 className="display-hero text-white mb-6 text-wrap-balance" style={{textWrap:"balance"}}>
+          <h1 className="display-hero text-[#0a0a0a] mb-6" style={{textWrap:"balance"}}>
             Get Found. Get Trusted.
             <br />
             <span className="text-[#18b5d8]">Get Chosen.</span>
           </h1>
-          <p className="lead-airy text-[#cccccc] max-w-[560px] mx-auto mb-10">
+          <p className="lead-airy text-[#333333] max-w-[560px] mx-auto mb-10">
             AI Business Consulting that makes your company run better, grow
             faster, and stay visible — even when you&rsquo;re not there.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
             <Link
               href="/free-report"
-              className="btn-press bg-[#18b5d8] text-white text-[17px] font-semibold rounded-full px-[22px] py-[11px] hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 focus-visible:ring-offset-black [touch-action:manipulation]"
+              className="btn-press bg-black text-white text-[17px] font-semibold rounded-full px-[22px] py-[11px] hover:bg-[#18b5d8] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 [touch-action:manipulation]"
             >
               Get Free Visibility Report
             </Link>
             <Link
               href="/services"
-              className="btn-press text-[#18b5d8] text-[17px] border border-[#18b5d8] rounded-full px-[22px] py-[11px] hover:bg-[#18b5d8]/10 motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 focus-visible:ring-offset-black [touch-action:manipulation]"
+              className="btn-press text-[#1d1d1f] text-[17px] border-2 border-black rounded-full px-[22px] py-[11px] hover:bg-black hover:text-white motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 [touch-action:manipulation]"
             >
               Explore Services
             </Link>
@@ -142,19 +142,19 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── CTA — deep dark ── */}
-      <section className="bg-[#07141a] py-24 px-6 text-center">
+      {/* ── CTA ── */}
+      <section className="bg-[#18b5d8] py-24 px-6 text-center">
         <div className="max-w-[600px] mx-auto">
-          <h2 className="display-lg text-white mb-5" style={{textWrap:"balance"}}>
+          <h2 className="display-lg text-black mb-5" style={{textWrap:"balance"}}>
             Is your business invisible to AI?
           </h2>
-          <p className="lead-airy text-[#cccccc] mb-10">
+          <p className="lead-airy text-black/65 mb-10">
             Find out in 48 hours — completely free. We&rsquo;ll show you exactly
             where you stand across search, maps, and AI platforms.
           </p>
           <Link
             href="/free-report"
-            className="btn-press inline-block bg-[#18b5d8] text-white text-[18px] font-light rounded-full px-[28px] py-[14px] hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 focus-visible:ring-offset-[#07141a] [touch-action:manipulation]"
+            className="btn-press inline-block bg-black text-white text-[18px] font-semibold rounded-full px-[28px] py-[14px] hover:bg-white hover:text-black motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 [touch-action:manipulation]"
           >
             Get My Free Report
           </Link>

@@ -70,7 +70,7 @@ export default function ResourcesPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-black min-h-[40vh] flex items-center justify-center text-center px-6 pt-24 pb-16">
+      <section className="bg-white min-h-[40vh] flex items-center justify-center text-center px-6 pt-24 pb-16">
         <div className="max-w-[600px] mx-auto">
           <p className="text-[#18b5d8] text-[14px] font-semibold tracking-[0.15em] uppercase mb-5">
             Resources
@@ -135,7 +135,7 @@ export default function ResourcesPage() {
       </section>
 
       {/* Newsletter / CTA */}
-      <section className="bg-[#07141a] py-24 px-6 text-center">
+      <section className="bg-[#18b5d8] py-24 px-6 text-center">
         <div className="max-w-[560px] mx-auto">
           <h2 className="display-lg text-white mb-5" style={{ textWrap: "balance" }}>
             Get new insights first.
@@ -147,7 +147,7 @@ export default function ResourcesPage() {
           </p>
           <Link
             href="/contact"
-            className="btn-press inline-block bg-[#18b5d8] text-white text-[17px] font-semibold rounded-full px-[28px] py-[14px] hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 focus-visible:ring-offset-[#07141a] [touch-action:manipulation]"
+            className="btn-press inline-block bg-black text-white text-[17px] font-semibold rounded-full px-[28px] py-[14px] hover:bg-white hover:text-black motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 [touch-action:manipulation]"
           >
             Stay in the Loop
           </Link>
@@ -156,3 +156,4 @@ export default function ResourcesPage() {
     </>
   );
 }
+

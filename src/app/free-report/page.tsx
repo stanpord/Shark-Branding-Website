@@ -11,7 +11,7 @@ export default function FreeReportPage() {
   return (
     <>
       {/* Compact hero */}
-      <section className="bg-black pt-20 pb-10 px-6 text-center">
+      <section className="bg-white pt-20 pb-10 px-6 text-center">
         <div className="max-w-[640px] mx-auto">
           <p className="text-[#18b5d8] text-[14px] font-semibold tracking-[0.15em] uppercase mb-4">
             Free Visibility Report
@@ -94,3 +94,4 @@ export default function FreeReportPage() {
     </>
   );
 }
+
