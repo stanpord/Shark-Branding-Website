@@ -31,6 +31,55 @@ export const metadata: Metadata = {
   },
 };
 
+const structuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["Organization", "LocalBusiness"],
+      "@id": "https://sharkbrandingsolutions.com/#organization",
+      name: "Shark Branding Solutions",
+      alternateName: "Shark AI Solutions",
+      url: "https://sharkbrandingsolutions.com",
+      logo: "https://sharkbrandingsolutions.com/logo.webp",
+      description:
+        "AI Business Consulting for Tampa Bay businesses. We help companies get found by AI, run operations with AI bots, and build the trust signals that make ChatGPT, Perplexity, and Google AI Overviews recommend them.",
+      telephone: "+17278556505",
+      email: "info@sharkbrandingsolutions.com",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "Wesley Chapel",
+        addressLocality: "Wesley Chapel",
+        addressRegion: "FL",
+        postalCode: "33544",
+        addressCountry: "US",
+      },
+      areaServed: [
+        { "@type": "City", name: "Wesley Chapel" },
+        { "@type": "City", name: "Lutz" },
+        { "@type": "City", name: "Land O' Lakes" },
+        { "@type": "City", name: "St. Petersburg" },
+        { "@type": "City", name: "Tampa" },
+      ],
+      founder: {
+        "@type": "Person",
+        name: "Michelle Stanaland",
+        jobTitle: "Founder & CEO",
+        description: "Top 15 Marketing Expert in Tampa Bay — Influence Digest, 2025",
+      },
+      knowsAbout: [
+        "AI business consulting",
+        "AI search optimization",
+        "AI visibility",
+        "local SEO",
+        "AI CRM",
+        "marketing automation",
+        "reputation management",
+      ],
+      sameAs: [],
+    },
+  ],
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
@@ -39,6 +88,10 @@ export default function RootLayout({
       <head>
         <meta name="theme-color" content="#000000" />
         <link rel="preconnect" href="https://cdn.apigateway.co" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
       </head>
       <body className="min-h-full flex flex-col antialiased">
         <a

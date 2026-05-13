@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 const services = [
-  { href: "/services#ai-visibility", label: "AI Visibility Consulting" },
+  { href: "/services#ai-visibility", label: "AI Business Consulting" },
   { href: "/services#toolkit", label: "AI Visibility Toolkit" },
   { href: "/services#workshops", label: "Workshops & Training" },
   { href: "/free-report", label: "Free Visibility Report" },

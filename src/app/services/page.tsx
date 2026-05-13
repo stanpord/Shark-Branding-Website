@@ -4,14 +4,14 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "AI Business Services — Shark Branding Solutions",
   description:
-    "AI Visibility Consulting, AI Toolkit, Workshops, and Free Visibility Reports for Tampa Bay businesses.",
+    "AI Business Consulting, AI Toolkit, Workshops, and Free Visibility Reports for Tampa Bay businesses.",
 };
 
 const services = [
   {
     id: "ai-visibility",
     eyebrow: "Core Service",
-    title: "AI Visibility Consulting",
+    title: "AI Business Consulting",
     description:
       "The way buyers find businesses has fundamentally shifted. Before they ever visit a website, they ask AI. We optimize your business to appear — and appear well — when ChatGPT, Perplexity, Google AI Overviews, and other discovery platforms answer questions your customers are asking right now.",
     bullets: [

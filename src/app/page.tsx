@@ -9,7 +9,7 @@ const stats = [
 
 const services = [
   {
-    title: "AI Visibility Consulting",
+    title: "AI Business Consulting",
     body:
       "Your customers are asking AI for recommendations — not just Google. We make sure Perplexity, ChatGPT, and Google AI Overviews answer with your name.",
     href: "/services#ai-visibility",
