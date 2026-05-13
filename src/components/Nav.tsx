@@ -43,18 +43,8 @@ export default function Nav() {
             <li key={l.href}>
               <Link
                 href={l.href}
-                className={`nav-link rounded motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 ${
-                  l.accent
-                    ? "flex items-center gap-1.5 font-semibold text-[#9dff42] hover:text-[#7cff00]"
-                    : "text-[#1d1d1f] hover:text-[#18b5d8]"
-                }`}
+                className="nav-link rounded motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 text-[#1d1d1f] hover:text-[#18b5d8]"
               >
-                {l.accent && (
-                  <span className="relative flex h-2 w-2">
-                    <span className="absolute inline-flex h-full w-full motion-safe:animate-ping rounded-full bg-[#9dff42] opacity-75" />
-                    <span className="relative inline-flex h-2 w-2 rounded-full bg-[#9dff42]" />
-                  </span>
-                )}
                 {l.label}
               </Link>
             </li>
@@ -92,11 +82,7 @@ export default function Nav() {
               key={l.href}
               href={l.href}
               onClick={() => setOpen(false)}
-              className={`text-base motion-safe:transition-colors rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 ${
-                l.accent
-                  ? "text-[#72d400] hover:text-[#4d9900] font-semibold"
-                  : "text-[#1d1d1f] hover:text-[#18b5d8]"
-              }`}
+              className="text-base motion-safe:transition-colors rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 text-[#1d1d1f] hover:text-[#18b5d8]"
             >
               {l.label}
             </Link>
