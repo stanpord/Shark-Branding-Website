@@ -80,12 +80,13 @@ export default function MarketingPage() {
             Shark AI Solutions &mdash; Marketing
           </p>
           <p className="text-[13px] text-[#7a7a7a] mb-5">A Shark Branding Solutions company</p>
-          <h1 className="display-hero text-white mb-5" style={{ textWrap: "balance" }}>
+          <h1 className="display-hero text-[#0a0a0a] mb-5" style={{ textWrap: "balance" }}>
             AI that markets your
             <br />
             <span className="text-[#18b5d8]">business 24/7.</span>
           </h1>
-          <p className="lead-airy text-[#333333]">\r\n            CMO strategy, AI visibility, and content automation — so your brand
+          <p className="lead-airy text-[#333333]">
+            CMO strategy, AI visibility, and content automation — so your brand
             keeps growing even when you&rsquo;re not working.
           </p>
         </div>

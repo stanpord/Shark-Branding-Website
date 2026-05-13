@@ -65,12 +65,13 @@ export default function OperationsPage() {
             Shark AI Solutions &mdash; Operations
           </p>
           <p className="text-[13px] text-[#7a7a7a] mb-5">A Shark Branding Solutions company</p>
-          <h1 className="display-hero text-white mb-5" style={{ textWrap: "balance" }}>
+          <h1 className="display-hero text-[#0a0a0a] mb-5" style={{ textWrap: "balance" }}>
             AI bots that run your
             <br />
             <span className="text-[#18b5d8]">back office for you.</span>
           </h1>
-          <p className="lead-airy text-[#333333]">\r\n            CRM, sales coaching, and custom automation — deployed in days, not
+          <p className="lead-airy text-[#333333]">
+            CRM, sales coaching, and custom automation — deployed in days, not
             months. Your team does the work only humans can do.
           </p>
         </div>

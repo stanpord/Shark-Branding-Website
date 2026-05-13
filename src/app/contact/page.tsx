@@ -37,12 +37,13 @@ export default function ContactPage() {
           <p className="text-[#18b5d8] text-[14px] font-semibold tracking-[0.15em] uppercase mb-5">
             Contact
           </p>
-          <h1 className="display-hero text-white mb-5" style={{textWrap:"balance"}}>
+          <h1 className="display-hero text-[#0a0a0a] mb-5" style={{textWrap:"balance"}}>
             Let&rsquo;s talk about
             <br />
             <span className="text-[#18b5d8]">your visibility.</span>
           </h1>
-          <p className="lead-airy text-[#333333]">\r\n            Start with the free report, book a call, or just say hello. We
+          <p className="lead-airy text-[#333333]">
+            Start with the free report, book a call, or just say hello. We
             respond within one business day.
           </p>
         </div>

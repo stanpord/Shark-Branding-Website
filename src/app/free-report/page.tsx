@@ -16,12 +16,12 @@ export default function FreeReportPage() {
           <p className="text-[#18b5d8] text-[14px] font-semibold tracking-[0.15em] uppercase mb-4">
             Free Visibility Report
           </p>
-          <h1 className="display-hero text-white mb-4" style={{ textWrap: "balance" }}>
+          <h1 className="display-hero text-[#0a0a0a] mb-4" style={{ textWrap: "balance" }}>
             Find out where your business
             <br />
             <span className="text-[#18b5d8]">actually stands.</span>
           </h1>
-          <p className="lead-airy text-[#cccccc]">
+          <p className="lead-airy text-[#333333]">
             Delivered in 48 hours. No commitment. No sales call.
           </p>
         </div>
