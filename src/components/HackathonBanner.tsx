@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 
 const TICKER = [
   "Live AI Demos",
@@ -87,53 +88,19 @@ export default function HackathonBanner() {
             </div>
           </div>
 
-          {/* Right column — mini flyer card */}
+          {/* Right column — flyer image */}
           <div className="shrink-0 w-full lg:w-[310px]">
-            <div className="rounded-[22px] border-2 border-white/10 bg-[#07141a] p-6 motion-safe:transition-[border-color,box-shadow] motion-safe:duration-300 motion-safe:group-hover:border-[#18b5d8]/50 motion-safe:group-hover:shadow-[0_0_40px_rgba(24,181,216,0.12)]">
-              {/* Card header */}
-              <div className="mb-5 flex items-center justify-between">
-                <span className="text-[0.62rem] font-semibold uppercase tracking-[0.22em] text-[#18b5d8]">
-                  Shark Branding Solutions
-                </span>
-                <span className="rounded-full border border-white/12 px-2.5 py-1 text-[0.6rem] font-semibold uppercase tracking-[0.14em] text-white/50">
-                  52 seats
-                </span>
-              </div>
-
-              {/* Card title */}
-              <div className="mb-1 text-[1.7rem] font-semibold uppercase leading-[0.95] tracking-[-0.04em] text-white">
-                Shark AI
-                <br />
-                Hackathon
-              </div>
-              <div className="mb-5 text-[0.8rem] text-white/45">
-                May 26, 2026 · 12–2 PM EDT
-              </div>
-
-              {/* Stats row */}
-              <div className="mb-5 grid grid-cols-3 divide-x divide-white/8 rounded-[14px] border border-white/8 bg-white/4">
-                {[
-                  { v: "45", l: "Seats" },
-                  { v: "4", l: "Arenas" },
-                  { v: "2hr", l: "Event" },
-                ].map((s) => (
-                  <div key={s.l} className="py-3 text-center">
-                    <div className="font-mono text-[1.1rem] font-semibold text-white">{s.v}</div>
-                    <div className="text-[0.58rem] font-semibold uppercase tracking-[0.16em] text-white/35">{s.l}</div>
-                  </div>
-                ))}
-              </div>
-
-              {/* CTA arrow */}
-              <div className="flex items-center justify-between">
-                <span className="text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-white/35">
-                  Reserve my spot
-                </span>
-                <span className="flex h-9 w-9 items-center justify-center rounded-full border border-[#18b5d8]/40 text-[#18b5d8] motion-safe:transition-colors motion-safe:duration-150 motion-safe:group-hover:bg-[#18b5d8] motion-safe:group-hover:text-black motion-safe:group-hover:border-[#18b5d8]">
-                  <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" aria-hidden="true">
-                    <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
-                </span>
+            <div className="relative border-2 border-white/10 motion-safe:transition-[border-color,box-shadow] motion-safe:duration-300 motion-safe:group-hover:border-[#18b5d8]/60 motion-safe:group-hover:shadow-[0_0_40px_rgba(24,181,216,0.18)]">
+              <Image
+                src="/hackathon-flyer.png"
+                alt="Shark AI Hackathon flyer — May 26, 2026"
+                width={620}
+                height={877}
+                className="w-full h-auto object-cover"
+                loading="lazy"
+              />
+              <div className="absolute top-3 right-3 rounded-full border border-[#18b5d8]/60 bg-black/70 px-3 py-1 text-[0.6rem] font-semibold uppercase tracking-[0.18em] text-[#18b5d8]">
+                Official Flyer
               </div>
             </div>
           </div>
