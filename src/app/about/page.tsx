@@ -9,18 +9,22 @@ export const metadata: Metadata = {
 
 const values = [
   {
+    n: "01",
     title: "Clarity over complexity",
     body: "We translate AI and marketing into plain strategy. No jargon. No fluff. Just what moves the needle.",
   },
   {
+    n: "02",
     title: "Results, not reports",
     body: "We measure success by your ranking movement, visibility score, and the calls you receive — not activity metrics.",
   },
   {
+    n: "03",
     title: "Local first",
     body: "We're based in Wesley Chapel. We know Tampa Bay. We understand what local buyers want and how they search.",
   },
   {
+    n: "04",
     title: "Honest before anything",
     body: "Our free visibility report tells the truth — even if the truth is uncomfortable. That's where real progress starts.",
   },
@@ -29,127 +33,92 @@ const values = [
 export default function AboutPage() {
   return (
     <>
-      {/* Hero */}
-      <section className="bg-white min-h-[50vh] flex items-center justify-center text-center px-6 pt-24 pb-20">
-        <div className="max-w-[680px] mx-auto">
-          <p className="text-[#18b5d8] text-[14px] font-semibold tracking-[0.15em] uppercase mb-5">
+      {/* ── Hero ── */}
+      <section className="bg-white min-h-[90vh] flex flex-col items-center justify-center text-center px-6 pt-24 pb-20">
+        <div className="max-w-[720px] mx-auto">
+          <p className="text-[#18b5d8] text-[13px] font-semibold tracking-[0.2em] uppercase mb-8">
             About Us
           </p>
-          <h1 className="display-hero text-[#0a0a0a] mb-5">
+          <h1 className="display-hero text-[#0a0a0a] mb-6" style={{ textWrap: "balance" }}>
             We make businesses
             <br />
             <span className="text-[#18b5d8]">impossible to ignore.</span>
           </h1>
-          <p className="lead-airy text-[#333333]">
-            Shark Branding Solutions was built on a simple belief: every great
-            business deserves to be found — by the right people, at the right
-            moment, on every platform.
+          <p className="lead-airy text-[#333333] max-w-[540px] mx-auto" style={{ textWrap: "balance" }}>
+            Shark Branding Solutions was built on a simple belief: every great business deserves to be found — by the right people, at the right moment, on every platform.
           </p>
         </div>
       </section>
 
-      {/* Michelle */}
-      <section id="michelle" className="bg-white py-20 px-6">
-        <div className="max-w-[760px] mx-auto">
-          <p className="text-[#18b5d8] text-[14px] font-semibold tracking-[0.15em] uppercase mb-4">
-            Leadership
-          </p>
-          <h2 className="display-lg text-[#1d1d1f] mb-6">
-            Michelle Stanaland
-          </h2>
-          <p className="text-[21px] font-semibold text-[#7a7a7a] mb-8">
-            Founder &amp; CEO
-          </p>
-          <div className="space-y-5">
-            <p className="lead-airy text-[#333333]">
-              Michelle Stanaland is a recognized marketing strategist and AI
-              visibility expert serving businesses across Tampa Bay. In 2025, she
-              was named one of the{" "}
-              <strong className="font-semibold text-[#1d1d1f]">
-                Top 15 Marketing Experts in Tampa Bay
-              </strong>{" "}
-              by Influence Digest — a recognition of her commitment to results
-              over rhetoric.
-            </p>
-            <p className="lead-airy text-[#333333]">
-              Before founding Shark Branding Solutions, Michelle observed a
-              consistent pattern: talented, hardworking business owners were
-              losing customers not because of their product or service, but
-              because they couldn&rsquo;t be found. As AI search platforms
-              changed how buyers discover businesses, the gap between
-              visible and invisible grew wider — and she built a firm to close
-              it.
-            </p>
-            <p className="lead-airy text-[#333333]">
-              Based in Wesley Chapel, Michelle works directly with clients across
-              Lutz, Land O&rsquo; Lakes, St. Petersburg, and the wider Tampa Bay
-              area — bringing enterprise-level AI strategy to local businesses
-              that deserve to compete.
-            </p>
+      {/* ── Michelle ── */}
+      <section id="michelle" className="bg-[#0a0a0a] px-6 py-24">
+        <div className="max-w-[980px] mx-auto grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-16 items-start">
+          <div>
+            <div className="flex items-center gap-4 mb-8">
+              <span className="font-mono text-[#18b5d8] text-[11px] tracking-[0.22em] uppercase">Founder</span>
+              <span className="w-px h-4 bg-white/20" aria-hidden="true" />
+              <span className="text-[13px] font-semibold tracking-[0.08em] uppercase text-white/50">Leadership</span>
+            </div>
+            <h2 className="display-lg text-white mb-3">Michelle Stanaland</h2>
+            <p className="text-[17px] text-white/40 mb-8">Founder &amp; CEO</p>
+            <div className="inline-flex items-center gap-3 bg-white/6 border border-white/10 rounded-[12px] px-5 py-3">
+              <span className="text-[#18b5d8] text-[18px]" aria-hidden="true">★</span>
+              <span className="text-[14px] font-semibold text-white">Top 15 Marketing Expert — Tampa Bay</span>
+              <span className="text-[12px] text-white/35">Influence Digest, 2025</span>
+            </div>
           </div>
-          <div className="mt-10 inline-flex items-center gap-3 bg-[#f5f5f7] rounded-[11px] px-5 py-3">
-            <span className="text-[#18b5d8] text-[20px]">&#9733;</span>
-            <span className="text-[17px] font-semibold text-[#1d1d1f]">
-              Top 15 Marketing Expert — Tampa Bay
-            </span>
-            <span className="text-[14px] text-[#7a7a7a]">
-              Influence Digest, 2025
-            </span>
+          <div className="space-y-6">
+            <p className="body-copy text-white/60 leading-relaxed">
+              Michelle Stanaland is a recognized marketing strategist and AI visibility expert serving businesses across Tampa Bay. In 2025, she was named one of the{" "}
+              <strong className="font-semibold text-white">Top 15 Marketing Experts in Tampa Bay</strong>{" "}
+              by Influence Digest — a recognition of her commitment to results over rhetoric.
+            </p>
+            <p className="body-copy text-white/60 leading-relaxed">
+              Before founding Shark Branding Solutions, Michelle observed a consistent pattern: talented, hardworking business owners were losing customers not because of their product or service, but because they couldn&rsquo;t be found. As AI search platforms changed how buyers discover businesses, the gap between visible and invisible grew wider — and she built a firm to close it.
+            </p>
+            <p className="body-copy text-white/60 leading-relaxed">
+              Based in Wesley Chapel, Michelle works directly with clients across Lutz, Land O&rsquo; Lakes, St. Petersburg, and the wider Tampa Bay area — bringing enterprise-level AI strategy to local businesses that deserve to compete.
+            </p>
           </div>
         </div>
       </section>
 
-      {/* Values */}
-      <section className="bg-[#07141a] py-20 px-6">
+      {/* ── Values ── */}
+      <section className="bg-[#f5f5f7] px-6 py-24">
         <div className="max-w-[980px] mx-auto">
-          <p className="text-[#18b5d8] text-[14px] font-semibold tracking-[0.15em] uppercase text-center mb-4">
-            How We Work
-          </p>
-          <h2 className="display-lg text-white text-center mb-14">
-            Principles we never compromise.
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="text-center mb-16">
+            <p className="text-[13px] font-semibold tracking-[0.2em] uppercase text-[#18b5d8] mb-4">How We Work</p>
+            <h2 className="display-lg text-[#0a0a0a]" style={{ textWrap: "balance" }}>
+              Principles we never compromise.
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
             {values.map((v) => (
-              <div
-                key={v.title}
-                className="bg-[#091c24] rounded-[18px] p-8 border border-white/5"
-              >
-                <h3 className="text-[21px] font-semibold text-[#18b5d8] mb-3">
-                  {v.title}
-                </h3>
-                <p className="body-copy text-[#cccccc]">{v.body}</p>
+              <div key={v.n} className="bg-white rounded-[20px] px-8 py-8">
+                <span className="font-mono text-[#18b5d8] text-[11px] tracking-[0.22em] uppercase block mb-5">{v.n}</span>
+                <h3 className="text-[21px] font-semibold text-[#0a0a0a] mb-3">{v.title}</h3>
+                <p className="body-copy text-[#333333]">{v.body}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Service area */}
-      <section className="bg-[#f5f5f7] py-20 px-6">
-        <div className="max-w-[760px] mx-auto text-center">
-          <p className="text-[#18b5d8] text-[14px] font-semibold tracking-[0.15em] uppercase mb-4">
-            Where We Serve
-          </p>
-          <h2 className="display-lg text-[#1d1d1f] mb-5">
+      {/* ── Service area ── */}
+      <section className="bg-white px-6 py-24 border-t border-[#e8e8ed]">
+        <div className="max-w-[720px] mx-auto text-center">
+          <p className="text-[13px] font-semibold tracking-[0.2em] uppercase text-[#18b5d8] mb-4">Where We Serve</p>
+          <h2 className="display-lg text-[#0a0a0a] mb-6" style={{ textWrap: "balance" }}>
             Rooted in Tampa Bay.
           </h2>
-          <p className="lead-airy text-[#333333] mb-8">
-            We serve businesses across Wesley Chapel, Lutz, Land O&rsquo;
-            Lakes, St. Petersburg, and the broader Tampa Bay region — in person
-            and virtually.
+          <p className="lead-airy text-[#333333] mb-10" style={{ textWrap: "balance" }}>
+            We serve businesses across Wesley Chapel, Lutz, Land O&rsquo; Lakes, St. Petersburg, and the broader Tampa Bay region — in person and virtually.
           </p>
           <div className="flex flex-wrap justify-center gap-3">
-            {[
-              "Wesley Chapel",
-              "Lutz",
-              "Land O\u2019 Lakes",
-              "St. Petersburg",
-              "Tampa",
-              "Virtual",
-            ].map((city) => (
+            {["Wesley Chapel", "Lutz", "Land O\u2019 Lakes", "St. Petersburg", "Tampa", "Virtual"].map((city) => (
               <span
                 key={city}
-                className="bg-white border border-[#e0e0e0] rounded-full px-4 py-2 text-[14px] text-[#333333] font-semibold"
+                className="bg-[#f5f5f7] border border-[#e0e0e0] rounded-full px-5 py-2 text-[14px] text-[#333333] font-semibold"
               >
                 {city}
               </span>
@@ -158,24 +127,26 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="bg-[#18b5d8] py-24 px-6 text-center">
+      {/* ── CTA ── */}
+      <section className="bg-[#0a0a0a] py-28 px-6 text-center">
         <div className="max-w-[560px] mx-auto">
-          <h2 className="display-lg text-black mb-5">Ready to work together?</h2>
-          <p className="lead-airy text-black/65 mb-10">
-            Start with a free visibility report or reach out directly.
-            We&rsquo;ll make it simple.
+          <p className="text-[13px] font-semibold tracking-[0.2em] uppercase text-[#18b5d8] mb-6">Work with us</p>
+          <h2 className="display-lg text-white mb-6" style={{ textWrap: "balance" }}>
+            Ready to work together?
+          </h2>
+          <p className="lead-airy text-white/50 mb-12">
+            Start with a free visibility report or reach out directly. We&rsquo;ll make it simple.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
             <Link
               href="/free-report"
-              className="btn-press inline-block bg-black text-white text-[18px] font-semibold rounded-full px-[28px] py-[14px] hover:bg-white hover:text-black transition-colors duration-150"
+              className="btn-press inline-block bg-[#18b5d8] text-white text-[17px] font-semibold rounded-full px-[32px] py-[15px] hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0a0a] [touch-action:manipulation]"
             >
               Get Free Report
             </Link>
             <a
               href="tel:+17278556505"
-              className="btn-press inline-block text-black text-[17px] border-2 border-black rounded-full px-[22px] py-[11px] hover:bg-black hover:text-white transition-colors duration-150"
+              className="btn-press inline-block text-white text-[17px] border border-white/20 rounded-full px-[28px] py-[14px] hover:border-white/50 motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0a0a] [touch-action:manipulation]"
             >
               (727) 855-6505
             </a>

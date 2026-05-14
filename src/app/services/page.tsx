@@ -9,11 +9,9 @@ export const metadata: Metadata = {
 
 const services = [
   {
-    id: "ai-visibility",
-    eyebrow: "Core Service",
+    n: "01", id: "ai-visibility", eyebrow: "Core Service", dark: true,
     title: "AI Business Consulting",
-    description:
-      "The way buyers find businesses has fundamentally shifted. Before they ever visit a website, they ask AI. We optimize your business to appear — and appear well — when ChatGPT, Perplexity, Google AI Overviews, and other discovery platforms answer questions your customers are asking right now.",
+    description: "The way buyers find businesses has fundamentally shifted. Before they ever visit a website, they ask AI. We optimize your business to appear — and appear well — when ChatGPT, Perplexity, Google AI Overviews, and other discovery platforms answer questions your customers are asking right now.",
     bullets: [
       "Full audit of your AI and search presence",
       "Structured optimization of trust signals and listings",
@@ -21,16 +19,12 @@ const services = [
       "Ongoing monitoring across AI discovery channels",
       "Competitive positioning analysis",
     ],
-    cta: "Start Consulting",
-    href: "/contact",
-    dark: true,
+    cta: "Start Consulting", href: "/contact",
   },
   {
-    id: "toolkit",
-    eyebrow: "Managed System",
+    n: "02", id: "toolkit", eyebrow: "Managed System", dark: false,
     title: "AI Visibility Toolkit",
-    description:
-      "A complete, proven framework for businesses ready to stop guessing and start winning. We fix your visibility gaps systematically — search signals, trust indicators, listing accuracy, and AI readiness — with two engagement levels to match where you are.",
+    description: "A complete, proven framework for businesses ready to stop guessing and start winning. We fix your visibility gaps systematically — search signals, trust indicators, listing accuracy, and AI readiness — with two engagement levels to match where you are.",
     bullets: [
       "Self-directed toolkit starting at $497/month",
       "Fully managed service at $2,000/month",
@@ -38,16 +32,12 @@ const services = [
       "Measurable ranking movement within 30 days",
       "Monthly reporting and strategy calls",
     ],
-    cta: "Explore the Toolkit",
-    href: "/contact",
-    dark: false,
+    cta: "Explore the Toolkit", href: "/contact",
   },
   {
-    id: "workshops",
-    eyebrow: "Education",
+    n: "03", id: "workshops", eyebrow: "Education", dark: true,
     title: "Workshops & Training",
-    description:
-      "Modern buyer behavior has changed — most businesses haven't caught up. Our workshops arm your team and chamber organizations with practical knowledge on how buyers discover, evaluate, and choose businesses in the age of AI. Engaging, actionable, and immediately applicable.",
+    description: "Modern buyer behavior has changed — most businesses haven't caught up. Our workshops arm your team and chamber organizations with practical knowledge on how buyers discover, evaluate, and choose businesses in the age of AI. Engaging, actionable, and immediately applicable.",
     bullets: [
       "Tailored for business teams and chamber groups",
       "Half-day and full-day formats available",
@@ -55,16 +45,12 @@ const services = [
       "Includes hands-on exercises and take-home materials",
       "Available in-person (Tampa Bay) and virtually",
     ],
-    cta: "Book a Workshop",
-    href: "/contact",
-    dark: true,
+    cta: "Book a Workshop", href: "/contact",
   },
   {
-    id: "report",
-    eyebrow: "Free — No Strings Attached",
+    n: "04", id: "report", eyebrow: "Free — No Strings Attached", dark: false,
     title: "Free Visibility Report",
-    description:
-      "Before you spend a dollar on marketing, know exactly where you stand. We assess how your business appears across search, maps, reviews, and AI platforms — and deliver a clear, honest report in 48 hours. No sales pressure. Just the truth about your visibility.",
+    description: "Before you spend a dollar on marketing, know exactly where you stand. We assess how your business appears across search, maps, reviews, and AI platforms — and deliver a clear, honest report in 48 hours. No sales pressure. Just the truth about your visibility.",
     bullets: [
       "Search and map listing analysis",
       "Review and trust signal audit",
@@ -72,15 +58,13 @@ const services = [
       "Actionable priority list delivered in 48 hours",
       "100% free — forever, no catch",
     ],
-    cta: "Get My Free Report",
-    href: "/free-report",
-    dark: false,
+    cta: "Get My Free Report", href: "/free-report",
   },
 ];
 
 const plans = [
   {
-    name: "AI Toolkit — Self-Directed",
+    name: "Self-Directed",
     price: "$497",
     period: "/month",
     features: [
@@ -91,7 +75,7 @@ const plans = [
     ],
   },
   {
-    name: "AI Toolkit — Fully Managed",
+    name: "Fully Managed",
     price: "$2,000",
     period: "/month",
     featured: true,
@@ -108,125 +92,119 @@ const plans = [
 export default function ServicesPage() {
   return (
     <>
-      {/* Hero */}
-      <section className="bg-white min-h-[50vh] flex items-center justify-center text-center px-6 pt-24 pb-20">
-        <div className="max-w-[680px] mx-auto">
-          <p className="text-[#18b5d8] text-[14px] font-semibold tracking-[0.15em] uppercase mb-5">
+      {/* ── Hero ── */}
+      <section className="bg-white min-h-[90vh] flex flex-col items-center justify-center text-center px-6 pt-24 pb-20">
+        <div className="max-w-[720px] mx-auto">
+          <p className="text-[#18b5d8] text-[13px] font-semibold tracking-[0.2em] uppercase mb-8">
             Services
           </p>
-          <h1 className="display-hero text-[#0a0a0a] mb-5">
-            AI Solutions Built for
+          <h1 className="display-hero text-[#0a0a0a] mb-6" style={{ textWrap: "balance" }}>
+            Every service built around
             <br />
-            <span className="text-[#18b5d8]">Real Results.</span>
+            <span className="text-[#18b5d8]">one outcome.</span>
           </h1>
-          <p className="lead-airy text-[#333333]">
-            Every service we offer is designed around one outcome: your business
-            getting found, trusted, and chosen — by humans and AI alike.
+          <p className="lead-airy text-[#333333] max-w-[520px] mx-auto mb-14" style={{ textWrap: "balance" }}>
+            Your business getting found, trusted, and chosen — by humans and AI alike.
           </p>
+          <div className="flex flex-wrap items-center justify-center gap-3">
+            {services.map((s) => (
+              <a
+                key={s.id}
+                href={`#${s.id}`}
+                className="text-[13px] font-semibold text-[#1d1d1f] border border-[#e0e0e0] rounded-full px-5 py-2 hover:border-[#18b5d8] hover:text-[#18b5d8] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2"
+              >
+                {s.title}
+              </a>
+            ))}
+          </div>
         </div>
       </section>
 
-      {/* Services — alternating tiles */}
+      {/* ── Services ── */}
       {services.map((s) => (
         <section
           key={s.id}
           id={s.id}
-          className={`py-20 px-6 ${s.dark ? "bg-[#07141a]" : "bg-white"}`}
+          className={s.dark ? "bg-[#0a0a0a] px-6 py-24 border-t border-white/5" : "bg-white px-6 py-24 border-t border-[#e8e8ed]"}
         >
-          <div className="max-w-[760px] mx-auto">
-            <p
-              className={`text-[14px] font-semibold tracking-[0.15em] uppercase mb-4 ${
-                s.dark ? "text-[#18b5d8]" : "text-[#18b5d8]"
-              }`}
-            >
-              {s.eyebrow}
-            </p>
-            <h2
-              className={`display-lg mb-6 ${
-                s.dark ? "text-white" : "text-[#1d1d1f]"
-              }`}
-            >
-              {s.title}
-            </h2>
-            <p
-              className={`lead-airy mb-8 ${
-                s.dark ? "text-[#cccccc]" : "text-[#333333]"
-              }`}
-            >
-              {s.description}
-            </p>
-            <ul className="space-y-3 mb-10">
-              {s.bullets.map((b) => (
-                <li key={b} className="flex items-start gap-3">
-                  <span className="text-[#18b5d8] text-[18px] font-semibold leading-none mt-0.5">
-                    &#x2713;
-                  </span>
-                  <span
-                    className={`body-copy ${
-                      s.dark ? "text-[#cccccc]" : "text-[#333333]"
-                    }`}
-                  >
-                    {b}
-                  </span>
-                </li>
-              ))}
-            </ul>
-            <Link
-              href={s.href}
-              className="btn-press inline-block bg-[#18b5d8] text-white text-[17px] font-semibold rounded-full px-[22px] py-[11px] hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 [touch-action:manipulation]"
-            >
-              {s.cta}
-            </Link>
+          <div className="max-w-[980px] mx-auto grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-16 items-start">
+            {/* Left */}
+            <div>
+              <div className="flex items-center gap-4 mb-8">
+                <span className="font-mono text-[#18b5d8] text-[11px] tracking-[0.22em] uppercase">{s.n}</span>
+                <span className={`w-px h-4 ${s.dark ? "bg-white/20" : "bg-[#1d1d1f]/15"}`} aria-hidden="true" />
+                <span className={`text-[13px] font-semibold tracking-[0.08em] uppercase ${s.dark ? "text-white/50" : "text-[#1d1d1f]/50"}`}>{s.eyebrow}</span>
+              </div>
+              <h2 className={`display-lg mb-6 ${s.dark ? "text-white" : "text-[#0a0a0a]"}`} style={{ textWrap: "balance" }}>
+                {s.title}
+              </h2>
+              <p className={`body-copy leading-relaxed ${s.dark ? "text-white/60" : "text-[#333333]"}`}>
+                {s.description}
+              </p>
+            </div>
+            {/* Right */}
+            <div className="lg:pt-[72px]">
+              <ul className="space-y-4 mb-10">
+                {s.bullets.map((b) => (
+                  <li key={b} className="flex items-start gap-3">
+                    <span className="text-[#18b5d8] font-bold leading-none mt-1 shrink-0" aria-hidden="true">✓</span>
+                    <span className={`body-copy ${s.dark ? "text-white/70" : "text-[#333333]"}`}>{b}</span>
+                  </li>
+                ))}
+              </ul>
+              <Link
+                href={s.href}
+                className="btn-press inline-block bg-[#18b5d8] text-white text-[15px] font-semibold rounded-full px-7 py-3.5 hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 [touch-action:manipulation]"
+              >
+                {s.cta}
+              </Link>
+            </div>
           </div>
         </section>
       ))}
 
-      {/* Pricing */}
-      <section className="bg-[#f5f5f7] py-20 px-6">
+      {/* ── Pricing ── */}
+      <section className="bg-[#f5f5f7] px-6 py-24">
         <div className="max-w-[980px] mx-auto">
-          <p className="text-[#18b5d8] text-[14px] font-semibold tracking-[0.15em] uppercase text-center mb-4">
-            Pricing
-          </p>
-          <h2 className="display-lg text-[#1d1d1f] text-center mb-14">
-            Simple, transparent plans.
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-[680px] mx-auto">
+          <div className="text-center mb-16">
+            <p className="text-[13px] font-semibold tracking-[0.2em] uppercase text-[#18b5d8] mb-4">Pricing</p>
+            <h2 className="display-lg text-[#0a0a0a]" style={{ textWrap: "balance" }}>
+              Simple, transparent plans.
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-[720px] mx-auto">
             {plans.map((p) => (
               <div
                 key={p.name}
-                className={`rounded-[18px] p-8 border ${
-                  p.featured
-                    ? "bg-white border-2 border-[#18b5d8]"
-                    : "bg-white border border-[#e0e0e0]"
-                }`}
+                className={`rounded-[20px] p-8 ${p.featured ? "bg-[#0a0a0a]" : "bg-white border border-[#e8e8ed]"}`}
               >
                 {p.featured && (
-                  <span className="inline-block bg-[#18b5d8] text-white text-[12px] font-semibold rounded-full px-3 py-1 mb-4">
+                  <span className="inline-block bg-[#18b5d8] text-black text-[11px] font-bold rounded-full px-3 py-1 mb-5 tracking-wide uppercase">
                     Most Popular
                   </span>
                 )}
-                <h3 className="text-[17px] font-semibold text-[#1d1d1f] mb-3">
-                  {p.name}
-                </h3>
-                <p className="text-[40px] font-semibold text-[#18b5d8] leading-none mb-1">
-                  {p.price}
-                  <span className="text-[17px] font-normal text-[#7a7a7a]">
-                    {p.period}
-                  </span>
+                <p className={`text-[13px] font-semibold tracking-[0.12em] uppercase mb-3 ${p.featured ? "text-white/50" : "text-[#7a7a7a]"}`}>
+                  AI Visibility Toolkit — {p.name}
                 </p>
-                <ul className="mt-6 space-y-3">
+                <p className={`text-[clamp(2.5rem,5vw,4rem)] font-bold leading-none tracking-tight mb-1 ${p.featured ? "text-white" : "text-[#0a0a0a]"}`}>
+                  {p.price}
+                  <span className={`text-[17px] font-normal ${p.featured ? "text-white/40" : "text-[#7a7a7a]"}`}>{p.period}</span>
+                </p>
+                <div className={`mt-8 space-y-3 mb-8 border-t pt-8 ${p.featured ? "border-white/10" : "border-[#e8e8ed]"}`}>
                   {p.features.map((f) => (
-                    <li key={f} className="flex items-start gap-2">
-                      <span className="text-[#18b5d8] font-semibold">
-                        &#x2713;
-                      </span>
-                      <span className="text-[17px] text-[#333333]">{f}</span>
-                    </li>
+                    <div key={f} className="flex items-start gap-3">
+                      <span className="text-[#18b5d8] font-bold shrink-0 mt-0.5" aria-hidden="true">✓</span>
+                      <span className={`text-[15px] ${p.featured ? "text-white/70" : "text-[#333333]"}`}>{f}</span>
+                    </div>
                   ))}
-                </ul>
+                </div>
                 <Link
                   href="/contact"
-                  className="btn-press mt-8 block text-center bg-[#18b5d8] text-white text-[17px] font-semibold rounded-full px-[22px] py-[11px] hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 [touch-action:manipulation]"
+                  className={`btn-press block text-center text-[15px] font-semibold rounded-full px-6 py-3.5 motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 [touch-action:manipulation] ${
+                    p.featured
+                      ? "bg-[#18b5d8] text-white hover:bg-[#1ec8ee] focus-visible:ring-offset-[#0a0a0a]"
+                      : "bg-[#0a0a0a] text-white hover:bg-[#07141a]"
+                  }`}
                 >
                   Get Started
                 </Link>
@@ -236,18 +214,19 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="bg-[#18b5d8] py-24 px-6 text-center">
+      {/* ── CTA ── */}
+      <section className="bg-[#0a0a0a] py-28 px-6 text-center">
         <div className="max-w-[560px] mx-auto">
-          <h2 className="display-lg text-black mb-5">
-            Not sure where to start?
+          <p className="text-[13px] font-semibold tracking-[0.2em] uppercase text-[#18b5d8] mb-6">Not sure where to start?</p>
+          <h2 className="display-lg text-white mb-6" style={{ textWrap: "balance" }}>
+            Start with the free report.
           </h2>
-          <p className="lead-airy text-black/65 mb-10">
-            Start with the free report. Zero commitment, maximum clarity.
+          <p className="lead-airy text-white/50 mb-12">
+            Zero commitment. Maximum clarity.
           </p>
           <Link
             href="/free-report"
-            className="btn-press inline-block bg-black text-white text-[18px] font-semibold rounded-full px-[28px] py-[14px] hover:bg-white hover:text-black motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:ring-offset-[#18b5d8] [touch-action:manipulation]"
+            className="btn-press inline-block bg-[#18b5d8] text-white text-[17px] font-semibold rounded-full px-[32px] py-[15px] hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0a0a] [touch-action:manipulation]"
           >
             Get My Free Report
           </Link>
