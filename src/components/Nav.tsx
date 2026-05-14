@@ -63,14 +63,16 @@ export default function Nav() {
 
         {/* Mobile hamburger */}
         <button
-          className="md:hidden text-[#1d1d1f] p-1 rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 [touch-action:manipulation]"
+          className="md:hidden text-[#1d1d1f] min-h-[44px] min-w-[44px] flex items-center justify-center rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 [touch-action:manipulation]"
           onClick={() => setOpen(!open)}
           aria-label="Toggle menu"
           aria-expanded={open}
         >
-          <span className="block w-5 h-px bg-[#1d1d1f] mb-1" />
-          <span className="block w-5 h-px bg-[#1d1d1f] mb-1" />
-          <span className="block w-5 h-px bg-[#1d1d1f]" />
+          <span className="flex flex-col gap-[5px]" aria-hidden="true">
+            <span className="block w-5 h-px bg-[#1d1d1f]" />
+            <span className="block w-5 h-px bg-[#1d1d1f]" />
+            <span className="block w-5 h-px bg-[#1d1d1f]" />
+          </span>
         </button>
       </nav>
 
@@ -82,7 +84,7 @@ export default function Nav() {
               key={l.href}
               href={l.href}
               onClick={() => setOpen(false)}
-              className="text-base motion-safe:transition-colors rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 text-[#1d1d1f] hover:text-[#18b5d8]"
+              className="min-h-[44px] flex items-center text-base motion-safe:transition-colors rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 text-[#1d1d1f] hover:text-[#18b5d8]"
             >
               {l.label}
             </Link>
@@ -90,7 +92,7 @@ export default function Nav() {
           <Link
             href="/free-report"
             onClick={() => setOpen(false)}
-            className="btn-press self-start bg-[#18b5d8] text-white text-sm font-semibold rounded-full px-5 py-2 hover:bg-[#1ec8ee] motion-safe:transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 [touch-action:manipulation]"
+            className="btn-press self-start bg-[#18b5d8] text-white text-[15px] font-semibold rounded-full px-5 py-3 hover:bg-[#1ec8ee] motion-safe:transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 [touch-action:manipulation]"
           >
             Get Free Report
           </Link>

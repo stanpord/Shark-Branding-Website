@@ -34,15 +34,15 @@ export default function FreeReportPage() {
           <div className="mt-10 flex justify-center gap-12 text-center">
             <div>
               <p className="text-[21px] font-semibold text-[#18b5d8] mb-1">48h</p>
-              <p className="text-[13px] text-[#7a7a7a]">Turnaround</p>
+              <p className="text-[14px] text-[#7a7a7a]">Turnaround</p>
             </div>
             <div>
               <p className="text-[21px] font-semibold text-[#18b5d8] mb-1">Free</p>
-              <p className="text-[13px] text-[#7a7a7a]">No credit card</p>
+              <p className="text-[14px] text-[#7a7a7a]">No credit card</p>
             </div>
             <div>
               <p className="text-[21px] font-semibold text-[#18b5d8] mb-1">Local</p>
-              <p className="text-[13px] text-[#7a7a7a]">Tampa Bay focused</p>
+              <p className="text-[14px] text-[#7a7a7a]">Tampa Bay focused</p>
             </div>
           </div>
         </div>
