@@ -11,17 +11,17 @@ export default function CaseStudiesPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-black min-h-[40vh] flex items-center justify-center text-center px-6 pt-24 pb-16">
+      <section className="bg-white min-h-[40vh] flex items-center justify-center text-center px-6 pt-24 pb-16">
         <div className="max-w-[600px] mx-auto">
           <p className="text-[#18b5d8] text-[14px] font-semibold tracking-[0.15em] uppercase mb-5">
             Case Studies
           </p>
-          <h1 className="display-hero text-white mb-5">
+          <h1 className="display-hero text-[#0a0a0a] mb-5" style={{textWrap:"balance"}}>
             Results that speak
             <br />
             <span className="text-[#18b5d8]">louder than promises.</span>
           </h1>
-          <p className="lead-airy text-[#cccccc]">
+          <p className="lead-airy text-[#333333]">
             Real Tampa Bay businesses. Real numbers. Real timelines.
           </p>
         </div>
@@ -46,28 +46,28 @@ export default function CaseStudiesPage() {
         </section>
 
         {/* Stats */}
-        <section className="bg-[#f5f5f7] py-12 px-6">
-          <div className="max-w-[760px] mx-auto grid grid-cols-3 gap-8 text-center">
-            <div>
-              <p className="text-[48px] font-semibold leading-none tracking-tight text-[#18b5d8] mb-2">
+        <section className="bg-[#07141a] py-14 px-6">
+          <div className="max-w-[760px] mx-auto grid grid-cols-3 divide-x divide-white/8 text-center">
+            <div className="px-6 py-2">
+              <p className="text-[clamp(2.4rem,5vw,3.5rem)] font-bold leading-none tracking-tight text-[#18b5d8] mb-3">
                 #32→#2
               </p>
-              <p className="text-[15px] font-semibold text-[#1d1d1f]">Best rank jump</p>
-              <p className="text-[13px] text-[#7a7a7a] mt-1">"same day AC repair"</p>
+              <p className="text-[15px] font-semibold text-white">Best rank jump</p>
+              <p className="text-[13px] text-white/40 mt-1">"same day AC repair"</p>
             </div>
-            <div>
-              <p className="text-[48px] font-semibold leading-none tracking-tight text-[#18b5d8] mb-2">
+            <div className="px-6 py-2">
+              <p className="text-[clamp(2.4rem,5vw,3.5rem)] font-bold leading-none tracking-tight text-[#18b5d8] mb-3">
                 6
               </p>
-              <p className="text-[15px] font-semibold text-[#1d1d1f]">Keywords won</p>
-              <p className="text-[13px] text-[#7a7a7a] mt-1">high-intent moved to top 3</p>
+              <p className="text-[15px] font-semibold text-white">Keywords in top 3</p>
+              <p className="text-[13px] text-white/40 mt-1">all high-intent local searches</p>
             </div>
-            <div>
-              <p className="text-[48px] font-semibold leading-none tracking-tight text-[#18b5d8] mb-2">
-                &lt;30
+            <div className="px-6 py-2">
+              <p className="text-[clamp(2.4rem,5vw,3.5rem)] font-bold leading-none tracking-tight text-[#18b5d8] mb-3">
+                30d
               </p>
-              <p className="text-[15px] font-semibold text-[#1d1d1f]">Days</p>
-              <p className="text-[13px] text-[#7a7a7a] mt-1">to top local positions</p>
+              <p className="text-[15px] font-semibold text-white">Days to results</p>
+              <p className="text-[13px] text-white/40 mt-1">top local positions</p>
             </div>
           </div>
         </section>
@@ -151,28 +151,28 @@ export default function CaseStudiesPage() {
         </section>
 
         {/* Stats */}
-        <section className="bg-[#f5f5f7] py-12 px-6">
-          <div className="max-w-[760px] mx-auto grid grid-cols-3 gap-8 text-center">
-            <div>
-              <p className="text-[48px] font-semibold leading-none tracking-tight text-[#18b5d8] mb-2">
+        <section className="bg-[#07141a] py-14 px-6">
+          <div className="max-w-[760px] mx-auto grid grid-cols-3 divide-x divide-white/8 text-center">
+            <div className="px-6 py-2">
+              <p className="text-[clamp(2.4rem,5vw,3.5rem)] font-bold leading-none tracking-tight text-[#18b5d8] mb-3">
                 +20%
               </p>
-              <p className="text-[15px] font-semibold text-[#1d1d1f]">AI recommendations</p>
-              <p className="text-[13px] text-[#7a7a7a] mt-1">within 30 days</p>
+              <p className="text-[15px] font-semibold text-white">AI recommendations</p>
+              <p className="text-[13px] text-white/40 mt-1">within 30 days</p>
             </div>
-            <div>
-              <p className="text-[48px] font-semibold leading-none tracking-tight text-[#18b5d8] mb-2">
+            <div className="px-6 py-2">
+              <p className="text-[clamp(2.4rem,5vw,3.5rem)] font-bold leading-none tracking-tight text-[#18b5d8] mb-3">
                 #4→#1
               </p>
-              <p className="text-[15px] font-semibold text-[#1d1d1f]">Local ranking</p>
-              <p className="text-[13px] text-[#7a7a7a] mt-1">"Best Realtors in Wesley Chapel"</p>
+              <p className="text-[15px] font-semibold text-white">Local ranking</p>
+              <p className="text-[13px] text-white/40 mt-1">"Best Realtors in Wesley Chapel"</p>
             </div>
-            <div>
-              <p className="text-[48px] font-semibold leading-none tracking-tight text-[#18b5d8] mb-2">
+            <div className="px-6 py-2">
+              <p className="text-[clamp(2.4rem,5vw,3.5rem)] font-bold leading-none tracking-tight text-[#18b5d8] mb-3">
                 2,000+
               </p>
-              <p className="text-[15px] font-semibold text-[#1d1d1f]">Competing agents</p>
-              <p className="text-[13px] text-[#7a7a7a] mt-1">in the Wesley Chapel market</p>
+              <p className="text-[15px] font-semibold text-white">Competing agents</p>
+              <p className="text-[13px] text-white/40 mt-1">outranked in the local market</p>
             </div>
           </div>
         </section>
@@ -242,28 +242,28 @@ export default function CaseStudiesPage() {
         </section>
 
         {/* Stats */}
-        <section className="bg-[#f5f5f7] py-12 px-6">
-          <div className="max-w-[760px] mx-auto grid grid-cols-3 gap-8 text-center">
-            <div>
-              <p className="text-[48px] font-semibold leading-none tracking-tight text-[#18b5d8] mb-2">
-                Top
+        <section className="bg-[#07141a] py-14 px-6">
+          <div className="max-w-[760px] mx-auto grid grid-cols-3 divide-x divide-white/8 text-center">
+            <div className="px-6 py-2">
+              <p className="text-[clamp(2.4rem,5vw,3.5rem)] font-bold leading-none tracking-tight text-[#18b5d8] mb-3">
+                #1
               </p>
-              <p className="text-[15px] font-semibold text-[#1d1d1f]">AI recommended</p>
-              <p className="text-[13px] text-[#7a7a7a] mt-1">Named, described &amp; linked by AI</p>
+              <p className="text-[15px] font-semibold text-white">AI recommended</p>
+              <p className="text-[13px] text-white/40 mt-1">Named, described &amp; linked by AI</p>
             </div>
-            <div>
-              <p className="text-[48px] font-semibold leading-none tracking-tight text-[#18b5d8] mb-2">
+            <div className="px-6 py-2">
+              <p className="text-[clamp(2.4rem,5vw,3.5rem)] font-bold leading-none tracking-tight text-[#18b5d8] mb-3">
                 3
               </p>
-              <p className="text-[15px] font-semibold text-[#1d1d1f]">AI platforms</p>
-              <p className="text-[13px] text-[#7a7a7a] mt-1">ChatGPT, Gemini, Perplexity</p>
+              <p className="text-[15px] font-semibold text-white">AI platforms</p>
+              <p className="text-[13px] text-white/40 mt-1">ChatGPT, Gemini, Perplexity</p>
             </div>
-            <div>
-              <p className="text-[48px] font-semibold leading-none tracking-tight text-[#18b5d8] mb-2">
-                Local
+            <div className="px-6 py-2">
+              <p className="text-[clamp(2.4rem,5vw,3.5rem)] font-bold leading-none tracking-tight text-[#18b5d8] mb-3">
+                30d
               </p>
-              <p className="text-[15px] font-semibold text-[#1d1d1f]">Query captured</p>
-              <p className="text-[13px] text-[#7a7a7a] mt-1">"Smart vending in Wesley Chapel"</p>
+              <p className="text-[15px] font-semibold text-white">Days to visibility</p>
+              <p className="text-[13px] text-white/40 mt-1">from invisible to top result</p>
             </div>
           </div>
         </section>
@@ -343,28 +343,28 @@ export default function CaseStudiesPage() {
         </section>
 
         {/* Stats */}
-        <section className="bg-[#f5f5f7] py-12 px-6">
-          <div className="max-w-[760px] mx-auto grid grid-cols-3 gap-8 text-center">
-            <div>
-              <p className="text-[48px] font-semibold leading-none tracking-tight text-[#18b5d8] mb-2">
+        <section className="bg-[#07141a] py-14 px-6">
+          <div className="max-w-[760px] mx-auto grid grid-cols-3 divide-x divide-white/8 text-center">
+            <div className="px-6 py-2">
+              <p className="text-[clamp(2.4rem,5vw,3.5rem)] font-bold leading-none tracking-tight text-[#18b5d8] mb-3">
                 96%
               </p>
-              <p className="text-[15px] font-semibold text-[#1d1d1f]">AI visibility gap</p>
-              <p className="text-[13px] text-[#7a7a7a] mt-1">of businesses not recommended by AI</p>
+              <p className="text-[15px] font-semibold text-white">AI visibility gap</p>
+              <p className="text-[13px] text-white/40 mt-1">of members not recommended by AI</p>
             </div>
-            <div>
-              <p className="text-[48px] font-semibold leading-none tracking-tight text-[#18b5d8] mb-2">
-                &lt;30
+            <div className="px-6 py-2">
+              <p className="text-[clamp(2.4rem,5vw,3.5rem)] font-bold leading-none tracking-tight text-[#18b5d8] mb-3">
+                30d
               </p>
-              <p className="text-[15px] font-semibold text-[#1d1d1f]">Days</p>
-              <p className="text-[13px] text-[#7a7a7a] mt-1">to measurable AI visibility gains</p>
+              <p className="text-[15px] font-semibold text-white">Days to results</p>
+              <p className="text-[13px] text-white/40 mt-1">measurable AI visibility gains</p>
             </div>
-            <div>
-              <p className="text-[48px] font-semibold leading-none tracking-tight text-[#18b5d8] mb-2">
-                3
+            <div className="px-6 py-2">
+              <p className="text-[clamp(2.4rem,5vw,3.5rem)] font-bold leading-none tracking-tight text-[#18b5d8] mb-3">
+                10×
               </p>
-              <p className="text-[15px] font-semibold text-[#1d1d1f]">Targeted steps</p>
-              <p className="text-[13px] text-[#7a7a7a] mt-1">using the AI Visibility Toolkit</p>
+              <p className="text-[15px] font-semibold text-white">More AI citations</p>
+              <p className="text-[13px] text-white/40 mt-1">Chamber as trusted local source</p>
             </div>
           </div>
         </section>
