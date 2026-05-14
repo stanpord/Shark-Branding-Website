@@ -1,13 +1,6 @@
 import Link from "next/link";
 import HackathonBanner from "@/components/HackathonBanner";
 
-const stats = [
-  { value: "#2", label: "Google ranking in 30 days", sub: "from #32" },
-  { value: "583", label: "Listing score", sub: "up from 64" },
-  { value: "48h", label: "Free report turnaround", sub: "" },
-  { value: "30", label: "Days to measurable ranking movement", sub: "days" },
-];
-
 const services = [
   {
     title: "AI Business Consulting",
@@ -73,29 +66,6 @@ export default function Home() {
       {/* ── Hackathon banner ── */}
       <HackathonBanner />
 
-      {/* ── Stats — light tile ── */}
-      <section className="bg-white py-20 px-6">
-        <div className="max-w-[980px] mx-auto">
-          <h2 className="display-md text-[#1d1d1f] text-center mb-14" style={{textWrap:"balance"}}>
-            Results that speak louder than promises.
-          </h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-10">
-            {stats.map((s) => (
-              <div key={s.value} className="text-center">
-                <p className="text-[56px] font-semibold leading-none tracking-tight text-[#18b5d8] mb-2">
-                  {s.value}
-                </p>
-                <p className="text-[17px] text-[#1d1d1f] leading-snug">
-                  {s.label}
-                </p>
-                {s.sub && (
-                  <p className="text-[14px] text-[#7a7a7a] mt-1">{s.sub}</p>
-                )}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* ── Services — dark tile ── */}
       <section className="bg-[#07141a] py-20 px-6">
