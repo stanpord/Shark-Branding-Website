@@ -1,86 +1,134 @@
 import Link from "next/link";
+import Image from "next/image";
 import HackathonBanner from "@/components/HackathonBanner";
 
-const services = [
+const solutions = [
   {
     n: "01",
-    title: "AI Business Consulting",
-    body: "Your customers are asking AI for recommendations — not just Google. We make sure Perplexity, ChatGPT, and Google AI Overviews answer with your name.",
-    href: "/services#ai-visibility",
+    title: "AI Visibility Toolkit",
+    body: "Get found on Google, ChatGPT, and Gemini — without paying for ads. We fix every gap in how AI discovers, evaluates, and recommends your business.",
+    href: "/plans",
+    tag: "Most Popular",
   },
   {
     n: "02",
-    title: "AI Visibility Toolkit",
-    body: "A structured framework to fix every visibility gap: search signals, trust indicators, listing accuracy, and AI readiness — all in one system.",
-    href: "/services#toolkit",
+    title: "AI Marketing Bots",
+    body: "Conversations that convert 24/7. AI that qualifies leads, books appointments, answers objections, and follows up — sounding like your best salesperson.",
+    href: "/solutions#marketing",
+    tag: null,
   },
   {
     n: "03",
-    title: "Workshops & Training",
-    body: "Equip your team or chamber organization with the modern buyer discovery knowledge that changes how you compete.",
-    href: "/services#workshops",
+    title: "AI Operations & Automation",
+    body: "Remove the bottlenecks. AI that handles intake, scheduling, reporting, follow-up, and internal workflows — so your team focuses on what only humans can do.",
+    href: "/solutions#operations",
+    tag: null,
   },
   {
     n: "04",
-    title: "Free Visibility Report",
-    body: "See exactly how your business appears across search, maps, reviews, and AI platforms — delivered in 48 hours, no strings attached.",
-    href: "/services#report",
+    title: "Custom AI Consulting",
+    body: "Strategy, build, and deployment. We map your operations, identify every automation opportunity, and implement AI that fits your business — not a template.",
+    href: "/solutions#consulting",
+    tag: null,
   },
 ];
+
 
 export default function Home() {
   return (
     <>
+      {/* ── Hackathon Banner ── */}
+      <HackathonBanner />
+
       {/* ── Hero ── */}
-      <section className="bg-white min-h-screen flex flex-col items-center justify-center text-center px-6 pt-24 pb-20">
-        <div className="max-w-[760px] mx-auto">
-          <p className="text-[#18b5d8] text-[13px] font-semibold tracking-[0.2em] uppercase mb-8">
-            AI Business Consulting
-          </p>
-          <h1 className="display-hero text-[#0a0a0a] mb-6" style={{ textWrap: "balance" }}>
-            Get Found. Get Trusted.
-            <br />
-            <span className="text-[#18b5d8]">Get Chosen.</span>
-          </h1>
-          <p className="lead-airy text-[#333333] max-w-[560px] mx-auto mb-12" style={{ textWrap: "balance" }}>
-            AI Business Consulting that makes your company run better, grow faster, and stay visible — even when you&rsquo;re not there.
-          </p>
-          <div className="flex flex-wrap items-center justify-center gap-4">
-            <Link
-              href="/free-report"
-              className="btn-press bg-[#0a0a0a] text-white text-[17px] font-semibold rounded-full px-[28px] py-[14px] hover:bg-[#18b5d8] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 [touch-action:manipulation]"
-            >
-              Get Free Visibility Report
-            </Link>
-            <Link
-              href="/services"
-              className="btn-press text-[#1d1d1f] text-[17px] border border-[#d2d2d7] rounded-full px-[28px] py-[14px] hover:border-[#0a0a0a] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 [touch-action:manipulation]"
-            >
-              Explore Services
-            </Link>
+      <section className="bg-white px-6 pt-20 pb-16">
+        <div className="max-w-[1100px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[88vh]">
+          {/* Left: copy */}
+          <div>
+            <p className="text-[#18b5d8] text-[13px] font-semibold tracking-[0.2em] uppercase mb-8">
+              Shark AI Solutions &nbsp;&middot;&nbsp; AI Business Consulting
+            </p>
+            <h1 className="display-hero text-[#0a0a0a] mb-6">
+              Run Better.
+              <br />
+              Grow Faster.
+              <br />
+              <span className="text-[#18b5d8]">Stay Loyal.</span>
+            </h1>
+            <p className="lead-airy text-[#444] max-w-[520px] mb-4">
+              AI business consulting that makes your company operate more efficiently, scale faster, and serve customers better &mdash; even when you&rsquo;re not there.
+            </p>
+            <p className="text-[15px] text-[#18b5d8] font-semibold mb-10 tracking-wide">
+              The most human-like AI on the market. Built for business.
+            </p>
+            <div className="flex flex-wrap gap-4">
+              <Link
+                href="/contact"
+                className="btn-press bg-[#0a0a0a] text-white text-[17px] font-semibold rounded-full px-[32px] py-[15px] hover:bg-[#18b5d8] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 [touch-action:manipulation]"
+              >
+                Book a Discovery Call
+              </Link>
+              <Link
+                href="/solutions"
+                className="btn-press text-[#1d1d1f] text-[17px] border border-[#d2d2d7] rounded-full px-[32px] py-[15px] hover:border-[#0a0a0a] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 [touch-action:manipulation]"
+              >
+                See Our Solutions
+              </Link>
+            </div>
+          </div>
+          {/* Right: image */}
+          <div className="relative rounded-[24px] overflow-hidden shadow-2xl">
+            <Image
+              src="/ai-visibility-hero.webp"
+              alt="AI recommends your business above competitors in Tampa Bay"
+              width={900}
+              height={900}
+              className="w-full h-auto object-cover"
+              priority
+            />
           </div>
         </div>
       </section>
 
-      {/* ── Hackathon banner ── */}
-      <HackathonBanner />
+      {/* ── Why it matters ── */}
+      <section className="bg-white py-20 px-6">
+        <div className="max-w-[980px] mx-auto">
+          <div className="rounded-[20px] overflow-hidden shadow-lg border border-[#e5e5e5]">
+            <Image
+              src="/infographic-ai-decision.png"
+              alt="Google shows options. AI makes the decision faster."
+              width={1400}
+              height={900}
+              className="w-full h-auto"
+            />
+          </div>
+        </div>
+      </section>
 
-      {/* ── Services ── */}
+      {/* ── Solutions ── */}
       <section className="bg-[#0a0a0a] py-24 px-6">
         <div className="max-w-[980px] mx-auto">
           <div className="text-center mb-16">
-            <p className="text-[13px] font-semibold tracking-[0.2em] uppercase text-[#18b5d8] mb-4">What We Do</p>
-            <h2 className="display-lg text-white" style={{ textWrap: "balance" }}>
-              AI solutions for forward-thinking businesses.
+            <p className="text-[13px] font-semibold tracking-[0.2em] uppercase text-[#18b5d8] mb-4">What We Build</p>
+            <h2 className="display-lg text-white mb-4" style={{ textWrap: "balance" }}>
+              AI solutions for every part of your business.
             </h2>
+            <p className="lead-airy text-white/50 max-w-[520px] mx-auto" style={{ textWrap: "balance" }}>
+              From getting found online to running your operations — we build AI that works like your best employee, only better.
+            </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-            {services.map((s) => (
+            {solutions.map((s) => (
               <Link
                 key={s.href}
                 href={s.href}
-                className="group bg-[#07141a] rounded-[20px] p-8 border border-white/5 hover:border-[#18b5d8]/30 motion-safe:transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0a0a]"
+                className="group relative bg-[#07141a] rounded-[20px] p-8 border border-white/5 hover:border-[#18b5d8]/30 motion-safe:transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0a0a]"
               >
+                {s.tag && (
+                  <span className="absolute top-6 right-6 bg-[#18b5d8]/10 text-[#18b5d8] text-[10px] font-bold tracking-[0.16em] uppercase px-3 py-1 rounded-full border border-[#18b5d8]/20">
+                    {s.tag}
+                  </span>
+                )}
                 <span className="font-mono text-[#18b5d8] text-[11px] tracking-[0.22em] uppercase block mb-5">{s.n}</span>
                 <h3 className="text-[21px] font-semibold text-white mb-3 group-hover:text-[#18b5d8] motion-safe:transition-colors duration-150">
                   {s.title}
@@ -98,10 +146,60 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ── The Shift ── */}
+      <section className="bg-[#f5f5f7] py-20 px-6">
+        <div className="max-w-[980px] mx-auto">
+          <div className="rounded-[20px] overflow-hidden shadow-lg border border-[#e5e5e5]">
+            <Image
+              src="/infographic-shift-wins.png"
+              alt="The shift that wins the decision — from Get Found to Get Chosen"
+              width={1400}
+              height={900}
+              className="w-full h-auto"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* ── Real Results ── */}
+      <section className="bg-white py-20 px-6">
+        <div className="max-w-[980px] mx-auto">
+          <div className="text-center mb-12">
+            <p className="text-[13px] font-semibold tracking-[0.2em] uppercase text-[#18b5d8] mb-4">Client Results</p>
+            <h2 className="display-lg text-[#0a0a0a]" style={{ textWrap: "balance" }}>
+              Real results. Real fast.
+            </h2>
+          </div>
+          <div className="rounded-[20px] overflow-hidden shadow-lg border border-[#e5e5e5] mb-8">
+            <Image
+              src="/infographic-real-results.png"
+              alt="Real results across HVAC, AI code impact, and social media clients"
+              width={1400}
+              height={800}
+              className="w-full h-auto"
+            />
+          </div>
+          <div className="rounded-[20px] overflow-hidden shadow-lg border border-[#e5e5e5]">
+            <Image
+              src="/hvac-ranking-table.png"
+              alt="HVAC client keyword rankings: from #32 to #2 in under 30 days"
+              width={1400}
+              height={900}
+              className="w-full h-auto"
+            />
+          </div>
+          <div className="text-center mt-8">
+            <Link href="/hvac-local-seo-case-study" className="text-[#18b5d8] text-[15px] font-semibold hover:underline">
+              Read the full HVAC case study &rarr;
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* ── Testimonial ── */}
       <section className="bg-white py-24 px-6">
         <div className="max-w-[720px] mx-auto text-center">
-          <p className="text-[13px] font-semibold tracking-[0.2em] uppercase text-[#18b5d8] mb-10">Client Story</p>
+          <p className="text-[13px] font-semibold tracking-[0.2em] uppercase text-[#18b5d8] mb-10">Client Result</p>
           <blockquote className="display-md text-[#0a0a0a] mb-10 leading-relaxed" style={{ textWrap: "balance" }}>
             &ldquo;They completely transformed how our business shows up online&hellip; we&rsquo;re now showing up on AI search platforms, where before we were basically invisible.&rdquo;
           </blockquote>
@@ -111,22 +209,45 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ── Team ── */}
+      <section className="bg-[#f5f5f7] py-20 px-6">
+        <div className="max-w-[980px] mx-auto">
+          <div className="rounded-[20px] overflow-hidden shadow-lg border border-[#e5e5e5]">
+            <Image
+              src="/team-photo.png"
+              alt="Meet the Shark AI Solutions team — Michelle Stanaland, Josh Stanaland, Tiffany Fancher"
+              width={1400}
+              height={800}
+              className="w-full h-auto"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* ── CTA ── */}
       <section className="bg-[#0a0a0a] py-28 px-6 text-center">
-        <div className="max-w-[600px] mx-auto">
-          <p className="text-[13px] font-semibold tracking-[0.2em] uppercase text-[#18b5d8] mb-6">Find out now</p>
+        <div className="max-w-[620px] mx-auto">
+          <p className="text-[13px] font-semibold tracking-[0.2em] uppercase text-[#18b5d8] mb-6">Ready to start</p>
           <h2 className="display-lg text-white mb-6" style={{ textWrap: "balance" }}>
-            Is your business invisible to AI?
+            Your business, running on AI.
           </h2>
           <p className="lead-airy text-white/50 mb-12" style={{ textWrap: "balance" }}>
-            Find out in 48 hours — completely free. We&rsquo;ll show you exactly where you stand across search, maps, and AI platforms.
+            Book a free discovery call. We&rsquo;ll map your operations, identify every AI opportunity, and show you exactly what&rsquo;s possible &mdash; no commitment required.
           </p>
-          <Link
-            href="/free-report"
-            className="btn-press inline-block bg-[#18b5d8] text-white text-[18px] font-semibold rounded-full px-[32px] py-[15px] hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0a0a] [touch-action:manipulation]"
-          >
-            Get My Free Report
-          </Link>
+          <div className="flex flex-wrap items-center justify-center gap-4">
+            <Link
+              href="/contact"
+              className="btn-press inline-block bg-[#18b5d8] text-white text-[18px] font-semibold rounded-full px-[32px] py-[15px] hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0a0a] [touch-action:manipulation]"
+            >
+              Book a Free Discovery Call
+            </Link>
+            <Link
+              href="/plans"
+              className="btn-press inline-block text-white text-[18px] font-semibold rounded-full px-[32px] py-[15px] border border-white/20 hover:border-white/50 motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0a0a] [touch-action:manipulation]"
+            >
+              See Pricing
+            </Link>
+          </div>
         </div>
       </section>
     </>
