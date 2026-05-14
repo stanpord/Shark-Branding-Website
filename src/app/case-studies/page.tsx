@@ -81,7 +81,7 @@ export default function CaseStudiesPage() {
               { v: "30d",    label: "Time to results", sub: "top local positions" },
             ].map((s) => (
               <div key={s.label} className="px-8 py-4 text-center first:pl-0 last:pr-0">
-                <p className="text-[clamp(3rem,7vw,6rem)] font-bold leading-none tracking-tight text-[#18b5d8] mb-3">
+                <p className="text-[clamp(2rem,4vw,3.5rem)] font-bold leading-none tracking-tight text-[#18b5d8] mb-3">
                   {s.v}
                 </p>
                 <p className="text-[15px] font-semibold text-white mb-1">{s.label}</p>
@@ -178,7 +178,7 @@ export default function CaseStudiesPage() {
               { v: "2,000+", label: "Agents outranked", sub: "Wesley Chapel market" },
             ].map((s) => (
               <div key={s.label} className="px-8 py-4 text-center first:pl-0 last:pr-0">
-                <p className="text-[clamp(3rem,7vw,6rem)] font-bold leading-none tracking-tight text-[#18b5d8] mb-3">
+                <p className="text-[clamp(2rem,4vw,3.5rem)] font-bold leading-none tracking-tight text-[#18b5d8] mb-3">
                   {s.v}
                 </p>
                 <p className="text-[15px] font-semibold text-white mb-1">{s.label}</p>
@@ -265,7 +265,7 @@ export default function CaseStudiesPage() {
               { v: "30d", label: "Time to visibility", sub: "invisible → top result" },
             ].map((s) => (
               <div key={s.label} className="px-8 py-4 text-center first:pl-0 last:pr-0">
-                <p className="text-[clamp(3rem,7vw,6rem)] font-bold leading-none tracking-tight text-[#18b5d8] mb-3">
+                <p className="text-[clamp(2rem,4vw,3.5rem)] font-bold leading-none tracking-tight text-[#18b5d8] mb-3">
                   {s.v}
                 </p>
                 <p className="text-[15px] font-semibold text-white mb-1">{s.label}</p>
@@ -359,7 +359,7 @@ export default function CaseStudiesPage() {
               { v: "30d",  label: "Days to results", sub: "measurable visibility gains" },
             ].map((s) => (
               <div key={s.label} className="px-8 py-4 text-center first:pl-0 last:pr-0">
-                <p className="text-[clamp(3rem,7vw,6rem)] font-bold leading-none tracking-tight text-[#18b5d8] mb-3">
+                <p className="text-[clamp(2rem,4vw,3.5rem)] font-bold leading-none tracking-tight text-[#18b5d8] mb-3">
                   {s.v}
                 </p>
                 <p className="text-[15px] font-semibold text-white mb-1">{s.label}</p>
