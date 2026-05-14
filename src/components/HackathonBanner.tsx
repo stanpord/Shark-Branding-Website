@@ -25,7 +25,7 @@ const ARENAS = [
 export default function HackathonBanner() {
   return (
     <Link
-      href="/Hackathon"
+      href="/hackathon"
       className="group block bg-black focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-inset"
       aria-label="Shark AI Hackathon — May 26, 2026 — Come Try to Break Our AI Employees. Click to learn more and reserve your spot"
     >
