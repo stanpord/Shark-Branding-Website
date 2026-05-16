@@ -13,21 +13,47 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Shark Branding Solutions — AI Business Consulting",
+  title: "Shark Branding Solutions — AI Business Consulting | Tampa Bay, FL",
   description:
-    "AI Business Consulting that makes your company run better, grow faster, and stay visible — even when you're not there.",
+    "AI Business Consulting for Tampa Bay businesses. Get found by ChatGPT, Google AI Overviews & Gemini — without ads. Serving Wesley Chapel, Lutz, Land O' Lakes & St. Pete.",
   keywords: [
     "AI business consulting",
     "AI visibility",
     "ChatGPT SEO",
     "AI search optimization",
     "Tampa Bay marketing",
+    "Wesley Chapel marketing consultant",
+    "AI visibility toolkit",
+    "generative engine optimization",
   ],
+  alternates: {
+    canonical: "https://sharkbrandingsolutions.com",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
   openGraph: {
-    title: "Shark Branding Solutions",
+    title: "Shark Branding Solutions — AI Business Consulting",
     description:
-      "Get Found. Get Trusted. Get Chosen. AI solutions for forward-thinking businesses.",
+      "Get Found. Get Trusted. Get Chosen. AI solutions for Tampa Bay businesses — without paying for ads.",
     type: "website",
+    url: "https://sharkbrandingsolutions.com",
+    images: [
+      {
+        url: "https://sharkbrandingsolutions.com/ai-visibility-hero.webp",
+        width: 900,
+        height: 900,
+        alt: "Shark Branding Solutions — AI Business Consulting for Tampa Bay",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Shark Branding Solutions — AI Business Consulting",
+    description:
+      "Get Found. Get Trusted. Get Chosen. AI solutions for Tampa Bay businesses.",
+    images: ["https://sharkbrandingsolutions.com/ai-visibility-hero.webp"],
   },
 };
 
@@ -75,7 +101,67 @@ const structuredData = {
         "marketing automation",
         "reputation management",
       ],
-      sameAs: [],
+      sameAs: [
+        "https://www.linkedin.com/company/shark-branding-solutions",
+        "https://sharkbrandingsolutions.com",
+      ],
+    },
+    {
+      "@type": "Review",
+      "@id": "https://sharkbrandingsolutions.com/#review-tuttle",
+      itemReviewed: {
+        "@id": "https://sharkbrandingsolutions.com/#organization",
+      },
+      author: {
+        "@type": "Person",
+        name: "Jonathan Tuttle",
+        description: "Drywall Company Owner — Pinellas County, FL",
+      },
+      reviewRating: {
+        "@type": "Rating",
+        ratingValue: "5",
+        bestRating: "5",
+      },
+      reviewBody:
+        "They completely transformed how our business shows up online. We're now showing up on AI search platforms, where before we were basically invisible.",
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://sharkbrandingsolutions.com/#faq",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "What is AI visibility consulting?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "AI visibility consulting helps your business get found and recommended by AI-powered search tools like ChatGPT, Google AI Overviews, and Gemini. We optimize your listings, content, and trust signals so AI recommends you — not your competitors.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How does Shark Branding Solutions help Tampa Bay businesses?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "We provide AI business consulting, AI visibility toolkits, AI marketing bots, and operations automation for local businesses in Wesley Chapel, Lutz, Land O' Lakes, St. Petersburg, and Tampa. Our clients typically see measurable ranking improvements within 30 days.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How quickly can I see results from AI visibility optimization?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Most clients see measurable improvements within 30 days. One HVAC client moved from #32 to #2 in under 30 days after we optimized their AI visibility signals.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Do I need to run ads to appear in AI search results?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "No. AI recommendations from ChatGPT, Gemini, and Google AI Overviews are based on trust signals, consistent business data, reviews, and content quality — not paid ads. Our AI Visibility Toolkit targets exactly these organic signals.",
+          },
+        },
+      ],
     },
   ],
 };

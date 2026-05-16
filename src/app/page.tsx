@@ -14,21 +14,21 @@ const solutions = [
     n: "02",
     title: "AI Marketing Bots",
     body: "Conversations that convert 24/7. AI that qualifies leads, books appointments, answers objections, and follows up — sounding like your best salesperson.",
-    href: "/solutions#marketing",
+    href: "/marketing",
     tag: null,
   },
   {
     n: "03",
     title: "AI Operations & Automation",
     body: "Remove the bottlenecks. AI that handles intake, scheduling, reporting, follow-up, and internal workflows — so your team focuses on what only humans can do.",
-    href: "/solutions#operations",
+    href: "/operations",
     tag: null,
   },
   {
     n: "04",
     title: "Custom AI Consulting",
     body: "Strategy, build, and deployment. We map your operations, identify every automation opportunity, and implement AI that fits your business — not a template.",
-    href: "/solutions#consulting",
+    href: "/services",
     tag: null,
   },
 ];
@@ -189,7 +189,7 @@ export default function Home() {
             />
           </div>
           <div className="text-center mt-8">
-            <Link href="/hvac-local-seo-case-study" className="text-[#18b5d8] text-[15px] font-semibold hover:underline">
+            <Link href="/case-studies" className="text-[#18b5d8] text-[15px] font-semibold hover:underline">
               Read the full HVAC case study &rarr;
             </Link>
           </div>
