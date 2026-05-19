@@ -2,6 +2,8 @@ import { NextRequest, NextResponse } from 'next/server'
 import { cookies } from 'next/headers'
 import Anthropic from '@anthropic-ai/sdk'
 
+export const maxDuration = 60
+
 const anthropic = new Anthropic()
 
 export async function POST(req: NextRequest) {
@@ -72,7 +74,6 @@ ${html.slice(0, 15000)}`
     const message = await anthropic.messages.create({
       model: 'claude-opus-4-6',
       max_tokens: 2048,
-      thinking: { type: 'adaptive' },
       messages: [{ role: 'user', content: prompt }],
     })
 
@@ -86,7 +87,16 @@ ${html.slice(0, 15000)}`
       return NextResponse.json({ error: 'Claude returned an unexpected format.' }, { status: 500 })
     }
 
-    const result = JSON.parse(match[0])
+    // Strip trailing commas before closing braces/brackets (common Claude quirk)
+    const cleaned = match[0].replace(/,(\s*[}\]])/g, '$1')
+
+    let result
+    try {
+      result = JSON.parse(cleaned)
+    } catch {
+      return NextResponse.json({ error: 'Could not parse audit result — please try again.' }, { status: 500 })
+    }
+
     return NextResponse.json(result)
   } catch (err) {
     const msg = err instanceof Error ? err.message : 'Unknown error'

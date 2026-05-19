@@ -19,7 +19,7 @@ export default function Page() {
     >
       <p>The business landscape in North Tampa Bay just shifted. If you&rsquo;re still playing the old game of trying to &ldquo;rank&rdquo; on page one of Google, you might already be falling behind. The world has moved beyond simple search bars. Today, your customers are asking ChatGPT for recommendations, using Gemini to plan their weekends, and letting AI-powered assistants decide which resources they should trust and where they should spend their money.</p>
       <p>Are you ready for that shift? Or is your business invisible to the very technology your customers are using every single day?</p>
-      <p>At Shark Branding Solutions, we don&rsquo;t believe in standing still. That&rsquo;s why we are incredibly proud to announce a landmark partnership with the <strong>North Tampa Bay Chamber (NTBC)</strong>. This isn&rsquo;t just another networking collaboration; it&rsquo;s a mission to ensure that every business in our community is &ldquo;AI-Ready.&rdquo;</p>
+      <p>At Shark Branding Solutions, we don&rsquo;t believe in standing still. That&rsquo;s why we are incredibly proud to announce a landmark partnership with the <strong><a href="https://www.northtampabay.org" target="_blank" rel="noopener noreferrer" className="text-[#18b5d8] hover:underline">North Tampa Bay Chamber (NTBC)</a></strong>. This isn&rsquo;t just another networking collaboration; it&rsquo;s a mission to ensure that every business in our community is &ldquo;AI-Ready.&rdquo;</p>
 
       <hr />
 
@@ -63,14 +63,14 @@ export default function Page() {
 
       <h2>An Exclusive Benefit for NTBC Members</h2>
       <p>We believe so strongly in the North Tampa Bay business community that we wanted to do more than just offer a service. We wanted to provide a roadmap.</p>
-      <p>As part of this partnership, <strong>every member of the North Tampa Bay Chamber is entitled to a complimentary Business Visibility Report.</strong></p>
-      <p>This isn&rsquo;t a generic automated printout. This is a deep dive into how your business currently looks to AI models and search engines. It answers the critical questions:</p>
+      <p>As part of this partnership, <strong>every member of the North Tampa Bay Chamber is entitled to a complimentary Free Visibility Audit.</strong></p>
+      <p>This isn&rsquo;t a generic automated printout. This is a deep dive into how your business currently looks to AI models and search engines — and we walk you through every finding together on a quick call. It answers the critical questions:</p>
       <ul>
         <li>Can AI find you?</li>
         <li>Do the machines trust your reputation?</li>
         <li>Are you set up to get chosen over your competitors?</li>
       </ul>
-      <p>You can claim your report right now at <a href="/free-report">sharkbrandingsolutions.com/free-report</a>. It&rsquo;s the first step in future-proofing your business.</p>
+      <p>You can book your free audit right now at <a href="/free-report">sharkbrandingsolutions.com/free-report</a>. It&rsquo;s the first step in future-proofing your business.</p>
 
       <hr />
 
@@ -103,7 +103,7 @@ export default function Page() {
       <h2>Take Action Today</h2>
       <p>The future doesn&rsquo;t wait for a &ldquo;better time.&rdquo; It&rsquo;s happening right now in every ChatGPT prompt, every voice search, and every place people go looking for trusted resources.</p>
       <ol>
-        <li><strong>Claim Your Free Report:</strong> Visit <a href="/free-report">sharkbrandingsolutions.com/free-report</a> to see exactly where your business stands.</li>
+        <li><strong>Book Your Free Visibility Audit:</strong> Visit <a href="/free-report">sharkbrandingsolutions.com/free-report</a> to see exactly where your business stands — we walk you through every finding together on a call.</li>
         <li><strong>Attend a Workshop:</strong> We regularly host deep-dive sessions on AI Visibility. Check out our <a href="/services">upcoming services page</a> to learn how to align your business with modern search behavior.</li>
         <li><strong>Explore the Toolkit:</strong> See how the Chamber and other local businesses are winning by visiting our <a href="/services">AI Visibility Consulting page</a>.</li>
       </ol>

@@ -82,7 +82,7 @@ export default function Page() {
         <li><strong>Start a review velocity campaign.</strong> Reach out to your last 20 happy customers and ask for a specific, detailed review.</li>
         <li><strong>Audit your NAP consistency.</strong> Check Google, Yelp, Facebook, Apple Maps, and Bing Places. Make sure every listing matches exactly.</li>
       </ol>
-      <p>The AI is already calling. The only question is whether you&rsquo;re going to answer. <a href="/free-report">Get your free visibility report</a> today and see exactly where your business stands in the AI discovery landscape&mdash;before your competitor does.</p>
+      <p>The AI is already calling. The only question is whether you&rsquo;re going to answer. <a href="/free-report">Get your free Visibility Audit</a> today and see exactly where your business stands in the AI discovery landscape&mdash;before your competitor does.</p>
     </BlogShell>
   );
 }

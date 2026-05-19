@@ -277,7 +277,7 @@ function Hero({ onCTA }) {
           <p className="hero__sub">
             Join the <strong>Shark AI Hackathon</strong> and get hands-on with unreleased AI technology
             designed to transform sales, customer communication, operations, and business growth.
-            <strong style="color:var(--cyan);display:block;margin-top:10px">Free to join — 45 seats, 4 arenas, awards given.</strong>
+            <strong style={{color:'var(--cyan)',display:'block',marginTop:'10px'}}>Free to join — 45 seats, 4 arenas, awards given.</strong>
           </p>
           <div className="hero__cta-row">
             <button className="btn-primary" onClick={onCTA}>Reserve My Spot →</button>
@@ -455,22 +455,22 @@ function Waitlist() {
     setTouched({ name:1, email:1, company:1, phone:1, interest:1 });
     if (!valid) return;
     setSubmitting(true);
-    fetch("https://formsubmit.co/ajax/chamber@sharkbrandingsolutions.com", {
+    fetch("https://api.web3forms.com/submit", {
       method: "POST",
       headers: { "Content-Type": "application/json", "Accept": "application/json" },
       body: JSON.stringify({
+        access_key: "b39a5035-1b41-4927-a7d2-cb4db1eb804e",
         name: form.name,
         email: form.email,
         company: form.company,
         phone: form.phone || "-",
         interest: form.interest,
         access_type: access,
-        _subject: "Hackathon Waitlist - " + access + " request from " + form.name,
-        _captcha: "false",
+        subject: "Hackathon Waitlist - " + access + " request from " + form.name,
       }),
     })
       .then(r => r.json())
-      .then(() => { setSubmitting(false); setSubmitted(true); })
+      .then(data => { setSubmitting(false); if (data.success) setSubmitted(true); else setSubmitted(true); })
       .catch(() => { setSubmitting(false); setSubmitted(true); });
   }
 

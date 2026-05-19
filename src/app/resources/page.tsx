@@ -147,7 +147,7 @@ export default function ResourcesPage() {
                 AI-Ready: Shark Branding Solutions Partners with North Tampa Bay Chamber to Future-Proof Local Business
               </h2>
               <p className="text-[15px] text-white/55 leading-relaxed mb-6">
-                Shark Branding Solutions partners with the North Tampa Bay Chamber to help every local business get Found, Trusted, and Chosen by AI. NTBC members receive a free Business Visibility Report — no strings attached.
+                Shark Branding Solutions partners with the North Tampa Bay Chamber to help every local business get Found, Trusted, and Chosen by AI. NTBC members receive a free Visibility Audit — we walk you through it together on a quick call.
               </p>
               <div className="flex items-center gap-3 text-[13px] text-white/30">
                 <span>April 15, 2026</span>

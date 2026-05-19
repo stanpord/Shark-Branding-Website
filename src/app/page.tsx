@@ -12,8 +12,8 @@ const solutions = [
   },
   {
     n: "02",
-    title: "AI Marketing Bots",
-    body: "Conversations that convert 24/7. AI that qualifies leads, books appointments, answers objections, and follows up — sounding like your best salesperson.",
+    title: "AI Marketing Employees",
+    body: "Conversations that convert 24/7. AI employees that qualify leads, book appointments, answer objections, and follow up — sounding like your best salesperson.",
     href: "/marketing",
     tag: null,
   },
@@ -38,7 +38,9 @@ export default function Home() {
   return (
     <>
       {/* ── Hackathon Banner ── */}
-      <HackathonBanner />
+      <div className="hidden sm:block">
+        <HackathonBanner />
+      </div>
 
       {/* ── Hero ── */}
       <section className="bg-white px-6 pt-20 pb-16">
@@ -49,17 +51,14 @@ export default function Home() {
               Shark AI Solutions &nbsp;&middot;&nbsp; AI Business Consulting
             </p>
             <h1 className="display-hero text-[#0a0a0a] mb-6">
-              Run Better.
+              AI-Ready Business
               <br />
-              Grow Faster.
+              Consulting for
               <br />
-              <span className="text-[#18b5d8]">Stay Loyal.</span>
+              <span className="text-[#18b5d8]">Tampa Bay.</span>
             </h1>
-            <p className="lead-airy text-[#444] max-w-[520px] mb-4">
-              AI business consulting that makes your company operate more efficiently, scale faster, and serve customers better &mdash; even when you&rsquo;re not there.
-            </p>
-            <p className="text-[15px] text-[#18b5d8] font-semibold mb-10 tracking-wide">
-              The most human-like AI on the market. Built for business.
+            <p className="lead-airy text-[#444] max-w-[520px] mb-10">
+              We build the foundation that gets your business found on ChatGPT, Google AI, and Gemini — and the AI systems that run your operations without adding staff.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
@@ -69,7 +68,7 @@ export default function Home() {
                 Book a Discovery Call
               </Link>
               <Link
-                href="/solutions"
+                href="/services"
                 className="btn-press text-[#1d1d1f] text-[17px] border border-[#d2d2d7] rounded-full px-[32px] py-[15px] hover:border-[#0a0a0a] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 [touch-action:manipulation]"
               >
                 See Our Solutions
@@ -220,6 +219,46 @@ export default function Home() {
               height={800}
               className="w-full h-auto"
             />
+          </div>
+        </div>
+      </section>
+
+      {/* ── How It Works ── */}
+      <section className="bg-white py-24 px-6">
+        <div className="max-w-[980px] mx-auto">
+          <div className="text-center mb-14">
+            <p className="text-[13px] font-semibold tracking-[0.2em] uppercase text-[#18b5d8] mb-4">The Process</p>
+            <h2 className="display-lg text-[#0a0a0a] mb-4" style={{ textWrap: "balance" }}>
+              How AI visibility consulting works.
+            </h2>
+            <p className="lead-airy text-[#444] max-w-[580px] mx-auto" style={{ textWrap: "balance" }}>
+              Most Tampa Bay businesses are invisible to AI. ChatGPT, Gemini, and Google AI Overviews pull from a curated set of trusted sources — and if your business isn&rsquo;t sending the right signals, you&rsquo;re not on that list. Here&rsquo;s how we fix that.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[
+              {
+                n: "01",
+                title: "Audit Your AI Presence",
+                body: "We run a full visibility audit across Google, ChatGPT, Gemini, and Perplexity to find every gap in how AI discovers and evaluates your business. This includes your listings, schema markup, review signals, content structure, and citation consistency across the web.",
+              },
+              {
+                n: "02",
+                title: "Build Your Trust Signals",
+                body: "AI systems recommend businesses they trust. We fix your structured data, optimize your Google Business Profile, clean up inconsistent citations, and create the content signals that tell AI you&rsquo;re the most credible option in your category in the Tampa Bay area.",
+              },
+              {
+                n: "03",
+                title: "Get Recommended — Without Ads",
+                body: "Once your trust signals are in place, AI starts recommending you organically. Clients in Wesley Chapel, Lutz, Land O&rsquo; Lakes, and St. Petersburg have seen keyword rankings move from page 3 to position 1 — and started appearing in ChatGPT responses — within 30 days.",
+              },
+            ].map((step) => (
+              <div key={step.n} className="bg-[#f5f5f7] rounded-[20px] p-8">
+                <span className="font-mono text-[#18b5d8] text-[11px] tracking-[0.22em] uppercase block mb-4">{step.n}</span>
+                <h3 className="text-[19px] font-semibold text-[#0a0a0a] mb-3">{step.title}</h3>
+                <p className="body-copy text-[#444] leading-relaxed">{step.body}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>

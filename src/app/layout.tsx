@@ -68,7 +68,7 @@ const structuredData = {
       url: "https://sharkbrandingsolutions.com",
       logo: "https://sharkbrandingsolutions.com/logo.webp",
       description:
-        "AI Business Consulting for Tampa Bay businesses. We help companies get found by AI, run operations with AI bots, and build the trust signals that make ChatGPT, Perplexity, and Google AI Overviews recommend them.",
+        "AI Business Consulting for Tampa Bay businesses. We help companies get found by AI, run operations with AI employees, and build the trust signals that make ChatGPT, Perplexity, and Google AI Overviews recommend them.",
       telephone: "+17278556505",
       email: "info@sharkbrandingsolutions.com",
       address: {
@@ -105,6 +105,24 @@ const structuredData = {
         "https://www.linkedin.com/company/shark-branding-solutions",
         "https://sharkbrandingsolutions.com",
       ],
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: "5",
+        reviewCount: "12",
+        bestRating: "5",
+        worstRating: "1",
+      },
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://sharkbrandingsolutions.com/#webpage",
+      url: "https://sharkbrandingsolutions.com",
+      name: "AI Visibility Consulting for Tampa Bay Businesses | Shark Branding Solutions",
+      isPartOf: { "@id": "https://sharkbrandingsolutions.com/#organization" },
+      datePublished: "2024-01-01",
+      dateModified: "2026-05-17",
+      description:
+        "AI Business Consulting for Tampa Bay businesses. Get found by ChatGPT, Google AI Overviews & Gemini — without ads.",
     },
     {
       "@type": "Review",
@@ -142,7 +160,7 @@ const structuredData = {
           name: "How does Shark Branding Solutions help Tampa Bay businesses?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "We provide AI business consulting, AI visibility toolkits, AI marketing bots, and operations automation for local businesses in Wesley Chapel, Lutz, Land O' Lakes, St. Petersburg, and Tampa. Our clients typically see measurable ranking improvements within 30 days.",
+            text: "We provide AI business consulting, AI visibility toolkits, AI marketing employees, and operations automation for local businesses in Wesley Chapel, Lutz, Land O' Lakes, St. Petersburg, and Tampa. Our clients typically see measurable ranking improvements within 30 days.",
           },
         },
         {
@@ -178,8 +196,12 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
+        {/* Google Tag Manager */}
+        <script dangerouslySetInnerHTML={{ __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-5T6S7CXR');` }} />
       </head>
       <body className="min-h-full flex flex-col antialiased">
+        {/* Google Tag Manager (noscript) */}
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5T6S7CXR" height="0" width="0" style={{ display: 'none', visibility: 'hidden' }} /></noscript>
         <a
           href="#main-content"
           className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:bg-[#18b5d8] focus:text-white focus:px-4 focus:py-2 focus:rounded-full focus:text-sm focus:font-semibold"

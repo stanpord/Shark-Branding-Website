@@ -2,16 +2,16 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "AI Operations Bots — Shark AI Solutions",
+  title: "AI Operations Employees — Shark Branding Solutions",
   description:
-    "AI-powered operations bots for Tampa Bay businesses. AI CRM, sales coach bots, and custom automation that runs your back office around the clock.",
+    "AI CRM, AI sales coach, and custom operations employees for Tampa Bay businesses. Stop losing leads. Stop repeating tasks. Deploy in 30 days.",
 };
 
 const bots = [
   {
-    n: "01", id: "ai-crm", eyebrow: "Customer Relationships", dark: true,
-    title: "AI CRM Bot",
-    description: "Stop losing leads in spreadsheets. Our AI CRM bot tracks every contact, logs every interaction, sends follow-up sequences automatically, and surfaces the leads most likely to close — without you lifting a finger.",
+    n: "01", id: "ai-crm", eyebrow: "Customer Relationships", dark: true, href: "/contact", cta: "Get a Custom Quote",
+    title: "AI CRM",
+    description: "Stop losing leads in spreadsheets. Your AI CRM tracks every contact, logs every interaction, sends follow-up sequences automatically, and surfaces the leads most likely to close — without you lifting a finger.",
     bullets: [
       "Automatic lead capture and contact enrichment",
       "Intelligent follow-up sequences triggered by behavior",
@@ -19,11 +19,13 @@ const bots = [
       "Weekly summaries of hot leads and at-risk accounts",
       "Integrates with your existing tools",
     ],
+    bestFor: "B2B businesses, service companies quoting multiple jobs, real estate, legal, insurance — any business where follow-up speed wins deals.",
+    roi: "Avg business loses 35–50% of leads from slow follow-up. This fixes that.",
   },
   {
-    n: "02", id: "sales-coach", eyebrow: "Sales Performance", dark: false,
-    title: "Sales Coach Bot",
-    description: "Every sales rep on your team gets a tireless AI coach available 24/7. The Sales Coach Bot reviews calls, scores objection handling, suggests talk tracks, and delivers personalized coaching — turning average reps into closers.",
+    n: "02", id: "sales-coach", eyebrow: "Sales Performance", dark: false, href: "/contact", cta: "Get a Custom Quote",
+    title: "AI Sales Coach",
+    description: "Every sales rep on your team gets a tireless AI coach available 24/7. Your AI Sales Coach reviews calls, scores objection handling, suggests talk tracks, and delivers personalized coaching — turning average reps into closers.",
     bullets: [
       "Call analysis and scoring after every conversation",
       "Real-time objection handling suggestions",
@@ -31,18 +33,45 @@ const bots = [
       "Performance tracking across the team",
       "New rep onboarding acceleration",
     ],
+    bestFor: "Businesses with sales reps who make calls. Multi-rep teams with inconsistent close rates or high turnover in new hires.",
+    roi: "New reps close at senior rep rates in half the time.",
   },
   {
-    n: "03", id: "ops-bots", eyebrow: "Business Automation", dark: true,
-    title: "Custom Operations Bots",
-    description: "Every business has repetitive workflows eating hours every week. We identify your highest-leverage automation opportunities and build custom bots to handle them — scheduling, reporting, intake, client onboarding, and more.",
+    n: "03", id: "ops-bots", eyebrow: "Business Automation", dark: true, href: "/contact", cta: "Get a Custom Quote",
+    title: "Custom AI Employees",
+    description: "Every business has repetitive workflows eating hours every week. We identify your highest-leverage automation opportunities and build custom AI employees to handle them — scheduling, reporting, intake, client onboarding, and more.",
     bullets: [
       "Workflow audit to find your top automation opportunities",
-      "Custom bot built around your specific process",
+      "Custom AI employee built around your specific process",
       "Integration with your current software stack",
       "Staff training and handoff documentation",
       "Ongoing support and iteration",
     ],
+    bestFor: "Medical/dental intake, field service scheduling, contractor job management, franchise operations — admin-heavy businesses burning staff hours on manual work.",
+    roi: "Most clients reclaim 10–20 hours per week within 30 days of deployment.",
+  },
+];
+
+const useCases = [
+  {
+    industry: "HVAC & Field Service",
+    problem: "Dispatchers manually scheduling, rescheduling, and following up on quotes",
+    solution: "Automated scheduling + quote follow-up sequence",
+  },
+  {
+    industry: "Medical & Dental",
+    problem: "Front desk handling all intake, insurance verification, and appointment reminders",
+    solution: "AI intake employee frees your staff for in-person patient care",
+  },
+  {
+    industry: "Real Estate",
+    problem: "Leads going cold because agents are too busy to follow up within the hour",
+    solution: "AI CRM sends personalized follow-up within 5 minutes — every time",
+  },
+  {
+    industry: "Contractors",
+    problem: "Quoting jobs, chasing signatures, and following up on unpaid invoices manually",
+    solution: "End-to-end automation from estimate to payment",
   },
 ];
 
@@ -52,18 +81,34 @@ export default function OperationsPage() {
       {/* ── Hero ── */}
       <section className="bg-white min-h-[90vh] flex flex-col items-center justify-center text-center px-6 pt-24 pb-20">
         <div className="max-w-[720px] mx-auto">
-          <p className="text-[#18b5d8] text-[13px] font-semibold tracking-[0.2em] uppercase mb-3">
-            Shark AI Solutions — Operations
+          <p className="text-[#18b5d8] text-[13px] font-semibold tracking-[0.2em] uppercase mb-8">
+            AI Operations Employees &nbsp;&middot;&nbsp; Shark AI Solutions
           </p>
-          <p className="text-[13px] text-[#7a7a7a] mb-8">A Shark Branding Solutions company</p>
           <h1 className="display-hero text-[#0a0a0a] mb-6" style={{ textWrap: "balance" }}>
-            AI bots that run your
+            AI employees that run your
             <br />
             <span className="text-[#18b5d8]">back office for you.</span>
           </h1>
-          <p className="lead-airy text-[#333333] max-w-[520px] mx-auto mb-14" style={{ textWrap: "balance" }}>
-            CRM, sales coaching, and custom automation — deployed in days, not months. Your team does the work only humans can do.
+          <p className="lead-airy text-[#333333] max-w-[520px] mx-auto mb-10" style={{ textWrap: "balance" }}>
+            CRM, sales coaching, and custom automation — deployed in 30 days. Your team focuses on work only humans can do.
           </p>
+
+          {/* Proof strip */}
+          <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 mb-10">
+            {[
+              "Live in 30 days",
+              "Reclaim 10–20 hrs/week",
+              "No new staff required",
+            ].map((item) => (
+              <div key={item} className="flex items-center gap-2 text-[14px] font-semibold text-[#333333]">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12" stroke="#18b5d8" strokeWidth="2.5" strokeLinecap="round" />
+                </svg>
+                {item}
+              </div>
+            ))}
+          </div>
+
           <div className="flex flex-wrap items-center justify-center gap-3">
             {bots.map((b) => (
               <a
@@ -95,9 +140,15 @@ export default function OperationsPage() {
               <h2 className={`display-lg mb-6 ${b.dark ? "text-white" : "text-[#0a0a0a]"}`} style={{ textWrap: "balance" }}>
                 {b.title}
               </h2>
-              <p className={`body-copy leading-relaxed ${b.dark ? "text-white/60" : "text-[#333333]"}`}>
+              <p className={`body-copy leading-relaxed mb-6 ${b.dark ? "text-white/60" : "text-[#333333]"}`}>
                 {b.description}
               </p>
+              <div className={`rounded-[12px] px-4 py-3 mb-3 text-[13px] leading-relaxed ${b.dark ? "bg-white/5 border border-white/10 text-white/50" : "bg-[#f5f5f7] border border-[#e8e8ed] text-[#7a7a7a]"}`}>
+                <span className={`font-semibold ${b.dark ? "text-white/70" : "text-[#333]"}`}>Best for: </span>{b.bestFor}
+              </div>
+              <div className={`rounded-[12px] px-4 py-3 text-[13px] leading-relaxed ${b.dark ? "bg-[#18b5d8]/10 border border-[#18b5d8]/20 text-[#18b5d8]" : "bg-[#18b5d8]/5 border border-[#18b5d8]/15 text-[#0d8fa8]"}`}>
+                <span className="font-semibold">ROI reality: </span>{b.roi}
+              </div>
             </div>
             <div className="lg:pt-[72px]">
               <ul className="space-y-4 mb-10">
@@ -109,25 +160,67 @@ export default function OperationsPage() {
                 ))}
               </ul>
               <Link
-                href="/contact"
+                href={b.href}
                 className="btn-press inline-block bg-[#18b5d8] text-white text-[15px] font-semibold rounded-full px-7 py-3.5 hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 [touch-action:manipulation]"
               >
-                Learn More
+                {b.cta}
               </Link>
             </div>
           </div>
         </section>
       ))}
 
+      {/* ── Use cases ── */}
+      <section className="bg-[#f5f5f7] py-20 px-6">
+        <div className="max-w-[980px] mx-auto">
+          <div className="text-center mb-12">
+            <p className="text-[13px] font-semibold tracking-[0.2em] uppercase text-[#18b5d8] mb-4">Real-World Applications</p>
+            <h2 className="display-lg text-[#0a0a0a]" style={{ textWrap: "balance" }}>
+              What this looks like for your industry.
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+            {useCases.map((uc) => (
+              <div key={uc.industry} className="bg-white rounded-[20px] px-8 py-7 border border-[#e8e8ed]">
+                <p className="text-[13px] font-bold tracking-[0.12em] uppercase text-[#18b5d8] mb-3">{uc.industry}</p>
+                <p className="text-[15px] text-[#7a7a7a] mb-2"><span className="font-semibold text-[#0a0a0a]">Problem:</span> {uc.problem}</p>
+                <p className="text-[15px] text-[#333333]"><span className="font-semibold text-[#0a0a0a]">Solution:</span> {uc.solution}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── Urgency ── */}
+      <section className="bg-[#07141a] py-16 px-6">
+        <div className="max-w-[720px] mx-auto text-center">
+          <span className="inline-block bg-[#18b5d8]/10 border border-[#18b5d8]/30 text-[#18b5d8] text-[12px] font-bold tracking-[0.15em] uppercase px-4 py-1.5 rounded-full mb-6">
+            Limited Availability
+          </span>
+          <h2 className="display-lg text-white mb-4" style={{ textWrap: "balance" }}>
+            Founding client spots — price locked, no setup fee.
+          </h2>
+          <p className="lead-airy text-white/50 mb-8" style={{ textWrap: "balance" }}>
+            We&rsquo;re currently onboarding a limited number of founding clients. Price is locked at the current rate for as long as you stay — no setup fee, live within 30 days.
+          </p>
+          <Link
+            href="/contact"
+            className="btn-press inline-block bg-[#18b5d8] text-white text-[17px] font-semibold rounded-full px-[32px] py-[15px] hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 focus-visible:ring-offset-[#07141a] [touch-action:manipulation]"
+          >
+            Claim a Founding Spot
+          </Link>
+        </div>
+      </section>
+
       {/* ── CTA ── */}
       <section className="bg-[#0a0a0a] py-28 px-6 text-center">
         <div className="max-w-[560px] mx-auto">
-          <p className="text-[13px] font-semibold tracking-[0.2em] uppercase text-[#18b5d8] mb-6">Let's build it</p>
+          <p className="text-[13px] font-semibold tracking-[0.2em] uppercase text-[#18b5d8] mb-6">Let&rsquo;s build it</p>
           <h2 className="display-lg text-white mb-6" style={{ textWrap: "balance" }}>
-            Ready to automate your operations?
+            Tell us where your team is losing time.
           </h2>
           <p className="lead-airy text-white/50 mb-12" style={{ textWrap: "balance" }}>
-            Tell us where your team is losing the most time. We'll show you exactly what a bot can handle.
+            We&rsquo;ll show you exactly what AI can handle — and what it would cost to get your hours back.
           </p>
           <Link
             href="/contact"

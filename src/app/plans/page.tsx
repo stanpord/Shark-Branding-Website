@@ -42,18 +42,18 @@ const objections = [
   },
   {
     q: "How long until I see results?",
-    a: "Visibility signals typically begin moving within 30–60 days. Significant position changes — like the HVAC results below — can happen faster with consistent execution. That's why we back both plans with a 90-day guarantee: if you don't see measurable movement, we extend your plan at no cost.",
+    a: "Visibility signals typically begin moving within 30–60 days. Significant position changes — like the HVAC results below — can happen faster with consistent execution.",
   },
   {
     q: "Is there a contract? Can I cancel?",
-    a: "The Self-Guided plan has a 12-month or 3-month minimum commitment — after that, cancel with 30 days' notice. Done For You has no required annual contract; you can cancel with 30 days' notice at any time. Questions? Reach out before you commit.",
+    a: "The Self-Guided plan has a 12-month or 3-month minimum commitment — after that, cancel with 60 days' notice (12-month plan) or at the end of your term (3-month plan). Done For You has no required annual contract; cancel any time with reasonable notice. Questions? Reach out before you commit.",
   },
 ];
 
 const faqs = [
   {
     q: "Which plan should I choose?",
-    a: "If your team has bandwidth to execute a structured framework internally, start with Self-Guided. If you want the work done for you — no managing, no wondering if you're doing it right — choose Done For You. Either way, start with the free visibility report: it makes the right call obvious before you spend a dollar.",
+    a: "If your team has bandwidth to execute a structured framework internally, start with Self-Guided. If you want the work done for you — no managing, no wondering if you're doing it right — choose Done For You. Either way, start with the free Visibility Audit: it makes the right call obvious before you spend a dollar.",
   },
   {
     q: "Are both Self-Guided commitment lengths still available?",
@@ -123,15 +123,19 @@ export default function PlansPage() {
           {/* Proof strip */}
           <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 mb-4">
             {[
-              "HVAC client: #32 → #2 in 30 days",
-              "No paid ads required",
-              "North Tampa Bay Chamber partner",
+              { text: "HVAC client: #32 → #2 in 30 days" },
+              { text: "No paid ads required" },
+              { text: "North Tampa Bay Chamber partner", href: "https://www.northtampabay.org" },
             ].map((item) => (
-              <div key={item} className="flex items-center gap-2 text-[14px] font-semibold text-[#333333]">
+              <div key={item.text} className="flex items-center gap-2 text-[14px] font-semibold text-[#333333]">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                   <polyline points="20 6 9 17 4 12" stroke="#18b5d8" strokeWidth="2.5" strokeLinecap="round" />
                 </svg>
-                {item}
+                {item.href ? (
+                  <a href={item.href} target="_blank" rel="noopener noreferrer" className="hover:text-[#18b5d8] transition-colors">
+                    {item.text}
+                  </a>
+                ) : item.text}
               </div>
             ))}
           </div>
@@ -174,11 +178,6 @@ export default function PlansPage() {
                 ))}
               </ul>
 
-              {/* Guarantee */}
-              <div className="mt-6 flex items-start gap-2 text-[12px] text-white/35 leading-snug">
-                <ShieldIcon />
-                No results in 90 days? We extend your plan at no cost.
-              </div>
 
               {/* CTA */}
               <a
@@ -189,7 +188,7 @@ export default function PlansPage() {
               >
                 Start 12-Month Plan — $497/mo
               </a>
-              <p className="text-center text-[12px] text-white/30 mt-3">
+              <p className="text-center text-[13px] text-white/30 mt-3">
                 Shorter commitment?{" "}
                 <a
                   href="https://connect.intuit.com/portal/app/CommerceNetwork/view/scs-v1-9454fee56f394fdfb63ff800cf994d5794634439ed8b4ae7813be49ad385ec7f0bd37ee6cfe54dfd877a039d2862d07c?locale=EN_US&cta=saveandcopylink"
@@ -228,7 +227,7 @@ export default function PlansPage() {
               </div>
 
               {/* Inline proof */}
-              <div className="mt-4 bg-white/5 border border-white/10 rounded-[12px] px-4 py-3 text-[12px] text-white/70 leading-relaxed">
+              <div className="mt-4 bg-white/5 border border-white/10 rounded-[12px] px-4 py-3 text-[13px] text-white/70 leading-relaxed">
                 <strong className="text-white font-semibold">This is what that work costs.</strong> One HVAC client moved from position #32 → #2 in 30 days across four high-intent keywords. No paid ads — just this framework, executed by our team.
               </div>
 
@@ -242,11 +241,6 @@ export default function PlansPage() {
                 ))}
               </ul>
 
-              {/* Guarantee */}
-              <div className="mt-6 flex items-start gap-2 text-[12px] text-white/35 leading-snug">
-                <ShieldIcon />
-                No results in 90 days? We extend your plan at no cost.
-              </div>
 
               {/* CTA */}
               <a
@@ -302,7 +296,7 @@ export default function PlansPage() {
           <div className="mt-10 flex flex-wrap items-center justify-center gap-6">
             {[
               "90-day results guarantee",
-              "Cancel with 30 days' notice after your minimum term",
+              "12-month plan: cancel with 60 days' notice",
               "No paid ads required",
             ].map((item) => (
               <div key={item} className="flex items-center gap-2 text-[13px] text-white/35">
@@ -317,7 +311,7 @@ export default function PlansPage() {
           <p className="text-center text-[14px] text-white/30 mt-6">
             Not sure yet?{" "}
             <Link href="/free-report" className="text-[#18b5d8] font-semibold hover:underline">
-              Start with the free visibility report →
+              Start with the free Visibility Audit →
             </Link>{" "}
             See exactly where you stand before you commit to anything.
           </p>
@@ -399,6 +393,22 @@ export default function PlansPage() {
         </div>
       </section>
 
+      {/* ── Mid-page CTA ── */}
+      <section className="bg-[#18b5d8] py-12 px-6 text-center">
+        <div className="max-w-[620px] mx-auto">
+          <p className="text-white/80 text-[15px] mb-3">Still on the fence?</p>
+          <h2 className="text-[26px] font-semibold text-white mb-6" style={{ textWrap: "balance" }}>
+            See exactly where you stand before you spend a dollar.
+          </h2>
+          <a
+            href="/free-report"
+            className="btn-press inline-block bg-white text-[#0a0a0a] text-[17px] font-semibold rounded-full px-[32px] py-[15px] hover:bg-[#f0f0f0] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#18b5d8] [touch-action:manipulation]"
+          >
+            Get My Free Visibility Audit
+          </a>
+        </div>
+      </section>
+
       {/* ── FAQ ── */}
       <section className="bg-white py-24 px-6">
         <div className="max-w-[720px] mx-auto">
@@ -439,14 +449,14 @@ export default function PlansPage() {
             See where you stand before you spend a dollar.
           </h2>
           <p className="lead-airy text-white/50 mb-12" style={{ textWrap: "balance" }}>
-            The free report shows exactly how visible your business is across Google, ChatGPT, Gemini, and local listings. Most owners are surprised. From there, the right plan is obvious.
+            The free Visibility Audit shows exactly how visible your business is across Google, ChatGPT, Gemini, and local listings. Most owners are surprised. From there, the right plan is obvious.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
             <Link
               href="/free-report"
               className="btn-press inline-block bg-[#18b5d8] text-white text-[17px] font-semibold rounded-full px-[32px] py-[15px] hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0a0a] [touch-action:manipulation]"
             >
-              Get My Free Visibility Report
+              Get My Free Visibility Audit
             </Link>
             <Link
               href="/contact"

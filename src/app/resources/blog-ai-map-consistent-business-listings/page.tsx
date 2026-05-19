@@ -52,7 +52,7 @@ export default function Page() {
         <li><strong>Category Accuracy:</strong> Are you a &ldquo;Lawyer,&rdquo; an &ldquo;Attorney,&rdquo; or a &ldquo;Legal Service&rdquo;? Pick one and stick to it.</li>
         <li><strong>Structured Data:</strong> This is the hidden code (Schema markup) that tells AI exactly what your business does.</li>
       </ul>
-      <p>Want to see how you currently stack up? You can grab a <a href="/free-report">free report</a> that shows exactly how the AI sees your business right now.</p>
+      <p>Want to see how you currently stack up? You can grab a <a href="/free-report">free Visibility Audit</a> that shows exactly how the AI sees your business right now.</p>
 
       <h2>The &ldquo;Found&rdquo; Pillar in Action: Real Results</h2>
       <p>We&rsquo;ve seen this play out in the real world. By tightening up business listings and ensuring data was synced across every major directory, our clients saw massive jumps in visibility within just 30 days. It wasn&rsquo;t magic; it was about giving the AI the confidence to recommend them.</p>

@@ -26,7 +26,7 @@ const values = [
   {
     n: "04",
     title: "Honest before anything",
-    body: "Our free visibility report tells the truth — even if the truth is uncomfortable. That's where real progress starts.",
+    body: "Our free Visibility Audit tells the truth — even if the truth is uncomfortable. That's where real progress starts.",
   },
 ];
 
@@ -135,14 +135,14 @@ export default function AboutPage() {
             Ready to work together?
           </h2>
           <p className="lead-airy text-white/50 mb-12">
-            Start with a free visibility report or reach out directly. We&rsquo;ll make it simple.
+            Start with a free Visibility Audit or reach out directly. We&rsquo;ll make it simple.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
             <Link
               href="/free-report"
               className="btn-press inline-block bg-[#18b5d8] text-white text-[17px] font-semibold rounded-full px-[32px] py-[15px] hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0a0a] [touch-action:manipulation]"
             >
-              Get Free Report
+              Get My Free Visibility Audit
             </Link>
             <a
               href="tel:+17278556505"

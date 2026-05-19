@@ -142,9 +142,9 @@ const ACCESS = [
 ];
 
 const SPONSORS = [
-  { name: "Shark Branding Solutions", role: "Presented by" },
+  { name: "Shark Branding Solutions", role: "Presented by", href: "https://sharkbrandingsolutions.com" },
   { name: "Worthington Agency", role: "Partner" },
-  { name: "North Tampa Bay Chamber", role: "Partner" },
+  { name: "North Tampa Bay Chamber", role: "Partner", href: "https://www.northtampabay.org" },
 ];
 
 const INTERESTS = [
@@ -961,9 +961,15 @@ export default function SharkHackathonPage() {
                 <div className="text-[0.62rem] font-semibold uppercase tracking-[0.18em] text-[#18b5d8] mb-1">
                   {s.role}
                 </div>
-                <div className="text-[1.05rem] font-semibold text-[#1d1d1f]">
-                  {s.name}
-                </div>
+                {s.href ? (
+                  <a href={s.href} target="_blank" rel="noopener noreferrer" className="text-[1.05rem] font-semibold text-[#1d1d1f] hover:text-[#18b5d8] transition-colors">
+                    {s.name}
+                  </a>
+                ) : (
+                  <div className="text-[1.05rem] font-semibold text-[#1d1d1f]">
+                    {s.name}
+                  </div>
+                )}
               </div>
             ))}
           </div>

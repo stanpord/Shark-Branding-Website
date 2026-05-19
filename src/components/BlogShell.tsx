@@ -8,6 +8,7 @@ interface BlogShellProps {
   heroImage: string;
   heroAlt: string;
   children: React.ReactNode;
+  slug?: string;
 }
 
 export default function BlogShell({
@@ -18,9 +19,42 @@ export default function BlogShell({
   heroImage,
   heroAlt,
   children,
+  slug,
 }: BlogShellProps) {
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: title,
+    image: heroImage,
+    datePublished: date,
+    dateModified: date,
+    author: {
+      "@type": "Person",
+      name: "Michelle Stanaland",
+      jobTitle: "Founder & CEO",
+      url: "https://sharkbrandingsolutions.com/about",
+      description: "Top 15 Marketing Expert in Tampa Bay — Influence Digest, 2025",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Shark Branding Solutions",
+      url: "https://sharkbrandingsolutions.com",
+      logo: "https://sharkbrandingsolutions.com/logo.webp",
+    },
+    ...(slug && { url: `https://sharkbrandingsolutions.com/resources/${slug}` }),
+    mainEntityOfPage: slug
+      ? `https://sharkbrandingsolutions.com/resources/${slug}`
+      : "https://sharkbrandingsolutions.com/resources",
+    articleSection: category,
+    inLanguage: "en-US",
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
       {/* Blog hero */}
       <section className="bg-[#07141a] pt-24 pb-16 px-6 text-center">
         <div className="max-w-[760px] mx-auto">
@@ -58,7 +92,7 @@ export default function BlogShell({
             Ready to become the top AI recommendation in your market?
           </h2>
           <p className="lead-airy text-black/65 mb-10">
-            Get a free visibility report and see exactly where your business
+            Get a free Visibility Audit and see exactly where your business
             stands across AI search, local search, and digital authority&nbsp;&mdash; no
             commitment required.
           </p>
@@ -67,7 +101,7 @@ export default function BlogShell({
               href="/free-report"
               className="btn-press inline-block bg-black text-white text-[17px] font-semibold rounded-full px-[22px] py-[11px] hover:bg-white hover:text-black motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:ring-offset-[#18b5d8] [touch-action:manipulation]"
             >
-              Get the Free Report
+              Book Your Free Visibility Audit
             </Link>
             <Link
               href="/contact"

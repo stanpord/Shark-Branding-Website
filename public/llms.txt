@@ -21,12 +21,14 @@ We help businesses become visible and credible on every platform modern buyers u
 - **Operations Bots** — AI-powered bots for business operations including AI CRM, Sales Coach Bot, and custom workflow automation.
 - **Marketing Bots** — CMO Bot, Reputation & Review AI, AI Visibility Toolkit, and custom marketing automation bots.
 - **Workshops & Training** — Half-day and full-day sessions for business teams and chamber organizations on AI search, local visibility, and trust signals.
-- **Free Visibility Report** — Free 48-hour audit of how your business appears across search, maps, reviews, and AI platforms. No commitment required.
+- **Free Visibility Audit** — We run a full audit of how your business appears across search, maps, reviews, and AI platforms, then walk you through every finding together on a quick call. No commitment required.
 
 ## Proven Results
 
+- Moved Emory's Rock Realty from #4 to #1 for "Best Realtors in Wesley Chapel" in 30 days (20% increase in AI-driven recommendations)
 - Moved a Tampa Bay drywall company from #32 to #2 on Google in 30 days
 - Improved listing score from 64 to 583 (out of 1,000)
+- Diamond Dogs Vending ranked #1 on ChatGPT, Perplexity, and Google AI Overviews for smart vending in Tampa Bay
 - Established AI search presence on ChatGPT and Perplexity for clients with zero prior AI visibility
 
 ## Contact
@@ -40,10 +42,11 @@ We help businesses become visible and credible on every platform modern buyers u
 ## Key Pages
 
 - Services: https://sharkbrandingsolutions.com/services
+- Plans & Pricing: https://sharkbrandingsolutions.com/plans
 - Operations (AI Bots): https://sharkbrandingsolutions.com/operations
 - Marketing (AI Bots): https://sharkbrandingsolutions.com/marketing
 - Case Studies: https://sharkbrandingsolutions.com/case-studies
-- Free Report: https://sharkbrandingsolutions.com/free-report
+- Free Visibility Audit: https://sharkbrandingsolutions.com/free-report
 - About Michelle Stanaland: https://sharkbrandingsolutions.com/about
 - Contact: https://sharkbrandingsolutions.com/contact
-- Pricing: https://sharkbrandingsolutions.com/pricing.md
+- Machine-readable pricing: https://sharkbrandingsolutions.com/pricing.md

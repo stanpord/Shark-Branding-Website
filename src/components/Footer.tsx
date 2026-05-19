@@ -3,13 +3,16 @@ import Link from "next/link";
 const services = [
   { href: "/services#ai-visibility", label: "AI Business Consulting" },
   { href: "/services#toolkit", label: "AI Visibility Toolkit" },
+  { href: "/plans", label: "View Pricing" },
   { href: "/services#workshops", label: "Workshops & Training" },
-  { href: "/free-report", label: "Free Visibility Report" },
+  { href: "/free-report", label: "Free Visibility Audit" },
 ];
 
 const company = [
   { href: "/about", label: "About Us" },
   { href: "/about#michelle", label: "Michelle Stanaland" },
+  { href: "/case-studies", label: "Case Studies" },
+  { href: "/resources", label: "Resources" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -80,6 +83,16 @@ export default function Footer() {
                 <span className="text-[17px] leading-[2.41] text-[#7a7a7a]">
                   Wesley Chapel, FL 33544
                 </span>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/company/shark-branding-solutions"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[17px] text-[#333333] hover:text-[#18b5d8] motion-safe:transition-colors leading-[2.41]"
+                >
+                  LinkedIn
+                </a>
               </li>
             </ul>
           </div>

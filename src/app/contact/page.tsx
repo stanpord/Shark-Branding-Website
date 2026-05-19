@@ -1,203 +1,49 @@
-"use client";
+import type { Metadata } from "next";
+import ContactForm from "@/components/ContactForm";
 
-import type { FormEvent } from "react";
-import { useState, useRef } from "react";
-
-const services = [
-  "Free Visibility Report",
-  "AI Business Consulting",
-  "AI Visibility Toolkit — Self-Directed",
-  "AI Visibility Toolkit — Fully Managed",
-  "Workshop / Training",
-  "Not sure yet",
-];
-
-const inputClass =
-  "w-full border border-[#e0e0e0] rounded-[11px] px-4 py-3 text-[17px] text-[#1d1d1f] bg-white placeholder:text-[#cccccc] focus-visible:outline-none focus-visible:border-[#18b5d8] focus-visible:ring-2 focus-visible:ring-[#18b5d8]/20 motion-safe:transition-[border-color,box-shadow] [touch-action:manipulation]";
+export const metadata: Metadata = {
+  title: "Contact — Shark Branding Solutions",
+  description:
+    "Book a free discovery call or reach out directly. AI visibility consulting and AI employees for Tampa Bay businesses.",
+};
 
 export default function ContactPage() {
-  const [submitted, setSubmitted] = useState(false);
-  const [loading, setLoading] = useState(false);
-  const statusRef = useRef<HTMLDivElement>(null);
-
-  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-    setLoading(true);
-    // Replace with actual form submission (e.g. Resend, Formspree, etc.)
-    await new Promise((r) => setTimeout(r, 800));
-    setLoading(false);
-    setSubmitted(true);
-  }
-
   return (
     <>
-      {/* Hero */}
+      {/* ── Hero ── */}
       <section className="bg-white min-h-[40vh] flex items-center justify-center text-center px-6 pt-24 pb-16">
         <div className="max-w-[600px] mx-auto">
           <p className="text-[#18b5d8] text-[14px] font-semibold tracking-[0.15em] uppercase mb-5">
             Contact
           </p>
-          <h1 className="display-hero text-[#0a0a0a] mb-5" style={{textWrap:"balance"}}>
+          <h1 className="display-hero text-[#0a0a0a] mb-5" style={{ textWrap: "balance" }}>
             Let&rsquo;s talk about
             <br />
-            <span className="text-[#18b5d8]">your visibility.</span>
+            <span className="text-[#18b5d8]">your business.</span>
           </h1>
-          <p className="lead-airy text-[#333333]">
-            Start with the free report, book a call, or just say hello. We
-            respond within one business day.
+          <p className="lead-airy text-[#333333]" style={{ textWrap: "balance" }}>
+            Fill out the form below and we&rsquo;ll follow up within one business day to schedule a call — no commitment required.
           </p>
         </div>
       </section>
 
-      {/* Form + info */}
-      <section className="bg-white py-20 px-6">
-        <div className="max-w-[980px] mx-auto grid grid-cols-1 md:grid-cols-[1fr_380px] gap-16">
+      {/* ── Form + sidebar ── */}
+      <section className="bg-[#f5f5f7] py-16 px-6">
+        <div className="max-w-[980px] mx-auto grid grid-cols-1 md:grid-cols-[1fr_300px] gap-12 items-start">
+
           {/* Form */}
           <div>
-            {/* aria-live region announces state changes to screen readers */}
-            <div ref={statusRef} aria-live="polite" aria-atomic="true">
-              {submitted && (
-                <div className="text-center py-20">
-                  <p className="text-[56px] mb-4" aria-hidden="true">&#x2713;</p>
-                  <h2 className="display-md text-[#1d1d1f] mb-3">
-                    Message received!
-                  </h2>
-                  <p className="lead-airy text-[#333333]">
-                    We&rsquo;ll be in touch within one business day. If your
-                    request is for the free visibility report, expect it within
-                    48 hours.
-                  </p>
-                </div>
-              )}
-            </div>
-
-            {!submitted && (
-              <form onSubmit={handleSubmit} className="space-y-5" noValidate>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                  <div>
-                    <label htmlFor="first-name" className="block text-[14px] font-semibold text-[#1d1d1f] mb-2">
-                      First Name
-                    </label>
-                    <input
-                      id="first-name"
-                      name="first-name"
-                      type="text"
-                      required
-                      autoComplete="given-name"
-                      placeholder="Michelle…"
-                      className={inputClass}
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="last-name" className="block text-[14px] font-semibold text-[#1d1d1f] mb-2">
-                      Last Name
-                    </label>
-                    <input
-                      id="last-name"
-                      name="last-name"
-                      type="text"
-                      required
-                      autoComplete="family-name"
-                      placeholder="Stanaland…"
-                      className={inputClass}
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label htmlFor="email" className="block text-[14px] font-semibold text-[#1d1d1f] mb-2">
-                    Business Email
-                  </label>
-                  <input
-                    id="email"
-                    name="email"
-                    type="email"
-                    required
-                    autoComplete="email"
-                    spellCheck={false}
-                    placeholder="you@yourbusiness.com…"
-                    className={inputClass}
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="phone" className="block text-[14px] font-semibold text-[#1d1d1f] mb-2">
-                    Phone <span className="font-normal text-[#7a7a7a]">(optional)</span>
-                  </label>
-                  <input
-                    id="phone"
-                    name="phone"
-                    type="tel"
-                    autoComplete="tel"
-                    placeholder="(727) 000-0000…"
-                    className={inputClass}
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="business-name" className="block text-[14px] font-semibold text-[#1d1d1f] mb-2">
-                    Business Name
-                  </label>
-                  <input
-                    id="business-name"
-                    name="business-name"
-                    type="text"
-                    required
-                    autoComplete="organization"
-                    placeholder="Your Business LLC…"
-                    className={inputClass}
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="service" className="block text-[14px] font-semibold text-[#1d1d1f] mb-2">
-                    I&rsquo;m interested in&hellip;
-                  </label>
-                  <select
-                    id="service"
-                    name="service"
-                    required
-                    defaultValue=""
-                    className={inputClass}
-                  >
-                    <option value="" disabled>
-                      Select a service&hellip;
-                    </option>
-                    {services.map((s) => (
-                      <option key={s} value={s}>
-                        {s}
-                      </option>
-                    ))}
-                  </select>
-                </div>
-
-                <div>
-                  <label htmlFor="message" className="block text-[14px] font-semibold text-[#1d1d1f] mb-2">
-                    Message <span className="font-normal text-[#7a7a7a]">(optional)</span>
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    rows={4}
-                    autoComplete="off"
-                    placeholder="Tell us a bit about your business and what you&apos;re trying to solve…"
-                    className={`${inputClass} resize-none`}
-                  />
-                </div>
-
-                <button
-                  type="submit"
-                  disabled={loading}
-                  className="btn-press w-full bg-[#18b5d8] text-white text-[17px] font-semibold rounded-full py-[13px] hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 disabled:opacity-60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 [touch-action:manipulation]"
-                >
-                  {loading ? "Sending…" : "Send Message"}
-                </button>
-              </form>
-            )}
+            <p className="text-[#18b5d8] text-[13px] font-semibold tracking-[0.2em] uppercase mb-3">
+              Get in Touch
+            </p>
+            <h2 className="text-[24px] font-semibold text-[#0a0a0a] mb-6">
+              Tell us about your business.
+            </h2>
+            <ContactForm />
           </div>
 
-          {/* Contact info sidebar */}
-          <div className="space-y-8">
+          {/* Sidebar */}
+          <div className="space-y-8 md:pt-[72px]">
             <div>
               <p className="text-[14px] font-semibold text-[#1d1d1f] uppercase tracking-wide mb-3">
                 Phone
@@ -235,15 +81,29 @@ export default function ContactPage() {
 
             <div className="bg-[#07141a] rounded-[18px] p-6">
               <p className="text-[#18b5d8] text-[14px] font-semibold uppercase tracking-wide mb-2">
-                Free Visibility Report
+                Response time
               </p>
-              <p className="text-[17px] text-white mb-1">
-                Delivered within 48 hours.
-              </p>
+              <p className="text-[17px] text-white mb-1">Within one business day.</p>
               <p className="text-[14px] text-[#cccccc]">
-                No commitment. No sales call. Just honest data about where your
-                business stands.
+                We&rsquo;ll reach out to schedule a discovery call at your convenience.
               </p>
+            </div>
+
+            <div className="bg-white border border-[#e8e8ed] rounded-[18px] p-6">
+              <p className="text-[12px] font-bold tracking-[0.12em] uppercase text-[#7a7a7a] mb-3">What to expect</p>
+              <ul className="space-y-2">
+                {[
+                  "Free 30-min discovery call",
+                  "No sales pressure",
+                  "We show you exactly where you stand",
+                  "You keep what you learn",
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-2 text-[14px] text-[#333333]">
+                    <span className="text-[#18b5d8] font-bold shrink-0" aria-hidden="true">✓</span>
+                    {item}
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>
@@ -251,4 +111,3 @@ export default function ContactPage() {
     </>
   );
 }
-

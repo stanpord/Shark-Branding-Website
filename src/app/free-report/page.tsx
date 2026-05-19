@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import SnapshotWidget from "@/components/SnapshotWidget";
 
 export const metadata: Metadata = {
-  title: "Free Visibility Report — Shark Branding Solutions",
+  title: "Free Visibility Audit — Shark Branding Solutions",
   description:
-    "See exactly how your business appears across search, maps, reviews, and AI platforms. Delivered in 48 hours, no strings attached.",
+    "See exactly how your business appears across search, maps, reviews, and AI platforms. We run your audit and walk you through it together on a quick call.",
 };
 
 export default function FreeReportPage() {
@@ -14,7 +14,7 @@ export default function FreeReportPage() {
       <section className="bg-white min-h-[70vh] flex flex-col items-center justify-center text-center px-6 pt-24 pb-16">
         <div className="max-w-[640px] mx-auto">
           <p className="text-[#18b5d8] text-[13px] font-semibold tracking-[0.2em] uppercase mb-8">
-            Free Visibility Report
+            Free Visibility Audit
           </p>
           <h1 className="display-hero text-[#0a0a0a] mb-6" style={{ textWrap: "balance" }}>
             Find out where your business
@@ -22,13 +22,13 @@ export default function FreeReportPage() {
             <span className="text-[#18b5d8]">actually stands.</span>
           </h1>
           <p className="lead-airy text-[#333333] mb-12">
-            Delivered in 48 hours. No commitment. No sales call.
+            We run your audit and walk you through it together on a quick call. No commitment required.
           </p>
           {/* Proof stats */}
           <div className="flex items-center justify-center gap-0 border border-[#e8e8ed] rounded-[16px] overflow-hidden divide-x divide-[#e8e8ed]">
             {[
-              { v: "48h", l: "Turnaround" },
               { v: "Free", l: "No credit card" },
+              { v: "1 Call", l: "We walk you through it" },
               { v: "Local", l: "Tampa Bay focused" },
             ].map((s) => (
               <div key={s.l} className="flex-1 py-5 px-4 text-center">
@@ -47,11 +47,11 @@ export default function FreeReportPage() {
         </div>
       </section>
 
-      {/* ── What's in the report ── */}
+      {/* ── What we cover ── */}
       <section className="bg-[#0a0a0a] px-6 py-24">
         <div className="max-w-[980px] mx-auto">
           <div className="text-center mb-14">
-            <p className="text-[13px] font-semibold tracking-[0.2em] uppercase text-[#18b5d8] mb-4">What you get</p>
+            <p className="text-[13px] font-semibold tracking-[0.2em] uppercase text-[#18b5d8] mb-4">What we cover on the call</p>
             <h2 className="display-lg text-white" style={{ textWrap: "balance" }}>
               A complete picture of your online visibility.
             </h2>

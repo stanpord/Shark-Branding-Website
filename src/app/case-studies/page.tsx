@@ -144,6 +144,22 @@ export default function CaseStudiesPage() {
       </article>
 
 
+      {/* ── Mid-page CTA ── */}
+      <section className="bg-[#18b5d8] py-12 px-6 text-center">
+        <div className="max-w-[620px] mx-auto">
+          <p className="text-white/80 text-[15px] mb-3">Want results like this for your business?</p>
+          <h2 className="text-[26px] font-semibold text-white mb-6" style={{ textWrap: "balance" }}>
+            Start with a free Visibility Audit.
+          </h2>
+          <a
+            href="/free-report"
+            className="btn-press inline-block bg-white text-[#0a0a0a] text-[17px] font-semibold rounded-full px-[32px] py-[15px] hover:bg-[#f0f0f0] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#18b5d8] [touch-action:manipulation]"
+          >
+            Get My Free Visibility Audit
+          </a>
+        </div>
+      </section>
+
       {/* ══════════════════════════════════════════
           CASE STUDY 02 — Emory's Rock Realty
       ══════════════════════════════════════════ */}
@@ -345,7 +361,14 @@ export default function CaseStudiesPage() {
               <span className="text-[#18b5d8]">to trusted AI source.</span>
             </h2>
             <p className="text-[17px] text-[#7a7a7a] max-w-[560px]">
-              North Tampa Bay Chamber — AI Visibility Toolkit
+              <a
+                href="https://www.northtampabay.org"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-[#18b5d8] transition-colors"
+              >
+                North Tampa Bay Chamber
+              </a>{" "}— AI Visibility Toolkit
             </p>
           </div>
         </section>
@@ -447,13 +470,13 @@ export default function CaseStudiesPage() {
             Want results like these?
           </h2>
           <p className="lead-airy text-white/50 mb-12" style={{ textWrap: "balance" }}>
-            Start with a free visibility report. We&rsquo;ll show you exactly where you stand and what it would take to move.
+            Start with a free Visibility Audit. We&rsquo;ll show you exactly where you stand and what it would take to move.
           </p>
           <Link
             href="/free-report"
             className="btn-press inline-block bg-[#18b5d8] text-white text-[17px] font-semibold rounded-full px-[32px] py-[15px] hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0a0a] [touch-action:manipulation]"
           >
-            Get My Free Report
+            Get My Free Visibility Audit
           </Link>
         </div>
       </section>
