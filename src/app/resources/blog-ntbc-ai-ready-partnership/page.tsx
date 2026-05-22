@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import BlogShell from "@/components/BlogShell";
 
 export const metadata: Metadata = {
-  title: "AI-Ready: Shark Branding Partners with North Tampa Bay Chamber — Shark Branding Solutions",
+  title: "Shark Branding & North Tampa Bay Chamber: AI-Ready",
   description:
     "Shark Branding Solutions partners with the North Tampa Bay Chamber to future-proof local businesses with AI Visibility. Learn the Found, Trusted, Chosen framework.",
 };

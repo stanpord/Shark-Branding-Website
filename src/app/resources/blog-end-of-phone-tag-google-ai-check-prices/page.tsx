@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import BlogShell from "@/components/BlogShell";
 
 export const metadata: Metadata = {
-  title: "The End of Phone Tag: Google's 'Have AI Check Prices' — Shark Branding Solutions",
+  title: "The End of Phone Tag: Google AI Now Checks Prices",
   description:
     "Google's AI now calls local businesses to check prices on behalf of customers. If you don't answer, you're listed as 'unreachable.' Here's how to stay in the game.",
 };

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import BlogShell from "@/components/BlogShell";
 
 export const metadata: Metadata = {
-  title: "The AI Funnel: Why ChatGPT Is the New Front Door for Your Customers — Shark Branding Solutions",
+  title: "ChatGPT Is the New Front Door for Your Customers",
   description:
     "AI doesn't give customers 100 options. It gives them three. Learn how the AI Funnel works and what it takes to land in that top-three shortlist for your industry.",
 };

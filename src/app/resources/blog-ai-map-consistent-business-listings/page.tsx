@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import BlogShell from "@/components/BlogShell";
 
 export const metadata: Metadata = {
-  title: "The AI Map: Why Consistent Business Listings Are the Secret to Being Found — Shark Branding Solutions",
+  title: "Consistent Listings: The Secret to Being Found by AI",
   description:
     "If your business data is inconsistent across the web, AI models won't recommend you. Learn how to fix your digital map and become the top result in ChatGPT and Gemini.",
 };

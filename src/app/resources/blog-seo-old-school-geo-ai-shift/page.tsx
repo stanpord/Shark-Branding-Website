@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import BlogShell from "@/components/BlogShell";
 
 export const metadata: Metadata = {
-  title: "SEO Is Old School: Why Your Business Needs GEO to Survive the AI Shift — Shark Branding Solutions",
+  title: "Why Your Business Needs GEO for the AI Search Shift",
   description:
     "Traditional SEO puts you on a list. GEO makes you the recommendation. Learn the three pillars of Generative Engine Optimization and why local businesses must make the shift now.",
 };

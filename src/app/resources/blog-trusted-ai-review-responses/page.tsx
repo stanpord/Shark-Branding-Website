@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import BlogShell from "@/components/BlogShell";
 
 export const metadata: Metadata = {
-  title: "Using AI to Master the 'Trusted' Part of Found, Trusted, Chosen — Shark Branding Solutions",
+  title: "AI Review Responses: Mastering Found, Trusted, Chosen",
   description:
     "Getting found is only half the battle. If you're leaving reviews unanswered and your trust signals are weak, AI won't recommend you. Here's how to master the 'Trusted' stage.",
 };

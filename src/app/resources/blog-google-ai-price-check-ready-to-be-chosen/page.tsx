@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import BlogShell from "@/components/BlogShell";
 
 export const metadata: Metadata = {
-  title: "Google's New 'AI Price Check' Is Calling: Is Your Business Ready to Be Chosen? — Shark Branding Solutions",
+  title: "Google AI Price Check: Is Your Business Ready?",
   description:
     "Google's AI is now calling local businesses to check prices on behalf of customers. Businesses that don't respond get flagged as unreachable. Here's how to be ready.",
 };

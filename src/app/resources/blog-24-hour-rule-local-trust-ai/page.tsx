@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import BlogShell from "@/components/BlogShell";
 
 export const metadata: Metadata = {
-  title: "The 24-Hour Rule: Mastering Local Trust with AI — Shark Branding Solutions",
+  title: "The 24-Hour Rule: AI Review Responses for Local Trust",
   description:
     "If you aren't responding to reviews within 24 hours, you're handing your competitors your market share. Learn how AI-assisted responses build local trust and boost your SEO.",
 };

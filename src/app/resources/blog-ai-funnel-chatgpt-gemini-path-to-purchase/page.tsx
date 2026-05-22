@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import BlogShell from "@/components/BlogShell";
 
 export const metadata: Metadata = {
-  title: "The AI Funnel: How ChatGPT and Gemini Are Reshaping the Path to Purchase — Shark Branding Solutions",
+  title: "ChatGPT & Gemini: How AI Reshapes the Path to Purchase",
   description:
     "ChatGPT and Gemini have collapsed the customer decision timeline from days to minutes. If your business isn't optimized for AI recommendations, you're invisible at the most critical moment.",
 };

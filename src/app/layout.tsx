@@ -23,11 +23,15 @@ export const metadata: Metadata = {
     "AI search optimization",
     "Tampa Bay marketing",
   ],
+  alternates: {
+    canonical: "https://sharkbrandingsolutions.com",
+  },
   openGraph: {
     title: "Shark Branding Solutions",
     description:
       "Get Found. Get Trusted. Get Chosen. AI solutions for forward-thinking businesses.",
     type: "website",
+    url: "https://sharkbrandingsolutions.com",
   },
 };
 
@@ -47,7 +51,6 @@ const structuredData = {
       email: "info@sharkbrandingsolutions.com",
       address: {
         "@type": "PostalAddress",
-        streetAddress: "Wesley Chapel",
         addressLocality: "Wesley Chapel",
         addressRegion: "FL",
         postalCode: "33544",
@@ -75,7 +78,6 @@ const structuredData = {
         "marketing automation",
         "reputation management",
       ],
-      sameAs: [],
     },
   ],
 };
