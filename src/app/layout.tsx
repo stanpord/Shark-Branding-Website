@@ -8,7 +8,7 @@ import ChatWidget from "@/components/ChatWidget";
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
-  weight: ["300", "400", "600", "700"],
+  weight: ["400", "600", "700"],
   display: "swap",
 });
 
@@ -104,7 +104,6 @@ export default function RootLayout({
     <html lang="en" className={`${inter.variable} h-full`}>
       <head>
         <meta name="theme-color" content="#ffffff" />
-        <link rel="preconnect" href="https://cdn.apigateway.co" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
