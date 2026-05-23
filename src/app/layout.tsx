@@ -39,16 +39,23 @@ const structuredData = {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": ["Organization", "LocalBusiness"],
+      "@type": "LocalBusiness",
       "@id": "https://sharkbrandingsolutions.com/#organization",
       name: "Shark Branding Solutions",
       alternateName: "Shark AI Solutions",
       url: "https://sharkbrandingsolutions.com",
-      logo: "https://sharkbrandingsolutions.com/logo.webp",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://sharkbrandingsolutions.com/logo.webp",
+        width: 300,
+        height: 80,
+      },
+      image: "https://sharkbrandingsolutions.com/logo.webp",
       description:
         "AI Business Consulting for Tampa Bay businesses. We help companies get found by AI, run operations with AI bots, and build the trust signals that make ChatGPT, Perplexity, and Google AI Overviews recommend them.",
       telephone: "+17278556505",
       email: "info@sharkbrandingsolutions.com",
+      priceRange: "$$",
       address: {
         "@type": "PostalAddress",
         addressLocality: "Wesley Chapel",
@@ -59,15 +66,15 @@ const structuredData = {
       areaServed: [
         { "@type": "City", name: "Wesley Chapel" },
         { "@type": "City", name: "Lutz" },
-        { "@type": "City", name: "Land O' Lakes" },
+        { "@type": "City", name: "Land O Lakes" },
         { "@type": "City", name: "St. Petersburg" },
         { "@type": "City", name: "Tampa" },
       ],
       founder: {
         "@type": "Person",
+        "@id": "https://sharkbrandingsolutions.com/#founder",
         name: "Michelle Stanaland",
         jobTitle: "Founder & CEO",
-        description: "Top 15 Marketing Expert in Tampa Bay — Influence Digest, 2025",
       },
       knowsAbout: [
         "AI business consulting",
