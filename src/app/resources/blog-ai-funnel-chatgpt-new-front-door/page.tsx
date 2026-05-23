@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "ChatGPT Is the New Front Door for Your Customers",
   description:
     "AI gives customers three choices, not 100. Learn how the AI Funnel works and what it takes to land in the top-three shortlist for your industry.",
+  alternates: {
+    canonical: "https://sharkbrandingsolutions.com/resources/blog-ai-funnel-chatgpt-new-front-door",
+  },
 };
 
 export default function Page() {

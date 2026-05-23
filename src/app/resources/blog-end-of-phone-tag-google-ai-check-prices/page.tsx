@@ -4,7 +4,10 @@ import BlogShell from "@/components/BlogShell";
 export const metadata: Metadata = {
   title: "The End of Phone Tag: Google AI Now Checks Prices",
   description:
-    "Google's AI now calls local businesses to check prices on behalf of customers. If you don't answer, you're listed as 'unreachable.' Here's how to stay in the game.",
+    "Google's AI now checks prices for customers. If you don't answer, you're listed as unreachable. Here's how to stay in the game.",
+  alternates: {
+    canonical: "https://sharkbrandingsolutions.com/resources/blog-end-of-phone-tag-google-ai-check-prices",
+  },
 };
 
 export default function Page() {

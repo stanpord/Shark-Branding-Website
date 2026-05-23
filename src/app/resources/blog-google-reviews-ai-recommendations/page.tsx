@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "Turning Google Reviews Into AI Recommendations",
   description:
     "Your Google reviews are AI visibility signals. Learn how to write and collect reviews that ChatGPT and Gemini use to recommend your business.",
+  alternates: {
+    canonical: "https://sharkbrandingsolutions.com/resources/blog-google-reviews-ai-recommendations",
+  },
 };
 
 export default function Page() {

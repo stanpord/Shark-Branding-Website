@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "ChatGPT & Gemini: How AI Reshapes the Path to Purchase",
   description:
     "ChatGPT and Gemini have collapsed the customer decision timeline. Learn why AI optimization is now essential for your business to stay visible.",
+  alternates: {
+    canonical: "https://sharkbrandingsolutions.com/resources/blog-ai-funnel-chatgpt-gemini-path-to-purchase",
+  },
 };
 
 export default function Page() {

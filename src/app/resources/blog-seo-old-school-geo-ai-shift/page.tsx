@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "Why Your Business Needs GEO for the AI Search Shift",
   description:
     "Traditional SEO puts you on a list. GEO makes you the recommendation. Learn the three pillars of GEO and why local businesses must act now.",
+  alternates: {
+    canonical: "https://sharkbrandingsolutions.com/resources/blog-seo-old-school-geo-ai-shift",
+  },
 };
 
 export default function Page() {

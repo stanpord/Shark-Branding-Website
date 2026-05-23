@@ -4,7 +4,10 @@ import BlogShell from "@/components/BlogShell";
 export const metadata: Metadata = {
   title: "Google AI Price Check: Is Your Business Ready?",
   description:
-    "Google's AI is now calling local businesses to check prices on behalf of customers. Businesses that don't respond get flagged as unreachable. Here's how to be ready.",
+    "Google's AI calls local businesses to check prices for customers. Businesses that don't respond get flagged as unreachable. Here's how to be ready.",
+  alternates: {
+    canonical: "https://sharkbrandingsolutions.com/resources/blog-google-ai-price-check-ready-to-be-chosen",
+  },
 };
 
 export default function Page() {

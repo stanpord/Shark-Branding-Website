@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "The 24-Hour Rule: AI Review Responses for Local Trust",
   description:
     "Responding to reviews within 24 hours is the edge most businesses miss. Learn how AI-assisted responses build local trust and boost your SEO.",
+  alternates: {
+    canonical: "https://sharkbrandingsolutions.com/resources/blog-24-hour-rule-local-trust-ai",
+  },
 };
 
 export default function Page() {

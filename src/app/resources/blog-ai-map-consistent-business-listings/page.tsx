@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "Consistent Listings: The Secret to Being Found by AI",
   description:
     "Inconsistent business data makes AI models skip you. Learn how to fix your digital footprint and become the top result in ChatGPT and Gemini.",
+  alternates: {
+    canonical: "https://sharkbrandingsolutions.com/resources/blog-ai-map-consistent-business-listings",
+  },
 };
 
 export default function Page() {
