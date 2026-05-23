@@ -1,5 +1,11 @@
 import Link from "next/link";
 
+interface RelatedPost {
+  href: string;
+  title: string;
+  category: string;
+}
+
 interface BlogShellProps {
   category: string;
   title: string;
@@ -8,6 +14,7 @@ interface BlogShellProps {
   heroImage: string;
   heroAlt: string;
   children: React.ReactNode;
+  relatedPosts?: RelatedPost[];
 }
 
 export default function BlogShell({
@@ -18,6 +25,7 @@ export default function BlogShell({
   heroImage,
   heroAlt,
   children,
+  relatedPosts,
 }: BlogShellProps) {
   return (
     <>
@@ -50,6 +58,27 @@ export default function BlogShell({
           <div className="article-prose">{children}</div>
         </div>
       </section>
+
+      {/* Related posts */}
+      {relatedPosts && relatedPosts.length > 0 && (
+        <section className="bg-[#f5f5f7] py-14 px-6">
+          <div className="max-w-[720px] mx-auto">
+            <p className="text-[11px] font-semibold text-[#1d1d1f] uppercase tracking-[0.15em] mb-6">Related Articles</p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {relatedPosts.map((p) => (
+                <Link
+                  key={p.href}
+                  href={p.href}
+                  className="block bg-white rounded-[14px] p-5 border border-[#e0e0e0] hover:border-[#18b5d8] motion-safe:transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2"
+                >
+                  <span className="text-[11px] font-semibold text-[#18b5d8] uppercase tracking-[0.12em] mb-2 block">{p.category}</span>
+                  <span className="text-[15px] font-semibold text-[#1d1d1f] leading-snug">{p.title}</span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* CTA */}
       <section className="bg-[#18b5d8] py-20 px-6 text-center">

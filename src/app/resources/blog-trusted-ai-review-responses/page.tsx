@@ -13,6 +13,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <BlogShell
+      relatedPosts={[{ href: "/resources/blog-24-hour-rule-local-trust-ai", title: "The 24-Hour Rule: AI Review Responses for Local Trust", category: "Strategy" }, { href: "/resources/blog-google-reviews-ai-recommendations", title: "Turning Google Reviews Into AI Recommendations", category: "Strategy" }, { href: "/resources/blog-ai-funnel-chatgpt-new-front-door", title: "ChatGPT Is the New Front Door for Your Customers", category: "AI Funnel" }]}
       category="Strategy"
       title="Don't Leave 'Em Hanging: Using AI to Master the 'Trusted' Part of Found, Trusted, Chosen"
       date="April 12, 2026"

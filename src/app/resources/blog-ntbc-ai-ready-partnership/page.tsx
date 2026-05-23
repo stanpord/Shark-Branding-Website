@@ -13,6 +13,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <BlogShell
+      relatedPosts={[{ href: "/resources/blog-ai-funnel-chatgpt-new-front-door", title: "ChatGPT Is the New Front Door for Your Customers", category: "AI Funnel" }, { href: "/resources/blog-seo-old-school-geo-ai-shift", title: "Why Your Business Needs GEO for the AI Search Shift", category: "GEO" }, { href: "/resources/blog-ai-map-consistent-business-listings", title: "Consistent Listings: The Secret to Being Found by AI", category: "Listings" }]}
       category="Partnership"
       title="AI-Ready: Shark Branding Solutions Partners with North Tampa Bay Chamber to Future-Proof Local Business"
       date="April 15, 2026"

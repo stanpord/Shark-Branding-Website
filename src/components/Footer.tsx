@@ -13,12 +13,20 @@ const company = [
   { href: "/contact", label: "Contact" },
 ];
 
+const resources = [
+  { href: "/resources/blog-seo-old-school-geo-ai-shift", label: "GEO vs. SEO" },
+  { href: "/resources/blog-ai-funnel-chatgpt-new-front-door", label: "The AI Funnel" },
+  { href: "/resources/blog-google-reviews-ai-recommendations", label: "Reviews & AI" },
+  { href: "/resources/blog-24-hour-rule-local-trust-ai", label: "The 24-Hour Rule" },
+  { href: "/resources", label: "All Articles" },
+];
+
 export default function Footer() {
   return (
     <footer className="bg-[#f5f5f7] text-[#333333]">
       <div className="max-w-[980px] mx-auto px-6 pt-16 pb-8">
         {/* Top grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-4 gap-10 mb-12">
           <div>
             <h2 className="text-[11px] font-semibold text-[#1d1d1f] mb-4 tracking-wide uppercase">
               Services
@@ -49,6 +57,24 @@ export default function Footer() {
                     className="text-[17px] text-[#333333] hover:text-[#18b5d8] motion-safe:transition-colors leading-[2.41]"
                   >
                     {c.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h2 className="text-[11px] font-semibold text-[#1d1d1f] mb-4 tracking-wide uppercase">
+              Resources
+            </h2>
+            <ul className="space-y-0">
+              {resources.map((r) => (
+                <li key={r.href}>
+                  <Link
+                    href={r.href}
+                    className="text-[17px] text-[#333333] hover:text-[#18b5d8] motion-safe:transition-colors leading-[2.41]"
+                  >
+                    {r.label}
                   </Link>
                 </li>
               ))}

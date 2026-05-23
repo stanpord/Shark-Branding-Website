@@ -13,6 +13,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <BlogShell
+      relatedPosts={[{ href: "/resources/blog-google-ai-price-check-ready-to-be-chosen", title: "Google AI Price Check: Is Your Business Ready?", category: "Google AI" }, { href: "/resources/blog-ai-funnel-chatgpt-new-front-door", title: "ChatGPT Is the New Front Door for Your Customers", category: "AI Funnel" }, { href: "/resources/blog-24-hour-rule-local-trust-ai", title: "The 24-Hour Rule: AI Review Responses for Local Trust", category: "Strategy" }]}
       category="AI Visibility"
       title="The End of Phone Tag: How Google's 'Have AI Check Prices' Is Changing Local Service Discovery"
       date="April 3, 2026"

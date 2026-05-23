@@ -13,6 +13,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <BlogShell
+      relatedPosts={[{ href: "/resources/blog-ai-funnel-chatgpt-new-front-door", title: "ChatGPT Is the New Front Door for Your Customers", category: "AI Funnel" }, { href: "/resources/blog-seo-old-school-geo-ai-shift", title: "Why Your Business Needs GEO for the AI Search Shift", category: "GEO" }, { href: "/resources/blog-ntbc-ai-ready-partnership", title: "Shark Branding <BlogShell North Tampa Bay Chamber: AI-Ready", category: "Partnership" }]}
       category="AI Visibility"
       title="The AI Map: Why Consistent Business Listings Are the Secret to Being Found by ChatGPT and Gemini"
       date="April 10, 2026"
