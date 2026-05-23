@@ -23,6 +23,14 @@ export const metadata: Metadata = {
     "AI search optimization",
     "Tampa Bay marketing",
   ],
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon.png", type: "image/png", sizes: "180x180" },
+    ],
+    shortcut: "/favicon.ico",
+    apple: { url: "/icon.png", sizes: "180x180" },
+  },
   alternates: {
     canonical: "https://sharkbrandingsolutions.com",
   },
