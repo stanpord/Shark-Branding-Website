@@ -32,7 +32,7 @@ export default function ChatWidget() {
       <Script
         src="https://cdn.apigateway.co/webchat-client..prod/sdk.js"
         data-widget-id={WIDGET_ID}
-        strategy="afterInteractive"
+        strategy="lazyOnload"
         onLoad={handleLoad}
       />
     </>

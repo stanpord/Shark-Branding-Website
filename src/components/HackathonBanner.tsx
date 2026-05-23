@@ -97,7 +97,7 @@ export default function HackathonBanner() {
                 width={620}
                 height={877}
                 className="w-full h-auto object-cover"
-                loading="lazy"
+                priority
               />
               <div className="absolute top-3 right-3 rounded-full border border-[#18b5d8]/60 bg-black/70 px-3 py-1 text-[0.6rem] font-semibold uppercase tracking-[0.18em] text-[#18b5d8]">
                 Official Flyer

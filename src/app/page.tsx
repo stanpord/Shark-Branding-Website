@@ -32,7 +32,7 @@ export default function Home() {
   return (
     <>
       {/* ── Hero ── */}
-      <section className="bg-white min-h-screen flex flex-col items-center justify-center text-center px-6 pt-24 pb-20">
+      <section className="bg-white min-h-[100svh] flex flex-col items-center justify-center text-center px-6 pt-24 pb-20">
         <div className="max-w-[760px] mx-auto">
           <p className="text-[#18b5d8] text-[13px] font-semibold tracking-[0.2em] uppercase mb-8">
             AI Business Consulting
