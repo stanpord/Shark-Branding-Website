@@ -4,7 +4,7 @@ import BlogShell from "@/components/BlogShell";
 export const metadata: Metadata = {
   title: "Why Your Business Needs GEO for the AI Search Shift",
   description:
-    "Traditional SEO puts you on a list. GEO makes you the recommendation. Learn the three pillars of Generative Engine Optimization and why local businesses must make the shift now.",
+    "Traditional SEO puts you on a list. GEO makes you the recommendation. Learn the three pillars of GEO and why local businesses must act now.",
 };
 
 export default function Page() {

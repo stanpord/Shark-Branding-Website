@@ -4,7 +4,7 @@ import BlogShell from "@/components/BlogShell";
 export const metadata: Metadata = {
   title: "The 24-Hour Rule: AI Review Responses for Local Trust",
   description:
-    "If you aren't responding to reviews within 24 hours, you're handing your competitors your market share. Learn how AI-assisted responses build local trust and boost your SEO.",
+    "Responding to reviews within 24 hours is the edge most businesses miss. Learn how AI-assisted responses build local trust and boost your SEO.",
 };
 
 export default function Page() {

@@ -4,7 +4,7 @@ import BlogShell from "@/components/BlogShell";
 export const metadata: Metadata = {
   title: "Shark Branding & North Tampa Bay Chamber: AI-Ready",
   description:
-    "Shark Branding Solutions partners with the North Tampa Bay Chamber to future-proof local businesses with AI Visibility. Learn the Found, Trusted, Chosen framework.",
+    "Shark Branding joins the North Tampa Bay Chamber to help local businesses get found by AI. Learn the Found, Trusted, Chosen framework.",
 };
 
 export default function Page() {

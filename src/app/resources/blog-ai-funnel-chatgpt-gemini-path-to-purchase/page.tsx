@@ -4,7 +4,7 @@ import BlogShell from "@/components/BlogShell";
 export const metadata: Metadata = {
   title: "ChatGPT & Gemini: How AI Reshapes the Path to Purchase",
   description:
-    "ChatGPT and Gemini have collapsed the customer decision timeline from days to minutes. If your business isn't optimized for AI recommendations, you're invisible at the most critical moment.",
+    "ChatGPT and Gemini have collapsed the customer decision timeline. Learn why AI optimization is now essential for your business to stay visible.",
 };
 
 export default function Page() {

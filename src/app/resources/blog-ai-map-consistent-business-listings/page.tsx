@@ -4,7 +4,7 @@ import BlogShell from "@/components/BlogShell";
 export const metadata: Metadata = {
   title: "Consistent Listings: The Secret to Being Found by AI",
   description:
-    "If your business data is inconsistent across the web, AI models won't recommend you. Learn how to fix your digital map and become the top result in ChatGPT and Gemini.",
+    "Inconsistent business data makes AI models skip you. Learn how to fix your digital footprint and become the top result in ChatGPT and Gemini.",
 };
 
 export default function Page() {
