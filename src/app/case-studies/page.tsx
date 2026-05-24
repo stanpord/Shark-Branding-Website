@@ -130,33 +130,108 @@ export default function CaseStudiesPage() {
               </div>
             </div>
 
-            {/* Keyword ranking grid */}
-            <p className="text-[11px] font-semibold text-[#18b5d8] tracking-[0.2em] uppercase mb-6">
-              Keyword Rankings — Before &amp; After
-            </p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 mb-14">
+            {/* Before / After — HVAC */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
+              <div className="bg-white rounded-[20px] p-7 border border-[#e8e8ed]">
+                <span className="inline-block bg-[#1d1d1f] text-white text-[10px] font-bold tracking-[0.16em] uppercase px-3 py-1.5 rounded-full mb-5">Before</span>
+                <p className="text-[17px] font-bold text-[#1d1d1f] mb-5">Hard to find. Easy to skip.</p>
+                <ul className="space-y-3">
+                  {[
+                    "Not ranking for high-intent keywords",
+                    "Low visibility in local search",
+                    "Inconsistent online presence",
+                    "Minimal inbound calls or engagement",
+                  ].map((item) => (
+                    <li key={item} className="flex items-start gap-3 text-[14px] text-[#555] leading-relaxed">
+                      <span className="text-red-400 font-bold shrink-0 mt-0.5">✕</span>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="bg-[#07141a] rounded-[20px] p-7 border border-[#18b5d8]/20">
+                <span className="inline-block bg-[#18b5d8] text-white text-[10px] font-bold tracking-[0.16em] uppercase px-3 py-1.5 rounded-full mb-5">After 30 Days</span>
+                <p className="text-[17px] font-bold text-white mb-5">Top 3 rankings. More calls. Real growth.</p>
+                <ul className="space-y-3">
+                  {[
+                    `Multiple keywords moved into Top 3 "Money Zone"`,
+                    "High-intent searches captured",
+                    "Significant increase in calls & engagement",
+                    "Dominating local visibility in key service areas",
+                  ].map((item) => (
+                    <li key={item} className="flex items-start gap-3 text-[14px] text-white/70 leading-relaxed">
+                      <span className="text-[#18b5d8] font-bold shrink-0 mt-0.5">✓</span>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            {/* Context bar */}
+            <div className="bg-[#0a0a0a] rounded-[16px] px-6 py-5 mb-10 text-center">
+              <p className="text-[15px] text-white/70">
+                This wasn&rsquo;t about more traffic.{" "}
+                <strong className="text-white">It was about showing up when buyers were ready.</strong>
+              </p>
+            </div>
+
+            {/* 3 cost/value stats */}
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-12">
               {[
-                { kw: "same day AC repair",               before: "#32", after: "#2" },
-                { kw: "air conditioning service near me", before: "#31", after: "#2" },
-                { kw: "HVAC near me",                     before: "#27", after: "#2" },
-                { kw: "air conditioning repair",          before: "#30", after: "#2" },
-                { kw: "emergency AC repair",              before: "#21", after: "#3" },
-                { kw: "air handler repair",               before: "#29", after: "#3" },
-              ].map((r) => (
-                <div
-                  key={r.kw}
-                  className="bg-white rounded-[14px] px-5 py-4 flex items-center justify-between gap-4 shadow-sm"
-                >
-                  <p className="text-[13px] font-semibold text-[#1d1d1f] leading-snug flex-1">{r.kw}</p>
-                  <div className="flex items-center gap-2 shrink-0">
-                    <span className="text-[13px] font-bold text-[#bbb] tabular-nums">{r.before}</span>
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                      <path d="M5 12h14M12 5l7 7-7 7" stroke="#18b5d8" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
-                    <span className="text-[15px] font-extrabold text-[#18b5d8] tabular-nums">{r.after}</span>
-                  </div>
+                { stat: "$30–$80", label: "per click", body: "HVAC keywords can cost $30–$80 per click. Paid visibility is expensive — and stops the moment you stop paying." },
+                { stat: "Thousands", label: "saved monthly", body: "Ranking organically means thousands in ad spend saved every single month, without giving up visibility." },
+                { stat: "60–75%", label: "of clicks", body: "Top 3 positions capture 60–75% of all clicks. Outside the top 3, most buyers never see you." },
+              ].map((c) => (
+                <div key={c.stat} className="bg-white rounded-[16px] px-6 py-6 text-center shadow-sm">
+                  <p className="text-[clamp(1.4rem,2.5vw,2rem)] font-black text-[#18b5d8] leading-none mb-1">{c.stat}</p>
+                  <p className="text-[11px] font-semibold uppercase tracking-[0.14em] text-[#7a7a7a] mb-3">{c.label}</p>
+                  <p className="text-[13px] text-[#555] leading-relaxed">{c.body}</p>
                 </div>
               ))}
+            </div>
+
+            {/* Keyword ranking table */}
+            <p className="text-[11px] font-semibold text-[#18b5d8] tracking-[0.2em] uppercase mb-6">
+              Proof in Practice — Keyword Rankings
+            </p>
+            <div className="bg-white rounded-[20px] overflow-hidden shadow-sm mb-14">
+              {/* Header */}
+              <div className="grid grid-cols-[1fr_100px_80px_100px] gap-4 bg-[#0a0a0a] px-6 py-4 text-[11px] font-semibold uppercase tracking-[0.16em] text-white/40">
+                <span>Keyword</span>
+                <span className="text-center">Current Rank</span>
+                <span className="text-center">Movement</span>
+                <span className="text-center">Previous Rank</span>
+              </div>
+              {[
+                { kw: "same day ac repair",               after: "#2",  move: "+30", before: "#32" },
+                { kw: "air conditioning service near me", after: "#2",  move: "+29", before: "#31" },
+                { kw: "24 hour hvac repair",              after: "#3",  move: "+19", before: "#22" },
+                { kw: "emergency ac repair",              after: "#2",  move: "+19", before: "#21" },
+                { kw: "ac installation",                  after: "#4",  move: "+22", before: "#26" },
+                { kw: "hvac repair",                      after: "#5",  move: "+18", before: "#23" },
+              ].map((r, i) => (
+                <div
+                  key={r.kw}
+                  className={`grid grid-cols-[1fr_100px_80px_100px] gap-4 px-6 py-4 items-center border-b border-[#f0f0f0] last:border-0 ${i % 2 === 1 ? "bg-[#fafbfc]" : "bg-white"}`}
+                >
+                  <span className="text-[14px] font-medium text-[#1d1d1f]">{r.kw}</span>
+                  <span className="text-center text-[15px] font-extrabold text-[#18b5d8] flex items-center justify-center gap-1">
+                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7" stroke="#18b5d8" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
+                    {r.after}
+                  </span>
+                  <span className="text-center text-[14px] font-bold text-emerald-600">{r.move}</span>
+                  <span className="text-center text-[14px] text-[#aaa]">{r.before}</span>
+                </div>
+              ))}
+              {/* Footer callout */}
+              <div className="bg-[#f5f5f7] px-6 py-4 text-center">
+                <p className="text-[12px] text-[#555]">
+                  same day AC repair: <strong className="text-[#0a0a0a]">#32 → #2</strong>
+                  <span className="mx-3 text-[#ccc]">|</span>
+                  air conditioning service near me: <strong className="text-[#0a0a0a]">#31 → #2</strong>
+                </p>
+              </div>
             </div>
 
             {/* Pull quote */}
@@ -237,37 +312,76 @@ export default function CaseStudiesPage() {
         <section className="bg-white px-6 py-20">
           <div className="max-w-[980px] mx-auto">
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-14">
-              <div>
-                <p className="text-[11px] font-semibold text-[#18b5d8] tracking-[0.2em] uppercase mb-4">The Problem</p>
-                <p className="body-copy text-[#333333]">
-                  In a market with nearly 2,000 competing agents, Emory&rsquo;s Rock Realty had visibility but not recommendation-level credibility. Inconsistent business data made the brokerage look fragmented to AI systems. When buyers asked who to trust, AI had less reason to choose them over more coherent competitors.
-                </p>
+            {/* Before / After comparison */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12">
+              {/* Before */}
+              <div className="bg-[#f5f5f7] rounded-[20px] p-7 border border-[#e8e8ed]">
+                <span className="inline-block bg-[#1d1d1f] text-white text-[10px] font-bold tracking-[0.16em] uppercase px-3 py-1.5 rounded-full mb-5">Before</span>
+                <p className="text-[18px] font-bold text-[#1d1d1f] mb-5">Blending in. Easy to overlook.</p>
+                <ul className="space-y-3">
+                  {[
+                    "Not consistently showing up in AI-driven results",
+                    "Inconsistent business data across platforms",
+                    "Weak trust signals for search and AI",
+                  ].map((item) => (
+                    <li key={item} className="flex items-start gap-3 text-[14px] text-[#555] leading-relaxed">
+                      <span className="text-red-400 font-bold shrink-0 mt-0.5">✕</span>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
               </div>
-              <div>
-                <p className="text-[11px] font-semibold text-[#18b5d8] tracking-[0.2em] uppercase mb-4">What We Did</p>
-                <p className="body-copy text-[#333333]">
-                  Four targeted actions changed how AI interpreted and recommended the brokerage: NAP standardization across all platforms, AI Visibility Toolkit deployment, Chamber syncing to connect to a trusted local authority hub, and map-to-chat alignment for high-intent local searches within the 1.25-mile Chamber radius.
-                </p>
+
+              {/* After */}
+              <div className="bg-[#07141a] rounded-[20px] p-7 border border-[#18b5d8]/20">
+                <span className="inline-block bg-[#18b5d8] text-white text-[10px] font-bold tracking-[0.16em] uppercase px-3 py-1.5 rounded-full mb-5">After 30 Days</span>
+                <p className="text-[18px] font-bold text-white mb-5">More visibility. Stronger positioning. Real advantage.</p>
+                <ul className="space-y-3">
+                  {[
+                    "Showing up more often when buyers, sellers, and investors ask AI who to work with",
+                    "Stronger, more consistent digital presence",
+                    "Positioned to capture higher-intent opportunities",
+                  ].map((item) => (
+                    <li key={item} className="flex items-start gap-3 text-[14px] text-white/70 leading-relaxed">
+                      <span className="text-[#18b5d8] font-bold shrink-0 mt-0.5">✓</span>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
 
-            {/* Actions grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-14">
+            {/* Context bar */}
+            <div className="bg-[#0a0a0a] rounded-[16px] px-6 py-5 mb-12 text-center">
+              <p className="text-[15px] text-white/70">
+                This wasn&rsquo;t about more traffic.{" "}
+                <strong className="text-white">It was about being chosen.</strong>
+              </p>
+            </div>
+
+            {/* 3 key insights */}
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-14">
               {[
-                { action: "NAP standardization",   result: "Easier for AI to verify and cite the business" },
-                { action: "Toolkit deployment",     result: "More hooks for buyer, seller, and investor queries" },
-                { action: "Chamber syncing",        result: "Strengthened credibility via Chamber authority" },
-                { action: "Map-to-chat alignment",  result: "Easier to surface for nearby high-intent searches" },
-              ].map((r) => (
-                <div key={r.action} className="bg-[#f5f5f7] rounded-[14px] px-6 py-5 flex items-start gap-4">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" className="shrink-0 mt-0.5" aria-hidden="true">
-                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke="#18b5d8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
-                  <div>
-                    <p className="text-[15px] font-semibold text-[#1d1d1f] mb-1">{r.action}</p>
-                    <p className="text-[13px] text-[#7a7a7a] leading-relaxed">{r.result}</p>
-                  </div>
+                {
+                  stat: "$20–$100+",
+                  label: "per click",
+                  body: "Real estate keywords cost $20–$100+ per click. Paid visibility is expensive and temporary.",
+                },
+                {
+                  stat: "Organic",
+                  label: "AI positioning",
+                  body: "AI Visibility = organic positioning. Showing up without paying for every click.",
+                },
+                {
+                  stat: "2,000+",
+                  label: "agents outranked",
+                  body: "In a market this large, being chosen matters more than being seen.",
+                },
+              ].map((c) => (
+                <div key={c.stat} className="bg-[#f5f5f7] rounded-[16px] px-6 py-6 text-center">
+                  <p className="text-[clamp(1.4rem,2.5vw,2rem)] font-black text-[#18b5d8] leading-none mb-1">{c.stat}</p>
+                  <p className="text-[11px] font-semibold uppercase tracking-[0.14em] text-[#7a7a7a] mb-3">{c.label}</p>
+                  <p className="text-[13px] text-[#555] leading-relaxed">{c.body}</p>
                 </div>
               ))}
             </div>
@@ -275,7 +389,7 @@ export default function CaseStudiesPage() {
             {/* Pull quote */}
             <blockquote className="bg-[#f5f5f7] border-l-4 border-[#18b5d8] rounded-r-[16px] px-8 py-7 mb-12">
               <p className="text-[18px] text-[#1d1d1f] leading-relaxed italic mb-4">
-                &ldquo;In a sea of realtors, being the one AI recommends is everything. Buyers trust what AI tells them, and now it&rsquo;s telling them to call us.&rdquo;
+                &ldquo;In a market this competitive, a 20% increase in AI recommendations isn&rsquo;t incremental. It&rsquo;s a competitive advantage.&rdquo;
               </p>
               <p className="text-[13px] font-semibold text-[#7a7a7a] uppercase tracking-[0.1em]">Emory&rsquo;s Rock Realty, Wesley Chapel FL</p>
             </blockquote>

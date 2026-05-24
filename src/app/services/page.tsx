@@ -93,6 +93,124 @@ export default function ServicesPage() {
         </div>
       </section>
 
+      {/* ── Google vs AI — decision context ── */}
+      <section className="bg-[#0a0a0a] px-6 py-20">
+        <div className="max-w-[980px] mx-auto">
+          <div className="text-center mb-14">
+            <p className="text-[#18b5d8] text-[13px] font-semibold tracking-[0.2em] uppercase mb-5">The Shift That Changed Everything</p>
+            <h2 className="display-lg text-white max-w-[700px] mx-auto" style={{ textWrap: "balance" }}>
+              Google shows options. AI makes the decision faster.
+            </h2>
+            <p className="text-[16px] text-white/50 mt-5 max-w-[560px] mx-auto">
+              The way people search is changing. AI is compressing the journey from search to decision — and businesses that show up get chosen.
+            </p>
+          </div>
+
+          {/* Google vs AI comparison */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-14">
+            <div className="bg-[#111] rounded-[20px] p-8 border border-white/8">
+              <span className="inline-block bg-[#1d1d1f] text-white/60 text-[10px] font-bold tracking-[0.18em] uppercase px-3 py-1.5 rounded-full mb-6">Google (Then)</span>
+              <p className="text-[18px] font-bold text-white/70 mb-3">A list of options to explore.</p>
+              <ul className="space-y-2 text-[14px] text-white/40">
+                <li>10+ results to compare</li>
+                <li>Endless scrolling</li>
+                <li>Buyer in comparison mode</li>
+              </ul>
+            </div>
+            <div className="bg-[#07141a] rounded-[20px] p-8 border border-[#18b5d8]/25">
+              <span className="inline-block bg-[#18b5d8] text-white text-[10px] font-bold tracking-[0.18em] uppercase px-3 py-1.5 rounded-full mb-6">AI (Now)</span>
+              <p className="text-[18px] font-bold text-white mb-3">A short list of trusted recommendations.</p>
+              <ul className="space-y-2 text-[14px] text-white/70">
+                <li className="flex items-center gap-2"><span className="text-[#18b5d8]">✓</span> 1–3 options, pre-filtered</li>
+                <li className="flex items-center gap-2"><span className="text-[#18b5d8]">✓</span> Instant trust signals</li>
+                <li className="flex items-center gap-2"><span className="text-[#18b5d8]">✓</span> Buyer ready to act immediately</li>
+              </ul>
+              <p className="text-[13px] text-white/40 mt-5 italic">AI doesn&rsquo;t show everything. It recommends what deserves to be seen.</p>
+            </div>
+          </div>
+
+          {/* 3 stats */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-px bg-white/5 rounded-[20px] overflow-hidden">
+            {[
+              { v: "44%",  label: "of consumers", body: "now use AI tools to research products, services, and local businesses.", src: "HubSpot, 2024" },
+              { v: "4.4×", label: "higher conversion", body: "from AI-driven recommendations compared to traditional search.", src: "BCG, 2024" },
+              { v: "70%",  label: "of users", body: "trust AI-generated recommendations when making decisions.", src: "Edelman, 2024" },
+            ].map((s) => (
+              <div key={s.v} className="bg-[#111] px-7 py-8 text-center">
+                <p className="text-[clamp(2rem,4vw,3rem)] font-black text-[#18b5d8] leading-none mb-2">{s.v}</p>
+                <p className="text-[14px] font-semibold text-white mb-2">{s.label}</p>
+                <p className="text-[13px] text-white/45 leading-relaxed">{s.body}</p>
+                <p className="text-[11px] text-white/20 mt-3">{s.src}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── Buyers Don't Read — 3 Decision Filters ── */}
+      <section className="bg-white px-6 py-20 border-t border-[#e8e8ed]">
+        <div className="max-w-[980px] mx-auto">
+          <div className="text-center mb-14">
+            <p className="text-[#18b5d8] text-[13px] font-semibold tracking-[0.2em] uppercase mb-5">How Buyers Actually Choose</p>
+            <h2 className="display-lg text-[#0a0a0a]" style={{ textWrap: "balance" }}>
+              Buyers don&rsquo;t read. They filter.
+            </h2>
+            <p className="text-[16px] text-[#555] mt-5 max-w-[540px] mx-auto">
+              In seconds, buyers run your business through three subconscious filters. Pass them all — or lose the click.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10">
+            {[
+              {
+                n: "1",
+                heading: "Are they legit?",
+                sub: '"Do they look real?"',
+                body: "They look for consistent information, a professional presence, and clear business details.",
+                stat: "73%",
+                statLabel: "more engagement from accurate, consistent listings.",
+              },
+              {
+                n: "2",
+                heading: "Can I trust them?",
+                sub: '"What are others saying?"',
+                body: "They rely on reviews, recency, and reputation to feel confident before reaching out.",
+                stat: "88%",
+                statLabel: "of consumers trust online reviews as much as personal recommendations.",
+              },
+              {
+                n: "3",
+                heading: "Can they help me?",
+                sub: '"Do they solve my problem?"',
+                body: "They look for clear services, relevant messaging, and proof of expertise.",
+                stat: "200%+",
+                statLabel: "higher conversion for businesses with strong, recent reviews.",
+              },
+            ].map((f) => (
+              <div key={f.n} className="bg-[#f5f5f7] rounded-[20px] p-7">
+                <div className="w-9 h-9 rounded-full bg-[#18b5d8] flex items-center justify-center mb-5">
+                  <span className="text-white font-bold text-[13px]">{f.n}</span>
+                </div>
+                <h3 className="text-[18px] font-bold text-[#0a0a0a] mb-1">{f.heading}</h3>
+                <p className="text-[13px] text-[#18b5d8] font-semibold mb-4">{f.sub}</p>
+                <p className="text-[14px] text-[#555] leading-relaxed mb-5">{f.body}</p>
+                <div className="border-t border-[#e8e8ed] pt-4">
+                  <p className="text-[clamp(1.4rem,2.5vw,1.8rem)] font-black text-[#18b5d8] leading-none mb-1">{f.stat}</p>
+                  <p className="text-[12px] text-[#7a7a7a] leading-relaxed">{f.statLabel}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="bg-[#0a0a0a] rounded-[16px] px-8 py-6 text-center">
+            <p className="text-[16px] text-white/70">
+              Buyers form an opinion in under <strong className="text-white">3 seconds.</strong> If you don&rsquo;t pass all three filters,{" "}
+              <strong className="text-white">they move on.</strong>
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* ── Services ── */}
       {services.map((s) => (
         <section
@@ -135,6 +253,153 @@ export default function ServicesPage() {
           </div>
         </section>
       ))}
+
+      {/* ── How This Was Possible in 30 Days ── */}
+      <section className="bg-[#f5f5f7] px-6 py-20 border-t border-[#e8e8ed]">
+        <div className="max-w-[980px] mx-auto">
+          <div className="text-center mb-14">
+            <p className="text-[#18b5d8] text-[13px] font-semibold tracking-[0.2em] uppercase mb-5">Why Our Clients See Results in 30 Days</p>
+            <h2 className="display-lg text-[#0a0a0a]" style={{ textWrap: "balance" }}>
+              Most agencies take months. We compressed it into 30 days.
+            </h2>
+            <p className="text-[16px] text-[#555] mt-5 max-w-[560px] mx-auto">
+              We built a system for speed, alignment, and results — not slow, manual, disconnected approaches.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {/* Traditional */}
+            <div className="bg-white rounded-[20px] p-8 border border-[#e8e8ed]">
+              <span className="inline-block bg-[#1d1d1f] text-white text-[10px] font-bold tracking-[0.16em] uppercase px-3 py-1.5 rounded-full mb-6">The Traditional Approach</span>
+              <p className="text-[17px] font-bold text-[#1d1d1f] mb-5">Slow, manual, and disconnected.</p>
+              <ul className="space-y-3">
+                {[
+                  "3–6 months to see meaningful movement (sometimes longer)",
+                  "Manual work across multiple disconnected platforms",
+                  "Disconnected systems that don't share data",
+                  "Slow implementation with gaps and delays",
+                  "Manual approach can take 6–12+ months when done inconsistently",
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-3 text-[14px] text-[#555] leading-relaxed">
+                    <span className="text-red-400 font-bold shrink-0 mt-0.5">✕</span>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Our approach */}
+            <div className="bg-[#0a0a0a] rounded-[20px] p-8 border border-[#18b5d8]/20">
+              <span className="inline-block bg-[#18b5d8] text-white text-[10px] font-bold tracking-[0.16em] uppercase px-3 py-1.5 rounded-full mb-6">Our Approach</span>
+              <p className="text-[17px] font-bold text-white mb-5">Fast, intelligent, and fully aligned.</p>
+              <ul className="space-y-3">
+                {[
+                  { title: "AI Visibility Toolkit", body: "Our proprietary system that drives faster visibility and trust." },
+                  { title: "AI-Powered Code", body: "Helps search engines understand your business instantly." },
+                  { title: "Listing & Consistency Manager", body: "Across 50+ platforms to eliminate gaps." },
+                  { title: "Review & Trust Signals Strengthened", body: "To build credibility that converts." },
+                  { title: "Continuous Updates, Not One-Time Fixes", body: "We adapt as the algorithms change." },
+                ].map((item) => (
+                  <li key={item.title} className="flex items-start gap-3 text-[14px] leading-relaxed">
+                    <span className="text-[#18b5d8] font-bold shrink-0 mt-0.5">✓</span>
+                    <span>
+                      <strong className="text-white">{item.title}</strong>
+                      <span className="text-white/50"> — {item.body}</span>
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+          <div className="bg-[#0a0a0a] rounded-[16px] px-8 py-6 text-center mt-4">
+            <p className="text-[16px] text-white/70">
+              This isn&rsquo;t about working harder.{" "}
+              <strong className="text-white">It&rsquo;s about using the right system.</strong>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ── DIY vs AI Visibility Toolkit ── */}
+      <section className="bg-white px-6 py-20 border-t border-[#e8e8ed]">
+        <div className="max-w-[980px] mx-auto">
+          <div className="text-center mb-14">
+            <p className="text-[#18b5d8] text-[13px] font-semibold tracking-[0.2em] uppercase mb-5">How to Move Forward</p>
+            <h2 className="display-lg text-[#0a0a0a]" style={{ textWrap: "balance" }}>
+              How businesses are putting this into action.
+            </h2>
+            <p className="text-[16px] text-[#555] mt-5 max-w-[560px] mx-auto">
+              You have options. The right path depends on your time, resources, and how fast you want results.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+            {/* DIY */}
+            <div className="bg-[#f5f5f7] rounded-[20px] p-8 border border-[#e8e8ed]">
+              <p className="text-[11px] font-bold text-[#7a7a7a] tracking-[0.18em] uppercase mb-3">Do It Yourself</p>
+              <p className="text-[18px] font-bold text-[#0a0a0a] mb-2">Follow the system. Build it manually.</p>
+              <p className="text-[14px] text-[#555] mb-6">You can absolutely build AI visibility manually. It just takes time and consistency.</p>
+              <ul className="space-y-4">
+                {[
+                  { label: "Manage Listings", body: "Update and align your business information across dozens of platforms." },
+                  { label: "Build & Respond to Reviews", body: "Consistently earn new reviews and respond in a timely, helpful way." },
+                  { label: "Create Clear Content", body: "Keep your website and key pages clear, accurate, and AI-friendly." },
+                  { label: "Stay Consistent", body: "Keep everything aligned, monitor changes, and adjust as needed." },
+                ].map((item) => (
+                  <li key={item.label} className="flex items-start gap-3">
+                    <span className="text-[#1d1d1f] font-bold shrink-0 mt-0.5">→</span>
+                    <div>
+                      <p className="text-[14px] font-semibold text-[#0a0a0a]">{item.label}</p>
+                      <p className="text-[13px] text-[#7a7a7a]">{item.body}</p>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+              <div className="mt-6 bg-white rounded-[12px] px-5 py-4 border border-[#e8e8ed]">
+                <p className="text-[13px] text-[#555]">It works — just know it takes time, focus, and ongoing effort.</p>
+              </div>
+            </div>
+
+            {/* Toolkit */}
+            <div className="bg-[#0a0a0a] rounded-[20px] p-8 border border-[#18b5d8]/20">
+              <p className="text-[11px] font-bold text-[#18b5d8] tracking-[0.18em] uppercase mb-3">Use the Tools We Use</p>
+              <p className="text-[18px] font-bold text-white mb-2">The same system our team uses. Now in your hands.</p>
+              <p className="text-[14px] text-white/60 mb-6">Our AI Visibility Toolkit makes it faster, easier, and more effective to stay visible — everywhere.</p>
+              <ul className="space-y-4">
+                {[
+                  { label: "Everything in One Place", body: "Listings, reviews, content, social, and AI insights — all managed from a single dashboard." },
+                  { label: "Built-in Consistency", body: "We keep your information accurate and aligned across the entire internet." },
+                  { label: "Save Time. Get Results Faster.", body: "Automate the tedious work and focus on what moves the needle." },
+                  { label: "See What AI Sees", body: "Real-time insights into how AI platforms are interpreting your business — and how to improve it." },
+                ].map((item) => (
+                  <li key={item.label} className="flex items-start gap-3">
+                    <span className="text-[#18b5d8] font-bold shrink-0 mt-0.5">✓</span>
+                    <div>
+                      <p className="text-[14px] font-semibold text-white">{item.label}</p>
+                      <p className="text-[13px] text-white/50">{item.body}</p>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+              <div className="mt-6 bg-[#07141a] rounded-[12px] px-5 py-4 border border-[#18b5d8]/20">
+                <p className="text-[13px] text-[#18b5d8] font-semibold">Same system. Smarter way. Better visibility, faster.</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Chamber note */}
+          <div className="bg-[#0a0a0a] rounded-[16px] px-8 py-6 flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left">
+            <div className="flex-1">
+              <p className="text-[14px] text-white/60">
+                Through our partnership with the Chamber, members have direct access to the AI Visibility Toolkit.{" "}
+                <span className="text-white">For any business outside the chamber, this is still something you can implement — either manually or with the same tools.</span>
+              </p>
+            </div>
+            <p className="text-[12px] font-semibold text-[#18b5d8] shrink-0 uppercase tracking-[0.14em]">The difference isn&rsquo;t whether this works. It&rsquo;s how you choose to implement it.</p>
+          </div>
+        </div>
+      </section>
 
       {/* ── CTA ── */}
       <section className="bg-[#0a0a0a] py-28 px-6 text-center">

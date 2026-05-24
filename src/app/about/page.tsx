@@ -50,6 +50,46 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* ── Seen In — scrolling media strip ── */}
+      <div className="bg-[#111] py-8 overflow-hidden border-y border-white/5">
+        <p className="text-center text-[10px] font-semibold uppercase tracking-[0.28em] text-white/25 mb-6">As Seen In</p>
+        <div
+          className="flex min-w-max gap-14 whitespace-nowrap motion-safe:animate-[marquee_38s_linear_infinite]"
+          aria-hidden="true"
+        >
+          {[
+            { name: "NBC", style: "font-black" },
+            { name: "ABC", style: "font-black" },
+            { name: "CBS", style: "font-black" },
+            { name: "FOX", style: "font-black" },
+            { name: "The CW", style: "font-bold" },
+            { name: "Telemundo", style: "font-bold italic" },
+            { name: "The Morning Blend", style: "font-semibold" },
+            { name: "Tampa Home Talk", style: "font-semibold" },
+            { name: "102.5 The Bone", style: "font-bold" },
+            { name: "The Business Journals", style: "font-semibold" },
+            { name: "Creative Loafing Tampa Bay", style: "font-semibold" },
+            { name: "Yahoo! News", style: "font-bold" },
+            { name: "NBC", style: "font-black" },
+            { name: "ABC", style: "font-black" },
+            { name: "CBS", style: "font-black" },
+            { name: "FOX", style: "font-black" },
+            { name: "The CW", style: "font-bold" },
+            { name: "Telemundo", style: "font-bold italic" },
+            { name: "The Morning Blend", style: "font-semibold" },
+            { name: "Tampa Home Talk", style: "font-semibold" },
+            { name: "102.5 The Bone", style: "font-bold" },
+            { name: "The Business Journals", style: "font-semibold" },
+            { name: "Creative Loafing Tampa Bay", style: "font-semibold" },
+            { name: "Yahoo! News", style: "font-bold" },
+          ].map((logo, i) => (
+            <span key={i} className={`text-[15px] tracking-wide text-white/40 uppercase ${logo.style}`}>
+              {logo.name}
+            </span>
+          ))}
+        </div>
+      </div>
+
       {/* ── Michelle ── */}
       <section id="michelle" className="bg-[#0a0a0a] px-6 py-24">
         <div className="max-w-[980px] mx-auto grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-16 items-start">
@@ -83,8 +123,92 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* ── Values ── */}
+      {/* ── Results & Accomplishments ── */}
       <section className="bg-[#f5f5f7] px-6 py-24">
+        <div className="max-w-[980px] mx-auto">
+          <div className="text-center mb-14">
+            <p className="text-[13px] font-semibold tracking-[0.2em] uppercase text-[#18b5d8] mb-4">Documented Results</p>
+            <h2 className="display-lg text-[#0a0a0a]" style={{ textWrap: "balance" }}>
+              Our results &amp; accomplishments.
+            </h2>
+          </div>
+
+          {/* Nominations / awards row */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+            <div className="bg-white rounded-[20px] p-7 border-l-4 border-[#18b5d8]">
+              <p className="text-[11px] font-bold text-[#18b5d8] tracking-[0.18em] uppercase mb-3">Nominations</p>
+              <p className="text-[20px] font-bold text-[#0a0a0a] leading-snug">Top 100 Most Influential People in the Marketing &amp; Advertising Industry</p>
+            </div>
+            <div className="bg-white rounded-[20px] p-7 border-l-4 border-[#F7555F]">
+              <p className="text-[11px] font-bold text-[#F7555F] tracking-[0.18em] uppercase mb-3">Award</p>
+              <p className="text-[20px] font-bold text-[#0a0a0a] leading-snug">CEO of the Year</p>
+            </div>
+          </div>
+
+          {/* Stats grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {[
+              {
+                stat: "4 min",
+                label: "to first product sale",
+                body: "Product sales within 4 minutes of product launch. 5 media interviews booked within 3 days of new site going live.",
+                color: "#18b5d8",
+              },
+              {
+                stat: "48 hrs",
+                label: "strategy to execution",
+                body: "Shortened marketing strategy and execution plan development from 6 months to 48 hours.",
+                color: "#4FD1A0",
+              },
+              {
+                stat: "$900K+",
+                label: "revenue pipeline",
+                body: "Revenue pipeline within first four months of initial product deployment — without paid ads.",
+                color: "#F9DB79",
+              },
+              {
+                stat: "Top 47%",
+                label: "content creator",
+                body: "Top 47% content creator on social media with 60% engagement rate within 7 days of launch, out of 1M+ creators.",
+                color: "#18b5d8",
+              },
+              {
+                stat: "$54K",
+                label: "closed in 5 days",
+                body: "Closed $54K in annual contracts in 5 days from 5 social media posts — without paid ads.",
+                color: "#4FD1A0",
+              },
+              {
+                stat: "$180K",
+                label: "saved annually",
+                body: "Saves the average business $180,000 annually in software fees through AI-powered systems.",
+                color: "#F7555F",
+              },
+              {
+                stat: "30%+",
+                label: "revenue increase",
+                body: "Clients increased top-line revenue by 30%+ using our marketing strategy.",
+                color: "#18b5d8",
+              },
+              {
+                stat: "$4,320",
+                label: "cut in one day",
+                body: "Cut costs by $4,320 in one day without decreasing operational quality or efficiency.",
+                color: "#4FD1A0",
+              },
+            ].map((item) => (
+              <div key={item.stat} className="bg-white rounded-[20px] px-6 py-6">
+                <p className="text-[clamp(1.6rem,3vw,2.2rem)] font-black leading-none mb-1" style={{ color: item.color }}>{item.stat}</p>
+                <p className="text-[12px] font-semibold uppercase tracking-[0.14em] text-[#7a7a7a] mb-3">{item.label}</p>
+                <p className="text-[13px] text-[#555] leading-relaxed">{item.body}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── Values ── */}
+      <section className="bg-white px-6 py-24 border-t border-[#e8e8ed]">
         <div className="max-w-[980px] mx-auto">
           <div className="text-center mb-16">
             <p className="text-[13px] font-semibold tracking-[0.2em] uppercase text-[#18b5d8] mb-4">How We Work</p>
