@@ -29,7 +29,7 @@ const bots = [
       "Entity and citation optimization for AI platforms",
       "Review and trust signal strategy",
       "Listing accuracy and consistency across directories",
-      "Self-directed ($497/mo) or fully managed ($2,000/mo)",
+      "Flexible engagement levels to match your needs",
     ],
   },
   {

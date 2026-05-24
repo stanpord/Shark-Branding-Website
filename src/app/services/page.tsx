@@ -26,11 +26,11 @@ const services = [
     title: "AI Visibility Toolkit",
     description: "A complete, proven framework for businesses ready to stop guessing and start winning. We fix your visibility gaps systematically — search signals, trust indicators, listing accuracy, and AI readiness — with two engagement levels to match where you are.",
     bullets: [
-      "Self-directed toolkit starting at $497/month",
-      "Fully managed service at $2,000/month",
+      "Complete AI and search visibility framework",
       "Initial changes visible in 7–14 days",
       "Measurable ranking movement within 30 days",
       "Monthly reporting and strategy calls",
+      "Flexible engagement levels to match your needs",
     ],
     cta: "Explore the Toolkit", href: "/contact",
   },
@@ -59,33 +59,6 @@ const services = [
       "100% free — forever, no catch",
     ],
     cta: "Get My Free Report", href: "/free-report",
-  },
-];
-
-const plans = [
-  {
-    name: "Self-Directed",
-    price: "$497",
-    period: "/month",
-    features: [
-      "Full AI Visibility Toolkit access",
-      "Guided framework + templates",
-      "Monthly strategy session",
-      "Email support",
-    ],
-  },
-  {
-    name: "Fully Managed",
-    price: "$2,000",
-    period: "/month",
-    featured: true,
-    features: [
-      "Everything in Self-Directed",
-      "Done-for-you implementation",
-      "Weekly progress reporting",
-      "Priority support",
-      "Competitive monitoring",
-    ],
   },
 ];
 
@@ -162,57 +135,6 @@ export default function ServicesPage() {
           </div>
         </section>
       ))}
-
-      {/* ── Pricing ── */}
-      <section className="bg-[#f5f5f7] px-6 py-24">
-        <div className="max-w-[980px] mx-auto">
-          <div className="text-center mb-16">
-            <p className="text-[13px] font-semibold tracking-[0.2em] uppercase text-[#18b5d8] mb-4">Pricing</p>
-            <h2 className="display-lg text-[#0a0a0a]" style={{ textWrap: "balance" }}>
-              Simple, transparent plans.
-            </h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-[720px] mx-auto">
-            {plans.map((p) => (
-              <div
-                key={p.name}
-                className={`rounded-[20px] p-8 ${p.featured ? "bg-[#0a0a0a]" : "bg-white border border-[#e8e8ed]"}`}
-              >
-                {p.featured && (
-                  <span className="inline-block bg-[#18b5d8] text-black text-[11px] font-bold rounded-full px-3 py-1 mb-5 tracking-wide uppercase">
-                    Most Popular
-                  </span>
-                )}
-                <p className={`text-[13px] font-semibold tracking-[0.12em] uppercase mb-3 ${p.featured ? "text-white/50" : "text-[#7a7a7a]"}`}>
-                  AI Visibility Toolkit — {p.name}
-                </p>
-                <p className={`text-[clamp(2.5rem,5vw,4rem)] font-bold leading-none tracking-tight mb-1 ${p.featured ? "text-white" : "text-[#0a0a0a]"}`}>
-                  {p.price}
-                  <span className={`text-[17px] font-normal ${p.featured ? "text-white/40" : "text-[#7a7a7a]"}`}>{p.period}</span>
-                </p>
-                <div className={`mt-8 space-y-3 mb-8 border-t pt-8 ${p.featured ? "border-white/10" : "border-[#e8e8ed]"}`}>
-                  {p.features.map((f) => (
-                    <div key={f} className="flex items-start gap-3">
-                      <span className="text-[#18b5d8] font-bold shrink-0 mt-0.5" aria-hidden="true">✓</span>
-                      <span className={`text-[15px] ${p.featured ? "text-white/70" : "text-[#333333]"}`}>{f}</span>
-                    </div>
-                  ))}
-                </div>
-                <Link
-                  href="/contact"
-                  className={`btn-press block text-center text-[15px] font-semibold rounded-full px-6 py-3.5 motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 [touch-action:manipulation] ${
-                    p.featured
-                      ? "bg-[#18b5d8] text-white hover:bg-[#1ec8ee] focus-visible:ring-offset-[#0a0a0a]"
-                      : "bg-[#0a0a0a] text-white hover:bg-[#07141a]"
-                  }`}
-                >
-                  Get Started
-                </Link>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* ── CTA ── */}
       <section className="bg-[#0a0a0a] py-28 px-6 text-center">
