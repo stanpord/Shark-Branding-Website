@@ -32,8 +32,6 @@ export default function Page() {
       <p>Hope and her team recognized that &ldquo;traditional&rdquo; digital methods are evolving. To stay competitive, local businesses need <strong>AI Visibility</strong>. This partnership provides the tools, the strategy, and the framework to ensure our local economy doesn&rsquo;t just survive the AI revolution &mdash; it thrives because of it.</p>
       <p>But the Chamber didn&rsquo;t just take our word for it. They put our methods to the test. Before bringing this to the wider membership, the NTBC implemented the <strong>AI Visibility Toolkit</strong> themselves. The results? They saw firsthand how a strategic focus on data consistency and reputation architecture can transform how an organization is perceived by AI models. They aren&rsquo;t just endorsing it; they are living it.</p>
 
-      <img src="https://cdn.marblism.com/Xxn8iv5N01S.webp" alt="Side-by-side visual comparison of traditional Google search results and AI-powered recommendations" />
-
       <h2>Why AI Visibility? Why Now?</h2>
       <p>Think about how you find things today. You might still type a few keywords into a search engine, but more often, you&rsquo;re asking a question.</p>
       <ul>
@@ -43,6 +41,11 @@ export default function Page() {
       </ul>
       <p>When a user asks these questions, AI models don&rsquo;t just give a list of links. They give an <strong>answer</strong>. They recommend a winner. If your business isn&rsquo;t &ldquo;Found, Trusted, and Chosen&rdquo; by these models, you don&rsquo;t even get invited to the conversation.</p>
       <p>That&rsquo;s where Shark Branding Solutions comes in. We&rsquo;ve moved past the era of simple &ldquo;marketing&rdquo; services. We focus on <strong>AI Visibility</strong>: a high-level strategy designed to make sure your business is the one the machines recommend.</p>
+
+      <img
+        src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&h=480&q=80"
+        alt="North Tampa Bay business community members collaborating on AI visibility strategy at a chamber event"
+      />
 
       <hr />
 
@@ -57,7 +60,10 @@ export default function Page() {
       <p>Visibility is only half the battle. Once the AI finds you, it looks for &ldquo;social proof.&rdquo; Does this business have good reviews? Are they responding to customers? Do they have authority in their niche?</p>
       <p>We focus on reputation management that builds a &ldquo;trust engine.&rdquo; By managing your reviews and social signals, we tell the AI &mdash; and your potential customers &mdash; that you are a safe bet. In an AI-driven search environment, <strong>reputation is the new currency</strong>.</p>
 
-      <img src="https://cdn.marblism.com/25pQka7nY1M.webp" alt="Visual framework outlining the shift from Get Found to Get Chosen" />
+      <img
+        src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1200&h=480&q=80"
+        alt="Shark Branding Solutions and North Tampa Bay Chamber partnership — building trust for local businesses in the AI era"
+      />
 
       <h3>3. Chosen: Converting Visibility into Revenue</h3>
       <p>Being seen is great. Being trusted is better. But being <strong>chosen</strong> is what pays the bills. The final stage of our framework is about conversion. We look at the &ldquo;last mile&rdquo; of the customer journey. When someone clicks your profile or visits your site because an AI recommended you, what do they see?</p>
@@ -95,14 +101,20 @@ export default function Page() {
       </ul>
       <p>That&rsquo;s the difference between hoping you show up and building a system that helps AI confidently recommend you.</p>
 
-      <img src="https://cdn.marblism.com/cBfujCTcJHu.webp" alt="Visual summary showing case studies of Shark Branding Solutions AI Visibility Toolkit" />
+      <img
+        src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1200&h=480&q=80"
+        alt="Local business owner reviewing AI visibility results with a Shark Branding Solutions advisor after implementing the toolkit"
+      />
 
       <h2>Stop Playing Catch-Up</h2>
       <p>The reality is that the gap between businesses that embrace AI and those that ignore it is widening every day. You don&rsquo;t want to be the business that realizes three years from now that nobody is finding you because you&rsquo;re invisible to the tools everyone is using.</p>
       <p>North Tampa Bay is a thriving, innovative hub. We have the talent, the passion, and the services. Now, through this partnership between Shark Branding Solutions and the NTBC, we have the technology to match.</p>
       <p>Are you ready to stop wondering where your next customer is coming from and start being the business that AI recommends?</p>
 
-      <img src="https://cdn.marblism.com/1CrY0iBaxm8.webp" alt="Illustration of a business owner bridging a traditional storefront to an AI-ready digital future" />
+      <img
+        src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=1200&h=480&q=80"
+        alt="Wesley Chapel and Tampa Bay skyline — the local community Shark Branding Solutions is helping get AI-ready"
+      />
 
       <h2>Take Action Today</h2>
       <p>The future doesn&rsquo;t wait for a &ldquo;better time.&rdquo; It&rsquo;s happening right now in every ChatGPT prompt, every voice search, and every place people go looking for trusted resources.</p>

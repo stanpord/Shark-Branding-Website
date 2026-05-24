@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <BlogShell
-      relatedPosts={[{ href: "/resources/blog-ai-funnel-chatgpt-new-front-door", title: "ChatGPT Is the New Front Door for Your Customers", category: "AI Funnel" }, { href: "/resources/blog-seo-old-school-geo-ai-shift", title: "Why Your Business Needs GEO for the AI Search Shift", category: "GEO" }, { href: "/resources/blog-ntbc-ai-ready-partnership", title: "Shark Branding <BlogShell North Tampa Bay Chamber: AI-Ready", category: "Partnership" }]}
+      relatedPosts={[{ href: "/resources/blog-ai-funnel-chatgpt-new-front-door", title: "ChatGPT Is the New Front Door for Your Customers", category: "AI Funnel" }, { href: "/resources/blog-seo-old-school-geo-ai-shift", title: "Why Your Business Needs GEO for the AI Search Shift", category: "GEO" }, { href: "/resources/blog-ntbc-ai-ready-partnership", title: "Shark Branding & North Tampa Bay Chamber: AI-Ready", category: "Partnership" }]}
       category="AI Visibility"
       title="The AI Map: Why Consistent Business Listings Are the Secret to Being Found by ChatGPT and Gemini"
       date="April 10, 2026"
@@ -28,7 +28,10 @@ export default function Page() {
       <h2>The Shift: From Search Engines to Answer Engines</h2>
       <p>Why does consistency matter so much now? Because AI models aren&rsquo;t just &ldquo;searching&rdquo;&mdash;they are &ldquo;reasoning.&rdquo; When a user asks Gemini, &ldquo;Where should I take my car for a brake repair in downtown?&rdquo; the AI doesn&rsquo;t just look for a website with the word &ldquo;brakes.&rdquo; It looks for <strong>verified facts</strong>. It cross-references data from Google Business Profiles, Yelp, Bing, Apple Maps, and hundreds of smaller directories to see if your information matches up.</p>
 
-      <img src="https://cdn.marblism.com/Xxn8iv5N01S.webp" alt="Side-by-side visual comparison of traditional Google search results and AI-powered recommendations" />
+      <img
+        src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=1200&h=480&q=80"
+        alt="Aerial view of a city grid — the digital map AI uses to cross-reference your business location and data across hundreds of directories"
+      />
 
       <p>If your Yelp listing says you close at 5:00 PM but your Google profile says 6:00 PM, the AI gets confused. And in the world of Large Language Models (LLMs), confusion equals a lack of confidence. If the AI isn&rsquo;t 100% sure you are open or where you are located, it won&rsquo;t recommend you. It would rather recommend a competitor with slightly fewer reviews but perfectly consistent data.</p>
 
@@ -41,13 +44,11 @@ export default function Page() {
       </ol>
       <p>Without consistent business listings, you can&rsquo;t even get to the &ldquo;Trusted&rdquo; phase. You&rsquo;re disqualified before the race even begins.</p>
 
-      <img src="https://cdn.marblism.com/zWKJTMVdg8f.webp" alt="A digital map showing how consistent business listings create a clear path for AI visibility" />
-
       <h2>Why Consistency Is the &ldquo;Secret Map&rdquo; for ChatGPT and Gemini</h2>
       <p>AI models like ChatGPT and Gemini don&rsquo;t just read your website; they ingest the entire &ldquo;data ecosystem&rdquo; surrounding your brand.</p>
 
       <h3>The Data Accuracy Problem</h3>
-      <p>Research shows that business profile accuracy across AI platforms sits at roughly 68%. That means nearly a third of the information out there is wrong. Think of it like this: If you ask three friends for the location of a new restaurant and they all give you different street names, are you going to go? Probably not. AI works the same way. Consistency creates <strong>trust</strong> in the eyes of the algorithm.</p>
+      <p>Industry research shows that across major listing platforms, a significant share of local business data contains at least one inaccuracy&mdash;wrong hours, outdated phone numbers, mismatched addresses.<sup>1</sup> Think of it like this: If you ask three friends for the location of a new restaurant and they all give you different street names, are you going to go? Probably not. AI works the same way. Consistency creates <strong>trust</strong> in the eyes of the algorithm.</p>
 
       <h3>What AI Looks For in Your Listings</h3>
       <ul>
@@ -58,10 +59,13 @@ export default function Page() {
       </ul>
       <p>Want to see how you currently stack up? You can grab a <a href="/free-report">free report</a> that shows exactly how the AI sees your business right now.</p>
 
+      <img
+        src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=1200&h=480&q=80"
+        alt="Business owner auditing their online listings across multiple directories to ensure AI can find and trust them"
+      />
+
       <h2>The &ldquo;Found&rdquo; Pillar in Action: Real Results</h2>
       <p>We&rsquo;ve seen this play out in the real world. By tightening up business listings and ensuring data was synced across every major directory, our clients saw massive jumps in visibility within just 30 days. It wasn&rsquo;t magic; it was about giving the AI the confidence to recommend them.</p>
-
-      <img src="https://cdn.marblism.com/cBfujCTcJHu.webp" alt="Visual summary showing three case studies of Shark Branding Solutions AI Visibility Toolkit" />
 
       <h2>How to Audit Your Business &ldquo;Map&rdquo; Today</h2>
       <ol>
@@ -75,12 +79,20 @@ export default function Page() {
       <h2>The Apple Intelligence Factor</h2>
       <p>We can&rsquo;t talk about AI maps without mentioning Apple Intelligence. With the integration of AI across millions of iPhones, the stakes have never been higher. When a user asks Siri to &ldquo;find a plumber near me,&rdquo; the AI is pulling from a highly curated set of data. If your listings are fragmented, you aren&rsquo;t just missing out on a search result; you&rsquo;re missing out on the entire Apple ecosystem.</p>
 
-      <img src="https://cdn.marblism.com/25pQka7nY1M.webp" alt="Visual framework outlining the shift from Get Found to Get Chosen" />
+      <img
+        src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1200&h=480&q=80"
+        alt="Business consultant reviewing listing consistency results with a local business owner — the payoff of a clean digital map"
+      />
 
       <h2>Your Path to AI Dominance</h2>
       <p>The transition to AI-driven discovery is a complete shift in how businesses think about visibility. But it&rsquo;s also an incredible opportunity. While your competitors are still obsessing over 2010-era SEO tactics, you can be the one who builds the clearest, most reliable map for the AI to follow.</p>
       <p>Start by understanding your current standing. Join one of our <a href="/services">workshops</a> where we break down the exact strategy for local search alignment and reputation management. Or, if you&rsquo;re ready to dive in right now, check out our <a href="/services">AI Visibility Consulting</a> services.</p>
       <p>The AI is already searching. The only question is: will it find you, or will it find your competitor? Let&rsquo;s make sure it&rsquo;s you.</p>
+
+      <hr />
+      <p style={{ fontSize: "0.8rem", color: "#999", lineHeight: "1.6" }}>
+        <sup>1</sup> BrightLocal, &ldquo;Local Business Listing Accuracy Report&rdquo; &mdash; <a href="https://www.brightlocal.com/research/" target="_blank" rel="noopener noreferrer">brightlocal.com/research</a>. Moz Local, &ldquo;Why Local Listing Consistency Matters&rdquo; &mdash; <a href="https://moz.com/local" target="_blank" rel="noopener noreferrer">moz.com/local</a>
+      </p>
     </BlogShell>
   );
 }

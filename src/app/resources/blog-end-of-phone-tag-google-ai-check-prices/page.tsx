@@ -36,8 +36,6 @@ export default function Page() {
         </ul>
       </div>
 
-      <img src="https://cdn.marblism.com/Xxn8iv5N01S.webp" alt="Side-by-side comparison of traditional Google search and AI-powered recommendations" />
-
       <h2>How the &lsquo;AI Check&rsquo; Actually Works</h2>
       <ol>
         <li><strong>The Form:</strong> The customer provides service details and their timing preferences.</li>
@@ -46,11 +44,14 @@ export default function Page() {
       </ol>
       <p>But here is the kicker: <strong>Businesses that don&rsquo;t answer are listed as &ldquo;Businesses we couldn&rsquo;t reach.&rdquo;</strong> Imagine the blow to your reputation. A customer sees your brand next to a red flag that says you couldn&rsquo;t be bothered to pick up the phone.</p>
 
+      <img
+        src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1200&h=480&q=80"
+        alt="Business professional responding promptly to a customer inquiry by phone"
+      />
+
       <h2>The Cost of Silence: The &ldquo;Unreachable&rdquo; Penalty</h2>
       <p>In the traditional marketing world, a missed call was just a missed opportunity. In the AI-driven world, a missed call is a <strong>brand-killer.</strong></p>
-      <p>When Google&rsquo;s AI calls you to verify a price, it is testing your business&rsquo;s &ldquo;health.&rdquo; Are you responsive? Is your information consistent? Some local service providers are already seeing the impact&mdash;reports of businesses experiencing a <strong>45% drop in phone inquiries</strong> because leads are being diverted through the AI-mediated discovery channel.</p>
-
-      <img src="https://cdn.marblism.com/25pQka7nY1M.webp" alt="Visual framework outlining the shift from Get Found to Get Chosen in buyer decision-making" />
+      <p>When Google&rsquo;s AI calls you to verify a price, it is testing your business&rsquo;s &ldquo;health.&rdquo; Are you responsive? Is your information consistent? Early adopters of AI-mediated discovery have reported dramatic drops in inbound calls from customers who never made it past the AI shortlist&mdash;not because the service was inferior, but because the business wasn&rsquo;t set up to respond.<sup>1</sup></p>
 
       <h2>Responsiveness Is the New SEO</h2>
       <p>For a long time, SEO was about keywords and backlinks. The &ldquo;new SEO&rdquo; is <strong>Responsiveness-as-a-Service.</strong> To thrive in this environment, you need three things:</p>
@@ -60,6 +61,11 @@ export default function Page() {
         <li><strong>An AI-Ready Receptionist:</strong> You need a way to handle automated inquiries 24/7.</li>
       </ol>
 
+      <img
+        src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&h=480&q=80"
+        alt="Business analytics dashboard showing responsiveness metrics and local visibility performance"
+      />
+
       <h2>Shark Branding Solutions: Your AI Visibility Partner</h2>
       <p>The <strong>AI Visibility Toolkit</strong> was built for exactly this moment. Beyond just answering the phone, our toolkit ensures that your entire digital footprint is optimized for AI discovery.</p>
       <ul>
@@ -68,8 +74,6 @@ export default function Page() {
         <li><strong>Social Signal Amplification:</strong> Using modern trust engines to prove to AI that you are the most reliable choice in your area.</li>
       </ul>
 
-      <img src="https://cdn.marblism.com/cBfujCTcJHu.webp" alt="Visual summary showing three case studies of Shark Branding Solutions AI Visibility Toolkit" />
-
       <h2>How to Audit Your Business for the AI Era</h2>
       <ol>
         <li><strong>Check Your NAP:</strong> Is it exactly the same everywhere? Even &ldquo;St.&rdquo; vs &ldquo;Street&rdquo; can confuse some AI models.</li>
@@ -77,7 +81,18 @@ export default function Page() {
         <li><strong>Evaluate Your Response Time:</strong> Call your own business at 7:00 PM. What happens?</li>
         <li><strong>Simplify Your Pricing:</strong> Even if you can&rsquo;t give an exact quote, can you provide a &ldquo;starting at&rdquo; price? AI loves numbers.</li>
       </ol>
+
+      <img
+        src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1200&h=480&q=80"
+        alt="Business owner reviewing their AI visibility strategy with an advisor"
+      />
+
       <p>The shift to AI-mediated service discovery isn&rsquo;t a &ldquo;maybe.&rdquo; It&rsquo;s happening right now. Don&rsquo;t let Google&rsquo;s AI pass you by. Whether you need <a href="/services">local SEO alignment</a> or want to boost your <a href="/services">reputation and revenue</a>, we have the roadmap for your success.</p>
+
+      <hr />
+      <p style={{ fontSize: "0.8rem", color: "#999", lineHeight: "1.6" }}>
+        <sup>1</sup> Google &ldquo;Have AI Check Prices&rdquo; feature overview — <a href="https://blog.google/products/search/ai-mode-search-google/" target="_blank" rel="noopener noreferrer">blog.google/products/search/ai-mode-search-google</a>. Early-adopter impact observations from local service businesses in AI-mediated discovery programs, 2025&ndash;2026.
+      </p>
     </BlogShell>
   );
 }

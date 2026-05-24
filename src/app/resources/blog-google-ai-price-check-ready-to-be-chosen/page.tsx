@@ -26,7 +26,7 @@ export default function Page() {
       <p>That scenario isn&rsquo;t hypothetical. It&rsquo;s happening right now. And the businesses that aren&rsquo;t prepared for it are being systematically excluded from the conversation&mdash;not because they offer a worse service, but because they&rsquo;re invisible to the AI doing the choosing.</p>
 
       <h2>Understanding Google&rsquo;s AI Price Check</h2>
-      <p>Google&rsquo;s <strong>&ldquo;Have AI Check Prices&rdquo;</strong> feature represents a fundamental shift in how local service businesses get discovered. Here&rsquo;s what the process looks like from the inside:</p>
+      <p>Google&rsquo;s <strong>&ldquo;Have AI Check Prices&rdquo;</strong> feature represents a fundamental shift in how local service businesses get discovered.<sup>1</sup> Here&rsquo;s what the process looks like from the inside:</p>
       <ol>
         <li><strong>Customer submits a request:</strong> They describe the service they need and their timing preferences through a simple Google interface.</li>
         <li><strong>Google&rsquo;s AI reaches out:</strong> The AI contacts local businesses directly&mdash;via phone call, online form, or integrated booking system&mdash;to gather pricing and availability.</li>
@@ -35,7 +35,10 @@ export default function Page() {
       </ol>
       <p>The businesses that respond quickly and clearly get promoted to the top. The businesses that don&rsquo;t respond get labeled: <strong>&ldquo;We couldn&rsquo;t reach this business.&rdquo;</strong></p>
 
-      <img src="https://cdn.marblism.com/Xxn8iv5N01S.webp" alt="AI-powered local service discovery replacing traditional search and phone-tag process" />
+      <img
+        src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1200&h=480&q=80"
+        alt="Business professional answering an AI-initiated inquiry promptly to secure the lead"
+      />
 
       <div className="callout-box">
         <h4>The &ldquo;Couldn&rsquo;t Reach&rdquo; Label Is a Brand Killer</h4>
@@ -54,7 +57,10 @@ export default function Page() {
       <h3>Google Business Profile Gaps</h3>
       <p>Your profile needs to be complete, current, and detailed. Missing service categories, outdated hours, or no Q&amp;A section tells the AI your profile isn&rsquo;t reliable. If the AI can&rsquo;t trust your profile data, it won&rsquo;t stake its recommendation on you.</p>
 
-      <img src="https://cdn.marblism.com/25pQka7nY1M.webp" alt="Visual framework showing the shift from Get Found to Get Chosen in local AI discovery" />
+      <img
+        src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1200&h=480&q=80"
+        alt="Business owner updating their profile and pricing information to be AI-ready at any hour"
+      />
 
       <h2>What &ldquo;Ready to Be Chosen&rdquo; Actually Looks Like</h2>
       <p>Being chosen by AI-mediated discovery isn&rsquo;t about having the flashiest website or the biggest ad budget. It&rsquo;s about building a digital presence that AI can read, trust, and confidently recommend. Here&rsquo;s the checklist:</p>
@@ -71,7 +77,10 @@ export default function Page() {
       <h3>Review Velocity</h3>
       <p>A steady flow of recent reviews&mdash;not just a historical pile from five years ago&mdash;shows AI that your business is active, trusted, and delivering results right now.</p>
 
-      <img src="https://cdn.marblism.com/cBfujCTcJHu.webp" alt="Case study summary showing Shark Branding Solutions AI Visibility Toolkit results" />
+      <img
+        src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&h=480&q=80"
+        alt="Business owner working on their digital presence and review strategy to attract AI-recommended leads"
+      />
 
       <h2>The Businesses That Will Win This Shift</h2>
       <p>The AI price check era isn&rsquo;t coming in five years. It&rsquo;s here. And the window to establish your position before your competitors figure it out is narrow.</p>
@@ -87,6 +96,11 @@ export default function Page() {
         <li><strong>Audit your NAP consistency.</strong> Check Google, Yelp, Facebook, Apple Maps, and Bing Places. Make sure every listing matches exactly.</li>
       </ol>
       <p>The AI is already calling. The only question is whether you&rsquo;re going to answer. <a href="/free-report">Get your free visibility report</a> today and see exactly where your business stands in the AI discovery landscape&mdash;before your competitor does.</p>
+
+      <hr />
+      <p style={{ fontSize: "0.8rem", color: "#999", lineHeight: "1.6" }}>
+        <sup>1</sup> Google, &ldquo;AI Mode in Search&rdquo; (2025) &mdash; <a href="https://blog.google/products/search/ai-mode-search-google/" target="_blank" rel="noopener noreferrer">blog.google/products/search/ai-mode-search-google</a>. Google&rsquo;s &ldquo;Have AI Check Prices&rdquo; feature is part of AI Mode in Google Search, expanding AI-initiated local business outreach for price and availability verification.
+      </p>
     </BlogShell>
   );
 }

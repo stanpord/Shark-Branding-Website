@@ -39,7 +39,7 @@ export default function Page() {
 
       <h2>The Ghost Town Effect: Why Silence is Killing Your Conversions</h2>
       <p>Are you letting your Google Business Profile turn into a ghost town? When a potential customer sees a review from three weeks ago with no response, they don&rsquo;t just think you&rsquo;re busy. They think you don&rsquo;t care. Or worse, they think you aren&rsquo;t even in business anymore.</p>
-      <p><strong>Here is the reality:</strong> 73% of consumers only trust reviews from the last 30 days. But here is the kicker: they also watch how <em>you</em> react. A review response is a public demonstration of your customer service. It&rsquo;s a stage. And if you aren&rsquo;t on it, you&rsquo;re losing the lead.</p>
+      <p><strong>Here is the reality:</strong> Research shows that 73% of consumers only pay attention to reviews written within the past month.<sup>1</sup> But here is the kicker: they also watch how <em>you</em> react. A review response is a public demonstration of your customer service. It&rsquo;s a stage. And if you aren&rsquo;t on it, you&rsquo;re losing the lead.</p>
       <p>Unanswered reviews erode your credibility faster than a bad Yelp rant. When you ignore a review, you&rsquo;re telling the world that once the transaction is over, the relationship is dead. Is that the message you want to send?</p>
 
       <h2>The 24-Hour Rule: It&rsquo;s Not Just Polite, It&rsquo;s Essential</h2>
@@ -49,10 +49,13 @@ export default function Page() {
       <ol>
         <li><strong>It Validates the Customer:</strong> It shows you value their time.</li>
         <li><strong>It De-escalates Negativity:</strong> A fast response to a bad review can often flip a hater into a loyalist before they have time to stew.</li>
-        <li><strong>It Signals Activity to Google:</strong> Google loves active businesses. Frequent updates and interactions tell the algorithm your business is alive and kicking.</li>
+        <li><strong>It Signals Activity to Google:</strong> Google loves active businesses. Frequent updates and interactions tell the algorithm your business is alive and kicking.<sup>2</sup></li>
       </ol>
 
-      <img src="https://cdn.marblism.com/rhszpmXOoCD.webp" alt="Stopwatch and heart icon showing how fast review responses build local customer trust" />
+      <img
+        src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1200&h=480&q=80"
+        alt="Business professional responding promptly to a customer review within the 24-hour window that builds AI trust"
+      />
 
       <h2>Manual vs. Templates vs. AI-Assisted: The Great Debate</h2>
       <p>How are you currently handling your reviews? Most businesses fall into one of three buckets:</p>
@@ -78,16 +81,22 @@ export default function Page() {
       <ul>
         <li><strong>Contextual Keywords:</strong> If a customer mentions &ldquo;emergency AC repair in Miami,&rdquo; and your response confirms it, you&rsquo;ve just strengthened your local SEO footprint.</li>
         <li><strong>Behavioral Signals:</strong> High engagement leads to more clicks. More clicks lead to higher rankings.</li>
-        <li><strong>E-E-A-T:</strong> (Experience, Expertise, Authoritativeness, and Trustworthiness). Responding to reviews is one of the only visible ways a local business can prove its E-E-A-T directly on the search results page.</li>
+        <li><strong>E-E-A-T:</strong> (Experience, Expertise, Authoritativeness, and Trustworthiness). Responding to reviews is one of the only visible ways a local business can prove its E-E-A-T directly on the search results page.<sup>3</sup></li>
       </ul>
 
-      <img src="https://cdn.marblism.com/cBfujCTcJHu.webp" alt="AI Visibility Toolkit Case Studies Summary" />
+      <img
+        src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&h=480&q=80"
+        alt="Local business analytics dashboard showing the SEO lift from consistent review responses and E-E-A-T signals"
+      />
 
       <h2>The Shift: From &ldquo;Get Found&rdquo; to &ldquo;Get Chosen&rdquo;</h2>
       <p>In the old days, you just needed to show up in the yellow pages. Then you just needed to &ldquo;get found&rdquo; on Google. Today? Everyone is found. The battle is now about <strong>getting chosen.</strong></p>
       <p>When a customer looks at three local businesses, and one has 500 reviews with zero responses, and the other has 100 reviews with thoughtful, 24-hour responses&mdash;who do you think they&rsquo;re going to call? They&rsquo;re calling the business that listens. They&rsquo;re calling the business that responds.</p>
 
-      <img src="https://cdn.marblism.com/25pQka7nY1M.webp" alt="The Shift That Wins the Decision Visual Framework" />
+      <img
+        src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1200&h=480&q=80"
+        alt="Customer service professional representing the responsive business that earns the customer's trust and call"
+      />
 
       <p>The 24-Hour Rule isn&rsquo;t a suggestion; it&rsquo;s the new standard for local business success. If you&rsquo;re ready to stop guessing and start growing, it&rsquo;s time to modernize your approach.</p>
       <p><strong>Here&rsquo;s your next move:</strong></p>
@@ -97,6 +106,13 @@ export default function Page() {
         <li><strong>Step 3:</strong> <a href="/contact">Connect with us for an AI Visibility Consultation</a> to see how we can automate your growth while keeping your brand voice 100% human.</li>
       </ul>
       <p>You&rsquo;ve built a great business. It&rsquo;s time the internet knew it, too.</p>
+
+      <hr />
+      <p style={{ fontSize: "0.8rem", color: "#999", lineHeight: "1.6" }}>
+        <sup>1</sup> BrightLocal, &ldquo;Local Consumer Review Survey&rdquo; (2024) &mdash; <a href="https://www.brightlocal.com/research/local-consumer-review-survey/" target="_blank" rel="noopener noreferrer">brightlocal.com/research/local-consumer-review-survey</a><br />
+        <sup>2</sup> Google Business Profile Help, &ldquo;Reply to reviews&rdquo; &mdash; <a href="https://support.google.com/business/answer/3474050" target="_blank" rel="noopener noreferrer">support.google.com/business/answer/3474050</a><br />
+        <sup>3</sup> Google Search Central, &ldquo;What is E-E-A-T?&rdquo; &mdash; <a href="https://developers.google.com/search/docs/fundamentals/creating-helpful-content" target="_blank" rel="noopener noreferrer">developers.google.com/search/docs/fundamentals/creating-helpful-content</a>
+      </p>
     </BlogShell>
   );
 }

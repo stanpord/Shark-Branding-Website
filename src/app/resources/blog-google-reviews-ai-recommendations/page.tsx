@@ -29,7 +29,10 @@ export default function Page() {
       <p>Think about how people search now. They ask more natural, detailed questions like, &ldquo;Who&rsquo;s the most reliable HVAC company in North Dallas that can fix an older furnace today?&rdquo; Google Gemini doesn&rsquo;t just look for one keyword and call it a day. It looks for patterns in your reviews that support the recommendation.</p>
       <p>Words like &ldquo;reliable,&rdquo; &ldquo;HVAC repair,&rdquo; &ldquo;North Dallas,&rdquo; and &ldquo;same-day service&rdquo; help AI connect your business to that exact need. Reviews are one of the clearest sources of real-world business data AI can use to understand your services, service areas, customer outcomes, and reputation.</p>
 
-      <img src="https://cdn.marblism.com/Xxn8iv5N01S.webp" alt="Comparison of traditional search results versus AI-powered recommendation engine" />
+      <img
+        src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&h=480&q=80"
+        alt="Customer writing a detailed Google review that includes specific services, location, and outcomes — the kind AI systems can read and use"
+      />
 
       <h2>The 2026 Response Rule: Under 24 Hours Builds AI Trust</h2>
       <p>In 2026, a <strong>less-than-24-hour response time</strong> is a vital trust signal. AI systems don&rsquo;t just evaluate what customers say about you. They also look at how active, responsive, and engaged your business appears to be.</p>
@@ -50,7 +53,10 @@ export default function Page() {
       <p><strong>The Old Way:</strong> &ldquo;Shark Branding Solutions was great to work with. Highly recommend!&rdquo;<br />
       <strong>The AI-Readable Way:</strong> &ldquo;We used Shark Branding Solutions to get our business AI-ready in Austin. They helped us improve our review signals, clean up our visibility, and increase qualified leads within 30 days.&rdquo;</p>
 
-      <img src="https://cdn.marblism.com/v_F7n-rDHJt.webp" alt="Google reviews funneled into structured data for AI search visibility" />
+      <img
+        src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1200&h=480&q=80"
+        alt="Business owner at their laptop coaching a satisfied customer on how to write an AI-readable review"
+      />
 
       <h2>Why &ldquo;Great Service!&rdquo; Barely Moves the Needle</h2>
       <p>A 5-star review that says &ldquo;Great service!&rdquo; is nice for your ego, but it does very little for your AI Visibility. AI systems look for identifiable details: specific services, specific locations, specific outcomes. If your reviews are all fluff and no substance, AI has a much harder time understanding what you actually offer and when to recommend you.</p>
@@ -66,7 +72,10 @@ export default function Page() {
       </ul>
       <p>That&rsquo;s not pushy. That&rsquo;s helpful. You&rsquo;re building a bank of clear, AI-readable proof on your Google Business Profile.</p>
 
-      <img src="https://cdn.marblism.com/25pQka7nY1M.webp" alt="The shift that wins the decision visual framework" />
+      <img
+        src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&h=480&q=80"
+        alt="Analytics dashboard showing how review quality and response rate affect AI-driven local business visibility"
+      />
 
       <h2>Is Your Business Ready for AI Visibility?</h2>
       <p>The rules have changed. First, you optimized for people. Then you optimized for search engines. Now you need to optimize for the AI systems guiding people toward a decision.</p>
@@ -78,6 +87,11 @@ export default function Page() {
         <li>Are you responding in <strong>under 24 hours</strong> and reinforcing trust signals?</li>
       </ul>
       <p>Shark Branding Solutions is an AI Visibility Agency that acts as the bridge between your business and the AI systems shaping discovery. We help small to mid-sized businesses become <strong>AI-ready</strong> by turning reviews, business data, and response habits into clearer signals AI can understand and trust.</p>
+
+      <hr />
+      <p style={{ fontSize: "0.8rem", color: "#999", lineHeight: "1.6" }}>
+        BrightLocal, &ldquo;Local Consumer Review Survey&rdquo; (2024) &mdash; <a href="https://www.brightlocal.com/research/local-consumer-review-survey/" target="_blank" rel="noopener noreferrer">brightlocal.com/research/local-consumer-review-survey</a>. Google, &ldquo;How reviews affect your Business Profile&rdquo; &mdash; <a href="https://support.google.com/business/answer/3474050" target="_blank" rel="noopener noreferrer">support.google.com/business/answer/3474050</a>
+      </p>
     </BlogShell>
   );
 }

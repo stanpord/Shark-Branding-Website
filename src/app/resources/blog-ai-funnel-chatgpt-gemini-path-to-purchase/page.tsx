@@ -22,7 +22,7 @@ export default function Page() {
       heroAlt="How ChatGPT and Gemini are reshaping the local business path to purchase"
     >
       <p>The path to purchase used to be predictable. A customer had a problem, typed it into Google, got a list of options, and started comparing. Today? That path looks completely different&mdash;and the businesses that understand the new route are the ones winning.</p>
-      <p>ChatGPT hit 100 million users faster than any platform in history. Gemini is now embedded directly into Google Search, Android, and the workspace tools millions of professionals use every single day. Together, these AI systems have fundamentally restructured how people make buying decisions&mdash;especially for local services.</p>
+      <p>ChatGPT reached 100 million users faster than any consumer application in history.<sup>1</sup> Gemini is now embedded directly into Google Search, Android, and the workspace tools millions of professionals use every single day.<sup>2</sup> Together, these AI systems have fundamentally restructured how people make buying decisions&mdash;especially for local services.</p>
       <p>Welcome to the <strong>new path to purchase</strong>. It runs straight through the AI Funnel, and if your business isn&rsquo;t optimized to appear in it, you&rsquo;re invisible during the most critical moment of your customer&rsquo;s decision.</p>
 
       <h2>The Old Path vs. the New Path</h2>
@@ -42,8 +42,6 @@ export default function Page() {
       </ol>
       <p>The decision-making timeline just collapsed from days to minutes. And if your business isn&rsquo;t on that short list, the customer never even knew you existed.</p>
 
-      <img src="https://cdn.marblism.com/Xxn8iv5N01S.webp" alt="Comparison of traditional Google search results versus AI-powered recommendation engine" />
-
       <h2>How ChatGPT Builds Its Recommendation List</h2>
       <p>ChatGPT doesn&rsquo;t just pull your website and call it a day. When a user asks for a local recommendation, ChatGPT is performing a multi-source analysis in real time:</p>
       <ul>
@@ -54,11 +52,14 @@ export default function Page() {
       </ul>
       <p>ChatGPT then synthesizes all of that into a confidence score. The businesses with the highest confidence scores get the recommendation. The rest get nothing.</p>
 
+      <img
+        src="https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=1200&h=480&q=80"
+        alt="Customer asking an AI assistant on mobile for a local business recommendation"
+      />
+
       <h2>How Gemini Is Different (and Why It Matters Even More)</h2>
       <p>Gemini has a unique advantage over every other AI model: it lives inside Google. That means it has direct access to your Google Business Profile, your Maps data, your local post history, and your review activity in real time.</p>
       <p>When someone uses Google AI Overviews or asks the AI assistant on their Android phone for a recommendation, Gemini pulls from all of this data simultaneously. A business with a neglected Google Business Profile&mdash;old photos, no recent posts, unanswered reviews&mdash;signals to Gemini that it isn&rsquo;t actively managed. And Gemini won&rsquo;t bet a customer&rsquo;s experience on a business that looks abandoned.</p>
-
-      <img src="https://cdn.marblism.com/zWKJTMVdg8f.webp" alt="Digital map showing how consistent business listings create a clear path for AI visibility" />
 
       <div className="callout-box">
         <h4>What Gemini Looks For in a Local Business</h4>
@@ -71,13 +72,16 @@ export default function Page() {
         </ul>
       </div>
 
+      <img
+        src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1200&h=480&q=80"
+        alt="Business owner updating their Google Business Profile to optimize for AI-powered recommendations"
+      />
+
       <h2>The Reshaping of the &ldquo;Consideration Stage&rdquo;</h2>
       <p>Traditional marketing theory talks about the &ldquo;consideration stage&rdquo; as the period when a customer compares options. AI has essentially <em>outsourced</em> that stage. The AI does the comparison for the customer. This has enormous implications:</p>
       <p><strong>If your business is recommended by AI, the customer arrives pre-sold.</strong> They&rsquo;ve already been told you&rsquo;re the best option. Your job is just to confirm it.</p>
       <p><strong>If your business is <em>not</em> recommended by AI, you don&rsquo;t get a chance to compete.</strong> You&rsquo;re not in the consideration set. You&rsquo;re not on the list. You don&rsquo;t exist for that customer, in that moment.</p>
       <p>This is why optimizing for AI recommendations isn&rsquo;t just an &ldquo;advanced&rdquo; marketing tactic anymore. For local businesses, it&rsquo;s the foundation.</p>
-
-      <img src="https://cdn.marblism.com/pxZQweAPJbp.webp" alt="AI trust engine illustration showing digital reviews and social signals building brand authority" />
 
       <h2>Where Most Local Businesses Are Losing the AI Funnel</h2>
       <p>After auditing dozens of local businesses, the gaps fall into three predictable categories:</p>
@@ -91,6 +95,11 @@ export default function Page() {
       <h3>3. Passive Profiles</h3>
       <p>No recent Google Posts. No responses to reviews. No new photos in 18 months. The business exists in directories but shows no sign of life. AI interprets this as low engagement and low reliability.</p>
 
+      <img
+        src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&h=480&q=80"
+        alt="Analytics dashboard highlighting data gaps and visibility opportunities for local business AI optimization"
+      />
+
       <h2>How to Optimize for the New Path to Purchase</h2>
       <ol>
         <li><strong>Standardize everything.</strong> Your business name, address, and phone must be identical everywhere, including punctuation and abbreviations.</li>
@@ -100,6 +109,12 @@ export default function Page() {
         <li><strong>Get cited by authoritative local sources.</strong> Chamber directories, local news mentions, and industry association listings all signal legitimacy to AI systems.</li>
       </ol>
       <p>The new path to purchase runs through ChatGPT and Gemini whether you&rsquo;re ready for it or not. Our <a href="/services">AI Visibility Consulting</a> service is designed to put your business on the map that matters&mdash;the one the AI uses to make its recommendations. Let&rsquo;s make sure you&rsquo;re on it.</p>
+
+      <hr />
+      <p style={{ fontSize: "0.8rem", color: "#999", lineHeight: "1.6" }}>
+        <sup>1</sup> Reuters, &ldquo;ChatGPT sets record fastest-growing user base&rdquo; (Feb 2023) &mdash; <a href="https://www.reuters.com/technology/chatgpt-sets-record-fastest-growing-user-base-analyst-note-2023-02-01/" target="_blank" rel="noopener noreferrer">reuters.com</a><br />
+        <sup>2</sup> Google, &ldquo;Gemini in Google Search and Android&rdquo; (2025) &mdash; <a href="https://blog.google/products/gemini/made-by-google-2025-gemini/" target="_blank" rel="noopener noreferrer">blog.google</a>
+      </p>
     </BlogShell>
   );
 }
