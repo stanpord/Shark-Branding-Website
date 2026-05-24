@@ -61,62 +61,15 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Right — AI recommendation mockup */}
+          {/* Right — AI recommendation visual */}
           <div className="hidden lg:block">
             <div className="relative">
-              {/* Glow */}
-              <div className="absolute inset-0 -m-8 rounded-[40px] bg-[#18b5d8]/8 blur-3xl" aria-hidden="true" />
-
-              {/* Phone frame */}
-              <div className="relative bg-[#07141a] border border-white/10 rounded-[24px] p-5 space-y-3">
-
-                {/* Search bar */}
-                <div className="bg-black/40 rounded-xl px-4 py-3 flex items-center gap-3">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                    <circle cx="11" cy="11" r="8" stroke="#18b5d8" strokeWidth="2"/>
-                    <path d="m21 21-4.35-4.35" stroke="#18b5d8" strokeWidth="2" strokeLinecap="round"/>
-                  </svg>
-                  <span className="text-[13px] text-white/50">best HVAC company near me</span>
-                </div>
-
-                {/* AI response card */}
-                <div className="bg-black/30 rounded-xl p-4 border border-[#18b5d8]/20">
-                  <div className="flex items-center gap-2 mb-3">
-                    <div className="w-5 h-5 rounded-full bg-[#18b5d8] flex items-center justify-center shrink-0">
-                      <svg width="10" height="10" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-                    </div>
-                    <span className="text-[11px] font-bold text-[#18b5d8] uppercase tracking-widest">AI Overview</span>
-                  </div>
-                  <p className="text-[13px] text-white/70 leading-relaxed mb-3">
-                    Based on verified reviews and local authority signals, <strong className="text-white">Tampa Bay HVAC Pro</strong> is consistently ranked as the top emergency AC repair service in the Wesley Chapel area&hellip;
-                  </p>
-                  <div className="bg-[#18b5d8]/10 border border-[#18b5d8]/20 rounded-lg px-3 py-2.5 flex items-center justify-between">
-                    <div>
-                      <p className="text-[13px] font-semibold text-white">Tampa Bay HVAC Pro</p>
-                      <p className="text-[11px] text-white/40">Same-day AC repair · Wesley Chapel</p>
-                    </div>
-                    <div className="text-right shrink-0">
-                      <p className="text-[12px] text-[#18b5d8] font-bold">★ 4.9</p>
-                      <p className="text-[10px] text-white/30">AI recommended</p>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Second result faded */}
-                <div className="bg-black/20 rounded-xl p-4 opacity-30">
-                  <p className="text-[12px] text-white/50 leading-relaxed">Cool Air Solutions · Tampa, FL · ★ 4.2</p>
-                </div>
-
-                {/* Third faded */}
-                <div className="bg-black/10 rounded-xl p-3 opacity-15">
-                  <p className="text-[12px] text-white/40">Sunshine HVAC Services · ★ 3.8</p>
-                </div>
-
-                {/* Label */}
-                <div className="pt-2 text-center">
-                  <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-[#18b5d8]/50">This is what your customers see</p>
-                </div>
-              </div>
+              <div className="absolute inset-0 -m-6 rounded-[40px] bg-[#18b5d8]/10 blur-3xl" aria-hidden="true" />
+              <img
+                src="/ai-visibility-hero.webp"
+                alt="AI recommending Your Business above competitors in Tampa Bay — Wesley Chapel, Lutz, Land O' Lakes, St. Petersburg"
+                className="relative w-full h-auto rounded-[20px] border border-white/10"
+              />
             </div>
           </div>
 
