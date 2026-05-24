@@ -269,10 +269,10 @@ export default function AboutPage() {
               Get Free Report
             </Link>
             <a
-              href="tel:+17278556505"
+              href="tel:+17275133955"
               className="btn-press inline-block text-white text-[17px] border border-white/20 rounded-full px-[28px] py-[14px] hover:border-white/50 motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0a0a] [touch-action:manipulation]"
             >
-              (727) 855-6505
+              (727) 513-3955
             </a>
           </div>
         </div>
