@@ -92,10 +92,10 @@ export default function HackathonBanner() {
           <div className="shrink-0 w-full lg:w-[310px]">
             <div className="relative border-2 border-white/10 motion-safe:transition-[border-color,box-shadow] motion-safe:duration-300 motion-safe:group-hover:border-[#18b5d8]/60 motion-safe:group-hover:shadow-[0_0_40px_rgba(24,181,216,0.18)]">
               <Image
-                src="/hackathon-flyer.webp"
+                src="/hackathon-flyer-new.png"
                 alt="Shark AI Hackathon flyer — May 26, 2026"
-                width={620}
-                height={877}
+                width={930}
+                height={1200}
                 className="w-full h-auto object-cover"
                 priority
               />
