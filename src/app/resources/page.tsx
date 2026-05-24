@@ -9,6 +9,14 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "blog-end-of-local-seo-ai-visibility",
+    category: "AI Visibility",
+    title: "What the End of Local SEO Means for Your Business",
+    excerpt: "AI Overviews now appear on over 60% of Google searches. Local SEO as you knew it is ending. Here's what changed, why it matters, and three things to do right now.",
+    date: "May 20, 2026",
+    readTime: "9 min read",
+  },
+  {
     slug: "blog-end-of-phone-tag-google-ai-check-prices",
     category: "AI Visibility",
     title: "The End of Phone Tag: How Google's 'Have AI Check Prices' Is Changing Local Service Discovery",
