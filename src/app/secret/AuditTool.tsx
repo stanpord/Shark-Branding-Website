@@ -133,7 +133,7 @@ export default function AuditTool() {
           {/* Findings */}
           <div className="space-y-3">
             {result.findings
-              ?.sort((a, b) => {
+              ?.toSorted((a, b) => {
                 const order = { fail: 0, warn: 1, pass: 2 }
                 return order[a.status] - order[b.status]
               })

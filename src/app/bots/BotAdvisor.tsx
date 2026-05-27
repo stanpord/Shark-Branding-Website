@@ -39,6 +39,7 @@ function CopyButton({ text }: { text: string }) {
   const [copied, setCopied] = useState(false)
   return (
     <button
+      type="button"
       onClick={() => {
         navigator.clipboard.writeText(text)
         setCopied(true)
@@ -199,7 +200,7 @@ export default function BotAdvisor() {
           {/* Recommendations */}
           <div className="space-y-4">
             {result.recommendations
-              .sort((a, b) => a.priority - b.priority)
+              .toSorted((a, b) => a.priority - b.priority)
               .map((rec) => (
                 <div
                   key={rec.bot}
@@ -249,6 +250,7 @@ export default function BotAdvisor() {
 
           {/* Reset */}
           <button
+            type="button"
             onClick={() => { setResult(null); setForm({ name: '', industry: '', description: '', teamSize: '', challenge: '' }) }}
             className="text-[13px] text-white/30 hover:text-white/60 transition-colors"
           >

@@ -113,7 +113,7 @@ export default function Footer() {
 
         {/* Hairline */}
         <div className="border-t border-[#e0e0e0] pt-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-          <p className="text-[12px] text-[#7a7a7a]">
+          <p className="text-[12px] text-[#7a7a7a]" suppressHydrationWarning>
             Copyright &copy; {new Date().getFullYear()} Shark Branding
             Solutions. All rights reserved.
           </p>

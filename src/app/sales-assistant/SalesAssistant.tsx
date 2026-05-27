@@ -288,6 +288,7 @@ export default function SalesAssistant() {
             <span className="text-[11px] font-semibold uppercase tracking-widest text-white/30">Live Transcript</span>
             {transcript.length > 0 && (
               <button
+                type="button"
                 onClick={() => setTranscript([])}
                 className="text-[11px] text-white/20 hover:text-white/50 transition-colors"
               >
@@ -322,6 +323,7 @@ export default function SalesAssistant() {
           <div className="border-t border-white/10 px-4 py-3 flex gap-2 bg-[#0a0a0a]">
             {!listening ? (
               <button
+                type="button"
                 onClick={startListening}
                 className="flex-1 bg-[#18b5d8] text-white font-semibold text-[14px] py-2.5 rounded-lg hover:bg-[#1ec8ee] transition-colors"
               >
@@ -329,6 +331,7 @@ export default function SalesAssistant() {
               </button>
             ) : (
               <button
+                type="button"
                 onClick={stopListening}
                 className="flex-1 bg-[#F7555F]/20 text-[#F7555F] font-semibold text-[14px] py-2.5 rounded-lg hover:bg-[#F7555F]/30 transition-colors border border-[#F7555F]/30"
               >
@@ -336,6 +339,7 @@ export default function SalesAssistant() {
               </button>
             )}
             <button
+              type="button"
               onClick={() => getCoaching(transcript)}
               disabled={loading || transcript.length === 0}
               className="px-5 py-2.5 bg-white/5 border border-white/10 text-white/70 font-semibold text-[13px] rounded-lg hover:bg-white/10 hover:text-white transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
@@ -343,6 +347,7 @@ export default function SalesAssistant() {
               {loading ? '...' : 'Coach Me'}
             </button>
             <button
+              type="button"
               onClick={clearAll}
               className="px-3 py-2.5 bg-white/5 border border-white/10 text-white/30 text-[13px] rounded-lg hover:text-white/60 transition-colors"
             >

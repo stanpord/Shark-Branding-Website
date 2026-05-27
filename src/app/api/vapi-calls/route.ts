@@ -43,6 +43,7 @@ END THE CALL when: prospect books a follow-up, declines after two genuine attemp
 async function vapiRequest(path: string, options: RequestInit = {}) {
   return fetch(`${VAPI_BASE}${path}`, {
     ...options,
+    cache: 'no-store',
     headers: {
       Authorization: `Bearer ${process.env.VAPI_API_KEY}`,
       'Content-Type': 'application/json',

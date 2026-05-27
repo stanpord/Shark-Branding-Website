@@ -14,8 +14,7 @@ export default async function BotAdvisorPage({
 }: {
   searchParams: Promise<{ error?: string }>
 }) {
-  const isAuthed = await checkAuth()
-  const params = await searchParams
+  const [isAuthed, params] = await Promise.all([checkAuth(), searchParams])
 
   if (!isAuthed) {
     return (

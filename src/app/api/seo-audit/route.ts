@@ -31,6 +31,7 @@ export async function POST(req: NextRequest) {
     const res = await fetch(url, {
       headers: { 'User-Agent': 'Mozilla/5.0 (compatible; SharkSEOAudit/1.0)' },
       signal: AbortSignal.timeout(10000),
+      cache: 'no-store',
     })
     html = await res.text()
   } catch {

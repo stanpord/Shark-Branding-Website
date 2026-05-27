@@ -63,6 +63,7 @@ export default function Nav() {
 
         {/* Mobile hamburger */}
         <button
+          type="button"
           className="md:hidden text-[#1d1d1f] min-h-[44px] min-w-[44px] flex items-center justify-center rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 [touch-action:manipulation]"
           onClick={() => setOpen(!open)}
           aria-label="Toggle menu"

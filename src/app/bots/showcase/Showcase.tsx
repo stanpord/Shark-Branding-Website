@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useRef, useCallback, useEffect } from 'react'
+import Image from 'next/image'
 
 const EMPLOYEES = [
   { name: 'Gemma', role: 'Chat Receptionist', cardImg: '/avatars/gemma.png', color: '#18b5d8' },
@@ -96,7 +97,7 @@ export default function Showcase() {
     window.addEventListener('mousemove', onMove)
     window.addEventListener('mouseup', onUp)
     window.addEventListener('touchmove', onTouchMove, { passive: true })
-    window.addEventListener('touchend', onTouchEnd)
+    window.addEventListener('touchend', onTouchEnd, { passive: true })
     return () => {
       window.removeEventListener('mousemove', onMove)
       window.removeEventListener('mouseup', onUp)
@@ -175,6 +176,8 @@ export default function Showcase() {
       {/* Carousel */}
       <div
         className="relative w-full"
+        role="region"
+        aria-label="AI Employees carousel"
         style={{
           height: 370,
           perspective: 1100,
@@ -190,7 +193,7 @@ export default function Showcase() {
               className="rounded-2xl overflow-hidden"
               style={{ boxShadow: `0 0 40px ${card.color}25, 0 16px 48px rgba(0,0,0,0.6)` }}
             >
-              <img src={card.cardImg} alt={card.name} style={{ width: '100%', display: 'block' }} />
+              <Image src={card.cardImg} alt={card.name} width={300} height={400} style={{ width: '100%', height: 'auto', display: 'block' }} />
             </div>
           </div>
         ))}
@@ -201,6 +204,8 @@ export default function Showcase() {
         {EMPLOYEES.map((_, i) => (
           <button
             key={i}
+            type="button"
+            aria-label={EMPLOYEES[i].name}
             onClick={() => goTo(i)}
             className="rounded-full transition-all duration-300"
             style={{
