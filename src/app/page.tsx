@@ -49,7 +49,7 @@ export default function Home() {
                 href="/free-report"
                 className="btn-press inline-block bg-[#18b5d8] text-white text-[17px] font-semibold rounded-full px-[28px] py-[14px] hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0a0a] [touch-action:manipulation]"
               >
-                Get Free Visibility Report
+                Get My Free Report
               </Link>
               <Link
                 href="/case-studies"

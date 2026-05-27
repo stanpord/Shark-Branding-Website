@@ -17,12 +17,12 @@ export default function FreeReportPage() {
             Free Visibility Report
           </p>
           <h1 className="display-hero text-[#0a0a0a] mb-6" style={{ textWrap: "balance" }}>
-            Find out where your business
+            Get Your Free
             <br />
-            <span className="text-[#18b5d8]">actually stands.</span>
+            <span className="text-[#18b5d8]">AI Visibility Report</span>
           </h1>
           <p className="lead-airy text-[#333333] mb-12">
-            Delivered in 48 hours. No commitment. No sales call.
+            See exactly where your business stands across AI search, maps, and reviews. Delivered in 48 hours. No commitment. No sales call.
           </p>
           {/* Proof stats */}
           <div className="flex items-center justify-center gap-0 border border-[#e8e8ed] rounded-[16px] overflow-hidden divide-x divide-[#e8e8ed]">
