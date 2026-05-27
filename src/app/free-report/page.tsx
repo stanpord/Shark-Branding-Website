@@ -4,7 +4,7 @@ import SnapshotWidget from "@/components/SnapshotWidget";
 export const metadata: Metadata = {
   title: "Free Visibility Report — Shark Branding Solutions",
   description:
-    "See exactly how your business appears across search, maps, reviews, and AI platforms. Delivered in 48 hours, no strings attached.",
+    "See exactly how your business appears across search, maps, reviews, and AI platforms. Delivered within 48 hours. We walk you through it personally.",
 };
 
 export default function FreeReportPage() {
@@ -22,7 +22,7 @@ export default function FreeReportPage() {
             <span className="text-[#18b5d8]">AI Visibility Report</span>
           </h1>
           <p className="lead-airy text-[#333333] mb-12">
-            See exactly where your business stands across AI search, maps, and reviews. Delivered in 48 hours. No commitment. No sales call.
+            See exactly where your business stands across AI search, maps, and reviews. Delivered within 48 hours. We&rsquo;ll call to walk you through it personally.
           </p>
           {/* Proof stats */}
           <div className="flex items-center justify-center gap-0 border border-[#e8e8ed] rounded-[16px] overflow-hidden divide-x divide-[#e8e8ed]">
