@@ -1,5 +1,15 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "Shark Branding Solutions — AI Business Consulting | Wesley Chapel, FL",
+  description:
+    "AI Business Consulting for Tampa Bay businesses. Get Found, Trusted, and Chosen by ChatGPT, Google AI, and Perplexity. Free AI Audit for Wesley Chapel area businesses.",
+  alternates: {
+    canonical: "https://sharkbrandingsolutions.com",
+  },
+};
 
 export default function Home() {
   return (
