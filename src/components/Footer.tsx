@@ -97,7 +97,7 @@ export default function Footer() {
               <li>
                 <a
                   href="mailto:info@sharkbrandingsolutions.com"
-                  className="text-[17px] text-[#333333] hover:text-[#18b5d8] motion-safe:transition-colors leading-[2.41] break-all"
+                  className="text-[13px] text-[#333333] hover:text-[#18b5d8] motion-safe:transition-colors leading-[2.41]"
                 >
                   info@sharkbrandingsolutions.com
                 </a>
