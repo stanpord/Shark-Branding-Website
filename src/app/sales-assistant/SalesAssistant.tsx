@@ -122,6 +122,9 @@ export default function SalesAssistant() {
         getCoaching(transcriptRef.current)
       }, 1500)
     }
+    return () => {
+      if (autoCoachTimerRef.current) clearTimeout(autoCoachTimerRef.current)
+    }
   }, [newLinesSinceCoach, autoCoach, listening, getCoaching])
 
   const startListening = useCallback(() => {
