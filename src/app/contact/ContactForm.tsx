@@ -185,6 +185,27 @@ export default function ContactForm() {
                   />
                 </div>
 
+                {/* SMS consent */}
+                <div className="space-y-3 pt-1">
+                  <label className="flex items-start gap-3 cursor-pointer group">
+                    <input
+                      type="checkbox"
+                      name="sms-consent"
+                      required
+                      className="mt-1 h-4 w-4 shrink-0 rounded border-[#e0e0e0] accent-[#18b5d8] cursor-pointer"
+                    />
+                    <span className="text-[13px] text-[#555] leading-relaxed">
+                      I agree to receive SMS messages from Shark Branding Solutions regarding my inquiry and services. Message frequency varies. Message &amp; data rates may apply. Reply <strong>STOP</strong> to opt out or <strong>HELP</strong> for help.
+                    </span>
+                  </label>
+                  <p className="text-[12px] text-[#999] leading-relaxed pl-7">
+                    By checking this box you consent to receive text messages at the number provided. Your information will not be shared with third parties. View our{" "}
+                    <a href="/privacy" className="underline hover:text-[#18b5d8] motion-safe:transition-colors">Privacy Policy</a>{" "}
+                    and{" "}
+                    <a href="/terms" className="underline hover:text-[#18b5d8] motion-safe:transition-colors">Terms of Service</a>.
+                  </p>
+                </div>
+
                 <button
                   type="submit"
                   disabled={loading}
@@ -241,8 +262,7 @@ export default function ContactForm() {
                 Delivered within 48 hours.
               </p>
               <p className="text-[14px] text-[#cccccc]">
-                No commitment. No sales call. Just honest data about where your
-                business stands.
+                No commitment. We&rsquo;ll walk you through it personally.
               </p>
             </div>
           </div>
