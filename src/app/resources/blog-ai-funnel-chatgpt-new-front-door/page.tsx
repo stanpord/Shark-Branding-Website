@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import BlogShell from "@/components/BlogShell";
 
 export const metadata: Metadata = {
@@ -31,9 +32,12 @@ export default function Page() {
    <p>Think about your own habits. Would you rather click through five different websites to compare prices and reviews, or just ask an AI to find you a local agency with a 5-star reputation?</p>
    <p>The AI does the heavy lifting. It scans the web, synthesizes the data, and delivers a confident recommendation.</p>
 
-   <img
+   <Image
     src="https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=1200&h=480&q=80"
     alt="Consumer asking an AI assistant on their smartphone for a local business recommendation instead of searching Google"
+    width={1200}
+    height={480}
+    style={{ width: "100%", height: "auto" }}
    />
 
    <p>By early 2025, ChatGPT had surpassed <strong>400 million weekly active users</strong>, making it one of the fastest-growing platforms in internet history.<sup>2</sup> If your brand isn&rsquo;t being &ldquo;spoken about&rdquo; by these models, you&rsquo;re losing potential leads before they even know you exist.</p>
@@ -58,9 +62,12 @@ export default function Page() {
    <p>AI doesn&rsquo;t just read your &ldquo;About Us&rdquo; page. It reads your Yelp reviews, your Google Business Profile, and your mentions. It&rsquo;s looking for a consensus.</p>
    <p>If the general vibe says you&rsquo;re &ldquo;okay,&rdquo; but your competitor is &ldquo;the gold standard,&rdquo; guess who gets the recommendation?</p>
 
-   <img
+   <Image
     src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&h=480&q=80"
     alt="Business owner building their online reputation with detailed customer reviews that AI can read and trust"
+    width={1200}
+    height={480}
+    style={{ width: "100%", height: "auto" }}
    />
 
    <h3>3. Conversational Content</h3>
@@ -75,9 +82,12 @@ export default function Page() {
    </ul>
    <p>The AI Funnel is already here. It&rsquo;s not a &ldquo;future&rdquo; trend; it&rsquo;s the current reality for hundreds of millions of active users. If you aren&rsquo;t optimizing for AI, you&rsquo;re basically closing your front door and hoping people still know how to use a phone book.</p>
 
-   <img
+   <Image
     src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&h=480&q=80"
     alt="Business team reviewing their AI visibility strategy to become the top recommendation in their local market"
+    width={1200}
+    height={480}
+    style={{ width: "100%", height: "auto" }}
    />
 
    <h2>How to Take Action Today</h2>

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { Playfair_Display } from "next/font/google";
 
 const playfair = Playfair_Display({
@@ -199,11 +200,13 @@ export default function ResourcesPage() {
               </p>
 
               <Link href={`/resources/${lead.slug}`} className="block mb-6 group">
-                <img
+                <Image
                   src={lead.image}
                   alt={lead.title}
+                  width={900}
+                  height={420}
                   className="w-full object-cover group-hover:opacity-95 transition-opacity"
-                  style={{ height: "300px" }}
+                  style={{ height: "300px", width: "100%" }}
                 />
               </Link>
 
@@ -295,12 +298,14 @@ export default function ResourcesPage() {
                 className={`flex-1 pt-6 ${i > 0 ? "pl-7 border-l border-black/15" : ""} ${i < below.length - 1 ? "pr-7" : ""}`}
               >
                 <Link href={`/resources/${post.slug}`} className="block mb-4 group">
-                  <img
-                    src={post.image}
-                    alt={post.title}
-                    className="w-full object-cover group-hover:opacity-90 transition-opacity"
-                    style={{ height: "130px" }}
-                  />
+                  <Image
+                  src={post.image}
+                  alt={post.title}
+                  width={400}
+                  height={130}
+                  className="w-full object-cover group-hover:opacity-90 transition-opacity"
+                  style={{ height: "130px", width: "100%" }}
+                />
                 </Link>
                 <span className="inline-block text-[9px] font-bold uppercase tracking-[0.22em] text-[#18b5d8] mb-2">
                   {post.category}
@@ -326,12 +331,14 @@ export default function ResourcesPage() {
             {below.map((post) => (
               <div key={post.slug}>
                 <Link href={`/resources/${post.slug}`} className="block mb-4 group">
-                  <img
-                    src={post.image}
-                    alt={post.title}
-                    className="w-full object-cover group-hover:opacity-90 transition-opacity"
-                    style={{ height: "160px" }}
-                  />
+                  <Image
+                  src={post.image}
+                  alt={post.title}
+                  width={400}
+                  height={160}
+                  className="w-full object-cover group-hover:opacity-90 transition-opacity"
+                  style={{ height: "160px", width: "100%" }}
+                />
                 </Link>
                 <span className="inline-block text-[9px] font-bold uppercase tracking-[0.22em] text-[#18b5d8] mb-2">
                   {post.category}
@@ -366,12 +373,14 @@ export default function ResourcesPage() {
             className="group flex flex-col md:flex-row gap-0 border-2 border-black hover:border-[#18b5d8] transition-colors duration-150 bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2"
           >
             <div className="md:w-[42%] shrink-0">
-              <img
-                src="https://cdn.marblism.com/Nco3hsiA150.webp"
-                alt="Shark Branding Solutions Partners with North Tampa Bay Chamber"
-                className="w-full h-full object-cover group-hover:opacity-95 transition-opacity"
-                style={{ minHeight: "220px", maxHeight: "340px" }}
-              />
+              <Image
+              src="https://cdn.marblism.com/Nco3hsiA150.webp"
+              alt="Shark Branding Solutions Partners with North Tampa Bay Chamber"
+              width={600}
+              height={340}
+              className="w-full h-full object-cover group-hover:opacity-95 transition-opacity"
+              style={{ minHeight: "220px", maxHeight: "340px", width: "100%" }}
+            />
             </div>
             <div className="flex flex-col justify-center p-8 md:p-10">
               <span className="inline-block text-[9px] font-bold uppercase tracking-[0.25em] border border-black text-black px-2 py-[3px] mb-4 w-fit">

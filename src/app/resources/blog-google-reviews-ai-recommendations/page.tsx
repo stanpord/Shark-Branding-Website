@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import BlogShell from "@/components/BlogShell";
 
 export const metadata: Metadata = {
@@ -29,9 +30,12 @@ export default function Page() {
    <p>Think about how people search now. They ask more natural, detailed questions like, &ldquo;Who&rsquo;s the most reliable HVAC company in North Dallas that can fix an older furnace today?&rdquo; Google Gemini doesn&rsquo;t just look for one keyword and call it a day. It looks for patterns in your reviews that support the recommendation.</p>
    <p>Words like &ldquo;reliable,&rdquo; &ldquo;HVAC repair,&rdquo; &ldquo;North Dallas,&rdquo; and &ldquo;same-day service&rdquo; help AI connect your business to that exact need. Reviews are one of the clearest sources of real-world business data AI can use to understand your services, service areas, customer outcomes, and reputation.</p>
 
-   <img
+   <Image
     src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&h=480&q=80"
     alt="Customer writing a detailed Google review that includes specific services, location, and outcomes, the kind AI systems can read and use"
+    width={1200}
+    height={480}
+    style={{ width: "100%", height: "auto" }}
    />
 
    <h2>The 2026 Response Rule: Under 24 Hours Builds AI Trust</h2>
@@ -53,9 +57,12 @@ export default function Page() {
    <p><strong>The Old Way:</strong> &ldquo;Shark Branding Solutions was great to work with. Highly recommend!&rdquo;<br />
    <strong>The AI-Readable Way:</strong> &ldquo;We used Shark Branding Solutions to get our business AI-ready in Austin. They helped us improve our review signals, clean up our visibility, and increase qualified leads within 30 days.&rdquo;</p>
 
-   <img
+   <Image
     src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1200&h=480&q=80"
     alt="Business owner at their laptop coaching a satisfied customer on how to write an AI-readable review"
+    width={1200}
+    height={480}
+    style={{ width: "100%", height: "auto" }}
    />
 
    <h2>Why &ldquo;Great Service!&rdquo; Barely Moves the Needle</h2>
@@ -72,9 +79,12 @@ export default function Page() {
    </ul>
    <p>That&rsquo;s not pushy. That&rsquo;s helpful. You&rsquo;re building a bank of clear, AI-readable proof on your Google Business Profile.</p>
 
-   <img
+   <Image
     src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&h=480&q=80"
     alt="Analytics dashboard showing how review quality and response rate affect AI-driven local business visibility"
+    width={1200}
+    height={480}
+    style={{ width: "100%", height: "auto" }}
    />
 
    <h2>Is Your Business Ready for AI Visibility?</h2>

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import BlogShell from "@/components/BlogShell";
 
 export const metadata: Metadata = {
@@ -29,7 +30,7 @@ export default function Page() {
    <p>Traditional SEO is about ranking. You want to be #1 for &ldquo;pizza near me.&rdquo; You use keywords, you build backlinks, and you hope Google&rsquo;s algorithm likes your metadata. It&rsquo;s a game of lists.</p>
    <p><strong>GEO (Generative Engine Optimization)</strong> is a whole different beast. It&rsquo;s not about being on a list; it&rsquo;s about being the <strong>recommendation</strong>. When an AI engine like Gemini or ChatGPT processes a query, it doesn&rsquo;t just look for keywords. It looks for <strong>entities, authority, and citations</strong>. If the AI doesn&rsquo;t &ldquo;know&rdquo; who you are as a trusted entity, you don&rsquo;t just drop to page two, you stop existing in the conversation entirely.</p>
 
-   <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=1200&h=480&q=80" alt="Consumer asking an AI assistant for a local business recommendation instead of using a traditional search engine" />
+   <Image src="https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=1200&h=480&q=80" alt="Consumer asking an AI assistant for a local business recommendation instead of using a traditional search engine" width={1200} height={480} style={{ width: "100%", height: "auto" }} />
 
    <h2>SEO vs. GEO: The Great Divide</h2>
    <ul>
@@ -55,12 +56,12 @@ export default function Page() {
    <h3>3. Answer-Ready Content</h3>
    <p>Stop writing for &ldquo;search volume&rdquo; and start writing for &ldquo;answers.&rdquo; Your website needs to provide specific, direct answers to the questions your customers are actually asking.</p>
 
-   <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&h=480&q=80" alt="Analytics dashboard showing the performance gap between businesses optimized for traditional SEO versus GEO" />
+   <Image src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&h=480&q=80" alt="Analytics dashboard showing the performance gap between businesses optimized for traditional SEO versus GEO" width={1200} height={480} style={{ width: "100%", height: "auto" }} />
 
    <h2>Proof in the Data: The HVAC Case Study</h2>
    <p>By focusing on better signals, updating structured data, and aligning their local search strategy with how AI interprets &ldquo;trust,&rdquo; we moved a local HVAC company from #32 to the <strong>Top 3</strong> in 30 days. Check out the full <a href="/case-studies">HVAC Local SEO Case Study</a> to see the data for yourself.</p>
 
-   <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1200&h=480&q=80" alt="Business owner reviewing GEO results with an advisor after implementing structured data and entity optimization" />
+   <Image src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1200&h=480&q=80" alt="Business owner reviewing GEO results with an advisor after implementing structured data and entity optimization" width={1200} height={480} style={{ width: "100%", height: "auto" }} />
 
    <h2>Your Action Plan</h2>
    <ol>

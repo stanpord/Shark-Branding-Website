@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import BlogShell from "@/components/BlogShell";
 
 export const metadata: Metadata = {
@@ -34,9 +35,12 @@ export default function Page() {
    <p>The important word is &ldquo;confidently.&rdquo; AI models don&rsquo;t guess. They synthesize data from hundreds of sources about your business, weigh that data against trust signals, and surface the names they can defend with evidence. If your data is inconsistent, your reviews are thin, or your website buries the essentials, the AI moves on without you.</p>
    <p>Google AI Overviews now appear on more than 50% of all searches.<sup>1</sup> That figure is not going down. And unlike a traditional search result, an AI Overview doesn&rsquo;t offer ten options. It offers one to three. That is the entire game.</p>
 
-   <img
+   <Image
     src="https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?auto=format&fit=crop&w=1200&h=480&q=80"
     alt="Person on a laptop checking how their business appears in AI search results on Google and ChatGPT"
+    width={1200}
+    height={480}
+    style={{ width: "100%", height: "auto" }}
    />
 
    <h2>What Is GEO? Generative Engine Optimization Explained</h2>
@@ -50,9 +54,12 @@ export default function Page() {
    <p>The practical overlap is high. Both require the same things: clear question-and-answer formatting, specific facts rather than marketing language, and content that stands on its own without surrounding context. If you write for AEO, your content performs better in GEO. The skills transfer directly.</p>
    <p>What separates AEO as a category is its focus on intent. AEO asks: what is the exact question someone types, and does your page answer it within the first 60 words of a section? If yes, you get pulled into featured snippets and AI answer boxes. If no, you get organic results further down a page no one scrolls.</p>
 
-   <img
+   <Image
     src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=1200&h=480&q=80"
     alt="Business owner using a mobile device to search for local services, the way AI answer engines process voice and text queries"
+    width={1200}
+    height={480}
+    style={{ width: "100%", height: "auto" }}
    />
 
    <h2>Is Traditional SEO Dead for Wesley Chapel Businesses?</h2>
@@ -66,9 +73,12 @@ export default function Page() {
    <p>That is an opportunity. A business that builds its AI visibility infrastructure today in Wesley Chapel has a realistic chance of owning its category. A real estate firm, a pediatric dentist, a custom home builder who gets Found, Trusted, and Chosen by AI right now will be extremely hard to displace in 12 months.</p>
    <p>We have seen this play out with Emory&rsquo;s Rock Realty, a Wesley Chapel real estate firm operating in a market with over 2,000 licensed agents. After deploying the AI Visibility Toolkit, they moved from fourth to first for &ldquo;best realtors in Wesley Chapel&rdquo; within 30 days. The drivers were NAP standardization, Chamber of Commerce authority linking, and consistent review signals. No magic. Just the right infrastructure built correctly.</p>
 
-   <img
+   <Image
     src="https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=1200&h=480&q=80"
     alt="Local business team in Wesley Chapel discussing their AI visibility and digital marketing strategy"
+    width={1200}
+    height={480}
+    style={{ width: "100%", height: "auto" }}
    />
 
    <h2>What Does a Full AIO Strategy Actually Include?</h2>
@@ -95,9 +105,12 @@ export default function Page() {
    <p>We are based in Wesley Chapel. Our clients are Wesley Chapel and North Tampa Bay businesses. We understand the specific competitive landscape of Wiregrass, Pasco County, and the New Tampa corridor in a way that a generic national agency does not. That proximity translates into faster iteration and more relevant benchmarking data.</p>
    <p>If you want to know where your business currently stands in AI search, the starting point is a visibility audit. We offer that at no cost for Tampa Bay area businesses.</p>
 
-   <img
+   <Image
     src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=1200&h=480&q=80"
     alt="Shark Branding Solutions team member reviewing AI visibility data for a Wesley Chapel business client"
+    width={1200}
+    height={480}
+    style={{ width: "100%", height: "auto" }}
    />
 
    <h2>Questions We Hear From Wesley Chapel Business Owners</h2>

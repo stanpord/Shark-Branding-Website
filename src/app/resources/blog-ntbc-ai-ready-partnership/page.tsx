@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import BlogShell from "@/components/BlogShell";
 
 export const metadata: Metadata = {
@@ -42,9 +43,12 @@ export default function Page() {
    <p>When a user asks these questions, AI models don&rsquo;t just give a list of links. They give an <strong>answer</strong>. They recommend a winner. If your business isn&rsquo;t &ldquo;Found, Trusted, and Chosen&rdquo; by these models, you don&rsquo;t even get invited to the conversation.</p>
    <p>That&rsquo;s where Shark Branding Solutions comes in. We&rsquo;ve moved past the era of simple &ldquo;marketing&rdquo; services. We focus on <strong>AI Visibility</strong>: a high-level strategy designed to make sure your business is the one the machines recommend.</p>
 
-   <img
+   <Image
     src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&h=480&q=80"
     alt="North Tampa Bay business community members collaborating on AI visibility strategy at a chamber event"
+    width={1200}
+    height={480}
+    style={{ width: "100%", height: "auto" }}
    />
 
    <hr />
@@ -60,9 +64,12 @@ export default function Page() {
    <p>Visibility is only half the battle. Once the AI finds you, it looks for &ldquo;social proof.&rdquo; Does this business have good reviews? Are they responding to customers? Do they have authority in their niche?</p>
    <p>We focus on reputation management that builds a &ldquo;trust engine.&rdquo; By managing your reviews and social signals, we tell the AI, and your potential customers, that you are a safe bet. In an AI-driven search environment, <strong>reputation is the new currency</strong>.</p>
 
-   <img
+   <Image
     src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1200&h=480&q=80"
     alt="Shark Branding Solutions and North Tampa Bay Chamber partnership, building trust for local businesses in the AI era"
+    width={1200}
+    height={480}
+    style={{ width: "100%", height: "auto" }}
    />
 
    <h3>3. Chosen: Converting Visibility into Revenue</h3>
@@ -101,9 +108,12 @@ export default function Page() {
    </ul>
    <p>That&rsquo;s the difference between hoping you show up and building a system that helps AI confidently recommend you.</p>
 
-   <img
+   <Image
     src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1200&h=480&q=80"
     alt="Local business owner reviewing AI visibility results with a Shark Branding Solutions advisor after implementing the toolkit"
+    width={1200}
+    height={480}
+    style={{ width: "100%", height: "auto" }}
    />
 
    <h2>Stop Playing Catch-Up</h2>
@@ -111,9 +121,12 @@ export default function Page() {
    <p>North Tampa Bay is a thriving, innovative hub. We have the talent, the passion, and the services. Now, through this partnership between Shark Branding Solutions and the NTBC, we have the technology to match.</p>
    <p>Are you ready to stop wondering where your next customer is coming from and start being the business that AI recommends?</p>
 
-   <img
+   <Image
     src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=1200&h=480&q=80"
     alt="Wesley Chapel and Tampa Bay skyline, the local community Shark Branding Solutions is helping get AI-ready"
+    width={1200}
+    height={480}
+    style={{ width: "100%", height: "auto" }}
    />
 
    <h2>Take Action Today</h2>

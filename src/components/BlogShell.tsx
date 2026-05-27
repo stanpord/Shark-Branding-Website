@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 interface RelatedPost {
   href: string;
@@ -47,13 +48,13 @@ export default function BlogShell({
       {/* Article body */}
       <section className="bg-white py-16 px-6">
         <div className="max-w-[720px] mx-auto">
-          <img
+          <Image
             src={heroImage}
             alt={heroAlt}
-            width={720}
+            width={1200}
             height={480}
             className="w-full rounded-[18px] mb-12 object-cover"
-            style={{ maxHeight: "480px" }}
+            style={{ width: "100%", height: "auto", maxHeight: "480px" }}
           />
           <div className="article-prose">{children}</div>
         </div>

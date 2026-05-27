@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import BlogShell from "@/components/BlogShell";
 
 export const metadata: Metadata = {
@@ -44,9 +45,12 @@ export default function Page() {
    </ol>
    <p>But here is the kicker: <strong>Businesses that don&rsquo;t answer are listed as &ldquo;Businesses we couldn&rsquo;t reach.&rdquo;</strong> Imagine the blow to your reputation. A customer sees your brand next to a red flag that says you couldn&rsquo;t be bothered to pick up the phone.</p>
 
-   <img
+   <Image
     src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1200&h=480&q=80"
     alt="Business professional responding promptly to a customer inquiry by phone"
+    width={1200}
+    height={480}
+    style={{ width: "100%", height: "auto" }}
    />
 
    <h2>The Cost of Silence: The &ldquo;Unreachable&rdquo; Penalty</h2>
@@ -61,9 +65,12 @@ export default function Page() {
     <li><strong>An AI-Ready Receptionist:</strong> You need a way to handle automated inquiries 24/7.</li>
    </ol>
 
-   <img
+   <Image
     src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&h=480&q=80"
     alt="Business analytics dashboard showing responsiveness metrics and local visibility performance"
+    width={1200}
+    height={480}
+    style={{ width: "100%", height: "auto" }}
    />
 
    <h2>Shark Branding Solutions: Your AI Visibility Partner</h2>
@@ -82,9 +89,12 @@ export default function Page() {
     <li><strong>Simplify Your Pricing:</strong> Even if you can&rsquo;t give an exact quote, can you provide a &ldquo;starting at&rdquo; price? AI loves numbers.</li>
    </ol>
 
-   <img
+   <Image
     src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1200&h=480&q=80"
     alt="Business owner reviewing their AI visibility strategy with an advisor"
+    width={1200}
+    height={480}
+    style={{ width: "100%", height: "auto" }}
    />
 
    <p>The shift to AI-mediated service discovery isn&rsquo;t a &ldquo;maybe.&rdquo; It&rsquo;s happening right now. Don&rsquo;t let Google&rsquo;s AI pass you by. Whether you need <a href="/services">local SEO alignment</a> or want to boost your <a href="/services">reputation and revenue</a>, we have the roadmap for your success.</p>

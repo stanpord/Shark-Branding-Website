@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -64,11 +65,14 @@ export default function Home() {
           <div className="hidden lg:block">
             <div className="relative">
               <div className="absolute inset-0 -m-6 rounded-[40px] bg-[#18b5d8]/10 blur-3xl" aria-hidden="true" />
-              <img
-                src="/ai-visibility-hero.webp"
-                alt="AI recommending Your Business above competitors in Tampa Bay — Wesley Chapel, Lutz, Land O' Lakes, St. Petersburg"
-                className="relative w-full h-auto rounded-[20px] border border-white/10"
-              />
+              <Image
+              src="/ai-visibility-hero.webp"
+              alt="AI recommending Your Business above competitors in Tampa Bay"
+              width={880}
+              height={660}
+              className="relative w-full h-auto rounded-[20px] border border-white/10"
+              priority
+            />
             </div>
           </div>
 

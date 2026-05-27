@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import BlogShell from "@/components/BlogShell";
 
 export const metadata: Metadata = {
@@ -52,9 +53,12 @@ export default function Page() {
     <li><strong>It Signals Activity to Google:</strong> Google loves active businesses. Frequent updates and interactions tell the algorithm your business is alive and kicking.<sup>2</sup></li>
    </ol>
 
-   <img
+   <Image
     src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1200&h=480&q=80"
     alt="Business professional responding promptly to a customer review within the 24-hour window that builds AI trust"
+    width={1200}
+    height={480}
+    style={{ width: "100%", height: "auto" }}
    />
 
    <h2>Manual vs. Templates vs. AI-Assisted: The Great Debate</h2>
@@ -84,18 +88,24 @@ export default function Page() {
     <li><strong>E-E-A-T:</strong> (Experience, Expertise, Authoritativeness, and Trustworthiness). Responding to reviews is one of the only visible ways a local business can prove its E-E-A-T directly on the search results page.<sup>3</sup></li>
    </ul>
 
-   <img
+   <Image
     src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&h=480&q=80"
     alt="Local business analytics dashboard showing the SEO lift from consistent review responses and E-E-A-T signals"
+    width={1200}
+    height={480}
+    style={{ width: "100%", height: "auto" }}
    />
 
    <h2>The Shift: From &ldquo;Get Found&rdquo; to &ldquo;Get Chosen&rdquo;</h2>
    <p>In the old days, you just needed to show up in the yellow pages. Then you just needed to &ldquo;get found&rdquo; on Google. Today? Everyone is found. The battle is now about <strong>getting chosen.</strong></p>
    <p>When a customer looks at three local businesses, and one has 500 reviews with zero responses, and the other has 100 reviews with thoughtful, 24-hour responses, who do you think they&rsquo;re going to call? They&rsquo;re calling the business that listens. They&rsquo;re calling the business that responds.</p>
 
-   <img
+   <Image
     src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1200&h=480&q=80"
     alt="Customer service professional representing the responsive business that earns the customer's trust and call"
+    width={1200}
+    height={480}
+    style={{ width: "100%", height: "auto" }}
    />
 
    <p>The 24-Hour Rule isn&rsquo;t a suggestion; it&rsquo;s the new standard for local business success. If you&rsquo;re ready to stop guessing and start growing, it&rsquo;s time to modernize your approach.</p>

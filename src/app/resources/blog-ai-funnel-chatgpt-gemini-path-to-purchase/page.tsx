@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import BlogShell from "@/components/BlogShell";
 
 export const metadata: Metadata = {
@@ -52,9 +53,12 @@ export default function Page() {
    </ul>
    <p>ChatGPT then synthesizes all of that into a confidence score. The businesses with the highest confidence scores get the recommendation. The rest get nothing.</p>
 
-   <img
+   <Image
     src="https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=1200&h=480&q=80"
     alt="Customer asking an AI assistant on mobile for a local business recommendation"
+    width={1200}
+    height={480}
+    style={{ width: "100%", height: "auto" }}
    />
 
    <h2>How Gemini Is Different (and Why It Matters Even More)</h2>
@@ -72,9 +76,12 @@ export default function Page() {
     </ul>
    </div>
 
-   <img
+   <Image
     src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1200&h=480&q=80"
     alt="Business owner updating their Google Business Profile to optimize for AI-powered recommendations"
+    width={1200}
+    height={480}
+    style={{ width: "100%", height: "auto" }}
    />
 
    <h2>The Reshaping of the &ldquo;Consideration Stage&rdquo;</h2>
@@ -95,9 +102,12 @@ export default function Page() {
    <h3>3. Passive Profiles</h3>
    <p>No recent Google Posts. No responses to reviews. No new photos in 18 months. The business exists in directories but shows no sign of life. AI interprets this as low engagement and low reliability.</p>
 
-   <img
+   <Image
     src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&h=480&q=80"
     alt="Analytics dashboard highlighting data gaps and visibility opportunities for local business AI optimization"
+    width={1200}
+    height={480}
+    style={{ width: "100%", height: "auto" }}
    />
 
    <h2>How to Optimize for the New Path to Purchase</h2>

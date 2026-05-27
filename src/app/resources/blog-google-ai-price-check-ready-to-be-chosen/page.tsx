@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import BlogShell from "@/components/BlogShell";
 
 export const metadata: Metadata = {
@@ -35,9 +36,12 @@ export default function Page() {
    </ol>
    <p>The businesses that respond quickly and clearly get promoted to the top. The businesses that don&rsquo;t respond get labeled: <strong>&ldquo;We couldn&rsquo;t reach this business.&rdquo;</strong></p>
 
-   <img
+   <Image
     src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1200&h=480&q=80"
     alt="Business professional answering an AI-initiated inquiry promptly to secure the lead"
+    width={1200}
+    height={480}
+    style={{ width: "100%", height: "auto" }}
    />
 
    <div className="callout-box">
@@ -57,9 +61,12 @@ export default function Page() {
    <h3>Google Business Profile Gaps</h3>
    <p>Your profile needs to be complete, current, and detailed. Missing service categories, outdated hours, or no Q&amp;A section tells the AI your profile isn&rsquo;t reliable. If the AI can&rsquo;t trust your profile data, it won&rsquo;t stake its recommendation on you.</p>
 
-   <img
+   <Image
     src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1200&h=480&q=80"
     alt="Business owner updating their profile and pricing information to be AI-ready at any hour"
+    width={1200}
+    height={480}
+    style={{ width: "100%", height: "auto" }}
    />
 
    <h2>What &ldquo;Ready to Be Chosen&rdquo; Actually Looks Like</h2>
@@ -77,9 +84,12 @@ export default function Page() {
    <h3>Review Velocity</h3>
    <p>A steady flow of recent reviews, not just a historical pile from five years ago, shows AI that your business is active, trusted, and delivering results right now.</p>
 
-   <img
+   <Image
     src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&h=480&q=80"
     alt="Business owner working on their digital presence and review strategy to attract AI-recommended leads"
+    width={1200}
+    height={480}
+    style={{ width: "100%", height: "auto" }}
    />
 
    <h2>The Businesses That Will Win This Shift</h2>

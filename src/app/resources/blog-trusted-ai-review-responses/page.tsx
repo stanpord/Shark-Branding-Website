@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import BlogShell from "@/components/BlogShell";
 
 export const metadata: Metadata = {
@@ -41,9 +42,12 @@ export default function Page() {
    <p>Trust can&rsquo;t be faked. It can&rsquo;t be bought with a bigger ad budget. Trust is built through <strong>consistent, visible proof</strong> that your business delivers on its promises. In the physical world, trust comes from referrals and personal recommendations. In the digital world, it comes from reviews, and more importantly, how you respond to them.</p>
    <p>AI models have learned to read trust signals the same way a savvy customer would. When Gemini evaluates two competing HVAC companies, it&rsquo;s not just looking at who has more reviews. It&rsquo;s looking at who is actively engaged with their customers, who responds thoughtfully, and whose responses reinforce specific service details and locations.</p>
 
-   <img
+   <Image
     src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1200&h=480&q=80"
     alt="Business owner at their laptop carefully crafting a personalized review response that builds trust with both the customer and AI"
+    width={1200}
+    height={480}
+    style={{ width: "100%", height: "auto" }}
    />
 
    <h2>The &ldquo;Don&rsquo;t Leave &rsquo;Em Hanging&rdquo; Rule</h2>
@@ -61,9 +65,12 @@ export default function Page() {
    <p><em>&ldquo;We&rsquo;re so glad your kitchen remodel came out exactly as you imagined, Maria! Our team in the Wesley Chapel area genuinely loves transforming spaces. Looking forward to the next project whenever you&rsquo;re ready.&rdquo;</em></p>
    <p>One is a template. The other is a <strong>trust signal</strong>. One bores the AI. The other feeds it.</p>
 
-   <img
+   <Image
     src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&h=480&q=80"
     alt="Team using a Human-in-the-Loop model, AI drafts the response, a human approves it before publishing"
+    width={1200}
+    height={480}
+    style={{ width: "100%", height: "auto" }}
    />
 
    <h2>The HITL Model: AI Speed with Human Judgment</h2>
@@ -85,9 +92,12 @@ export default function Page() {
    </ul>
    <p>When you respond with specifics, mentioning the service, the location, the outcome, you are essentially writing <strong>micro-SEO content</strong> that strengthens your local authority with every single review cycle.</p>
 
-   <img
+   <Image
     src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&h=480&q=80"
     alt="Business owner building a consistent stream of detailed review responses that compound into long-term AI trust signals"
+    width={1200}
+    height={480}
+    style={{ width: "100%", height: "auto" }}
    />
 
    <h2>What &ldquo;Trusted&rdquo; Looks Like to an AI</h2>

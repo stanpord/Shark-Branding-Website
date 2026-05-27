@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Case Studies — Real Results for Tampa Bay Businesses | Shark Branding Solutions",
@@ -72,10 +73,12 @@ export default function CaseStudiesPage() {
 
         {/* Photo hero */}
         <div className="relative h-[340px] sm:h-[420px] overflow-hidden">
-          <img
+          <Image
             src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1400&h=560&q=80"
             alt="HVAC technician working on an air conditioning unit"
-            className="absolute inset-0 w-full h-full object-cover"
+            fill
+            className="object-cover"
+            sizes="100vw"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/60 to-transparent" />
           <div className="absolute bottom-0 left-0 right-0 px-6 pb-10 max-w-[980px] mx-auto">
@@ -270,10 +273,12 @@ export default function CaseStudiesPage() {
 
         {/* Photo hero */}
         <div className="relative h-[340px] sm:h-[420px] overflow-hidden">
-          <img
+          <Image
             src="https://images.unsplash.com/photo-1582407947304-fd86f028f716?auto=format&fit=crop&w=1400&h=560&q=80"
             alt="Modern home representing real estate listings in Wesley Chapel FL"
-            className="absolute inset-0 w-full h-full object-cover"
+            fill
+            className="object-cover"
+            sizes="100vw"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/55 to-transparent" />
           <div className="absolute bottom-0 left-0 right-0 px-6 pb-10 max-w-[980px] mx-auto">
@@ -440,10 +445,12 @@ export default function CaseStudiesPage() {
 
         {/* Photo hero */}
         <div className="relative h-[340px] sm:h-[420px] overflow-hidden">
-          <img
+          <Image
             src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=1400&h=560&q=80"
             alt="Modern smart vending machine with digital interface"
-            className="absolute inset-0 w-full h-full object-cover"
+            fill
+            className="object-cover"
+            sizes="100vw"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/60 to-transparent" />
           <div className="absolute bottom-0 left-0 right-0 px-6 pb-10 max-w-[980px] mx-auto">
@@ -556,10 +563,12 @@ export default function CaseStudiesPage() {
 
         {/* Photo hero */}
         <div className="relative h-[340px] sm:h-[420px] overflow-hidden">
-          <img
+          <Image
             src="https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=1400&h=560&q=80"
             alt="Business professionals networking at a chamber of commerce event"
-            className="absolute inset-0 w-full h-full object-cover"
+            fill
+            className="object-cover"
+            sizes="100vw"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/55 to-transparent" />
           <div className="absolute bottom-0 left-0 right-0 px-6 pb-10 max-w-[980px] mx-auto">

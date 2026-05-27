@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import BlogShell from "@/components/BlogShell";
 
 export const metadata: Metadata = {
@@ -28,9 +29,12 @@ export default function Page() {
    <h2>The Shift: From Search Engines to Answer Engines</h2>
    <p>Why does consistency matter so much now? Because AI models aren&rsquo;t just &ldquo;searching&rdquo;, they are &ldquo;reasoning.&rdquo; When a user asks Gemini, &ldquo;Where should I take my car for a brake repair in downtown?&rdquo; the AI doesn&rsquo;t just look for a website with the word &ldquo;brakes.&rdquo; It looks for <strong>verified facts</strong>. It cross-references data from Google Business Profiles, Yelp, Bing, Apple Maps, and hundreds of smaller directories to see if your information matches up.</p>
 
-   <img
+   <Image
     src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=1200&h=480&q=80"
     alt="Aerial view of a city grid, the digital map AI uses to cross-reference your business location and data across hundreds of directories"
+    width={1200}
+    height={480}
+    style={{ width: "100%", height: "auto" }}
    />
 
    <p>If your Yelp listing says you close at 5:00 PM but your Google profile says 6:00 PM, the AI gets confused. And in the world of Large Language Models (LLMs), confusion equals a lack of confidence. If the AI isn&rsquo;t 100% sure you are open or where you are located, it won&rsquo;t recommend you. It would rather recommend a competitor with slightly fewer reviews but perfectly consistent data.</p>
@@ -59,9 +63,12 @@ export default function Page() {
    </ul>
    <p>Want to see how you currently stack up? You can grab a <a href="/free-report">free AI Audit</a> that shows exactly how the AI sees your business right now.</p>
 
-   <img
+   <Image
     src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=1200&h=480&q=80"
     alt="Business owner auditing their online listings across multiple directories to ensure AI can find and trust them"
+    width={1200}
+    height={480}
+    style={{ width: "100%", height: "auto" }}
    />
 
    <h2>The &ldquo;Found&rdquo; Pillar in Action: Real Results</h2>
@@ -79,9 +86,12 @@ export default function Page() {
    <h2>The Apple Intelligence Factor</h2>
    <p>We can&rsquo;t talk about AI maps without mentioning Apple Intelligence. With the integration of AI across millions of iPhones, the stakes have never been higher. When a user asks Siri to &ldquo;find a plumber near me,&rdquo; the AI is pulling from a highly curated set of data. If your listings are fragmented, you aren&rsquo;t just missing out on a search result; you&rsquo;re missing out on the entire Apple ecosystem.</p>
 
-   <img
+   <Image
     src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1200&h=480&q=80"
     alt="Business consultant reviewing listing consistency results with a local business owner, the payoff of a clean digital map"
+    width={1200}
+    height={480}
+    style={{ width: "100%", height: "auto" }}
    />
 
    <h2>Your Path to AI Dominance</h2>

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import BlogShell from "@/components/BlogShell";
 
 export const metadata: Metadata = {
@@ -79,9 +80,12 @@ export default function Page() {
     optimized for, because until now, those signals did not matter this much.</strong>
    </p>
 
-   <img
+   <Image
     src="https://images.unsplash.com/photo-1616469829581-73993eb86b02?auto=format&fit=crop&w=1200&h=500&q=80"
     alt="Person searching on a phone, AI Overviews now answer before anyone clicks"
+    width={1200}
+    height={500}
+    style={{ width: "100%", height: "auto" }}
    />
 
    <h2>The Old Way vs. the New Way</h2>
@@ -159,9 +163,12 @@ export default function Page() {
     and broad is now a liability.
    </p>
 
-   <img
+   <Image
     src="https://images.unsplash.com/photo-1639322537228-f710d846310a?auto=format&fit=crop&w=1200&h=500&q=80"
     alt="AI data visualization, three signals AI uses to evaluate local businesses"
+    width={1200}
+    height={500}
+    style={{ width: "100%", height: "auto" }}
    />
 
    <h2>Why the Businesses That Move First Win Permanently</h2>
