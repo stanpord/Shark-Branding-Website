@@ -82,7 +82,7 @@ export default function Page() {
 
    <h2>How to Take Action Today</h2>
    <ol>
-    <li><strong>Get a Pulse Check:</strong> <a href="/free-report">Download our Free Report</a> to see where your business currently stands.</li>
+    <li><strong>Get a Pulse Check:</strong> <a href="/free-report">Get a free AI Audit</a> to see where your business currently stands.</li>
     <li><strong>Join a Workshop:</strong> We offer deep dives into the tactics that drive real ROI, from AI search visibility to reputation management. <a href="/services">Explore our services</a>.</li>
     <li><strong>Consult the Experts:</strong> Ready to skip the line? <a href="/contact">Book an AI Visibility Consulting session</a> with our team.</li>
    </ol>

@@ -262,7 +262,7 @@ export default function ResourcesPage() {
                   href="/free-report"
                   className="inline-block text-[11px] font-bold uppercase tracking-[0.15em] bg-black text-white px-5 py-2.5 hover:bg-[#18b5d8] transition-colors"
                 >
-                  Get the Free Report &rarr;
+                  Get My Free AI Audit &rarr;
                 </Link>
               </div>
             </div>

@@ -96,7 +96,7 @@ export default function BlogShell({
               href="/free-report"
               className="btn-press inline-block bg-black text-white text-[17px] font-semibold rounded-full px-[22px] py-[11px] hover:bg-white hover:text-black motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:ring-offset-[#18b5d8] [touch-action:manipulation]"
             >
-              Get the Free Report
+              Get My Free AI Audit
             </Link>
             <Link
               href="/contact"

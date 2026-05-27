@@ -248,7 +248,7 @@ export default function CaseStudiesPage() {
                 href="/free-report"
                 className="btn-press inline-block bg-[#18b5d8] text-white text-[15px] font-semibold rounded-full px-7 py-3.5 hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150"
               >
-                Get My Free Visibility Report
+                Get My Free AI Audit
               </Link>
               <Link
                 href="/contact"
@@ -400,7 +400,7 @@ export default function CaseStudiesPage() {
                 href="/free-report"
                 className="btn-press inline-block bg-[#18b5d8] text-white text-[15px] font-semibold rounded-full px-7 py-3.5 hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150"
               >
-                Get My Free Visibility Report
+                Get My Free AI Audit
               </Link>
               <Link href="/contact" className="text-[15px] font-semibold text-[#18b5d8] hover:underline">
                 Talk to us first &rarr;
@@ -427,7 +427,7 @@ export default function CaseStudiesPage() {
             href="/free-report"
             className="btn-press inline-block bg-black text-white text-[16px] font-semibold rounded-full px-8 py-4 hover:bg-[#1d1d1f] motion-safe:transition-colors duration-150"
           >
-            Get the Free Report: It Takes 2 Minutes
+            Get My Free AI Audit
           </Link>
         </div>
       </section>
@@ -537,7 +537,7 @@ export default function CaseStudiesPage() {
                 href="/free-report"
                 className="btn-press inline-block bg-[#18b5d8] text-white text-[15px] font-semibold rounded-full px-7 py-3.5 hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150"
               >
-                Get My Free Visibility Report
+                Get My Free AI Audit
               </Link>
               <Link href="/contact" className="text-[15px] font-semibold text-[#18b5d8] hover:underline">
                 Talk to us first &rarr;
@@ -657,7 +657,7 @@ export default function CaseStudiesPage() {
                 href="/free-report"
                 className="btn-press inline-block bg-[#18b5d8] text-white text-[15px] font-semibold rounded-full px-7 py-3.5 hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150"
               >
-                Get My Free Visibility Report
+                Get My Free AI Audit
               </Link>
               <Link href="/contact" className="text-[15px] font-semibold text-[#18b5d8] hover:underline">
                 Talk to us first &rarr;
@@ -720,7 +720,7 @@ export default function CaseStudiesPage() {
               href="/free-report"
               className="btn-press inline-block bg-[#18b5d8] text-white text-[17px] font-semibold rounded-full px-[32px] py-[15px] hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0a0a] [touch-action:manipulation]"
             >
-              Get My Free Visibility Report
+              Get My Free AI Audit
             </Link>
             <Link
               href="/contact"

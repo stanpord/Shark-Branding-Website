@@ -119,7 +119,7 @@ export default function Page() {
    <h2>Take Action Today</h2>
    <p>The future doesn&rsquo;t wait for a &ldquo;better time.&rdquo; It&rsquo;s happening right now in every ChatGPT prompt, every voice search, and every place people go looking for trusted resources.</p>
    <ol>
-    <li><strong>Claim Your Free Report:</strong> Visit <a href="/free-report">sharkbrandingsolutions.com/free-report</a> to see exactly where your business stands.</li>
+    <li><strong>Claim Your Free AI Audit:</strong> Visit <a href="/free-report">sharkbrandingsolutions.com/free-report</a> to see exactly where your business stands.</li>
     <li><strong>Attend a Workshop:</strong> We regularly host deep-dive sessions on AI Visibility. Check out our <a href="/services">upcoming services page</a> to learn how to align your business with modern search behavior.</li>
     <li><strong>Explore the Toolkit:</strong> See how the Chamber and other local businesses are winning by visiting our <a href="/services">AI Visibility Consulting page</a>.</li>
    </ol>

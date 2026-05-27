@@ -4,7 +4,7 @@ import type { FormEvent } from "react";
 import { useState, useRef } from "react";
 
 const services = [
-  "Free Visibility Report",
+  "Free AI Audit",
   "AI Business Consulting",
   "AI Visibility Toolkit: Self-Directed",
   "AI Visibility Toolkit: Fully Managed",
@@ -43,7 +43,7 @@ export default function ContactForm() {
             <span className="text-[#18b5d8]">your visibility.</span>
           </h1>
           <p className="lead-airy text-[#333333]">
-            Start with the free report, book a call, or just say hello. We
+            Start with a free AI Audit, book a call, or just say hello. We
             respond within one business day.
           </p>
         </div>
@@ -235,7 +235,7 @@ export default function ContactForm() {
 
             <div className="bg-[#07141a] rounded-[18px] p-6">
               <p className="text-[#18b5d8] text-[14px] font-semibold uppercase tracking-wide mb-2">
-                Free Visibility Report
+                Free AI Audit
               </p>
               <p className="text-[17px] text-white mb-1">
                 Delivered within 48 hours.

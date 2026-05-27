@@ -57,7 +57,7 @@ export default function Nav() {
             href="/free-report"
             className="btn-press bg-[#18b5d8] text-white text-[12px] font-semibold rounded-full px-4 py-1.5 hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 [touch-action:manipulation]"
           >
-            Get Free Report
+            Get My Free AI Audit
           </Link>
         </div>
 
@@ -94,7 +94,7 @@ export default function Nav() {
             onClick={() => setOpen(false)}
             className="btn-press self-start bg-[#18b5d8] text-white text-[15px] font-semibold rounded-full px-5 py-3 hover:bg-[#1ec8ee] motion-safe:transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 [touch-action:manipulation]"
           >
-            Get Free Report
+            Get My Free AI Audit
           </Link>
         </div>
       )}

@@ -4,7 +4,7 @@ const services = [
   { href: "/services#ai-visibility", label: "AI Business Consulting" },
   { href: "/services#toolkit", label: "AI Visibility Toolkit" },
   { href: "/services#workshops", label: "Workshops & Training" },
-  { href: "/free-report", label: "Free Visibility Report" },
+  { href: "/free-report", label: "Free AI Audit" },
 ];
 
 const company = [

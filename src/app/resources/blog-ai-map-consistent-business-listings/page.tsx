@@ -57,7 +57,7 @@ export default function Page() {
     <li><strong>Category Accuracy:</strong> Are you a &ldquo;Lawyer,&rdquo; an &ldquo;Attorney,&rdquo; or a &ldquo;Legal Service&rdquo;? Pick one and stick to it.</li>
     <li><strong>Structured Data:</strong> This is the hidden code (Schema markup) that tells AI exactly what your business does.</li>
    </ul>
-   <p>Want to see how you currently stack up? You can grab a <a href="/free-report">free report</a> that shows exactly how the AI sees your business right now.</p>
+   <p>Want to see how you currently stack up? You can grab a <a href="/free-report">free AI Audit</a> that shows exactly how the AI sees your business right now.</p>
 
    <img
     src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=1200&h=480&q=80"

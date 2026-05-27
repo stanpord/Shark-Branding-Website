@@ -49,7 +49,7 @@ export default function Home() {
                 href="/free-report"
                 className="btn-press inline-block bg-[#18b5d8] text-white text-[17px] font-semibold rounded-full px-[28px] py-[14px] hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0a0a] [touch-action:manipulation]"
               >
-                Get My Free Report
+                Get My Free AI Audit
               </Link>
               <Link
                 href="/case-studies"
@@ -376,7 +376,7 @@ export default function Home() {
               },
               {
                 n: "04",
-                title: "Free Visibility Report",
+                title: "Free AI Audit",
                 body: "Know exactly where you stand in 48 hours. No commitment, no sales pressure.",
                 href: "/free-report",
               },
@@ -474,7 +474,7 @@ export default function Home() {
               href="/free-report"
               className="btn-press inline-block bg-[#18b5d8] text-white text-[18px] font-semibold rounded-full px-[32px] py-[15px] hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0a0a] [touch-action:manipulation]"
             >
-              Get My Free Visibility Report
+              Get My Free AI Audit
             </Link>
             <Link
               href="/contact"

@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "AI Business Services — Shark Branding Solutions",
   description:
-    "AI Business Consulting, AI Toolkit, Workshops, and Free Visibility Reports for Tampa Bay businesses.",
+    "AI Business Consulting, AI Toolkit, Workshops, and Free AI Audits for Tampa Bay businesses.",
 };
 
 const services = [
@@ -49,7 +49,7 @@ const services = [
   },
   {
     n: "04", id: "report", eyebrow: "Free, No Strings Attached", dark: false,
-    title: "Free Visibility Report",
+    title: "Free AI Audit",
     description: "Before you spend a dollar on marketing, know exactly where you stand. We assess how your business appears across search, maps, reviews, and AI platforms, and deliver a clear, honest report in 48 hours. No sales pressure. Just the truth about your visibility.",
     bullets: [
       "Search and map listing analysis",
@@ -58,7 +58,7 @@ const services = [
       "Actionable priority list delivered in 48 hours",
       "100% free, forever, no catch",
     ],
-    cta: "Get My Free Report", href: "/free-report",
+    cta: "Get My Free AI Audit", href: "/free-report",
   },
 ];
 
@@ -406,7 +406,7 @@ export default function ServicesPage() {
         <div className="max-w-[560px] mx-auto">
           <p className="text-[13px] font-semibold tracking-[0.2em] uppercase text-[#18b5d8] mb-6">Not sure where to start?</p>
           <h2 className="display-lg text-white mb-6" style={{ textWrap: "balance" }}>
-            Start with the free report.
+            Start with a free AI Audit.
           </h2>
           <p className="lead-airy text-white/50 mb-12">
             Zero commitment. Maximum clarity.
@@ -415,7 +415,7 @@ export default function ServicesPage() {
             href="/free-report"
             className="btn-press inline-block bg-[#18b5d8] text-white text-[17px] font-semibold rounded-full px-[32px] py-[15px] hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0a0a] [touch-action:manipulation]"
           >
-            Get My Free Report
+            Get My Free AI Audit
           </Link>
         </div>
       </section>
