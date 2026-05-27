@@ -18,6 +18,15 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "blog-aio-aeo-geo-seo-wesley-chapel",
+    category: "GEO",
+    title: "AIO, GEO, and AEO for Wesley Chapel Businesses: What Actually Gets You Customers in 2026",
+    excerpt: "AI Overviews appear on more than half of all Google searches. Here is what AIO, GEO, and AEO actually mean for Wesley Chapel businesses, and why SEO alone no longer closes the gap.",
+    date: "May 26, 2026",
+    readTime: "9 min read",
+    image: "https://images.unsplash.com/photo-1560179707-f14e90ef3623?auto=format&fit=crop&w=900&h=420&q=80",
+  },
+  {
     slug: "blog-end-of-local-seo-ai-visibility",
     category: "AI Visibility",
     title: "What the End of Local SEO Means for Your Business",
