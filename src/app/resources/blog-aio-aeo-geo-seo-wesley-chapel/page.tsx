@@ -51,8 +51,8 @@ export default function Page() {
    <p>What separates AEO as a category is its focus on intent. AEO asks: what is the exact question someone types, and does your page answer it within the first 60 words of a section? If yes, you get pulled into featured snippets and AI answer boxes. If no, you get organic results further down a page no one scrolls.</p>
 
    <img
-    src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1200&h=480&q=80"
-    alt="Business owner reviewing their local search strategy with a focus on AI answer engines and voice search"
+    src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=1200&h=480&q=80"
+    alt="Business owner using a mobile device to search for local services, the way AI answer engines process voice and text queries"
    />
 
    <h2>Is Traditional SEO Dead for Wesley Chapel Businesses?</h2>
