@@ -98,7 +98,7 @@ export default function AuditTool() {
 
       {loading && (
         <div className="text-center py-20">
-          <div className="inline-block w-8 h-8 border-2 border-[#18b5d8]/30 border-t-[#18b5d8] rounded-full animate-spin mb-4" />
+          <div className="inline-block size-8 border-2 border-[#18b5d8]/30 border-t-[#18b5d8] rounded-full animate-spin mb-4" />
           <p className="text-white/40 text-[14px]">Fetching page and running Claude analysis…</p>
         </div>
       )}
@@ -137,9 +137,9 @@ export default function AuditTool() {
                 const order = { fail: 0, warn: 1, pass: 2 }
                 return order[a.status] - order[b.status]
               })
-              .map((finding, i) => (
+              .map((finding) => (
                 <div
-                  key={i}
+                  key={finding.system}
                   className={`border rounded-xl px-6 py-5 ${statusColor[finding.status]}`}
                 >
                   <div className="flex items-start gap-4">

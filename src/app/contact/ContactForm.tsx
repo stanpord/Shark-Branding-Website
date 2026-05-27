@@ -2,6 +2,7 @@
 
 import type { FormEvent } from "react";
 import { useState, useRef } from "react";
+import Link from "next/link";
 
 const services = [
   "Free AI Audit",
@@ -192,7 +193,7 @@ export default function ContactForm() {
                       type="checkbox"
                       name="sms-consent"
                       required
-                      className="mt-1 h-4 w-4 shrink-0 rounded border-[#e0e0e0] accent-[#18b5d8] cursor-pointer"
+                      className="mt-1 size-4 shrink-0 rounded border-[#e0e0e0] accent-[#18b5d8] cursor-pointer"
                     />
                     <span className="text-[13px] text-[#555] leading-relaxed">
                       I agree to receive SMS messages from Shark Branding Solutions regarding my inquiry and services. Message frequency varies. Message &amp; data rates may apply. Reply <strong>STOP</strong> to opt out or <strong>HELP</strong> for help.
@@ -200,9 +201,9 @@ export default function ContactForm() {
                   </label>
                   <p className="text-[12px] text-[#999] leading-relaxed pl-7">
                     By checking this box you consent to receive text messages at the number provided. Your information will not be shared with third parties. View our{" "}
-                    <a href="/privacy" className="underline hover:text-[#18b5d8] motion-safe:transition-colors">Privacy Policy</a>{" "}
+                    <Link href="/privacy" className="underline hover:text-[#18b5d8] motion-safe:transition-colors">Privacy Policy</Link>{" "}
                     and{" "}
-                    <a href="/terms" className="underline hover:text-[#18b5d8] motion-safe:transition-colors">Terms of Service</a>.
+                    <Link href="/terms" className="underline hover:text-[#18b5d8] motion-safe:transition-colors">Terms of Service</Link>.
                   </p>
                 </div>
 

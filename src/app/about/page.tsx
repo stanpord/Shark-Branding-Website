@@ -197,7 +197,7 @@ export default function AboutPage() {
                 color: "#4FD1A0",
               },
             ].map((item) => (
-              <div key={item.stat} className="bg-white rounded-[20px] px-6 py-6">
+              <div key={item.stat} className="bg-white rounded-[20px] p-6">
                 <p className="text-[clamp(1.6rem,3vw,2.2rem)] font-black leading-none mb-1" style={{ color: item.color }}>{item.stat}</p>
                 <p className="text-[12px] font-semibold uppercase tracking-[0.14em] text-[#7a7a7a] mb-3">{item.label}</p>
                 <p className="text-[13px] text-[#555] leading-relaxed">{item.body}</p>
@@ -218,7 +218,7 @@ export default function AboutPage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
             {values.map((v) => (
-              <div key={v.n} className="bg-white rounded-[20px] px-8 py-8">
+              <div key={v.n} className="bg-white rounded-[20px] p-8">
                 <span className="font-mono text-[#18b5d8] text-[11px] tracking-[0.22em] uppercase block mb-5">{v.n}</span>
                 <h3 className="text-[21px] font-semibold text-[#0a0a0a] mb-3">{v.title}</h3>
                 <p className="body-copy text-[#333333]">{v.body}</p>

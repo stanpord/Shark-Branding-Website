@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import BlogShell from "@/components/BlogShell";
 
 export const metadata: Metadata = {
@@ -59,7 +60,7 @@ export default function Page() {
    <Image src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&h=480&q=80" alt="Analytics dashboard showing the performance gap between businesses optimized for traditional SEO versus GEO" width={1200} height={480} style={{ width: "100%", height: "auto" }} />
 
    <h2>Proof in the Data: The HVAC Case Study</h2>
-   <p>By focusing on better signals, updating structured data, and aligning their local search strategy with how AI interprets &ldquo;trust,&rdquo; we moved a local HVAC company from #32 to the <strong>Top 3</strong> in 30 days. Check out the full <a href="/case-studies">HVAC Local SEO Case Study</a> to see the data for yourself.</p>
+   <p>By focusing on better signals, updating structured data, and aligning their local search strategy with how AI interprets &ldquo;trust,&rdquo; we moved a local HVAC company from #32 to the <strong>Top 3</strong> in 30 days. Check out the full <Link href="/case-studies">HVAC Local SEO Case Study</Link> to see the data for yourself.</p>
 
    <Image src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1200&h=480&q=80" alt="Business owner reviewing GEO results with an advisor after implementing structured data and entity optimization" width={1200} height={480} style={{ width: "100%", height: "auto" }} />
 
@@ -70,7 +71,7 @@ export default function Page() {
     <li><strong>Optimize for Natural Language:</strong> Write your FAQs like a human would speak them.</li>
     <li><strong>Add Structured Data:</strong> If you don&rsquo;t have Schema markup on your site, you are essentially speaking a language the AI can&rsquo;t understand.</li>
    </ol>
-   <p>The &ldquo;AI Shift&rdquo; isn&rsquo;t coming; it&rsquo;s already here. You can either stay stuck in the &ldquo;Ten Blue Links&rdquo; past, or you can join the future of <strong>Generative Engine Optimization</strong>. Whether you need support from a full <a href="/services">AI Visibility Agency</a> or a specific local strategy, Shark Branding Solutions is ready to help you bite back against the competition.</p>
+   <p>The &ldquo;AI Shift&rdquo; isn&rsquo;t coming; it&rsquo;s already here. You can either stay stuck in the &ldquo;Ten Blue Links&rdquo; past, or you can join the future of <strong>Generative Engine Optimization</strong>. Whether you need support from a full <Link href="/services">AI Visibility Agency</Link> or a specific local strategy, Shark Branding Solutions is ready to help you bite back against the competition.</p>
   </BlogShell>
  );
 }

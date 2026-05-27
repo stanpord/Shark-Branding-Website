@@ -79,7 +79,7 @@ export default function Nav() {
 
       {/* Mobile menu */}
       {open && (
-        <div className="md:hidden absolute top-11 inset-x-0 bg-white py-6 px-6 flex flex-col gap-5 border-t border-[#e0e0e0]">
+        <div className="md:hidden absolute top-11 inset-x-0 bg-white p-6 flex flex-col gap-5 border-t border-[#e0e0e0]">
           {links.map((l) => (
             <Link
               key={l.href}

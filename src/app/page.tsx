@@ -13,7 +13,7 @@ export default function Home() {
           {/* Left — copy */}
           <div>
             <div className="inline-flex items-center gap-2 mb-8 rounded-full border border-white/10 bg-white/5 px-4 py-2">
-              <span className="h-1.5 w-1.5 rounded-full bg-[#18b5d8] animate-pulse" aria-hidden="true" />
+              <span className="size-1.5 rounded-full bg-[#18b5d8] animate-pulse" aria-hidden="true" />
               <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#18b5d8]">AI Business Consulting · Tampa Bay</span>
             </div>
 
@@ -297,7 +297,7 @@ export default function Home() {
               },
             ].map((step) => (
               <div key={step.n} className="bg-white rounded-[20px] px-7 py-8 relative">
-                <div className="w-10 h-10 rounded-full bg-[#18b5d8]/10 border border-[#18b5d8]/30 flex items-center justify-center mb-6">
+                <div className="size-10 rounded-full bg-[#18b5d8]/10 border border-[#18b5d8]/30 flex items-center justify-center mb-6">
                   <span className="font-mono text-[#18b5d8] text-[11px] tracking-[0.22em] font-bold">{step.n}</span>
                 </div>
                 <h3 className="text-[17px] font-semibold text-[#0a0a0a] mb-3">{step.title}</h3>
@@ -451,7 +451,7 @@ export default function Home() {
               body: "AI recommendations are earned through authority, not bought through ads. Once you're in, you're in, without a monthly ad budget keeping you there.",
             },
           ].map((c) => (
-            <div key={c.heading} className="bg-white rounded-[16px] px-7 py-7 shadow-sm">
+            <div key={c.heading} className="bg-white rounded-[16px] p-7 shadow-sm">
               <div className="w-8 h-[3px] bg-[#18b5d8] mb-5 rounded-full" />
               <p className="text-[16px] font-bold text-[#0a0a0a] mb-3">{c.heading}</p>
               <p className="text-[14px] text-[#555] leading-relaxed">{c.body}</p>

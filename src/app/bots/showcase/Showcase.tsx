@@ -174,9 +174,8 @@ export default function Showcase() {
       </div>
 
       {/* Carousel */}
-      <div
+      <section
         className="relative w-full"
-        role="region"
         aria-label="AI Employees carousel"
         style={{
           height: 370,
@@ -188,7 +187,7 @@ export default function Showcase() {
         onTouchStart={(e) => startDrag(e.touches[0].clientX)}
       >
         {EMPLOYEES.map((card, i) => (
-          <div key={i} style={cardStyle(i)}>
+          <div key={card.name} style={cardStyle(i)}>
             <div
               className="rounded-2xl overflow-hidden"
               style={{ boxShadow: `0 0 40px ${card.color}25, 0 16px 48px rgba(0,0,0,0.6)` }}
@@ -197,13 +196,13 @@ export default function Showcase() {
             </div>
           </div>
         ))}
-      </div>
+      </section>
 
       {/* Dots nav */}
       <div className="flex items-center gap-2 mt-8 z-20">
         {EMPLOYEES.map((_, i) => (
           <button
-            key={i}
+            key={EMPLOYEES[i].name}
             type="button"
             aria-label={EMPLOYEES[i].name}
             onClick={() => goTo(i)}

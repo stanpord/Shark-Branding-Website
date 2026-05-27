@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import BlogShell from "@/components/BlogShell";
 
 export const metadata: Metadata = {
@@ -118,7 +119,7 @@ export default function Page() {
     <li><strong>Add Schema markup to your website.</strong> This is the structured data layer that tells AI systems exactly what your business offers, where, and why you&rsquo;re trustworthy.</li>
     <li><strong>Get cited by authoritative local sources.</strong> Chamber directories, local news mentions, and industry association listings all signal legitimacy to AI systems.</li>
    </ol>
-   <p>The new path to purchase runs through ChatGPT and Gemini whether you&rsquo;re ready for it or not. Our <a href="/services">AI Visibility Consulting</a> service is designed to put your business on the map that matters, the one the AI uses to make its recommendations. Let&rsquo;s make sure you&rsquo;re on it.</p>
+   <p>The new path to purchase runs through ChatGPT and Gemini whether you&rsquo;re ready for it or not. Our <Link href="/services">AI Visibility Consulting</Link> service is designed to put your business on the map that matters, the one the AI uses to make its recommendations. Let&rsquo;s make sure you&rsquo;re on it.</p>
 
    <hr />
    <p style={{ fontSize: "0.8rem", color: "#999", lineHeight: "1.6" }}>

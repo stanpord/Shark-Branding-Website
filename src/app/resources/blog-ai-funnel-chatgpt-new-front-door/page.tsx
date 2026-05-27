@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import BlogShell from "@/components/BlogShell";
 
 export const metadata: Metadata = {
@@ -56,7 +57,7 @@ export default function Page() {
    <p>If you want to dominate the AI Funnel, you can&rsquo;t just &ldquo;do SEO.&rdquo; You need a strategy built for Large Language Models (LLMs).</p>
 
    <h3>1. Data Consistency (The AI&rsquo;s Foundation)</h3>
-   <p>AI loves structured data. It needs to know exactly who you are, what you do, and where you are without any guesswork. This means your &ldquo;NAP&rdquo; (Name, Address, Phone Number) must be identical everywhere. We help businesses clean this up through our <a href="/services">GEO for Local Businesses strategy</a>.</p>
+   <p>AI loves structured data. It needs to know exactly who you are, what you do, and where you are without any guesswork. This means your &ldquo;NAP&rdquo; (Name, Address, Phone Number) must be identical everywhere. We help businesses clean this up through our <Link href="/services">GEO for Local Businesses strategy</Link>.</p>
 
    <h3>2. Reputation and Social Proof (The Trust Engine)</h3>
    <p>AI doesn&rsquo;t just read your &ldquo;About Us&rdquo; page. It reads your Yelp reviews, your Google Business Profile, and your mentions. It&rsquo;s looking for a consensus.</p>
@@ -92,9 +93,9 @@ export default function Page() {
 
    <h2>How to Take Action Today</h2>
    <ol>
-    <li><strong>Get a Pulse Check:</strong> <a href="/free-report">Get a free AI Audit</a> to see where your business currently stands.</li>
-    <li><strong>Join a Workshop:</strong> We offer deep dives into the tactics that drive real ROI, from AI search visibility to reputation management. <a href="/services">Explore our services</a>.</li>
-    <li><strong>Consult the Experts:</strong> Ready to skip the line? <a href="/contact">Book an AI Visibility Consulting session</a> with our team.</li>
+    <li><strong>Get a Pulse Check:</strong> <Link href="/free-report">Get a free AI Audit</Link> to see where your business currently stands.</li>
+    <li><strong>Join a Workshop:</strong> We offer deep dives into the tactics that drive real ROI, from AI search visibility to reputation management. <Link href="/services">Explore our services</Link>.</li>
+    <li><strong>Consult the Experts:</strong> Ready to skip the line? <Link href="/contact">Book an AI Visibility Consulting session</Link> with our team.</li>
    </ol>
    <p>The world of marketing has changed. The old way was about being <em>seen</em>. The new way is about being <em>chosen</em>. Are you going to stay stuck in the &ldquo;Search&rdquo; era, or are you ready to dominate the AI Funnel?</p>
 

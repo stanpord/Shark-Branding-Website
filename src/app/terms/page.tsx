@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Terms of Service | Shark Branding Solutions",
@@ -107,9 +108,9 @@ export default function TermsPage() {
             <h2 className="text-[21px] font-semibold text-[#0a0a0a] mb-4">9. Privacy</h2>
             <p>
               Your use of our website and services is also governed by our{" "}
-              <a href="/privacy" className="text-[#18b5d8] underline">
+              <Link href="/privacy" className="text-[#18b5d8] underline">
                 Privacy Policy
-              </a>
+              </Link>
               , which is incorporated into these Terms by reference.
             </p>
           </section>

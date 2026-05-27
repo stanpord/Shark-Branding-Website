@@ -56,7 +56,7 @@ export default function HackathonBanner() {
           <div>
             {/* Badge */}
             <div className="mb-5 inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/6 px-4 py-2 text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-[#18b5d8]">
-              <span className="h-1.5 w-1.5 rounded-full bg-[#18b5d8] motion-safe:animate-pulse" aria-hidden="true" />
+              <span className="size-1.5 rounded-full bg-[#18b5d8] motion-safe:animate-pulse" aria-hidden="true" />
               Invitation Only · May 26, 2026 · Tampa Bay
             </div>
 

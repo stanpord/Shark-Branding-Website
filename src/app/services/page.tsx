@@ -188,7 +188,7 @@ export default function ServicesPage() {
               },
             ].map((f) => (
               <div key={f.n} className="bg-[#f5f5f7] rounded-[20px] p-7">
-                <div className="w-9 h-9 rounded-full bg-[#18b5d8] flex items-center justify-center mb-5">
+                <div className="size-9 rounded-full bg-[#18b5d8] flex items-center justify-center mb-5">
                   <span className="text-white font-bold text-[13px]">{f.n}</span>
                 </div>
                 <h3 className="text-[18px] font-bold text-[#0a0a0a] mb-1">{f.heading}</h3>

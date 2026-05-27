@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import BlogShell from "@/components/BlogShell";
 
 export const metadata: Metadata = {
@@ -95,7 +96,7 @@ export default function Page() {
    <h2>The Businesses That Will Win This Shift</h2>
    <p>The AI price check era isn&rsquo;t coming in five years. It&rsquo;s here. And the window to establish your position before your competitors figure it out is narrow.</p>
    <p>The businesses that win won&rsquo;t necessarily be the ones with the best service (though that matters). They&rsquo;ll be the ones that have made themselves the <strong>easiest, most reliable option for the AI to recommend.</strong> Clear data. Rapid response. Consistent reviews. Transparent pricing.</p>
-   <p>This is exactly what our <a href="/services">AI Visibility Toolkit</a> was designed to deliver. We&rsquo;ve built the system, the strategy, and the execution framework for local businesses that want to be the obvious AI recommendation in their market.</p>
+   <p>This is exactly what our <Link href="/services">AI Visibility Toolkit</Link> was designed to deliver. We&rsquo;ve built the system, the strategy, and the execution framework for local businesses that want to be the obvious AI recommendation in their market.</p>
 
    <h2>Your &ldquo;Ready to Be Chosen&rdquo; Action Plan</h2>
    <ol>
@@ -105,7 +106,7 @@ export default function Page() {
     <li><strong>Start a review velocity campaign.</strong> Reach out to your last 20 happy customers and ask for a specific, detailed review.</li>
     <li><strong>Audit your NAP consistency.</strong> Check Google, Yelp, Facebook, Apple Maps, and Bing Places. Make sure every listing matches exactly.</li>
    </ol>
-   <p>The AI is already calling. The only question is whether you&rsquo;re going to answer. <a href="/free-report">Get your free visibility report</a> today and see exactly where your business stands in the AI discovery landscape, before your competitor does.</p>
+   <p>The AI is already calling. The only question is whether you&rsquo;re going to answer. <Link href="/free-report">Get your free visibility report</Link> today and see exactly where your business stands in the AI discovery landscape, before your competitor does.</p>
 
    <hr />
    <p style={{ fontSize: "0.8rem", color: "#999", lineHeight: "1.6" }}>

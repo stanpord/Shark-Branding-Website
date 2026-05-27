@@ -92,10 +92,11 @@ export default function BotAdvisor() {
       <form onSubmit={handleSubmit} className="bg-[#07141a] border border-white/8 rounded-2xl p-7 space-y-5">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
           <div>
-            <label className="block text-[12px] font-semibold uppercase tracking-widest text-white/40 mb-2">
+            <label htmlFor="adv-name" className="block text-[12px] font-semibold uppercase tracking-widest text-white/40 mb-2">
               Business Name <span className="text-[#18b5d8]">*</span>
             </label>
             <input
+              id="adv-name"
               type="text"
               required
               placeholder="e.g. Tampa Bay HVAC Pro"
@@ -105,10 +106,11 @@ export default function BotAdvisor() {
             />
           </div>
           <div>
-            <label className="block text-[12px] font-semibold uppercase tracking-widest text-white/40 mb-2">
+            <label htmlFor="adv-industry" className="block text-[12px] font-semibold uppercase tracking-widest text-white/40 mb-2">
               Industry / Type <span className="text-[#18b5d8]">*</span>
             </label>
             <input
+              id="adv-industry"
               type="text"
               required
               placeholder="e.g. HVAC, Real Estate, Restaurant"
@@ -120,10 +122,11 @@ export default function BotAdvisor() {
         </div>
 
         <div>
-          <label className="block text-[12px] font-semibold uppercase tracking-widest text-white/40 mb-2">
+          <label htmlFor="adv-desc" className="block text-[12px] font-semibold uppercase tracking-widest text-white/40 mb-2">
             What they do <span className="text-white/20">(optional)</span>
           </label>
           <textarea
+            id="adv-desc"
             rows={2}
             placeholder="Brief description: services, location, how they get customers…"
             value={form.description}
@@ -134,10 +137,11 @@ export default function BotAdvisor() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
           <div>
-            <label className="block text-[12px] font-semibold uppercase tracking-widest text-white/40 mb-2">
+            <label htmlFor="adv-team" className="block text-[12px] font-semibold uppercase tracking-widest text-white/40 mb-2">
               Team size <span className="text-white/20">(optional)</span>
             </label>
             <select
+              id="adv-team"
               value={form.teamSize}
               onChange={e => setForm(f => ({ ...f, teamSize: e.target.value }))}
               className="w-full bg-[#0a0a0a] border border-white/10 rounded-xl px-4 py-3 text-white text-[15px] focus:outline-none focus:border-[#18b5d8]/50 transition-colors"
@@ -151,10 +155,11 @@ export default function BotAdvisor() {
             </select>
           </div>
           <div>
-            <label className="block text-[12px] font-semibold uppercase tracking-widest text-white/40 mb-2">
+            <label htmlFor="adv-challenge" className="block text-[12px] font-semibold uppercase tracking-widest text-white/40 mb-2">
               Main challenge <span className="text-white/20">(optional)</span>
             </label>
             <input
+              id="adv-challenge"
               type="text"
               placeholder="e.g. Not showing up on Google, losing leads"
               value={form.challenge}
@@ -183,7 +188,7 @@ export default function BotAdvisor() {
       {/* Loading state */}
       {loading && (
         <div className="text-center py-12">
-          <div className="inline-block w-8 h-8 border-2 border-[#18b5d8]/30 border-t-[#18b5d8] rounded-full animate-spin mb-4" />
+          <div className="inline-block size-8 border-2 border-[#18b5d8]/30 border-t-[#18b5d8] rounded-full animate-spin mb-4" />
           <p className="text-white/40 text-[14px]">Analyzing {form.name}…</p>
         </div>
       )}

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import BlogShell from "@/components/BlogShell";
 
 export const metadata: Metadata = {
@@ -116,7 +117,7 @@ export default function Page() {
     <li><strong>Train your prompts.</strong> Give your AI the context it needs: your business name, location, key services, and brand tone.</li>
     <li><strong>Turn responses into content.</strong> Reference specific services and service areas in every reply.</li>
    </ol>
-   <p>The businesses that win the &ldquo;Trusted&rdquo; stage will dominate AI recommendations in their market. If you&rsquo;re ready to stop leaving your customers, and your AI signals, hanging, <a href="/contact">book an AI Visibility Consultation</a> and let&rsquo;s build your trust engine together.</p>
+   <p>The businesses that win the &ldquo;Trusted&rdquo; stage will dominate AI recommendations in their market. If you&rsquo;re ready to stop leaving your customers, and your AI signals, hanging, <Link href="/contact">book an AI Visibility Consultation</Link> and let&rsquo;s build your trust engine together.</p>
   </BlogShell>
  );
 }

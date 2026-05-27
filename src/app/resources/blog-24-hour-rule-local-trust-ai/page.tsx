@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import BlogShell from "@/components/BlogShell";
 
 export const metadata: Metadata = {
@@ -113,7 +114,7 @@ export default function Page() {
    <ul>
     <li><strong>Step 1:</strong> Audit your current response time. (Be honest!)</li>
     <li><strong>Step 2:</strong> Stop using generic templates that make you look like a bot.</li>
-    <li><strong>Step 3:</strong> <a href="/contact">Connect with us for an AI Visibility Consultation</a> to see how we can automate your growth while keeping your brand voice 100% human.</li>
+    <li><strong>Step 3:</strong> <Link href="/contact">Connect with us for an AI Visibility Consultation</Link> to see how we can automate your growth while keeping your brand voice 100% human.</li>
    </ul>
    <p>You&rsquo;ve built a great business. It&rsquo;s time the internet knew it, too.</p>
 

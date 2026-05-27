@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import BlogShell from "@/components/BlogShell";
 
 export const metadata: Metadata = {
@@ -61,7 +62,7 @@ export default function Page() {
     <li><strong>Category Accuracy:</strong> Are you a &ldquo;Lawyer,&rdquo; an &ldquo;Attorney,&rdquo; or a &ldquo;Legal Service&rdquo;? Pick one and stick to it.</li>
     <li><strong>Structured Data:</strong> This is the hidden code (Schema markup) that tells AI exactly what your business does.</li>
    </ul>
-   <p>Want to see how you currently stack up? You can grab a <a href="/free-report">free AI Audit</a> that shows exactly how the AI sees your business right now.</p>
+   <p>Want to see how you currently stack up? You can grab a <Link href="/free-report">free AI Audit</Link> that shows exactly how the AI sees your business right now.</p>
 
    <Image
     src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=1200&h=480&q=80"
@@ -96,7 +97,7 @@ export default function Page() {
 
    <h2>Your Path to AI Dominance</h2>
    <p>The transition to AI-driven discovery is a complete shift in how businesses think about visibility. But it&rsquo;s also an incredible opportunity. While your competitors are still obsessing over 2010-era SEO tactics, you can be the one who builds the clearest, most reliable map for the AI to follow.</p>
-   <p>Start by understanding your current standing. Join one of our <a href="/services">workshops</a> where we break down the exact strategy for local search alignment and reputation management. Or, if you&rsquo;re ready to dive in right now, check out our <a href="/services">AI Visibility Consulting</a> services.</p>
+   <p>Start by understanding your current standing. Join one of our <Link href="/services">workshops</Link> where we break down the exact strategy for local search alignment and reputation management. Or, if you&rsquo;re ready to dive in right now, check out our <Link href="/services">AI Visibility Consulting</Link> services.</p>
    <p>The AI is already searching. The only question is: will it find you, or will it find your competitor? Let&rsquo;s make sure it&rsquo;s you.</p>
 
    <hr />

@@ -36,7 +36,7 @@ export default function CaseStudiesPage() {
               { v: "6+",   label: "Keywords in top 3" },
               { v: "3",    label: "AI platforms optimized" },
             ].map((s) => (
-              <div key={s.label} className="bg-[#111] px-6 py-6 text-center">
+              <div key={s.label} className="bg-[#111] p-6 text-center">
                 <p className="text-[clamp(1.8rem,3.5vw,2.8rem)] font-bold tracking-tight text-[#18b5d8] leading-none mb-2">
                   {s.v}
                 </p>
@@ -186,7 +186,7 @@ export default function CaseStudiesPage() {
                 { stat: "Thousands", label: "saved monthly", body: "Ranking organically means thousands in ad spend saved every single month, without giving up visibility." },
                 { stat: "60–75%", label: "of clicks", body: "Top 3 positions capture 60–75% of all clicks. Outside the top 3, most buyers never see you." },
               ].map((c) => (
-                <div key={c.stat} className="bg-white rounded-[16px] px-6 py-6 text-center shadow-sm">
+                <div key={c.stat} className="bg-white rounded-[16px] p-6 text-center shadow-sm">
                   <p className="text-[clamp(1.4rem,2.5vw,2rem)] font-black text-[#18b5d8] leading-none mb-1">{c.stat}</p>
                   <p className="text-[11px] font-semibold uppercase tracking-[0.14em] text-[#7a7a7a] mb-3">{c.label}</p>
                   <p className="text-[13px] text-[#555] leading-relaxed">{c.body}</p>
@@ -383,7 +383,7 @@ export default function CaseStudiesPage() {
                   body: "In a market this large, being chosen matters more than being seen.",
                 },
               ].map((c) => (
-                <div key={c.stat} className="bg-[#f5f5f7] rounded-[16px] px-6 py-6 text-center">
+                <div key={c.stat} className="bg-[#f5f5f7] rounded-[16px] p-6 text-center">
                   <p className="text-[clamp(1.4rem,2.5vw,2rem)] font-black text-[#18b5d8] leading-none mb-1">{c.stat}</p>
                   <p className="text-[11px] font-semibold uppercase tracking-[0.14em] text-[#7a7a7a] mb-3">{c.label}</p>
                   <p className="text-[13px] text-[#555] leading-relaxed">{c.body}</p>
@@ -523,7 +523,7 @@ export default function CaseStudiesPage() {
                   body: "Chamber and Shark Branding references gave AI an external trust path instead of relying on one website alone.",
                 },
               ].map((c) => (
-                <div key={c.label} className="bg-white rounded-[14px] px-6 py-6 shadow-sm">
+                <div key={c.label} className="bg-white rounded-[14px] p-6 shadow-sm">
                   <p className="text-[11px] font-bold text-[#18b5d8] uppercase tracking-[0.18em] mb-3">{c.label}</p>
                   <p className="text-[14px] text-[#333333] leading-relaxed">{c.body}</p>
                 </div>
@@ -701,7 +701,7 @@ export default function CaseStudiesPage() {
               body: "Every case on this page saw measurable movement in under 30 days. This isn't a six-month project. It's a systematic fix with a fast feedback loop.",
             },
           ].map((c) => (
-            <div key={c.heading} className="bg-white rounded-[16px] px-7 py-7 shadow-sm">
+            <div key={c.heading} className="bg-white rounded-[16px] p-7 shadow-sm">
               <p className="text-[16px] font-bold text-[#0a0a0a] mb-3">{c.heading}</p>
               <p className="text-[14px] text-[#555] leading-relaxed">{c.body}</p>
             </div>
