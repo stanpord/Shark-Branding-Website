@@ -11,7 +11,7 @@ const bots = [
   {
     n: "01", id: "cmo-bot", eyebrow: "Strategic Marketing", dark: true,
     title: "CMO Bot",
-    description: "Get the strategic marketing firepower of a Chief Marketing Officer without the executive salary. The CMO Bot analyzes your market position, identifies growth opportunities, builds campaign briefs, and keeps your marketing aligned with business goals — every single week.",
+    description: "Get the strategic marketing firepower of a Chief Marketing Officer without the executive salary. The CMO Bot analyzes your market position, identifies growth opportunities, builds campaign briefs, and keeps your marketing aligned with business goals, every single week.",
     bullets: [
       "Weekly market and competitor analysis",
       "Campaign strategy and messaging briefs",
@@ -23,7 +23,7 @@ const bots = [
   {
     n: "02", id: "content-bot", eyebrow: "Content & AI Visibility", dark: false,
     title: "AI Visibility Toolkit",
-    description: "Your customers are asking AI for recommendations before they ever visit a website. The AI Visibility Toolkit optimizes your business to appear — and appear credibly — when ChatGPT, Perplexity, and Google AI Overviews answer questions your buyers are asking right now.",
+    description: "Your customers are asking AI for recommendations before they ever visit a website. The AI Visibility Toolkit optimizes your business to appear, and appear credibly, when ChatGPT, Perplexity, and Google AI Overviews answer questions your buyers are asking right now.",
     bullets: [
       "Full audit of your AI and search presence",
       "Entity and citation optimization for AI platforms",
@@ -35,10 +35,10 @@ const bots = [
   {
     n: "03", id: "reputation-ai", eyebrow: "Reputation & Reviews", dark: true,
     title: "Reputation & Review AI",
-    description: "Your online reputation is your most powerful sales tool — and most businesses leave it completely unmanaged. Our Reputation & Review AI monitors every platform, requests reviews at the right moment, responds to feedback automatically in your brand voice, and flags issues before they escalate.",
+    description: "Your online reputation is your most powerful sales tool, and most businesses leave it completely unmanaged. Our Reputation & Review AI monitors every platform, requests reviews at the right moment, responds to feedback automatically in your brand voice, and flags issues before they escalate.",
     bullets: [
       "Automated review requests triggered by job completion",
-      "AI-generated responses in your brand voice — reviewed before posting",
+      "AI-generated responses in your brand voice, reviewed before posting",
       "Multi-platform monitoring: Google, Yelp, Facebook, and more",
       "Negative review alerts with suggested response drafts",
       "Monthly reputation score reporting and benchmarking",
@@ -47,7 +47,7 @@ const bots = [
   {
     n: "04", id: "marketing-bots", eyebrow: "Custom Automation", dark: false,
     title: "Custom Marketing Bots",
-    description: "From social media scheduling to email nurture sequences to lead scoring — we build marketing bots tailored to your exact workflow. If your team is repeating a task more than twice, we can automate it.",
+    description: "From social media scheduling to email nurture sequences to lead scoring, we build marketing bots tailored to your exact workflow. If your team is repeating a task more than twice, we can automate it.",
     bullets: [
       "Social content generation and scheduling",
       "Email nurture sequences with AI personalization",
@@ -65,7 +65,7 @@ export default function MarketingPage() {
       <section className="bg-white min-h-[90vh] flex flex-col items-center justify-center text-center px-6 pt-24 pb-20">
         <div className="max-w-[720px] mx-auto">
           <p className="text-[#18b5d8] text-[13px] font-semibold tracking-[0.2em] uppercase mb-3">
-            Shark AI Solutions — Marketing
+            Shark AI Solutions: Marketing
           </p>
           <p className="text-[13px] text-[#7a7a7a] mb-8">A Shark Branding Solutions company</p>
           <h1 className="display-hero text-[#0a0a0a] mb-6" style={{ textWrap: "balance" }}>
@@ -74,7 +74,7 @@ export default function MarketingPage() {
             <span className="text-[#18b5d8]">business 24/7.</span>
           </h1>
           <p className="lead-airy text-[#333333] max-w-[520px] mx-auto mb-14" style={{ textWrap: "balance" }}>
-            CMO strategy, AI visibility, and content automation — so your brand keeps growing even when you&rsquo;re not working.
+            CMO strategy, AI visibility, and content automation, so your brand keeps growing even when you&rsquo;re not working.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-3">
             {bots.map((b) => (

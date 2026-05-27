@@ -88,7 +88,7 @@ export default function BlogShell({
           </h2>
           <p className="lead-airy text-black/65 mb-10">
             Get a free visibility report and see exactly where your business
-            stands across AI search, local search, and digital authority&nbsp;&mdash; no
+            stands across AI search, local search, and digital authority, with no
             commitment required.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">

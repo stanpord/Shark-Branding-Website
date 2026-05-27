@@ -16,7 +16,7 @@ const values = [
   {
     n: "02",
     title: "Results, not reports",
-    body: "We measure success by your ranking movement, visibility score, and the calls you receive — not activity metrics.",
+    body: "We measure success by your ranking movement, visibility score, and the calls you receive, not activity metrics.",
   },
   {
     n: "03",
@@ -26,7 +26,7 @@ const values = [
   {
     n: "04",
     title: "Honest before anything",
-    body: "Our free visibility report tells the truth — even if the truth is uncomfortable. That's where real progress starts.",
+    body: "Our free visibility report tells the truth, even if the truth is uncomfortable. That's where real progress starts.",
   },
 ];
 
@@ -45,7 +45,7 @@ export default function AboutPage() {
             <span className="text-[#18b5d8]">impossible to ignore.</span>
           </h1>
           <p className="lead-airy text-[#333333] max-w-[540px] mx-auto" style={{ textWrap: "balance" }}>
-            Shark Branding Solutions was built on a simple belief: every great business deserves to be found — by the right people, at the right moment, on every platform.
+            Shark Branding Solutions was built on a simple belief: every great business deserves to be found by the right people, at the right moment, on every platform.
           </p>
         </div>
       </section>
@@ -103,7 +103,7 @@ export default function AboutPage() {
             <p className="text-[17px] text-white/40 mb-8">Founder &amp; CEO</p>
             <div className="inline-flex items-center gap-3 bg-white/6 border border-white/10 rounded-[12px] px-5 py-3">
               <span className="text-[#18b5d8] text-[18px]" aria-hidden="true">★</span>
-              <span className="text-[14px] font-semibold text-white">Top 15 Marketing Expert — Tampa Bay</span>
+              <span className="text-[14px] font-semibold text-white">Top 15 Marketing Expert in Tampa Bay</span>
               <span className="text-[12px] text-white/35">Influence Digest, 2025</span>
             </div>
           </div>
@@ -111,13 +111,13 @@ export default function AboutPage() {
             <p className="body-copy text-white/60 leading-relaxed">
               Michelle Stanaland is a recognized marketing strategist and AI visibility expert serving businesses across Tampa Bay. In 2025, she was named one of the{" "}
               <strong className="font-semibold text-white">Top 15 Marketing Experts in Tampa Bay</strong>{" "}
-              by Influence Digest — a recognition of her commitment to results over rhetoric.
+              by Influence Digest, a recognition of her commitment to results over rhetoric.
             </p>
             <p className="body-copy text-white/60 leading-relaxed">
-              Before founding Shark Branding Solutions, Michelle observed a consistent pattern: talented, hardworking business owners were losing customers not because of their product or service, but because they couldn&rsquo;t be found. As AI search platforms changed how buyers discover businesses, the gap between visible and invisible grew wider — and she built a firm to close it.
+              Before founding Shark Branding Solutions, Michelle observed a consistent pattern: talented, hardworking business owners were losing customers not because of their product or service, but because they couldn&rsquo;t be found. As AI search platforms changed how buyers discover businesses, the gap between visible and invisible grew wider, and she built a firm to close it.
             </p>
             <p className="body-copy text-white/60 leading-relaxed">
-              Based in Wesley Chapel, Michelle works directly with clients across Lutz, Land O&rsquo; Lakes, St. Petersburg, and the wider Tampa Bay area — bringing enterprise-level AI strategy to local businesses that deserve to compete.
+              Based in Wesley Chapel, Michelle works directly with clients across Lutz, Land O&rsquo; Lakes, St. Petersburg, and the wider Tampa Bay area, bringing enterprise-level AI strategy to local businesses that deserve to compete.
             </p>
           </div>
         </div>
@@ -163,7 +163,7 @@ export default function AboutPage() {
               {
                 stat: "$900K+",
                 label: "revenue pipeline",
-                body: "Revenue pipeline within first four months of initial product deployment — without paid ads.",
+                body: "Revenue pipeline within first four months of initial product deployment, without paid ads.",
                 color: "#F9DB79",
               },
               {
@@ -175,7 +175,7 @@ export default function AboutPage() {
               {
                 stat: "$54K",
                 label: "closed in 5 days",
-                body: "Closed $54K in annual contracts in 5 days from 5 social media posts — without paid ads.",
+                body: "Closed $54K in annual contracts in 5 days from 5 social media posts, without paid ads.",
                 color: "#4FD1A0",
               },
               {
@@ -236,7 +236,7 @@ export default function AboutPage() {
             Rooted in Tampa Bay.
           </h2>
           <p className="lead-airy text-[#333333] mb-10" style={{ textWrap: "balance" }}>
-            We serve businesses across Wesley Chapel, Lutz, Land O&rsquo; Lakes, St. Petersburg, and the broader Tampa Bay region — in person and virtually.
+            We serve businesses across Wesley Chapel, Lutz, Land O&rsquo; Lakes, St. Petersburg, and the broader Tampa Bay region, in person and virtually.
           </p>
           <div className="flex flex-wrap justify-center gap-3">
             {["Wesley Chapel", "Lutz", "Land O\u2019 Lakes", "St. Petersburg", "Tampa", "Virtual"].map((city) => (

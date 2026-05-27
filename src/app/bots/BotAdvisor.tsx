@@ -124,7 +124,7 @@ export default function BotAdvisor() {
           </label>
           <textarea
             rows={2}
-            placeholder="Brief description — services, location, how they get customers…"
+            placeholder="Brief description: services, location, how they get customers…"
             value={form.description}
             onChange={e => setForm(f => ({ ...f, description: e.target.value }))}
             className="w-full bg-[#0a0a0a] border border-white/10 rounded-xl px-4 py-3 text-white text-[15px] placeholder:text-white/25 focus:outline-none focus:border-[#18b5d8]/50 transition-colors resize-none"

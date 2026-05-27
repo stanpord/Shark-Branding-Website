@@ -11,7 +11,7 @@ const bots = [
   {
     n: "01", id: "ai-crm", eyebrow: "Customer Relationships", dark: true,
     title: "AI CRM Bot",
-    description: "Stop losing leads in spreadsheets. Our AI CRM bot tracks every contact, logs every interaction, sends follow-up sequences automatically, and surfaces the leads most likely to close — without you lifting a finger.",
+    description: "Stop losing leads in spreadsheets. Our AI CRM bot tracks every contact, logs every interaction, sends follow-up sequences automatically, and surfaces the leads most likely to close, without you lifting a finger.",
     bullets: [
       "Automatic lead capture and contact enrichment",
       "Intelligent follow-up sequences triggered by behavior",
@@ -23,7 +23,7 @@ const bots = [
   {
     n: "02", id: "sales-coach", eyebrow: "Sales Performance", dark: false,
     title: "Sales Coach Bot",
-    description: "Every sales rep on your team gets a tireless AI coach available 24/7. The Sales Coach Bot reviews calls, scores objection handling, suggests talk tracks, and delivers personalized coaching — turning average reps into closers.",
+    description: "Every sales rep on your team gets a tireless AI coach available 24/7. The Sales Coach Bot reviews calls, scores objection handling, suggests talk tracks, and delivers personalized coaching, turning average reps into closers.",
     bullets: [
       "Call analysis and scoring after every conversation",
       "Real-time objection handling suggestions",
@@ -35,7 +35,7 @@ const bots = [
   {
     n: "03", id: "ops-bots", eyebrow: "Business Automation", dark: true,
     title: "Custom Operations Bots",
-    description: "Every business has repetitive workflows eating hours every week. We identify your highest-leverage automation opportunities and build custom bots to handle them — scheduling, reporting, intake, client onboarding, and more.",
+    description: "Every business has repetitive workflows eating hours every week. We identify your highest-leverage automation opportunities and build custom bots to handle them: scheduling, reporting, intake, client onboarding, and more.",
     bullets: [
       "Workflow audit to find your top automation opportunities",
       "Custom bot built around your specific process",
@@ -53,7 +53,7 @@ export default function OperationsPage() {
       <section className="bg-white min-h-[90vh] flex flex-col items-center justify-center text-center px-6 pt-24 pb-20">
         <div className="max-w-[720px] mx-auto">
           <p className="text-[#18b5d8] text-[13px] font-semibold tracking-[0.2em] uppercase mb-3">
-            Shark AI Solutions — Operations
+            Shark AI Solutions: Operations
           </p>
           <p className="text-[13px] text-[#7a7a7a] mb-8">A Shark Branding Solutions company</p>
           <h1 className="display-hero text-[#0a0a0a] mb-6" style={{ textWrap: "balance" }}>
@@ -62,7 +62,7 @@ export default function OperationsPage() {
             <span className="text-[#18b5d8]">back office for you.</span>
           </h1>
           <p className="lead-airy text-[#333333] max-w-[520px] mx-auto mb-14" style={{ textWrap: "balance" }}>
-            CRM, sales coaching, and custom automation — deployed in days, not months. Your team does the work only humans can do.
+            CRM, sales coaching, and custom automation, deployed in days, not months. Your team does the work only humans can do.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-3">
             {bots.map((b) => (

@@ -77,7 +77,7 @@ export default function ChamberPage() {
             <span className="text-[#18b5d8]">Foundation</span>
           </h1>
           <p className="lead-airy text-[#444] max-w-[560px] mx-auto mb-4" style={{ textWrap: "balance" }}>
-            When someone asks ChatGPT or Google who the best contractor, dentist, or service company in Wesley Chapel is &mdash; your name should come up. Right now, it probably doesn&rsquo;t. That&rsquo;s what we fix.
+            When someone asks ChatGPT or Google who the best contractor, dentist, or service company in Wesley Chapel is, your name should come up. Right now, it probably doesn&rsquo;t. That&rsquo;s what we fix.
           </p>
           <p className="text-[15px] text-[#18b5d8] font-semibold mb-10">
             Not available to the general public. Reserved for chamber members.
@@ -89,7 +89,7 @@ export default function ChamberPage() {
       <section className="bg-[#0a0a0a] py-8 px-6">
         <div className="max-w-[760px] mx-auto text-center">
           <p className="text-[16px] text-white leading-relaxed" style={{ textWrap: "balance" }}>
-            Most businesses are invisible to AI not because they&rsquo;re bad at what they do &mdash; but because{" "}
+            Most businesses are invisible to AI not because they&rsquo;re bad at what they do, but because{" "}
             <strong className="text-[#18b5d8]">AI can&rsquo;t find or trust them.</strong>{" "}
             We fix that with a done-for-you system that keeps your business accurate, readable, and credible everywhere AI looks.
           </p>
@@ -104,10 +104,10 @@ export default function ChamberPage() {
             {[
               "When someone asks ChatGPT or Google for a recommendation, AI pulls from a list of businesses it trusts. Right now, you might not be on that list.",
               "It's not about having a website. It's about whether AI can find you, read you, and trust you enough to recommend you.",
-              "Most businesses in Wesley Chapel haven't done this yet — which means the ones who do will show up first.",
+              "Most businesses in Wesley Chapel haven't done this yet, which means the ones who do will show up first.",
               "We handle everything. You don't need to understand AI. You just need to be on the list before your competitor is.",
               "We start with a free audit so you can see exactly where you stand before spending a dollar.",
-              "Chamber members get a lower rate than the general public — and this page is the only place it's offered.",
+              "Chamber members get a lower rate than the general public, and this page is the only place it's offered.",
             ].map((point, i) => (
               <li key={i} className="flex items-start gap-4 bg-white rounded-[14px] px-6 py-4 shadow-sm">
                 <span className="text-[#18b5d8] font-bold text-[18px] leading-none mt-0.5 shrink-0">✓</span>
@@ -165,7 +165,7 @@ export default function ChamberPage() {
       {/* ── Proof ── */}
       <section className="bg-white py-20 px-6">
         <div className="max-w-[980px] mx-auto">
-          <p className="text-[#18b5d8] text-[13px] font-semibold tracking-[0.2em] uppercase mb-4 text-center">Real Results — Local Businesses You Know</p>
+          <p className="text-[#18b5d8] text-[13px] font-semibold tracking-[0.2em] uppercase mb-4 text-center">Real Results: Local Businesses You Know</p>
           <p className="text-[15px] text-[#7a7a7a] text-center mb-12">These aren&rsquo;t made-up numbers. These are businesses in your backyard.</p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="bg-[#f5f5f7] rounded-[20px] p-7 flex flex-col">
@@ -176,17 +176,17 @@ export default function ChamberPage() {
                 &ldquo;AI Visibility Toolkit changed how buyers find us. We went from invisible to the top recommended realtor in our area.&rdquo;
               </p>
               <p className="text-[13px] font-semibold text-[#1d1d1f] mt-4">Emory&rsquo;s Rock Realty</p>
-              <p className="text-[12px] text-[#888]">Wesley Chapel, FL &mdash; Real Estate</p>
+              <p className="text-[12px] text-[#888]">Wesley Chapel, FL, Real Estate</p>
             </div>
             <div className="bg-[#f5f5f7] rounded-[20px] p-7 flex flex-col">
               <p className="text-[clamp(2rem,4vw,3rem)] font-extrabold text-[#18b5d8] leading-none mb-2">#1</p>
               <p className="text-[13px] font-semibold text-[#1d1d1f] mb-1">AI-Recommended on 3 Platforms</p>
-              <p className="text-[12px] text-[#888] mb-4">ChatGPT, Gemini, and Perplexity &mdash; in 30 days</p>
+              <p className="text-[12px] text-[#888] mb-4">ChatGPT, Gemini, and Perplexity, in 30 days</p>
               <p className="text-[14px] text-[#333] leading-relaxed italic flex-1">
                 &ldquo;We went from completely invisible to AI to being the #1 recommended smart vending company in the area. It happened faster than we expected.&rdquo;
               </p>
               <p className="text-[13px] font-semibold text-[#1d1d1f] mt-4">Diamond Dogs Smart Vending</p>
-              <p className="text-[12px] text-[#888]">Wesley Chapel, FL &mdash; Smart Vending</p>
+              <p className="text-[12px] text-[#888]">Wesley Chapel, FL, Smart Vending</p>
             </div>
             <div className="bg-[#0a0a0a] rounded-[20px] p-7 flex flex-col border border-[#18b5d8]/30">
               <p className="text-[clamp(2rem,4vw,3rem)] font-extrabold text-[#18b5d8] leading-none mb-2">10×</p>
@@ -203,7 +203,7 @@ export default function ChamberPage() {
               >
                 North Tampa Bay Chamber ↗
               </a>
-              <p className="text-[12px] text-white/40">North Tampa Bay &mdash; Chamber of Commerce</p>
+              <p className="text-[12px] text-white/40">North Tampa Bay, Chamber of Commerce</p>
             </div>
           </div>
           <p className="text-center mt-8">
@@ -222,7 +222,7 @@ export default function ChamberPage() {
             Let&rsquo;s get your business found by AI.
           </h2>
           <p className="lead-airy text-[#444] mb-10" style={{ textWrap: "balance" }}>
-            Book a free discovery call. We&rsquo;ll run your free Visibility Audit, show you exactly where you&rsquo;re invisible, and walk you through what we&rsquo;d do to fix it &mdash; no commitment required.
+            Book a free discovery call. We&rsquo;ll run your free Visibility Audit, show you exactly where you&rsquo;re invisible, and walk you through what we&rsquo;d do to fix it, no commitment required.
           </p>
           <Link
             href="/contact"

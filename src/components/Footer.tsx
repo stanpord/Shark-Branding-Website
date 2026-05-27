@@ -117,10 +117,24 @@ export default function Footer() {
             Copyright &copy; {new Date().getFullYear()} Shark Branding
             Solutions. All rights reserved.
           </p>
-          <p className="text-[12px] text-[#7a7a7a]">
-            Serving Tampa Bay &mdash; Wesley Chapel &middot; Lutz &middot; Land
-            O&rsquo; Lakes &middot; St. Petersburg
-          </p>
+          <div className="flex flex-wrap items-center gap-4">
+            <Link
+              href="/privacy"
+              className="text-[12px] text-[#7a7a7a] hover:text-[#18b5d8] motion-safe:transition-colors"
+            >
+              Privacy Policy
+            </Link>
+            <Link
+              href="/terms"
+              className="text-[12px] text-[#7a7a7a] hover:text-[#18b5d8] motion-safe:transition-colors"
+            >
+              Terms of Service
+            </Link>
+            <p className="text-[12px] text-[#7a7a7a]">
+              Serving Tampa Bay: Wesley Chapel &middot; Lutz &middot; Land
+              O&rsquo; Lakes &middot; St. Petersburg
+            </p>
+          </div>
         </div>
       </div>
     </footer>

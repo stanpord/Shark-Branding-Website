@@ -11,7 +11,7 @@ const services = [
   {
     n: "01", id: "ai-visibility", eyebrow: "Core Service", dark: true,
     title: "AI Business Consulting",
-    description: "The way buyers find businesses has fundamentally shifted. Before they ever visit a website, they ask AI. We optimize your business to appear — and appear well — when ChatGPT, Perplexity, Google AI Overviews, and other discovery platforms answer questions your customers are asking right now.",
+    description: "The way buyers find businesses has fundamentally shifted. Before they ever visit a website, they ask AI. We optimize your business to appear, and appear well, when ChatGPT, Perplexity, Google AI Overviews, and other discovery platforms answer questions your customers are asking right now.",
     bullets: [
       "Full audit of your AI and search presence",
       "Structured optimization of trust signals and listings",
@@ -24,7 +24,7 @@ const services = [
   {
     n: "02", id: "toolkit", eyebrow: "Managed System", dark: false,
     title: "AI Visibility Toolkit",
-    description: "A complete, proven framework for businesses ready to stop guessing and start winning. We fix your visibility gaps systematically — search signals, trust indicators, listing accuracy, and AI readiness — with two engagement levels to match where you are.",
+    description: "A complete, proven framework for businesses ready to stop guessing and start winning. We fix your visibility gaps systematically: search signals, trust indicators, listing accuracy, and AI readiness, with two engagement levels to match where you are.",
     bullets: [
       "Complete AI and search visibility framework",
       "Initial changes visible in 7–14 days",
@@ -37,7 +37,7 @@ const services = [
   {
     n: "03", id: "workshops", eyebrow: "Education", dark: true,
     title: "Workshops & Training",
-    description: "Modern buyer behavior has changed — most businesses haven't caught up. Our workshops arm your team and chamber organizations with practical knowledge on how buyers discover, evaluate, and choose businesses in the age of AI. Engaging, actionable, and immediately applicable.",
+    description: "Modern buyer behavior has changed. Most businesses haven't caught up. Our workshops arm your team and chamber organizations with practical knowledge on how buyers discover, evaluate, and choose businesses in the age of AI. Engaging, actionable, and immediately applicable.",
     bullets: [
       "Tailored for business teams and chamber groups",
       "Half-day and full-day formats available",
@@ -48,15 +48,15 @@ const services = [
     cta: "Book a Workshop", href: "/contact",
   },
   {
-    n: "04", id: "report", eyebrow: "Free — No Strings Attached", dark: false,
+    n: "04", id: "report", eyebrow: "Free, No Strings Attached", dark: false,
     title: "Free Visibility Report",
-    description: "Before you spend a dollar on marketing, know exactly where you stand. We assess how your business appears across search, maps, reviews, and AI platforms — and deliver a clear, honest report in 48 hours. No sales pressure. Just the truth about your visibility.",
+    description: "Before you spend a dollar on marketing, know exactly where you stand. We assess how your business appears across search, maps, reviews, and AI platforms, and deliver a clear, honest report in 48 hours. No sales pressure. Just the truth about your visibility.",
     bullets: [
       "Search and map listing analysis",
       "Review and trust signal audit",
       "AI platform appearance check",
       "Actionable priority list delivered in 48 hours",
-      "100% free — forever, no catch",
+      "100% free, forever, no catch",
     ],
     cta: "Get My Free Report", href: "/free-report",
   },
@@ -77,7 +77,7 @@ export default function ServicesPage() {
             <span className="text-[#18b5d8]">one outcome.</span>
           </h1>
           <p className="lead-airy text-[#333333] max-w-[520px] mx-auto mb-14" style={{ textWrap: "balance" }}>
-            Your business getting found, trusted, and chosen — by humans and AI alike.
+            Your business getting found, trusted, and chosen by humans and AI alike.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-3">
             {services.map((s) => (
@@ -102,7 +102,7 @@ export default function ServicesPage() {
               Google shows options. AI makes the decision faster.
             </h2>
             <p className="text-[16px] text-white/50 mt-5 max-w-[560px] mx-auto">
-              The way people search is changing. AI is compressing the journey from search to decision — and businesses that show up get chosen.
+              The way people search is changing. AI is compressing the journey from search to decision, and businesses that show up get chosen.
             </p>
           </div>
 
@@ -156,7 +156,7 @@ export default function ServicesPage() {
               Buyers don&rsquo;t read. They filter.
             </h2>
             <p className="text-[16px] text-[#555] mt-5 max-w-[540px] mx-auto">
-              In seconds, buyers run your business through three subconscious filters. Pass them all — or lose the click.
+              In seconds, buyers run your business through three subconscious filters. Pass them all, or lose the click.
             </p>
           </div>
 
@@ -263,7 +263,7 @@ export default function ServicesPage() {
               Most agencies take months. We compressed it into 30 days.
             </h2>
             <p className="text-[16px] text-[#555] mt-5 max-w-[560px] mx-auto">
-              We built a system for speed, alignment, and results — not slow, manual, disconnected approaches.
+              We built a system for speed, alignment, and results, not slow, manual, disconnected approaches.
             </p>
           </div>
 
@@ -304,7 +304,7 @@ export default function ServicesPage() {
                     <span className="text-[#18b5d8] font-bold shrink-0 mt-0.5">✓</span>
                     <span>
                       <strong className="text-white">{item.title}</strong>
-                      <span className="text-white/50"> — {item.body}</span>
+                      <span className="text-white/50">: {item.body}</span>
                     </span>
                   </li>
                 ))}
@@ -357,7 +357,7 @@ export default function ServicesPage() {
                 ))}
               </ul>
               <div className="mt-6 bg-white rounded-[12px] px-5 py-4 border border-[#e8e8ed]">
-                <p className="text-[13px] text-[#555]">It works — just know it takes time, focus, and ongoing effort.</p>
+                <p className="text-[13px] text-[#555]">It works, just know it takes time, focus, and ongoing effort.</p>
               </div>
             </div>
 
@@ -365,13 +365,13 @@ export default function ServicesPage() {
             <div className="bg-[#0a0a0a] rounded-[20px] p-8 border border-[#18b5d8]/20">
               <p className="text-[11px] font-bold text-[#18b5d8] tracking-[0.18em] uppercase mb-3">Use the Tools We Use</p>
               <p className="text-[18px] font-bold text-white mb-2">The same system our team uses. Now in your hands.</p>
-              <p className="text-[14px] text-white/60 mb-6">Our AI Visibility Toolkit makes it faster, easier, and more effective to stay visible — everywhere.</p>
+              <p className="text-[14px] text-white/60 mb-6">Our AI Visibility Toolkit makes it faster, easier, and more effective to stay visible everywhere.</p>
               <ul className="space-y-4">
                 {[
-                  { label: "Everything in One Place", body: "Listings, reviews, content, social, and AI insights — all managed from a single dashboard." },
+                  { label: "Everything in One Place", body: "Listings, reviews, content, social, and AI insights, all managed from a single dashboard." },
                   { label: "Built-in Consistency", body: "We keep your information accurate and aligned across the entire internet." },
                   { label: "Save Time. Get Results Faster.", body: "Automate the tedious work and focus on what moves the needle." },
-                  { label: "See What AI Sees", body: "Real-time insights into how AI platforms are interpreting your business — and how to improve it." },
+                  { label: "See What AI Sees", body: "Real-time insights into how AI platforms are interpreting your business, and how to improve it." },
                 ].map((item) => (
                   <li key={item.label} className="flex items-start gap-3">
                     <span className="text-[#18b5d8] font-bold shrink-0 mt-0.5">✓</span>
@@ -393,7 +393,7 @@ export default function ServicesPage() {
             <div className="flex-1">
               <p className="text-[14px] text-white/60">
                 Through our partnership with the Chamber, members have direct access to the AI Visibility Toolkit.{" "}
-                <span className="text-white">For any business outside the chamber, this is still something you can implement — either manually or with the same tools.</span>
+                <span className="text-white">For any business outside the chamber, this is still something you can implement, either manually or with the same tools.</span>
               </p>
             </div>
             <p className="text-[12px] font-semibold text-[#18b5d8] shrink-0 uppercase tracking-[0.14em]">The difference isn&rsquo;t whether this works. It&rsquo;s how you choose to implement it.</p>

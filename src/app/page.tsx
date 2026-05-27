@@ -1,5 +1,4 @@
 import Link from "next/link";
-import HackathonBanner from "@/components/HackathonBanner";
 
 export default function Home() {
   return (
@@ -26,7 +25,7 @@ export default function Home() {
             </h1>
 
             <p className="lead-airy text-white/50 max-w-[500px] mb-10" style={{ textWrap: "balance" }}>
-              We make your business the one AI recommends — on ChatGPT, Google AI Overviews, Gemini, and Perplexity. No ads. Real results in 30 days.
+              We make your business the one AI recommends: on ChatGPT, Google AI Overviews, Gemini, and Perplexity. No ads. Real results in 30 days.
             </p>
 
             {/* Quick proof */}
@@ -83,7 +82,7 @@ export default function Home() {
             { v: "60%+",  label: "of searches show AI answers" },
             { v: "30d",   label: "average time to top results" },
             { v: "4",     label: "industries, all #1 or #2" },
-            { v: "$0",    label: "in ads — purely organic" },
+            { v: "$0",    label: "in ads, purely organic" },
           ].map((s) => (
             <div key={s.label}>
               <p className="text-[clamp(1.5rem,3vw,2rem)] font-bold text-black leading-none mb-1">{s.v}</p>
@@ -136,8 +135,6 @@ export default function Home() {
         </div>
       </div>
 
-      {/* ── Hackathon banner ── */}
-      <HackathonBanner />
 
       {/* ══════════════════════════════════════════
           THE SHIFT — problem statement
@@ -159,10 +156,10 @@ export default function Home() {
           <div>
             <p className="text-[13px] font-semibold text-[#18b5d8] tracking-[0.2em] uppercase mb-5">The AI Shift</p>
             <p className="text-[20px] font-semibold text-[#0a0a0a] leading-snug mb-5" style={{ textWrap: "balance" }}>
-              Your customers aren&rsquo;t scrolling Google anymore. They&rsquo;re asking AI — and AI is deciding who to recommend.
+              Your customers aren&rsquo;t scrolling Google anymore. They&rsquo;re asking AI, and AI is deciding who to recommend.
             </p>
             <p className="text-[16px] text-[#555] leading-relaxed mb-5">
-              If AI can&rsquo;t find you, verify you, or trust you — it skips you entirely. It doesn&rsquo;t matter how good your website is, how long you&rsquo;ve been in business, or how many five-star reviews you have. If the signals aren&rsquo;t there, you don&rsquo;t exist in the conversation.
+              If AI can&rsquo;t find you, verify you, or trust you, it skips you entirely. It doesn&rsquo;t matter how good your website is, how long you&rsquo;ve been in business, or how many five-star reviews you have. If the signals aren&rsquo;t there, you don&rsquo;t exist in the conversation.
             </p>
             <p className="text-[16px] text-[#555] leading-relaxed">
               That&rsquo;s the gap we close. And we close it in under 30 days.
@@ -189,7 +186,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
             {/* Old game */}
             <div className="bg-white rounded-[20px] p-8 border border-[#e8e8ed]">
-              <p className="text-[11px] font-bold text-[#7a7a7a] tracking-[0.18em] uppercase mb-4">Visibility — The old game</p>
+              <p className="text-[11px] font-bold text-[#7a7a7a] tracking-[0.18em] uppercase mb-4">Visibility: The old game</p>
               <ul className="space-y-3 mb-6">
                 {["10+ options shown", "Endless scrolling", "Buyer in comparison mode"].map((item) => (
                   <li key={item} className="flex items-center gap-3 text-[14px] text-[#555]">
@@ -203,7 +200,7 @@ export default function Home() {
 
             {/* New reality */}
             <div className="bg-[#0a0a0a] rounded-[20px] p-8 border border-[#18b5d8]/20">
-              <p className="text-[11px] font-bold text-[#18b5d8] tracking-[0.18em] uppercase mb-4">Selection — The new reality</p>
+              <p className="text-[11px] font-bold text-[#18b5d8] tracking-[0.18em] uppercase mb-4">Selection: The new reality</p>
               <ul className="space-y-3 mb-6">
                 {["1–3 options, pre-filtered by AI", "Instant trust established", "Buyer ready to act immediately"].map((item) => (
                   <li key={item} className="flex items-center gap-3 text-[14px] text-white/70">
@@ -270,7 +267,7 @@ export default function Home() {
           <div className="text-center mb-16">
             <p className="text-[13px] font-semibold tracking-[0.2em] uppercase text-[#18b5d8] mb-4">The Process</p>
             <h2 className="display-lg text-[#0a0a0a]" style={{ textWrap: "balance" }}>
-              From invisible to recommended — in three steps.
+              From invisible to recommended, in three steps.
             </h2>
           </div>
 
@@ -282,7 +279,7 @@ export default function Home() {
               {
                 n: "01",
                 title: "We Audit Your AI Presence",
-                body: "We run your business through every AI platform and search system to find every gap — citations, schema, listings, entity signals, and trust data.",
+                body: "We run your business through every AI platform and search system to find every gap: citations, schema, listings, entity signals, and trust data.",
               },
               {
                 n: "02",
@@ -292,7 +289,7 @@ export default function Home() {
               {
                 n: "03",
                 title: "AI Starts Recommending You",
-                body: "Your business appears in AI-generated answers organically — no ad spend. Clients typically see measurable movement within 7–14 days.",
+                body: "Your business appears in AI-generated answers organically, with no ad spend. Clients typically see measurable movement within 7–14 days.",
               },
             ].map((step) => (
               <div key={step.n} className="bg-white rounded-[20px] px-7 py-8 relative">
@@ -343,7 +340,7 @@ export default function Home() {
                   AI Business Consulting &amp; Visibility
                 </h3>
                 <p className="text-[16px] text-white/50 max-w-[600px] leading-relaxed mb-6">
-                  We make your business appear — and appear well — when ChatGPT, Perplexity, Google AI Overviews, and every major AI discovery platform answers questions your customers are asking right now.
+                  We make your business appear, and appear well, when ChatGPT, Perplexity, Google AI Overviews, and every major AI discovery platform answers questions your customers are asking right now.
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {["Citation optimization", "Entity recognition", "Schema markup", "Review signals", "AI-ready content"].map((tag) => (
@@ -420,7 +417,7 @@ export default function Home() {
             <div className="w-10 h-px bg-[#18b5d8]" aria-hidden="true" />
             <div>
               <p className="text-[16px] font-semibold text-[#1d1d1f]">Jonathan Tuttle</p>
-              <p className="text-[13px] text-[#7a7a7a]">Drywall Company Owner &mdash; Pinellas County, FL</p>
+              <p className="text-[13px] text-[#7a7a7a]">Drywall Company Owner, Pinellas County, FL</p>
             </div>
           </div>
           <div className="mt-10">
@@ -439,15 +436,15 @@ export default function Home() {
           {[
             {
               heading: "The window is open now",
-              body: "Most local businesses haven't touched AI visibility at all. Right now, being found in AI answers is a genuine competitive advantage — not table stakes.",
+              body: "Most local businesses haven't touched AI visibility at all. Right now, being found in AI answers is a genuine competitive advantage, not table stakes.",
             },
             {
               heading: "Results in days, not months",
-              body: "Every client on this page saw measurable movement in under 30 days. This isn't a long game — it's a systematic fix with a fast feedback loop.",
+              body: "Every client on this page saw measurable movement in under 30 days. This isn't a long game. It's a systematic fix with a fast feedback loop.",
             },
             {
               heading: "Zero ad spend required",
-              body: "AI recommendations are earned through authority, not bought through ads. Once you're in, you're in — without a monthly ad budget keeping you there.",
+              body: "AI recommendations are earned through authority, not bought through ads. Once you're in, you're in, without a monthly ad budget keeping you there.",
             },
           ].map((c) => (
             <div key={c.heading} className="bg-white rounded-[16px] px-7 py-7 shadow-sm">
@@ -464,7 +461,7 @@ export default function Home() {
       ══════════════════════════════════════════ */}
       <section className="bg-[#0a0a0a] py-28 px-6 text-center">
         <div className="max-w-[620px] mx-auto">
-          <p className="text-[13px] font-semibold tracking-[0.2em] uppercase text-[#18b5d8] mb-6">Find out now — free</p>
+          <p className="text-[13px] font-semibold tracking-[0.2em] uppercase text-[#18b5d8] mb-6">Find out now, free</p>
           <h2 className="display-lg text-white mb-5" style={{ textWrap: "balance" }}>
             Is your business invisible to AI?
           </h2>

@@ -168,7 +168,7 @@ export default function Showcase() {
         </p>
         <h1 className="text-[38px] font-bold text-white leading-tight">AI Workforce</h1>
         <p className="text-white/30 text-[14px] mt-2">
-          Your AI employees — built, trained, and live in 30 days.
+          Your AI employees: built, trained, and live in 30 days.
         </p>
       </div>
 

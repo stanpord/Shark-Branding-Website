@@ -179,7 +179,7 @@ export default function CaseStudiesPage() {
             {/* 3 cost/value stats */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-12">
               {[
-                { stat: "$30–$80", label: "per click", body: "HVAC keywords can cost $30–$80 per click. Paid visibility is expensive — and stops the moment you stop paying." },
+                { stat: "$30–$80", label: "per click", body: "HVAC keywords can cost $30–$80 per click. Paid visibility is expensive, and stops the moment you stop paying." },
                 { stat: "Thousands", label: "saved monthly", body: "Ranking organically means thousands in ad spend saved every single month, without giving up visibility." },
                 { stat: "60–75%", label: "of clicks", body: "Top 3 positions capture 60–75% of all clicks. Outside the top 3, most buyers never see you." },
               ].map((c) => (
@@ -193,7 +193,7 @@ export default function CaseStudiesPage() {
 
             {/* Keyword ranking table */}
             <p className="text-[11px] font-semibold text-[#18b5d8] tracking-[0.2em] uppercase mb-6">
-              Proof in Practice — Keyword Rankings
+              Proof in Practice: Keyword Rankings
             </p>
             <div className="bg-white rounded-[20px] overflow-hidden shadow-sm mb-14">
               {/* Header */}
@@ -427,7 +427,7 @@ export default function CaseStudiesPage() {
             href="/free-report"
             className="btn-press inline-block bg-black text-white text-[16px] font-semibold rounded-full px-8 py-4 hover:bg-[#1d1d1f] motion-safe:transition-colors duration-150"
           >
-            Get the Free Report — It Takes 2 Minutes
+            Get the Free Report: It Takes 2 Minutes
           </Link>
         </div>
       </section>

@@ -93,7 +93,7 @@ const posts = [
     slug: "blog-google-reviews-ai-recommendations",
     category: "Strategy",
     title: "The Future Is AI Visibility: Turning Google Reviews Into AI Recommendations",
-    excerpt: "Your Google reviews are no longer just feedback — they're AI visibility signals. Learn how to collect reviews that AI can read, trust, and use to recommend your business.",
+    excerpt: "Your Google reviews are no longer just feedback. They're AI visibility signals. Learn how to collect reviews that AI can read, trust, and use to recommend your business.",
     date: "March 15, 2026",
     readTime: "8 min read",
     image: "https://cdn.marblism.com/y52lgWLfO0y.webp",
@@ -247,7 +247,7 @@ export default function ResourcesPage() {
                   Find Out How AI Sees Your Business Right Now
                 </h4>
                 <p className="text-[13px] text-[#555] leading-relaxed mb-4">
-                  We audit your visibility across AI search, maps, and reviews — and show you exactly what needs fixing.
+                  We audit your visibility across AI search, maps, and reviews, and show you exactly what needs fixing.
                 </p>
                 <Link
                   href="/free-report"
@@ -375,7 +375,7 @@ export default function ResourcesPage() {
                 AI-Ready: Shark Branding Solutions Partners with North Tampa Bay Chamber to Future-Proof Local Business
               </h2>
               <p className="text-[15px] text-[#555] leading-relaxed mb-5">
-                Shark Branding Solutions partners with the North Tampa Bay Chamber to help every local business get Found, Trusted, and Chosen by AI. NTBC members receive a free Business Visibility Report — no strings attached.
+                Shark Branding Solutions partners with the North Tampa Bay Chamber to help every local business get Found, Trusted, and Chosen by AI. NTBC members receive a free Business Visibility Report, no strings attached.
               </p>
               <div className="text-[11px] text-[#999] uppercase tracking-[0.1em] font-semibold">
                 By Shark Branding Solutions &nbsp;&middot;&nbsp; April 15, 2026 &nbsp;&middot;&nbsp; 10 min read
@@ -399,7 +399,7 @@ export default function ResourcesPage() {
               Stay ahead of the AI shift.
             </h2>
             <p className="text-[16px] text-white/50 leading-relaxed mb-8 max-w-[420px] mx-auto">
-              Practical intelligence on AI visibility and marketing automation — written for Tampa Bay business owners, not tech teams.
+              Practical intelligence on AI visibility and marketing automation, written for Tampa Bay business owners, not tech teams.
             </p>
             <Link
               href="/contact"

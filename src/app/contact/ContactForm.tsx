@@ -6,8 +6,8 @@ import { useState, useRef } from "react";
 const services = [
   "Free Visibility Report",
   "AI Business Consulting",
-  "AI Visibility Toolkit — Self-Directed",
-  "AI Visibility Toolkit — Fully Managed",
+  "AI Visibility Toolkit: Self-Directed",
+  "AI Visibility Toolkit: Fully Managed",
   "Workshop / Training",
   "Not sure yet",
 ];

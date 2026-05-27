@@ -28,7 +28,7 @@ export default function HackathonBanner() {
     <Link
       href="/hackathon"
       className="group block bg-black focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-inset"
-      aria-label="Shark AI Hackathon — May 26, 2026 — Come Try to Break Our AI Employees. Click to learn more and reserve your spot"
+      aria-label="Shark AI Hackathon, May 26, 2026. Come Try to Break Our AI Employees. Click to learn more and reserve your spot"
     >
       {/* ── Scrolling ticker ── */}
       <div className="overflow-hidden border-b border-white/10 py-3">
@@ -71,7 +71,7 @@ export default function HackathonBanner() {
 
             {/* Sub-copy */}
             <p className="mb-7 max-w-[680px] text-[1rem] leading-7 text-white/55">
-              Get hands-on with live, unreleased AI — five pressure-test arenas, real business use cases, and only 45 seats. Most people will read about this technology. You&apos;ll be in the room with it.
+              Get hands-on with live, unreleased AI: five pressure-test arenas, real business use cases, and only 45 seats. Most people will read about this technology. You&apos;ll be in the room with it.
             </p>
 
             {/* Arena pills */}
@@ -93,7 +93,7 @@ export default function HackathonBanner() {
             <div className="relative border-2 border-white/10 motion-safe:transition-[border-color,box-shadow] motion-safe:duration-300 motion-safe:group-hover:border-[#18b5d8]/60 motion-safe:group-hover:shadow-[0_0_40px_rgba(24,181,216,0.18)]">
               <Image
                 src="/hackathon-flyer-new.png"
-                alt="Shark AI Hackathon flyer — May 26, 2026"
+                alt="Shark AI Hackathon flyer, May 26, 2026"
                 width={930}
                 height={1200}
                 className="w-full h-auto object-cover"

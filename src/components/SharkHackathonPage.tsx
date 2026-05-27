@@ -43,7 +43,7 @@ const EXPERIENCES = [
     code: "03",
     title: "Stress-Test AI Tools",
     body:
-      "Push AI business tools to their limits in live, high-pressure situations — see what holds and what breaks.",
+      "Push AI business tools to their limits in live, high-pressure situations. See what holds and what breaks.",
   },
   {
     code: "04",
@@ -602,7 +602,7 @@ export default function SharkHackathonPage() {
 
             <p className="mb-8 max-w-[620px] text-[1.06rem] font-medium leading-8 text-[#333333] sm:text-[1.12rem]">
               Get hands-on with live, unreleased AI technology built to change sales,
-              customer communication, operations, and business growth — before the
+              customer communication, operations, and business growth, before the
               official opening.
             </p>
             <div className="mb-10 flex flex-wrap gap-4">
@@ -821,7 +821,7 @@ export default function SharkHackathonPage() {
                 <span className="text-[#18b5d8]">the Bot?</span>
               </h3>
               <p className="mb-8 text-[0.98rem] leading-7 text-white/60">
-                You&apos;ll have two hours to try. Our AI employees handle calls, chat, sales, and CRM — put them under maximum pressure and see what happens.
+                You&apos;ll have two hours to try. Our AI employees handle calls, chat, sales, and CRM. Put them under maximum pressure and see what happens.
               </p>
               <div className="grid grid-cols-3 divide-x divide-white/8 rounded-[16px] border border-white/8 bg-white/4 mb-5">
                 {[

@@ -53,7 +53,7 @@ export default function AuditTool() {
         setResult(data)
       }
     } catch {
-      setError('Request failed — check your connection.')
+      setError('Request failed. Check your connection.')
     } finally {
       setLoading(false)
     }
