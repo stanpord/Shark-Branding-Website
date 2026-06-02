@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Premortem Report — Shark Branding Solutions Website</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #080d18; color: #e2e8f0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; line-height: 1.6; }
+  .container { max-width: 1080px; margin: 0 auto; padding: 48px 24px; }
+
+  /* Header */
+  .header { text-align: center; margin-bottom: 64px; }
+  .header .tag { display: inline-block; background: rgba(239,68,68,0.15); color: #f87171; border: 1px solid rgba(239,68,68,0.3); font-size: 11px; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; padding: 6px 16px; border-radius: 999px; margin-bottom: 20px; }
+  .header h1 { font-size: clamp(28px, 4vw, 44px); font-weight: 800; color: #f8fafc; margin-bottom: 12px; }
+  .header .sub { font-size: 15px; color: #94a3b8; }
+  .header .frame { background: rgba(239,68,68,0.08); border: 1px solid rgba(239,68,68,0.2); border-radius: 12px; padding: 16px 24px; margin-top: 28px; font-size: 14px; color: #fca5a5; font-style: italic; }
+
+  /* Synthesis */
+  .synthesis { background: #0f172a; border-radius: 20px; padding: 40px; margin-bottom: 56px; border: 1px solid rgba(255,255,255,0.06); }
+  .synthesis h2 { font-size: 13px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #64748b; margin-bottom: 28px; }
+  .synth-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 32px; }
+  @media (max-width: 640px) { .synth-grid { grid-template-columns: 1fr; } }
+  .synth-card { border-radius: 14px; padding: 24px; }
+  .synth-card.likely { background: rgba(239,68,68,0.1); border: 1px solid rgba(239,68,68,0.25); }
+  .synth-card.dangerous { background: rgba(249,115,22,0.1); border: 1px solid rgba(249,115,22,0.25); }
+  .synth-card.assumption { background: rgba(168,85,247,0.1); border: 1px solid rgba(168,85,247,0.25); grid-column: 1 / -1; }
+  .synth-card .label { font-size: 10px; font-weight: 800; letter-spacing: 0.18em; text-transform: uppercase; margin-bottom: 10px; }
+  .synth-card.likely .label { color: #f87171; }
+  .synth-card.dangerous .label { color: #fb923c; }
+  .synth-card.assumption .label { color: #c084fc; }
+  .synth-card h3 { font-size: 16px; font-weight: 700; color: #f8fafc; margin-bottom: 8px; }
+  .synth-card p { font-size: 14px; color: #94a3b8; line-height: 1.65; }
+
+  /* Revised plan */
+  .plan-section { margin-top: 32px; }
+  .plan-section h3 { font-size: 13px; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: #64748b; margin-bottom: 16px; }
+  .plan-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+  .plan-list li { display: flex; align-items: flex-start; gap: 12px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07); border-radius: 10px; padding: 14px 16px; font-size: 14px; color: #cbd5e1; }
+  .plan-list li .num { background: #18b5d8; color: #000; font-size: 10px; font-weight: 800; border-radius: 50%; width: 20px; height: 20px; display: flex; align-items: center; justify-content: center; shrink: 0; flex-shrink: 0; margin-top: 1px; }
+
+  /* Checklist */
+  .checklist { margin-top: 24px; }
+  .checklist-items { display: flex; flex-direction: column; gap: 8px; }
+  .check-item { display: flex; align-items: flex-start; gap-12px; gap: 12px; background: rgba(24,181,216,0.05); border: 1px solid rgba(24,181,216,0.15); border-radius: 10px; padding: 12px 16px; font-size: 14px; color: #cbd5e1; }
+  .check-item .chk { color: #18b5d8; font-size: 16px; flex-shrink: 0; margin-top: 1px; }
+
+  /* Failure cards */
+  .failures-header { text-align: center; margin-bottom: 32px; }
+  .failures-header h2 { font-size: 22px; font-weight: 700; color: #f8fafc; margin-bottom: 6px; }
+  .failures-header p { font-size: 14px; color: #64748b; }
+  .failures-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  @media (max-width: 720px) { .failures-grid { grid-template-columns: 1fr; } }
+
+  .failure-card { border-radius: 16px; padding: 28px; border: 1px solid; display: flex; flex-direction: column; gap: 16px; }
+  .failure-card .card-header { display: flex; align-items: flex-start; gap: 12px; }
+  .failure-card .card-num { font-size: 11px; font-weight: 800; letter-spacing: 0.12em; opacity: 0.5; flex-shrink: 0; margin-top: 2px; }
+  .failure-card .card-title { font-size: 16px; font-weight: 700; color: #f8fafc; }
+  .failure-card .section-label { font-size: 10px; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; opacity: 0.5; margin-bottom: 4px; }
+  .failure-card p { font-size: 13px; line-height: 1.65; }
+  .failure-card .story p { color: #94a3b8; }
+  .failure-card .assumption-box { border-radius: 8px; padding: 12px; font-size: 13px; font-style: italic; }
+  .failure-card .warnings { display: flex; flex-direction: column; gap: 6px; }
+  .failure-card .warning { display: flex; align-items: flex-start; gap: 8px; font-size: 12px; color: #94a3b8; }
+  .failure-card .warning::before { content: "⚠"; flex-shrink: 0; }
+
+  /* Card color themes */
+  .c1 { background: rgba(239,68,68,0.06); border-color: rgba(239,68,68,0.2); }
+  .c1 .card-num { color: #f87171; }
+  .c1 .assumption-box { background: rgba(239,68,68,0.08); color: #fca5a5; }
+  .c2 { background: rgba(249,115,22,0.06); border-color: rgba(249,115,22,0.2); }
+  .c2 .card-num { color: #fb923c; }
+  .c2 .assumption-box { background: rgba(249,115,22,0.08); color: #fdba74; }
+  .c3 { background: rgba(234,179,8,0.06); border-color: rgba(234,179,8,0.2); }
+  .c3 .card-num { color: #facc15; }
+  .c3 .assumption-box { background: rgba(234,179,8,0.08); color: #fde047; }
+  .c4 { background: rgba(34,197,94,0.06); border-color: rgba(34,197,94,0.2); }
+  .c4 .card-num { color: #4ade80; }
+  .c4 .assumption-box { background: rgba(34,197,94,0.08); color: #86efac; }
+  .c5 { background: rgba(20,184,166,0.06); border-color: rgba(20,184,166,0.2); }
+  .c5 .card-num { color: #2dd4bf; }
+  .c5 .assumption-box { background: rgba(20,184,166,0.08); color: #5eead4; }
+  .c6 { background: rgba(99,102,241,0.06); border-color: rgba(99,102,241,0.2); }
+  .c6 .card-num { color: #818cf8; }
+  .c6 .assumption-box { background: rgba(99,102,241,0.08); color: #a5b4fc; }
+  .c7 { background: rgba(236,72,153,0.06); border-color: rgba(236,72,153,0.2); }
+  .c7 .card-num { color: #f472b6; }
+  .c7 .assumption-box { background: rgba(236,72,153,0.08); color: #f9a8d4; }
+
+  /* Footer */
+  .footer { text-align: center; margin-top: 64px; padding-top: 32px; border-top: 1px solid rgba(255,255,255,0.06); font-size: 12px; color: #334155; }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <div class="tag">Premortem Report</div>
+    <h1>Shark Branding Solutions Website</h1>
+    <p class="sub">7 failure agents · May 17, 2026</p>
+    <div class="frame">
+      "It is 6 months from now. The website has failed to generate meaningful paying clients. We are looking back to understand why."
+    </div>
+  </div>
+
+  <!-- SYNTHESIS -->
+  <div class="synthesis">
+    <h2>Synthesis</h2>
+    <div class="synth-grid">
+      <div class="synth-card likely">
+        <div class="label">Most Likely Failure</div>
+        <h3>The Audit Escape Valve + Abstract Pain</h3>
+        <p>People request the audit (feels like taking action), get the report, never feel urgency because they've never experienced a missing call, and ghost. This is baked into the funnel structure — the audit is both the entry point and the exit. Without a hard next step forcing the conversation, it ends itself.</p>
+      </div>
+      <div class="synth-card dangerous">
+        <div class="label">Most Dangerous Failure</div>
+        <h3>Thin Social Proof Kills Referrals</h3>
+        <p>One anonymous case study means prospects can't verify the work and won't refer. Without referrals, a local service business stalls. This compounds monthly: no named clients → no referrals → no new case studies → no social proof. It's the failure mode that locks the whole flywheel.</p>
+      </div>
+      <div class="synth-card assumption">
+        <div class="label">The Hidden Assumption</div>
+        <h3>Awareness is the barrier. It isn't.</h3>
+        <p>The website is built as if the biggest barrier to conversion is that prospects don't understand AI visibility — so if they understand it, they'll pay to fix it. But every failure mode traces back to <strong style="color:#e9d5ff">trust</strong>, not awareness. Trust in the company. Trust in the outcome. Trust in the commitment structure. The website explains well. It doesn't prove well.</p>
+      </div>
+    </div>
+
+    <div class="plan-section">
+      <h3>The Revised Plan — Concrete Changes</h3>
+      <ul class="plan-list">
+        <li><span class="num">1</span>Kill the word "Agreement." Rename to "12-Month Program" and "3-Month Starter" — same terms, zero contract anxiety trigger. Test this week before the chamber push.</li>
+        <li><span class="num">2</span>Get 3 named clients with real quotes before relying on the website for cold leads. Offer the first 3 months at cost to a local HVAC, dental, or contractor client in exchange for a named testimonial and a photo.</li>
+        <li><span class="num">3</span>Build a 5-email follow-up sequence in Vendasta that fires after every audit — Day 1, 3, 7, 14, 30. Each email has one CTA: book a 20-minute call. Without this, the audit is an exit, not an entry.</li>
+        <li><span class="num">4</span>Make the pain visible at chamber events. Open ChatGPT live, search "best HVAC company in Wesley Chapel," show the room whose names come up. That 60-second demo does more than the entire website.</li>
+        <li><span class="num">5</span>Stop relying on chamber email clicks. Ask for 5–10 minutes at the next in-person meeting to do the live demo. The people who open chamber newsletters are not always the buyers.</li>
+      </ul>
+    </div>
+
+    <div class="checklist" style="margin-top:24px;">
+      <h3 style="font-size:13px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:#64748b;margin-bottom:16px;">Pre-Launch Checklist — Before the Chamber Newsletter Goes Out</h3>
+      <div class="checklist-items">
+        <div class="check-item"><span class="chk">☐</span> Set up automated Vendasta follow-up sequence (5 emails) for every audit lead</div>
+        <div class="check-item"><span class="chk">☐</span> Get at least 2 testimonials with real names and business names on the site</div>
+        <div class="check-item"><span class="chk">☐</span> Change "12-Month Agreement" → "12-Month Program" on chamber page and plans page</div>
+        <div class="check-item"><span class="chk">☐</span> Add a live demo step to discovery call script (open ChatGPT, search their category + city)</div>
+        <div class="check-item"><span class="chk">☐</span> Book 5 minutes at next chamber in-person meeting for the live ChatGPT demo</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAILURE CARDS -->
+  <div class="failures-header">
+    <h2>7 Failure Analyses</h2>
+    <p>Each agent investigated one failure mode independently.</p>
+  </div>
+
+  <div class="failures-grid">
+
+    <div class="failure-card c1">
+      <div class="card-header">
+        <span class="card-num">01</span>
+        <span class="card-title">Price Without Proof of Concept</span>
+      </div>
+      <div class="story">
+        <div class="section-label">Failure Story</div>
+        <p>A Wesley Chapel plumber runs the free audit, then sees $397/month × 12 = $4,764. He has no mental model for "AI visibility" pricing. Is this cheap? Expensive? He closes the tab. Discovery calls that do happen stall at "what exactly am I getting?" — requiring three leaps of faith (AI search is real, it affects his business, this service moves the needle) before justifying the dollar amount. The anonymous HVAC case study doesn't connect to revenue and can't be verified. The price stays abstract because the outcome stays abstract.</p>
+      </div>
+      <div>
+        <div class="section-label">Underlying Assumption</div>
+        <div class="assumption-box">Showing the gap (the audit) is sufficient to justify the price, without proving revenue-connected outcomes.</div>
+      </div>
+      <div class="warnings">
+        <div class="section-label">Early Warning Signs</div>
+        <div class="warning">Booking-to-close rate on discovery calls sits below 15%</div>
+        <div class="warning">Prospects repeatedly ask "can I start month-to-month?" before going quiet</div>
+      </div>
+    </div>
+
+    <div class="failure-card c2">
+      <div class="card-header">
+        <span class="card-num">02</span>
+        <span class="card-title">Free Audit as Escape Valve</span>
+      </div>
+      <div class="story">
+        <div class="section-label">Failure Story</div>
+        <p>Month 1: 11 audit requests. Celebration. By month 5: 47 requests, 2 paid clients — both referrals who would have converted anyway. Seven of the first eleven never replied to the report delivery email. Three said "interesting" and went cold. One got sticker shock. There was no automated follow-up sequence. Follow-up was a manual notebook task. Miche kept optimizing the website because it felt like the problem. The audit created a sense of completion without urgency — prospects felt they had "done something" and moved on.</p>
+      </div>
+      <div>
+        <div class="section-label">Underlying Assumption</div>
+        <div class="assumption-box">Delivering a valuable free report creates a sense of obligation to continue the conversation.</div>
+      </div>
+      <div class="warnings">
+        <div class="section-label">Early Warning Signs</div>
+        <div class="warning">Audit completion rate high but reply rate to delivered report below 30%</div>
+        <div class="warning">Discovery calls booked ÷ audits sent is under 15% by week six</div>
+      </div>
+    </div>
+
+    <div class="failure-card c3">
+      <div class="card-header">
+        <span class="card-num">03</span>
+        <span class="card-title">Existing Vendor Loyalty</span>
+      </div>
+      <div class="story">
+        <div class="section-label">Failure Story</div>
+        <p>Chamber members who were genuinely interested mentioned the service to their current marketing person as a test. The marketing person said "yeah, we've been looking at that for you." That was enough. Owner felt relieved. No awkward conversation. No change. Only owners without an existing vendor converted. Shark Branding Solutions effectively educated the incumbent agencies, not the market. Replacing a nephew who "does the website" isn't a vendor decision — it's a family conversation nobody wanted to have over something as abstract as AI rankings they couldn't see.</p>
+      </div>
+      <div>
+        <div class="section-label">Underlying Assumption</div>
+        <div class="assumption-box">A compelling enough offer overrides the social and emotional inertia of existing vendor relationships.</div>
+      </div>
+      <div class="warnings">
+        <div class="section-label">Early Warning Signs</div>
+        <div class="warning">Calls end with "I need to run this by my current person" rather than a direct objection</div>
+        <div class="warning">Booked audits result in no-shows or last-minute reschedules above 30%</div>
+      </div>
+    </div>
+
+    <div class="failure-card c4">
+      <div class="card-header">
+        <span class="card-num">04</span>
+        <span class="card-title">Thin Social Proof</span>
+      </div>
+      <div class="story">
+        <div class="section-label">Failure Story</div>
+        <p>Prospects landed, read the pitch, felt a flicker of interest, then looked for the one thing every buyer looks for before spending $400–$2,000/month: confirmation that someone else already did this and it worked. One anonymous case study with no name, no photo, no screenshot, no verifiable number. They Googled "Shark Branding Solutions reviews" and found nothing. The absence confirmed the fear: too new, too unproven. The anonymous HVAC case study had never once tipped a prospect into action — it couldn't answer the only question that mattered: can I talk to one of your current clients?</p>
+      </div>
+      <div>
+        <div class="section-label">Underlying Assumption</div>
+        <div class="assumption-box">A compelling result — even unattributed — is persuasive enough to carry the weight of an entirely unknown brand asking for recurring monthly spend.</div>
+      </div>
+      <div class="warnings">
+        <div class="section-label">Early Warning Signs</div>
+        <div class="warning">Visitors reach the case study section but drop off without submitting the form</div>
+        <div class="warning">Discovery calls stall at "I'd love to talk to one of your current clients"</div>
+      </div>
+    </div>
+
+    <div class="failure-card c5">
+      <div class="card-header">
+        <span class="card-num">05</span>
+        <span class="card-title">Abstract Pain</span>
+      </div>
+      <div class="story">
+        <div class="section-label">Failure Story</div>
+        <p>The plumber had three leaky pipe calls and a parts invoice to dispute. He didn't search ChatGPT for himself. The dentist read the full pitch, nodded, forwarded it to her office manager with "look into this." The office manager had 17 other things open. The tab died. No one counted the patients who asked an AI first and booked somewhere else. Invisible losses don't trigger purchasing decisions. Six months in: 12 follow-up emails sent, 11 responded with "we're focused on other things right now." The website had great messaging for people who already understood AI visibility. Those people don't exist in Wesley Chapel yet.</p>
+      </div>
+      <div>
+        <div class="section-label">Underlying Assumption</div>
+        <div class="assumption-box">Explaining a problem clearly is the same as making someone feel it.</div>
+      </div>
+      <div class="warnings">
+        <div class="section-label">Early Warning Signs</div>
+        <div class="warning">Visitors spend time on page but leave without contacting — engagement without action</div>
+        <div class="warning">Sales conversations end with "I'll think about it" rather than objections about price or timeline</div>
+      </div>
+    </div>
+
+    <div class="failure-card c6">
+      <div class="card-header">
+        <span class="card-num">06</span>
+        <span class="card-title">Wrong People Click</span>
+      </div>
+      <div class="story">
+        <div class="section-label">Failure Story</div>
+        <p>The chamber newsletter goes out Tuesday. Three people click within an hour: a marketing coordinator who bookmarks it to share with her boss (never does), a real estate agent who knows Miche but doesn't see the need, and a fellow service provider curious about the offer structure. The actual owners — the HVAC company owner, the orthodontist with three locations, the restaurateur — never open the email. They get 200 emails a week. Chamber newsletters are background noise. 47 link clicks, zero signed agreements. Several great conversations with chamber members who "loved the idea" — but those people were never going to buy.</p>
+      </div>
+      <div>
+        <div class="section-label">Underlying Assumption</div>
+        <div class="assumption-box">Chamber email engagement is a proxy for buying intent and decision-making authority.</div>
+      </div>
+      <div class="warnings">
+        <div class="section-label">Early Warning Signs</div>
+        <div class="warning">Clicks with near-zero form submissions in the first two weeks post-send</div>
+        <div class="warning">People who reach out are employees or fellow service providers, not business owners with staff</div>
+      </div>
+    </div>
+
+    <div class="failure-card c7">
+      <div class="card-header">
+        <span class="card-num">07</span>
+        <span class="card-title">Contract Aversion</span>
+      </div>
+      <div class="story">
+        <div class="section-label">Failure Story</div>
+        <p>A dentist lands on the page after a Google search. The copy is good. He nods along, thinks "this is exactly what I've been missing." Scrolls to pricing. Eyes catch "12-Month Agreement." Stomach drops. 18 months ago he paid $1,200/mo to an SEO agency for a year, rankings never moved, ate the cancellation clause. He closes the tab. The 3-month option doesn't save it — it's $100 more per month and still says "Agreement." Reading as a penalty for not trusting a stranger. To a small business owner, "agreement" isn't neutral. It's the thing they signed before they got burned.</p>
+      </div>
+      <div>
+        <div class="section-label">Underlying Assumption</div>
+        <div class="assumption-box">A motivated buyer will push through contract anxiety because the service concept is compelling enough to override it.</div>
+      </div>
+      <div class="warnings">
+        <div class="section-label">Early Warning Signs</div>
+        <div class="warning">High scroll depth on pricing section + near-zero form submissions</div>
+        <div class="warning">"Let me think about it" immediately after hearing terms, with no follow-up questions about the service</div>
+      </div>
+    </div>
+
+  </div><!-- /failures-grid -->
+
+  <div class="footer">
+    Premortem · Shark Branding Solutions Website · May 17, 2026 · 7 agents · claude-sonnet-4-6
+  </div>
+
+</div>
+</body>
+</html>

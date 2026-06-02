@@ -1,10 +1,109 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+const pageSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: "https://sharkbrandingsolutions.com",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Services",
+          item: "https://sharkbrandingsolutions.com/services",
+        },
+      ],
+    },
+    {
+      "@type": "OfferCatalog",
+      "@id": "https://sharkbrandingsolutions.com/services#catalog",
+      name: "AI Business Services",
+      provider: { "@id": "https://sharkbrandingsolutions.com/#organization" },
+      itemListElement: [
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "AI Business Consulting",
+            description:
+              "Full audit and optimization of your business presence across AI discovery platforms including ChatGPT, Perplexity, Google AI Overviews, and Gemini.",
+            provider: { "@id": "https://sharkbrandingsolutions.com/#organization" },
+            areaServed: { "@type": "State", name: "Florida" },
+            serviceType: "AI Visibility Consulting",
+          },
+        },
+        {
+          "@type": "Offer",
+          priceSpecification: [
+            {
+              "@type": "PriceSpecification",
+              price: "497",
+              priceCurrency: "USD",
+              unitText: "MONTH",
+              name: "Self-Directed",
+            },
+            {
+              "@type": "PriceSpecification",
+              price: "2000",
+              priceCurrency: "USD",
+              unitText: "MONTH",
+              name: "Fully Managed",
+            },
+          ],
+          itemOffered: {
+            "@type": "Service",
+            name: "AI Visibility Toolkit",
+            description:
+              "A complete framework for AI search visibility. Fixes search signals, trust indicators, listing accuracy, and AI readiness. Self-directed at $497/month or fully managed at $2,000/month.",
+            provider: { "@id": "https://sharkbrandingsolutions.com/#organization" },
+            areaServed: { "@type": "State", name: "Florida" },
+            serviceType: "AI Search Optimization",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "AI Visibility Workshops & Training",
+            description:
+              "Half-day and full-day workshops for business teams and chamber organizations covering AI search, local visibility, and trust signals. Available in-person (Tampa Bay) and virtually.",
+            provider: { "@id": "https://sharkbrandingsolutions.com/#organization" },
+            areaServed: [
+              { "@type": "City", name: "Wesley Chapel" },
+              { "@type": "City", name: "Tampa" },
+            ],
+            serviceType: "Business Training",
+          },
+        },
+        {
+          "@type": "Offer",
+          price: "0",
+          priceCurrency: "USD",
+          itemOffered: {
+            "@type": "Service",
+            name: "Free AI Visibility Audit",
+            description:
+              "A free audit covering search presence, maps, reviews, and AI platform appearance. Includes a call to walk through results — no commitment required.",
+            provider: { "@id": "https://sharkbrandingsolutions.com/#organization" },
+            serviceType: "Business Audit",
+          },
+        },
+      ],
+    },
+  ],
+};
+
 export const metadata: Metadata = {
-  title: "AI Business Services — Shark Branding Solutions",
+  title: "AI Visibility Consulting Tampa Bay | Shark Branding Solutions",
   description:
-    "AI Business Consulting, AI Toolkit, Workshops, and Free Visibility Audits for Tampa Bay businesses.",
+    "AI visibility consulting for Tampa Bay businesses. Get found by ChatGPT, Google AI Overviews, and Gemini without paid ads. Serving Wesley Chapel, Tampa, St. Petersburg, and Lutz, FL.",
 };
 
 const services = [
@@ -92,6 +191,10 @@ const plans = [
 export default function ServicesPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(pageSchema) }}
+      />
       {/* ── Hero ── */}
       <section className="bg-white min-h-[90vh] flex flex-col items-center justify-center text-center px-6 pt-24 pb-20">
         <div className="max-w-[720px] mx-auto">
@@ -210,6 +313,32 @@ export default function ServicesPage() {
                 </Link>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── FAQ ── */}
+      <section className="bg-white py-20 px-6">
+        <div className="max-w-[720px] mx-auto">
+          <p className="text-[11px] font-semibold text-[#1d1d1f] uppercase tracking-[0.15em] mb-8">Frequently Asked Questions</p>
+          <div className="space-y-8">
+            {[
+              { q: "What is AI visibility consulting?", a: "AI visibility consulting is the practice of optimizing your business listings, reviews, content, and trust signals so AI-powered tools like ChatGPT, Google AI Overviews, Gemini, and Perplexity recommend your business when buyers ask questions in your category. Unlike traditional SEO, it targets the AI answer layer — not just ranked blue links." },
+              { q: "How is this different from regular SEO?", a: "Traditional SEO gets you ranked in the blue links. AI visibility consulting gets you recommended in the AI-generated answer before anyone ever clicks a link. The signals are different — AI systems prioritize consistent business data, review quality, structured content, and entity authority over backlinks and keyword density." },
+              { q: "How quickly do Tampa Bay businesses see results?", a: "Most clients see measurable visibility movement within 30 days. One Wesley Chapel HVAC client moved from position #32 to #2 on Google in under 30 days. A real estate client reached #1 for 'Best Realtors in Wesley Chapel' among 2,000+ competing agents." },
+              { q: "Do I need to run ads to appear in AI search results?", a: "No. ChatGPT, Gemini, and Google AI Overviews base their recommendations on trust signals, review quality, consistent business data, and structured content — not paid ads. Our AI Visibility Toolkit is built entirely around organic signals." },
+              { q: "What areas do you serve?", a: "We serve Tampa Bay businesses including Wesley Chapel, Lutz, Land O' Lakes, Tampa, and St. Petersburg, FL. We also work with regional businesses remotely." },
+            ].map(({ q, a }) => (
+              <div key={q} className="border-b border-[#e5e5e5] pb-8">
+                <h3 className="text-[16px] font-semibold text-[#1d1d1f] mb-3">{q}</h3>
+                <p className="text-[15px] text-[#555] leading-relaxed">{a}</p>
+              </div>
+            ))}
+          </div>
+          <div className="mt-12 flex flex-wrap gap-4 text-[14px]">
+            <Link href="/plans" className="text-[#18b5d8] font-semibold hover:underline">View Plans &amp; Pricing →</Link>
+            <Link href="/case-studies" className="text-[#18b5d8] font-semibold hover:underline">See Case Studies →</Link>
+            <Link href="/free-report" className="text-[#18b5d8] font-semibold hover:underline">Get a Free Visibility Audit →</Link>
           </div>
         </div>
       </section>

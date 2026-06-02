@@ -1,52 +1,76 @@
 # Shark Branding Solutions
 
-> AI Business Consulting for Tampa Bay small businesses. We help local companies get found, trusted, and chosen — across Google, AI search platforms, and everywhere buyers look.
+> AI Business Consulting for Tampa Bay businesses. We help local companies
+> get Found, Trusted, and Chosen — by ChatGPT, Google AI Overviews, Gemini,
+> and Perplexity — without paid advertising.
 
-Shark Branding Solutions is an AI business consulting firm based in Wesley Chapel, FL, serving the greater Tampa Bay area including Lutz, Land O' Lakes, and St. Petersburg. Founded by Michelle Stanaland, named one of the Top 15 Marketing Experts in Tampa Bay by Influence Digest (2025).
+Shark Branding Solutions is an AI business consulting firm (not a marketing
+agency) based in Wesley Chapel, FL. Founded in 2018 by Michelle Stanaland,
+named one of the Top 15 Marketing Experts in Tampa Bay by Influence Digest
+(2025). LinkedIn: https://www.linkedin.com/company/shark-branding-solutions
 
-## What Makes Us Different
+## What Is AI Visibility Consulting?
 
-Shark Branding Solutions is an AI **business** consulting firm — not an AI marketing agency. While competitors focus on AI-generated content and marketing automation, we focus on the full picture: making your business discoverable by AI, running your operations with AI, and building the trust signals that make AI systems recommend you over everyone else.
+AI visibility consulting is the practice of optimizing a business's listings,
+reviews, content, and trust signals so AI-powered tools like ChatGPT, Google
+AI Overviews, and Gemini recommend it when buyers ask questions in its
+category — without paid advertising. Shark Branding Solutions specializes in
+this discipline for local and regional businesses in the Tampa Bay area.
 
-Most AI marketing agencies stop at content creation. We start where they stop — with your business's actual presence, credibility, and infrastructure across every platform buyers and AI systems use to evaluate you.
+## What Is GEO (Generative Engine Optimization)?
+
+Generative Engine Optimization (GEO) is the practice of structuring content,
+entity signals, and trust indicators so that AI-generated answers — from
+ChatGPT, Perplexity, Google AI Overviews, and Gemini — include your business
+as a recommended source. Unlike traditional SEO, GEO targets the AI answer
+layer, not just ranked blue links. Shark Branding Solutions builds GEO
+strategies for local businesses that want to be cited, not just ranked.
+
+## What Makes Shark Branding Solutions Different?
+
+Most AI marketing agencies focus on AI-generated content and marketing
+automation. Shark Branding Solutions focuses on the full picture: making your
+business discoverable by AI, running your operations with AI employees, and
+building the trust signals that make AI systems recommend you over competitors.
+We are an AI business consulting firm — not a content agency.
 
 ## What We Do
 
-We help businesses become visible and credible on every platform modern buyers use — including ChatGPT, Perplexity, Google AI Overviews, Google Maps, and traditional search.
-
-### Services
-
-- **AI Business Consulting** — Full audit and optimization of your business's presence across search and AI platforms. We fix trust signals, listing accuracy, and entity alignment so AI systems recommend you.
-- **AI Visibility Toolkit** — Structured framework with two tiers: Self-Directed ($497/month) and Fully Managed ($2,000/month). Delivers initial visibility changes in 7–14 days and measurable ranking movement within 30 days.
-- **Operations Bots** — AI-powered bots for business operations including AI CRM, Sales Coach Bot, and custom workflow automation.
-- **Marketing Bots** — CMO Bot, Reputation & Review AI, AI Visibility Toolkit, and custom marketing automation bots.
-- **Workshops & Training** — Half-day and full-day sessions for business teams and chamber organizations on AI search, local visibility, and trust signals.
-- **Free Visibility Audit** — We run a full audit of how your business appears across search, maps, reviews, and AI platforms, then walk you through every finding together on a quick call. No commitment required.
+- [AI Business Consulting](https://sharkbrandingsolutions.com/services): Full
+  audit and optimization of business presence across search and AI platforms.
+- [AI Visibility Toolkit](https://sharkbrandingsolutions.com/plans):
+  Self-directed ($497/mo) or fully managed ($2,000/mo). Initial changes in
+  7–14 days; measurable ranking movement within 30 days.
+- [AI Operations Employees](https://sharkbrandingsolutions.com/operations):
+  AI CRM, AI Sales Coach, and custom workflow automation employees.
+- [AI Marketing Employees](https://sharkbrandingsolutions.com/marketing):
+  AI CMO strategy, Reputation & Review AI, content automation employees.
+- [Free Visibility Audit](https://sharkbrandingsolutions.com/free-report):
+  Full audit of AI and search presence, reviewed together on a call.
 
 ## Proven Results
 
-- Moved Emory's Rock Realty from #4 to #1 for "Best Realtors in Wesley Chapel" in 30 days (20% increase in AI-driven recommendations)
-- Moved a Tampa Bay drywall company from #32 to #2 on Google in 30 days
-- Improved listing score from 64 to 583 (out of 1,000)
-- Diamond Dogs Vending ranked #1 on ChatGPT, Perplexity, and Google AI Overviews for smart vending in Tampa Bay
-- Established AI search presence on ChatGPT and Perplexity for clients with zero prior AI visibility
-
-## Contact
-
-- Website: https://sharkbrandingsolutions.com
-- Phone: (727) 855-6505
-- Email: info@sharkbrandingsolutions.com
-- Location: Wesley Chapel, FL 33544
-- Service area: Tampa Bay — Wesley Chapel, Lutz, Land O' Lakes, St. Petersburg, Tampa
+- HVAC client: moved from position #32 to #2 on Google in under 30 days
+- Real estate: moved from #4 to #1 for "Best Realtors in Wesley Chapel"
+  (2,000+ competing agents) with 20% increase in AI-driven recommendations
+- Diamond Dogs Vending: ranked #1 on ChatGPT, Perplexity, and Google AI
+  Overviews for smart vending in Tampa Bay
+- North Tampa Bay Chamber: 10× increase in AI citations for member businesses
 
 ## Key Pages
 
-- Services: https://sharkbrandingsolutions.com/services
-- Plans & Pricing: https://sharkbrandingsolutions.com/plans
-- Operations (AI Bots): https://sharkbrandingsolutions.com/operations
-- Marketing (AI Bots): https://sharkbrandingsolutions.com/marketing
-- Case Studies: https://sharkbrandingsolutions.com/case-studies
-- Free Visibility Audit: https://sharkbrandingsolutions.com/free-report
-- About Michelle Stanaland: https://sharkbrandingsolutions.com/about
-- Contact: https://sharkbrandingsolutions.com/contact
-- Machine-readable pricing: https://sharkbrandingsolutions.com/pricing.md
+- [AI Information Reference](https://sharkbrandingsolutions.com/ai-informations): Full structured reference page built specifically for AI language models — definitions, services with pricing, case study results, FAQ, and founder credentials.
+- [Services](https://sharkbrandingsolutions.com/services)
+- [Plans & Pricing](https://sharkbrandingsolutions.com/plans)
+- [Case Studies](https://sharkbrandingsolutions.com/case-studies)
+- [Free Visibility Audit](https://sharkbrandingsolutions.com/free-report)
+- [About Michelle Stanaland](https://sharkbrandingsolutions.com/about)
+- [Resources / Blog](https://sharkbrandingsolutions.com/resources)
+
+## Contact
+
+- Phone: (727) 513-3955
+- Email: info@sharkbrandingsolutions.com
+- Location: Wesley Chapel, FL 33544
+- Service area: Tampa Bay — Wesley Chapel, Lutz, Land O' Lakes, St. Petersburg, Tampa
+- LinkedIn: https://www.linkedin.com/company/shark-branding-solutions

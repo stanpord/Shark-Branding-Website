@@ -1,5 +1,11 @@
 import Link from "next/link";
 
+interface RelatedPost {
+  href: string;
+  title: string;
+  category: string;
+}
+
 interface BlogShellProps {
   category: string;
   title: string;
@@ -8,7 +14,12 @@ interface BlogShellProps {
   heroImage: string;
   heroAlt: string;
   children: React.ReactNode;
-  slug?: string;
+  relatedPosts?: RelatedPost[];
+}
+
+function toIsoDate(dateStr: string): string {
+  const d = new Date(dateStr);
+  return isNaN(d.getTime()) ? new Date().toISOString().split("T")[0] : d.toISOString().split("T")[0];
 }
 
 export default function BlogShell({
@@ -19,41 +30,33 @@ export default function BlogShell({
   heroImage,
   heroAlt,
   children,
-  slug,
+  relatedPosts,
 }: BlogShellProps) {
-  const articleSchema = {
+  const structuredData = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     headline: title,
     image: heroImage,
-    datePublished: date,
-    dateModified: date,
+    datePublished: toIsoDate(date),
     author: {
       "@type": "Person",
+      "@id": "https://sharkbrandingsolutions.com/#michelle",
       name: "Michelle Stanaland",
-      jobTitle: "Founder & CEO",
       url: "https://sharkbrandingsolutions.com/about",
-      description: "Top 15 Marketing Expert in Tampa Bay — Influence Digest, 2025",
     },
     publisher: {
-      "@type": "Organization",
-      name: "Shark Branding Solutions",
-      url: "https://sharkbrandingsolutions.com",
-      logo: "https://sharkbrandingsolutions.com/logo.webp",
+      "@id": "https://sharkbrandingsolutions.com/#organization",
     },
-    ...(slug && { url: `https://sharkbrandingsolutions.com/resources/${slug}` }),
-    mainEntityOfPage: slug
-      ? `https://sharkbrandingsolutions.com/resources/${slug}`
-      : "https://sharkbrandingsolutions.com/resources",
-    articleSection: category,
-    inLanguage: "en-US",
+    mainEntityOfPage: {
+      "@type": "WebPage",
+    },
   };
 
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
       {/* Blog hero */}
       <section className="bg-[#07141a] pt-24 pb-16 px-6 text-center">
@@ -65,7 +68,7 @@ export default function BlogShell({
             {title}
           </h1>
           <p className="text-[14px] text-[#7a7a7a]">
-            {date}&nbsp;&middot;&nbsp;{readTime}
+            By Michelle Stanaland&nbsp;&middot;&nbsp;{date}&nbsp;&middot;&nbsp;{readTime}
           </p>
         </div>
       </section>
@@ -73,17 +76,41 @@ export default function BlogShell({
       {/* Article body */}
       <section className="bg-white py-16 px-6">
         <div className="max-w-[720px] mx-auto">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={heroImage}
             alt={heroAlt}
             width={720}
             height={480}
+            fetchPriority="high"
+            decoding="async"
             className="w-full rounded-[18px] mb-12 object-cover"
-            style={{ maxHeight: "480px" }}
+            style={{ aspectRatio: "720/480" }}
           />
           <div className="article-prose">{children}</div>
         </div>
       </section>
+
+      {/* Related posts */}
+      {relatedPosts && relatedPosts.length > 0 && (
+        <section className="bg-[#f5f5f7] py-14 px-6">
+          <div className="max-w-[720px] mx-auto">
+            <p className="text-[11px] font-semibold text-[#1d1d1f] uppercase tracking-[0.15em] mb-6">Related Articles</p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {relatedPosts.map((p) => (
+                <Link
+                  key={p.href}
+                  href={p.href}
+                  className="block bg-white rounded-[14px] p-5 border border-[#e0e0e0] hover:border-[#18b5d8] motion-safe:transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2"
+                >
+                  <span className="text-[11px] font-semibold text-[#18b5d8] uppercase tracking-[0.12em] mb-2 block">{p.category}</span>
+                  <span className="text-[15px] font-semibold text-[#1d1d1f] leading-snug">{p.title}</span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* CTA */}
       <section className="bg-[#18b5d8] py-20 px-6 text-center">
@@ -92,7 +119,7 @@ export default function BlogShell({
             Ready to become the top AI recommendation in your market?
           </h2>
           <p className="lead-airy text-black/65 mb-10">
-            Get a free Visibility Audit and see exactly where your business
+            Get a free visibility report and see exactly where your business
             stands across AI search, local search, and digital authority&nbsp;&mdash; no
             commitment required.
           </p>
@@ -101,7 +128,7 @@ export default function BlogShell({
               href="/free-report"
               className="btn-press inline-block bg-black text-white text-[17px] font-semibold rounded-full px-[22px] py-[11px] hover:bg-white hover:text-black motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:ring-offset-[#18b5d8] [touch-action:manipulation]"
             >
-              Book Your Free Visibility Audit
+              Get the Free Report
             </Link>
             <Link
               href="/contact"

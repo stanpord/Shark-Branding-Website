@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import SnapshotWidget from "@/components/SnapshotWidget";
 
 export const metadata: Metadata = {
-  title: "Free Visibility Audit — Shark Branding Solutions",
+  title: "Free AI Visibility Audit Tampa Bay | Shark Branding Solutions",
   description:
-    "See exactly how your business appears across search, maps, reviews, and AI platforms. We run your audit and walk you through it together on a quick call.",
+    "Get a free AI visibility audit for your Tampa Bay business. See exactly how ChatGPT, Google AI Overviews, and Gemini see you — reviewed together on a call. No obligation.",
 };
 
 export default function FreeReportPage() {
@@ -85,6 +86,32 @@ export default function FreeReportPage() {
                 <p className="text-[15px] text-white/50 leading-relaxed">{item.body}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── FAQ ── */}
+      <section className="bg-white py-20 px-6">
+        <div className="max-w-[720px] mx-auto">
+          <p className="text-[11px] font-semibold text-[#1d1d1f] uppercase tracking-[0.15em] mb-8">Frequently Asked Questions</p>
+          <div className="space-y-8">
+            {[
+              { q: "What is included in the free visibility audit?", a: "The audit covers how your business appears across Google Search, Google Maps, AI platforms (ChatGPT, Perplexity, Google AI Overviews), review sites, and business directories. We check listing consistency, review signals, AI readiness, and schema markup — then walk through everything together on a 20-minute call." },
+              { q: "Is there any cost or commitment?", a: "No. The audit is completely free with no commitment required. We review your results together on a call and only discuss next steps if it makes sense for your business." },
+              { q: "How long does the audit take?", a: "The call takes about 20 minutes. We do the analysis beforehand so you arrive to a complete picture — no waiting, no homework on your end." },
+              { q: "What kinds of businesses is this for?", a: "The audit is built for local and regional businesses in the Tampa Bay area — Wesley Chapel, Lutz, Land O' Lakes, Tampa, and St. Petersburg. It's most useful for owner-operated businesses that want to be found by customers using AI search tools." },
+              { q: "What happens after the audit?", a: "You'll know exactly where your visibility gaps are. If you want help fixing them, we'll explain what that looks like. If not, you leave with a clear picture of where you stand — still useful either way." },
+            ].map(({ q, a }) => (
+              <div key={q} className="border-b border-[#e5e5e5] pb-8">
+                <h3 className="text-[16px] font-semibold text-[#1d1d1f] mb-3">{q}</h3>
+                <p className="text-[15px] text-[#555] leading-relaxed">{a}</p>
+              </div>
+            ))}
+          </div>
+          <div className="mt-12 flex flex-wrap gap-4 text-[14px]">
+            <Link href="/services" className="text-[#18b5d8] font-semibold hover:underline">What We Do →</Link>
+            <Link href="/plans" className="text-[#18b5d8] font-semibold hover:underline">View Plans &amp; Pricing →</Link>
+            <Link href="/case-studies" className="text-[#18b5d8] font-semibold hover:underline">See Client Results →</Link>
           </div>
         </div>
       </section>

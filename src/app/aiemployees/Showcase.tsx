@@ -6,7 +6,7 @@ const EMPLOYEES = [
   { name: 'Gemma', role: 'Chat Receptionist', cardImg: '/avatars/gemma.png', color: '#18b5d8' },
   { name: 'Blogger', role: 'Content Writer', cardImg: '/avatars/blogger.png', color: '#4FD1A0' },
   { name: 'Reputation Specialist', role: 'Review Manager', cardImg: '/avatars/reputation.png', color: '#F9DB79' },
-  { name: 'Lead Qualifier', role: 'Sales Bot', cardImg: '/avatars/sales.png', color: '#18b5d8' },
+  { name: 'Lead Qualifier', role: 'Lead AI', cardImg: '/avatars/sales.png', color: '#18b5d8' },
   { name: 'Social Media Manager', role: 'Content Publisher', cardImg: '/avatars/social.png', color: '#F7555F' },
 ]
 

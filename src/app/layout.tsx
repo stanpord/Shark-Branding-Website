@@ -61,6 +61,21 @@ const structuredData = {
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebSite",
+      "@id": "https://sharkbrandingsolutions.com/#website",
+      url: "https://sharkbrandingsolutions.com",
+      name: "Shark Branding Solutions",
+      publisher: { "@id": "https://sharkbrandingsolutions.com/#organization" },
+      potentialAction: {
+        "@type": "SearchAction",
+        target: {
+          "@type": "EntryPoint",
+          urlTemplate: "https://sharkbrandingsolutions.com/?s={search_term_string}",
+        },
+        "query-input": "required name=search_term_string",
+      },
+    },
+    {
       "@type": ["Organization", "LocalBusiness"],
       "@id": "https://sharkbrandingsolutions.com/#organization",
       name: "Shark Branding Solutions",
@@ -69,7 +84,7 @@ const structuredData = {
       logo: "https://sharkbrandingsolutions.com/logo.webp",
       description:
         "AI Business Consulting for Tampa Bay businesses. We help companies get found by AI, run operations with AI employees, and build the trust signals that make ChatGPT, Perplexity, and Google AI Overviews recommend them.",
-      telephone: "+17278556505",
+      telephone: "+17275133955",
       email: "info@sharkbrandingsolutions.com",
       address: {
         "@type": "PostalAddress",
@@ -86,11 +101,10 @@ const structuredData = {
         { "@type": "City", name: "St. Petersburg" },
         { "@type": "City", name: "Tampa" },
       ],
+      foundingDate: "2018",
+      priceRange: "$$",
       founder: {
-        "@type": "Person",
-        name: "Michelle Stanaland",
-        jobTitle: "Founder & CEO",
-        description: "Top 15 Marketing Expert in Tampa Bay — Influence Digest, 2025",
+        "@id": "https://sharkbrandingsolutions.com/#michelle",
       },
       knowsAbout: [
         "AI business consulting",
@@ -144,6 +158,22 @@ const structuredData = {
         "They completely transformed how our business shows up online. We're now showing up on AI search platforms, where before we were basically invisible.",
     },
     {
+      "@type": "Person",
+      "@id": "https://sharkbrandingsolutions.com/#michelle",
+      name: "Michelle Stanaland",
+      jobTitle: "Founder & CEO",
+      description:
+        "Top 15 Marketing Expert in Tampa Bay — Influence Digest, 2025. AI visibility consultant serving Tampa Bay businesses.",
+      url: "https://sharkbrandingsolutions.com/about",
+      sameAs: [
+        "https://www.linkedin.com/company/shark-branding-solutions",
+        "https://influencedigest.com/marketing-expert/top-marketing-experts-in-tampa-in-2025/",
+      ],
+      worksFor: {
+        "@id": "https://sharkbrandingsolutions.com/#organization",
+      },
+    },
+    {
       "@type": "FAQPage",
       "@id": "https://sharkbrandingsolutions.com/#faq",
       mainEntity: [
@@ -179,6 +209,22 @@ const structuredData = {
             text: "No. AI recommendations from ChatGPT, Gemini, and Google AI Overviews are based on trust signals, consistent business data, reviews, and content quality — not paid ads. Our AI Visibility Toolkit targets exactly these organic signals.",
           },
         },
+        {
+          "@type": "Question",
+          name: "What is GEO — Generative Engine Optimization?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Generative Engine Optimization (GEO) is the practice of optimizing a business's content, listings, and trust signals so that AI-powered tools like ChatGPT, Google AI Overviews, Perplexity, and Gemini recommend it in their generated answers. Unlike traditional SEO, which targets ranked blue links, GEO targets the AI answer layer — the responses users now see before they ever click a result.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What types of businesses does Shark Branding Solutions work with?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "We work primarily with local and regional businesses in the Tampa Bay area — including service businesses, real estate professionals, contractors, healthcare providers, and chamber organizations. Our clients are typically owner-operated businesses that want to compete for AI-driven recommendations without depending on paid advertising.",
+          },
+        },
       ],
     },
   ],
@@ -192,6 +238,7 @@ export default function RootLayout({
       <head>
         <meta name="theme-color" content="#ffffff" />
         <link rel="preconnect" href="https://cdn.apigateway.co" />
+        <link rel="preconnect" href="https://cdn.marblism.com" crossOrigin="anonymous" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}

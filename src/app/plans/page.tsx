@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Pricing — AI Visibility Toolkit | Shark Branding Solutions",
+  title: "AI Visibility Toolkit Pricing Tampa Bay | Shark Branding Solutions",
   description:
     "Get found on Google, ChatGPT, and Gemini without paying for ads. Two plans: Self-Guided at $497/mo or Done For You at $2,000/mo. 90-day results guarantee.",
 };
@@ -390,6 +390,11 @@ export default function PlansPage() {
               Talk to the team before you commit →
             </Link>
           </p>
+          <div className="mt-10 flex flex-wrap gap-4 text-[14px] justify-center">
+            <Link href="/services" className="text-[#18b5d8] font-semibold hover:underline">What We Do →</Link>
+            <Link href="/case-studies" className="text-[#18b5d8] font-semibold hover:underline">See Client Results →</Link>
+            <Link href="/free-report" className="text-[#18b5d8] font-semibold hover:underline">Get a Free Visibility Audit →</Link>
+          </div>
         </div>
       </section>
 

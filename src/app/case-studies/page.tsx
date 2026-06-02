@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Case Studies — Shark Branding Solutions",
+  title: "AI Visibility Case Studies Tampa Bay | Shark Branding Solutions",
   description:
-    "Real results from real Tampa Bay businesses. See how Shark Branding Solutions has helped local companies get found, trusted, and chosen by AI.",
+    "Real results from real Tampa Bay businesses. HVAC from #32 to #2, real estate from #4 to #1, Diamond Dogs ranked #1 on ChatGPT. See exactly how AI visibility consulting works.",
 };
 
 const cases = [
@@ -478,6 +478,31 @@ export default function CaseStudiesPage() {
           >
             Get My Free Visibility Audit
           </Link>
+        </div>
+      </section>
+
+      {/* ── FAQ ── */}
+      <section className="bg-white py-20 px-6">
+        <div className="max-w-[720px] mx-auto">
+          <p className="text-[11px] font-semibold text-[#1d1d1f] uppercase tracking-[0.15em] mb-8">Frequently Asked Questions</p>
+          <div className="space-y-8">
+            {[
+              { q: "How long does it take to see results like the HVAC case study?", a: "The HVAC client moved from position #32 to #2 within 30 days. Most clients see measurable visibility movement within 30 to 60 days depending on the starting point and consistency of execution. AI platforms update their recommendation data more frequently than traditional search engines, which is why the timeline is shorter." },
+              { q: "Do these results apply to my industry?", a: "The case studies shown cover HVAC, real estate, smart vending, and chamber of commerce — but the same AI visibility signals apply across all local service industries. HVAC, legal, medical, contractors, restaurants, dental, and any business that depends on local customers finding them online will see the same type of improvement." },
+              { q: "What specifically caused the ranking improvements?", a: "For each client, the work focused on three areas: consistent business information across every platform AI relies on, structured content that AI can extract and cite, and trust signals including reviews and authoritative local references. None of the results came from paid advertising." },
+              { q: "Can I get a case study for my specific industry?", a: "We may have unpublished work in your category depending on your industry. Book a free Visibility Audit and during the call we can share what we have seen work for businesses similar to yours." },
+            ].map(({ q, a }) => (
+              <div key={q} className="border-b border-[#e5e5e5] pb-8">
+                <h3 className="text-[16px] font-semibold text-[#1d1d1f] mb-3">{q}</h3>
+                <p className="text-[15px] text-[#555] leading-relaxed">{a}</p>
+              </div>
+            ))}
+          </div>
+          <div className="mt-12 flex flex-wrap gap-4 text-[14px]">
+            <Link href="/services" className="text-[#18b5d8] font-semibold hover:underline">What We Do →</Link>
+            <Link href="/plans" className="text-[#18b5d8] font-semibold hover:underline">View Plans &amp; Pricing →</Link>
+            <Link href="/free-report" className="text-[#18b5d8] font-semibold hover:underline">Get a Free Visibility Audit →</Link>
+          </div>
         </div>
       </section>
     </>

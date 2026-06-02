@@ -304,7 +304,7 @@ export default function ChamberPage() {
             Book a Free Discovery Call
           </Link>
           <p className="text-[13px] text-[#888] mt-4">
-            (727) 855-6505 &nbsp;&middot;&nbsp; info@sharkbrandingsolutions.com
+            (727) 513-3955 &nbsp;&middot;&nbsp; info@sharkbrandingsolutions.com
           </p>
         </div>
       </section>

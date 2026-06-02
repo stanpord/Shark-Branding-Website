@@ -15,7 +15,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/resources`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.8 },
     { url: `${BASE}/about`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE}/contact`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.6 },
+    { url: `${BASE}/aiemployees`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${BASE}/ai-informations`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
     // Blog posts
+    { url: `${BASE}/resources/blog-end-of-local-seo-ai-visibility`, lastModified: new Date("2026-05-20"), changeFrequency: "yearly", priority: 0.7 },
     { url: `${BASE}/resources/blog-ntbc-ai-ready-partnership`, lastModified: new Date("2026-04-15"), changeFrequency: "yearly", priority: 0.7 },
     { url: `${BASE}/resources/blog-ai-funnel-chatgpt-new-front-door`, lastModified: new Date("2026-04-01"), changeFrequency: "yearly", priority: 0.7 },
     { url: `${BASE}/resources/blog-ai-funnel-chatgpt-gemini-path-to-purchase`, lastModified: new Date("2026-03-15"), changeFrequency: "yearly", priority: 0.7 },
