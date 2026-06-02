@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { Playfair_Display } from "next/font/google";
 
 const playfair = Playfair_Display({
@@ -11,15 +12,21 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "AI Visibility & GEO Resources for Tampa Bay Businesses — Shark Branding Solutions",
+  title: "Resources — Shark Branding Solutions",
   description:
-    "Original guides on AI search, generative engine optimization (GEO), how to appear in ChatGPT and Google AI Overviews, and how Tampa Bay businesses can get found and recommended by AI.",
-  alternates: {
-    canonical: "https://sharkbrandingsolutions.com/resources",
-  },
+    "Guides, insights, and practical advice on AI visibility, local SEO, and marketing for Tampa Bay businesses.",
 };
 
 const posts = [
+  {
+    slug: "blog-aio-aeo-geo-seo-wesley-chapel",
+    category: "GEO",
+    title: "AIO, GEO, and AEO for Wesley Chapel Businesses: What Actually Gets You Customers in 2026",
+    excerpt: "AI Overviews appear on more than half of all Google searches. Here is what AIO, GEO, and AEO actually mean for Wesley Chapel businesses, and why SEO alone no longer closes the gap.",
+    date: "May 26, 2026",
+    readTime: "9 min read",
+    image: "https://images.unsplash.com/photo-1560179707-f14e90ef3623?auto=format&fit=crop&w=900&h=420&q=80",
+  },
   {
     slug: "blog-end-of-local-seo-ai-visibility",
     category: "AI Visibility",
@@ -96,7 +103,7 @@ const posts = [
     slug: "blog-google-reviews-ai-recommendations",
     category: "Strategy",
     title: "The Future Is AI Visibility: Turning Google Reviews Into AI Recommendations",
-    excerpt: "Your Google reviews are no longer just feedback — they're AI visibility signals. Learn how to collect reviews that AI can read, trust, and use to recommend your business.",
+    excerpt: "Your Google reviews are no longer just feedback. They're AI visibility signals. Learn how to collect reviews that AI can read, trust, and use to recommend your business.",
     date: "March 15, 2026",
     readTime: "8 min read",
     image: "https://cdn.marblism.com/y52lgWLfO0y.webp",
@@ -193,11 +200,13 @@ export default function ResourcesPage() {
               </p>
 
               <Link href={`/resources/${lead.slug}`} className="block mb-6 group">
-                <img
+                <Image
                   src={lead.image}
                   alt={lead.title}
+                  width={900}
+                  height={420}
                   className="w-full object-cover group-hover:opacity-95 transition-opacity"
-                  style={{ height: "300px" }}
+                  style={{ height: "300px", width: "100%" }}
                 />
               </Link>
 
@@ -250,13 +259,13 @@ export default function ResourcesPage() {
                   Find Out How AI Sees Your Business Right Now
                 </h4>
                 <p className="text-[13px] text-[#555] leading-relaxed mb-4">
-                  We audit your visibility across AI search, maps, and reviews — and show you exactly what needs fixing.
+                  We audit your visibility across AI search, maps, and reviews, and show you exactly what needs fixing.
                 </p>
                 <Link
                   href="/free-report"
                   className="inline-block text-[11px] font-bold uppercase tracking-[0.15em] bg-black text-white px-5 py-2.5 hover:bg-[#18b5d8] transition-colors"
                 >
-                  Get the Free Report &rarr;
+                  Get My Free AI Audit &rarr;
                 </Link>
               </div>
             </div>
@@ -289,12 +298,14 @@ export default function ResourcesPage() {
                 className={`flex-1 pt-6 ${i > 0 ? "pl-7 border-l border-black/15" : ""} ${i < below.length - 1 ? "pr-7" : ""}`}
               >
                 <Link href={`/resources/${post.slug}`} className="block mb-4 group">
-                  <img
-                    src={post.image}
-                    alt={post.title}
-                    className="w-full object-cover group-hover:opacity-90 transition-opacity"
-                    style={{ height: "130px" }}
-                  />
+                  <Image
+                  src={post.image}
+                  alt={post.title}
+                  width={400}
+                  height={130}
+                  className="w-full object-cover group-hover:opacity-90 transition-opacity"
+                  style={{ height: "130px", width: "100%" }}
+                />
                 </Link>
                 <span className="inline-block text-[9px] font-bold uppercase tracking-[0.22em] text-[#18b5d8] mb-2">
                   {post.category}
@@ -320,12 +331,14 @@ export default function ResourcesPage() {
             {below.map((post) => (
               <div key={post.slug}>
                 <Link href={`/resources/${post.slug}`} className="block mb-4 group">
-                  <img
-                    src={post.image}
-                    alt={post.title}
-                    className="w-full object-cover group-hover:opacity-90 transition-opacity"
-                    style={{ height: "160px" }}
-                  />
+                  <Image
+                  src={post.image}
+                  alt={post.title}
+                  width={400}
+                  height={160}
+                  className="w-full object-cover group-hover:opacity-90 transition-opacity"
+                  style={{ height: "160px", width: "100%" }}
+                />
                 </Link>
                 <span className="inline-block text-[9px] font-bold uppercase tracking-[0.22em] text-[#18b5d8] mb-2">
                   {post.category}
@@ -360,12 +373,14 @@ export default function ResourcesPage() {
             className="group flex flex-col md:flex-row gap-0 border-2 border-black hover:border-[#18b5d8] transition-colors duration-150 bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2"
           >
             <div className="md:w-[42%] shrink-0">
-              <img
-                src="https://cdn.marblism.com/Nco3hsiA150.webp"
-                alt="Shark Branding Solutions Partners with North Tampa Bay Chamber"
-                className="w-full h-full object-cover group-hover:opacity-95 transition-opacity"
-                style={{ minHeight: "220px", maxHeight: "340px" }}
-              />
+              <Image
+              src="https://cdn.marblism.com/Nco3hsiA150.webp"
+              alt="Shark Branding Solutions Partners with North Tampa Bay Chamber"
+              width={600}
+              height={340}
+              className="w-full h-full object-cover group-hover:opacity-95 transition-opacity"
+              style={{ minHeight: "220px", maxHeight: "340px", width: "100%" }}
+            />
             </div>
             <div className="flex flex-col justify-center p-8 md:p-10">
               <span className="inline-block text-[9px] font-bold uppercase tracking-[0.25em] border border-black text-black px-2 py-[3px] mb-4 w-fit">
@@ -378,7 +393,7 @@ export default function ResourcesPage() {
                 AI-Ready: Shark Branding Solutions Partners with North Tampa Bay Chamber to Future-Proof Local Business
               </h2>
               <p className="text-[15px] text-[#555] leading-relaxed mb-5">
-                Shark Branding Solutions partners with the North Tampa Bay Chamber to help every local business get Found, Trusted, and Chosen by AI. NTBC members receive a free Business Visibility Report — no strings attached.
+                Shark Branding Solutions partners with the North Tampa Bay Chamber to help every local business get Found, Trusted, and Chosen by AI. NTBC members receive a free Business Visibility Report, no strings attached.
               </p>
               <div className="text-[11px] text-[#999] uppercase tracking-[0.1em] font-semibold">
                 By Shark Branding Solutions &nbsp;&middot;&nbsp; April 15, 2026 &nbsp;&middot;&nbsp; 10 min read
@@ -402,7 +417,7 @@ export default function ResourcesPage() {
               Stay ahead of the AI shift.
             </h2>
             <p className="text-[16px] text-white/50 leading-relaxed mb-8 max-w-[420px] mx-auto">
-              Practical intelligence on AI visibility and marketing automation — written for Tampa Bay business owners, not tech teams.
+              Practical intelligence on AI visibility and marketing automation, written for Tampa Bay business owners, not tech teams.
             </p>
             <Link
               href="/contact"

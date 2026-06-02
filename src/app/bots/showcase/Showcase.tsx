@@ -311,6 +311,88 @@ export default function Showcase() {
         </div>
       </div>
 
+      {/* ── CAPABILITIES ─────────────────────────────────────────────────── */}
+      <section className="bg-[#0a0a0a] py-24 px-6">
+        <div className="max-w-5xl mx-auto">
+          <p className="text-[11px] font-bold tracking-[1.5px] uppercase text-[#18b5d8] mb-3">What they do</p>
+          <h2 className="text-[36px] font-bold text-white leading-tight tracking-tight mb-4">
+            One team. Every channel.
+          </h2>
+          <p className="text-white/40 text-[15px] mb-14 max-w-lg leading-relaxed">
+            Each AI employee is purpose-trained for a specific role and passes work to the next one automatically.
+          </p>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {[
+              {
+                icon: '💬',
+                name: 'Gemma',
+                title: 'Chat Receptionist',
+                color: '#18b5d8',
+                desc: 'Answers every inbound chat 24/7, qualifies the visitor, and routes hot leads directly to your calendar — before you check your phone.',
+              },
+              {
+                icon: '✍️',
+                name: 'Blogger',
+                title: 'Content Writer',
+                color: '#4FD1A0',
+                desc: 'Produces SEO-ready blog posts, social captions, and email copy in your brand voice. Consistent content without the weekly scramble.',
+              },
+              {
+                icon: '⭐',
+                name: 'Reputation Specialist',
+                title: 'Review Manager',
+                color: '#F9DB79',
+                desc: 'Monitors your reviews across Google, Yelp, and Facebook. Drafts replies, flags negatives, and builds the trust signals AI search looks for.',
+              },
+              {
+                icon: '🎯',
+                name: 'Lead Qualifier',
+                title: 'Sales Bot',
+                color: '#18b5d8',
+                desc: 'Engages every inbound lead in real time, scores fit against your ICP, and books only the qualified ones — saving your team hours every week.',
+              },
+              {
+                icon: '📱',
+                name: 'Social Media Manager',
+                title: 'Content Publisher',
+                color: '#F7555F',
+                desc: 'Schedules and publishes across Instagram, Facebook, and LinkedIn. Keeps your brand visible and consistent without manual posting.',
+              },
+              {
+                icon: '🔄',
+                name: 'Follow-Up Specialist',
+                title: 'Coming Soon',
+                color: '#a78bfa',
+                desc: 'Runs multi-touch follow-up sequences across email, SMS, and voice. Re-engages cold leads automatically so your pipeline never goes quiet.',
+                soon: true,
+              },
+            ].map(card => (
+              <div
+                key={card.name}
+                className="rounded-2xl border border-white/5 bg-white/[0.02] p-6 hover:border-white/10 hover:bg-white/[0.04] transition-all duration-200"
+                style={card.soon ? { opacity: 0.55 } : {}}
+              >
+                <div
+                  className="w-10 h-10 rounded-xl flex items-center justify-center text-[18px] mb-4"
+                  style={{ background: `${card.color}18`, border: `1px solid ${card.color}30` }}
+                >
+                  {card.icon}
+                </div>
+                <p className="text-[13px] font-bold mb-0.5" style={{ color: card.color }}>{card.name}</p>
+                <p className="text-white font-semibold text-[15px] mb-3">{card.title}</p>
+                <p className="text-white/40 text-[13px] leading-relaxed">{card.desc}</p>
+                {card.soon && (
+                  <span className="inline-block mt-3 text-[10px] font-bold uppercase tracking-wide px-2 py-1 rounded bg-white/5 text-white/30">
+                    Coming Soon
+                  </span>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ── HOW IT WORKS ─────────────────────────────────────────────────── */}
       <section className="bg-[#0d0d0d] border-t border-white/5 py-24 px-6">
         <div className="max-w-5xl mx-auto">

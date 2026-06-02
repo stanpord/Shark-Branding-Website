@@ -21,7 +21,7 @@ export default async function SecretPage({
         <div className="w-full max-w-[380px]">
           <div className="text-center mb-10">
             <p className="text-[13px] font-semibold tracking-[0.2em] uppercase text-[#18b5d8] mb-3">
-              Shark AI — Internal Tool
+              Shark AI: Internal Tool
             </p>
             <h1 className="text-[28px] font-bold text-white">SEO Audit</h1>
           </div>
@@ -59,7 +59,7 @@ export default async function SecretPage({
         <div className="flex items-start justify-between mb-12 flex-wrap gap-4">
           <div>
             <p className="text-[13px] font-semibold tracking-[0.2em] uppercase text-[#18b5d8] mb-2">
-              Shark AI — Internal Tool
+              Shark AI: Internal Tool
             </p>
             <h1 className="text-[36px] font-bold text-white leading-tight">
               Google Ranking Systems Audit

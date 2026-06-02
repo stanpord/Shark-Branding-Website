@@ -2,16 +2,16 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "AI Marketing Employees Tampa Bay | Shark Branding Solutions",
+  title: "AI Marketing Bots — Shark AI Solutions",
   description:
-    "AI marketing employees for Tampa Bay businesses. CMO strategy, reputation management, content automation, and AI visibility — running 24/7 without adding staff.",
+    "AI-powered marketing bots for Tampa Bay businesses. CMO bots, content automation, and AI visibility tools that grow your brand around the clock.",
 };
 
 const bots = [
   {
-    n: "01", id: "cmo-bot", eyebrow: "Strategic Marketing", dark: true, href: "/contact", cta: "Get a Custom Quote",
-    title: "AI CMO",
-    description: "Get the strategic marketing firepower of a Chief Marketing Officer without the executive salary. Your AI CMO analyzes your market position, identifies growth opportunities, builds campaign briefs, and keeps your marketing aligned with business goals — every single week.",
+    n: "01", id: "cmo-bot", eyebrow: "Strategic Marketing", dark: true,
+    title: "CMO Bot",
+    description: "Get the strategic marketing firepower of a Chief Marketing Officer without the executive salary. The CMO Bot analyzes your market position, identifies growth opportunities, builds campaign briefs, and keeps your marketing aligned with business goals, every single week.",
     bullets: [
       "Weekly market and competitor analysis",
       "Campaign strategy and messaging briefs",
@@ -19,38 +19,35 @@ const bots = [
       "Brand voice consistency across all content",
       "Monthly marketing performance reviews",
     ],
-    bestFor: "Growing businesses spending money on marketing without a clear strategy. Replaces the need for a $120K/yr CMO.",
   },
   {
-    n: "02", id: "content-bot", eyebrow: "Content & AI Visibility", dark: false, href: "/plans", cta: "See Plans & Pricing",
+    n: "02", id: "content-bot", eyebrow: "Content & AI Visibility", dark: false,
     title: "AI Visibility Toolkit",
-    description: "Your customers are asking AI for recommendations before they ever visit a website. The AI Visibility Toolkit optimizes your business to appear — and appear credibly — when ChatGPT, Perplexity, and Google AI Overviews answer questions your buyers are asking right now.",
+    description: "Your customers are asking AI for recommendations before they ever visit a website. The AI Visibility Toolkit optimizes your business to appear, and appear credibly, when ChatGPT, Perplexity, and Google AI Overviews answer questions your buyers are asking right now.",
     bullets: [
       "Full audit of your AI and search presence",
       "Entity and citation optimization for AI platforms",
       "Review and trust signal strategy",
       "Listing accuracy and consistency across directories",
-      "Self-directed ($497/mo) or fully managed ($2,000/mo)",
+      "Flexible engagement levels to match your needs",
     ],
-    bestFor: "Any local service business that relies on customers finding them online — HVAC, legal, medical, contractors, restaurants, salons.",
   },
   {
-    n: "03", id: "reputation-ai", eyebrow: "Reputation & Reviews", dark: true, href: "/contact", cta: "Get a Custom Quote",
+    n: "03", id: "reputation-ai", eyebrow: "Reputation & Reviews", dark: true,
     title: "Reputation & Review AI",
-    description: "Your online reputation is your most powerful sales tool — and most businesses leave it completely unmanaged. Our Reputation & Review AI monitors every platform, requests reviews at the right moment, responds to feedback automatically in your brand voice, and flags issues before they escalate.",
+    description: "Your online reputation is your most powerful sales tool, and most businesses leave it completely unmanaged. Our Reputation & Review AI monitors every platform, requests reviews at the right moment, responds to feedback automatically in your brand voice, and flags issues before they escalate.",
     bullets: [
       "Automated review requests triggered by job completion",
-      "AI-generated responses in your brand voice — reviewed before posting",
+      "AI-generated responses in your brand voice, reviewed before posting",
       "Multi-platform monitoring: Google, Yelp, Facebook, and more",
       "Negative review alerts with suggested response drafts",
       "Monthly reputation score reporting and benchmarking",
     ],
-    bestFor: "Restaurants, contractors, home services, medical, legal, salons — any business where reviews are a dealbreaker.",
   },
   {
-    n: "04", id: "marketing-bots", eyebrow: "Custom Automation", dark: false, href: "/contact", cta: "Get a Custom Quote",
-    title: "Custom Marketing AI",
-    description: "From social media scheduling to email nurture sequences to lead scoring — we build marketing AI employees tailored to your exact workflow. If your team is repeating a task more than twice a week, we can automate it.",
+    n: "04", id: "marketing-bots", eyebrow: "Custom Automation", dark: false,
+    title: "Custom Marketing Bots",
+    description: "From social media scheduling to email nurture sequences to lead scoring, we build marketing bots tailored to your exact workflow. If your team is repeating a task more than twice, we can automate it.",
     bullets: [
       "Social content generation and scheduling",
       "Email nurture sequences with AI personalization",
@@ -58,17 +55,7 @@ const bots = [
       "Reporting dashboards that update themselves",
       "Integrates with your existing marketing stack",
     ],
-    bestFor: "Businesses manually posting, emailing, and updating reports every week. Reclaim 10–20 hours/month immediately.",
   },
-];
-
-const industries = [
-  { name: "HVAC & Home Services", result: "Position #32 → #2 in 30 days" },
-  { name: "Medical & Dental", result: "More AI-referred patients" },
-  { name: "Legal & Professional", result: "Cited in AI answer results" },
-  { name: "Restaurants & Retail", result: "Higher review velocity" },
-  { name: "Real Estate", result: "Consistent AI visibility" },
-  { name: "Contractors", result: "Leads without paid ads" },
 ];
 
 export default function MarketingPage() {
@@ -77,34 +64,18 @@ export default function MarketingPage() {
       {/* ── Hero ── */}
       <section className="bg-white min-h-[50vh] md:min-h-[90vh] flex flex-col items-center justify-center text-center px-6 pt-16 md:pt-24 pb-12 md:pb-20">
         <div className="max-w-[720px] mx-auto">
-          <p className="text-[#18b5d8] text-[13px] font-semibold tracking-[0.2em] uppercase mb-8">
-            AI Marketing Employees &nbsp;&middot;&nbsp; Shark AI Solutions
+          <p className="text-[#18b5d8] text-[13px] font-semibold tracking-[0.2em] uppercase mb-3">
+            Shark AI Solutions: Marketing
           </p>
+          <p className="text-[13px] text-[#7a7a7a] mb-8">A Shark Branding Solutions company</p>
           <h1 className="display-hero text-[#0a0a0a] mb-6" style={{ textWrap: "balance" }}>
             AI that markets your
             <br />
             <span className="text-[#18b5d8]">business 24/7.</span>
           </h1>
-          <p className="lead-airy text-[#333333] max-w-[520px] mx-auto mb-10" style={{ textWrap: "balance" }}>
-            CMO strategy, AI visibility, reputation management, and content automation — so your brand keeps growing even when you&rsquo;re not working.
+          <p className="lead-airy text-[#333333] max-w-[520px] mx-auto mb-14" style={{ textWrap: "balance" }}>
+            CMO strategy, AI visibility, and content automation, so your brand keeps growing even when you&rsquo;re not working.
           </p>
-
-          {/* Proof strip */}
-          <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 mb-10">
-            {[
-              "HVAC: #32 → #2 in 30 days",
-              "No paid ads required",
-              "Live in 30 days",
-            ].map((item) => (
-              <div key={item} className="flex items-center gap-2 text-[14px] font-semibold text-[#333333]">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                  <polyline points="20 6 9 17 4 12" stroke="#18b5d8" strokeWidth="2.5" strokeLinecap="round" />
-                </svg>
-                {item}
-              </div>
-            ))}
-          </div>
-
           <div className="flex flex-wrap items-center justify-center gap-3">
             {bots.map((b) => (
               <a
@@ -136,12 +107,9 @@ export default function MarketingPage() {
               <h2 className={`display-lg mb-6 ${b.dark ? "text-white" : "text-[#0a0a0a]"}`} style={{ textWrap: "balance" }}>
                 {b.title}
               </h2>
-              <p className={`body-copy leading-relaxed mb-6 ${b.dark ? "text-white/60" : "text-[#333333]"}`}>
+              <p className={`body-copy leading-relaxed ${b.dark ? "text-white/60" : "text-[#333333]"}`}>
                 {b.description}
               </p>
-              <div className={`rounded-[12px] px-4 py-3 text-[13px] leading-relaxed ${b.dark ? "bg-white/5 border border-white/10 text-white/50" : "bg-[#f5f5f7] border border-[#e8e8ed] text-[#7a7a7a]"}`}>
-                <span className={`font-semibold ${b.dark ? "text-white/70" : "text-[#333]"}`}>Best for: </span>{b.bestFor}
-              </div>
             </div>
             <div className="lg:pt-[72px]">
               <ul className="space-y-4 mb-10">
@@ -153,63 +121,22 @@ export default function MarketingPage() {
                 ))}
               </ul>
               <Link
-                href={b.href}
+                href="/contact"
                 className="btn-press inline-block bg-[#18b5d8] text-white text-[15px] font-semibold rounded-full px-7 py-3.5 hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 [touch-action:manipulation]"
               >
-                {b.cta}
+                Learn More
               </Link>
             </div>
           </div>
         </section>
       ))}
 
-      {/* ── Industries ── */}
-      <section className="bg-[#f5f5f7] py-12 md:py-20 px-6">
-        <div className="max-w-[980px] mx-auto">
-          <div className="text-center mb-12">
-            <p className="text-[13px] font-semibold tracking-[0.2em] uppercase text-[#18b5d8] mb-4">Who We Work With</p>
-            <h2 className="display-lg text-[#0a0a0a]" style={{ textWrap: "balance" }}>
-              Built for Tampa Bay local businesses.
-            </h2>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-            {industries.map((ind) => (
-              <div key={ind.name} className="bg-white rounded-[16px] px-6 py-5 border border-[#e8e8ed]">
-                <p className="text-[16px] font-semibold text-[#0a0a0a] mb-1">{ind.name}</p>
-                <p className="text-[13px] text-[#18b5d8] font-medium">{ind.result}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── Urgency / Founding clients ── */}
-      <section className="bg-[#07141a] py-16 px-6">
-        <div className="max-w-[720px] mx-auto text-center">
-          <span className="inline-block bg-[#18b5d8]/10 border border-[#18b5d8]/30 text-[#18b5d8] text-[12px] font-bold tracking-[0.15em] uppercase px-4 py-1.5 rounded-full mb-6">
-            Limited Availability
-          </span>
-          <h2 className="display-lg text-white mb-4" style={{ textWrap: "balance" }}>
-            Founding client spots — price locked, no setup fee.
-          </h2>
-          <p className="lead-airy text-white/50 mb-8" style={{ textWrap: "balance" }}>
-            We&rsquo;re currently onboarding a limited number of founding clients. Price is locked at the current rate for as long as you stay — no setup fee, live within 30 days.
-          </p>
-          <Link
-            href="/contact"
-            className="btn-press inline-block bg-[#18b5d8] text-white text-[17px] font-semibold rounded-full px-[32px] py-[15px] hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 focus-visible:ring-offset-[#07141a] [touch-action:manipulation]"
-          >
-            Claim a Founding Spot
-          </Link>
-        </div>
-      </section>
-
       {/* ── CTA ── */}
       <section className="bg-[#0a0a0a] py-16 md:py-28 px-6 text-center">
         <div className="max-w-[560px] mx-auto">
           <p className="text-[13px] font-semibold tracking-[0.2em] uppercase text-[#18b5d8] mb-6">See how you stack up</p>
           <h2 className="display-lg text-white mb-6" style={{ textWrap: "balance" }}>
-            Start with the free Visibility Audit.
+            Start with the free visibility report.
           </h2>
           <p className="lead-airy text-white/50 mb-12" style={{ textWrap: "balance" }}>
             We&rsquo;ll show you exactly where your marketing stands across search, maps, and AI platforms.
@@ -219,7 +146,7 @@ export default function MarketingPage() {
               href="/free-report"
               className="btn-press inline-block bg-[#18b5d8] text-white text-[17px] font-semibold rounded-full px-[32px] py-[15px] hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0a0a] [touch-action:manipulation]"
             >
-              Get My Free Visibility Audit
+              Get My Free AI Audit
             </Link>
             <Link
               href="/contact"
@@ -227,31 +154,6 @@ export default function MarketingPage() {
             >
               Talk to Us
             </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* ── FAQ ── */}
-      <section className="bg-white py-12 md:py-20 px-6">
-        <div className="max-w-[720px] mx-auto">
-          <p className="text-[11px] font-semibold text-[#1d1d1f] uppercase tracking-[0.15em] mb-8">Frequently Asked Questions</p>
-          <div className="space-y-8">
-            {[
-              { q: "What is an AI marketing employee?", a: "An AI marketing employee is a custom-built AI system that handles a specific marketing function on an ongoing basis — content creation, review management, lead scoring, campaign analysis, or reputation monitoring. Unlike hiring a marketing coordinator, these employees work 24/7, never miss follow-ups, and scale without adding payroll." },
-              { q: "How is this different from hiring a marketing agency?", a: "Traditional agencies bill for hours and usually focus on one channel. Our AI marketing employees run continuously across all your channels simultaneously and are configured specifically to your business. The AI Visibility Toolkit, for example, monitors and updates your presence across Google, AI platforms, and local directories every month — something no agency hourly rate covers at that frequency." },
-              { q: "What results can I realistically expect?", a: "One HVAC client moved from position #32 to #2 on Google within 30 days using the AI Visibility Toolkit. A real estate client moved from #4 to #1 for their primary keyword. Diamond Dogs ranked #1 on ChatGPT, Perplexity, and Google AI Overviews. The specific result depends on your starting point, your market, and the product deployed." },
-              { q: "What Tampa Bay industries do you serve?", a: "Our AI marketing employees have been deployed for home services, real estate, medical and dental, legal and professional services, restaurants and hospitality, and contractors throughout Wesley Chapel, Lutz, Land O' Lakes, St. Petersburg, and Tampa. If your business relies on customers finding you locally, these tools apply to you." },
-            ].map(({ q, a }) => (
-              <div key={q} className="border-b border-[#e5e5e5] pb-8">
-                <h3 className="text-[16px] font-semibold text-[#1d1d1f] mb-3">{q}</h3>
-                <p className="text-[15px] text-[#555] leading-relaxed">{a}</p>
-              </div>
-            ))}
-          </div>
-          <div className="mt-12 flex flex-wrap gap-4 text-[14px]">
-            <Link href="/operations" className="text-[#18b5d8] font-semibold hover:underline">AI Operations Employees →</Link>
-            <Link href="/case-studies" className="text-[#18b5d8] font-semibold hover:underline">See Client Results →</Link>
-            <Link href="/free-report" className="text-[#18b5d8] font-semibold hover:underline">Get a Free Visibility Audit →</Link>
           </div>
         </div>
       </section>

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 interface RelatedPost {
   href: string;
@@ -17,11 +18,6 @@ interface BlogShellProps {
   relatedPosts?: RelatedPost[];
 }
 
-function toIsoDate(dateStr: string): string {
-  const d = new Date(dateStr);
-  return isNaN(d.getTime()) ? new Date().toISOString().split("T")[0] : d.toISOString().split("T")[0];
-}
-
 export default function BlogShell({
   category,
   title,
@@ -32,32 +28,8 @@ export default function BlogShell({
   children,
   relatedPosts,
 }: BlogShellProps) {
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    headline: title,
-    image: heroImage,
-    datePublished: toIsoDate(date),
-    author: {
-      "@type": "Person",
-      "@id": "https://sharkbrandingsolutions.com/#michelle",
-      name: "Michelle Stanaland",
-      url: "https://sharkbrandingsolutions.com/about",
-    },
-    publisher: {
-      "@id": "https://sharkbrandingsolutions.com/#organization",
-    },
-    mainEntityOfPage: {
-      "@type": "WebPage",
-    },
-  };
-
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-      />
       {/* Blog hero */}
       <section className="bg-[#07141a] pt-24 pb-16 px-6 text-center">
         <div className="max-w-[760px] mx-auto">
@@ -68,7 +40,7 @@ export default function BlogShell({
             {title}
           </h1>
           <p className="text-[14px] text-[#7a7a7a]">
-            By Michelle Stanaland&nbsp;&middot;&nbsp;{date}&nbsp;&middot;&nbsp;{readTime}
+            {date}&nbsp;&middot;&nbsp;{readTime}
           </p>
         </div>
       </section>
@@ -76,16 +48,13 @@ export default function BlogShell({
       {/* Article body */}
       <section className="bg-white py-16 px-6">
         <div className="max-w-[720px] mx-auto">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
+          <Image
             src={heroImage}
             alt={heroAlt}
-            width={720}
+            width={1200}
             height={480}
-            fetchPriority="high"
-            decoding="async"
             className="w-full rounded-[18px] mb-12 object-cover"
-            style={{ aspectRatio: "720/480" }}
+            style={{ width: "100%", height: "auto", maxHeight: "480px" }}
           />
           <div className="article-prose">{children}</div>
         </div>
@@ -120,7 +89,7 @@ export default function BlogShell({
           </h2>
           <p className="lead-airy text-black/65 mb-10">
             Get a free visibility report and see exactly where your business
-            stands across AI search, local search, and digital authority&nbsp;&mdash; no
+            stands across AI search, local search, and digital authority, with no
             commitment required.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
@@ -128,7 +97,7 @@ export default function BlogShell({
               href="/free-report"
               className="btn-press inline-block bg-black text-white text-[17px] font-semibold rounded-full px-[22px] py-[11px] hover:bg-white hover:text-black motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:ring-offset-[#18b5d8] [touch-action:manipulation]"
             >
-              Get the Free Report
+              Get My Free AI Audit
             </Link>
             <Link
               href="/contact"

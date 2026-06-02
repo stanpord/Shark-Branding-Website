@@ -23,7 +23,7 @@ export default async function BotAdvisorPage({
         <div className="w-full max-w-[380px]">
           <div className="text-center mb-10">
             <p className="text-[13px] font-semibold tracking-[0.2em] uppercase text-[#18b5d8] mb-3">
-              Shark AI — Internal Tool
+              Shark AI: Internal Tool
             </p>
             <h1 className="text-[28px] font-bold text-white">Bot Advisor</h1>
             <p className="text-white/40 text-[14px] mt-2">Enter your password to continue.</p>

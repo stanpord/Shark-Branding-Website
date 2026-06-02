@@ -122,6 +122,9 @@ export default function SalesAssistant() {
         getCoaching(transcriptRef.current)
       }, 1500)
     }
+    return () => {
+      if (autoCoachTimerRef.current) clearTimeout(autoCoachTimerRef.current)
+    }
   }, [newLinesSinceCoach, autoCoach, listening, getCoaching])
 
   const startListening = useCallback(() => {
@@ -231,7 +234,7 @@ export default function SalesAssistant() {
           </span>
         </div>
         <p className="text-[11px] text-white/20 tracking-wide">
-          Only visible on your screen — do not share this tab
+          Only visible on your screen. Do not share this tab
         </p>
       </div>
 
@@ -409,7 +412,7 @@ export default function SalesAssistant() {
               &ldquo;Does the math work for your business?&rdquo;
             </p>
             <p className="text-white/20 text-[10px] mt-1.5 leading-relaxed">
-              If hesitant: &ldquo;What specifically are you weighing — budget, timing, or the deliverable?&rdquo;
+              If hesitant: &ldquo;What specifically are you weighing: budget, timing, or the deliverable?&rdquo;
             </p>
           </div>
         </div>

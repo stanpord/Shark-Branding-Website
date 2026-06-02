@@ -1,10 +1,25 @@
 "use client";
 
 import Script from "next/script";
+import { useState, useEffect } from "react";
 
 const WIDGET_ID = "b9dd1fd7-88ec-11f0-91f4-3228900e0384";
 
 export default function ChatWidget() {
+  const [ready, setReady] = useState(false);
+
+  useEffect(() => {
+    const load = () => setReady(true);
+    window.addEventListener("scroll", load, { once: true, passive: true });
+    window.addEventListener("pointerdown", load, { once: true });
+    return () => {
+      window.removeEventListener("scroll", load);
+      window.removeEventListener("pointerdown", load);
+    };
+  }, []);
+
+  if (!ready) return null;
+
   function handleLoad() {
     try {
       // @ts-expect-error — Vendasta webchatAPI injected by SDK

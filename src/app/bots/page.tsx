@@ -12,7 +12,7 @@ const TOOLS = [
   {
     href: '/bots/advisor',
     label: 'AI Advisor',
-    description: 'Enter a prospect and get a prioritized pitch plan — right offer, right angle, right price.',
+    description: 'Enter a prospect and get a prioritized pitch plan: right offer, right angle, right price.',
     tag: 'Strategy',
     tagColor: 'text-[#4FD1A0] bg-[#4FD1A0]/10',
     icon: '🧠',
@@ -36,7 +36,7 @@ const TOOLS = [
   {
     href: '/bots/showcase',
     label: 'AI Employee Showcase',
-    description: 'Screen-share this during demos. 3D carousel of every AI employee — show prospects exactly what they\'re getting.',
+    description: 'Screen-share this during demos. 3D carousel of every AI employee, showing prospects exactly what they\'re getting.',
     tag: 'Demo',
     tagColor: 'text-[#F7555F] bg-[#F7555F]/10',
     icon: '🤖',
@@ -57,7 +57,7 @@ export default async function BotsPage({
         <div className="w-full max-w-[380px]">
           <div className="text-center mb-10">
             <p className="text-[13px] font-semibold tracking-[0.2em] uppercase text-[#18b5d8] mb-3">
-              Shark AI — Internal
+              Shark AI: Internal
             </p>
             <h1 className="text-[28px] font-bold text-white">AI Tools</h1>
             <p className="text-white/40 text-[14px] mt-2">Enter your password to continue.</p>
@@ -96,7 +96,7 @@ export default async function BotsPage({
         <div className="flex items-start justify-between mb-12 flex-wrap gap-4">
           <div>
             <p className="text-[13px] font-semibold tracking-[0.2em] uppercase text-[#18b5d8] mb-2">
-              Shark AI — Internal
+              Shark AI: Internal
             </p>
             <h1 className="text-[36px] font-bold text-white leading-tight">AI Tools</h1>
             <p className="text-white/35 text-[15px] mt-2">Everything you need to close more deals.</p>

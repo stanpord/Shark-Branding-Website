@@ -7,9 +7,8 @@ import { useState } from "react";
 const links = [
   { href: "/", label: "Home" },
   { href: "/services", label: "Services" },
-  { href: "/operations", label: "Operations" },
   { href: "/marketing", label: "Marketing" },
-  { href: "/aiemployees", label: "AI Employees" },
+  { href: "/bots/showcase", label: "AI Employees" },
   { href: "/case-studies", label: "Case Studies" },
   { href: "/resources", label: "Resources" },
   { href: "/about", label: "About" },
@@ -58,7 +57,7 @@ export default function Nav() {
             href="/free-report"
             className="btn-press bg-[#18b5d8] text-white text-[12px] font-semibold rounded-full px-4 py-1.5 hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 [touch-action:manipulation]"
           >
-            Free Visibility Audit
+            Get My Free AI Audit
           </Link>
         </div>
 
@@ -95,7 +94,7 @@ export default function Nav() {
             onClick={() => setOpen(false)}
             className="btn-press self-start bg-[#18b5d8] text-white text-[15px] font-semibold rounded-full px-5 py-3 hover:bg-[#1ec8ee] motion-safe:transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 [touch-action:manipulation]"
           >
-            Free Visibility Audit
+            Get My Free AI Audit
           </Link>
         </div>
       )}
