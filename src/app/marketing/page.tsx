@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "AI Marketing Employees — Shark Branding Solutions",
+  title: "AI Marketing Employees Tampa Bay | Shark Branding Solutions",
   description:
     "AI marketing employees for Tampa Bay businesses. CMO strategy, reputation management, content automation, and AI visibility — running 24/7 without adding staff.",
 };
@@ -75,7 +75,7 @@ export default function MarketingPage() {
   return (
     <>
       {/* ── Hero ── */}
-      <section className="bg-white min-h-[90vh] flex flex-col items-center justify-center text-center px-6 pt-24 pb-20">
+      <section className="bg-white min-h-[50vh] md:min-h-[90vh] flex flex-col items-center justify-center text-center px-6 pt-16 md:pt-24 pb-12 md:pb-20">
         <div className="max-w-[720px] mx-auto">
           <p className="text-[#18b5d8] text-[13px] font-semibold tracking-[0.2em] uppercase mb-8">
             AI Marketing Employees &nbsp;&middot;&nbsp; Shark AI Solutions
@@ -124,7 +124,7 @@ export default function MarketingPage() {
         <section
           key={b.id}
           id={b.id}
-          className={b.dark ? "bg-[#0a0a0a] px-6 py-24 border-t border-white/5" : "bg-white px-6 py-24 border-t border-[#e8e8ed]"}
+          className={b.dark ? "bg-[#0a0a0a] px-6 py-14 md:py-24 border-t border-white/5" : "bg-white px-6 py-14 md:py-24 border-t border-[#e8e8ed]"}
         >
           <div className="max-w-[980px] mx-auto grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-16 items-start">
             <div>
@@ -164,7 +164,7 @@ export default function MarketingPage() {
       ))}
 
       {/* ── Industries ── */}
-      <section className="bg-[#f5f5f7] py-20 px-6">
+      <section className="bg-[#f5f5f7] py-12 md:py-20 px-6">
         <div className="max-w-[980px] mx-auto">
           <div className="text-center mb-12">
             <p className="text-[13px] font-semibold tracking-[0.2em] uppercase text-[#18b5d8] mb-4">Who We Work With</p>
@@ -205,7 +205,7 @@ export default function MarketingPage() {
       </section>
 
       {/* ── CTA ── */}
-      <section className="bg-[#0a0a0a] py-28 px-6 text-center">
+      <section className="bg-[#0a0a0a] py-16 md:py-28 px-6 text-center">
         <div className="max-w-[560px] mx-auto">
           <p className="text-[13px] font-semibold tracking-[0.2em] uppercase text-[#18b5d8] mb-6">See how you stack up</p>
           <h2 className="display-lg text-white mb-6" style={{ textWrap: "balance" }}>
@@ -227,6 +227,31 @@ export default function MarketingPage() {
             >
               Talk to Us
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ── FAQ ── */}
+      <section className="bg-white py-12 md:py-20 px-6">
+        <div className="max-w-[720px] mx-auto">
+          <p className="text-[11px] font-semibold text-[#1d1d1f] uppercase tracking-[0.15em] mb-8">Frequently Asked Questions</p>
+          <div className="space-y-8">
+            {[
+              { q: "What is an AI marketing employee?", a: "An AI marketing employee is a custom-built AI system that handles a specific marketing function on an ongoing basis — content creation, review management, lead scoring, campaign analysis, or reputation monitoring. Unlike hiring a marketing coordinator, these employees work 24/7, never miss follow-ups, and scale without adding payroll." },
+              { q: "How is this different from hiring a marketing agency?", a: "Traditional agencies bill for hours and usually focus on one channel. Our AI marketing employees run continuously across all your channels simultaneously and are configured specifically to your business. The AI Visibility Toolkit, for example, monitors and updates your presence across Google, AI platforms, and local directories every month — something no agency hourly rate covers at that frequency." },
+              { q: "What results can I realistically expect?", a: "One HVAC client moved from position #32 to #2 on Google within 30 days using the AI Visibility Toolkit. A real estate client moved from #4 to #1 for their primary keyword. Diamond Dogs ranked #1 on ChatGPT, Perplexity, and Google AI Overviews. The specific result depends on your starting point, your market, and the product deployed." },
+              { q: "What Tampa Bay industries do you serve?", a: "Our AI marketing employees have been deployed for home services, real estate, medical and dental, legal and professional services, restaurants and hospitality, and contractors throughout Wesley Chapel, Lutz, Land O' Lakes, St. Petersburg, and Tampa. If your business relies on customers finding you locally, these tools apply to you." },
+            ].map(({ q, a }) => (
+              <div key={q} className="border-b border-[#e5e5e5] pb-8">
+                <h3 className="text-[16px] font-semibold text-[#1d1d1f] mb-3">{q}</h3>
+                <p className="text-[15px] text-[#555] leading-relaxed">{a}</p>
+              </div>
+            ))}
+          </div>
+          <div className="mt-12 flex flex-wrap gap-4 text-[14px]">
+            <Link href="/operations" className="text-[#18b5d8] font-semibold hover:underline">AI Operations Employees →</Link>
+            <Link href="/case-studies" className="text-[#18b5d8] font-semibold hover:underline">See Client Results →</Link>
+            <Link href="/free-report" className="text-[#18b5d8] font-semibold hover:underline">Get a Free Visibility Audit →</Link>
           </div>
         </div>
       </section>

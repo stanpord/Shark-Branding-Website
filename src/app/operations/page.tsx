@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "AI Operations Employees — Shark Branding Solutions",
+  title: "AI Operations Employees Tampa Bay | Shark Branding Solutions",
   description:
-    "AI CRM, AI sales coach, and custom operations employees for Tampa Bay businesses. Stop losing leads. Stop repeating tasks. Deploy in 30 days.",
+    "AI CRM, AI sales coach, and custom operations employees for Tampa Bay businesses. Stop losing leads. Stop repeating tasks. Deploy in 30 days — no new staff required.",
 };
 
 const bots = [
@@ -79,7 +79,7 @@ export default function OperationsPage() {
   return (
     <>
       {/* ── Hero ── */}
-      <section className="bg-white min-h-[90vh] flex flex-col items-center justify-center text-center px-6 pt-24 pb-20">
+      <section className="bg-white min-h-[50vh] md:min-h-[90vh] flex flex-col items-center justify-center text-center px-6 pt-16 md:pt-24 pb-12 md:pb-20">
         <div className="max-w-[720px] mx-auto">
           <p className="text-[#18b5d8] text-[13px] font-semibold tracking-[0.2em] uppercase mb-8">
             AI Operations Employees &nbsp;&middot;&nbsp; Shark AI Solutions
@@ -128,7 +128,7 @@ export default function OperationsPage() {
         <section
           key={b.id}
           id={b.id}
-          className={b.dark ? "bg-[#0a0a0a] px-6 py-24 border-t border-white/5" : "bg-white px-6 py-24 border-t border-[#e8e8ed]"}
+          className={b.dark ? "bg-[#0a0a0a] px-6 py-14 md:py-24 border-t border-white/5" : "bg-white px-6 py-14 md:py-24 border-t border-[#e8e8ed]"}
         >
           <div className="max-w-[980px] mx-auto grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-16 items-start">
             <div>
@@ -171,7 +171,7 @@ export default function OperationsPage() {
       ))}
 
       {/* ── Use cases ── */}
-      <section className="bg-[#f5f5f7] py-20 px-6">
+      <section className="bg-[#f5f5f7] py-12 md:py-20 px-6">
         <div className="max-w-[980px] mx-auto">
           <div className="text-center mb-12">
             <p className="text-[13px] font-semibold tracking-[0.2em] uppercase text-[#18b5d8] mb-4">Real-World Applications</p>
@@ -213,7 +213,7 @@ export default function OperationsPage() {
       </section>
 
       {/* ── CTA ── */}
-      <section className="bg-[#0a0a0a] py-28 px-6 text-center">
+      <section className="bg-[#0a0a0a] py-16 md:py-28 px-6 text-center">
         <div className="max-w-[560px] mx-auto">
           <p className="text-[13px] font-semibold tracking-[0.2em] uppercase text-[#18b5d8] mb-6">Let&rsquo;s build it</p>
           <h2 className="display-lg text-white mb-6" style={{ textWrap: "balance" }}>
@@ -228,6 +228,32 @@ export default function OperationsPage() {
           >
             Talk to Us
           </Link>
+        </div>
+      </section>
+
+      {/* ── FAQ ── */}
+      <section className="bg-white py-12 md:py-20 px-6">
+        <div className="max-w-[720px] mx-auto">
+          <p className="text-[11px] font-semibold text-[#1d1d1f] uppercase tracking-[0.15em] mb-8">Frequently Asked Questions</p>
+          <div className="space-y-8">
+            {[
+              { q: "What is an AI operations employee?", a: "An AI operations employee is a purpose-built AI system that handles a specific business function — lead follow-up, sales coaching, appointment scheduling, client intake — without requiring a human to manage it manually. Unlike general AI tools, these are configured to your specific workflow, your existing software, and your business processes." },
+              { q: "How long does it take to deploy?", a: "Most AI operations employees are live within 30 days of kickoff. The first week covers workflow mapping and integration setup. Weeks two and three cover configuration, testing, and staff training. By week four your team is running the system and we are supporting the handoff." },
+              { q: "Does this replace my existing staff?", a: "No. AI operations employees handle repetitive, rules-based tasks — follow-up sequences, data entry, scheduling notifications, intake processing. Your staff is freed to do the work that actually requires human judgment. Most clients find their team can take on more without adding headcount." },
+              { q: "What industries do AI operations employees work for?", a: "The highest-impact applications are in home services like HVAC, plumbing, and roofing, medical and dental practices, real estate, legal and professional services, and contractors. Any business with high lead volume, manual scheduling, or repetitive intake processes will see immediate impact." },
+              { q: "What does it cost?", a: "Pricing is custom based on the complexity of the workflow, the number of integrations, and the systems your business uses. We quote after a brief discovery call where we identify your top automation opportunity. There is no commitment required for the call." },
+            ].map(({ q, a }) => (
+              <div key={q} className="border-b border-[#e5e5e5] pb-8">
+                <h3 className="text-[16px] font-semibold text-[#1d1d1f] mb-3">{q}</h3>
+                <p className="text-[15px] text-[#555] leading-relaxed">{a}</p>
+              </div>
+            ))}
+          </div>
+          <div className="mt-12 flex flex-wrap gap-4 text-[14px]">
+            <Link href="/marketing" className="text-[#18b5d8] font-semibold hover:underline">AI Marketing Employees →</Link>
+            <Link href="/plans" className="text-[#18b5d8] font-semibold hover:underline">View Plans &amp; Pricing →</Link>
+            <Link href="/free-report" className="text-[#18b5d8] font-semibold hover:underline">Get a Free Visibility Audit →</Link>
+          </div>
         </div>
       </section>
     </>

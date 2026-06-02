@@ -1,10 +1,43 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+const pageSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "AboutPage",
+      "@id": "https://sharkbrandingsolutions.com/about#webpage",
+      url: "https://sharkbrandingsolutions.com/about",
+      name: "About Shark Branding Solutions — AI Business Consulting | Tampa Bay",
+      isPartOf: { "@id": "https://sharkbrandingsolutions.com/#website" },
+      about: { "@id": "https://sharkbrandingsolutions.com/#organization" },
+      description:
+        "Meet Michelle Stanaland, Founder and CEO of Shark Branding Solutions — named a Top 15 Marketing Expert in Tampa Bay by Influence Digest, 2025.",
+    },
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: "https://sharkbrandingsolutions.com",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "About",
+          item: "https://sharkbrandingsolutions.com/about",
+        },
+      ],
+    },
+  ],
+};
+
 export const metadata: Metadata = {
-  title: "About — Shark Branding Solutions",
+  title: "About Shark Branding Solutions | AI Visibility Consulting Tampa Bay",
   description:
-    "Meet Michelle Stanaland, Founder and CEO of Shark Branding Solutions — Top 15 Marketing Expert in Tampa Bay.",
+    "Meet Michelle Stanaland, Founder and CEO of Shark Branding Solutions — Top 15 Marketing Expert in Tampa Bay by Influence Digest, 2025. AI visibility consulting for Wesley Chapel, Tampa, and St. Petersburg.",
 };
 
 const values = [
@@ -33,8 +66,12 @@ const values = [
 export default function AboutPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(pageSchema) }}
+      />
       {/* ── Hero ── */}
-      <section className="bg-white min-h-[90vh] flex flex-col items-center justify-center text-center px-6 pt-24 pb-20">
+      <section className="bg-white min-h-[50vh] md:min-h-[90vh] flex flex-col items-center justify-center text-center px-6 pt-16 md:pt-24 pb-12 md:pb-20">
         <div className="max-w-[720px] mx-auto">
           <p className="text-[#18b5d8] text-[13px] font-semibold tracking-[0.2em] uppercase mb-8">
             About Us
@@ -51,7 +88,7 @@ export default function AboutPage() {
       </section>
 
       {/* ── Michelle ── */}
-      <section id="michelle" className="bg-[#0a0a0a] px-6 py-24">
+      <section id="michelle" className="bg-[#0a0a0a] px-6 py-14 md:py-24">
         <div className="max-w-[980px] mx-auto grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-16 items-start">
           <div>
             <div className="flex items-center gap-4 mb-8">
@@ -64,7 +101,12 @@ export default function AboutPage() {
             <div className="inline-flex items-center gap-3 bg-white/6 border border-white/10 rounded-[12px] px-5 py-3">
               <span className="text-[#18b5d8] text-[18px]" aria-hidden="true">★</span>
               <span className="text-[14px] font-semibold text-white">Top 15 Marketing Expert — Tampa Bay</span>
-              <span className="text-[12px] text-white/35">Influence Digest, 2025</span>
+              <a
+                href="https://influencedigest.com/marketing-expert/top-marketing-experts-in-tampa-in-2025/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[12px] text-white/35 hover:text-white/60 underline underline-offset-2 motion-safe:transition-colors duration-150"
+              >Influence Digest, 2025</a>
             </div>
           </div>
           <div className="space-y-6">
@@ -84,7 +126,7 @@ export default function AboutPage() {
       </section>
 
       {/* ── Values ── */}
-      <section className="bg-[#f5f5f7] px-6 py-24">
+      <section className="bg-[#f5f5f7] px-6 py-14 md:py-24">
         <div className="max-w-[980px] mx-auto">
           <div className="text-center mb-16">
             <p className="text-[13px] font-semibold tracking-[0.2em] uppercase text-[#18b5d8] mb-4">How We Work</p>
@@ -105,7 +147,7 @@ export default function AboutPage() {
       </section>
 
       {/* ── Service area ── */}
-      <section className="bg-white px-6 py-24 border-t border-[#e8e8ed]">
+      <section className="bg-white px-6 py-14 md:py-24 border-t border-[#e8e8ed]">
         <div className="max-w-[720px] mx-auto text-center">
           <p className="text-[13px] font-semibold tracking-[0.2em] uppercase text-[#18b5d8] mb-4">Where We Serve</p>
           <h2 className="display-lg text-[#0a0a0a] mb-6" style={{ textWrap: "balance" }}>
@@ -128,7 +170,7 @@ export default function AboutPage() {
       </section>
 
       {/* ── CTA ── */}
-      <section className="bg-[#0a0a0a] py-28 px-6 text-center">
+      <section className="bg-[#0a0a0a] py-16 md:py-28 px-6 text-center">
         <div className="max-w-[560px] mx-auto">
           <p className="text-[13px] font-semibold tracking-[0.2em] uppercase text-[#18b5d8] mb-6">Work with us</p>
           <h2 className="display-lg text-white mb-6" style={{ textWrap: "balance" }}>
@@ -145,11 +187,36 @@ export default function AboutPage() {
               Get My Free Visibility Audit
             </Link>
             <a
-              href="tel:+17278556505"
+              href="tel:+17275133955"
               className="btn-press inline-block text-white text-[17px] border border-white/20 rounded-full px-[28px] py-[14px] hover:border-white/50 motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0a0a] [touch-action:manipulation]"
             >
-              (727) 855-6505
+              (727) 513-3955
             </a>
+          </div>
+        </div>
+      </section>
+
+      {/* ── FAQ ── */}
+      <section className="bg-white py-12 md:py-20 px-6">
+        <div className="max-w-[720px] mx-auto">
+          <p className="text-[11px] font-semibold text-[#1d1d1f] uppercase tracking-[0.15em] mb-8">Frequently Asked Questions</p>
+          <div className="space-y-8">
+            {[
+              { q: "What is Shark Branding Solutions?", a: "Shark Branding Solutions is an AI visibility and branding consulting firm based in Wesley Chapel, FL. We help local Tampa Bay businesses get found, trusted, and chosen by ChatGPT, Google AI Overviews, Gemini, and Perplexity — without paid advertising. We are not a traditional marketing agency. We specialize in the signals and structures that AI search systems use to recommend businesses." },
+              { q: "Who is Michelle Stanaland?", a: "Michelle Stanaland is the Founder and CEO of Shark Branding Solutions. In 2025, she was named one of the Top 15 Marketing Experts in Tampa Bay by Influence Digest. She works directly with clients across Wesley Chapel, Lutz, Land O' Lakes, St. Petersburg, and Tampa, bringing enterprise-level AI visibility strategy to owner-operated businesses." },
+              { q: "What areas do you serve?", a: "We serve businesses across the Tampa Bay area, with a particular focus on Wesley Chapel, Lutz, Land O' Lakes, St. Petersburg, and Tampa. Many of our services are also available virtually for businesses outside the immediate area." },
+              { q: "How do I get started?", a: "The fastest way to start is with the free Visibility Audit. It takes about 20 minutes, covers exactly how your business appears to AI platforms today, and gives you a clear picture of what is missing — with no commitment required. You leave with actionable information whether you work with us or not." },
+            ].map(({ q, a }) => (
+              <div key={q} className="border-b border-[#e5e5e5] pb-8">
+                <h3 className="text-[16px] font-semibold text-[#1d1d1f] mb-3">{q}</h3>
+                <p className="text-[15px] text-[#555] leading-relaxed">{a}</p>
+              </div>
+            ))}
+          </div>
+          <div className="mt-12 flex flex-wrap gap-4 text-[14px]">
+            <Link href="/services" className="text-[#18b5d8] font-semibold hover:underline">What We Do →</Link>
+            <Link href="/case-studies" className="text-[#18b5d8] font-semibold hover:underline">See Client Results →</Link>
+            <Link href="/free-report" className="text-[#18b5d8] font-semibold hover:underline">Get a Free Visibility Audit →</Link>
           </div>
         </div>
       </section>

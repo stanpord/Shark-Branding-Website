@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Image from "next/image";
-import HackathonBanner from "@/components/HackathonBanner";
 
 const solutions = [
   {
@@ -37,14 +36,9 @@ const solutions = [
 export default function Home() {
   return (
     <>
-      {/* ── Hackathon Banner ── */}
-      <div className="hidden sm:block">
-        <HackathonBanner />
-      </div>
-
       {/* ── Hero ── */}
       <section className="bg-white px-6 pt-20 pb-16">
-        <div className="max-w-[1100px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[88vh]">
+        <div className="max-w-[1100px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center lg:min-h-[88vh]">
           {/* Left: copy */}
           <div>
             <p className="text-[#18b5d8] text-[13px] font-semibold tracking-[0.2em] uppercase mb-8">
@@ -76,7 +70,7 @@ export default function Home() {
             </div>
           </div>
           {/* Right: image */}
-          <div className="relative rounded-[24px] overflow-hidden shadow-2xl">
+          <div className="relative rounded-[24px] overflow-hidden shadow-2xl max-h-[60vw] lg:max-h-none">
             <Image
               src="/ai-visibility-hero.webp"
               alt="AI recommends your business above competitors in Tampa Bay"
@@ -196,7 +190,7 @@ export default function Home() {
       </section>
 
       {/* ── Testimonial ── */}
-      <section className="bg-white py-24 px-6">
+      <section className="bg-white py-14 md:py-24 px-6">
         <div className="max-w-[720px] mx-auto text-center">
           <p className="text-[13px] font-semibold tracking-[0.2em] uppercase text-[#18b5d8] mb-10">Client Result</p>
           <blockquote className="display-md text-[#0a0a0a] mb-10 leading-relaxed" style={{ textWrap: "balance" }}>
@@ -224,7 +218,7 @@ export default function Home() {
       </section>
 
       {/* ── How It Works ── */}
-      <section className="bg-white py-24 px-6">
+      <section className="bg-white py-14 md:py-24 px-6">
         <div className="max-w-[980px] mx-auto">
           <div className="text-center mb-14">
             <p className="text-[13px] font-semibold tracking-[0.2em] uppercase text-[#18b5d8] mb-4">The Process</p>
@@ -264,7 +258,7 @@ export default function Home() {
       </section>
 
       {/* ── CTA ── */}
-      <section className="bg-[#0a0a0a] py-28 px-6 text-center">
+      <section className="bg-[#0a0a0a] py-16 md:py-28 px-6 text-center">
         <div className="max-w-[620px] mx-auto">
           <p className="text-[13px] font-semibold tracking-[0.2em] uppercase text-[#18b5d8] mb-6">Ready to start</p>
           <h2 className="display-lg text-white mb-6" style={{ textWrap: "balance" }}>
