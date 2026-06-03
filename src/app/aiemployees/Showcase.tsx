@@ -921,28 +921,21 @@ export default function Showcase() {
             This is the same AI that will represent your business. Watch how it qualifies, handles objections, and books the appointment.
           </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
-            {[
-              { title: 'Inbound website lead', sub: 'Visitor asks about pricing → qualified → booked' },
-              { title: 'Cold lead re-engagement', sub: 'Lead went quiet → AI reaches back out → meeting set' },
-              { title: 'Facebook form response', sub: 'Form submission → instant qualification → booked' },
-            ].map(card => (
-              <button
-                key={card.title}
-                onClick={openDemo}
-                className="text-left rounded-2xl border border-[#e5e5ea] bg-[#f5f5f7] p-5 hover:border-[#18b5d8]/40 hover:bg-[#f0fafd] transition-all duration-200 cursor-pointer"
-              >
-                <p className="text-[#1d1d1f] font-semibold text-[14px] mb-1">{card.title}</p>
-                <p className="text-[#86868b] text-[12px]">{card.sub}</p>
-              </button>
-            ))}
+          <div className="rounded-[20px] overflow-hidden border border-[#e5e5ea] shadow-lg mb-8">
+            <video
+              controls
+              preload="metadata"
+              className="w-full block"
+            >
+              <source src="/rabbit-groomers.mp4" type="video/mp4" />
+            </video>
           </div>
 
           <button
             onClick={openDemo}
             className="bg-[#18b5d8] text-white text-[14px] font-bold rounded-full px-7 py-3 hover:bg-[#1297b8] transition-colors duration-150 shadow-[0_4px_16px_rgba(24,181,216,0.3)]"
           >
-            Watch the demo
+            Try it yourself →
           </button>
         </div>
       </section>
