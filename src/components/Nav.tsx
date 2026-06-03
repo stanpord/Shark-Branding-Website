@@ -18,8 +18,8 @@ export default function Nav() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 inset-x-0 z-50 bg-white h-11 flex items-center border-b border-[#e0e0e0]">
-      <nav className="w-full max-w-[1440px] mx-auto px-6 flex items-center justify-between">
+    <header className="fixed top-0 inset-x-0 z-50 bg-white border-b border-[#e0e0e0]" style={{ paddingTop: 'env(safe-area-inset-top)' }}>
+      <nav className="w-full h-11 max-w-[1440px] mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
         <Link
           href="/"
@@ -77,7 +77,7 @@ export default function Nav() {
 
       {/* Mobile menu */}
       {open && (
-        <div className="md:hidden absolute top-11 inset-x-0 bg-white py-6 px-6 flex flex-col gap-5 border-t border-[#e0e0e0]">
+        <div className="md:hidden absolute inset-x-0 bg-white py-6 px-6 flex flex-col gap-5 border-t border-[#e0e0e0]" style={{ top: 'calc(2.75rem + env(safe-area-inset-top))' }}>
           {links.map((l) => (
             <Link
               key={l.href}

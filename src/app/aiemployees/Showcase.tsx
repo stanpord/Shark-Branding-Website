@@ -406,6 +406,7 @@ export default function Showcase() {
             perspective: 1100,
             perspectiveOrigin: '50% 50%',
             cursor: dragging.current ? 'grabbing' : 'grab',
+            touchAction: 'pan-y',
           }}
           onMouseDown={(e) => startDrag(e.clientX)}
           onTouchStart={(e) => startDrag(e.touches[0].clientX)}
@@ -429,13 +430,18 @@ export default function Showcase() {
               key={i}
               onClick={() => goTo(i)}
               aria-label={EMPLOYEES[i].name}
-              className="rounded-full transition-all duration-300"
-              style={{
-                width: i === activeIndex ? 22 : 7,
-                height: 7,
-                backgroundColor: i === activeIndex ? emp.color : '#d2d2d7',
-              }}
-            />
+              className="rounded-full transition-all duration-300 flex items-center justify-center [touch-action:manipulation]"
+              style={{ width: 44, height: 44 }}
+            >
+              <span
+                className="rounded-full transition-all duration-300 block"
+                style={{
+                  width: i === activeIndex ? 22 : 7,
+                  height: 7,
+                  backgroundColor: i === activeIndex ? emp.color : '#d2d2d7',
+                }}
+              />
+            </button>
           ))}
         </div>
 

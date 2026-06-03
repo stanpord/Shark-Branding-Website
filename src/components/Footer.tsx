@@ -123,7 +123,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={s.label}
-                  className="w-9 h-9 rounded-full bg-white border border-[#e0e0e0] flex items-center justify-center text-[#6e6e73] hover:text-[#18b5d8] hover:border-[#18b5d8] motion-safe:transition-colors"
+                  className="w-11 h-11 rounded-full bg-white border border-[#e0e0e0] flex items-center justify-center text-[#6e6e73] hover:text-[#18b5d8] hover:border-[#18b5d8] motion-safe:transition-colors [touch-action:manipulation]"
                 >
                   {s.icon}
                 </a>

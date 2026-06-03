@@ -377,7 +377,8 @@ export default function PlansPage() {
             </h2>
           </div>
 
-          <div className="rounded-[20px] overflow-hidden border border-white/10">
+          <div className="overflow-x-auto">
+          <div className="rounded-[20px] overflow-hidden border border-white/10 min-w-[540px]">
             {/* Header */}
             <div className="grid grid-cols-4 bg-white/5 border-b border-white/10">
               <div className="px-5 py-4" />
@@ -442,6 +443,7 @@ export default function PlansPage() {
               </div>
             </div>
           </div>
+          </div>{/* /overflow-x-auto */}
         </div>
       </section>
 

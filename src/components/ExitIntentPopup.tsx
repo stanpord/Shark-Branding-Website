@@ -70,7 +70,7 @@ export default function ExitIntentPopup() {
       >
         <button
           onClick={dismiss}
-          className="absolute top-4 right-4 w-8 h-8 flex items-center justify-center rounded-full text-[#aaa] hover:text-[#333] hover:bg-[#f5f5f5] transition-colors text-[20px] leading-none"
+          className="absolute top-4 right-4 w-11 h-11 flex items-center justify-center rounded-full text-[#aaa] hover:text-[#333] hover:bg-[#f5f5f5] transition-colors text-[20px] leading-none [touch-action:manipulation]"
           aria-label="Close"
         >
           ×
@@ -97,7 +97,7 @@ export default function ExitIntentPopup() {
             onChange={(e) => setBusinessName(e.target.value)}
             placeholder="Your business name"
             required
-            className="w-full px-4 py-3 rounded-full border border-[#d2d2d7] text-[15px] focus:outline-none focus:ring-2 focus:ring-[#18b5d8] focus:border-[#18b5d8] transition-shadow"
+            className="w-full px-4 py-3 rounded-full border border-[#d2d2d7] text-[15px] outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:border-[#18b5d8] transition-shadow"
           />
           <input
             type="email"
@@ -105,7 +105,7 @@ export default function ExitIntentPopup() {
             onChange={(e) => setEmail(e.target.value)}
             placeholder="Your email address"
             required
-            className="w-full px-4 py-3 rounded-full border border-[#d2d2d7] text-[15px] focus:outline-none focus:ring-2 focus:ring-[#18b5d8] focus:border-[#18b5d8] transition-shadow"
+            className="w-full px-4 py-3 rounded-full border border-[#d2d2d7] text-[15px] outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:border-[#18b5d8] transition-shadow"
           />
           <button
             type="submit"
@@ -118,7 +118,7 @@ export default function ExitIntentPopup() {
         <p className="text-center mt-4">
           <button
             onClick={dismiss}
-            className="text-[13px] text-[#aaa] hover:text-[#555] hover:underline transition-colors"
+            className="text-[13px] text-[#aaa] hover:text-[#555] hover:underline transition-colors min-h-[44px] px-4 [touch-action:manipulation]"
           >
             I already show up in AI search
           </button>
