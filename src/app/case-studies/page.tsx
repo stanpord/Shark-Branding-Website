@@ -74,8 +74,8 @@ export default function CaseStudiesPage() {
         {/* Photo hero */}
         <div className="relative h-[340px] sm:h-[420px] overflow-hidden">
           <Image
-            src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1400&h=560&q=90"
-            alt="HVAC technician servicing an air conditioning unit in Tampa Bay"
+            src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=1400&h=560&q=90"
+            alt="HVAC air conditioning units on the exterior of a building"
             fill
             className="object-cover"
             sizes="100vw"
@@ -274,8 +274,8 @@ export default function CaseStudiesPage() {
         {/* Photo hero */}
         <div className="relative h-[340px] sm:h-[420px] overflow-hidden">
           <Image
-            src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1400&h=560&q=90"
-            alt="Modern home for sale representing real estate in Wesley Chapel FL"
+            src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=1400&h=560&q=90"
+            alt="Modern home exterior representing real estate in Wesley Chapel FL"
             fill
             className="object-cover"
             sizes="100vw"
@@ -564,8 +564,8 @@ export default function CaseStudiesPage() {
         {/* Photo hero */}
         <div className="relative h-[340px] sm:h-[420px] overflow-hidden">
           <Image
-            src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1400&h=560&q=90"
-            alt="Business professionals at the North Tampa Bay Chamber of Commerce"
+            src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1400&h=560&q=90"
+            alt="Business professionals networking at the North Tampa Bay Chamber of Commerce"
             fill
             className="object-cover"
             sizes="100vw"
