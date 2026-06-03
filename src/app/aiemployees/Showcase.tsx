@@ -19,7 +19,7 @@ const EMPLOYEES = [
     tags: ['Review requests', 'Auto-responses', '5-star growth'],
   },
   {
-    name: 'Lead Qualifier', role: 'Follow-Up AI', cardImg: '/avatars/sales.png', color: '#18b5d8',
+    name: 'AI CRM', role: 'Sales Assistant', cardImg: '/avatars/sales.png', color: '#18b5d8',
     desc: 'Runs multi-touch follow-up across email, SMS, and phone so no lead falls through the cracks.',
     tags: ['Email + SMS', 'Cold lead rescue', 'Multi-channel'],
   },
@@ -86,9 +86,9 @@ const QUIZ_RESULTS = [
   },
   {
     employee: 3,
-    headline: "Your AI Employee: Lead Qualifier",
-    role: 'Follow-Up AI',
-    body: "Every cold lead is a deal waiting to happen. Your Lead Qualifier runs automated multi-touch follow-up across email, SMS, and phone so no lead ever falls through the cracks again.",
+    headline: "Your AI Employee: AI CRM",
+    role: 'Sales Assistant',
+    body: "Every cold lead is a deal waiting to happen. Your AI CRM runs automated multi-touch follow-up across email, SMS, and phone so no lead ever falls through the cracks again.",
   },
   {
     employee: 4,
@@ -375,7 +375,7 @@ export default function Showcase() {
               { icon: '⚡', text: 'Up and running within the week' },
               { icon: '🤖', text: '5 AI employee types' },
               { icon: '📞', text: 'Email · SMS · Phone · Chat' },
-              { icon: '📈', text: '3× more pipeline on average' },
+              { icon: '📈', text: '3× more qualified pipeline' },
             ].map(item => (
               <span key={item.text} className="flex items-center gap-1.5">
                 <span>{item.icon}</span>
@@ -459,7 +459,7 @@ export default function Showcase() {
           {[
             { n: '24/7', l: 'Always working' },
             { n: '< 1 wk', l: 'From zero to live' },
-            { n: '5+', l: 'Channels covered' },
+            { n: '5+', l: 'Channels' },
             { n: '3×', l: 'More pipeline' },
           ].map(s => (
             <div key={s.l} className="text-center px-6 py-2">
@@ -628,7 +628,7 @@ export default function Showcase() {
                 Qualifies every lead automatically
               </h3>
               <p className="text-[#6e6e73] text-[16px] leading-relaxed mb-5">
-                Your AI employee asks the right questions — budget, timeline, decision-making authority — so your team only hops on calls with real, ready buyers.
+                Your AI employee asks the right questions — budget, timeline, decision-making authority — so your team only speaks with qualified, ready-to-buy prospects.
               </p>
               <ul className="space-y-2">
                 {['Budget & timeline questions', 'Custom qualification criteria', 'Instant lead scoring', 'Hot leads flagged immediately'].map(item => (
@@ -734,7 +734,7 @@ export default function Showcase() {
                 You show up and close the deal
               </h3>
               <p className="text-[#6e6e73] text-[16px] leading-relaxed mb-5">
-                By the time you talk to a prospect, they're already warmed up, qualified, and expecting your call. Your team does what they do best — you close. The AI did everything else.
+                By the time you talk to a prospect, they're already warmed up, qualified, and expecting your call. Your team does what it does best: close deals. The AI handled everything else.
               </p>
               <ul className="space-y-2">
                 {['Only talk to ready buyers', 'Every lead followed up automatically', 'Full conversation history in your CRM', 'Your team stays in revenue mode'].map(item => (

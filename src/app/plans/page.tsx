@@ -260,7 +260,7 @@ export default function PlansPage() {
                   <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="#18b5d8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
                 <p className="text-[12px] text-[#18b5d8] font-semibold leading-snug">
-                  Most clients see $500–$1,500/month savings vs. a traditional agency retainer
+                  Done For You clients typically replace agency, VA, and tool costs — saving $500–$1,500/month
                 </p>
               </div>
 
@@ -327,7 +327,7 @@ export default function PlansPage() {
           {/* Trust row */}
           <div className="mt-10 flex flex-wrap items-center justify-center gap-6">
             {[
-              "90-day results guarantee",
+              "90-day visibility improvement guarantee",
               "12-month plan: cancel with 60 days' notice",
               "No paid ads required",
             ].map((item) => (
