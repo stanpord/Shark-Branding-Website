@@ -4,6 +4,7 @@ import "./globals.css";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import ChatWidget from "@/components/ChatWidget";
+import ExitIntentPopup from "@/components/ExitIntentPopup";
 import { Analytics } from "@vercel/analytics/next";
 
 const inter = Inter({
@@ -121,6 +122,7 @@ export default function RootLayout({
         <main id="main-content" className="flex-1">{children}</main>
         <Footer />
         <ChatWidget />
+        <ExitIntentPopup />
         <Analytics />
       </body>
     </html>

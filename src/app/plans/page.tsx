@@ -31,6 +31,22 @@ const customFeatures = [
   "White-glove onboarding and strategy workshops",
 ];
 
+// 3 objections shown directly below pricing
+const pricingObjections = [
+  {
+    q: "Is this just another tool?",
+    a: "No. There's no dashboard to log into, no software to learn, and no algorithm to game. This is hands-on consulting backed by a proven framework. Done For You means our team does the work. Self-Guided means you execute the same framework we use — with clear instructions at every step.",
+  },
+  {
+    q: "What if I'm not technical?",
+    a: "You don't need to be. The Done For You plan requires nothing from you except a 30-minute onboarding call. Even the Self-Guided Toolkit is built for business owners, not developers — every phase has plain-English instructions and templates.",
+  },
+  {
+    q: "How is this different from my current agency?",
+    a: "Most agencies focus on ads, social posts, and traffic metrics. We focus on AI visibility signals — the data ChatGPT, Gemini, and Google AI Overviews use to decide which businesses to recommend. It's a different layer entirely. Most of our clients run us alongside their existing agency.",
+  },
+];
+
 const objections = [
   {
     q: "I've paid for SEO before and it didn't work. How is this different?",
@@ -73,32 +89,42 @@ const faqs = [
   },
 ];
 
+const comparisonFeatures = [
+  { label: "AI Visibility Audit",             toolkit: true,  dfy: true,  custom: true  },
+  { label: "Proven framework + templates",    toolkit: true,  dfy: true,  custom: true  },
+  { label: "You execute the work",            toolkit: true,  dfy: false, custom: false },
+  { label: "Our team executes everything",    toolkit: false, dfy: true,  custom: true  },
+  { label: "Monthly GBP optimization",        toolkit: false, dfy: true,  custom: true  },
+  { label: "Citation & schema management",    toolkit: false, dfy: true,  custom: true  },
+  { label: "Written strategy plan",           toolkit: false, dfy: true,  custom: true  },
+  { label: "Monthly progress reports",        toolkit: false, dfy: true,  custom: true  },
+  { label: "Dedicated account lead",          toolkit: false, dfy: false, custom: true  },
+  { label: "Multi-location support",          toolkit: false, dfy: false, custom: true  },
+  { label: "White-glove onboarding",          toolkit: false, dfy: false, custom: true  },
+];
+
 function CheckIcon() {
   return (
-    <svg
-      width="16"
-      height="16"
-      viewBox="0 0 24 24"
-      fill="none"
-      aria-hidden="true"
-      className="shrink-0 mt-0.5"
-    >
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true" className="shrink-0 mt-0.5">
       <circle cx="12" cy="12" r="10" fill="rgba(24,181,216,0.15)" />
-      <polyline
-        points="8 12 11 15 16 9"
-        stroke="#18b5d8"
-        strokeWidth="2.2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
+      <polyline points="8 12 11 15 16 9" stroke="#18b5d8" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   );
 }
 
-function ShieldIcon() {
+function TableCheck({ yes }: { yes: boolean }) {
+  if (yes) {
+    return (
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-label="Included" className="mx-auto">
+        <circle cx="12" cy="12" r="10" fill="rgba(24,181,216,0.15)" />
+        <polyline points="8 12 11 15 16 9" stroke="#18b5d8" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
+      </svg>
+    );
+  }
   return (
-    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true" className="shrink-0 mt-0.5">
-      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="#18b5d8" strokeWidth="2" strokeLinejoin="round" />
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-label="Not included" className="mx-auto opacity-30">
+      <line x1="8" y1="8" x2="16" y2="16" stroke="#888" strokeWidth="2" strokeLinecap="round" />
+      <line x1="16" y1="8" x2="8" y2="16" stroke="#888" strokeWidth="2" strokeLinecap="round" />
     </svg>
   );
 }
@@ -147,7 +173,7 @@ export default function PlansPage() {
         <div className="max-w-[1080px] mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
 
-            {/* Card 1: Self-Guided */}
+            {/* Card 1: Self-Guided Toolkit */}
             <div className="bg-[#07141a] rounded-[20px] p-7 border border-white/8 flex flex-col">
               <span className="font-mono text-[#18b5d8] text-[11px] tracking-[0.22em] uppercase block mb-5">
                 Toolkit — Self-Guided
@@ -156,7 +182,6 @@ export default function PlansPage() {
                 You run it.<br />We built the map.
               </h2>
 
-              {/* Price */}
               <div className="mt-6 mb-2">
                 <div className="flex items-baseline gap-2">
                   <span className="text-[42px] font-semibold text-white leading-none">$497</span>
@@ -168,7 +193,14 @@ export default function PlansPage() {
                 <p className="text-[13px] text-white/35 mt-1">12-month commitment — best value</p>
               </div>
 
-              {/* Features */}
+              {/* Social proof — small business */}
+              <div className="mt-4 bg-white/5 border border-white/10 rounded-[12px] px-4 py-3">
+                <p className="text-[13px] text-white/70 leading-relaxed italic">
+                  &ldquo;We had no idea our business wasn&rsquo;t showing up in AI results. The toolkit made it obvious what to fix first — and within 60 days we were getting calls from ChatGPT searches.&rdquo;
+                </p>
+                <p className="text-[11px] text-white/35 mt-2 not-italic">— Small business owner, Wesley Chapel, FL</p>
+              </div>
+
               <ul className="mt-6 space-y-3 flex-1">
                 {selfGuidedFeatures.map((f) => (
                   <li key={f} className="flex items-start gap-3 text-[14px] text-white/60 leading-snug">
@@ -178,8 +210,6 @@ export default function PlansPage() {
                 ))}
               </ul>
 
-
-              {/* CTA */}
               <a
                 href="https://connect.intuit.com/portal/app/CommerceNetwork/view/scs-v1-86b5809a824f464dba5ad90dded570a445f76b19f0384d9dbe734b750f7256989d1db28afa4647bd929885d1678f5099?locale=EN_US&cta=saveandcopylink"
                 target="_blank"
@@ -201,9 +231,8 @@ export default function PlansPage() {
               </p>
             </div>
 
-            {/* Card 2: Done For You (featured) */}
+            {/* Card 2: Done For You (featured / Recommended) */}
             <div className="bg-[#07141a] rounded-[20px] p-7 border border-[#18b5d8]/40 ring-1 ring-[#18b5d8]/15 flex flex-col relative">
-              {/* Badge */}
               <div className="absolute -top-3.5 left-1/2 -translate-x-1/2">
                 <span className="bg-[#18b5d8] text-white text-[11px] font-bold tracking-[0.15em] uppercase px-4 py-1.5 rounded-full whitespace-nowrap">
                   Recommended
@@ -217,7 +246,6 @@ export default function PlansPage() {
                 We handle it.<br />You watch it move.
               </h2>
 
-              {/* Price */}
               <div className="mt-6 mb-2">
                 <div className="flex items-baseline gap-2">
                   <span className="text-[42px] font-semibold text-[#18b5d8] leading-none">$2,000</span>
@@ -226,12 +254,21 @@ export default function PlansPage() {
                 <p className="text-[13px] text-white/35 mt-1">No annual lock-in required</p>
               </div>
 
-              {/* Inline proof */}
-              <div className="mt-4 bg-white/5 border border-white/10 rounded-[12px] px-4 py-3 text-[13px] text-white/70 leading-relaxed">
-                <strong className="text-white font-semibold">This is what that work costs.</strong> One HVAC client moved from position #32 → #2 in 30 days across four high-intent keywords. No paid ads — just this framework, executed by our team.
+              {/* Savings callout */}
+              <div className="mt-3 flex items-start gap-2 bg-[#18b5d8]/10 border border-[#18b5d8]/25 rounded-[10px] px-4 py-2.5">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true" className="shrink-0 mt-0.5">
+                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="#18b5d8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+                <p className="text-[12px] text-[#18b5d8] font-semibold leading-snug">
+                  Most clients see $500–$1,500/month savings vs. a traditional agency retainer
+                </p>
               </div>
 
-              {/* Features */}
+              {/* HVAC social proof */}
+              <div className="mt-4 bg-white/5 border border-white/10 rounded-[12px] px-4 py-3 text-[13px] text-white/70 leading-relaxed">
+                <strong className="text-white font-semibold">HVAC client result:</strong> Moved from position #32 → #2 in 30 days across four high-intent keywords. No paid ads — just this framework, executed by our team.
+              </div>
+
               <ul className="mt-6 space-y-3 flex-1">
                 {doneForYouFeatures.map((f) => (
                   <li key={f} className="flex items-start gap-3 text-[14px] text-white/60 leading-snug">
@@ -241,8 +278,6 @@ export default function PlansPage() {
                 ))}
               </ul>
 
-
-              {/* CTA */}
               <a
                 href="https://connect.intuit.com/portal/app/CommerceNetwork/view/scs-v1-98497518b305454980c1a55eb30bffaf128ceb77a8aa42078ac6afb0ba6ccde3439958261aab46f0866337d1362d6ea7?locale=EN_US&cta=saveandcopylink"
                 target="_blank"
@@ -253,7 +288,7 @@ export default function PlansPage() {
               </a>
             </div>
 
-            {/* Card 3: Custom (decoy anchor) */}
+            {/* Card 3: Custom */}
             <div className="bg-[#07141a] rounded-[20px] p-7 border border-dashed border-white/10 flex flex-col">
               <span className="font-mono text-[#18b5d8] text-[11px] tracking-[0.22em] uppercase block mb-5">
                 Custom / Multi-Location
@@ -262,7 +297,6 @@ export default function PlansPage() {
                 Full-Service<br />Custom Scope
               </h2>
 
-              {/* Price */}
               <div className="mt-6 mb-2">
                 <div className="flex items-baseline gap-2">
                   <span className="text-[32px] font-semibold text-white/70 leading-none">Let&rsquo;s talk</span>
@@ -270,7 +304,6 @@ export default function PlansPage() {
                 <p className="text-[13px] text-white/35 mt-1">Starting at $4,000/mo</p>
               </div>
 
-              {/* Built for */}
               <p className="mt-5 text-[11px] font-bold tracking-[0.15em] uppercase text-white/30 mb-3">Built for</p>
               <ul className="space-y-3 flex-1">
                 {customFeatures.map((f) => (
@@ -281,7 +314,6 @@ export default function PlansPage() {
                 ))}
               </ul>
 
-              {/* CTA */}
               <Link
                 href="/contact"
                 className="btn-press mt-6 block text-center text-white text-[15px] font-semibold rounded-full px-6 py-3.5 border border-white/20 hover:border-white/50 motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0a0a] [touch-action:manipulation]"
@@ -315,6 +347,101 @@ export default function PlansPage() {
             </Link>{" "}
             See exactly where you stand before you commit to anything.
           </p>
+        </div>
+      </section>
+
+      {/* ── 3 Objections directly below pricing ── */}
+      <section className="bg-[#111111] py-16 px-6 border-t border-white/5">
+        <div className="max-w-[1080px] mx-auto">
+          <p className="text-center text-[13px] font-semibold tracking-[0.2em] uppercase text-[#18b5d8] mb-10">
+            Quick Answers
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            {pricingObjections.map((o) => (
+              <div key={o.q} className="bg-[#07141a] rounded-[20px] px-6 py-7 border border-white/8">
+                <p className="text-[15px] font-semibold text-white mb-3 leading-snug">&ldquo;{o.q}&rdquo;</p>
+                <p className="text-[14px] text-white/55 leading-relaxed">{o.a}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── Comparison table ── */}
+      <section className="bg-[#0a0a0a] py-20 px-6 border-t border-white/5">
+        <div className="max-w-[900px] mx-auto">
+          <div className="text-center mb-12">
+            <p className="text-[13px] font-semibold tracking-[0.2em] uppercase text-[#18b5d8] mb-4">Plan Comparison</p>
+            <h2 className="text-[28px] font-semibold text-white" style={{ textWrap: "balance" }}>
+              What&rsquo;s included in each plan
+            </h2>
+          </div>
+
+          <div className="rounded-[20px] overflow-hidden border border-white/10">
+            {/* Header */}
+            <div className="grid grid-cols-4 bg-white/5 border-b border-white/10">
+              <div className="px-5 py-4" />
+              {[
+                { label: "Toolkit",      sub: "$497/mo",      highlight: false },
+                { label: "Done For You", sub: "$2,000/mo",    highlight: true  },
+                { label: "Custom",       sub: "From $4,000",  highlight: false },
+              ].map((col) => (
+                <div key={col.label} className={`px-5 py-4 text-center ${col.highlight ? "bg-[#18b5d8]/10" : ""}`}>
+                  <p className={`text-[13px] font-semibold ${col.highlight ? "text-[#18b5d8]" : "text-white"}`}>{col.label}</p>
+                  <p className="text-[11px] text-white/35 mt-0.5">{col.sub}</p>
+                </div>
+              ))}
+            </div>
+
+            {/* Feature rows */}
+            {comparisonFeatures.map((row, i) => (
+              <div
+                key={row.label}
+                className={`grid grid-cols-4 border-b border-white/5 ${i % 2 === 0 ? "bg-transparent" : "bg-white/[0.02]"}`}
+              >
+                <div className="px-5 py-3.5 text-[13px] text-white/60 col-span-1 flex items-center">{row.label}</div>
+                <div className="px-5 py-3.5 flex items-center justify-center">
+                  <TableCheck yes={row.toolkit} />
+                </div>
+                <div className="px-5 py-3.5 flex items-center justify-center bg-[#18b5d8]/5">
+                  <TableCheck yes={row.dfy} />
+                </div>
+                <div className="px-5 py-3.5 flex items-center justify-center">
+                  <TableCheck yes={row.custom} />
+                </div>
+              </div>
+            ))}
+
+            {/* CTA footer row */}
+            <div className="grid grid-cols-4 bg-white/5">
+              <div className="px-5 py-4" />
+              <div className="px-4 py-4 text-center">
+                <a
+                  href="https://connect.intuit.com/portal/app/CommerceNetwork/view/scs-v1-86b5809a824f464dba5ad90dded570a445f76b19f0384d9dbe734b750f7256989d1db28afa4647bd929885d1678f5099?locale=EN_US&cta=saveandcopylink"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[13px] font-semibold text-white hover:text-[#18b5d8] transition-colors"
+                >
+                  Start →
+                </a>
+              </div>
+              <div className="px-4 py-4 text-center bg-[#18b5d8]/10">
+                <a
+                  href="https://connect.intuit.com/portal/app/CommerceNetwork/view/scs-v1-98497518b305454980c1a55eb30bffaf128ceb77a8aa42078ac6afb0ba6ccde3439958261aab46f0866337d1362d6ea7?locale=EN_US&cta=saveandcopylink"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[13px] font-semibold text-[#18b5d8] hover:text-[#1ec8ee] transition-colors"
+                >
+                  Start →
+                </a>
+              </div>
+              <div className="px-4 py-4 text-center">
+                <Link href="/contact" className="text-[13px] font-semibold text-white/50 hover:text-white transition-colors">
+                  Contact →
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -444,8 +571,8 @@ export default function PlansPage() {
         </div>
       </section>
 
-      {/* ── CTA ── */}
-      <section className="bg-[#0a0a0a] py-28 px-6 text-center">
+      {/* ── Final CTA — extra bottom padding on mobile for sticky bar ── */}
+      <section className="bg-[#0a0a0a] py-28 px-6 text-center pb-36 md:pb-28">
         <div className="max-w-[600px] mx-auto">
           <p className="text-[13px] font-semibold tracking-[0.2em] uppercase text-[#18b5d8] mb-6">
             Zero commitment to start
@@ -472,6 +599,16 @@ export default function PlansPage() {
           </div>
         </div>
       </section>
+
+      {/* ── Sticky mobile CTA bar ── */}
+      <div className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-[#18b5d8] px-4 py-3.5 shadow-[0_-4px_24px_rgba(0,0,0,0.2)]">
+        <Link
+          href="/free-report"
+          className="block text-center text-white text-[15px] font-semibold [touch-action:manipulation]"
+        >
+          Book a Free Visibility Audit — No Commitment
+        </Link>
+      </div>
     </>
   );
 }

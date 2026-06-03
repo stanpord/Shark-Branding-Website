@@ -21,6 +21,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/resources/blog-ntbc-ai-ready-partnership`, lastModified: "2026-04-15", changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE}/resources/blog-seo-old-school-geo-ai-shift`, lastModified: "2026-04-06", changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE}/resources/blog-trusted-ai-review-responses`, lastModified: "2026-04-09", changeFrequency: "monthly", priority: 0.7 },
+    { url: `${BASE}/vs/marketing-agency`, lastModified: "2026-06-01", changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE}/about`, lastModified: "2026-05-01", changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE}/contact`, lastModified: "2026-05-01", changeFrequency: "yearly", priority: 0.6 },
   ];
