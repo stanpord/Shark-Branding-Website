@@ -525,22 +525,6 @@ export default function PlansPage() {
         </div>
       </section>
 
-      {/* ── Mid-page CTA ── */}
-      <section className="bg-[#18b5d8] py-12 px-6 text-center">
-        <div className="max-w-[620px] mx-auto">
-          <p className="text-white/80 text-[15px] mb-3">Still on the fence?</p>
-          <h2 className="text-[26px] font-semibold text-white mb-6" style={{ textWrap: "balance" }}>
-            See exactly where you stand before you spend a dollar.
-          </h2>
-          <a
-            href="/free-report"
-            className="btn-press inline-block bg-white text-[#0a0a0a] text-[17px] font-semibold rounded-full px-[32px] py-[15px] hover:bg-[#f0f0f0] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#18b5d8] [touch-action:manipulation]"
-          >
-            Get My Free Visibility Audit
-          </a>
-        </div>
-      </section>
-
       {/* ── FAQ ── */}
       <section className="bg-white py-24 px-6">
         <div className="max-w-[720px] mx-auto">

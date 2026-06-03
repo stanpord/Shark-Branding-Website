@@ -17,15 +17,15 @@ export default function FreeReportPage() {
             Free AI Audit
           </p>
           <h1 className="display-hero text-[#0a0a0a] mb-6" style={{ textWrap: "balance" }}>
-            Get Your Free
+            See exactly where your business
             <br />
-            <span className="text-[#18b5d8]">AI Visibility Report</span>
+            <span className="text-[#18b5d8]">stands — before you spend a dollar.</span>
           </h1>
-          <p className="lead-airy text-[#333333] mb-12">
-            See exactly where your business stands across AI search, maps, and reviews. Delivered within 48 hours. We&rsquo;ll call to walk you through it personally.
+          <p className="lead-airy text-[#333333] mb-10">
+            We audit how your business appears across AI search, maps, and reviews — then call you personally to walk through what we found. 100% free. No pitch.
           </p>
-          {/* Proof stats */}
-          <div className="flex items-center justify-center gap-0 border border-[#e8e8ed] rounded-[16px] overflow-hidden divide-x divide-[#e8e8ed]">
+          {/* Proof strip */}
+          <div className="flex items-center justify-center gap-0 border border-[#e8e8ed] rounded-[16px] overflow-hidden divide-x divide-[#e8e8ed] mb-8">
             {[
               { v: "48h", l: "Turnaround" },
               { v: "Free", l: "No credit card" },
@@ -36,6 +36,40 @@ export default function FreeReportPage() {
                 <p className="text-[13px] text-[#7a7a7a] font-semibold">{s.l}</p>
               </div>
             ))}
+          </div>
+          {/* HVAC proof */}
+          <div className="bg-[#f5f5f7] border border-[#e0e0e0] rounded-[14px] px-6 py-4 text-left">
+            <p className="text-[14px] text-[#333333] leading-relaxed">
+              <strong className="text-[#1d1d1f]">Real result:</strong> An HVAC client&rsquo;s audit revealed 4 fixable visibility gaps. After we fixed them, they moved from <strong className="text-[#18b5d8]">#32 → #2</strong> in 30 days — no paid ads.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ── How it works ── */}
+      <section className="bg-white px-6 pb-10">
+        <div className="max-w-[680px] mx-auto">
+          <p className="text-center text-[13px] font-semibold tracking-[0.2em] uppercase text-[#18b5d8] mb-8">How It Works</p>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            {[
+              { n: "1", title: "Enter your business", body: "Takes 60 seconds. Just your business name and location." },
+              { n: "2", title: "We run the audit", body: "Our team checks your AI visibility, listings, reviews, and search presence." },
+              { n: "3", title: "We call you with results", body: "Within 48 hours. We walk through every finding and what to fix first." },
+            ].map((step) => (
+              <div key={step.n} className="bg-[#f5f5f7] rounded-[16px] p-6 text-center">
+                <div className="w-9 h-9 rounded-full bg-[#18b5d8] flex items-center justify-center mx-auto mb-4">
+                  <span className="text-white font-bold text-[13px]">{step.n}</span>
+                </div>
+                <p className="text-[15px] font-semibold text-[#1d1d1f] mb-2">{step.title}</p>
+                <p className="text-[13px] text-[#6e6e73] leading-relaxed">{step.body}</p>
+              </div>
+            ))}
+          </div>
+          {/* Objection */}
+          <div className="mt-6 bg-[#f5f5f7] border-l-4 border-[#18b5d8] rounded-r-[12px] px-6 py-4">
+            <p className="text-[14px] text-[#333333] leading-relaxed">
+              <strong className="text-[#1d1d1f]">Is this really free?</strong> Yes — no credit card, no contract, no sales pressure. You get a real report and a real call. If you want help fixing what we find, we can talk about that. If not, the audit is yours to keep.
+            </p>
           </div>
         </div>
       </section>
