@@ -71,8 +71,8 @@ export default function CaseStudiesPage() {
         {/* Photo hero */}
         <div className="relative h-[380px] sm:h-[480px] overflow-hidden">
           <Image
-            src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=1400&h=560&q=90"
-            alt="HVAC air conditioning units on the exterior of a building"
+            src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1400&h=560&q=90"
+            alt="Outdoor air conditioning units on the exterior of a home"
             fill
             className="object-cover"
             sizes="100vw"
