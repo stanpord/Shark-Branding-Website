@@ -34,7 +34,7 @@ export default function AboutPage() {
   return (
     <>
       {/* ── Hero ── */}
-      <section className="bg-white min-h-[90vh] flex flex-col items-center justify-center text-center px-6 pt-24 pb-20">
+      <section className="bg-white min-h-[50vh] md:min-h-[90vh] flex flex-col items-center justify-center text-center px-6 pt-16 md:pt-24 pb-12 md:pb-20">
         <div className="max-w-[720px] mx-auto">
           <p className="text-[#18b5d8] text-[13px] font-semibold tracking-[0.2em] uppercase mb-8">
             About Us
@@ -91,7 +91,7 @@ export default function AboutPage() {
       </div>
 
       {/* ── Michelle ── */}
-      <section id="michelle" className="bg-[#0a0a0a] px-6 py-24">
+      <section id="michelle" className="bg-[#0a0a0a] px-6 py-14 md:py-24">
         <div className="max-w-[980px] mx-auto grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-16 items-start">
           <div>
             <div className="flex items-center gap-4 mb-8">
@@ -124,7 +124,7 @@ export default function AboutPage() {
       </section>
 
       {/* ── Results & Accomplishments ── */}
-      <section className="bg-[#f5f5f7] px-6 py-24">
+      <section className="bg-[#f5f5f7] px-6 py-14 md:py-24">
         <div className="max-w-[980px] mx-auto">
           <div className="text-center mb-14">
             <p className="text-[13px] font-semibold tracking-[0.2em] uppercase text-[#18b5d8] mb-4">Documented Results</p>
@@ -208,7 +208,7 @@ export default function AboutPage() {
       </section>
 
       {/* ── Values ── */}
-      <section className="bg-white px-6 py-24 border-t border-[#e8e8ed]">
+      <section className="bg-white px-6 py-14 md:py-24 border-t border-[#e8e8ed]">
         <div className="max-w-[980px] mx-auto">
           <div className="text-center mb-16">
             <p className="text-[13px] font-semibold tracking-[0.2em] uppercase text-[#18b5d8] mb-4">How We Work</p>
@@ -229,7 +229,7 @@ export default function AboutPage() {
       </section>
 
       {/* ── Service area ── */}
-      <section className="bg-white px-6 py-24 border-t border-[#e8e8ed]">
+      <section className="bg-white px-6 py-14 md:py-24 border-t border-[#e8e8ed]">
         <div className="max-w-[720px] mx-auto text-center">
           <p className="text-[13px] font-semibold tracking-[0.2em] uppercase text-[#18b5d8] mb-4">Where We Serve</p>
           <h2 className="display-lg text-[#0a0a0a] mb-6" style={{ textWrap: "balance" }}>
@@ -252,7 +252,7 @@ export default function AboutPage() {
       </section>
 
       {/* ── CTA ── */}
-      <section className="bg-[#0a0a0a] py-28 px-6 text-center">
+      <section className="bg-[#0a0a0a] py-16 md:py-28 px-6 text-center">
         <div className="max-w-[560px] mx-auto">
           <p className="text-[13px] font-semibold tracking-[0.2em] uppercase text-[#18b5d8] mb-6">Work with us</p>
           <h2 className="display-lg text-white mb-6" style={{ textWrap: "balance" }}>

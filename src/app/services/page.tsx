@@ -15,9 +15,9 @@ const services = [
     bullets: [
       "Full audit of your AI and search presence",
       "Structured optimization of trust signals and listings",
-      "Keyword and entity alignment for AI platforms",
-      "Ongoing monitoring across AI discovery channels",
-      "Competitive positioning analysis",
+      "Structured data signals that help ChatGPT, Gemini, and Google AI identify your business",
+      "Ongoing monitoring across AI discovery channels — we act before you notice a drop",
+      "Competitive gap analysis across your local market",
     ],
     cta: "Start Consulting", href: "/contact",
   },
@@ -30,7 +30,7 @@ const services = [
       "Initial changes visible in 7–14 days",
       "Measurable ranking movement within 30 days",
       "Monthly reporting and strategy calls",
-      "Flexible engagement levels to match your needs",
+      "Two engagement levels: Self-Guided ($497/mo) or Done For You ($2,000/mo)",
     ],
     cta: "Explore the Toolkit", href: "/contact",
   },
@@ -79,7 +79,7 @@ export default function ServicesPage() {
           <p className="lead-airy text-[#333333] max-w-[520px] mx-auto mb-14" style={{ textWrap: "balance" }}>
             Your business getting found, trusted, and chosen by humans and AI alike.
           </p>
-          <div className="flex flex-wrap items-center justify-center gap-3">
+          <div className="flex flex-wrap items-center justify-center gap-3 mb-8">
             {services.map((s) => (
               <a
                 key={s.id}
@@ -90,6 +90,12 @@ export default function ServicesPage() {
               </a>
             ))}
           </div>
+          <Link
+            href="/free-report"
+            className="btn-press inline-block bg-[#18b5d8] text-white text-[15px] font-semibold rounded-full px-7 py-3.5 hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 [touch-action:manipulation]"
+          >
+            Get My Free AI Audit
+          </Link>
         </div>
       </section>
 
@@ -327,28 +333,28 @@ export default function ServicesPage() {
           <div className="text-center mb-14">
             <p className="text-[#18b5d8] text-[13px] font-semibold tracking-[0.2em] uppercase mb-5">How to Move Forward</p>
             <h2 className="display-lg text-[#0a0a0a]" style={{ textWrap: "balance" }}>
-              How businesses are putting this into action.
+              Two ways to get visible. One is harder.
             </h2>
             <p className="text-[16px] text-[#555] mt-5 max-w-[560px] mx-auto">
-              You have options. The right path depends on your time, resources, and how fast you want results.
+              The right path depends on your time, resources, and how fast you want results.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-            {/* DIY */}
+            {/* DIY — reframed as The Hard Way */}
             <div className="bg-[#f5f5f7] rounded-[20px] p-8 border border-[#e8e8ed]">
-              <p className="text-[11px] font-bold text-[#7a7a7a] tracking-[0.18em] uppercase mb-3">Do It Yourself</p>
-              <p className="text-[18px] font-bold text-[#0a0a0a] mb-2">Follow the system. Build it manually.</p>
-              <p className="text-[14px] text-[#555] mb-6">You can absolutely build AI visibility manually. It just takes time and consistency.</p>
+              <p className="text-[11px] font-bold text-[#7a7a7a] tracking-[0.18em] uppercase mb-3">The Hard Way</p>
+              <p className="text-[18px] font-bold text-[#0a0a0a] mb-2">Build it yourself, platform by platform.</p>
+              <p className="text-[14px] text-[#555] mb-6">You can build AI visibility manually — but it requires consistent time across every platform, every month.</p>
               <ul className="space-y-4">
                 {[
-                  { label: "Manage Listings", body: "Update and align your business information across dozens of platforms." },
-                  { label: "Build & Respond to Reviews", body: "Consistently earn new reviews and respond in a timely, helpful way." },
-                  { label: "Create Clear Content", body: "Keep your website and key pages clear, accurate, and AI-friendly." },
-                  { label: "Stay Consistent", body: "Keep everything aligned, monitor changes, and adjust as needed." },
+                  { label: "Manage Listings Manually", body: "Update your business info across dozens of directories — and keep them aligned as things change." },
+                  { label: "Build Reviews Consistently", body: "Earn new reviews every month, respond to all of them, and track your reputation manually." },
+                  { label: "Optimize Content Yourself", body: "Keep your website and listings clear, accurate, and AI-friendly without guidance on what to prioritize." },
+                  { label: "Do It All Again Next Month", body: "AI visibility isn't a one-time task. It requires ongoing updates, monitoring, and adjustments." },
                 ].map((item) => (
                   <li key={item.label} className="flex items-start gap-3">
-                    <span className="text-[#1d1d1f] font-bold shrink-0 mt-0.5">→</span>
+                    <span className="text-red-400 font-bold shrink-0 mt-0.5">✕</span>
                     <div>
                       <p className="text-[14px] font-semibold text-[#0a0a0a]">{item.label}</p>
                       <p className="text-[13px] text-[#7a7a7a]">{item.body}</p>
@@ -357,7 +363,7 @@ export default function ServicesPage() {
                 ))}
               </ul>
               <div className="mt-6 bg-white rounded-[12px] px-5 py-4 border border-[#e8e8ed]">
-                <p className="text-[13px] text-[#555]">It works, just know it takes time, focus, and ongoing effort.</p>
+                <p className="text-[13px] text-[#555]">Most business owners start here. Most eventually stop — because running a business is already a full-time job.</p>
               </div>
             </div>
 

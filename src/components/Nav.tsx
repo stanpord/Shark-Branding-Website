@@ -7,8 +7,7 @@ import { useState } from "react";
 const links = [
   { href: "/", label: "Home" },
   { href: "/services", label: "Services" },
-  { href: "/marketing", label: "Marketing" },
-  { href: "/bots/showcase", label: "AI Employees" },
+  { href: "/aiemployees", label: "AI Employees" },
   { href: "/case-studies", label: "Case Studies" },
   { href: "/resources", label: "Resources" },
   { href: "/about", label: "About" },
@@ -19,8 +18,8 @@ export default function Nav() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 inset-x-0 z-50 bg-white h-11 flex items-center border-b border-[#e0e0e0]">
-      <nav className="w-full max-w-[1440px] mx-auto px-6 flex items-center justify-between">
+    <header className="fixed top-0 inset-x-0 z-50 bg-white border-b border-[#e0e0e0]" style={{ paddingTop: 'env(safe-area-inset-top)' }}>
+      <nav className="w-full h-11 max-w-[1440px] mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
         <Link
           href="/"
@@ -63,7 +62,6 @@ export default function Nav() {
 
         {/* Mobile hamburger */}
         <button
-          type="button"
           className="md:hidden text-[#1d1d1f] min-h-[44px] min-w-[44px] flex items-center justify-center rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 [touch-action:manipulation]"
           onClick={() => setOpen(!open)}
           aria-label="Toggle menu"
@@ -79,7 +77,7 @@ export default function Nav() {
 
       {/* Mobile menu */}
       {open && (
-        <div className="md:hidden absolute top-11 inset-x-0 bg-white p-6 flex flex-col gap-5 border-t border-[#e0e0e0]">
+        <div className="md:hidden absolute inset-x-0 bg-white py-6 px-6 flex flex-col gap-5 border-t border-[#e0e0e0]" style={{ top: 'calc(2.75rem + env(safe-area-inset-top))' }}>
           {links.map((l) => (
             <Link
               key={l.href}

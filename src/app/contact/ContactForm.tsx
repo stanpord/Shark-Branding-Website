@@ -1,34 +1,24 @@
 "use client";
 
-import type { FormEvent } from "react";
-import { useState, useRef } from "react";
-import Link from "next/link";
-
-const services = [
-  "Free AI Audit",
-  "AI Business Consulting",
-  "AI Visibility Toolkit: Self-Directed",
-  "AI Visibility Toolkit: Fully Managed",
-  "Workshop / Training",
-  "Not sure yet",
-];
-
-const inputClass =
-  "w-full border border-[#e0e0e0] rounded-[11px] px-4 py-3 text-[17px] text-[#1d1d1f] bg-white placeholder:text-[#cccccc] focus-visible:outline-none focus-visible:border-[#18b5d8] focus-visible:ring-2 focus-visible:ring-[#18b5d8]/20 motion-safe:transition-[border-color,box-shadow] [touch-action:manipulation]";
+import { useEffect, useRef } from "react";
 
 export default function ContactForm() {
-  const [submitted, setSubmitted] = useState(false);
-  const [loading, setLoading] = useState(false);
-  const statusRef = useRef<HTMLDivElement>(null);
+  const formContainerRef = useRef<HTMLDivElement>(null);
 
-  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-    setLoading(true);
-    // Replace with actual form submission (e.g. Resend, Formspree, etc.)
-    await new Promise((r) => setTimeout(r, 800));
-    setLoading(false);
-    setSubmitted(true);
-  }
+  useEffect(() => {
+    if (!formContainerRef.current) return;
+    const existing = document.getElementById("__custom_form_widget");
+    if (existing) existing.remove();
+
+    const script = document.createElement("script");
+    script.id = "__custom_form_widget";
+    script.src = "https://www.cdnstyles.com/static/custom_form_widget/v1/custom_form.widget.js";
+    script.setAttribute(
+      "data",
+      "eyJiYWNrZ3JvdW5kQ29sb3IiOiIjRjRGN0ZBIiwiYmFzZVVSTCI6Imh0dHBzOi8vZm9ybXMtcHJvZC5hcGlnYXRld2F5LmNvIiwiYm9yZGVyQ29sb3IiOiIjMWE3YWRiIiwiYm9yZGVyUmFkaXVzIjoiMTJweCIsImJvcmRlclN0eWxlIjoic29saWQiLCJib3JkZXJXaWR0aCI6IjJweCIsImZvcm1JZCI6IkZvcm1Db25maWdJRC05MGVmYzRmYy0yMDhhLTQyNTAtOTgyYS04NGYxYmVkMzM1ZTIiLCJwYWRkaW5nIjoiMjhweCIsInByaW1hcnlDb2xvciI6IiMxOEI1RDgiLCJwcmltYXJ5Rm9udENvbG9yIjoiIzBEMUYyRCIsIndpZHRoIjoiMTAwJSJ9"
+    );
+    formContainerRef.current.appendChild(script);
+  }, []);
 
   return (
     <>
@@ -38,7 +28,7 @@ export default function ContactForm() {
           <p className="text-[#18b5d8] text-[14px] font-semibold tracking-[0.15em] uppercase mb-5">
             Contact
           </p>
-          <h1 className="display-hero text-[#0a0a0a] mb-5" style={{textWrap:"balance"}}>
+          <h1 className="display-hero text-[#0a0a0a] mb-5" style={{ textWrap: "balance" }}>
             Let&rsquo;s talk about
             <br />
             <span className="text-[#18b5d8]">your visibility.</span>
@@ -53,170 +43,8 @@ export default function ContactForm() {
       {/* Form + info */}
       <section className="bg-white py-20 px-6">
         <div className="max-w-[980px] mx-auto grid grid-cols-1 md:grid-cols-[1fr_380px] gap-16">
-          {/* Form */}
-          <div>
-            {/* aria-live region announces state changes to screen readers */}
-            <div ref={statusRef} aria-live="polite" aria-atomic="true">
-              {submitted && (
-                <div className="text-center py-20">
-                  <p className="text-[56px] mb-4" aria-hidden="true">&#x2713;</p>
-                  <h2 className="display-md text-[#1d1d1f] mb-3">
-                    Message received!
-                  </h2>
-                  <p className="lead-airy text-[#333333]">
-                    We&rsquo;ll be in touch within one business day. If your
-                    request is for the free visibility report, expect it within
-                    48 hours.
-                  </p>
-                </div>
-              )}
-            </div>
-
-            {!submitted && (
-              <form onSubmit={handleSubmit} className="space-y-5" noValidate>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                  <div>
-                    <label htmlFor="first-name" className="block text-[14px] font-semibold text-[#1d1d1f] mb-2">
-                      First Name
-                    </label>
-                    <input
-                      id="first-name"
-                      name="first-name"
-                      type="text"
-                      required
-                      autoComplete="given-name"
-                      placeholder="Michelle…"
-                      className={inputClass}
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="last-name" className="block text-[14px] font-semibold text-[#1d1d1f] mb-2">
-                      Last Name
-                    </label>
-                    <input
-                      id="last-name"
-                      name="last-name"
-                      type="text"
-                      required
-                      autoComplete="family-name"
-                      placeholder="Stanaland…"
-                      className={inputClass}
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label htmlFor="email" className="block text-[14px] font-semibold text-[#1d1d1f] mb-2">
-                    Business Email
-                  </label>
-                  <input
-                    id="email"
-                    name="email"
-                    type="email"
-                    required
-                    autoComplete="email"
-                    spellCheck={false}
-                    placeholder="you@yourbusiness.com…"
-                    className={inputClass}
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="phone" className="block text-[14px] font-semibold text-[#1d1d1f] mb-2">
-                    Phone <span className="font-normal text-[#7a7a7a]">(optional)</span>
-                  </label>
-                  <input
-                    id="phone"
-                    name="phone"
-                    type="tel"
-                    autoComplete="tel"
-                    placeholder="(727) 000-0000…"
-                    className={inputClass}
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="business-name" className="block text-[14px] font-semibold text-[#1d1d1f] mb-2">
-                    Business Name
-                  </label>
-                  <input
-                    id="business-name"
-                    name="business-name"
-                    type="text"
-                    required
-                    autoComplete="organization"
-                    placeholder="Your Business LLC…"
-                    className={inputClass}
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="service" className="block text-[14px] font-semibold text-[#1d1d1f] mb-2">
-                    I&rsquo;m interested in&hellip;
-                  </label>
-                  <select
-                    id="service"
-                    name="service"
-                    required
-                    defaultValue=""
-                    className={inputClass}
-                  >
-                    <option value="" disabled>
-                      Select a service&hellip;
-                    </option>
-                    {services.map((s) => (
-                      <option key={s} value={s}>
-                        {s}
-                      </option>
-                    ))}
-                  </select>
-                </div>
-
-                <div>
-                  <label htmlFor="message" className="block text-[14px] font-semibold text-[#1d1d1f] mb-2">
-                    Message <span className="font-normal text-[#7a7a7a]">(optional)</span>
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    rows={4}
-                    autoComplete="off"
-                    placeholder="Tell us a bit about your business and what you&apos;re trying to solve…"
-                    className={`${inputClass} resize-none`}
-                  />
-                </div>
-
-                {/* SMS consent */}
-                <div className="space-y-3 pt-1">
-                  <label className="flex items-start gap-3 cursor-pointer group">
-                    <input
-                      type="checkbox"
-                      name="sms-consent"
-                      required
-                      className="mt-1 size-4 shrink-0 rounded border-[#e0e0e0] accent-[#18b5d8] cursor-pointer"
-                    />
-                    <span className="text-[13px] text-[#555] leading-relaxed">
-                      I agree to receive SMS messages from Shark Branding Solutions regarding my inquiry and services. Message frequency varies. Message &amp; data rates may apply. Reply <strong>STOP</strong> to opt out or <strong>HELP</strong> for help.
-                    </span>
-                  </label>
-                  <p className="text-[12px] text-[#999] leading-relaxed pl-7">
-                    By checking this box you consent to receive text messages at the number provided. Your information will not be shared with third parties. View our{" "}
-                    <Link href="/privacy" className="underline hover:text-[#18b5d8] motion-safe:transition-colors">Privacy Policy</Link>{" "}
-                    and{" "}
-                    <Link href="/terms" className="underline hover:text-[#18b5d8] motion-safe:transition-colors">Terms of Service</Link>.
-                  </p>
-                </div>
-
-                <button
-                  type="submit"
-                  disabled={loading}
-                  className="btn-press w-full bg-[#18b5d8] text-white text-[17px] font-semibold rounded-full py-[13px] hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 disabled:opacity-60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 [touch-action:manipulation]"
-                >
-                  {loading ? "Sending…" : "Send Message"}
-                </button>
-              </form>
-            )}
-          </div>
+          {/* Widget mounts here */}
+          <div ref={formContainerRef} />
 
           {/* Contact info sidebar */}
           <div className="space-y-8">
@@ -272,4 +100,3 @@ export default function ContactForm() {
     </>
   );
 }
-
