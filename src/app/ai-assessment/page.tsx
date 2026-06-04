@@ -186,15 +186,15 @@ export default function AiAssessmentPage() {
             {[
               {
                 q: "Is the 15-minute call really free?",
-                a: "Yes. No credit card, no obligation. It&rsquo;s a quick conversation to find out if AI makes sense for your business right now. If it doesn&rsquo;t, we&rsquo;ll tell you honestly.",
+                a: "Yes. No credit card, no obligation. It's a quick conversation to find out if AI makes sense for your business right now. If it doesn't, we'll tell you honestly.",
               },
               {
                 q: "What kind of businesses is this for?",
-                a: "Any local or service business that handles leads, bookings, reviews, or customer communication. HVAC, real estate, wellness, home services, professional services — if you have a sales or operations process, there&rsquo;s likely an AI that fits.",
+                a: "Any local or service business that handles leads, bookings, reviews, or customer communication. HVAC, real estate, wellness, home services, professional services — if you have a sales or operations process, there's likely an AI that fits.",
               },
               {
-                q: "What if I&rsquo;m not ready to sign up for anything?",
-                a: "That&rsquo;s fine. The assessment has value on its own. You&rsquo;ll walk away knowing exactly where AI could help and what it would take to get started.",
+                q: "What if I'm not ready to sign up for anything?",
+                a: "That's fine. The assessment has value on its own. You'll walk away knowing exactly where AI could help and what it would take to get started.",
               },
               {
                 q: "How fast can we get started after the assessment?",
@@ -203,7 +203,7 @@ export default function AiAssessmentPage() {
             ].map((item) => (
               <div key={item.q} className="bg-white rounded-[16px] px-7 py-6 border border-[#e5e5ea] shadow-sm">
                 <p className="text-[16px] font-bold text-[#1d1d1f] mb-2">{item.q}</p>
-                <p className="text-[14px] text-[#6e6e73] leading-relaxed" dangerouslySetInnerHTML={{ __html: item.a }} />
+                <p className="text-[14px] text-[#6e6e73] leading-relaxed">{item.a}</p>
               </div>
             ))}
           </div>
