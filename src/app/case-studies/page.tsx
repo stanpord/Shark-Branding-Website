@@ -18,7 +18,7 @@ export default function CaseStudiesPage() {
           <p className="text-[11px] font-bold tracking-[2px] uppercase text-[#18b5d8] mb-4">
             Documented Results
           </p>
-          <h1 className="text-[52px] sm:text-[64px] font-extrabold text-[#1d1d1f] leading-tight tracking-tight mb-6" style={{ textWrap: "balance" }}>
+          <h1 className="text-[38px] sm:text-[52px] lg:text-[64px] font-extrabold text-[#1d1d1f] leading-tight tracking-tight mb-6" style={{ textWrap: "balance" }}>
             Real clients.<br />
             <span className="text-[#18b5d8]">Real rankings.</span><br />
             30 days.
@@ -92,13 +92,13 @@ export default function CaseStudiesPage() {
 
         {/* Stats band */}
         <div className="bg-[#f5f5f7] border-b border-[#e5e5ea] px-6 py-12">
-          <div className="max-w-[1000px] mx-auto grid grid-cols-3 gap-6 divide-x divide-[#e5e5ea]">
+          <div className="max-w-[1000px] mx-auto grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-[#e5e5ea]">
             {[
               { v: "#32→#2", label: "Best keyword jump",   sub: '"same day AC repair"' },
               { v: "6",      label: "Keywords in top 3",   sub: "all high-intent local" },
               { v: "30d",    label: "Time to results",     sub: "page 3 to top local" },
             ].map((s) => (
-              <div key={s.label} className="px-6 text-center first:pl-0 last:pr-0">
+              <div key={s.label} className="py-6 sm:py-0 sm:px-6 text-center sm:first:pl-0 sm:last:pr-0">
                 <p className="text-[36px] sm:text-[44px] font-extrabold text-[#18b5d8] leading-none mb-2">{s.v}</p>
                 <p className="text-[14px] font-semibold text-[#1d1d1f] mb-1">{s.label}</p>
                 <p className="text-[12px] text-[#86868b]">{s.sub}</p>
@@ -150,32 +150,6 @@ export default function CaseStudiesPage() {
                   ))}
                 </ul>
               </div>
-            </div>
-
-            {/* Keyword ranking table */}
-            <p className="text-[11px] font-bold tracking-[2px] uppercase text-[#18b5d8] mb-5">Keyword Rankings</p>
-            <div className="rounded-[20px] overflow-hidden border border-[#e5e5ea] mb-14">
-              <div className="grid grid-cols-[1fr_110px_80px_110px] bg-[#f5f5f7] border-b border-[#e5e5ea] px-6 py-4 text-[11px] font-bold uppercase tracking-[1.5px] text-[#86868b]">
-                <span>Keyword</span>
-                <span className="text-center">Now</span>
-                <span className="text-center">Move</span>
-                <span className="text-center">Before</span>
-              </div>
-              {[
-                { kw: "same day ac repair",               after: "#2",  move: "+30", before: "#32" },
-                { kw: "air conditioning service near me", after: "#2",  move: "+29", before: "#31" },
-                { kw: "24 hour hvac repair",              after: "#3",  move: "+19", before: "#22" },
-                { kw: "emergency ac repair",              after: "#2",  move: "+19", before: "#21" },
-                { kw: "ac installation",                  after: "#4",  move: "+22", before: "#26" },
-                { kw: "hvac repair",                      after: "#5",  move: "+18", before: "#23" },
-              ].map((r, i) => (
-                <div key={r.kw} className={`grid grid-cols-[1fr_110px_80px_110px] px-6 py-4 items-center border-b border-[#f0f0f0] last:border-0 ${i % 2 === 1 ? "bg-[#fafafa]" : "bg-white"}`}>
-                  <span className="text-[15px] font-medium text-[#1d1d1f]">{r.kw}</span>
-                  <span className="text-center text-[15px] font-extrabold text-[#18b5d8]">{r.after}</span>
-                  <span className="text-center text-[14px] font-bold text-emerald-600">{r.move}</span>
-                  <span className="text-center text-[14px] text-[#86868b]">{r.before}</span>
-                </div>
-              ))}
             </div>
 
             {/* Live Analytics — actual screenshots */}
@@ -264,13 +238,13 @@ export default function CaseStudiesPage() {
         </div>
 
         <div className="bg-[#f5f5f7] border-b border-[#e5e5ea] px-6 py-12">
-          <div className="max-w-[1000px] mx-auto grid grid-cols-3 gap-6 divide-x divide-[#e5e5ea]">
+          <div className="max-w-[1000px] mx-auto grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-[#e5e5ea]">
             {[
               { v: "+20%",   label: "AI recommendations", sub: "within 30 days" },
               { v: "#4→#1",  label: "Local ranking",      sub: '"Best Realtors Wesley Chapel"' },
               { v: "2,000+", label: "Agents outranked",   sub: "Wesley Chapel market" },
             ].map((s) => (
-              <div key={s.label} className="px-6 text-center first:pl-0 last:pr-0">
+              <div key={s.label} className="py-6 sm:py-0 sm:px-6 text-center sm:first:pl-0 sm:last:pr-0">
                 <p className="text-[36px] sm:text-[44px] font-extrabold text-[#18b5d8] leading-none mb-2">{s.v}</p>
                 <p className="text-[14px] font-semibold text-[#1d1d1f] mb-1">{s.label}</p>
                 <p className="text-[12px] text-[#86868b]">{s.sub}</p>
@@ -369,13 +343,13 @@ export default function CaseStudiesPage() {
         </div>
 
         <div className="bg-[#f5f5f7] border-b border-[#e5e5ea] px-6 py-12">
-          <div className="max-w-[1000px] mx-auto grid grid-cols-3 gap-6 divide-x divide-[#e5e5ea]">
+          <div className="max-w-[1000px] mx-auto grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-[#e5e5ea]">
             {[
               { v: "#1",  label: "AI recommended",    sub: "Named, described & linked by AI" },
               { v: "3",   label: "AI platforms",       sub: "ChatGPT, Gemini, Perplexity" },
               { v: "30d", label: "Time to visibility", sub: "invisible to top result" },
             ].map((s) => (
-              <div key={s.label} className="px-6 text-center first:pl-0 last:pr-0">
+              <div key={s.label} className="py-6 sm:py-0 sm:px-6 text-center sm:first:pl-0 sm:last:pr-0">
                 <p className="text-[36px] sm:text-[44px] font-extrabold text-[#18b5d8] leading-none mb-2">{s.v}</p>
                 <p className="text-[14px] font-semibold text-[#1d1d1f] mb-1">{s.label}</p>
                 <p className="text-[12px] text-[#86868b]">{s.sub}</p>
@@ -458,13 +432,13 @@ export default function CaseStudiesPage() {
         </div>
 
         <div className="bg-[#f5f5f7] border-b border-[#e5e5ea] px-6 py-12">
-          <div className="max-w-[1000px] mx-auto grid grid-cols-3 gap-6 divide-x divide-[#e5e5ea]">
+          <div className="max-w-[1000px] mx-auto grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-[#e5e5ea]">
             {[
               { v: "96%", label: "AI visibility gap",  sub: "members not recommended by AI" },
               { v: "10×", label: "More AI citations",  sub: "Chamber as trusted local source" },
               { v: "30d", label: "Days to results",    sub: "measurable visibility gains" },
             ].map((s) => (
-              <div key={s.label} className="px-6 text-center first:pl-0 last:pr-0">
+              <div key={s.label} className="py-6 sm:py-0 sm:px-6 text-center sm:first:pl-0 sm:last:pr-0">
                 <p className="text-[36px] sm:text-[44px] font-extrabold text-[#18b5d8] leading-none mb-2">{s.v}</p>
                 <p className="text-[14px] font-semibold text-[#1d1d1f] mb-1">{s.label}</p>
                 <p className="text-[12px] text-[#86868b]">{s.sub}</p>
