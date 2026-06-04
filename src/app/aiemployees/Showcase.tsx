@@ -356,7 +356,7 @@ export default function Showcase() {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
             <a
-              href="/free-report"
+              href="/ai-assessment"
               className="bg-[#18b5d8] text-white text-[16px] font-bold rounded-full px-9 py-4 hover:bg-[#1297b8] transition-colors duration-150 inline-block shadow-[0_4px_20px_rgba(24,181,216,0.35)]"
             >
               Book My Free AI Assessment
