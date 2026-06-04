@@ -178,6 +178,48 @@ export default function CaseStudiesPage() {
               ))}
             </div>
 
+            {/* Live Analytics — actual screenshots */}
+            <p className="text-[11px] font-bold tracking-[2px] uppercase text-[#18b5d8] mb-5">Live Business Impact: Real Data, Real Results</p>
+
+            <div className="bg-[#07141a] rounded-[20px] overflow-hidden border border-[#18b5d8]/15 mb-4">
+              <div className="px-6 pt-5 pb-3">
+                <p className="text-[11px] font-bold text-[#18b5d8]/60 uppercase tracking-[0.18em]">Google Maps Local Ranking — HVAC Emergency Repair</p>
+              </div>
+              <Image
+                src="/case-studies/hvac/maps-ranking.png"
+                alt="Google Maps local ranking grid showing #1 and #2 positions across the service area for HVAC Emergency Repair"
+                width={1400}
+                height={500}
+                className="w-full h-auto"
+              />
+            </div>
+
+            <div className="bg-[#07141a] rounded-[20px] overflow-hidden border border-[#18b5d8]/15 mb-4">
+              <div className="px-6 pt-5 pb-3">
+                <p className="text-[11px] font-bold text-[#18b5d8]/60 uppercase tracking-[0.18em]">Keyword Rankings — All tracked keywords moved to #1</p>
+              </div>
+              <Image
+                src="/case-studies/hvac/keyword-rankings.png"
+                alt="Keyword ranking table showing all HVAC keywords ranked #1 with significant position improvements"
+                width={1400}
+                height={420}
+                className="w-full h-auto"
+              />
+            </div>
+
+            <div className="bg-[#07141a] rounded-[20px] overflow-hidden border border-[#18b5d8]/15 mb-14">
+              <div className="px-6 pt-5 pb-3">
+                <p className="text-[11px] font-bold text-[#18b5d8]/60 uppercase tracking-[0.18em]">Marketing Dashboard — Impressions, Engagement &amp; Leads</p>
+              </div>
+              <Image
+                src="/case-studies/hvac/vendasta-dashboard.png"
+                alt="Marketing analytics dashboard showing 4,455 impressions, 188 engagement, and 228 leads"
+                width={1400}
+                height={560}
+                className="w-full h-auto"
+              />
+            </div>
+
             {/* Pull quote */}
             <blockquote className="border-l-4 border-[#18b5d8] pl-8 py-2 mb-12">
               <p className="text-[20px] text-[#1d1d1f] leading-relaxed italic mb-3">
