@@ -348,7 +348,7 @@ export default function Showcase() {
 
           <h1 className="text-[52px] sm:text-[68px] font-extrabold text-[#1d1d1f] leading-[1.05] tracking-tight mb-6">
             Hire your first AI employee<br className="hidden sm:block" />
-            <span style={{ color: '#18b5d8' }}> in 30 days.</span>
+            <span style={{ color: '#18b5d8' }}> Today.</span>
           </h1>
           <p className="text-[#6e6e73] text-[18px] sm:text-[20px] leading-relaxed mb-10 max-w-2xl mx-auto">
             AI employees that handle leads, follow-up, reviews, and content — 24/7, on autopilot. Your team closes deals. The AI handles everything else.
@@ -356,10 +356,10 @@ export default function Showcase() {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
             <a
-              href="#quiz"
+              href="/free-report"
               className="bg-[#18b5d8] text-white text-[16px] font-bold rounded-full px-9 py-4 hover:bg-[#1297b8] transition-colors duration-150 inline-block shadow-[0_4px_20px_rgba(24,181,216,0.35)]"
             >
-              Find My AI Employee
+              Book My Free AI Assessment
             </a>
             <button
               onClick={openDemo}
