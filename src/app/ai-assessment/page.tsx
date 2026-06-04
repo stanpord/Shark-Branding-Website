@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import BookingWidget from "./BookingWidget";
 
 export const metadata: Metadata = {
@@ -82,7 +81,7 @@ export default function AiAssessmentPage() {
 
 
       {/* ── Booking widget ── */}
-      <section className="bg-white px-6 py-20">
+      <section id="booking" className="bg-white px-6 py-20">
         <div className="max-w-[680px] mx-auto">
           <p className="text-[11px] font-bold tracking-[2px] uppercase text-[#18b5d8] mb-3 text-center">Book your spot</p>
           <h2 className="text-[28px] sm:text-[36px] font-extrabold text-[#1d1d1f] leading-tight tracking-tight text-center mb-3" style={{ textWrap: "balance" }}>
@@ -139,13 +138,12 @@ export default function AiAssessmentPage() {
                 ))}
               </ul>
 
-              <Link
-                href="#"
-                onClick={(e) => e.preventDefault()}
+              <a
+                href="#booking"
                 className="block text-center bg-[#18b5d8] text-white text-[15px] font-bold rounded-full px-7 py-3.5 hover:bg-[#14a0c0] motion-safe:transition-colors"
               >
                 Start with your free assessment
-              </Link>
+              </a>
             </div>
 
             {/* How sessions work */}
@@ -223,8 +221,7 @@ export default function AiAssessmentPage() {
             Book your complimentary AI assessment and find out what&rsquo;s possible.
           </p>
           <a
-            href="#"
-            onClick={(e) => { e.preventDefault(); window.scrollTo({ top: document.querySelector("section:nth-of-type(3)")?.getBoundingClientRect().top! + window.scrollY - 80, behavior: "smooth" }); }}
+            href="#booking"
             className="inline-block bg-[#18b5d8] text-white text-[16px] font-bold rounded-full px-9 py-4 hover:bg-[#14a0c0] motion-safe:transition-colors shadow-[0_4px_20px_rgba(24,181,216,0.3)]"
           >
             Book My Free AI Assessment
