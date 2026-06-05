@@ -11,6 +11,93 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
 };
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What is AI visibility consulting?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "AI visibility consulting helps your business get found and recommended by AI-powered search tools like ChatGPT, Google AI Overviews, and Gemini. Shark Branding Solutions optimizes your listings, content, and trust signals so AI recommends you — not your competitors — when buyers ask questions in your category.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What is the difference between SEO and GEO?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Traditional SEO (Search Engine Optimization) targets ranked blue links in search results — the goal is to appear on page one of Google. GEO (Generative Engine Optimization) targets the AI answer layer — the direct responses that ChatGPT, Perplexity, Google AI Overviews, and Gemini give users before they see any links. GEO focuses on entity recognition, citation authority, structured data, and answer-ready content rather than keyword rankings.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Do I need to run paid ads to appear in AI search results?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "No. AI recommendations from ChatGPT, Gemini, and Google AI Overviews are based on trust signals, consistent business data, reviews, and content quality — not paid ads. The AI Visibility Toolkit by Shark Branding Solutions targets exactly these organic signals.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How quickly can I see results from AI visibility optimization?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Most clients see measurable improvements within 30 days. One HVAC client moved from #32 to #2 in under 30 days. Initial changes are deployed in 7–14 days; ranking movement typically follows within 30 days for most local service categories in the Tampa Bay area.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What types of businesses does Shark Branding Solutions work with?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Shark Branding Solutions works primarily with local and regional businesses in the Tampa Bay area — including home service companies (HVAC, plumbing, electrical, roofing), real estate professionals, contractors, healthcare providers (medical, dental), legal professionals, restaurants, salons, and chamber organizations.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What industries see the best results from AI visibility optimization?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Industries with high local search intent see the strongest results: HVAC and home services, legal and professional services, medical and dental, real estate, restaurants, contractors, and salons. These are categories where buyers actively ask AI tools for recommendations before making purchase decisions.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Is Shark Branding Solutions a marketing agency?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "No. Shark Branding Solutions is an AI business consulting firm — not a marketing agency. The distinction matters: a marketing agency creates content and runs campaigns. An AI consulting firm like Shark Branding Solutions optimizes the structural signals (entity data, trust indicators, schema markup, citation consistency) that determine whether AI systems recommend a business at all.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What AI platforms does Shark Branding Solutions optimize for?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Shark Branding Solutions optimizes for ChatGPT (OpenAI), Google AI Overviews (formerly SGE), Gemini (Google), Perplexity, and Bing Copilot (Microsoft). Each platform has different citation logic — Google AI Overviews weight traditional search signals, ChatGPT weights Wikipedia and brand mentions, Perplexity weights Reddit and authoritative sources. Shark Branding Solutions builds strategies that address all platforms simultaneously.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How much does AI visibility consulting cost?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "The AI Visibility Toolkit is available at $497/month (self-directed) or $2,000/month (fully managed). AI Operations and Marketing employees are priced per custom scope — typically quoted after a discovery session. A Free Visibility Audit is available at no cost at sharkbrandingsolutions.com/free-report.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Where is Shark Branding Solutions located?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Shark Branding Solutions is headquartered in Wesley Chapel, Florida 33544. The firm serves all Tampa Bay area businesses and offers virtual consulting for clients outside the Tampa Bay region. Phone: (727) 513-3955. Email: info@sharkbrandingsolutions.com.",
+      },
+    },
+  ],
+};
+
 const schema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
@@ -34,6 +121,10 @@ export default function AIInformationsPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
       <div className="bg-white min-h-screen pt-11">

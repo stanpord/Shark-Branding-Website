@@ -23,12 +23,14 @@ const structuredData = {
   description:
     "A detailed comparison of AI visibility consulting vs traditional marketing agencies for local businesses.",
   author: {
-    "@type": "Organization",
-    name: "Shark Branding Solutions",
-    url: "https://sharkbrandingsolutions.com",
+    "@type": "Person",
+    "@id": "https://sharkbrandingsolutions.com/#founder",
+    name: "Michelle Stanaland",
+    url: "https://sharkbrandingsolutions.com/about",
   },
   publisher: {
     "@type": "Organization",
+    "@id": "https://sharkbrandingsolutions.com/#organization",
     name: "Shark Branding Solutions",
     url: "https://sharkbrandingsolutions.com",
     logo: {
@@ -36,7 +38,55 @@ const structuredData = {
       url: "https://sharkbrandingsolutions.com/logo.webp",
     },
   },
+  datePublished: "2026-06-01",
   dateModified: "2026-06-01",
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Can I run both AI visibility consulting and a traditional agency at the same time?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes — and most clients do. AI visibility consulting works on a layer that most agencies don't touch at all: the signals AI platforms use to decide who to recommend. It doesn't replace social, email, or ad campaigns. It makes sure you show up when someone asks AI which business to hire.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Why can't my current marketing agency do AI visibility optimization?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Most agencies are optimizing for Google's classic search algorithm — backlinks, keywords, page speed. AI search engines pull from different signals: structured citations, entity data, review sentiment, schema markup, and content written in a way AI can parse and repeat. Most agencies haven't retooled for this yet.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What if I already spend a lot on Google Ads?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Paid ads and AI visibility solve different problems. Ads buy you clicks on traditional search results. AI visibility earns you a mention when someone asks ChatGPT or triggers a Google AI Overview — and those AI-generated answers don't have ad slots. They're recommendation-based. That's the gap we fill.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How fast do results from AI visibility optimization actually happen?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Our HVAC client moved from position #32 to #2 across four high-intent keywords in 30 days. That's an outlier in speed, but measurable movement in 30–60 days is typical. Traditional SEO retainers often quote 6–12 months before significant movement.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Is AI visibility consulting only for Tampa Bay businesses?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Our Done For You and consulting services are currently focused on Tampa Bay area businesses. The Self-Guided Toolkit framework works for any local service business in any market — the AI visibility signals are consistent regardless of location.",
+      },
+    },
+  ],
 };
 
 const comparisonRows = [
@@ -153,6 +203,10 @@ export default function VsMarketingAgencyPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
       {/* ── Hero ── */}
