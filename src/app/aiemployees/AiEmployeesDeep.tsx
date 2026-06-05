@@ -907,6 +907,58 @@ export default function AiEmployeesDeep() {
 
       <SectionDivider />
 
+      {/* ── HOW THEY THINK ────────────────────────────────────────────── */}
+      <section className="bg-white py-24 px-6">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-14">
+            <p className="text-[11px] font-bold tracking-[2px] uppercase text-[#18b5d8] mb-4">Under the Hood</p>
+            <h2 className="text-[36px] sm:text-[40px] font-extrabold text-[#1d1d1f] leading-tight tracking-tight mb-4">
+              They don't follow a script. They think.
+            </h2>
+            <p className="text-[#6e6e73] text-[17px] leading-relaxed max-w-xl mx-auto">
+              Each AI Employee runs multiple capabilities at once and decides in real time which one to activate based on what the customer actually needs.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10">
+            {[
+              {
+                label: 'Contextual activation',
+                body: 'A question about hours triggers knowledge base access. A pricing question activates product lookup. An interest in services kicks off lead capture and booking — automatically.',
+              },
+              {
+                label: 'Adaptive behavior',
+                body: 'Each capability is configured with specific prompts and parameters. The same capability works differently depending on the employee, the business, and the conversation context.',
+              },
+              {
+                label: 'Multi-capability at once',
+                body: 'Each AI Employee can run multiple capabilities simultaneously. They evaluate every message and activate whatever combination serves the customer best.',
+              },
+            ].map(item => (
+              <div key={item.label} className="bg-[#f5f5f7] rounded-[20px] p-7">
+                <p className="text-[15px] font-bold text-[#1d1d1f] mb-3">{item.label}</p>
+                <p className="text-[14px] text-[#6e6e73] leading-relaxed">{item.body}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="bg-[#f5f5f7] rounded-[20px] p-7">
+              <p className="text-[11px] font-bold tracking-[1.5px] uppercase text-[#18b5d8] mb-3">Prompts</p>
+              <p className="text-[15px] font-bold text-[#1d1d1f] mb-3">Written instructions that define behavior</p>
+              <p className="text-[14px] text-[#6e6e73] leading-relaxed">When to activate, what info to collect first, how to respond, and how to handle edge cases — all defined per employee, per context.</p>
+            </div>
+            <div className="bg-[#f5f5f7] rounded-[20px] p-7">
+              <p className="text-[11px] font-bold tracking-[1.5px] uppercase text-[#18b5d8] mb-3">Tools</p>
+              <p className="text-[15px] font-bold text-[#1d1d1f] mb-3">Live connections to your systems</p>
+              <p className="text-[14px] text-[#6e6e73] leading-relaxed">Custom capabilities connect to any API — your CRM, scheduling software, inventory system, or internal tools — so the AI acts on real data, not guesses.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <SectionDivider />
+
       {/* ── BOTTOM CTA ────────────────────────────────────────────────── */}
       <section className="bg-[#07141a] py-24 px-6">
         <div className="max-w-2xl mx-auto text-center">
