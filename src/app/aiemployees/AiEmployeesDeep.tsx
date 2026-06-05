@@ -149,7 +149,7 @@ export default function AiEmployeesDeep() {
                 Most leads decide in seconds whether to reach out. Gemma greets every visitor instantly, asks the right qualifying questions, and collects their contact info — before they bounce to a competitor.
               </p>
               <ul className="space-y-2">
-                {['Instant greeting — no wait time', 'Customizable qualifying questions', 'Lead info captured automatically', 'Hands off to your team when ready'].map(t => <CheckItem key={t} text={t} />)}
+                {['Instant greeting — no wait time', 'Customizable qualifying questions', 'Lead info captured automatically', 'Responds automatically in 40+ languages', 'Hands off to your team when ready'].map(t => <CheckItem key={t} text={t} />)}
               </ul>
             </div>
           </div>
@@ -165,7 +165,7 @@ export default function AiEmployeesDeep() {
                 Gemma connects directly to your calendar and lets qualified leads pick a time that works for them — no phone tag, no scheduling delays, no dropped balls.
               </p>
               <ul className="space-y-2">
-                {['Real-time calendar integration', 'Confirms appointments via SMS/email', 'Sends reminders automatically', 'Reschedule and cancel support'].map(t => <CheckItem key={t} text={t} />)}
+                {['Real-time calendar integration', 'Confirms appointments via SMS/email', 'Sends reminders automatically', 'Reschedule and cancel support', 'Books multiple services in one session'].map(t => <CheckItem key={t} text={t} />)}
               </ul>
             </div>
             {/* Mock: Booking widget */}
@@ -227,6 +227,20 @@ export default function AiEmployeesDeep() {
               </ul>
             </div>
           </div>
+          {/* Voice Receptionist callout */}
+          <div className="mt-16 bg-[#07141a] rounded-[20px] p-8 flex flex-col sm:flex-row items-start sm:items-center gap-6">
+            <div className="w-12 h-12 rounded-full bg-[#18b5d8]/20 flex items-center justify-center shrink-0">
+              <svg className="w-6 h-6 text-[#18b5d8]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+            </div>
+            <div className="flex-1">
+              <p className="text-white font-bold text-[16px] mb-1">Gemma also answers your phones.</p>
+              <p className="text-[#8a9ba8] text-[14px] leading-relaxed">The Voice Receptionist add-on handles inbound calls, takes messages, and transfers to your team — so no call goes unanswered even when you're on the job.</p>
+            </div>
+            <a href="/contact" className="shrink-0 bg-[#18b5d8] text-white text-[13px] font-bold px-5 py-2.5 rounded-full hover:bg-[#14a0c0] transition-colors whitespace-nowrap">
+              Ask about Voice
+            </a>
+          </div>
+
         </div>
       </section>
 
@@ -644,6 +658,44 @@ export default function AiEmployeesDeep() {
               <ul className="space-y-2">
                 {['Company size and revenue data', 'Owner and direct contact info', 'Online reputation snapshot', 'Enrichment runs automatically on new leads'].map(t => <CheckItem key={t} text={t} />)}
               </ul>
+            </div>
+          </div>
+
+          <Connector />
+
+          {/* Feature 04 — Conversational CRM insights */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+            <div className="order-2 lg:order-1">
+              <p className="text-[11px] font-bold tracking-[1.5px] uppercase text-[#86868b] mb-3">Feature 04</p>
+              <h3 className="text-[26px] font-bold text-[#1d1d1f] leading-tight tracking-tight mb-4">Ask your pipeline anything — in plain English.</h3>
+              <p className="text-[#6e6e73] text-[16px] leading-relaxed mb-5">
+                Instead of pulling reports or digging through records, just ask. Your AI Sales Assistant answers questions about your pipeline, contact history, and meeting outcomes in seconds.
+              </p>
+              <ul className="space-y-2">
+                {['Natural-language pipeline queries', 'Company and deal history on demand', 'Meeting summaries and action items', 'No reports, no manual searching'].map(t => <CheckItem key={t} text={t} />)}
+              </ul>
+            </div>
+            {/* Mock: CRM chat */}
+            <div className="order-1 lg:order-2 bg-white rounded-[20px] p-6 border border-[#e5e5ea] shadow-sm">
+              <p className="text-[11px] font-bold tracking-[1.5px] uppercase text-[#86868b] mb-4">Ask Your CRM</p>
+              <div className="space-y-3">
+                <div className="flex justify-end">
+                  <div className="bg-[#18b5d8] text-white text-[12px] rounded-[14px] rounded-tr-[4px] px-3.5 py-2.5 max-w-[80%]">Which deals haven't moved in 2 weeks?</div>
+                </div>
+                <div className="flex justify-start">
+                  <div className="bg-[#f5f5f7] border border-[#e5e5ea] text-[#1d1d1f] text-[12px] rounded-[14px] rounded-tl-[4px] px-3.5 py-2.5 max-w-[85%] leading-relaxed">
+                    <span className="font-semibold text-[#18b5d8]">4 deals</span> stalled: Acme Plumbing ($8k), Rivera HVAC ($5.5k), Sunbelt Roofing ($12k), and TampaBay Electric ($3k). Last activity was 14–18 days ago.
+                  </div>
+                </div>
+                <div className="flex justify-end">
+                  <div className="bg-[#18b5d8] text-white text-[12px] rounded-[14px] rounded-tr-[4px] px-3.5 py-2.5 max-w-[80%]">What came out of my call with Rivera?</div>
+                </div>
+                <div className="flex justify-start">
+                  <div className="bg-[#f5f5f7] border border-[#e5e5ea] text-[#1d1d1f] text-[12px] rounded-[14px] rounded-tl-[4px] px-3.5 py-2.5 max-w-[85%] leading-relaxed">
+                    Action items: send updated proposal by Friday, loop in their operations manager. They're ready to sign pending pricing review.
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
