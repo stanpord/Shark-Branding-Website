@@ -508,7 +508,7 @@ export default function CaseStudiesPage() {
           <div className="mb-12">
             <p className="text-[11px] font-bold tracking-[2px] uppercase text-[#18b5d8] mb-3">AI Employee Results</p>
             <h3 className="text-[36px] sm:text-[44px] font-extrabold text-[#1d1d1f] leading-tight tracking-tight max-w-[640px] mb-4" style={{ textWrap: "balance" }}>
-              More results from the AI employee platform powering our work.
+              More results from businesses running our AI employees.
             </h3>
             <p className="text-[16px] text-[#6e6e73] max-w-[600px] leading-relaxed">
               These results come from businesses using the same AI employees we configure for our clients — Gemma, Reputation Specialist, AI CRM, and custom-built roles across home services, real estate, healthcare, and more.
@@ -573,7 +573,7 @@ export default function CaseStudiesPage() {
           </div>
 
           <p className="text-[12px] text-[#86868b] mt-8 text-center">
-            Results verified through our AI employee delivery platform. Industry, business size, and AI employee configuration vary per client.
+            Results from real businesses. Industry, business size, and AI employee configuration vary per client.
           </p>
         </div>
       </section>
