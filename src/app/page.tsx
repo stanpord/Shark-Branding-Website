@@ -224,6 +224,50 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ── AI Employees ── */}
+      <section className="bg-white px-6 py-20 border-t border-[#e8e8ed]">
+        <div className="max-w-[980px] mx-auto">
+          <div className="text-center mb-12">
+            <p className="text-[#18b5d8] text-[13px] font-semibold tracking-[0.2em] uppercase mb-5">AI Employees</p>
+            <h2 className="display-lg text-[#0a0a0a]" style={{ textWrap: 'balance' }}>
+              Your business runs 24/7. Your team shouldn&rsquo;t have to.
+            </h2>
+            <p className="text-[16px] text-[#555] mt-5 max-w-[520px] mx-auto">
+              AI employees handle lead follow-up, review management, content, and bookings — automatically, while you focus on the work that actually requires you.
+            </p>
+          </div>
+
+          <div className="flex gap-4 overflow-x-auto pb-4 snap-x snap-mandatory scrollbar-none -mx-6 px-6">
+            {[
+              { name: 'Gemma', role: 'Chat Receptionist', color: '#18b5d8', colorBg: '#e8f8fc', desc: 'Greets every visitor, qualifies leads, and books appointments 24/7.' },
+              { name: 'Blogger', role: 'Content Writer', color: '#4FD1A0', colorBg: '#edfaf5', desc: 'Publishes weekly SEO articles that rank and get cited by AI search.' },
+              { name: 'Reputation Specialist', role: 'Review Manager', color: '#d4a200', colorBg: '#fef9e7', desc: 'Requests reviews after every job and responds to all comments automatically.' },
+              { name: 'AI CRM', role: 'Sales Assistant', color: '#18b5d8', colorBg: '#e8f8fc', desc: 'Runs multi-touch follow-up across email, SMS, and phone so no lead goes cold.' },
+              { name: 'Social Media Manager', role: 'Content Publisher', color: '#F7555F', colorBg: '#fef0f1', desc: 'Creates and schedules daily on-brand content across every platform.' },
+            ].map((emp) => (
+              <div
+                key={emp.name}
+                className="flex-none w-[220px] snap-start bg-[#f5f5f7] rounded-[20px] p-6 border border-[#e8e8ed]"
+              >
+                <div className="w-10 h-10 rounded-full mb-4 flex items-center justify-center font-black text-[15px]"
+                  style={{ background: emp.colorBg, color: emp.color }}>
+                  {emp.name[0]}
+                </div>
+                <p className="text-[11px] font-bold uppercase tracking-[0.15em] mb-1" style={{ color: emp.color }}>{emp.role}</p>
+                <p className="text-[15px] font-bold text-[#0a0a0a] mb-3">{emp.name}</p>
+                <p className="text-[13px] text-[#555] leading-relaxed">{emp.desc}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center mt-8">
+            <Link href="/aiemployees" className="text-[14px] font-semibold text-[#18b5d8] hover:underline">
+              Meet the full AI team →
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* ── CTA ── */}
       <section className="bg-[#0a0a0a] py-28 px-6 text-center">
         <div className="max-w-[560px] mx-auto">
