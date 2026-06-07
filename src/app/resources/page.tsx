@@ -19,6 +19,15 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "blog-why-tampa-bay-businesses-switching-ai-employees",
+    category: "AI Employees",
+    title: "Why Tampa Bay Businesses Are Switching to AI Employees in 2026",
+    excerpt: "The three reasons local service businesses in Wesley Chapel and Tampa Bay are replacing manual follow-up, review requests, and receptionist tasks with AI employees — and what the results look like.",
+    date: "June 7, 2026",
+    readTime: "7 min read",
+    image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=900&h=420&q=80",
+  },
+  {
     slug: "blog-ai-receptionist-vs-human-receptionist",
     category: "AI Employees",
     title: "AI Receptionist vs. Human Receptionist: What Tampa Bay Businesses Need to Know",
