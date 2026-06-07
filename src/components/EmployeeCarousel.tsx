@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect, useCallback } from "react"
 import Link from "next/link"
 
 const employees = [
@@ -19,7 +19,6 @@ const employees = [
       { val: "24/7", label: "never clocks out" },
     ],
     features: ["Instant lead capture", "Real-time calendar booking", "SMS & email confirmations", "Voice receptionist add-on"],
-    comingSoon: false,
   },
   {
     id: "reputation",
@@ -36,7 +35,6 @@ const employees = [
       { val: "2hr", label: "response time on every review" },
     ],
     features: ["Post-job SMS review requests", "Auto-response to all reviews", "Google & Facebook coverage", "Sentiment analysis and insights"],
-    comingSoon: false,
   },
   {
     id: "aicrm",
@@ -53,78 +51,53 @@ const employees = [
       { val: "78%", label: "of buyers go with the first responder" },
     ],
     features: ["Immediate lead response", "Email, SMS, and phone sequences", "Cold lead re-engagement at 30/60/90 days", "CRM auto-logging"],
-    comingSoon: false,
-  },
-  {
-    id: "blogger",
-    name: "Blogger",
-    role: "Content Writer",
-    color: "#4FD1A0",
-    colorBg: "#edfaf5",
-    colorText: "#1a7a56",
-    href: "/aiemployees#blogger",
-    tagline: "Rank. Get cited. Get found.",
-    desc: "Blogger publishes weekly SEO articles targeting the exact keywords your customers search for, structured to get cited by Google AI, ChatGPT, and Perplexity. Hands-free.",
-    stats: [
-      { val: "52+", label: "articles published per year" },
-      { val: "#1", label: "AI citation target per category" },
-    ],
-    features: ["Keyword-targeted weekly articles", "AI citation optimization", "Schema markup on every post", "Content calendar built for you"],
-    comingSoon: true,
-  },
-  {
-    id: "social",
-    name: "Social Media Manager",
-    role: "Content Publisher",
-    color: "#F7555F",
-    colorBg: "#fef0f1",
-    colorText: "#c73a43",
-    href: "/aiemployees#social",
-    tagline: "Daily content. Zero effort.",
-    desc: "Your Social Media Manager creates and publishes daily on-brand content across Facebook, Instagram, Google Business, and LinkedIn — in your voice, every single day.",
-    stats: [
-      { val: "31", label: "posts published per month" },
-      { val: "4+", label: "platforms managed simultaneously" },
-    ],
-    features: ["Daily brand-voice posts", "Facebook, Instagram, Google, LinkedIn", "Optimal posting time scheduling", "Monthly performance reports"],
-    comingSoon: true,
   },
 ]
 
+const INTERVAL = 5000
+
 export default function EmployeeCarousel() {
   const [current, setCurrent] = useState(0)
+  const [paused, setPaused] = useState(false)
 
-  const prev = () => setCurrent((c) => (c === 0 ? employees.length - 1 : c - 1))
-  const next = () => setCurrent((c) => (c === employees.length - 1 ? 0 : c + 1))
+  const next = useCallback(() => {
+    setCurrent((c) => (c === employees.length - 1 ? 0 : c + 1))
+  }, [])
+
+  const prev = useCallback(() => {
+    setCurrent((c) => (c === 0 ? employees.length - 1 : c - 1))
+  }, [])
+
+  useEffect(() => {
+    if (paused) return
+    const id = setInterval(next, INTERVAL)
+    return () => clearInterval(id)
+  }, [paused, next])
 
   const emp = employees[current]
 
   return (
-    <div className="relative">
+    <div
+      className="relative"
+      onMouseEnter={() => setPaused(true)}
+      onMouseLeave={() => setPaused(false)}
+    >
       {/* Card */}
       <div
-        className="rounded-[24px] border overflow-hidden"
-        style={{ borderColor: emp.colorBg, background: emp.colorBg }}
+        className="rounded-[24px] overflow-hidden"
+        style={{ background: emp.colorBg }}
       >
         <div className="grid grid-cols-1 md:grid-cols-2">
           {/* Left — Identity */}
           <div className="p-8 md:p-10 flex flex-col justify-between" style={{ background: emp.color }}>
             <div>
-              <div className="flex items-center gap-2 mb-6">
-                <span
-                  className="text-[11px] font-bold uppercase tracking-[0.18em] px-3 py-1.5 rounded-full"
-                  style={{ background: 'rgba(255,255,255,0.2)', color: '#fff' }}
-                >
-                  {emp.role}
-                </span>
-                {emp.comingSoon && (
-                  <span className="text-[10px] font-bold uppercase tracking-[0.15em] px-2.5 py-1 rounded-full bg-black/20 text-white/80">
-                    Coming Soon
-                  </span>
-                )}
-              </div>
+              <span
+                className="inline-block text-[11px] font-bold uppercase tracking-[0.18em] px-3 py-1.5 rounded-full mb-6"
+                style={{ background: 'rgba(255,255,255,0.2)', color: '#fff' }}
+              >
+                {emp.role}
+              </span>
 
-              {/* Big avatar */}
               <div
                 className="w-20 h-20 rounded-full flex items-center justify-center font-black text-[36px] mb-6"
                 style={{ background: 'rgba(255,255,255,0.2)', color: '#fff' }}
@@ -140,7 +113,6 @@ export default function EmployeeCarousel() {
               </p>
             </div>
 
-            {/* Stats */}
             <div className="grid grid-cols-2 gap-3 mt-8">
               {emp.stats.map((s) => (
                 <div key={s.val} className="bg-white/15 rounded-[14px] p-4">
@@ -174,21 +146,13 @@ export default function EmployeeCarousel() {
               </ul>
             </div>
 
-            <div className="flex items-center gap-3">
-              {emp.comingSoon ? (
-                <span className="inline-block text-[14px] font-semibold text-[#999] border border-[#e0e0e0] rounded-full px-5 py-2.5">
-                  Coming Soon
-                </span>
-              ) : (
-                <Link
-                  href={emp.href}
-                  className="inline-block text-[14px] font-bold text-white rounded-full px-6 py-3 hover:opacity-90 motion-safe:transition-opacity"
-                  style={{ background: emp.color }}
-                >
-                  Meet {emp.name} →
-                </Link>
-              )}
-            </div>
+            <Link
+              href={emp.href}
+              className="inline-block text-[14px] font-bold text-white rounded-full px-6 py-3 hover:opacity-90 motion-safe:transition-opacity self-start"
+              style={{ background: emp.color }}
+            >
+              Meet {emp.name} →
+            </Link>
           </div>
         </div>
       </div>
@@ -200,9 +164,9 @@ export default function EmployeeCarousel() {
           {employees.map((e, i) => (
             <button
               key={e.id}
-              onClick={() => setCurrent(i)}
+              onClick={() => { setCurrent(i); setPaused(true) }}
               aria-label={`Go to ${e.name}`}
-              className="rounded-full transition-all motion-safe:transition-all duration-200"
+              className="rounded-full motion-safe:transition-all duration-300"
               style={{
                 width: i === current ? 24 : 8,
                 height: 8,
@@ -215,7 +179,7 @@ export default function EmployeeCarousel() {
         {/* Arrows */}
         <div className="flex items-center gap-2">
           <button
-            onClick={prev}
+            onClick={() => { prev(); setPaused(true) }}
             aria-label="Previous employee"
             className="w-10 h-10 rounded-full border border-[#e0e0e0] flex items-center justify-center text-[#555] hover:border-[#18b5d8] hover:text-[#18b5d8] motion-safe:transition-colors duration-150"
           >
@@ -224,7 +188,7 @@ export default function EmployeeCarousel() {
             </svg>
           </button>
           <button
-            onClick={next}
+            onClick={() => { next(); setPaused(true) }}
             aria-label="Next employee"
             className="w-10 h-10 rounded-full border border-[#e0e0e0] flex items-center justify-center text-[#555] hover:border-[#18b5d8] hover:text-[#18b5d8] motion-safe:transition-colors duration-150"
           >
