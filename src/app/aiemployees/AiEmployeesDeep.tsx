@@ -959,6 +959,36 @@ export default function AiEmployeesDeep() {
 
       <SectionDivider />
 
+      {/* ── INDUSTRY VERTICALS ────────────────────────────────────────── */}
+      <section className="bg-[#f5f5f7] py-20 px-6">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-10">
+            <p className="text-[11px] font-bold tracking-[2px] uppercase text-[#18b5d8] mb-4">By Industry</p>
+            <h2 className="text-[32px] sm:text-[38px] font-extrabold text-[#1d1d1f] leading-tight tracking-tight mb-3">
+              AI employees built for your specific industry.
+            </h2>
+            <p className="text-[#6e6e73] text-[16px] max-w-lg mx-auto">
+              Each vertical page shows the exact problem, the exact employee, and the exact results for businesses like yours.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            {[
+              { label: 'Home Services', href: '/aiemployees/home-services', desc: 'HVAC, plumbing, roofing, landscaping, cleaning, and every other home service trade in Wesley Chapel and Tampa Bay.' },
+              { label: 'Real Estate', href: '/aiemployees/real-estate', desc: 'Buyer agents, listing specialists, brokerages, and investors capturing leads and reviews in the Wesley Chapel market.' },
+              { label: 'HVAC', href: '/aiemployees/hvac', desc: 'Emergency AC repair, installations, and maintenance agreements — with after-hours lead capture built for Tampa Bay summers.' },
+            ].map((v) => (
+              <a key={v.href} href={v.href} className="group bg-white rounded-[20px] p-7 border border-[#e5e5ea] hover:border-[#18b5d8] motion-safe:transition-colors flex flex-col">
+                <p className="text-[#1d1d1f] font-bold text-[17px] mb-2 group-hover:text-[#18b5d8] motion-safe:transition-colors">{v.label}</p>
+                <p className="text-[#6e6e73] text-[14px] leading-relaxed flex-1 mb-4">{v.desc}</p>
+                <span className="text-[13px] font-semibold text-[#18b5d8]">See AI employees for {v.label} →</span>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <SectionDivider />
+
       {/* ── BOTTOM CTA ────────────────────────────────────────────────── */}
       <section className="bg-[#07141a] py-24 px-6">
         <div className="max-w-2xl mx-auto text-center">

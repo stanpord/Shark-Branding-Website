@@ -19,6 +19,15 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "blog-ai-receptionist-vs-human-receptionist",
+    category: "AI Employees",
+    title: "AI Receptionist vs. Human Receptionist: What Tampa Bay Businesses Need to Know",
+    excerpt: "An honest comparison for service businesses in Wesley Chapel and Tampa Bay. What each does well, where each falls short, and how to decide which one your business actually needs.",
+    date: "June 7, 2026",
+    readTime: "6 min read",
+    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=900&h=420&q=80",
+  },
+  {
     slug: "blog-5-automations-wesley-chapel-businesses",
     category: "AI Employees",
     title: "5 Tasks Wesley Chapel Business Owners Should Automate First",

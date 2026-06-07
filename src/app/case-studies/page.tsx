@@ -502,6 +502,83 @@ export default function CaseStudiesPage() {
       </article>
 
 
+      {/* ── AI Employee Results ── */}
+      <section className="bg-white border-t border-[#e5e5ea] px-6 py-20">
+        <div className="max-w-[1000px] mx-auto">
+          <div className="mb-12">
+            <p className="text-[11px] font-bold tracking-[2px] uppercase text-[#18b5d8] mb-3">AI Employee Results</p>
+            <h3 className="text-[36px] sm:text-[44px] font-extrabold text-[#1d1d1f] leading-tight tracking-tight max-w-[640px] mb-4" style={{ textWrap: "balance" }}>
+              More results from the AI employee platform powering our work.
+            </h3>
+            <p className="text-[16px] text-[#6e6e73] max-w-[600px] leading-relaxed">
+              These results come from businesses using the same AI employees we configure for our clients — Gemma, Reputation Specialist, AI CRM, and custom-built roles across home services, real estate, healthcare, and more.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {[
+              {
+                tag: "Home Services",
+                stat: "15% → 50%",
+                statLabel: "close rate",
+                body: "A construction company replaced its manual quoting process with custom AI employees. Close rate tripled. The AI handled initial qualification, follow-up, and scheduling without a single human touchpoint.",
+                employee: "Custom AI Employees",
+              },
+              {
+                tag: "Real Estate",
+                stat: "$30,000",
+                statLabel: "commission from one lead",
+                body: "An auction house&rsquo;s AI receptionist took a lead at 11 PM that a human would have missed until morning. The deal closed. The commission was $30k. That one after-hours conversation paid for years of service.",
+                employee: "Gemma (AI Receptionist)",
+              },
+              {
+                tag: "Reputation",
+                stat: "21",
+                statLabel: "five-star reviews in 30 days",
+                body: "The same auction house deployed a Reputation Specialist after every completed transaction. 21 five-star Google reviews in 30 days, without a single staff member manually asking a client.",
+                employee: "Reputation Specialist",
+              },
+              {
+                tag: "After-Hours",
+                stat: "+20%",
+                statLabel: "conversion increase",
+                body: "A digital agency secured a new client on a Sunday afternoon when the office was closed. Their AI receptionist qualified the lead, answered objections, and booked a Monday call. The agency won the deal.",
+                employee: "Gemma (AI Receptionist)",
+              },
+              {
+                tag: "Healthcare",
+                stat: "$47,000",
+                statLabel: "monthly revenue, 9 locations",
+                body: "A veterinary group deployed AI intake across 9 clinics. The AI handled every incoming inquiry simultaneously, around the clock. Monthly revenue attributable to AI-captured leads reached $47,000.",
+                employee: "Gemma (AI Receptionist)",
+              },
+              {
+                tag: "Food & Beverage",
+                stat: "3×",
+                statLabel: "annual revenue",
+                body: "A BBQ restaurant and catering business tripled annual revenue after deploying an AI receptionist. Every catering inquiry got an immediate response. Every booking request was captured and confirmed.",
+                employee: "Gemma (AI Receptionist)",
+              },
+            ].map((c) => (
+              <div key={c.stat + c.tag} className="bg-[#f5f5f7] rounded-[20px] p-7 border border-[#e5e5ea] flex flex-col">
+                <div className="flex items-center justify-between mb-5">
+                  <span className="inline-block bg-[#18b5d8]/10 text-[#18b5d8] text-[11px] font-bold tracking-[0.14em] uppercase px-3 py-1 rounded-full">{c.tag}</span>
+                  <span className="text-[11px] text-[#86868b] font-semibold">{c.employee}</span>
+                </div>
+                <p className="text-[clamp(1.6rem,3vw,2.2rem)] font-black text-[#1d1d1f] leading-none mb-1">{c.stat}</p>
+                <p className="text-[12px] font-semibold text-[#18b5d8] uppercase tracking-[0.1em] mb-4">{c.statLabel}</p>
+                <p className="text-[14px] text-[#6e6e73] leading-relaxed flex-1">{c.body}</p>
+              </div>
+            ))}
+          </div>
+
+          <p className="text-[12px] text-[#86868b] mt-8 text-center">
+            Results verified through our AI employee delivery platform. Industry, business size, and AI employee configuration vary per client.
+          </p>
+        </div>
+      </section>
+
+
       {/* ── Why Now ── */}
       <section className="bg-[#f5f5f7] border-t border-[#e5e5ea] px-6 py-20">
         <div className="max-w-[1000px] mx-auto">
