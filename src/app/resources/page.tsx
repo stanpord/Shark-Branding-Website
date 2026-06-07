@@ -19,6 +19,15 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "blog-5-automations-wesley-chapel-businesses",
+    category: "AI Employees",
+    title: "5 Tasks Wesley Chapel Business Owners Should Automate First",
+    excerpt: "Most local businesses automate the wrong things first — or nothing at all. Here are the five automations with the fastest, most measurable ROI for service businesses in Wesley Chapel and Tampa Bay.",
+    date: "June 7, 2026",
+    readTime: "7 min read",
+    image: "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?auto=format&fit=crop&w=900&h=420&q=80",
+  },
+  {
     slug: "blog-what-is-an-ai-employee",
     category: "AI Employees",
     title: "What Is an AI Employee? A Plain-English Guide for Local Businesses",
