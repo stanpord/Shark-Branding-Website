@@ -971,12 +971,14 @@ export default function AiEmployeesDeep() {
               Each vertical page shows the exact problem, the exact employee, and the exact results for businesses like yours.
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {[
               { label: 'Home Services', href: '/aiemployees/home-services', desc: 'HVAC, plumbing, roofing, landscaping, cleaning, and every other home service trade in Wesley Chapel and Tampa Bay.' },
               { label: 'Contractors', href: '/aiemployees/contractors', desc: 'General contractors, remodelers, and specialty trades — AI follow-up on every estimate until it gets a response.' },
               { label: 'Real Estate', href: '/aiemployees/real-estate', desc: 'Buyer agents, listing specialists, brokerages, and investors capturing leads and reviews in the Wesley Chapel market.' },
               { label: 'HVAC', href: '/aiemployees/hvac', desc: 'Emergency AC repair, installations, and maintenance agreements — with after-hours lead capture built for Tampa Bay summers.' },
+              { label: 'Healthcare', href: '/aiemployees/healthcare', desc: 'Medical practices, dental offices, chiropractic clinics, and specialists cutting no-shows and growing patient reviews.' },
+              { label: 'Law Firms', href: '/aiemployees/legal', desc: 'Attorneys and law firms responding to every prospective client inquiry immediately and following up until they book.' },
             ].map((v) => (
               <a key={v.href} href={v.href} className="group bg-white rounded-[20px] p-7 border border-[#e5e5ea] hover:border-[#18b5d8] motion-safe:transition-colors flex flex-col">
                 <p className="text-[#1d1d1f] font-bold text-[17px] mb-2 group-hover:text-[#18b5d8] motion-safe:transition-colors">{v.label}</p>
