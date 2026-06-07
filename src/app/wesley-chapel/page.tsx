@@ -165,6 +165,42 @@ export default function WesleyChapelPage() {
         </div>
       </section>
 
+      {/* AI Employees */}
+      <section className="bg-white px-6 py-20 border-t border-[#e8e8ed]">
+        <div className="max-w-[980px] mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+              <p className="text-[#18b5d8] text-[13px] font-semibold tracking-[0.2em] uppercase mb-5">AI Employees</p>
+              <h2 className="display-lg text-[#0a0a0a] mb-5" style={{ textWrap: 'balance' }}>
+                AI employees for Wesley Chapel businesses.
+              </h2>
+              <p className="text-[16px] text-[#555] leading-relaxed mb-6">
+                Beyond visibility, we build AI employees that run your business around the clock. From a 24/7 chat receptionist that qualifies and books leads, to automated review management and multi-touch follow-up sequences — Wesley Chapel businesses are cutting manual work and closing more without adding headcount.
+              </p>
+              <Link
+                href="/aiemployees"
+                className="inline-block text-[15px] font-semibold text-[#18b5d8] border border-[#18b5d8] rounded-full px-7 py-3 hover:bg-[#18b5d8] hover:text-white motion-safe:transition-colors duration-150"
+              >
+                Meet the AI Employees →
+              </Link>
+            </div>
+            <div className="grid grid-cols-1 gap-3">
+              {[
+                { name: 'Gemma', role: 'Chat Receptionist', desc: 'Greets every visitor and books appointments 24/7.' },
+                { name: 'Reputation Specialist', role: 'Review Manager', desc: 'Requests and responds to reviews automatically.' },
+                { name: 'AI CRM', role: 'Sales Assistant', desc: 'Runs email, SMS, and phone follow-up so no lead goes cold.' },
+              ].map((emp) => (
+                <div key={emp.name} className="bg-[#f5f5f7] rounded-[16px] px-5 py-4 border border-[#e8e8ed]">
+                  <p className="text-[11px] font-bold uppercase tracking-[0.15em] text-[#18b5d8] mb-0.5">{emp.role}</p>
+                  <p className="text-[15px] font-bold text-[#0a0a0a] mb-1">{emp.name}</p>
+                  <p className="text-[13px] text-[#555]">{emp.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="bg-[#0a0a0a] py-28 px-6 text-center">
         <div className="max-w-[560px] mx-auto">

@@ -19,6 +19,15 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "blog-what-is-an-ai-employee",
+    category: "AI Employees",
+    title: "What Is an AI Employee? A Plain-English Guide for Local Businesses",
+    excerpt: "An AI employee is a software agent trained to perform a specific job in your business automatically — lead follow-up, review management, booking, content. Here's how they work and why Wesley Chapel and Tampa Bay businesses are adopting them now.",
+    date: "June 7, 2026",
+    readTime: "6 min read",
+    image: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?auto=format&fit=crop&w=900&h=420&q=80",
+  },
+  {
     slug: "blog-aio-aeo-geo-seo-wesley-chapel",
     category: "GEO",
     title: "AIO, GEO, and AEO for Wesley Chapel Businesses: What Actually Gets You Customers in 2026",
