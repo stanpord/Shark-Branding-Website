@@ -194,7 +194,7 @@ export default function Home() {
             ))}
           </div>
           <div className="text-center">
-            <Link href="/case-studies" className="text-[14px] font-semibold text-[#18b5d8] hover:underline">
+            <Link href="/case-studies" className="text-[14px] font-semibold text-[#18b5d8] hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 rounded-sm">
               Read the full case studies →
             </Link>
           </div>
@@ -241,7 +241,7 @@ export default function Home() {
           <EmployeeCarousel />
 
           <div className="text-center mt-10">
-            <Link href="/aiemployees" className="text-[14px] font-semibold text-[#18b5d8] hover:underline">
+            <Link href="/aiemployees" className="text-[14px] font-semibold text-[#18b5d8] hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 rounded-sm">
               Meet the full AI team →
             </Link>
           </div>

@@ -76,7 +76,7 @@ export default function AiEmployeesDeep() {
                 key={item.id}
                 href={`#${item.id}`}
                 onClick={() => setActive(item.id)}
-                className={`flex items-center gap-1.5 px-5 py-4 text-[13px] font-semibold border-b-2 transition-colors whitespace-nowrap ${
+                className={`flex items-center gap-1.5 px-5 py-4 text-[13px] font-semibold border-b-2 transition-colors whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-inset ${
                   active === item.id
                     ? 'border-[#18b5d8] text-[#18b5d8]'
                     : 'border-transparent text-[#6e6e73] hover:text-[#1d1d1f]'
@@ -95,7 +95,7 @@ export default function AiEmployeesDeep() {
       {/* ═══════════════════════════════════════════════════════════════ */}
       {/* ── GEMMA — CHAT RECEPTIONIST ─────────────────────────────── */}
       {/* ═══════════════════════════════════════════════════════════════ */}
-      <section id="gemma" className="py-28 px-6">
+      <section id="gemma" className="py-28 px-6 scroll-mt-16">
         <div className="max-w-5xl mx-auto">
 
           {/* Employee header */}
@@ -236,7 +236,7 @@ export default function AiEmployeesDeep() {
               <p className="text-white font-bold text-[16px] mb-1">Gemma also answers your phones.</p>
               <p className="text-[#8a9ba8] text-[14px] leading-relaxed">The Voice Receptionist add-on handles inbound calls, takes messages, and transfers to your team — so no call goes unanswered even when you're on the job.</p>
             </div>
-            <a href="/contact" className="shrink-0 bg-[#18b5d8] text-white text-[13px] font-bold px-5 py-2.5 rounded-full hover:bg-[#14a0c0] transition-colors whitespace-nowrap">
+            <a href="/contact" className="shrink-0 bg-[#18b5d8] text-white text-[13px] font-bold px-5 py-2.5 rounded-full hover:bg-[#14a0c0] transition-colors whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#07141a]">
               Ask about Voice
             </a>
           </div>
@@ -249,7 +249,7 @@ export default function AiEmployeesDeep() {
       {/* ═══════════════════════════════════════════════════════════════ */}
       {/* ── BLOGGER — CONTENT WRITER ──────────────────────────────── */}
       {/* ═══════════════════════════════════════════════════════════════ */}
-      <section id="blogger" className="bg-[#f5f5f7] py-28 px-6 relative overflow-hidden">
+      <section id="blogger" className="bg-[#f5f5f7] py-28 px-6 relative overflow-hidden scroll-mt-16">
         {/* Coming Soon overlay */}
         <div className="absolute inset-0 bg-white/60 backdrop-blur-[2px] z-10 flex flex-col items-center justify-center gap-4">
           <span className="bg-[#1d1d1f] text-white text-[11px] font-bold uppercase tracking-[2px] px-4 py-2 rounded-full">Coming Soon</span>
@@ -383,7 +383,7 @@ export default function AiEmployeesDeep() {
       {/* ═══════════════════════════════════════════════════════════════ */}
       {/* ── REPUTATION SPECIALIST ─────────────────────────────────── */}
       {/* ═══════════════════════════════════════════════════════════════ */}
-      <section id="reputation" className="py-28 px-6">
+      <section id="reputation" className="py-28 px-6 scroll-mt-16">
         <div className="max-w-5xl mx-auto">
 
           <div className="mb-10">
@@ -401,6 +401,9 @@ export default function AiEmployeesDeep() {
             <img
               src="/Reputation-Management-specialist-hero-img.webp"
               alt="AI Reputation Specialist — respond to reviews and analyze customer feedback automatically"
+              width={1200}
+              height={800}
+              loading="lazy"
               className="w-full max-w-2xl rounded-[20px] shadow-md"
             />
           </div>
@@ -469,7 +472,7 @@ export default function AiEmployeesDeep() {
                 <div key={rule.label} className="flex items-center justify-between py-3 border-b border-[#e5e5ea] last:border-0">
                   <span className="text-[13px] text-[#1d1d1f]">{rule.label}</span>
                   <div className={`w-9 h-5 rounded-full transition-colors ${rule.active ? 'bg-[#18b5d8]' : 'bg-[#d1d1d6]'} relative shrink-0`}>
-                    <div className={`absolute top-0.5 w-4 h-4 bg-white rounded-full shadow transition-all ${rule.active ? 'left-[18px]' : 'left-0.5'}`} />
+                    <div className={`absolute top-0.5 w-4 h-4 bg-white rounded-full shadow transition-[left] ${rule.active ? 'left-[18px]' : 'left-0.5'}`} />
                   </div>
                 </div>
               ))}
@@ -528,7 +531,7 @@ export default function AiEmployeesDeep() {
       {/* ═══════════════════════════════════════════════════════════════ */}
       {/* ── AI CRM ────────────────────────────────────────────────── */}
       {/* ═══════════════════════════════════════════════════════════════ */}
-      <section id="aicrm" className="bg-[#f5f5f7] py-28 px-6">
+      <section id="aicrm" className="bg-[#f5f5f7] py-28 px-6 scroll-mt-16">
         <div className="max-w-5xl mx-auto">
 
           <div className="mb-10">
@@ -546,6 +549,9 @@ export default function AiEmployeesDeep() {
             <img
               src="/AI-Sales-Assistant-hero-img.webp"
               alt="AI Sales Assistant — automate CRM updates and qualify leads automatically"
+              width={1200}
+              height={800}
+              loading="lazy"
               className="w-full max-w-2xl rounded-[20px] shadow-md"
             />
           </div>
@@ -706,7 +712,7 @@ export default function AiEmployeesDeep() {
       {/* ═══════════════════════════════════════════════════════════════ */}
       {/* ── SOCIAL MEDIA MANAGER ──────────────────────────────────── */}
       {/* ═══════════════════════════════════════════════════════════════ */}
-      <section id="social" className="py-28 px-6 relative overflow-hidden">
+      <section id="social" className="py-28 px-6 relative overflow-hidden scroll-mt-16">
         {/* Coming Soon overlay */}
         <div className="absolute inset-0 bg-white/60 backdrop-blur-[2px] z-10 flex flex-col items-center justify-center gap-4">
           <span className="bg-[#1d1d1f] text-white text-[11px] font-bold uppercase tracking-[2px] px-4 py-2 rounded-full">Coming Soon</span>
@@ -834,7 +840,7 @@ export default function AiEmployeesDeep() {
       <SectionDivider />
 
       {/* ── CUSTOM EMPLOYEE ───────────────────────────────────────────── */}
-      <section id="custom" className="bg-[#f5f5f7] py-28 px-6">
+      <section id="custom" className="bg-[#f5f5f7] py-28 px-6 scroll-mt-16">
         <div className="max-w-5xl mx-auto">
 
           <div className="mb-16">
@@ -895,7 +901,7 @@ export default function AiEmployeesDeep() {
                 <p className="text-[#6e6e73] text-[13px] leading-relaxed mb-4">Tell us what you're trying to automate and we'll let you know what's possible. No commitment required.</p>
                 <a
                   href="/contact"
-                  className="inline-block bg-[#18b5d8] text-white font-bold text-[13px] px-6 py-3 rounded-full hover:bg-[#14a0c0] transition-colors"
+                  className="inline-block bg-[#18b5d8] text-white font-bold text-[13px] px-6 py-3 rounded-full hover:bg-[#14a0c0] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2"
                 >
                   Talk to us about a custom build
                 </a>
@@ -980,7 +986,7 @@ export default function AiEmployeesDeep() {
               { label: 'Healthcare', href: '/aiemployees/healthcare', desc: 'Medical practices, dental offices, chiropractic clinics, and specialists cutting no-shows and growing patient reviews.' },
               { label: 'Law Firms', href: '/aiemployees/legal', desc: 'Attorneys and law firms responding to every prospective client inquiry immediately and following up until they book.' },
             ].map((v) => (
-              <a key={v.href} href={v.href} className="group bg-white rounded-[20px] p-7 border border-[#e5e5ea] hover:border-[#18b5d8] motion-safe:transition-colors flex flex-col">
+              <a key={v.href} href={v.href} className="group bg-white rounded-[20px] p-7 border border-[#e5e5ea] hover:border-[#18b5d8] motion-safe:transition-colors flex flex-col focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2">
                 <p className="text-[#1d1d1f] font-bold text-[17px] mb-2 group-hover:text-[#18b5d8] motion-safe:transition-colors">{v.label}</p>
                 <p className="text-[#6e6e73] text-[14px] leading-relaxed flex-1 mb-4">{v.desc}</p>
                 <span className="text-[13px] font-semibold text-[#18b5d8]">See AI employees for {v.label} →</span>
@@ -1004,7 +1010,7 @@ export default function AiEmployeesDeep() {
           </p>
           <a
             href="/contact"
-            className="inline-block bg-[#18b5d8] text-white font-bold text-[15px] px-8 py-4 rounded-full hover:bg-[#14a0c0] transition-colors"
+            className="inline-block bg-[#18b5d8] text-white font-bold text-[15px] px-8 py-4 rounded-full hover:bg-[#14a0c0] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#07141a]"
           >
             Book a Free Strategy Call
           </a>
