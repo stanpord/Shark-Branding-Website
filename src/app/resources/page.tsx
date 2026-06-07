@@ -161,7 +161,7 @@ const below = posts.slice(3);
 
 export default function ResourcesPage() {
   return (
-    <div className={playfair.variable}>
+    <div className={`${playfair.variable} overflow-x-hidden`}>
 
       {/* ── Date bar ── */}
       <div className="bg-white border-b border-black/20 px-6 py-2 mt-[60px]">
@@ -179,7 +179,7 @@ export default function ResourcesPage() {
             Est. 2024 &nbsp;&middot;&nbsp; Wesley Chapel, FL &nbsp;&middot;&nbsp; {posts.length + 1} Articles Published
           </p>
           <h1
-            className="text-[48px] sm:text-[64px] md:text-[80px] leading-none tracking-[-0.02em] text-black mb-3"
+            className="text-[32px] sm:text-[52px] md:text-[80px] leading-none tracking-[-0.02em] text-black mb-3 break-words"
             style={{ fontFamily: "var(--font-playfair)", fontWeight: 700 }}
           >
             Shark Branding Intelligence
@@ -311,12 +311,12 @@ export default function ResourcesPage() {
 
       {/* ── Below the fold header ── */}
       <div className="bg-white px-6 pt-8 pb-0">
-        <div className="max-w-[1120px] mx-auto flex items-center gap-5 mb-0">
-          <span className="text-[11px] font-bold uppercase tracking-[0.28em] text-black whitespace-nowrap">
+        <div className="max-w-[1120px] mx-auto flex flex-wrap items-center gap-x-5 gap-y-2 mb-0">
+          <span className="text-[11px] font-bold uppercase tracking-[0.28em] text-black">
             From the Intelligence Desk
           </span>
-          <div className="flex-1 border-t-2 border-black" />
-          <span className="text-[11px] font-bold uppercase tracking-[0.28em] text-black whitespace-nowrap">
+          <div className="flex-1 min-w-[20px] border-t-2 border-black" />
+          <span className="text-[11px] font-bold uppercase tracking-[0.28em] text-black">
             {below.length} More Articles
           </span>
         </div>
@@ -400,9 +400,9 @@ export default function ResourcesPage() {
       {/* ── NTBC Partnership feature ── */}
       <section className="bg-[#f5f5f2] px-6 py-12 border-t-2 border-black">
         <div className="max-w-[1120px] mx-auto">
-          <div className="flex items-center gap-5 mb-8">
-            <span className="text-[11px] font-bold uppercase tracking-[0.28em] text-black whitespace-nowrap">Featured Partnership</span>
-            <div className="flex-1 border-t-2 border-black" />
+          <div className="flex flex-wrap items-center gap-x-5 gap-y-2 mb-8">
+            <span className="text-[11px] font-bold uppercase tracking-[0.28em] text-black">Featured Partnership</span>
+            <div className="flex-1 min-w-[20px] border-t-2 border-black" />
           </div>
           <Link
             href="/resources/blog-ntbc-ai-ready-partnership"
