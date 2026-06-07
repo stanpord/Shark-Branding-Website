@@ -68,6 +68,13 @@ const nextConfig: NextConfig = {
       { source: "/workshops.html", destination: "/services", permanent: true },
       { source: "/workshops", destination: "/services", permanent: true },
       { source: "/index", destination: "/", permanent: true },
+      { source: "/index.html", destination: "/", permanent: true },
+      { source: "/tampa-bay-marketing-consultant", destination: "/services", permanent: true },
+      { source: "/emorys-rock-realty-case-study", destination: "/case-studies", permanent: true },
+      { source: "/blog-north-tampa-bay-chamber-partnership", destination: "/resources/blog-ntbc-ai-ready-partnership", permanent: true },
+      { source: "/blog-google-reviews-ai-recommendations", destination: "/resources/blog-google-reviews-ai-recommendations", permanent: true },
+      { source: "/blog-ai-funnel-chatgpt-gemini-path-to-purchase", destination: "/resources/blog-ai-funnel-chatgpt-gemini-path-to-purchase", permanent: true },
+      { source: "/blog-ai-local-search-map", destination: "/resources/blog-ai-map-consistent-business-listings", permanent: true },
     ];
   },
 };
