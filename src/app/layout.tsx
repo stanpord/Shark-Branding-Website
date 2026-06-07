@@ -62,7 +62,7 @@ const structuredData = {
       },
       image: "https://sharkbrandingsolutions.com/logo.webp",
       description:
-        "AI Business Consulting for Tampa Bay businesses. We help companies get found by AI, run operations with AI bots, and build the trust signals that make ChatGPT, Perplexity, and Google AI Overviews recommend them.",
+        "AI Business Consulting for Tampa Bay businesses. We help companies get found by AI, run operations with AI employees, and build the trust signals that make ChatGPT, Perplexity, and Google AI Overviews recommend them.",
       telephone: "+17275133955",
       email: "info@sharkbrandingsolutions.com",
       priceRange: "$$",

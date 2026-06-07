@@ -2,16 +2,16 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "AI Operations Bots — Shark AI Solutions",
+  title: "AI Operations Employees — Shark AI Solutions",
   description:
-    "AI-powered operations bots for Tampa Bay businesses. AI CRM, sales coach bots, and custom automation that runs your back office around the clock.",
+    "AI-powered operations employees for Tampa Bay businesses. AI CRM, sales coach employees, and custom automation that runs your back office around the clock.",
 };
 
 const bots = [
   {
     n: "01", id: "ai-crm", eyebrow: "Customer Relationships", dark: true,
-    title: "AI CRM Bot",
-    description: "Stop losing leads in spreadsheets. Our AI CRM bot tracks every contact, logs every interaction, sends follow-up sequences automatically, and surfaces the leads most likely to close, without you lifting a finger.",
+    title: "AI CRM Employee",
+    description: "Stop losing leads in spreadsheets. Our AI CRM employee tracks every contact, logs every interaction, sends follow-up sequences automatically, and surfaces the leads most likely to close, without you lifting a finger.",
     bullets: [
       "Automatic lead capture and contact enrichment",
       "Intelligent follow-up sequences triggered by behavior",
@@ -22,8 +22,8 @@ const bots = [
   },
   {
     n: "02", id: "sales-coach", eyebrow: "Sales Performance", dark: false,
-    title: "Sales Coach Bot",
-    description: "Every sales rep on your team gets a tireless AI coach available 24/7. The Sales Coach Bot reviews calls, scores objection handling, suggests talk tracks, and delivers personalized coaching, turning average reps into closers.",
+    title: "Sales Coach Employee",
+    description: "Every sales rep on your team gets a tireless AI coach available 24/7. The Sales Coach Employee reviews calls, scores objection handling, suggests talk tracks, and delivers personalized coaching, turning average reps into closers.",
     bullets: [
       "Call analysis and scoring after every conversation",
       "Real-time objection handling suggestions",
@@ -34,11 +34,11 @@ const bots = [
   },
   {
     n: "03", id: "ops-bots", eyebrow: "Business Automation", dark: true,
-    title: "Custom Operations Bots",
-    description: "Every business has repetitive workflows eating hours every week. We identify your highest-leverage automation opportunities and build custom bots to handle them: scheduling, reporting, intake, client onboarding, and more.",
+    title: "Custom Operations Employees",
+    description: "Every business has repetitive workflows eating hours every week. We identify your highest-leverage automation opportunities and build custom employees to handle them: scheduling, reporting, intake, client onboarding, and more.",
     bullets: [
       "Workflow audit to find your top automation opportunities",
-      "Custom bot built around your specific process",
+      "Custom employee built around your specific process",
       "Integration with your current software stack",
       "Staff training and handoff documentation",
       "Ongoing support and iteration",
@@ -57,7 +57,7 @@ export default function OperationsPage() {
           </p>
           <p className="text-[13px] text-[#7a7a7a] mb-8">A Shark Branding Solutions company</p>
           <h1 className="display-hero text-[#0a0a0a] mb-6" style={{ textWrap: "balance" }}>
-            AI bots that run your
+            AI employees that run your
             <br />
             <span className="text-[#18b5d8]">back office for you.</span>
           </h1>
@@ -127,7 +127,7 @@ export default function OperationsPage() {
             Ready to automate your operations?
           </h2>
           <p className="lead-airy text-white/50 mb-12" style={{ textWrap: "balance" }}>
-            Tell us where your team is losing the most time. We'll show you exactly what a bot can handle.
+            Tell us where your team is losing the most time. We'll show you exactly what an employee can handle.
           </p>
           <Link
             href="/contact"

@@ -3,7 +3,7 @@
 import { useState } from 'react'
 
 type Recommendation = {
-  bot: string
+  employee: string
   category: 'Visibility' | 'Marketing' | 'Operations'
   priority: number
   why: string
@@ -174,7 +174,7 @@ export default function BotAdvisor() {
           disabled={loading}
           className="w-full bg-[#18b5d8] text-white font-semibold text-[16px] py-4 rounded-xl hover:bg-[#1ec8ee] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
         >
-          {loading ? 'Analyzing…' : 'Get Bot Recommendations →'}
+          {loading ? 'Analyzing…' : 'Get Employee Recommendations →'}
         </button>
       </form>
 
@@ -208,7 +208,7 @@ export default function BotAdvisor() {
               .toSorted((a, b) => a.priority - b.priority)
               .map((rec) => (
                 <div
-                  key={rec.bot}
+                  key={rec.employee}
                   className="bg-[#07141a] border border-white/8 rounded-2xl p-6 space-y-4"
                 >
                   {/* Header row */}
@@ -217,7 +217,7 @@ export default function BotAdvisor() {
                       <span className="font-mono text-[#18b5d8] text-[11px] tracking-[0.22em] uppercase">
                         #{rec.priority}
                       </span>
-                      <h3 className="text-[18px] font-semibold text-white">{rec.bot}</h3>
+                      <h3 className="text-[18px] font-semibold text-white">{rec.employee}</h3>
                       <span className={`text-[11px] font-semibold px-3 py-1 rounded-full ${categoryColors[rec.category]}`}>
                         {rec.category}
                       </span>

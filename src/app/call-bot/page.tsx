@@ -4,7 +4,7 @@ import { botsLoginAction } from '../bots/actions'
 import CallBot from './CallBot'
 
 export const metadata: Metadata = {
-  title: 'Call Bot — Shark AI Internal',
+  title: 'Call Employee — Shark AI Internal',
   robots: { index: false, follow: false },
 }
 
@@ -23,7 +23,7 @@ export default async function CallBotPage({
             <p className="text-[13px] font-semibold tracking-[0.2em] uppercase text-[#18b5d8] mb-3">
               Shark AI: Internal Tool
             </p>
-            <h1 className="text-[28px] font-bold text-white">Call Bot</h1>
+            <h1 className="text-[28px] font-bold text-white">Call Employee</h1>
             <p className="text-white/40 text-[14px] mt-2">Enter your password to continue.</p>
           </div>
           <form action={botsLoginAction} className="space-y-4">

@@ -6,7 +6,7 @@ const EMPLOYEES = [
   { name: 'Gemma', role: 'Chat Receptionist', cardImg: '/avatars/gemma.png', color: '#18b5d8' },
   { name: 'Blogger', role: 'Content Writer', cardImg: '/avatars/blogger.png', color: '#4FD1A0' },
   { name: 'Reputation Specialist', role: 'Review Manager', cardImg: '/avatars/reputation.png', color: '#F9DB79' },
-  { name: 'Lead Qualifier', role: 'Sales Bot', cardImg: '/avatars/sales.png', color: '#18b5d8' },
+  { name: 'Lead Qualifier', role: 'Sales Employee', cardImg: '/avatars/sales.png', color: '#18b5d8' },
   { name: 'Social Media Manager', role: 'Content Publisher', cardImg: '/avatars/social.png', color: '#F7555F' },
 ]
 
@@ -348,7 +348,7 @@ export default function Showcase() {
               {
                 icon: '🎯',
                 name: 'Lead Qualifier',
-                title: 'Sales Bot',
+                title: 'Sales Employee',
                 color: '#18b5d8',
                 desc: 'Engages every inbound lead in real time, scores fit against your ICP, and books only the qualified ones — saving your team hours every week.',
               },

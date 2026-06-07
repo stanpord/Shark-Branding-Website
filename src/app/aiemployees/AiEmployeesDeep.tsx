@@ -855,7 +855,7 @@ export default function AiEmployeesDeep() {
               <p className="text-[13px] font-bold text-[#1d1d1f] mb-5">What we've built for clients:</p>
               <div className="space-y-3">
                 {[
-                  { title: 'Estimate Follow-Up Bot', desc: 'Follows up on every unsold estimate with personalized timing and messaging until it gets a response.' },
+                  { title: 'Estimate Follow-Up Employee', desc: 'Follows up on every unsold estimate with personalized timing and messaging until it gets a response.' },
                   { title: 'New Client Onboarding AI', desc: 'Sends welcome sequences, collects intake info, and schedules kickoff calls automatically after a new sale.' },
                   { title: 'Referral Outreach Agent', desc: 'Identifies your happiest customers and sends personalized referral requests at the right moment.' },
                   { title: 'Job Completion Surveyor', desc: 'Reaches out after every completed job to collect feedback, trigger review requests, and flag issues.' },
