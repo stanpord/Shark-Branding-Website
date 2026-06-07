@@ -587,7 +587,7 @@ export default function CaseStudiesPage() {
           </div>
 
           <p className="text-[12px] text-[#86868b] mt-8 text-center">
-            Results from real businesses. Industry, business size, and AI employee configuration vary per client.
+            Results from real businesses using AI employees. Industry, business size, and configuration vary per client.
           </p>
         </div>
       </section>
