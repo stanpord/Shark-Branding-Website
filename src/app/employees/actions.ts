@@ -8,7 +8,7 @@ export async function botsLoginAction(formData: FormData) {
   const expected = process.env.SECRET_PAGE_PASSWORD ?? 'changeme'
 
   if (password !== expected) {
-    redirect('/bots?error=1')
+    redirect('/employees?error=1')
   }
 
   const store = await cookies()
@@ -19,5 +19,5 @@ export async function botsLoginAction(formData: FormData) {
     maxAge: 60 * 60 * 24 * 7,
     path: '/',
   })
-  redirect('/bots')
+  redirect('/employees')
 }

@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { checkAuth } from '../secret/actions'
-import { botsLoginAction } from '../bots/actions'
+import { botsLoginAction } from '../employees/actions'
 import SalesAssistant from './SalesAssistant'
 
 export const metadata: Metadata = {

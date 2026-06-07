@@ -23,8 +23,23 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: "/bots/advisor",
+        destination: "/employees/advisor",
+        permanent: true,
+      },
+      {
         source: "/bots",
         destination: "/aiemployees",
+        permanent: true,
+      },
+      {
+        source: "/call-bot",
+        destination: "/call-employee",
+        permanent: true,
+      },
+      {
+        source: "/api/bots-analyze",
+        destination: "/api/employees-analyze",
         permanent: true,
       },
       // Old Wix URLs — high impression 404s

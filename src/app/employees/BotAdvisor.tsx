@@ -71,7 +71,7 @@ export default function BotAdvisor() {
     setError('')
 
     try {
-      const res = await fetch('/api/bots-analyze', {
+      const res = await fetch('/api/employees-analyze', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form),
