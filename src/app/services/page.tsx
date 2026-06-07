@@ -407,6 +407,73 @@ export default function ServicesPage() {
         </div>
       </section>
 
+      {/* ── FAQ ── */}
+      <section className="bg-[#f5f5f7] px-6 py-20 border-t border-[#e8e8ed]">
+        <div className="max-w-[720px] mx-auto">
+          <div className="text-center mb-12">
+            <p className="text-[#18b5d8] text-[13px] font-semibold tracking-[0.2em] uppercase mb-5">Common Questions</p>
+            <h2 className="display-lg text-[#0a0a0a]" style={{ textWrap: "balance" }}>
+              Everything you need to know.
+            </h2>
+          </div>
+
+          <dl className="space-y-3">
+            {[
+              {
+                q: "What exactly is AI visibility, and why does it matter for my business?",
+                a: "AI visibility is how well your business appears when AI platforms like ChatGPT, Google AI Overviews, Perplexity, and Gemini answer questions your customers are asking. Instead of showing a list of ten results, these platforms recommend one to three businesses. If your business isn't in that shortlist, you're invisible to buyers who never see the traditional search results at all.",
+              },
+              {
+                q: "What is GEO, and how is it different from SEO?",
+                a: "GEO stands for Generative Engine Optimization. Traditional SEO helps your business rank in a list of Google results. GEO helps AI platforms recognize your business as a credible, trustworthy answer to a specific question. SEO gets you on the list. GEO gets you recommended. Both matter, but GEO is the layer most businesses are missing entirely.",
+              },
+              {
+                q: "Which AI platforms do you optimize for?",
+                a: "We optimize for the platforms your customers actually use: Google AI Overviews, ChatGPT, Perplexity, Gemini, and Microsoft Copilot. Each platform uses a different index and ranking logic. Our process covers all three major index families — Google, Bing, and independent crawlers — so you're not invisible on any of them.",
+              },
+              {
+                q: "How fast will I see results?",
+                a: "Most clients see initial movement in 7 to 14 days. Measurable ranking changes typically appear within 30 days. Speed depends on how many visibility gaps exist at the start and how quickly we can push corrected signals across platforms. We track progress monthly and share transparent reporting at every stage.",
+              },
+              {
+                q: "Do I need a website to get started?",
+                a: "No. A significant portion of AI visibility comes from signals outside your website — Google Business Profile, directory listings, reviews, structured citations, and how consistently your business information appears across the internet. We work with what you have and build from there.",
+              },
+              {
+                q: "What industries do you work with?",
+                a: "We work primarily with local service businesses in the Tampa Bay area, including home services, real estate, healthcare, professional services, restaurants, and retail. We also work with chambers of commerce and business associations looking to improve visibility for their members. If your customers use Google or AI to find businesses like yours, we can help.",
+              },
+              {
+                q: "What's included in the Free AI Audit?",
+                a: "The Free AI Audit covers how your business appears across search, maps, reviews, and AI platforms. We assess listing accuracy, trust signals, review presence, and AI platform readability, then deliver a prioritized action report within 48 hours. There's no sales pitch attached — just a clear picture of where you stand and what to fix first.",
+              },
+              {
+                q: "What's the difference between the Self-Guided and Done For You Toolkit options?",
+                a: "The Self-Guided plan ($497/month) gives you access to our AI Visibility Toolkit dashboard, tools, and framework so your team can execute the work. The Done For You plan ($2,000/month) means our team handles everything — listings, reviews, content updates, monitoring, and monthly strategy calls. Both include the same proven framework. The difference is who does the work.",
+              },
+            ].map(({ q, a }) => (
+              <details
+                key={q}
+                className="group bg-white rounded-[16px] border border-[#e8e8ed] overflow-hidden"
+              >
+                <summary className="flex items-center justify-between gap-4 px-7 py-5 cursor-pointer list-none select-none">
+                  <span className="text-[15px] font-semibold text-[#0a0a0a] leading-snug">{q}</span>
+                  <span
+                    className="shrink-0 size-6 rounded-full bg-[#f5f5f7] flex items-center justify-center text-[#18b5d8] font-bold text-[14px] group-open:rotate-45 motion-safe:transition-transform duration-200"
+                    aria-hidden="true"
+                  >
+                    +
+                  </span>
+                </summary>
+                <p className="px-7 pb-6 text-[14px] text-[#555] leading-relaxed border-t border-[#e8e8ed] pt-4 mt-0">
+                  {a}
+                </p>
+              </details>
+            ))}
+          </dl>
+        </div>
+      </section>
+
       {/* ── CTA ── */}
       <section className="bg-[#0a0a0a] py-28 px-6 text-center">
         <div className="max-w-[560px] mx-auto">

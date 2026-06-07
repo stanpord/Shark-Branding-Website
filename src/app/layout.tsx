@@ -104,6 +104,10 @@ const structuredData = {
       ],
       sameAs: [
         "https://www.linkedin.com/company/shark-branding-solutions",
+        "https://www.facebook.com/sharkbrandingsolutions",
+        "https://www.instagram.com/sharkbranding",
+        "https://www.youtube.com/@sharkbranding",
+        "https://www.tiktok.com/@sharkbranding",
       ],
     },
     {
