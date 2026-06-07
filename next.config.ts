@@ -75,6 +75,7 @@ const nextConfig: NextConfig = {
       { source: "/blog-google-reviews-ai-recommendations", destination: "/resources/blog-google-reviews-ai-recommendations", permanent: true },
       { source: "/blog-ai-funnel-chatgpt-gemini-path-to-purchase", destination: "/resources/blog-ai-funnel-chatgpt-gemini-path-to-purchase", permanent: true },
       { source: "/blog-ai-local-search-map", destination: "/resources/blog-ai-map-consistent-business-listings", permanent: true },
+      { source: "/free-report.html", destination: "/free-report", permanent: true },
     ];
   },
 };
