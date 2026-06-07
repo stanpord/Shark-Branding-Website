@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import AiEmployeesDeep from './AiEmployeesDeep'
+import Showcase from './Showcase'
 
 export const metadata: Metadata = {
   title: 'Meet Your AI Team — Shark AI Solutions',
@@ -8,5 +9,10 @@ export const metadata: Metadata = {
 }
 
 export default function ShowcasePage() {
-  return <AiEmployeesDeep />
+  return (
+    <>
+      <AiEmployeesDeep />
+      <Showcase />
+    </>
+  )
 }
