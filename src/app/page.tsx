@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import EmployeeCarousel from '@/components/EmployeeCarousel'
 
 export const metadata: Metadata = {
   title: 'AI Visibility for Tampa Bay Businesses — Shark Branding Solutions',
@@ -237,30 +238,9 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="flex gap-4 overflow-x-auto pb-4 snap-x snap-mandatory scrollbar-none -mx-6 px-6">
-            {[
-              { name: 'Gemma', role: 'Chat Receptionist', color: '#18b5d8', colorBg: '#e8f8fc', desc: 'Greets every visitor, qualifies leads, and books appointments 24/7.' },
-              { name: 'Blogger', role: 'Content Writer', color: '#4FD1A0', colorBg: '#edfaf5', desc: 'Publishes weekly SEO articles that rank and get cited by AI search.' },
-              { name: 'Reputation Specialist', role: 'Review Manager', color: '#d4a200', colorBg: '#fef9e7', desc: 'Requests reviews after every job and responds to all comments automatically.' },
-              { name: 'AI CRM', role: 'Sales Assistant', color: '#18b5d8', colorBg: '#e8f8fc', desc: 'Runs multi-touch follow-up across email, SMS, and phone so no lead goes cold.' },
-              { name: 'Social Media Manager', role: 'Content Publisher', color: '#F7555F', colorBg: '#fef0f1', desc: 'Creates and schedules daily on-brand content across every platform.' },
-            ].map((emp) => (
-              <div
-                key={emp.name}
-                className="flex-none w-[220px] snap-start bg-[#f5f5f7] rounded-[20px] p-6 border border-[#e8e8ed]"
-              >
-                <div className="w-10 h-10 rounded-full mb-4 flex items-center justify-center font-black text-[15px]"
-                  style={{ background: emp.colorBg, color: emp.color }}>
-                  {emp.name[0]}
-                </div>
-                <p className="text-[11px] font-bold uppercase tracking-[0.15em] mb-1" style={{ color: emp.color }}>{emp.role}</p>
-                <p className="text-[15px] font-bold text-[#0a0a0a] mb-3">{emp.name}</p>
-                <p className="text-[13px] text-[#555] leading-relaxed">{emp.desc}</p>
-              </div>
-            ))}
-          </div>
+          <EmployeeCarousel />
 
-          <div className="text-center mt-8">
+          <div className="text-center mt-10">
             <Link href="/aiemployees" className="text-[14px] font-semibold text-[#18b5d8] hover:underline">
               Meet the full AI team →
             </Link>
