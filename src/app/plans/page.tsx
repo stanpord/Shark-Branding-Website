@@ -2,49 +2,49 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "AI Visibility Toolkit Pricing Tampa Bay | Shark Branding Solutions",
+  title: "AI Visibility Pricing — Wesley Chapel & Tampa Bay | Shark Branding Solutions",
   description:
-    "Get found on Google, ChatGPT, and Gemini without paying for ads. Two plans: Self-Guided at $497/mo or Done For You at $2,000/mo. 90-day results guarantee.",
+    "Three tiers of done-for-you AI visibility for Tampa Bay businesses. Foundation at $997/mo, Growth at $2,500/mo, Dominance at $5,000+/mo. Get found on ChatGPT, Gemini, and Google.",
 };
 
-const selfGuidedFeatures = [
-  "Full AI Visibility Toolkit framework — the same system our team uses for managed clients",
-  "Step-by-step action plan across listings, reviews, AI signals, and local content",
-  "Clear priority sequence so your team always knows what to work on next",
-  "Templates and implementation guides for each phase",
-  "Structured to produce measurable visibility movement within 90 days",
+const tier1Features = [
+  "AI Visibility Audit (Quarterly) — 20 constrained prompts across ChatGPT, Perplexity, and Gemini",
+  "Citation & NAP Consistency — audit and correct listings across hundreds of directories",
+  "Google Business Profile Optimization — weekly updates, photos, posts, and review replies",
+  "Basic Schema Implementation — LocalBusiness, Service, FAQ, Review, and Organization schema",
+  "Monthly Visibility Report — AI score, citation growth, and specific action items",
 ];
 
-const doneForYouFeatures = [
-  "Google Business Profile updated and optimized every month by our team",
-  "Citation consistency, schema markup, and AI readiness signals maintained and expanded",
-  "Full audit of how ChatGPT, Gemini, and Google AI Overview currently see your business",
-  "Written strategy plan tailored to your market, location, and competitors",
-  "Monthly report: what changed, what moved, what's targeted next",
-  "Everything from the Self-Guided Toolkit, fully executed for you",
+const tier2AddsFeatures = [
+  "AI-Optimized Content Creation — answer-ready content AI can extract and reference, not generic blog posts",
+  "Third-Party Mention Building — 1–2 local PR placements per month, industry directories, partnership co-mentions",
+  "Advanced Prompt Strategy — 50+ prompt variations, neighborhood-level GEO testing, monthly expansion",
+  "Review Engineering — automated follow-up engine, multi-platform diversification, sentiment monitoring",
+  "Advanced Reporting — competitive share of voice, AI sentiment analysis, revenue attribution in GA4",
 ];
 
-const customFeatures = [
-  "Multi-location businesses needing visibility across several markets",
-  "Agencies managing AI visibility for their own clients",
-  "Organizations needing a dedicated account lead and custom reporting",
-  "White-glove onboarding and strategy workshops",
+const tier3AddsFeatures = [
+  "Dedicated Digital PR Campaign — original research, expert commentary placement, ongoing media relationships",
+  "Knowledge Graph Enhancement — entity optimization, Wikipedia eligibility, industry database listings",
+  "Multi-Location Coordination — neighborhood-level content, centrally coordinated reputation management",
+  "Executive Visibility — founder personal brand, thought leadership, podcast and speaking opportunities",
 ];
 
-// 3 objections shown directly below pricing
-const pricingObjections = [
-  {
-    q: "Is this just another tool?",
-    a: "No. There's no dashboard to log into, no software to learn, and no algorithm to game. This is hands-on consulting backed by a proven framework. Done For You means our team does the work. Self-Guided means you execute the same framework we use — with clear instructions at every step.",
-  },
-  {
-    q: "What if I'm not technical?",
-    a: "You don't need to be. The Done For You plan requires nothing from you except a 30-minute onboarding call. Even the Self-Guided Toolkit is built for business owners, not developers — every phase has plain-English instructions and templates.",
-  },
-  {
-    q: "How is this different from my current agency?",
-    a: "Most agencies focus on ads, social posts, and traffic metrics. We focus on AI visibility signals — the data ChatGPT, Gemini, and Google AI Overviews use to decide which businesses to recommend. It's a different layer entirely. Most of our clients run us alongside their existing agency.",
-  },
+const comparisonFeatures = [
+  { label: "AI Visibility Audit",              t1: true,  t2: true,  t3: true  },
+  { label: "Citation & NAP Consistency",       t1: true,  t2: true,  t3: true  },
+  { label: "GBP Optimization (weekly)",        t1: true,  t2: true,  t3: true  },
+  { label: "Schema Implementation",            t1: true,  t2: true,  t3: true  },
+  { label: "Monthly Visibility Report",        t1: true,  t2: true,  t3: true  },
+  { label: "AI-Optimized Content Creation",    t1: false, t2: true,  t3: true  },
+  { label: "Third-Party Mention Building",     t1: false, t2: true,  t3: true  },
+  { label: "50+ Prompt Strategy & Testing",    t1: false, t2: true,  t3: true  },
+  { label: "Review Engineering",               t1: false, t2: true,  t3: true  },
+  { label: "Competitive Share of Voice",       t1: false, t2: true,  t3: true  },
+  { label: "Dedicated Digital PR Campaign",    t1: false, t2: false, t3: true  },
+  { label: "Knowledge Graph Enhancement",      t1: false, t2: false, t3: true  },
+  { label: "Multi-Location Coordination",      t1: false, t2: false, t3: true  },
+  { label: "Executive Visibility",             t1: false, t2: false, t3: true  },
 ];
 
 const objections = [
@@ -53,54 +53,36 @@ const objections = [
     a: "Traditional SEO targets search engine algorithms. This targets AI search engines — the systems behind ChatGPT, Gemini, and Google AI Overviews that now drive a growing share of local business discovery. The signals are different, the work is different, and the timeline is faster. Our HVAC client saw position movement in 30 days, not six months.",
   },
   {
-    q: "What actually happens after I buy?",
-    a: "For Done For You: you'll receive an onboarding call within 48 hours. We audit your current AI visibility, build your strategy plan, and begin implementation in week one. For Self-Guided: you get immediate access to the full toolkit framework with a clear priority sequence so your team knows exactly what to do first.",
+    q: "What actually happens after I sign up?",
+    a: "You'll receive an onboarding call within 48 hours. We audit your current AI visibility, build your strategy plan, and begin implementation in week one. By the end of month one, you'll have a baseline score and a clear picture of where you stand across AI platforms.",
   },
   {
     q: "How long until I see results?",
-    a: "Visibility signals typically begin moving within 30–60 days. Significant position changes — like the HVAC results below — can happen faster with consistent execution.",
+    a: "Visibility signals typically begin moving within 30–60 days. Significant position changes — like the HVAC results below — can happen faster with consistent execution. The Growth and Dominance tiers compound faster because the content and PR layers accelerate AI consensus.",
   },
   {
     q: "Is there a contract? Can I cancel?",
-    a: "The Self-Guided plan has a 12-month or 3-month minimum commitment — after that, cancel with 60 days' notice (12-month plan) or at the end of your term (3-month plan). Done For You has no required annual contract; cancel any time with reasonable notice. Questions? Reach out before you commit.",
+    a: "We ask for a 3-month minimum to see meaningful movement — visibility work compounds over time and results before month three are incomplete. After that, cancel with 30 days' notice. No lock-ins, no tricks. Questions? Talk to us before you commit.",
   },
 ];
 
 const faqs = [
   {
-    q: "Which plan should I choose?",
-    a: "If your team has bandwidth to execute a structured framework internally, start with Self-Guided. If you want the work done for you — no managing, no wondering if you're doing it right — choose Done For You. Either way, start with the free Visibility Audit: it makes the right call obvious before you spend a dollar.",
-  },
-  {
-    q: "Are both Self-Guided commitment lengths still available?",
-    a: "Yes. The 12-month plan is $497/month — that's a saving of $1,200 compared to paying $597/month for twelve months. The 3-month plan is $597/month for businesses that want to test the framework first. Both include the exact same toolkit.",
+    q: "Which tier is right for my business?",
+    a: "Foundation is the entry point — right for businesses that want to fix the basics and build a visibility floor. Growth is the sweet spot for competitive markets where you need to win recommendations, not just participate. Dominance is for multi-location businesses or highly competitive markets where the goal is to own the category.",
   },
   {
     q: "What does \"AI visibility\" actually mean for a local business?",
-    a: "When someone asks ChatGPT, Gemini, or Google's AI Overviews \"who is the best HVAC company near me?\" — AI systems pull from citation data, reviews, local listings, and structured content signals to decide which businesses to mention. If those signals aren't in order, your business gets skipped. This toolkit fixes that systematically.",
+    a: "When someone asks ChatGPT, Gemini, or Google's AI Overviews who is the best HVAC company near me — AI systems pull from citation data, reviews, local listings, and structured content to decide which businesses to mention. If those signals aren't in order, your business gets skipped. These tiers fix that systematically.",
   },
   {
     q: "Does this work for my industry?",
-    a: "The framework applies to any local service business that relies on customers finding them online — HVAC, real estate, legal, medical, home services, restaurants, retail, and more. The signals AI systems look for are consistent across industries. If your customers search locally, this applies to you.",
+    a: "The framework applies to any local service business that relies on customers finding them online — HVAC, real estate, legal, medical, home services, restaurants, retail, and more. The signals AI systems look for are consistent across industries.",
   },
   {
     q: "Is there special pricing for Chamber members?",
     a: "Yes. North Tampa Bay Chamber members can request member-only pricing directly from the team. We keep that off the public page and share it with qualified members directly.",
   },
-];
-
-const comparisonFeatures = [
-  { label: "AI Visibility Audit",             toolkit: true,  dfy: true,  custom: true  },
-  { label: "Proven framework + templates",    toolkit: true,  dfy: true,  custom: true  },
-  { label: "You execute the work",            toolkit: true,  dfy: false, custom: false },
-  { label: "Our team executes everything",    toolkit: false, dfy: true,  custom: true  },
-  { label: "Monthly GBP optimization",        toolkit: false, dfy: true,  custom: true  },
-  { label: "Citation & schema management",    toolkit: false, dfy: true,  custom: true  },
-  { label: "Written strategy plan",           toolkit: false, dfy: true,  custom: true  },
-  { label: "Monthly progress reports",        toolkit: false, dfy: true,  custom: true  },
-  { label: "Dedicated account lead",          toolkit: false, dfy: false, custom: true  },
-  { label: "Multi-location support",          toolkit: false, dfy: false, custom: true  },
-  { label: "White-glove onboarding",          toolkit: false, dfy: false, custom: true  },
 ];
 
 function CheckIcon() {
@@ -136,17 +118,16 @@ export default function PlansPage() {
       <section className="bg-white min-h-[70vh] flex flex-col items-center justify-center text-center px-6 pt-28 pb-16">
         <div className="max-w-[760px] mx-auto">
           <p className="text-[#18b5d8] text-[13px] font-semibold tracking-[0.2em] uppercase mb-8">
-            AI Visibility Toolkit
+            AI Visibility Plans
           </p>
           <h1 className="display-hero text-[#0a0a0a] mb-6" style={{ textWrap: "balance" }}>
-            Get found on Google, ChatGPT, and Gemini&nbsp;&mdash;{" "}
+            Get found on ChatGPT, Gemini, and Google&nbsp;&mdash;{" "}
             <span className="text-[#18b5d8]">without paying for ads.</span>
           </h1>
           <p className="lead-airy text-[#333333] max-w-[560px] mx-auto mb-10" style={{ textWrap: "balance" }}>
-            AI search engines are already recommending your competitors. These plans make sure they recommend you instead. One puts the work in your hands. One puts it in ours.
+            AI search engines are already recommending your competitors. These plans make sure they recommend you instead. Three tiers, fully done for you.
           </p>
 
-          {/* Proof strip */}
           <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 mb-4">
             {[
               { text: "HVAC client: #32 → #2 in 30 days" },
@@ -173,36 +154,28 @@ export default function PlansPage() {
         <div className="max-w-[1080px] mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
 
-            {/* Card 1: Self-Guided Toolkit */}
+            {/* Tier 1: Foundation */}
             <div className="bg-[#07141a] rounded-[20px] p-7 border border-white/8 flex flex-col">
               <span className="font-mono text-[#18b5d8] text-[11px] tracking-[0.22em] uppercase block mb-5">
-                Toolkit — Self-Guided
+                Tier 1 — Foundation
               </span>
               <h2 className="text-[22px] font-semibold text-white mb-1 leading-snug">
-                You run it.<br />We built the map.
+                AI Visibility<br />Foundation
               </h2>
+              <p className="text-[13px] text-white/40 mt-2 mb-5 leading-relaxed">
+                The entry point. For businesses ready to address AI visibility without going all-in.
+              </p>
 
-              <div className="mt-6 mb-2">
+              <div className="mb-2">
                 <div className="flex items-baseline gap-2">
-                  <span className="text-[42px] font-semibold text-white leading-none">$497</span>
+                  <span className="text-[42px] font-semibold text-white leading-none">$997</span>
                   <span className="text-[15px] text-white/40">/mo</span>
-                  <span className="text-[11px] font-bold tracking-wide uppercase text-[#18b5d8] bg-[#18b5d8]/10 rounded-full px-3 py-1">
-                    Save $1,200
-                  </span>
                 </div>
-                <p className="text-[13px] text-white/35 mt-1">12-month commitment — best value</p>
-              </div>
-
-              {/* Social proof — small business */}
-              <div className="mt-4 bg-white/5 border border-white/10 rounded-[12px] px-4 py-3">
-                <p className="text-[13px] text-white/70 leading-relaxed italic">
-                  &ldquo;We had no idea our business wasn&rsquo;t showing up in AI results. The toolkit made it obvious what to fix first — and within 60 days we were getting calls from ChatGPT searches.&rdquo;
-                </p>
-                <p className="text-[11px] text-white/35 mt-2 not-italic">— Small business owner, Wesley Chapel, FL</p>
+                <p className="text-[13px] text-white/35 mt-1">3-month minimum, then cancel anytime</p>
               </div>
 
               <ul className="mt-6 space-y-3 flex-1">
-                {selfGuidedFeatures.map((f) => (
+                {tier1Features.map((f) => (
                   <li key={f} className="flex items-start gap-3 text-[14px] text-white/60 leading-snug">
                     <CheckIcon />
                     {f}
@@ -210,67 +183,52 @@ export default function PlansPage() {
                 ))}
               </ul>
 
-              <a
-                href="https://connect.intuit.com/portal/app/CommerceNetwork/view/scs-v1-86b5809a824f464dba5ad90dded570a445f76b19f0384d9dbe734b750f7256989d1db28afa4647bd929885d1678f5099?locale=EN_US&cta=saveandcopylink"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="/contact"
                 className="btn-press mt-6 block text-center bg-white text-[#0a0a0a] text-[15px] font-semibold rounded-full px-6 py-3.5 hover:bg-[#18b5d8] hover:text-white motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0a0a] [touch-action:manipulation]"
               >
-                Start 12-Month Plan — $497/mo
-              </a>
-              <p className="text-center text-[13px] text-white/30 mt-3">
-                Shorter commitment?{" "}
-                <a
-                  href="https://connect.intuit.com/portal/app/CommerceNetwork/view/scs-v1-9454fee56f394fdfb63ff800cf994d5794634439ed8b4ae7813be49ad385ec7f0bd37ee6cfe54dfd877a039d2862d07c?locale=EN_US&cta=saveandcopylink"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[#18b5d8] hover:underline"
-                >
-                  3-month plan at $597/mo →
-                </a>
-              </p>
+                Start Foundation — $997/mo
+              </Link>
             </div>
 
-            {/* Card 2: Done For You (featured / Recommended) */}
+            {/* Tier 2: Growth (Recommended) */}
             <div className="bg-[#07141a] rounded-[20px] p-7 border border-[#18b5d8]/40 ring-1 ring-[#18b5d8]/15 flex flex-col relative">
               <div className="absolute -top-3.5 left-1/2 -translate-x-1/2">
                 <span className="bg-[#18b5d8] text-white text-[11px] font-bold tracking-[0.15em] uppercase px-4 py-1.5 rounded-full whitespace-nowrap">
-                  Recommended
+                  Most Popular
                 </span>
               </div>
 
               <span className="font-mono text-[#18b5d8] text-[11px] tracking-[0.22em] uppercase block mb-5 mt-2">
-                Toolkit — Done For You
+                Tier 2 — Growth
               </span>
               <h2 className="text-[22px] font-semibold text-white mb-1 leading-snug">
-                We handle it.<br />You watch it move.
+                AI Visibility<br />Growth
               </h2>
+              <p className="text-[13px] text-white/40 mt-2 mb-5 leading-relaxed">
+                The sweet spot. For competitive markets where the goal is to win recommendations, not just participate.
+              </p>
 
-              <div className="mt-6 mb-2">
+              <div className="mb-2">
                 <div className="flex items-baseline gap-2">
-                  <span className="text-[42px] font-semibold text-[#18b5d8] leading-none">$2,000</span>
+                  <span className="text-[42px] font-semibold text-[#18b5d8] leading-none">$2,500</span>
                   <span className="text-[15px] text-white/40">/mo</span>
                 </div>
-                <p className="text-[13px] text-white/35 mt-1">No annual lock-in required</p>
+                <p className="text-[13px] text-white/35 mt-1">3-month minimum, then cancel anytime</p>
               </div>
 
-              {/* Savings callout */}
               <div className="mt-3 flex items-start gap-2 bg-[#18b5d8]/10 border border-[#18b5d8]/25 rounded-[10px] px-4 py-2.5">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true" className="shrink-0 mt-0.5">
-                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="#18b5d8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                  <polyline points="20 6 9 17 4 12" stroke="#18b5d8" strokeWidth="2.5" strokeLinecap="round" />
                 </svg>
                 <p className="text-[12px] text-[#18b5d8] font-semibold leading-snug">
-                  Done For You clients typically replace agency, VA, and tool costs — saving $500–$1,500/month
+                  Includes everything in Foundation, plus content, PR, and advanced prompt strategy
                 </p>
               </div>
 
-              {/* HVAC social proof */}
-              <div className="mt-4 bg-white/5 border border-white/10 rounded-[12px] px-4 py-3 text-[13px] text-white/70 leading-relaxed">
-                <strong className="text-white font-semibold">HVAC client result:</strong> Moved from position #32 → #2 in 30 days across four high-intent keywords. No paid ads — just this framework, executed by our team.
-              </div>
-
-              <ul className="mt-6 space-y-3 flex-1">
-                {doneForYouFeatures.map((f) => (
+              <p className="text-[11px] font-bold tracking-[0.15em] uppercase text-white/30 mt-6 mb-3">Added in Growth</p>
+              <ul className="space-y-3 flex-1">
+                {tier2AddsFeatures.map((f) => (
                   <li key={f} className="flex items-start gap-3 text-[14px] text-white/60 leading-snug">
                     <CheckIcon />
                     {f}
@@ -278,35 +236,37 @@ export default function PlansPage() {
                 ))}
               </ul>
 
-              <a
-                href="https://connect.intuit.com/portal/app/CommerceNetwork/view/scs-v1-98497518b305454980c1a55eb30bffaf128ceb77a8aa42078ac6afb0ba6ccde3439958261aab46f0866337d1362d6ea7?locale=EN_US&cta=saveandcopylink"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="/contact"
                 className="btn-press mt-6 block text-center bg-[#18b5d8] text-white text-[15px] font-semibold rounded-full px-6 py-3.5 hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0a0a] [touch-action:manipulation]"
               >
-                Start Done For You — $2,000/mo
-              </a>
+                Start Growth — $2,500/mo
+              </Link>
             </div>
 
-            {/* Card 3: Custom */}
+            {/* Tier 3: Dominance */}
             <div className="bg-[#07141a] rounded-[20px] p-7 border border-dashed border-white/10 flex flex-col">
               <span className="font-mono text-[#18b5d8] text-[11px] tracking-[0.22em] uppercase block mb-5">
-                Custom / Multi-Location
+                Tier 3 — Dominance
               </span>
               <h2 className="text-[22px] font-semibold text-white mb-1 leading-snug">
-                Full-Service<br />Custom Scope
+                AI Visibility<br />Dominance
               </h2>
+              <p className="text-[13px] text-white/40 mt-2 mb-5 leading-relaxed">
+                For multi-location businesses or highly competitive markets where the goal is to dominate recommendations.
+              </p>
 
-              <div className="mt-6 mb-2">
+              <div className="mb-2">
                 <div className="flex items-baseline gap-2">
-                  <span className="text-[32px] font-semibold text-white/70 leading-none">Let&rsquo;s talk</span>
+                  <span className="text-[32px] font-semibold text-white/70 leading-none">$5,000+</span>
+                  <span className="text-[15px] text-white/40">/mo</span>
                 </div>
-                <p className="text-[13px] text-white/35 mt-1">Starting at $4,000/mo</p>
+                <p className="text-[13px] text-white/35 mt-1">Custom scope — let&rsquo;s talk</p>
               </div>
 
-              <p className="mt-5 text-[11px] font-bold tracking-[0.15em] uppercase text-white/30 mb-3">Built for</p>
+              <p className="text-[11px] font-bold tracking-[0.15em] uppercase text-white/30 mt-6 mb-3">Added in Dominance</p>
               <ul className="space-y-3 flex-1">
-                {customFeatures.map((f) => (
+                {tier3AddsFeatures.map((f) => (
                   <li key={f} className="flex items-start gap-3 text-[14px] text-white/50 leading-snug">
                     <CheckIcon />
                     {f}
@@ -318,7 +278,7 @@ export default function PlansPage() {
                 href="/contact"
                 className="btn-press mt-6 block text-center text-white text-[15px] font-semibold rounded-full px-6 py-3.5 border border-white/20 hover:border-white/50 motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0a0a] [touch-action:manipulation]"
               >
-                Request a Custom Quote
+                Request Dominance Scope
               </Link>
             </div>
 
@@ -328,7 +288,7 @@ export default function PlansPage() {
           <div className="mt-10 flex flex-wrap items-center justify-center gap-6">
             {[
               "90-day visibility improvement guarantee",
-              "12-month plan: cancel with 60 days' notice",
+              "3-month minimum, then cancel anytime",
               "No paid ads required",
             ].map((item) => (
               <div key={item} className="flex items-center gap-2 text-[13px] text-white/35">
@@ -350,30 +310,13 @@ export default function PlansPage() {
         </div>
       </section>
 
-      {/* ── 3 Objections directly below pricing ── */}
-      <section className="bg-[#111111] py-16 px-6 border-t border-white/5">
-        <div className="max-w-[1080px] mx-auto">
-          <p className="text-center text-[13px] font-semibold tracking-[0.2em] uppercase text-[#18b5d8] mb-10">
-            Quick Answers
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            {pricingObjections.map((o) => (
-              <div key={o.q} className="bg-[#07141a] rounded-[20px] px-6 py-7 border border-white/8">
-                <p className="text-[15px] font-semibold text-white mb-3 leading-snug">&ldquo;{o.q}&rdquo;</p>
-                <p className="text-[14px] text-white/55 leading-relaxed">{o.a}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* ── Comparison table ── */}
       <section className="bg-[#0a0a0a] py-20 px-6 border-t border-white/5">
         <div className="max-w-[900px] mx-auto">
           <div className="text-center mb-12">
             <p className="text-[13px] font-semibold tracking-[0.2em] uppercase text-[#18b5d8] mb-4">Plan Comparison</p>
             <h2 className="text-[28px] font-semibold text-white" style={{ textWrap: "balance" }}>
-              What&rsquo;s included in each plan
+              What&rsquo;s included in each tier
             </h2>
           </div>
 
@@ -383,9 +326,9 @@ export default function PlansPage() {
             <div className="grid grid-cols-4 bg-white/5 border-b border-white/10">
               <div className="px-5 py-4" />
               {[
-                { label: "Toolkit",      sub: "$497/mo",      highlight: false },
-                { label: "Done For You", sub: "$2,000/mo",    highlight: true  },
-                { label: "Custom",       sub: "From $4,000",  highlight: false },
+                { label: "Foundation", sub: "$997/mo",    highlight: false },
+                { label: "Growth",     sub: "$2,500/mo",  highlight: true  },
+                { label: "Dominance",  sub: "$5,000+/mo", highlight: false },
               ].map((col) => (
                 <div key={col.label} className={`px-5 py-4 text-center ${col.highlight ? "bg-[#18b5d8]/10" : ""}`}>
                   <p className={`text-[13px] font-semibold ${col.highlight ? "text-[#18b5d8]" : "text-white"}`}>{col.label}</p>
@@ -402,13 +345,13 @@ export default function PlansPage() {
               >
                 <div className="px-5 py-3.5 text-[13px] text-white/60 col-span-1 flex items-center">{row.label}</div>
                 <div className="px-5 py-3.5 flex items-center justify-center">
-                  <TableCheck yes={row.toolkit} />
+                  <TableCheck yes={row.t1} />
                 </div>
                 <div className="px-5 py-3.5 flex items-center justify-center bg-[#18b5d8]/5">
-                  <TableCheck yes={row.dfy} />
+                  <TableCheck yes={row.t2} />
                 </div>
                 <div className="px-5 py-3.5 flex items-center justify-center">
-                  <TableCheck yes={row.custom} />
+                  <TableCheck yes={row.t3} />
                 </div>
               </div>
             ))}
@@ -417,24 +360,14 @@ export default function PlansPage() {
             <div className="grid grid-cols-4 bg-white/5">
               <div className="px-5 py-4" />
               <div className="px-4 py-4 text-center">
-                <a
-                  href="https://connect.intuit.com/portal/app/CommerceNetwork/view/scs-v1-86b5809a824f464dba5ad90dded570a445f76b19f0384d9dbe734b750f7256989d1db28afa4647bd929885d1678f5099?locale=EN_US&cta=saveandcopylink"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[13px] font-semibold text-white hover:text-[#18b5d8] transition-colors"
-                >
+                <Link href="/contact" className="text-[13px] font-semibold text-white hover:text-[#18b5d8] transition-colors">
                   Start →
-                </a>
+                </Link>
               </div>
               <div className="px-4 py-4 text-center bg-[#18b5d8]/10">
-                <a
-                  href="https://connect.intuit.com/portal/app/CommerceNetwork/view/scs-v1-98497518b305454980c1a55eb30bffaf128ceb77a8aa42078ac6afb0ba6ccde3439958261aab46f0866337d1362d6ea7?locale=EN_US&cta=saveandcopylink"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[13px] font-semibold text-[#18b5d8] hover:text-[#1ec8ee] transition-colors"
-                >
+                <Link href="/contact" className="text-[13px] font-semibold text-[#18b5d8] hover:text-[#1ec8ee] transition-colors">
                   Start →
-                </a>
+                </Link>
               </div>
               <div className="px-4 py-4 text-center">
                 <Link href="/contact" className="text-[13px] font-semibold text-white/50 hover:text-white transition-colors">
@@ -443,7 +376,7 @@ export default function PlansPage() {
               </div>
             </div>
           </div>
-          </div>{/* /overflow-x-auto */}
+          </div>
         </div>
       </section>
 
@@ -532,7 +465,7 @@ export default function PlansPage() {
         <div className="max-w-[720px] mx-auto">
           <div className="text-center mb-14">
             <p className="text-[#18b5d8] text-[13px] font-semibold tracking-[0.2em] uppercase mb-4">FAQ</p>
-            <h2 className="display-lg text-[#0a0a0a]">Questions about the toolkit</h2>
+            <h2 className="display-lg text-[#0a0a0a]">Questions about the plans</h2>
           </div>
           <div className="divide-y divide-[#e8e8ed]">
             {faqs.map((faq) => (
@@ -557,7 +490,7 @@ export default function PlansPage() {
         </div>
       </section>
 
-      {/* ── Final CTA — extra bottom padding on mobile for sticky bar ── */}
+      {/* ── Final CTA ── */}
       <section className="bg-[#0a0a0a] py-28 px-6 text-center pb-36 md:pb-28">
         <div className="max-w-[600px] mx-auto">
           <p className="text-[13px] font-semibold tracking-[0.2em] uppercase text-[#18b5d8] mb-6">
@@ -567,7 +500,7 @@ export default function PlansPage() {
             See where you stand before you spend a dollar.
           </h2>
           <p className="lead-airy text-white/50 mb-12" style={{ textWrap: "balance" }}>
-            The free Visibility Audit shows exactly how visible your business is across Google, ChatGPT, Gemini, and local listings. Most owners are surprised. From there, the right plan is obvious.
+            The free Visibility Audit shows exactly how visible your business is across Google, ChatGPT, Gemini, and local listings. Most owners are surprised. From there, the right tier is obvious.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
             <Link
