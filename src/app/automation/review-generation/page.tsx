@@ -2,14 +2,15 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Review Generation Automation for Wesley Chapel & Tampa Bay — Shark Branding Solutions',
-  description: 'Automated review requests for local businesses in Wesley Chapel and Tampa Bay. Post-job SMS requests, smart follow-up, and brand-voice responses to every review. Live in one week.',
+  title: 'Review Generation Automation | Shark Branding Solutions',
+  description: 'Automated review requests for Wesley Chapel and Tampa Bay. Post-job SMS requests, smart follow-up, and brand-voice responses to every review. Live in one week.',
   alternates: { canonical: 'https://sharkbrandingsolutions.com/automation/review-generation' },
   openGraph: {
-    title: 'Review Generation Automation for Wesley Chapel & Tampa Bay',
+    title: 'Review Generation Automation | Shark Branding Solutions',
     description: 'Stop leaving review opportunities uncollected after every completed job. Automated review requests and responses configured for your business.',
     url: 'https://sharkbrandingsolutions.com/automation/review-generation',
     type: 'website',
+    images: [{ url: 'https://sharkbrandingsolutions.com/logo.webp', width: 1200, height: 630, alt: 'Review Generation Automation — Shark Branding Solutions' }],
   },
 }
 

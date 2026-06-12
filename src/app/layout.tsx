@@ -42,6 +42,22 @@ export const metadata: Metadata = {
       "Get Found. Get Trusted. Get Chosen. AI solutions for forward-thinking businesses.",
     type: "website",
     url: "https://sharkbrandingsolutions.com",
+    siteName: "Shark Branding Solutions",
+    locale: "en_US",
+    images: [
+      {
+        url: "https://sharkbrandingsolutions.com/logo.webp",
+        width: 1200,
+        height: 630,
+        alt: "Shark Branding Solutions — AI Business Consulting",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Shark Branding Solutions",
+    description: "Get Found. Get Trusted. Get Chosen. AI solutions for forward-thinking businesses.",
+    images: ["https://sharkbrandingsolutions.com/logo.webp"],
   },
 };
 

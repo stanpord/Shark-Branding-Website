@@ -3,8 +3,8 @@ import Link from 'next/link'
 import EmployeeCarousel from '@/components/EmployeeCarousel'
 
 export const metadata: Metadata = {
-  title: 'AI Visibility for Tampa Bay Businesses — Shark Branding Solutions',
-  description: 'Shark Branding Solutions helps Tampa Bay businesses get found, trusted, and chosen by AI platforms like ChatGPT, Google AI Overviews, Perplexity, and Gemini. No ad spend. Results in 30 days.',
+  title: 'AI Visibility for Tampa Bay — Shark Branding Solutions',
+  description: 'Shark Branding Solutions helps Tampa Bay businesses get found by ChatGPT, Google AI Overviews, Perplexity, and Gemini. No ad spend. Results in 30 days.',
 }
 
 const stats = [

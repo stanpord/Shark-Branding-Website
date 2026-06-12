@@ -3,15 +3,16 @@ import AiEmployeesDeep from './AiEmployeesDeep'
 import Showcase from './Showcase'
 
 export const metadata: Metadata = {
-  title: 'AI Employees for Wesley Chapel & Tampa Bay Businesses — Shark Branding Solutions',
-  description: 'AI employees that handle lead follow-up, review management, appointment booking, and content — 24/7, on autopilot. Serving Wesley Chapel, Tampa Bay, and surrounding areas.',
+  title: 'AI Employees — Tampa Bay | Shark Branding Solutions',
+  description: 'AI employees for lead follow-up, review management, appointment booking, and content — 24/7, on autopilot. Serving Wesley Chapel and Tampa Bay.',
   alternates: { canonical: 'https://sharkbrandingsolutions.com/aiemployees' },
   robots: { index: true, follow: true },
   openGraph: {
-    title: 'AI Employees for Wesley Chapel & Tampa Bay Businesses',
+    title: 'AI Employees — Tampa Bay | Shark Branding Solutions',
     description: 'Gemma, Reputation Specialist, AI CRM, Blogger, and Social Media Manager. AI employees built for local businesses — live within a week.',
     url: 'https://sharkbrandingsolutions.com/aiemployees',
     type: 'website',
+    images: [{ url: 'https://sharkbrandingsolutions.com/logo.webp', width: 1200, height: 630, alt: 'AI Employees — Shark Branding Solutions' }],
   },
 }
 

@@ -2,14 +2,15 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'AI Employees for Real Estate in Wesley Chapel & Tampa Bay — Shark Branding Solutions',
-  description: 'AI employees built for real estate agents and brokerages in Wesley Chapel and Tampa Bay. 24/7 buyer and seller lead capture, automated follow-up, review generation, and content — live in one week.',
+  title: 'AI Employees for Real Estate | Shark Branding Solutions',
+  description: 'AI employees for real estate agents in Wesley Chapel and Tampa Bay. 24/7 lead capture, automated follow-up, review generation, and content — live in one week.',
   alternates: { canonical: 'https://sharkbrandingsolutions.com/aiemployees/real-estate' },
   openGraph: {
-    title: 'AI Employees for Real Estate — Wesley Chapel & Tampa Bay',
+    title: 'AI Employees for Real Estate | Shark Branding Solutions',
     description: 'Stop losing real estate leads to slow response times. AI employees handle inbound buyer and seller inquiries, follow-up, reviews, and booking 24/7.',
     url: 'https://sharkbrandingsolutions.com/aiemployees/real-estate',
     type: 'website',
+    images: [{ url: 'https://sharkbrandingsolutions.com/logo.webp', width: 1200, height: 630, alt: 'AI Employees for Real Estate — Shark Branding Solutions' }],
   },
 }
 

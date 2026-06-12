@@ -2,14 +2,15 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'AI Employees for HVAC Companies in Wesley Chapel & Tampa Bay — Shark Branding Solutions',
-  description: 'AI employees built for HVAC companies in Wesley Chapel and Tampa Bay. 24/7 emergency lead capture, automated follow-up, review requests after every job, and content. Live in one week.',
+  title: 'AI Employees for HVAC Companies | Shark Branding Solutions',
+  description: 'AI employees for HVAC companies in Wesley Chapel and Tampa Bay. 24/7 emergency lead capture, automated follow-up, review requests, and content. Live in one week.',
   alternates: { canonical: 'https://sharkbrandingsolutions.com/aiemployees/hvac' },
   openGraph: {
-    title: 'AI Employees for HVAC Companies — Wesley Chapel & Tampa Bay',
+    title: 'AI Employees for HVAC Companies | Shark Branding Solutions',
     description: 'Stop losing HVAC leads to competitors who respond faster. AI employees handle inbound calls, emergency inquiries, follow-up, and review requests 24/7.',
     url: 'https://sharkbrandingsolutions.com/aiemployees/hvac',
     type: 'website',
+    images: [{ url: 'https://sharkbrandingsolutions.com/logo.webp', width: 1200, height: 630, alt: 'AI Employees for HVAC Companies — Shark Branding Solutions' }],
   },
 }
 

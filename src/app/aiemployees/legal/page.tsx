@@ -2,14 +2,15 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'AI Employees for Law Firms in Wesley Chapel & Tampa Bay — Shark Branding Solutions',
-  description: 'AI employees built for law firms and attorneys in Wesley Chapel and Tampa Bay. Automated lead follow-up, client intake, review requests, and 24/7 chat response. Live in one week.',
+  title: 'AI Employees for Law Firms | Shark Branding Solutions',
+  description: 'AI employees for law firms in Wesley Chapel and Tampa Bay. Lead follow-up, client intake, review requests, and 24/7 chat response. Live in one week.',
   alternates: { canonical: 'https://sharkbrandingsolutions.com/aiemployees/legal' },
   openGraph: {
-    title: 'AI Employees for Law Firms — Wesley Chapel & Tampa Bay',
+    title: 'AI Employees for Law Firms | Shark Branding Solutions',
     description: 'Stop losing prospective clients to slow intake response. AI employees handle inbound inquiries, follow-up, and reviews 24/7 for law firms in Tampa Bay.',
     url: 'https://sharkbrandingsolutions.com/aiemployees/legal',
     type: 'website',
+    images: [{ url: 'https://sharkbrandingsolutions.com/logo.webp', width: 1200, height: 630, alt: 'AI Employees for Law Firms — Shark Branding Solutions' }],
   },
 }
 

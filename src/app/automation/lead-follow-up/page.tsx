@@ -2,14 +2,15 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Lead Follow-Up Automation for Wesley Chapel & Tampa Bay — Shark Branding Solutions',
-  description: 'Automated lead follow-up for local businesses in Wesley Chapel and Tampa Bay. Every new lead gets an immediate response and a multi-touch sequence across email, SMS, and phone. Live in one week.',
+  title: 'Lead Follow-Up Automation | Shark Branding Solutions',
+  description: 'Automated lead follow-up for Wesley Chapel and Tampa Bay businesses. Every lead gets an immediate multi-touch response across email, SMS, and phone. Live in one week.',
   alternates: { canonical: 'https://sharkbrandingsolutions.com/automation/lead-follow-up' },
   openGraph: {
-    title: 'Lead Follow-Up Automation for Wesley Chapel & Tampa Bay',
+    title: 'Lead Follow-Up Automation | Shark Branding Solutions',
     description: 'Stop losing leads to slow response times. Automated multi-touch follow-up across email, SMS, and phone — configured for your business and live in one week.',
     url: 'https://sharkbrandingsolutions.com/automation/lead-follow-up',
     type: 'website',
+    images: [{ url: 'https://sharkbrandingsolutions.com/logo.webp', width: 1200, height: 630, alt: 'Lead Follow-Up Automation — Shark Branding Solutions' }],
   },
 }
 

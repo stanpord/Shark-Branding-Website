@@ -43,11 +43,14 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       // Old Wix URLs — high impression 404s
-      { source: "/ai-visibility-consulting", destination: "/services", permanent: true },
+      // NOTE: /ai-visibility-consulting and /how-to-rank-on-chatgpt-for-local-businesses
+      // have real pages now — do NOT redirect them
       { source: "/local-seo-visibility-audit", destination: "/free-report", permanent: true },
       { source: "/be-a-shark", destination: "/free-report", permanent: true },
-      { source: "/how-to-rank-on-chatgpt-for-local-businesses", destination: "/resources/blog-end-of-local-seo-ai-visibility", permanent: true },
       { source: "/north-tampa-bay-chamber-ai-visibility-case-study", destination: "/case-studies", permanent: true },
+      { source: "/emorys-rock-realty-ai-visibility-case-study", destination: "/case-studies", permanent: true },
+      { source: "/st-petersburg-marketing-consultant", destination: "/tampa", permanent: true },
+      { source: "/lutz-marketing-consultant", destination: "/wesley-chapel", permanent: true },
       { source: "/hvac-local-seo-case-study", destination: "/case-studies", permanent: true },
       { source: "/ai-resources", destination: "/resources", permanent: true },
       { source: "/seo-vs-geo-vs-aeo-for-local-businesses/", destination: "/resources", permanent: true },

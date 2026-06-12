@@ -2,14 +2,15 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Appointment Booking Automation for Wesley Chapel & Tampa Bay — Shark Branding Solutions',
-  description: 'AI-powered appointment booking for local businesses in Wesley Chapel and Tampa Bay. 24/7 lead qualification and calendar booking without phone tag or scheduling delays. Live in one week.',
+  title: 'Appointment Booking Automation | Shark Branding Solutions',
+  description: 'AI appointment booking for Wesley Chapel and Tampa Bay. 24/7 lead qualification and calendar booking without phone tag or scheduling delays. Live in one week.',
   alternates: { canonical: 'https://sharkbrandingsolutions.com/automation/appointment-booking' },
   openGraph: {
-    title: 'Appointment Booking Automation for Wesley Chapel & Tampa Bay',
+    title: 'Appointment Booking Automation | Shark Branding Solutions',
     description: 'Stop losing leads to phone tag and scheduling delays. AI chat books qualified appointments to your calendar 24/7 without any effort from your team.',
     url: 'https://sharkbrandingsolutions.com/automation/appointment-booking',
     type: 'website',
+    images: [{ url: 'https://sharkbrandingsolutions.com/logo.webp', width: 1200, height: 630, alt: 'Appointment Booking Automation — Shark Branding Solutions' }],
   },
 }
 

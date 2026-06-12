@@ -2,14 +2,15 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'AI Employees for Home Services in Wesley Chapel & Tampa Bay — Shark Branding Solutions',
-  description: 'AI employees built for home service businesses in Wesley Chapel and Tampa Bay. Automated lead follow-up, review requests, 24/7 chat booking, and content — live in one week.',
+  title: 'AI Employees for Home Services | Shark Branding Solutions',
+  description: 'AI employees for home service businesses in Wesley Chapel and Tampa Bay. Lead follow-up, review requests, 24/7 chat booking, and content — live in one week.',
   alternates: { canonical: 'https://sharkbrandingsolutions.com/aiemployees/home-services' },
   openGraph: {
-    title: 'AI Employees for Home Services — Wesley Chapel & Tampa Bay',
+    title: 'AI Employees for Home Services | Shark Branding Solutions',
     description: 'Stop losing home service leads to slow response times. AI employees handle inbound chat, follow-up, reviews, and booking 24/7.',
     url: 'https://sharkbrandingsolutions.com/aiemployees/home-services',
     type: 'website',
+    images: [{ url: 'https://sharkbrandingsolutions.com/logo.webp', width: 1200, height: 630, alt: 'AI Employees for Home Services — Shark Branding Solutions' }],
   },
 }
 

@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "AI Visibility Consulting vs Traditional Marketing Agency | Shark Branding",
+  title: "AI Consulting vs. Marketing Agency | Shark Branding Solutions",
   description:
-    "Traditional marketing agencies optimize for traffic and ads. AI visibility consulting gets your business recommended by ChatGPT, Gemini, and Google AI Overviews — without paying for ads. See the full comparison.",
+    "Traditional agencies optimize for traffic and ads. AI visibility gets your business recommended by ChatGPT, Gemini, and Google AI Overviews — without ad spend.",
   alternates: {
     canonical: "https://sharkbrandingsolutions.com/vs/marketing-agency",
   },
@@ -13,6 +13,7 @@ export const metadata: Metadata = {
     description:
       "See why local businesses are replacing or supplementing their marketing agency with AI visibility consulting — and getting measurable results in 30 days.",
     type: "article",
+    images: [{ url: "https://sharkbrandingsolutions.com/logo.webp", width: 1200, height: 630, alt: "AI Consulting vs. Marketing Agency — Shark Branding Solutions" }],
   },
 };
 

@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'AI Visibility Consulting in Wesley Chapel, FL — Shark Branding Solutions',
-  description: 'Shark Branding Solutions helps Wesley Chapel businesses get recommended by ChatGPT, Google AI Overviews, Perplexity, and Gemini. Free AI Audit delivered in 48 hours.',
+  title: 'AI Visibility — Wesley Chapel, FL | Shark Branding Solutions',
+  description: 'Shark Branding Solutions helps Wesley Chapel businesses get found by ChatGPT, Google AI Overviews, Perplexity, and Gemini. Free AI Audit in 48 hours.',
   alternates: { canonical: 'https://sharkbrandingsolutions.com/wesley-chapel' },
 }
 
@@ -142,8 +142,27 @@ export default function WesleyChapelPage() {
         </div>
       </section>
 
-      {/* Industries */}
+      {/* Local SEO bridge section */}
       <section className="bg-[#f5f5f7] px-6 py-20 border-t border-[#e8e8ed]">
+        <div className="max-w-[720px] mx-auto">
+          <p className="text-[#18b5d8] text-[13px] font-semibold tracking-[0.2em] uppercase mb-6">Local SEO in Wesley Chapel</p>
+          <h2 className="display-lg text-[#0a0a0a] mb-6" style={{ textWrap: 'balance' }}>
+            Local SEO in Wesley Chapel has changed. Most businesses haven&rsquo;t caught up.
+          </h2>
+          <p className="text-[16px] text-[#444] leading-relaxed mb-5">
+            Wesley Chapel is one of the fastest-growing markets in Pasco County. That means more local businesses competing for the same buyers — and buyers using AI to shortcut the search. Traditional local SEO got you onto Google&rsquo;s map pack. AI visibility gets you into the shortlist ChatGPT and Gemini hand to the buyer who has already decided to spend money.
+          </p>
+          <p className="text-[16px] text-[#444] leading-relaxed mb-5">
+            The local SEO fundamentals still matter: citation consistency, Google Business Profile, and review volume. But the ranking criteria have expanded. AI models also weigh schema markup, authoritative local content, and the depth of trust signals across the web. If your local SEO strategy stops at traditional search, you are already behind the businesses that have extended their optimization to the AI layer.
+          </p>
+          <p className="text-[16px] text-[#444] leading-relaxed">
+            Shark Branding Solutions is based in Wesley Chapel. We work exclusively in this market and the surrounding communities — Lutz, Land O&rsquo; Lakes, Zephyrhills, and New Tampa. We know the competitors, the buying behavior, and the search patterns specific to this area. Local SEO for Wesley Chapel is not a generic service we run remotely. It is what we do every day.
+          </p>
+        </div>
+      </section>
+
+      {/* Industries */}
+      <section className="bg-white px-6 py-20 border-t border-[#e8e8ed]">
         <div className="max-w-[980px] mx-auto">
           <div className="text-center mb-12">
             <p className="text-[#18b5d8] text-[13px] font-semibold tracking-[0.2em] uppercase mb-5">Who We Work With</p>

@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'AI Visibility Consulting in Tampa, FL — Shark Branding Solutions',
+  title: 'AI Visibility — Tampa, FL | Shark Branding Solutions',
   description: 'Shark Branding Solutions helps Tampa businesses get recommended by ChatGPT, Google AI Overviews, Perplexity, and Gemini. Free AI Audit delivered in 48 hours.',
   alternates: { canonical: 'https://sharkbrandingsolutions.com/tampa' },
 }
@@ -142,8 +142,27 @@ export default function TampaPage() {
         </div>
       </section>
 
-      {/* Industries */}
+      {/* Local SEO + AI visibility bridge section */}
       <section className="bg-[#f5f5f7] px-6 py-20 border-t border-[#e8e8ed]">
+        <div className="max-w-[720px] mx-auto">
+          <p className="text-[#18b5d8] text-[13px] font-semibold tracking-[0.2em] uppercase mb-6">Local SEO &amp; AI Visibility in Tampa</p>
+          <h2 className="display-lg text-[#0a0a0a] mb-6" style={{ textWrap: 'balance' }}>
+            AI visibility is what local SEO in Tampa looks like now.
+          </h2>
+          <p className="text-[16px] text-[#444] leading-relaxed mb-5">
+            Tampa is one of the most competitive local markets in Florida. Businesses in every category are fighting for the same pool of buyers — and those buyers have shifted. They are using ChatGPT, Google AI Overviews, and Perplexity to find local providers before they ever open a map or visit a website.
+          </p>
+          <p className="text-[16px] text-[#444] leading-relaxed mb-5">
+            AI visibility consulting in Tampa builds on top of local SEO fundamentals. Citation accuracy, Google Business Profile optimization, and review management are still the foundation. What is different is the layer of AI-specific signals that determine whether ChatGPT and Gemini include your Tampa business in their shortlist recommendations: schema markup, entity consistency, authoritative local content, and trust signals that AI models can read and validate.
+          </p>
+          <p className="text-[16px] text-[#444] leading-relaxed">
+            Tampa businesses that combine traditional local SEO with AI visibility optimization are pulling ahead of competitors who are still optimizing for a search experience that fewer and fewer buyers are using. The opportunity is widest right now, before this becomes standard practice.
+          </p>
+        </div>
+      </section>
+
+      {/* Industries */}
+      <section className="bg-white px-6 py-20 border-t border-[#e8e8ed]">
         <div className="max-w-[980px] mx-auto">
           <div className="text-center mb-12">
             <p className="text-[#18b5d8] text-[13px] font-semibold tracking-[0.2em] uppercase mb-5">Who We Work With</p>

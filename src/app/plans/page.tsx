@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "AI Visibility Pricing — Wesley Chapel & Tampa Bay | Shark Branding Solutions",
+  title: "AI Visibility Pricing — Tampa Bay | Shark Branding Solutions",
   description:
-    "Three tiers of done-for-you AI visibility for Tampa Bay businesses. Foundation at $997/mo, Growth at $2,500/mo, Dominance at $5,000+/mo. Get found on ChatGPT, Gemini, and Google.",
+    "Three tiers of AI visibility for Tampa Bay. Foundation $997/mo, Growth $2,500/mo, Dominance $5,000+/mo. Get found on ChatGPT, Gemini, and Google.",
 };
 
 const tier1Features = [
