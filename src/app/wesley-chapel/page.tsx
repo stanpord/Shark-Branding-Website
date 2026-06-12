@@ -26,6 +26,45 @@ const structuredData = {
   areaServed: { '@type': 'City', name: 'Wesley Chapel' },
 }
 
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'What is AI visibility consulting in Wesley Chapel?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'AI visibility consulting helps Wesley Chapel businesses get recommended by ChatGPT, Google AI Overviews, Perplexity, and Gemini when local buyers search for services. Shark Branding Solutions audits your AI presence, fixes citation and schema issues, and builds the trust signals that AI models use to recommend your business.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'How long does it take to see AI visibility results in Wesley Chapel?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Most Wesley Chapel businesses see measurable movement in AI recommendations within 30 days. A local realtor moved from unranked to the #1 AI result for "Best Realtors in Wesley Chapel" in under 30 days after we corrected their citations, schema, and trust signals.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Does Shark Branding Solutions serve businesses outside of Wesley Chapel?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes. Shark Branding Solutions is headquartered in Wesley Chapel and serves all Tampa Bay area businesses, including Lutz, Land O\' Lakes, Zephyrhills, New Tampa, and the broader Pasco and Hillsborough County region. Virtual consulting is also available for businesses outside Tampa Bay.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'How do I get started with AI visibility for my Wesley Chapel business?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'The first step is a free AI Audit. We run your Wesley Chapel business through ChatGPT, Gemini, Perplexity, Google AI Overviews, and Copilot to identify where you are invisible or inconsistent. The audit is delivered within 48 hours and comes with no commitment. Contact Shark Branding Solutions at (727) 513-3955 or info@sharkbrandingsolutions.com.',
+      },
+    },
+  ],
+}
+
 const results = [
   { stat: '#1', detail: 'Realtor in Wesley Chapel in a market of 2,000+ agents. 30 days.' },
   { stat: '30', detail: 'Days to measurable AI visibility movement for Wesley Chapel clients.' },
@@ -38,6 +77,10 @@ export default function WesleyChapelPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
       {/* Hero */}
