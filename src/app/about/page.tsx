@@ -132,12 +132,33 @@ export default function AboutPage() {
               <span className="w-px h-4 bg-white/20" aria-hidden="true" />
               <span className="text-[13px] font-semibold tracking-[0.08em] uppercase text-white/50">Leadership</span>
             </div>
-            <h2 className="display-lg text-white mb-3">Josh</h2>
-            <p className="text-[17px] text-white/40 mb-8">Chief Technology Officer</p>
+            <h2 className="display-lg text-white mb-3">Josh Stanaland</h2>
+            <p className="text-[17px] text-white/40 mb-8">Partner &amp; CTO</p>
+            <div className="space-y-3">
+              {[
+                { label: 'Technical Architecture', desc: 'AI Visibility Toolkit and automation frameworks' },
+                { label: 'Growth Strategy', desc: 'Conversion analytics and lead infrastructure' },
+                { label: 'Community', desc: 'North Tampa Bay Chamber of Commerce' },
+              ].map(item => (
+                <div key={item.label} className="flex items-start gap-3">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#18b5d8] mt-2 shrink-0" />
+                  <div>
+                    <span className="text-[13px] font-semibold text-white">{item.label}</span>
+                    <span className="text-[13px] text-white/40"> — {item.desc}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
           <div className="space-y-6">
             <p className="body-copy text-white/60 leading-relaxed">
-              Credentials and bio coming soon.
+              Josh Stanaland is a digital growth strategist, technologist, and the primary technical architect behind Shark AI Solutions&rsquo; proprietary software and AI automation frameworks. As CTO, he designs the backend systems powering the firm&rsquo;s AI Visibility Toolkit — building tailored AI employees that act as fully automated, 24/7 digital receptionists for service businesses, not off-the-shelf chatbot templates.
+            </p>
+            <p className="body-copy text-white/60 leading-relaxed">
+              At the firm&rsquo;s live regional hackathons, Josh creates real-time simulated versions of attendees&rsquo; existing business websites, embedding custom AI employees to demonstrate — live and without prior setup — how automated systems handle real customer inquiries from the first interaction.
+            </p>
+            <p className="body-copy text-white/60 leading-relaxed">
+              Outside of engineering, he works directly with clients as an enterprise account manager, bridging code and execution to track conversion analytics, eliminate marketing waste, and sharpen lead-generation infrastructure. Before building AI frameworks, Josh spent nearly a decade in high-performance wellness and sports, including work with the Jacksonville Jaguars, before transitioning into sales, operations, and corporate marketing strategy.
             </p>
           </div>
         </div>
