@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Case Studies — Real Results for Tampa Bay Businesses | Shark Branding Solutions",
+  title: "Case Studies — Real Results for Tampa Bay Businesses | Shark AI Solutions",
   description:
     "HVAC, real estate, smart vending, and chamber of commerce — four Tampa Bay businesses that went from invisible to #1 in AI search in under 30 days.",
 };

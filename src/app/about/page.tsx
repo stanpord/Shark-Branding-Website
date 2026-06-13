@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "About — Shark Branding Solutions",
+  title: "About — Shark AI Solutions",
   description:
-    "Meet Michelle Stanaland, Founder and CEO of Shark Branding Solutions — Top 15 Marketing Expert in Tampa Bay.",
+    "Meet Michelle Stanaland, Founder and CEO of Shark AI Solutions — Top 15 Marketing Expert in Tampa Bay.",
 };
 
 const values = [
@@ -45,7 +45,7 @@ export default function AboutPage() {
             <span className="text-[#18b5d8]">impossible to ignore.</span>
           </h1>
           <p className="lead-airy text-[#333333] max-w-[540px] mx-auto" style={{ textWrap: "balance" }}>
-            Shark Branding Solutions was built on a simple belief: every great business deserves to be found by the right people, at the right moment, on every platform.
+            Shark AI Solutions was built on a simple belief: every great business deserves to be found by the right people, at the right moment, on every platform.
           </p>
         </div>
       </section>
@@ -114,7 +114,7 @@ export default function AboutPage() {
               by Influence Digest, a recognition of her commitment to results over rhetoric.
             </p>
             <p className="body-copy text-white/60 leading-relaxed">
-              Before founding Shark Branding Solutions, Michelle observed a consistent pattern: talented, hardworking business owners were losing customers not because of their product or service, but because they couldn&rsquo;t be found. As AI search platforms changed how buyers discover businesses, the gap between visible and invisible grew wider, and she built a firm to close it.
+              Before founding Shark AI Solutions, Michelle observed a consistent pattern: talented, hardworking business owners were losing customers not because of their product or service, but because they couldn&rsquo;t be found. As AI search platforms changed how buyers discover businesses, the gap between visible and invisible grew wider, and she built a firm to close it.
             </p>
             <p className="body-copy text-white/60 leading-relaxed">
               Based in Wesley Chapel, Michelle works directly with clients across Lutz, Land O&rsquo; Lakes, St. Petersburg, and the wider Tampa Bay area, bringing enterprise-level AI strategy to local businesses that deserve to compete.

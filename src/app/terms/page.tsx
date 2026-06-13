@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Terms of Service | Shark Branding Solutions",
-  description: "Terms of Service for Shark Branding Solutions. Review the terms governing use of our website and SMS messaging program.",
+  title: "Terms of Service | Shark AI Solutions",
+  description: "Terms of Service for Shark AI Solutions. Review the terms governing use of our website and SMS messaging program.",
 };
 
 export default function TermsPage() {
@@ -24,24 +24,24 @@ export default function TermsPage() {
           <section>
             <h2 className="text-[21px] font-semibold text-[#0a0a0a] mb-4">1. Acceptance of Terms</h2>
             <p>
-              By accessing or using the Shark Branding Solutions website (sharkbrandingsolutions.com) or any of our services, you agree to be bound by these Terms of Service. If you do not agree, please do not use our website or services.
+              By accessing or using the Shark AI Solutions website (sharkbrandingsolutions.com) or any of our services, you agree to be bound by these Terms of Service. If you do not agree, please do not use our website or services.
             </p>
           </section>
 
           <section>
-            <h2 className="text-[21px] font-semibold text-[#0a0a0a] mb-4">2. About Shark Branding Solutions</h2>
+            <h2 className="text-[21px] font-semibold text-[#0a0a0a] mb-4">2. About Shark AI Solutions</h2>
             <p>
-              Shark Branding Solutions is an AI Visibility and Branding firm based in Wesley Chapel, FL. We help local businesses improve how they appear in AI-powered search platforms and traditional search engines. Our services include AI Business Consulting, AI Visibility Audits, and Workshops and Training.
+              Shark AI Solutions is an AI Visibility and Branding firm based in Wesley Chapel, FL. We help local businesses improve how they appear in AI-powered search platforms and traditional search engines. Our services include AI Business Consulting, AI Visibility Audits, and Workshops and Training.
             </p>
           </section>
 
           <section>
             <h2 className="text-[21px] font-semibold text-[#0a0a0a] mb-4">3. SMS Messaging Program</h2>
             <p className="mb-4">
-              Shark Branding Solutions operates an SMS messaging program to communicate with customers and prospects who have provided their phone number and consented to receive text messages.
+              Shark AI Solutions operates an SMS messaging program to communicate with customers and prospects who have provided their phone number and consented to receive text messages.
             </p>
             <p className="mb-4">
-              <strong>Program description:</strong> By opting in, you may receive text messages from Shark Branding Solutions, including appointment reminders, service updates, follow-up communications related to your inquiry or engagement with us, and, where separately and explicitly consented to, promotional messages such as special offers or business updates.
+              <strong>Program description:</strong> By opting in, you may receive text messages from Shark AI Solutions, including appointment reminders, service updates, follow-up communications related to your inquiry or engagement with us, and, where separately and explicitly consented to, promotional messages such as special offers or business updates.
             </p>
             <p className="mb-4">
               <strong>Message and data rates may apply.</strong> Message frequency varies depending on your activity and preferences.
@@ -78,7 +78,7 @@ export default function TermsPage() {
           <section>
             <h2 className="text-[21px] font-semibold text-[#0a0a0a] mb-4">5. Intellectual Property</h2>
             <p>
-              All content on this website, including text, graphics, logos, images, and software, is the property of Shark Branding Solutions or its content suppliers and is protected by applicable intellectual property laws. You may not reproduce, distribute, or create derivative works without our express written permission.
+              All content on this website, including text, graphics, logos, images, and software, is the property of Shark AI Solutions or its content suppliers and is protected by applicable intellectual property laws. You may not reproduce, distribute, or create derivative works without our express written permission.
             </p>
           </section>
 
@@ -92,7 +92,7 @@ export default function TermsPage() {
           <section>
             <h2 className="text-[21px] font-semibold text-[#0a0a0a] mb-4">7. Limitation of Liability</h2>
             <p>
-              To the fullest extent permitted by law, Shark Branding Solutions shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or related to your use of our website or services, even if we have been advised of the possibility of such damages.
+              To the fullest extent permitted by law, Shark AI Solutions shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or related to your use of our website or services, even if we have been advised of the possibility of such damages.
             </p>
           </section>
 
@@ -134,7 +134,7 @@ export default function TermsPage() {
               If you have any questions about these Terms of Service, please contact us:
             </p>
             <address className="not-italic mt-4 space-y-1 text-[17px]">
-              <p className="font-semibold text-[#0a0a0a]">Shark Branding Solutions</p>
+              <p className="font-semibold text-[#0a0a0a]">Shark AI Solutions</p>
               <p>Wesley Chapel, FL 33544</p>
               <p>
                 <a href="tel:+17275133955" className="text-[#18b5d8] underline">(727) 513-3955</a>

@@ -73,7 +73,7 @@ export default function Page() {
     style={{ width: "100%", height: "auto" }}
    />
 
-   <h2>Shark Branding Solutions: Your AI Visibility Partner</h2>
+   <h2>Shark AI Solutions: Your AI Visibility Partner</h2>
    <p>The <strong>AI Visibility Toolkit</strong> was built for exactly this moment. Beyond just answering the phone, our toolkit ensures that your entire digital footprint is optimized for AI discovery.</p>
    <ul>
     <li><strong>Data Alignment:</strong> Ensuring your &ldquo;digital DNA&rdquo; is consistent everywhere.</li>

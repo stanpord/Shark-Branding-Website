@@ -50,7 +50,7 @@ export default function Page() {
     <li><strong>The Recommendation Shortlist:</strong> The AI surfaces the &ldquo;Top 3&rdquo; picks based on trust and data consistency.</li>
    </ol>
    <p>If ChatGPT sees one address on your Facebook page and another on your website, it loses trust. And if the AI doesn&rsquo;t trust you, it won&rsquo;t recommend you.</p>
-   <p>At Shark Branding Solutions, we call this the shift from &ldquo;Getting Found&rdquo; to &ldquo;Getting Chosen.&rdquo;</p>
+   <p>At Shark AI Solutions, we call this the shift from &ldquo;Getting Found&rdquo; to &ldquo;Getting Chosen.&rdquo;</p>
 
    <h2>The Three Pillars of AI Visibility</h2>
    <p>If you want to dominate the AI Funnel, you can&rsquo;t just &ldquo;do SEO.&rdquo; You need a strategy built for Large Language Models (LLMs).</p>

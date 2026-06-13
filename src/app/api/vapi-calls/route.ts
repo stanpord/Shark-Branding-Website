@@ -5,7 +5,7 @@ export const maxDuration = 30
 
 const VAPI_BASE = 'https://api.vapi.ai'
 
-const SALES_SYSTEM_PROMPT = `You are Aria, a professional AI sales assistant calling on behalf of Shark AI Solutions (also known as Shark Branding Solutions), based in Wesley Chapel, Tampa Bay, FL. Michelle is the founder.
+const SALES_SYSTEM_PROMPT = `You are Aria, a professional AI sales assistant calling on behalf of Shark AI Solutions (also known as Shark AI Solutions), based in Wesley Chapel, Tampa Bay, FL. Michelle is the founder.
 
 YOUR GOAL: Have a natural 3-5 minute conversation, qualify the prospect, and book a 15-minute follow-up call with Michelle.
 

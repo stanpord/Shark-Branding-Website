@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "AI Visibility Toolkit Pricing Tampa Bay | Shark Branding Solutions",
+  title: "AI Employees & AI Visibility Pricing Tampa Bay | Shark AI Solutions",
   description:
     "Get found on Google, ChatGPT, and Gemini without paying for ads. Two plans: Self-Guided at $497/mo or Done For You at $2,000/mo. 90-day results guarantee.",
 };

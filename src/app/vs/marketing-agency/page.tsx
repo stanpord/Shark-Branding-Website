@@ -24,12 +24,12 @@ const structuredData = {
     "A detailed comparison of AI visibility consulting vs traditional marketing agencies for local businesses.",
   author: {
     "@type": "Organization",
-    name: "Shark Branding Solutions",
+    name: "Shark AI Solutions",
     url: "https://sharkbrandingsolutions.com",
   },
   publisher: {
     "@type": "Organization",
-    name: "Shark Branding Solutions",
+    name: "Shark AI Solutions",
     url: "https://sharkbrandingsolutions.com",
     logo: {
       "@type": "ImageObject",
@@ -201,7 +201,7 @@ export default function VsMarketingAgencyPage() {
           </div>
 
           <p className="text-[12px] text-[#aaa] mt-4">
-            Last updated June 2026 · Shark Branding Solutions is an AI visibility consulting firm.{" "}
+            Last updated June 2026 · Shark AI Solutions is an AI visibility consulting firm.{" "}
             <span className="text-[#ccc]">We're transparent about who we are.</span>
           </p>
         </div>
@@ -264,7 +264,7 @@ export default function VsMarketingAgencyPage() {
               </div>
               <div className="px-5 py-4 text-center border-l border-[#e8e8ed] bg-[#18b5d8]/5">
                 <p className="text-[13px] font-bold text-[#18b5d8]">AI Visibility Consulting</p>
-                <p className="text-[11px] text-[#555] mt-0.5">e.g. Shark Branding Solutions</p>
+                <p className="text-[11px] text-[#555] mt-0.5">e.g. Shark AI Solutions</p>
               </div>
               <div className="px-5 py-4 text-center border-l border-[#e8e8ed]">
                 <p className="text-[13px] font-bold text-[#0a0a0a]">Traditional Marketing Agency</p>

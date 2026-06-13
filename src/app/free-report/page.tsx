@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import SnapshotWidget from "@/components/SnapshotWidget";
 
 export const metadata: Metadata = {
-  title: "Free AI Audit — Shark Branding Solutions",
+  title: "Free AI Audit — Shark AI Solutions",
   description:
     "See exactly how your business appears across search, maps, reviews, and AI platforms. Delivered within 48 hours. We walk you through it personally.",
 };

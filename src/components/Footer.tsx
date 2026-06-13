@@ -86,9 +86,9 @@ export default function Footer() {
 
           {/* Brand + contact + socials — spans 2 cols on lg */}
           <div className="lg:col-span-2">
-            <p className="text-[17px] font-bold text-[#1d1d1f] mb-1">Shark Branding Solutions</p>
+            <p className="text-[17px] font-bold text-[#1d1d1f] mb-1">Shark AI Solutions</p>
             <p className="text-[13px] text-[#6e6e73] mb-6 leading-relaxed">
-              AI visibility consulting for Tampa Bay local businesses. Get found on Google, ChatGPT, and Gemini — without paying for ads.
+              AI employees and AI visibility for Tampa Bay local businesses. Automate your follow-up, reviews, and content — and get found on ChatGPT, Google AI, and Gemini.
             </p>
 
             {/* Address */}
@@ -193,7 +193,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="border-t border-[#e0e0e0] pt-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
           <p className="text-[12px] text-[#86868b]">
-            &copy; {new Date().getFullYear()} Shark Branding Solutions. All rights reserved.
+            &copy; {new Date().getFullYear()} Shark AI Solutions. All rights reserved.
           </p>
           <div className="flex flex-wrap items-center gap-5">
             <Link href="/privacy" className="text-[12px] text-[#86868b] hover:text-[#18b5d8] motion-safe:transition-colors">

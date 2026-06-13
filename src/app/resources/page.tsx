@@ -12,7 +12,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Resources — Shark Branding Solutions",
+  title: "Resources — Shark AI Solutions",
   description:
     "Guides, insights, and practical advice on AI visibility, local SEO, and marketing for Tampa Bay businesses.",
 };
@@ -211,7 +211,7 @@ export default function ResourcesPage() {
               </Link>
 
               <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-[11px] text-[#888] uppercase tracking-[0.1em] font-semibold border-t border-black/15 pt-4">
-                <span>By Shark Branding Solutions</span>
+                <span>By Shark AI Solutions</span>
                 <span className="text-black/30">&middot;</span>
                 <span>{lead.date}</span>
                 <span className="text-black/30">&middot;</span>
@@ -375,7 +375,7 @@ export default function ResourcesPage() {
             <div className="md:w-[42%] shrink-0">
               <Image
               src="https://cdn.marblism.com/Nco3hsiA150.webp"
-              alt="Shark Branding Solutions Partners with North Tampa Bay Chamber"
+              alt="Shark AI Solutions Partners with North Tampa Bay Chamber"
               width={600}
               height={340}
               className="w-full h-full object-cover group-hover:opacity-95 transition-opacity"
@@ -390,13 +390,13 @@ export default function ResourcesPage() {
                 className="text-[24px] md:text-[28px] leading-[1.1] text-black mb-4 group-hover:text-[#18b5d8] transition-colors duration-150"
                 style={{ fontFamily: "var(--font-playfair)", fontWeight: 700 }}
               >
-                AI-Ready: Shark Branding Solutions Partners with North Tampa Bay Chamber to Future-Proof Local Business
+                AI-Ready: Shark AI Solutions Partners with North Tampa Bay Chamber to Future-Proof Local Business
               </h2>
               <p className="text-[15px] text-[#555] leading-relaxed mb-5">
-                Shark Branding Solutions partners with the North Tampa Bay Chamber to help every local business get Found, Trusted, and Chosen by AI. NTBC members receive a free Business Visibility Report, no strings attached.
+                Shark AI Solutions partners with the North Tampa Bay Chamber to help every local business get Found, Trusted, and Chosen by AI. NTBC members receive a free Business Visibility Report, no strings attached.
               </p>
               <div className="text-[11px] text-[#999] uppercase tracking-[0.1em] font-semibold">
-                By Shark Branding Solutions &nbsp;&middot;&nbsp; April 15, 2026 &nbsp;&middot;&nbsp; 10 min read
+                By Shark AI Solutions &nbsp;&middot;&nbsp; April 15, 2026 &nbsp;&middot;&nbsp; 10 min read
               </div>
             </div>
           </Link>

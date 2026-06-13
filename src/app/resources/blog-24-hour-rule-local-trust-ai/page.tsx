@@ -23,7 +23,7 @@ export default function Page() {
    heroAlt="The 24-Hour Rule: Why AI-Assisted Review Responses are the Secret Weapon for Local Trust"
   >
    <p>Ever walked into a store where the staff just stared at their phones while you tried to ask a question? Awkward, right? That is exactly how it feels when a customer takes the time to leave a review for your business and gets met with&hellip; crickets. In the digital world, silence isn&rsquo;t golden; it&rsquo;s a conversion killer. If you aren&rsquo;t responding to your reviews, and responding fast, you aren&rsquo;t just being impolite. You&rsquo;re actively handing your competitors your market share.</p>
-   <p>At Shark Branding Solutions, we see it every day. Businesses work their tails off to get a customer through the door, only to drop the ball at the most critical stage of the buyer&rsquo;s journey: <strong>the feedback loop.</strong></p>
+   <p>At Shark AI Solutions, we see it every day. Businesses work their tails off to get a customer through the door, only to drop the ball at the most critical stage of the buyer&rsquo;s journey: <strong>the feedback loop.</strong></p>
    <p>Today, we&rsquo;re breaking down the <strong>24-Hour Rule</strong>, why speed is your new best friend, and how AI-assisted responses (not those robotic, soul-sucking templates) are the secret weapon for building massive local trust and skyrocketing your SEO.</p>
 
    <div className="callout-box">
@@ -75,7 +75,7 @@ export default function Page() {
    <p>Think about it: Would you rather be a business that sends 100 identical &ldquo;thanks&rdquo; notes, or the business that mentions the specific project, the specific employee, and the specific outcome? One is a template. The other is <strong>Authority.</strong></p>
 
    <h2>The Secret Sauce: Human-in-the-Loop (HITL)</h2>
-   <p>Now, you might be thinking: <em>&ldquo;I don&rsquo;t want a robot talking to my customers. What if the AI says something crazy?&rdquo;</em> You&rsquo;re 100% right to be cautious. That&rsquo;s why Shark Branding Solutions advocates for the <strong>Human-in-the-Loop (HITL)</strong> model.</p>
+   <p>Now, you might be thinking: <em>&ldquo;I don&rsquo;t want a robot talking to my customers. What if the AI says something crazy?&rdquo;</em> You&rsquo;re 100% right to be cautious. That&rsquo;s why Shark AI Solutions advocates for the <strong>Human-in-the-Loop (HITL)</strong> model.</p>
    <p>AI generates the heavy lifting, the draft, the structure, the keywords, and the sentiment analysis. But a human gives it the final &ldquo;okay&rdquo; or a quick tweak before hitting send. This gives you the <strong>speed of AI with the safety of a human.</strong> It ensures your brand voice stays consistent and authentic while cutting your response time by 90%.</p>
 
    <h2>SEO Juice: How Talking Back Boosts Your Rankings</h2>

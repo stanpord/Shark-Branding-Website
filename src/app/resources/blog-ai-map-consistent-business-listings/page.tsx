@@ -40,7 +40,7 @@ export default function Page() {
    <p>If your Yelp listing says you close at 5:00 PM but your Google profile says 6:00 PM, the AI gets confused. And in the world of Large Language Models (LLMs), confusion equals a lack of confidence. If the AI isn&rsquo;t 100% sure you are open or where you are located, it won&rsquo;t recommend you. It would rather recommend a competitor with slightly fewer reviews but perfectly consistent data.</p>
 
    <h2>The Found, Trusted, Chosen Framework</h2>
-   <p>At Shark Branding Solutions, we operate under a specific framework designed for the AI era: <strong>Found, Trusted, and Chosen.</strong></p>
+   <p>At Shark AI Solutions, we operate under a specific framework designed for the AI era: <strong>Found, Trusted, and Chosen.</strong></p>
    <ol>
     <li><strong>Found:</strong> This is your foundation. It&rsquo;s about ensuring AI models can identify your business, its location, and its services with absolute certainty.</li>
     <li><strong>Trusted:</strong> Once the AI finds you, it looks for social proof, reviews, mentions, and social signals, to verify you&rsquo;re a high-quality option.</li>
@@ -80,7 +80,7 @@ export default function Page() {
     <li><strong>Standardize Your Format:</strong> Decide exactly how your business name and address should appear. Use that <em>exact</em> format everywhere, down to the punctuation.</li>
     <li><strong>Audit the &ldquo;Small&rdquo; Sites:</strong> AI pulls data from local chambers of commerce, industry-specific directories, and social media profiles.</li>
     <li><strong>Check for Duplicates:</strong> Nothing kills AI confidence faster than two listings for the same business with slightly different info.</li>
-    <li><strong>Sync Your Data:</strong> Use a central source of truth. Shark Branding Solutions uses tools that push correct business data to over 100 directories simultaneously.</li>
+    <li><strong>Sync Your Data:</strong> Use a central source of truth. Shark AI Solutions uses tools that push correct business data to over 100 directories simultaneously.</li>
    </ol>
 
    <h2>The Apple Intelligence Factor</h2>

@@ -25,7 +25,7 @@ export default function Page() {
    <p>Getting found is one thing. Getting <em>trusted</em> is a completely different game, and in the age of AI search, it&rsquo;s the game that actually wins you customers.</p>
    <p>Here&rsquo;s a scenario that plays out thousands of times a day: A potential customer asks ChatGPT, Gemini, or Google AI for a recommendation. The AI pulls up your business. You&rsquo;re visible. You&rsquo;re found. And then&hellip; the customer sees 47 unanswered reviews, a wall of silence from the business, and bounces to your competitor.</p>
    <p>You were found. But you weren&rsquo;t <strong>trusted</strong>. And if you&rsquo;re not trusted, you&rsquo;ll never get chosen.</p>
-   <p>At Shark Branding Solutions, our entire framework is built around three stages: <strong>Found, Trusted, Chosen.</strong> Most businesses obsess over the first stage and completely drop the ball on the second. Today, we&rsquo;re going to fix that.</p>
+   <p>At Shark AI Solutions, our entire framework is built around three stages: <strong>Found, Trusted, Chosen.</strong> Most businesses obsess over the first stage and completely drop the ball on the second. Today, we&rsquo;re going to fix that.</p>
 
    <div className="callout-box">
     <h4>The Three Stages of Modern Customer Acquisition</h4>
@@ -74,7 +74,7 @@ export default function Page() {
    />
 
    <h2>The HITL Model: AI Speed with Human Judgment</h2>
-   <p>At Shark Branding Solutions, we advocate for what we call the <strong>Human-in-the-Loop (HITL)</strong> model for review management. The AI drafts the response using context from the original review. A human gives it a quick scan and approves (or tweaks) before publishing. This approach gives you three major advantages:</p>
+   <p>At Shark AI Solutions, we advocate for what we call the <strong>Human-in-the-Loop (HITL)</strong> model for review management. The AI drafts the response using context from the original review. A human gives it a quick scan and approves (or tweaks) before publishing. This approach gives you three major advantages:</p>
    <ul>
     <li><strong>Speed:</strong> AI can generate 50 personalized review responses in the time it takes a human to write five.</li>
     <li><strong>Consistency:</strong> Your brand voice stays polished and on-message across every response.</li>

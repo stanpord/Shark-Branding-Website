@@ -15,9 +15,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Shark Branding Solutions — AI Business Consulting",
+  title: "Shark AI Solutions — AI Employees & AI Visibility for Tampa Bay",
   description:
-    "AI Business Consulting that makes your company run better, grow faster, and stay visible — even when you're not there.",
+    "AI employees and AI visibility for Tampa Bay local businesses. Automate leads, follow-up, reviews, and content — and get found on ChatGPT, Google AI, and Gemini.",
   keywords: [
     "AI business consulting",
     "AI visibility",
@@ -37,9 +37,9 @@ export const metadata: Metadata = {
     canonical: "https://sharkbrandingsolutions.com",
   },
   openGraph: {
-    title: "Shark Branding Solutions",
+    title: "Shark AI Solutions",
     description:
-      "Get Found. Get Trusted. Get Chosen. AI solutions for forward-thinking businesses.",
+      "AI employees and AI visibility for Tampa Bay local businesses. Get found on ChatGPT, Google AI, and Gemini.",
     type: "website",
     url: "https://sharkbrandingsolutions.com",
   },
@@ -51,8 +51,8 @@ const structuredData = {
     {
       "@type": "LocalBusiness",
       "@id": "https://sharkbrandingsolutions.com/#organization",
-      name: "Shark Branding Solutions",
-      alternateName: "Shark AI Solutions",
+      name: "Shark AI Solutions",
+      alternateName: "Shark Branding Solutions",
       url: "https://sharkbrandingsolutions.com",
       logo: {
         "@type": "ImageObject",

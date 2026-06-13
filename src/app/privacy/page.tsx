@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Shark Branding Solutions",
-  description: "Privacy Policy for Shark Branding Solutions. Learn how we collect, use, and protect your personal information.",
+  title: "Privacy Policy | Shark AI Solutions",
+  description: "Privacy Policy for Shark AI Solutions. Learn how we collect, use, and protect your personal information.",
 };
 
 export default function PrivacyPage() {
@@ -24,7 +24,7 @@ export default function PrivacyPage() {
           <section>
             <h2 className="text-[21px] font-semibold text-[#0a0a0a] mb-4">1. Who We Are</h2>
             <p>
-              Shark Branding Solutions ("we," "us," or "our") is an AI Visibility and Branding firm based in Wesley Chapel, FL, serving businesses across the Tampa Bay region. Our website is sharkbrandingsolutions.com. You can reach us at{" "}
+              Shark AI Solutions ("we," "us," or "our") is an AI Visibility and Branding firm based in Wesley Chapel, FL, serving businesses across the Tampa Bay region. Our website is sharkbrandingsolutions.com. You can reach us at{" "}
               <a href="mailto:info@sharkbrandingsolutions.com" className="text-[#18b5d8] underline">
                 info@sharkbrandingsolutions.com
               </a>{" "}
@@ -61,7 +61,7 @@ export default function PrivacyPage() {
           <section>
             <h2 className="text-[21px] font-semibold text-[#0a0a0a] mb-4">4. SMS Messaging</h2>
             <p className="mb-4">
-              When you provide your phone number and consent to receive text messages, Shark Branding Solutions may send you SMS messages. Message and data rates may apply. Message frequency varies.
+              When you provide your phone number and consent to receive text messages, Shark AI Solutions may send you SMS messages. Message and data rates may apply. Message frequency varies.
             </p>
             <p className="mb-4">
               To opt out of SMS messages at any time, reply <strong>STOP</strong> to any message you receive from us. To request help, reply <strong>HELP</strong> or contact us at{" "}
@@ -140,7 +140,7 @@ export default function PrivacyPage() {
               If you have any questions about this Privacy Policy or how we handle your data, please contact us:
             </p>
             <address className="not-italic mt-4 space-y-1 text-[17px]">
-              <p className="font-semibold text-[#0a0a0a]">Shark Branding Solutions</p>
+              <p className="font-semibold text-[#0a0a0a]">Shark AI Solutions</p>
               <p>Wesley Chapel, FL 33544</p>
               <p>
                 <a href="tel:+17275133955" className="text-[#18b5d8] underline">(727) 513-3955</a>

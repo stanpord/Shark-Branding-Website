@@ -54,8 +54,8 @@ export default function Page() {
     <li><strong>The City or Location:</strong> Not &ldquo;near us,&rdquo; but &ldquo;in Tampa&rdquo; or &ldquo;at our Dallas office.&rdquo;</li>
     <li><strong>The Clear Result:</strong> Not &ldquo;great experience,&rdquo; but &ldquo;our traffic increased by 40% in 60 days.&rdquo;</li>
    </ol>
-   <p><strong>The Old Way:</strong> &ldquo;Shark Branding Solutions was great to work with. Highly recommend!&rdquo;<br />
-   <strong>The AI-Readable Way:</strong> &ldquo;We used Shark Branding Solutions to get our business AI-ready in Austin. They helped us improve our review signals, clean up our visibility, and increase qualified leads within 30 days.&rdquo;</p>
+   <p><strong>The Old Way:</strong> &ldquo;Shark AI Solutions was great to work with. Highly recommend!&rdquo;<br />
+   <strong>The AI-Readable Way:</strong> &ldquo;We used Shark AI Solutions to get our business AI-ready in Austin. They helped us improve our review signals, clean up our visibility, and increase qualified leads within 30 days.&rdquo;</p>
 
    <Image
     src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1200&h=480&q=80"
@@ -96,7 +96,7 @@ export default function Page() {
     <li>Can it see real customer outcomes in your reviews?</li>
     <li>Are you responding in <strong>under 24 hours</strong> and reinforcing trust signals?</li>
    </ul>
-   <p>Shark Branding Solutions is an AI Visibility Agency that acts as the bridge between your business and the AI systems shaping discovery. We help small to mid-sized businesses become <strong>AI-ready</strong> by turning reviews, business data, and response habits into clearer signals AI can understand and trust.</p>
+   <p>Shark AI Solutions is an AI Visibility Agency that acts as the bridge between your business and the AI systems shaping discovery. We help small to mid-sized businesses become <strong>AI-ready</strong> by turning reviews, business data, and response habits into clearer signals AI can understand and trust.</p>
 
    <hr />
    <p style={{ fontSize: "0.8rem", color: "#999", lineHeight: "1.6" }}>

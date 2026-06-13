@@ -3,7 +3,7 @@ import AiEmployeesDeep from './AiEmployeesDeep'
 
 export const metadata: Metadata = {
   title: 'Meet Your AI Team — Shark AI Solutions',
-  description: 'A deep dive into every AI employee — Gemma, Blogger, Reputation Specialist, Lead Qualifier, and Social Media Manager. Built for Tampa Bay businesses.',
+  description: 'Five AI employees for Tampa Bay businesses: Chat Receptionist, Voice Receptionist, Reputation Specialist, AI CRM, and AI Sales Coach. Live within one week.',
   robots: { index: true, follow: true },
 }
 

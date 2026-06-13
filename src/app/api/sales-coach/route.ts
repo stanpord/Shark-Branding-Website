@@ -7,7 +7,7 @@ export const maxDuration = 30
 const anthropic = new Anthropic()
 
 const SALES_CONTEXT = `
-COMPANY: Shark AI Solutions (also branded Shark Branding Solutions)
+COMPANY: Shark AI Solutions (also branded Shark AI Solutions)
 TEAM: Michelle (sales lead), Josh (sales/delivery)
 LOCATION: Tampa Bay / Wesley Chapel, FL
 

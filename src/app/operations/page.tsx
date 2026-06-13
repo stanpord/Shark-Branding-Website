@@ -55,7 +55,7 @@ export default function OperationsPage() {
           <p className="text-[#18b5d8] text-[13px] font-semibold tracking-[0.2em] uppercase mb-3">
             Shark AI Solutions: Operations
           </p>
-          <p className="text-[13px] text-[#7a7a7a] mb-8">A Shark Branding Solutions company</p>
+          <p className="text-[13px] text-[#7a7a7a] mb-8">A Shark AI Solutions company</p>
           <h1 className="display-hero text-[#0a0a0a] mb-6" style={{ textWrap: "balance" }}>
             AI bots that run your
             <br />

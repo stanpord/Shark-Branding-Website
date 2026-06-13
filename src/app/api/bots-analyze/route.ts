@@ -40,7 +40,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: 'Business name and industry are required.' }, { status: 400 })
   }
 
-  const prompt = `You are a bot sales advisor for Shark Branding Solutions, a Tampa Bay AI consulting firm. Your job is to analyze a prospect business and recommend which AI products to pitch first, with specific reasoning and a conversation opener for each.
+  const prompt = `You are a bot sales advisor for Shark AI Solutions, a Tampa Bay AI consulting firm. Your job is to analyze a prospect business and recommend which AI products to pitch first, with specific reasoning and a conversation opener for each.
 
 Available products:
 ${BOTS_CONTEXT}

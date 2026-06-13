@@ -16,15 +16,15 @@ export default function Page() {
   <BlogShell
    relatedPosts={[{ href: "/resources/blog-ai-funnel-chatgpt-new-front-door", title: "ChatGPT Is the New Front Door for Your Customers", category: "AI Funnel" }, { href: "/resources/blog-seo-old-school-geo-ai-shift", title: "Why Your Business Needs GEO for the AI Search Shift", category: "GEO" }, { href: "/resources/blog-ai-map-consistent-business-listings", title: "Consistent Listings: The Secret to Being Found by AI", category: "Listings" }]}
    category="Partnership"
-   title="AI-Ready: Shark Branding Solutions Partners with North Tampa Bay Chamber to Future-Proof Local Business"
+   title="AI-Ready: Shark AI Solutions Partners with North Tampa Bay Chamber to Future-Proof Local Business"
    date="April 15, 2026"
    readTime="10 min read"
    heroImage="https://cdn.marblism.com/Nco3hsiA150.webp"
-   heroAlt="AI-Ready: Shark Branding Solutions Partners with North Tampa Bay Chamber"
+   heroAlt="AI-Ready: Shark AI Solutions Partners with North Tampa Bay Chamber"
   >
    <p>The business landscape in North Tampa Bay just shifted. If you&rsquo;re still playing the old game of trying to &ldquo;rank&rdquo; on page one of Google, you might already be falling behind. The world has moved beyond simple search bars. Today, your customers are asking ChatGPT for recommendations, using Gemini to plan their weekends, and letting AI-powered assistants decide which resources they should trust and where they should spend their money.</p>
    <p>Are you ready for that shift? Or is your business invisible to the very technology your customers are using every single day?</p>
-   <p>At Shark Branding Solutions, we don&rsquo;t believe in standing still. That&rsquo;s why we are incredibly proud to announce a landmark partnership with the <strong>North Tampa Bay Chamber (NTBC)</strong>. This isn&rsquo;t just another networking collaboration; it&rsquo;s a mission to ensure that every business in our community is &ldquo;AI-Ready.&rdquo;</p>
+   <p>At Shark AI Solutions, we don&rsquo;t believe in standing still. That&rsquo;s why we are incredibly proud to announce a landmark partnership with the <strong>North Tampa Bay Chamber (NTBC)</strong>. This isn&rsquo;t just another networking collaboration; it&rsquo;s a mission to ensure that every business in our community is &ldquo;AI-Ready.&rdquo;</p>
 
    <hr />
 
@@ -41,7 +41,7 @@ export default function Page() {
     <li><em>&ldquo;Which law firm has the best reputation for small business contracts in North Tampa?&rdquo;</em></li>
    </ul>
    <p>When a user asks these questions, AI models don&rsquo;t just give a list of links. They give an <strong>answer</strong>. They recommend a winner. If your business isn&rsquo;t &ldquo;Found, Trusted, and Chosen&rdquo; by these models, you don&rsquo;t even get invited to the conversation.</p>
-   <p>That&rsquo;s where Shark Branding Solutions comes in. We&rsquo;ve moved past the era of simple &ldquo;marketing&rdquo; services. We focus on <strong>AI Visibility</strong>: a high-level strategy designed to make sure your business is the one the machines recommend.</p>
+   <p>That&rsquo;s where Shark AI Solutions comes in. We&rsquo;ve moved past the era of simple &ldquo;marketing&rdquo; services. We focus on <strong>AI Visibility</strong>: a high-level strategy designed to make sure your business is the one the machines recommend.</p>
 
    <Image
     src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&h=480&q=80"
@@ -66,7 +66,7 @@ export default function Page() {
 
    <Image
     src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1200&h=480&q=80"
-    alt="Shark Branding Solutions and North Tampa Bay Chamber partnership, building trust for local businesses in the AI era"
+    alt="Shark AI Solutions and North Tampa Bay Chamber partnership, building trust for local businesses in the AI era"
     width={1200}
     height={480}
     style={{ width: "100%", height: "auto" }}
@@ -110,7 +110,7 @@ export default function Page() {
 
    <Image
     src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1200&h=480&q=80"
-    alt="Local business owner reviewing AI visibility results with a Shark Branding Solutions advisor after implementing the toolkit"
+    alt="Local business owner reviewing AI visibility results with a Shark AI Solutions advisor after implementing the toolkit"
     width={1200}
     height={480}
     style={{ width: "100%", height: "auto" }}
@@ -118,12 +118,12 @@ export default function Page() {
 
    <h2>Stop Playing Catch-Up</h2>
    <p>The reality is that the gap between businesses that embrace AI and those that ignore it is widening every day. You don&rsquo;t want to be the business that realizes three years from now that nobody is finding you because you&rsquo;re invisible to the tools everyone is using.</p>
-   <p>North Tampa Bay is a thriving, innovative hub. We have the talent, the passion, and the services. Now, through this partnership between Shark Branding Solutions and the NTBC, we have the technology to match.</p>
+   <p>North Tampa Bay is a thriving, innovative hub. We have the talent, the passion, and the services. Now, through this partnership between Shark AI Solutions and the NTBC, we have the technology to match.</p>
    <p>Are you ready to stop wondering where your next customer is coming from and start being the business that AI recommends?</p>
 
    <Image
     src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=1200&h=480&q=80"
-    alt="Wesley Chapel and Tampa Bay skyline, the local community Shark Branding Solutions is helping get AI-ready"
+    alt="Wesley Chapel and Tampa Bay skyline, the local community Shark AI Solutions is helping get AI-ready"
     width={1200}
     height={480}
     style={{ width: "100%", height: "auto" }}
@@ -138,7 +138,7 @@ export default function Page() {
    </ol>
    <p>We are incredibly excited to embark on this journey with the North Tampa Bay Chamber. Together, we aren&rsquo;t just building businesses; we are building a future-proof community that is ready to lead the way in the AI era.</p>
    <p>Let&rsquo;s get your business <strong>Found, Trusted, and Chosen.</strong></p>
-   <p><em>The Shark Branding Solutions Team</em></p>
+   <p><em>The Shark AI Solutions Team</em></p>
   </BlogShell>
  );
 }

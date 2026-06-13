@@ -70,7 +70,7 @@ export default function Page() {
     <li><strong>Optimize for Natural Language:</strong> Write your FAQs like a human would speak them.</li>
     <li><strong>Add Structured Data:</strong> If you don&rsquo;t have Schema markup on your site, you are essentially speaking a language the AI can&rsquo;t understand.</li>
    </ol>
-   <p>The &ldquo;AI Shift&rdquo; isn&rsquo;t coming; it&rsquo;s already here. You can either stay stuck in the &ldquo;Ten Blue Links&rdquo; past, or you can join the future of <strong>Generative Engine Optimization</strong>. Whether you need support from a full <a href="/services">AI Visibility Agency</a> or a specific local strategy, Shark Branding Solutions is ready to help you bite back against the competition.</p>
+   <p>The &ldquo;AI Shift&rdquo; isn&rsquo;t coming; it&rsquo;s already here. You can either stay stuck in the &ldquo;Ten Blue Links&rdquo; past, or you can join the future of <strong>Generative Engine Optimization</strong>. Whether you need support from a full <a href="/services">AI Visibility Agency</a> or a specific local strategy, Shark AI Solutions is ready to help you bite back against the competition.</p>
   </BlogShell>
  );
 }

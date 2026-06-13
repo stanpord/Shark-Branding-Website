@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "AI Business Services — Shark Branding Solutions",
+  title: "AI Business Services — Shark AI Solutions",
   description:
     "AI Business Consulting, AI Toolkit, Workshops, and Free AI Audits for Tampa Bay businesses.",
 };
