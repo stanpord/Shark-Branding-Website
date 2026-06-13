@@ -9,11 +9,6 @@ const EMPLOYEES = [
     tags: ['Live chat', 'Lead qualification', 'Booking'],
   },
   {
-    name: 'Blogger', role: 'Content Writer', cardImg: '/avatars/blogger.png', color: '#4FD1A0',
-    desc: 'Publishes SEO articles weekly, builds authority, and gets you cited by AI search engines.',
-    tags: ['SEO content', 'AI citations', 'Weekly articles'],
-  },
-  {
     name: 'Reputation Specialist', role: 'Review Manager', cardImg: '/avatars/reputation.png', color: '#F9DB79',
     desc: 'Requests reviews after every job and responds to every comment — automatically.',
     tags: ['Review requests', 'Auto-responses', '5-star growth'],
@@ -22,11 +17,6 @@ const EMPLOYEES = [
     name: 'AI CRM', role: 'Sales Assistant', cardImg: '/avatars/sales.png', color: '#18b5d8',
     desc: 'Runs multi-touch follow-up across email, SMS, and phone so no lead falls through the cracks.',
     tags: ['Email + SMS', 'Cold lead rescue', 'Multi-channel'],
-  },
-  {
-    name: 'Social Media Manager', role: 'Content Publisher', cardImg: '/avatars/social.png', color: '#F7555F',
-    desc: 'Creates and schedules daily social content, on brand, without any effort from your team.',
-    tags: ['Daily posting', 'Brand voice', 'All platforms'],
   },
 ]
 
@@ -40,9 +30,8 @@ const QUIZ_QUESTIONS = [
     question: "What's your biggest bottleneck right now?",
     options: [
       { label: "Responding to new leads fast enough", result: 0 },
-      { label: "Leads going cold before we follow up", result: 3 },
-      { label: "Not enough 5-star reviews online", result: 2 },
-      { label: "Inconsistent social media presence", result: 4 },
+      { label: "Leads going cold before we follow up", result: 2 },
+      { label: "Not enough 5-star reviews online", result: 1 },
     ],
   },
   {
@@ -74,27 +63,15 @@ const QUIZ_RESULTS = [
   },
   {
     employee: 1,
-    headline: "Your AI Employee: Blogger",
-    role: 'Content Writer',
-    body: "Your business needs consistent SEO content to build authority and attract leads organically. Blogger publishes weekly articles that rank on Google and get surfaced by AI search tools.",
-  },
-  {
-    employee: 2,
     headline: "Your AI Employee: Reputation Specialist",
     role: 'Review Manager',
     body: "Reviews are the first thing potential customers check. Your Reputation Specialist requests reviews after every job and responds to every comment — fully automatically.",
   },
   {
-    employee: 3,
+    employee: 2,
     headline: "Your AI Employee: AI CRM",
     role: 'Sales Assistant',
     body: "Every cold lead is a deal waiting to happen. Your AI CRM runs automated multi-touch follow-up across email, SMS, and phone so no lead ever falls through the cracks again.",
-  },
-  {
-    employee: 4,
-    headline: "Your AI Employee: Social Media Manager",
-    role: 'Content Publisher',
-    body: "Consistent social presence builds trust and keeps you top-of-mind. Your Social Media Manager creates and schedules content every day — on brand, without any effort from you.",
   },
 ]
 
