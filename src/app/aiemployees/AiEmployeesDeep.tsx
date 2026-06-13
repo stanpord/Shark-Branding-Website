@@ -81,9 +81,6 @@ export default function AiEmployeesDeep() {
                 }`}
               >
                 {item.label}
-                {item.comingSoon && (
-                  <span className="text-[9px] font-bold px-1.5 py-0.5 rounded-full bg-[#f5f5f7] text-[#86868b] uppercase tracking-wide">Soon</span>
-                )}
               </a>
             ))}
           </nav>
