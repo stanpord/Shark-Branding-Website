@@ -818,10 +818,10 @@ export default function Showcase() {
 
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <a
-                  href="/free-report"
+                  href="/contact"
                   className="bg-[#18b5d8] text-white text-[15px] font-bold rounded-full px-8 py-3.5 hover:bg-[#1297b8] transition-colors duration-150 inline-block shadow-[0_4px_16px_rgba(24,181,216,0.3)]"
                 >
-                  {quizResult.employee === -1 ? 'Book My AI Visibility Audit' : 'Book My Free AI Audit'}
+                  Contact Us
                 </a>
                 <button
                   onClick={resetQuiz}
@@ -848,13 +848,13 @@ export default function Showcase() {
             Ready to see what AI can do for your business?
           </h2>
           <p className="text-[#6e6e73] text-[16px] mb-10 leading-relaxed">
-            Book a free 30-minute audit. We&apos;ll map out where AI employees fit, check your AI visibility score, and show you exactly what to expect in the first 90 days.
+            Tell us about your business and we&apos;ll map out exactly which AI employees fit, what they&apos;ll do, and what to expect in the first 90 days.
           </p>
           <a
-            href="/free-report"
+            href="/contact"
             className="bg-[#18b5d8] text-white text-[15px] font-bold rounded-full px-8 py-3.5 hover:bg-[#1297b8] transition-colors duration-150 inline-block shadow-[0_4px_20px_rgba(24,181,216,0.35)]"
           >
-            Book My Free AI Audit
+            Contact Us
           </a>
         </div>
       </section>
