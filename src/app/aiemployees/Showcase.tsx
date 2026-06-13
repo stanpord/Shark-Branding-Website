@@ -18,6 +18,11 @@ const EMPLOYEES = [
     desc: 'Runs multi-touch follow-up across email, SMS, and phone so no lead falls through the cracks.',
     tags: ['Email + SMS', 'Cold lead rescue', 'Multi-channel'],
   },
+  {
+    name: 'AI Sales Coach', role: 'Sales Trainer', cardImg: '/avatars/salescoach.png', color: '#4FD1A0',
+    desc: 'Trains your team on objections, reviews every call automatically, and tracks rep performance.',
+    tags: ['Objection training', 'Call review', 'Rep coaching'],
+  },
 ]
 
 const TOTAL = EMPLOYEES.length
@@ -32,6 +37,7 @@ const QUIZ_QUESTIONS = [
       { label: "Responding to new leads fast enough", result: 0 },
       { label: "Leads going cold before we follow up", result: 2 },
       { label: "Not enough 5-star reviews online", result: 1 },
+      { label: "My team loses deals they should be closing", result: 3 },
     ],
   },
   {
@@ -72,6 +78,12 @@ const QUIZ_RESULTS = [
     headline: "Your AI Employee: AI CRM",
     role: 'Sales Assistant',
     body: "Every cold lead is a deal waiting to happen. Your AI CRM runs automated multi-touch follow-up across email, SMS, and phone so no lead ever falls through the cracks again.",
+  },
+  {
+    employee: 3,
+    headline: "Your AI Employee: AI Sales Coach",
+    role: 'Sales Trainer',
+    body: "Your team is losing winnable deals. The AI Sales Coach trains your reps on objections, reviews every call automatically, and shows managers exactly who needs coaching and what to work on.",
   },
 ]
 

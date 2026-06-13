@@ -6,6 +6,7 @@ const NAV_ITEMS = [
   { id: 'gemma', label: 'Gemma', role: 'Chat Receptionist' },
   { id: 'reputation', label: 'Reputation Specialist', role: 'Review Manager' },
   { id: 'aicrm', label: 'AI CRM', role: 'Sales Assistant' },
+  { id: 'salescoach', label: 'AI Sales Coach', role: 'Sales Trainer' },
   { id: 'custom', label: 'Custom Employee', role: 'Built for You' },
 ]
 
@@ -57,7 +58,7 @@ export default function AiEmployeesDeep() {
             Meet your AI Team.
           </h1>
           <p className="text-[#18b5d8] text-[20px] sm:text-[24px] font-bold mb-3">
-            Five AI employees. One unstoppable team.
+            Four specialized AI employees. One unstoppable team.
           </p>
           <p className="text-[#6e6e73] text-[18px] leading-relaxed max-w-xl mx-auto">
             Each one is built, trained, and live within a week — handling the work that's costing you leads, reviews, and revenue every single day.
@@ -243,6 +244,150 @@ export default function AiEmployeesDeep() {
 
       <SectionDivider />
 
+      {/* ═══════════════════════════════════════════════════════════════ */}
+      {/* ── AI SALES COACH — SALES TRAINER ────────────────────────── */}
+      {/* ═══════════════════════════════════════════════════════════════ */}
+      <section id="salescoach" className="py-28 px-6 scroll-mt-16">
+        <div className="max-w-5xl mx-auto">
+
+          {/* Employee header */}
+          <div className="mb-16">
+            <div className="flex items-center gap-3 mb-4">
+              <span className="inline-block px-3 py-1 rounded-full bg-[#4FD1A0]/10 text-[#4FD1A0] text-[11px] font-bold uppercase tracking-wide">Sales Trainer</span>
+            </div>
+            <h2 className="text-[40px] sm:text-[48px] font-extrabold text-[#1d1d1f] leading-tight tracking-tight mb-4">AI Sales Coach</h2>
+            <p className="text-[#6e6e73] text-[18px] leading-relaxed max-w-2xl">
+              Your team practices objections against a realistic AI prospect, gets their calls reviewed automatically, and sees exactly where deals are won and lost — without a sales manager sitting in on every call.
+            </p>
+          </div>
+
+          {/* Feature 01 — AI Role Play */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-6">
+            {/* Mock: Role play session */}
+            <div className="bg-[#f5f5f7] rounded-[20px] p-6 border border-[#e5e5ea]">
+              <div className="flex items-center gap-2 mb-4">
+                <div className="w-7 h-7 rounded-full bg-[#4FD1A0] flex items-center justify-center text-white text-[11px] font-bold">AI</div>
+                <p className="text-[12px] font-semibold text-[#1d1d1f]">Practice Session · Objection: Price</p>
+                <span className="ml-auto text-[10px] font-bold text-[#4FD1A0] bg-[#4FD1A0]/10 px-2 py-0.5 rounded-full">Live</span>
+              </div>
+              <div className="space-y-2.5">
+                <div className="flex justify-start">
+                  <div className="bg-white border border-[#e5e5ea] text-[#1d1d1f] text-[12px] rounded-[14px] rounded-tl-[4px] px-3.5 py-2.5 max-w-[85%] leading-relaxed">
+                    That&apos;s more than I expected. The other company quoted me $800 less. Why should I go with you?
+                  </div>
+                </div>
+                <div className="flex justify-end">
+                  <div className="bg-[#4FD1A0] text-white text-[12px] rounded-[14px] rounded-tr-[4px] px-3.5 py-2.5 max-w-[80%]">
+                    Fair question. The difference usually shows up after the job — our warranty covers parts and labor for 2 years. What did their warranty include?
+                  </div>
+                </div>
+                <div className="flex justify-start">
+                  <div className="bg-white border border-[#e5e5ea] text-[#1d1d1f] text-[12px] rounded-[14px] rounded-tl-[4px] px-3.5 py-2.5 max-w-[85%] leading-relaxed">
+                    I&apos;m not sure they mentioned one. Let me think about it.
+                  </div>
+                </div>
+              </div>
+              <div className="mt-4 bg-[#4FD1A0]/10 rounded-[10px] px-4 py-2.5 flex items-center gap-2">
+                <svg className="w-3.5 h-3.5 text-[#4FD1A0] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4"/></svg>
+                <p className="text-[11px] text-[#4FD1A0] font-semibold">Good redirect — turned the price gap into a value question.</p>
+              </div>
+            </div>
+            <div>
+              <p className="text-[11px] font-bold tracking-[1.5px] uppercase text-[#86868b] mb-3">Feature 01</p>
+              <h3 className="text-[26px] font-bold text-[#1d1d1f] leading-tight tracking-tight mb-4">Practice every objection before it happens in the real world.</h3>
+              <p className="text-[#6e6e73] text-[16px] leading-relaxed mb-5">
+                Your reps practice live against an AI that plays a realistic prospect — pushing back on price, comparing to competitors, and stalling. They get instant feedback after every exchange so they improve between every session.
+              </p>
+              <ul className="space-y-2">
+                {['Custom scenarios built on your actual objections', 'Instant line-by-line coaching feedback', 'Unlimited practice — no scheduling required', 'Tracks improvement across sessions', 'New scenarios added as your offer changes'].map(t => <CheckItem key={t} text={t} />)}
+              </ul>
+            </div>
+          </div>
+
+          <Connector />
+
+          {/* Feature 02 — Call Review */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-6">
+            <div className="order-2 lg:order-1">
+              <p className="text-[11px] font-bold tracking-[1.5px] uppercase text-[#86868b] mb-3">Feature 02</p>
+              <h3 className="text-[26px] font-bold text-[#1d1d1f] leading-tight tracking-tight mb-4">Every call reviewed. Every missed opportunity surfaced.</h3>
+              <p className="text-[#6e6e73] text-[16px] leading-relaxed mb-5">
+                The AI Sales Coach reviews every recorded sales call, flags the moments that cost you deals, and delivers a short coaching note to each rep — without a manager having to listen to hours of recordings.
+              </p>
+              <ul className="space-y-2">
+                {['Integrates with your existing call recording tool', 'Highlights missed closes and weak transitions', 'Personalized coaching note per rep per call', 'Surfaces the most common objection patterns', 'Weekly coaching digest for managers'].map(t => <CheckItem key={t} text={t} />)}
+              </ul>
+            </div>
+            {/* Mock: Call review */}
+            <div className="order-1 lg:order-2 bg-[#f5f5f7] rounded-[20px] p-6 border border-[#e5e5ea]">
+              <div className="flex items-center justify-between mb-4">
+                <p className="text-[12px] font-semibold text-[#1d1d1f]">Call Review · Jake T. · June 11</p>
+                <span className="text-[10px] font-bold text-[#F7555F] bg-[#F7555F]/10 px-2 py-0.5 rounded-full">2 coaching notes</span>
+              </div>
+              <div className="space-y-3">
+                {[
+                  { time: '3:42', tag: 'Missed close', note: 'Customer said "sounds good" — missed the transition to booking. Ask directly: "Want to get that on the calendar now?"', color: '#F7555F' },
+                  { time: '7:15', tag: 'Price objection', note: 'Dropped price without asking why it was a concern. Lead was comparing to an unlicensed competitor — a better question would have closed it.', color: '#F9DB79' },
+                ].map(note => (
+                  <div key={note.time} className="bg-white rounded-[12px] border border-[#e5e5ea] p-4">
+                    <div className="flex items-center gap-2 mb-2">
+                      <span className="text-[10px] font-bold text-[#86868b]">{note.time}</span>
+                      <span className="text-[10px] font-bold px-2 py-0.5 rounded-full" style={{ color: note.color, backgroundColor: `${note.color}18` }}>{note.tag}</span>
+                    </div>
+                    <p className="text-[11px] text-[#6e6e73] leading-relaxed">{note.note}</p>
+                  </div>
+                ))}
+                <div className="bg-[#4FD1A0]/10 rounded-[12px] p-3 flex items-center gap-2">
+                  <svg className="w-3.5 h-3.5 text-[#4FD1A0] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"/></svg>
+                  <p className="text-[11px] text-[#4FD1A0] font-semibold">Strong rapport-building in the first 2 minutes — keep doing that.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <Connector />
+
+          {/* Feature 03 — Performance Tracking */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+            {/* Mock: Performance dashboard */}
+            <div className="bg-[#f5f5f7] rounded-[20px] p-6 border border-[#e5e5ea]">
+              <p className="text-[11px] font-bold tracking-[1.5px] uppercase text-[#86868b] mb-4">Team Performance · This Month</p>
+              <div className="space-y-3">
+                {[
+                  { name: 'Jake T.', calls: 18, close: '44%', trend: 'up', note: 'Up 11% — objection training working' },
+                  { name: 'Maria C.', calls: 22, close: '61%', trend: 'up', note: 'Top performer — use as model script' },
+                  { name: 'David R.', calls: 14, close: '29%', trend: 'down', note: 'Needs: closing transitions, price handling' },
+                ].map(rep => (
+                  <div key={rep.name} className="bg-white rounded-[12px] border border-[#e5e5ea] p-4">
+                    <div className="flex items-center justify-between mb-1.5">
+                      <p className="text-[13px] font-bold text-[#1d1d1f]">{rep.name}</p>
+                      <div className="flex items-center gap-2">
+                        <span className="text-[11px] text-[#86868b]">{rep.calls} calls</span>
+                        <span className={`text-[12px] font-bold ${rep.trend === 'up' ? 'text-[#4FD1A0]' : 'text-[#F7555F]'}`}>{rep.close}</span>
+                      </div>
+                    </div>
+                    <p className="text-[11px] text-[#86868b]">{rep.note}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div>
+              <p className="text-[11px] font-bold tracking-[1.5px] uppercase text-[#86868b] mb-3">Feature 03</p>
+              <h3 className="text-[26px] font-bold text-[#1d1d1f] leading-tight tracking-tight mb-4">See exactly who needs coaching — before the month is over.</h3>
+              <p className="text-[#6e6e73] text-[16px] leading-relaxed mb-5">
+                The AI Sales Coach tracks each rep&apos;s close rate, objection patterns, and call quality over time. Managers get a weekly snapshot showing who&apos;s improving, who needs coaching, and exactly what to work on.
+              </p>
+              <ul className="space-y-2">
+                {['Per-rep conversion rate tracking', 'Most common objections by rep', 'Weekly coaching digest to your inbox', 'Trend view — improvement over time', 'Identifies top-performer patterns to replicate'].map(t => <CheckItem key={t} text={t} />)}
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <SectionDivider />
+
       {/* ── CUSTOM EMPLOYEE ───────────────────────────────────────────── */}
       <section id="custom" className="bg-[#f5f5f7] py-28 px-6 scroll-mt-16">
         <div className="max-w-5xl mx-auto">
@@ -413,7 +558,7 @@ export default function AiEmployeesDeep() {
               The full AI Employee suite starts at $5,000/month.
             </h2>
             <p className="text-[#8a9ba8] text-[17px] leading-relaxed mb-8">
-              That includes Gemma, the AI CRM, and the Reputation Specialist — built, trained, and live within a week. Setup, ongoing management, and monthly optimization are all included. No hidden fees, no per-seat charges.
+              That includes Gemma, the AI CRM, the Reputation Specialist, and the AI Sales Coach — built, trained, and live within a week. Setup, ongoing management, and monthly optimization are all included. No hidden fees, no per-seat charges.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10">
               {[
