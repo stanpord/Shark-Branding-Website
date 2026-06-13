@@ -1,6 +1,119 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+const structuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://sharkbrandingsolutions.com/#organization",
+      name: "Shark AI Solutions",
+      legalName: "Shark Branding Solutions LLC",
+      url: "https://sharkbrandingsolutions.com",
+      logo: "https://sharkbrandingsolutions.com/logo.webp",
+      description: "AI employees and AI visibility consulting for Tampa Bay local businesses. Automate lead follow-up, review management, and appointment booking — and get found on ChatGPT, Google AI, and Gemini.",
+      foundingDate: "2022",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "27251 Wesley Chapel Blvd., Suite B14 #805",
+        addressLocality: "Wesley Chapel",
+        addressRegion: "FL",
+        postalCode: "33544",
+        addressCountry: "US",
+      },
+      telephone: "+17275133955",
+      email: "info@sharkbrandingsolutions.com",
+      areaServed: [
+        { "@type": "City", name: "Wesley Chapel" },
+        { "@type": "City", name: "Tampa" },
+        { "@type": "City", name: "Lutz" },
+        { "@type": "City", name: "Land O Lakes" },
+        { "@type": "City", name: "St. Petersburg" },
+        { "@type": "City", name: "New Tampa" },
+      ],
+      sameAs: [
+        "https://www.facebook.com/sharkbranding",
+        "https://www.instagram.com/sharkbranding",
+        "https://www.linkedin.com/company/sharkbranding",
+        "https://www.youtube.com/@sharkbranding",
+        "https://www.tiktok.com/@sharkbranding",
+      ],
+      member: [
+        { "@id": "https://sharkbrandingsolutions.com/about#michelle" },
+        { "@id": "https://sharkbrandingsolutions.com/about#josh" },
+        { "@id": "https://sharkbrandingsolutions.com/about#tiffany" },
+      ],
+    },
+    {
+      "@type": "Person",
+      "@id": "https://sharkbrandingsolutions.com/about#michelle",
+      name: "Michelle Stanaland",
+      givenName: "Michelle",
+      familyName: "Stanaland",
+      jobTitle: "Managing Partner and Founder",
+      description: "Recognized marketing strategist and AI visibility expert serving businesses across Tampa Bay. Named one of the Top 15 Marketing Experts in Tampa Bay by Influence Digest in 2025.",
+      worksFor: { "@id": "https://sharkbrandingsolutions.com/#organization" },
+      url: "https://sharkbrandingsolutions.com/about#michelle",
+      knowsAbout: ["AI Visibility", "Local SEO", "GEO", "Marketing Strategy", "AI Employees", "Tampa Bay"],
+      award: "Top 15 Marketing Experts in Tampa Bay — Influence Digest, 2025",
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Wesley Chapel",
+        addressRegion: "FL",
+        addressCountry: "US",
+      },
+    },
+    {
+      "@type": "Person",
+      "@id": "https://sharkbrandingsolutions.com/about#josh",
+      name: "Josh Stanaland",
+      givenName: "Josh",
+      familyName: "Stanaland",
+      jobTitle: "Partner and Chief Technology Officer",
+      description: "Digital growth strategist and technologist. Primary technical architect behind Shark AI Solutions' proprietary software and AI automation frameworks. Designs the backend systems powering the AI Visibility Toolkit and 24/7 AI employee receptionists for service businesses.",
+      worksFor: { "@id": "https://sharkbrandingsolutions.com/#organization" },
+      url: "https://sharkbrandingsolutions.com/about#josh",
+      knowsAbout: ["AI Automation", "Software Architecture", "Conversational AI", "Growth Strategy", "Conversion Analytics", "AI Employees"],
+      hasCredential: "Former therapist with professional athletic organizations including the Jacksonville Jaguars",
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Wesley Chapel",
+        addressRegion: "FL",
+        addressCountry: "US",
+      },
+    },
+    {
+      "@type": "Person",
+      "@id": "https://sharkbrandingsolutions.com/about#tiffany",
+      name: "Tiffany Fancher",
+      givenName: "Tiffany",
+      familyName: "Fancher",
+      jobTitle: "Chief Operating Officer",
+      worksFor: { "@id": "https://sharkbrandingsolutions.com/#organization" },
+      url: "https://sharkbrandingsolutions.com/about#tiffany",
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Wesley Chapel",
+        addressRegion: "FL",
+        addressCountry: "US",
+      },
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://sharkbrandingsolutions.com/about",
+      url: "https://sharkbrandingsolutions.com/about",
+      name: "About — Shark AI Solutions",
+      description: "Meet the team behind Shark AI Solutions — Michelle Stanaland, Managing Partner and Founder, Josh Stanaland, CTO, and Tiffany Fancher, COO.",
+      about: { "@id": "https://sharkbrandingsolutions.com/#organization" },
+      mentions: [
+        { "@id": "https://sharkbrandingsolutions.com/about#michelle" },
+        { "@id": "https://sharkbrandingsolutions.com/about#josh" },
+        { "@id": "https://sharkbrandingsolutions.com/about#tiffany" },
+      ],
+    },
+  ],
+};
+
 export const metadata: Metadata = {
   title: "About — Shark AI Solutions",
   description:
@@ -33,6 +146,10 @@ const values = [
 export default function AboutPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
       {/* ── Hero ── */}
       <section className="bg-white min-h-[50vh] md:min-h-[90vh] flex flex-col items-center justify-center text-center px-6 pt-16 md:pt-24 pb-12 md:pb-20">
         <div className="max-w-[720px] mx-auto">

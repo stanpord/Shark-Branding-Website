@@ -11,6 +11,8 @@ const services = [
 const company = [
   { href: "/about", label: "About Us" },
   { href: "/about#michelle", label: "Michelle Stanaland" },
+  { href: "/about#josh", label: "Josh Stanaland" },
+  { href: "/about#tiffany", label: "Tiffany Fancher" },
   { href: "/plans", label: "Pricing" },
   { href: "/contact", label: "Contact" },
 ];
