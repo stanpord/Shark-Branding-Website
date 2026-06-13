@@ -27,8 +27,8 @@ export default function FreeReportPage() {
           {/* Proof strip */}
           <div className="flex items-center justify-center gap-0 border border-[#e8e8ed] rounded-[16px] overflow-hidden divide-x divide-[#e8e8ed] mb-8">
             {[
-              { v: "48h", l: "Turnaround" },
               { v: "Free", l: "No credit card" },
+              { v: "Action", l: "Plan included" },
               { v: "Local", l: "Tampa Bay focused" },
             ].map((s) => (
               <div key={s.l} className="flex-1 py-5 px-4 text-center">
@@ -54,7 +54,7 @@ export default function FreeReportPage() {
             {[
               { n: "1", title: "Enter your business", body: "Takes 60 seconds. Just your business name and location." },
               { n: "2", title: "We run the audit", body: "Our team checks your AI visibility, listings, reviews, and search presence." },
-              { n: "3", title: "We call you with results", body: "Within 48 hours. We walk through every finding and what to fix first." },
+              { n: "3", title: "Book your results walkthrough", body: "Pick a time on our calendar. We go through every finding together and you leave with a prioritized action plan — your team can tackle it, or we can help." },
             ].map((step) => (
               <div key={step.n} className="bg-[#f5f5f7] rounded-[16px] p-6 text-center">
                 <div className="w-9 h-9 rounded-full bg-[#18b5d8] flex items-center justify-center mx-auto mb-4">

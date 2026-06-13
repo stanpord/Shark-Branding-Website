@@ -1,6 +1,17 @@
 import Link from "next/link";
 import Image from "next/image";
 
+function toIsoDate(dateStr: string): string {
+  const months: Record<string, string> = {
+    January: "01", February: "02", March: "03", April: "04",
+    May: "05", June: "06", July: "07", August: "08",
+    September: "09", October: "10", November: "11", December: "12",
+  };
+  const m = dateStr.match(/^(\w+)\s+(\d+),\s+(\d{4})$/);
+  if (!m) return dateStr;
+  return `${m[3]}-${months[m[1]] ?? "01"}-${m[2].padStart(2, "0")}`;
+}
+
 interface RelatedPost {
   href: string;
   title: string;
@@ -28,8 +39,40 @@ export default function BlogShell({
   children,
   relatedPosts,
 }: BlogShellProps) {
+  const isoDate = toIsoDate(date);
+  const blogSchema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: title,
+    image: heroImage,
+    datePublished: isoDate,
+    dateModified: isoDate,
+    author: {
+      "@type": "Person",
+      "@id": "https://sharkbrandingsolutions.com/#founder",
+      name: "Michelle Stanaland",
+      url: "https://sharkbrandingsolutions.com/about",
+      jobTitle: "Founder & CEO, Shark Branding Solutions",
+    },
+    publisher: {
+      "@type": "Organization",
+      "@id": "https://sharkbrandingsolutions.com/#organization",
+      name: "Shark Branding Solutions",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://sharkbrandingsolutions.com/logo.webp",
+      },
+    },
+    isPartOf: { "@id": "https://sharkbrandingsolutions.com/#website" },
+    articleSection: category,
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }}
+      />
       {/* Blog hero */}
       <section className="bg-[#07141a] pt-24 pb-16 px-6 text-center">
         <div className="max-w-[760px] mx-auto">
@@ -57,6 +100,20 @@ export default function BlogShell({
             style={{ width: "100%", height: "auto", maxHeight: "480px" }}
           />
           <div className="article-prose">{children}</div>
+
+          {/* Author byline */}
+          <div className="mt-10 pt-8 border-t border-[#e8e8ed] flex items-center gap-4">
+            <div className="w-10 h-10 rounded-full bg-[#18b5d8]/10 flex items-center justify-center text-[#18b5d8] font-bold text-[15px] shrink-0">M</div>
+            <div>
+              <p className="text-[14px] font-semibold text-[#1d1d1f]">Michelle Stanaland</p>
+              <p className="text-[13px] text-[#6e6e73]">
+                Founder &amp; CEO, Shark Branding Solutions &middot;{" "}
+                <Link href="/about" className="text-[#18b5d8] hover:underline">
+                  Top 15 Tampa Bay Marketing Experts
+                </Link>
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 

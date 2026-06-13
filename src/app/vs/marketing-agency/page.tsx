@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "AI Visibility Consulting vs Traditional Marketing Agency | Shark Branding",
+  title: "AI Consulting vs. Marketing Agency | Shark Branding Solutions",
   description:
-    "Traditional marketing agencies optimize for traffic and ads. AI visibility consulting gets your business recommended by ChatGPT, Gemini, and Google AI Overviews — without paying for ads. See the full comparison.",
+    "Traditional agencies optimize for traffic and ads. AI visibility gets your business recommended by ChatGPT, Gemini, and Google AI Overviews — without ad spend.",
   alternates: {
     canonical: "https://sharkbrandingsolutions.com/vs/marketing-agency",
   },
@@ -13,6 +13,7 @@ export const metadata: Metadata = {
     description:
       "See why local businesses are replacing or supplementing their marketing agency with AI visibility consulting — and getting measurable results in 30 days.",
     type: "article",
+    images: [{ url: "https://sharkbrandingsolutions.com/logo.webp", width: 1200, height: 630, alt: "AI Consulting vs. Marketing Agency — Shark Branding Solutions" }],
   },
 };
 
@@ -23,20 +24,70 @@ const structuredData = {
   description:
     "A detailed comparison of AI visibility consulting vs traditional marketing agencies for local businesses.",
   author: {
-    "@type": "Organization",
-    name: "Shark AI Solutions",
-    url: "https://sharkbrandingsolutions.com",
+    "@type": "Person",
+    "@id": "https://sharkbrandingsolutions.com/#founder",
+    name: "Michelle Stanaland",
+    url: "https://sharkbrandingsolutions.com/about",
   },
   publisher: {
     "@type": "Organization",
-    name: "Shark AI Solutions",
+    "@id": "https://sharkbrandingsolutions.com/#organization",
+    name: "Shark Branding Solutions",
     url: "https://sharkbrandingsolutions.com",
     logo: {
       "@type": "ImageObject",
       url: "https://sharkbrandingsolutions.com/logo.webp",
     },
   },
+  datePublished: "2026-06-01",
   dateModified: "2026-06-01",
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Can I run both AI visibility consulting and a traditional agency at the same time?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes — and most clients do. AI visibility consulting works on a layer that most agencies don't touch at all: the signals AI platforms use to decide who to recommend. It doesn't replace social, email, or ad campaigns. It makes sure you show up when someone asks AI which business to hire.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Why can't my current marketing agency do AI visibility optimization?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Most agencies are optimizing for Google's classic search algorithm — backlinks, keywords, page speed. AI search engines pull from different signals: structured citations, entity data, review sentiment, schema markup, and content written in a way AI can parse and repeat. Most agencies haven't retooled for this yet.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What if I already spend a lot on Google Ads?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Paid ads and AI visibility solve different problems. Ads buy you clicks on traditional search results. AI visibility earns you a mention when someone asks ChatGPT or triggers a Google AI Overview — and those AI-generated answers don't have ad slots. They're recommendation-based. That's the gap we fill.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How fast do results from AI visibility optimization actually happen?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Our HVAC client moved from position #32 to #2 across four high-intent keywords in 30 days. That's an outlier in speed, but measurable movement in 30–60 days is typical. Traditional SEO retainers often quote 6–12 months before significant movement.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Is AI visibility consulting only for Tampa Bay businesses?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Our Done For You and consulting services are currently focused on Tampa Bay area businesses. The Self-Guided Toolkit framework works for any local service business in any market — the AI visibility signals are consistent regardless of location.",
+      },
+    },
+  ],
 };
 
 const comparisonRows = [
@@ -154,6 +205,10 @@ export default function VsMarketingAgencyPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
 
       {/* ── Hero ── */}
       <section className="bg-white min-h-[60vh] flex flex-col items-center justify-center text-center px-6 pt-28 pb-16 border-b border-[#e8e8ed]">
@@ -201,7 +256,7 @@ export default function VsMarketingAgencyPage() {
           </div>
 
           <p className="text-[12px] text-[#aaa] mt-4">
-            Last updated June 2026 · Shark AI Solutions is an AI visibility consulting firm.{" "}
+            Last updated June 2026 · Shark Branding Solutions is an AI visibility consulting firm.{" "}
             <span className="text-[#ccc]">We're transparent about who we are.</span>
           </p>
         </div>
@@ -264,7 +319,7 @@ export default function VsMarketingAgencyPage() {
               </div>
               <div className="px-5 py-4 text-center border-l border-[#e8e8ed] bg-[#18b5d8]/5">
                 <p className="text-[13px] font-bold text-[#18b5d8]">AI Visibility Consulting</p>
-                <p className="text-[11px] text-[#555] mt-0.5">e.g. Shark AI Solutions</p>
+                <p className="text-[11px] text-[#555] mt-0.5">e.g. Shark Branding Solutions</p>
               </div>
               <div className="px-5 py-4 text-center border-l border-[#e8e8ed]">
                 <p className="text-[13px] font-bold text-[#0a0a0a]">Traditional Marketing Agency</p>

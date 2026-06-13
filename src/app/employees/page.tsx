@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 const TOOLS = [
   {
-    href: '/bots/advisor',
+    href: '/employees/advisor',
     label: 'AI Advisor',
     description: 'Enter a prospect and get a prioritized pitch plan: right offer, right angle, right price.',
     tag: 'Strategy',
@@ -26,7 +26,7 @@ const TOOLS = [
     icon: '🎧',
   },
   {
-    href: '/call-bot',
+    href: '/call-employee',
     label: 'AI Caller',
     description: 'Outbound AI voice calls that qualify prospects, handle objections, and book follow-ups with Michelle.',
     tag: 'Outbound',
@@ -34,7 +34,7 @@ const TOOLS = [
     icon: '📞',
   },
   {
-    href: '/bots/showcase',
+    href: '/employees/showcase',
     label: 'AI Employee Showcase',
     description: 'Screen-share this during demos. 3D carousel of every AI employee, showing prospects exactly what they\'re getting.',
     tag: 'Demo',
@@ -48,8 +48,7 @@ export default async function BotsPage({
 }: {
   searchParams: Promise<{ error?: string }>
 }) {
-  const isAuthed = await checkAuth()
-  const params = await searchParams
+  const [isAuthed, params] = await Promise.all([checkAuth(), searchParams])
 
   if (!isAuthed) {
     return (

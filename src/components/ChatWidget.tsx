@@ -22,7 +22,7 @@ export default function ChatWidget() {
 
   function handleLoad() {
     try {
-      // @ts-expect-error — Vendasta webchatAPI injected by SDK
+      // @ts-expect-error — webchatAPI injected by SDK
       webchatAPI.sendMessage("", WIDGET_ID);
     } catch {
       // SDK not ready yet — safe to ignore
@@ -31,7 +31,7 @@ export default function ChatWidget() {
 
   return (
     <>
-      {/* Vendasta chat widget — cyan brand color override */}
+      {/* Chat widget — cyan brand color override */}
       <style>{`
         [data-widget-id="${WIDGET_ID}"] iframe,
         #webchat-launcher-button,

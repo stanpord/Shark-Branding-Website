@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Case Studies — Real Results for Tampa Bay Businesses | Shark AI Solutions",
+  title: "Case Studies — Tampa Bay AI Success | Shark Branding",
   description:
     "HVAC, real estate, smart vending, and chamber of commerce — four Tampa Bay businesses that went from invisible to #1 in AI search in under 30 days.",
 };
@@ -18,7 +18,7 @@ export default function CaseStudiesPage() {
           <p className="text-[11px] font-bold tracking-[2px] uppercase text-[#18b5d8] mb-4">
             Documented Results
           </p>
-          <h1 className="text-[52px] sm:text-[64px] font-extrabold text-[#1d1d1f] leading-tight tracking-tight mb-6" style={{ textWrap: "balance" }}>
+          <h1 className="text-[38px] sm:text-[52px] lg:text-[64px] font-extrabold text-[#1d1d1f] leading-tight tracking-tight mb-6" style={{ textWrap: "balance" }}>
             Real clients.<br />
             <span className="text-[#18b5d8]">Real rankings.</span><br />
             30 days.
@@ -71,8 +71,8 @@ export default function CaseStudiesPage() {
         {/* Photo hero */}
         <div className="relative h-[380px] sm:h-[480px] overflow-hidden">
           <Image
-            src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=1400&h=560&q=90"
-            alt="HVAC air conditioning units on the exterior of a building"
+            src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1400&h=560&q=90"
+            alt="Outdoor air conditioning units on the exterior of a home"
             fill
             className="object-cover"
             sizes="100vw"
@@ -92,13 +92,13 @@ export default function CaseStudiesPage() {
 
         {/* Stats band */}
         <div className="bg-[#f5f5f7] border-b border-[#e5e5ea] px-6 py-12">
-          <div className="max-w-[1000px] mx-auto grid grid-cols-3 gap-6 divide-x divide-[#e5e5ea]">
+          <div className="max-w-[1000px] mx-auto grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-[#e5e5ea]">
             {[
               { v: "#32→#2", label: "Best keyword jump",   sub: '"same day AC repair"' },
               { v: "6",      label: "Keywords in top 3",   sub: "all high-intent local" },
               { v: "30d",    label: "Time to results",     sub: "page 3 to top local" },
             ].map((s) => (
-              <div key={s.label} className="px-6 text-center first:pl-0 last:pr-0">
+              <div key={s.label} className="py-6 sm:py-0 sm:px-6 text-center sm:first:pl-0 sm:last:pr-0">
                 <p className="text-[36px] sm:text-[44px] font-extrabold text-[#18b5d8] leading-none mb-2">{s.v}</p>
                 <p className="text-[14px] font-semibold text-[#1d1d1f] mb-1">{s.label}</p>
                 <p className="text-[12px] text-[#86868b]">{s.sub}</p>
@@ -152,30 +152,46 @@ export default function CaseStudiesPage() {
               </div>
             </div>
 
-            {/* Keyword ranking table */}
-            <p className="text-[11px] font-bold tracking-[2px] uppercase text-[#18b5d8] mb-5">Keyword Rankings</p>
-            <div className="rounded-[20px] overflow-hidden border border-[#e5e5ea] mb-14">
-              <div className="grid grid-cols-[1fr_110px_80px_110px] bg-[#f5f5f7] border-b border-[#e5e5ea] px-6 py-4 text-[11px] font-bold uppercase tracking-[1.5px] text-[#86868b]">
-                <span>Keyword</span>
-                <span className="text-center">Now</span>
-                <span className="text-center">Move</span>
-                <span className="text-center">Before</span>
+            {/* Live Analytics — actual screenshots */}
+            <p className="text-[11px] font-bold tracking-[2px] uppercase text-[#18b5d8] mb-5">Live Business Impact: Real Data, Real Results</p>
+
+            <div className="bg-[#07141a] rounded-[20px] overflow-hidden border border-[#18b5d8]/15 mb-4">
+              <div className="px-6 pt-5 pb-3">
+                <p className="text-[11px] font-bold text-[#18b5d8]/60 uppercase tracking-[0.18em]">Google Maps Local Ranking — HVAC Emergency Repair</p>
               </div>
-              {[
-                { kw: "same day ac repair",               after: "#2",  move: "+30", before: "#32" },
-                { kw: "air conditioning service near me", after: "#2",  move: "+29", before: "#31" },
-                { kw: "24 hour hvac repair",              after: "#3",  move: "+19", before: "#22" },
-                { kw: "emergency ac repair",              after: "#2",  move: "+19", before: "#21" },
-                { kw: "ac installation",                  after: "#4",  move: "+22", before: "#26" },
-                { kw: "hvac repair",                      after: "#5",  move: "+18", before: "#23" },
-              ].map((r, i) => (
-                <div key={r.kw} className={`grid grid-cols-[1fr_110px_80px_110px] px-6 py-4 items-center border-b border-[#f0f0f0] last:border-0 ${i % 2 === 1 ? "bg-[#fafafa]" : "bg-white"}`}>
-                  <span className="text-[15px] font-medium text-[#1d1d1f]">{r.kw}</span>
-                  <span className="text-center text-[15px] font-extrabold text-[#18b5d8]">{r.after}</span>
-                  <span className="text-center text-[14px] font-bold text-emerald-600">{r.move}</span>
-                  <span className="text-center text-[14px] text-[#86868b]">{r.before}</span>
-                </div>
-              ))}
+              <Image
+                src="/case-studies/hvac/maps-ranking.png"
+                alt="Google Maps local ranking grid showing #1 and #2 positions across the service area for HVAC Emergency Repair"
+                width={1400}
+                height={500}
+                className="w-full h-auto"
+              />
+            </div>
+
+            <div className="bg-[#07141a] rounded-[20px] overflow-hidden border border-[#18b5d8]/15 mb-4">
+              <div className="px-6 pt-5 pb-3">
+                <p className="text-[11px] font-bold text-[#18b5d8]/60 uppercase tracking-[0.18em]">Keyword Rankings — All tracked keywords moved to #1</p>
+              </div>
+              <Image
+                src="/case-studies/hvac/keyword-rankings.png"
+                alt="Keyword ranking table showing all HVAC keywords ranked #1 with significant position improvements"
+                width={1400}
+                height={420}
+                className="w-full h-auto"
+              />
+            </div>
+
+            <div className="bg-[#07141a] rounded-[20px] overflow-hidden border border-[#18b5d8]/15 mb-14">
+              <div className="px-6 pt-5 pb-3">
+                <p className="text-[11px] font-bold text-[#18b5d8]/60 uppercase tracking-[0.18em]">Marketing Dashboard — Impressions, Engagement &amp; Leads</p>
+              </div>
+              <Image
+                src="/case-studies/hvac/vendasta-dashboard.png"
+                alt="Marketing analytics dashboard showing 4,455 impressions, 188 engagement, and 228 leads"
+                width={1400}
+                height={560}
+                className="w-full h-auto"
+              />
             </div>
 
             {/* Pull quote */}
@@ -222,13 +238,13 @@ export default function CaseStudiesPage() {
         </div>
 
         <div className="bg-[#f5f5f7] border-b border-[#e5e5ea] px-6 py-12">
-          <div className="max-w-[1000px] mx-auto grid grid-cols-3 gap-6 divide-x divide-[#e5e5ea]">
+          <div className="max-w-[1000px] mx-auto grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-[#e5e5ea]">
             {[
               { v: "+20%",   label: "AI recommendations", sub: "within 30 days" },
               { v: "#4→#1",  label: "Local ranking",      sub: '"Best Realtors Wesley Chapel"' },
               { v: "2,000+", label: "Agents outranked",   sub: "Wesley Chapel market" },
             ].map((s) => (
-              <div key={s.label} className="px-6 text-center first:pl-0 last:pr-0">
+              <div key={s.label} className="py-6 sm:py-0 sm:px-6 text-center sm:first:pl-0 sm:last:pr-0">
                 <p className="text-[36px] sm:text-[44px] font-extrabold text-[#18b5d8] leading-none mb-2">{s.v}</p>
                 <p className="text-[14px] font-semibold text-[#1d1d1f] mb-1">{s.label}</p>
                 <p className="text-[12px] text-[#86868b]">{s.sub}</p>
@@ -327,13 +343,13 @@ export default function CaseStudiesPage() {
         </div>
 
         <div className="bg-[#f5f5f7] border-b border-[#e5e5ea] px-6 py-12">
-          <div className="max-w-[1000px] mx-auto grid grid-cols-3 gap-6 divide-x divide-[#e5e5ea]">
+          <div className="max-w-[1000px] mx-auto grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-[#e5e5ea]">
             {[
               { v: "#1",  label: "AI recommended",    sub: "Named, described & linked by AI" },
               { v: "3",   label: "AI platforms",       sub: "ChatGPT, Gemini, Perplexity" },
               { v: "30d", label: "Time to visibility", sub: "invisible to top result" },
             ].map((s) => (
-              <div key={s.label} className="px-6 text-center first:pl-0 last:pr-0">
+              <div key={s.label} className="py-6 sm:py-0 sm:px-6 text-center sm:first:pl-0 sm:last:pr-0">
                 <p className="text-[36px] sm:text-[44px] font-extrabold text-[#18b5d8] leading-none mb-2">{s.v}</p>
                 <p className="text-[14px] font-semibold text-[#1d1d1f] mb-1">{s.label}</p>
                 <p className="text-[12px] text-[#86868b]">{s.sub}</p>
@@ -416,13 +432,13 @@ export default function CaseStudiesPage() {
         </div>
 
         <div className="bg-[#f5f5f7] border-b border-[#e5e5ea] px-6 py-12">
-          <div className="max-w-[1000px] mx-auto grid grid-cols-3 gap-6 divide-x divide-[#e5e5ea]">
+          <div className="max-w-[1000px] mx-auto grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-[#e5e5ea]">
             {[
               { v: "96%", label: "AI visibility gap",  sub: "members not recommended by AI" },
               { v: "10×", label: "More AI citations",  sub: "Chamber as trusted local source" },
               { v: "30d", label: "Days to results",    sub: "measurable visibility gains" },
             ].map((s) => (
-              <div key={s.label} className="px-6 text-center first:pl-0 last:pr-0">
+              <div key={s.label} className="py-6 sm:py-0 sm:px-6 text-center sm:first:pl-0 sm:last:pr-0">
                 <p className="text-[36px] sm:text-[44px] font-extrabold text-[#18b5d8] leading-none mb-2">{s.v}</p>
                 <p className="text-[14px] font-semibold text-[#1d1d1f] mb-1">{s.label}</p>
                 <p className="text-[12px] text-[#86868b]">{s.sub}</p>
@@ -484,6 +500,97 @@ export default function CaseStudiesPage() {
           </div>
         </section>
       </article>
+
+
+      {/* ── AI Employee Results ── */}
+      <section className="bg-white border-t border-[#e5e5ea] px-6 py-20">
+        <div className="max-w-[1000px] mx-auto">
+          <div className="mb-12">
+            <p className="text-[11px] font-bold tracking-[2px] uppercase text-[#18b5d8] mb-3">AI Employee Results</p>
+            <h3 className="text-[36px] sm:text-[44px] font-extrabold text-[#1d1d1f] leading-tight tracking-tight max-w-[640px] mb-4" style={{ textWrap: "balance" }}>
+              More results from businesses running our AI employees.
+            </h3>
+            <p className="text-[16px] text-[#6e6e73] max-w-[600px] leading-relaxed">
+              These results come from businesses using the same AI employees we configure for our clients — Gemma, Reputation Specialist, AI CRM, and custom-built roles across home services, real estate, healthcare, and more.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {[
+              {
+                tag: "Home Services",
+                stat: "15% → 50%",
+                statLabel: "close rate",
+                body: "A construction company replaced its manual quoting process with custom AI employees. Close rate tripled. The AI surfaced silent sales killers in recorded calls, coaching the team to close millions in previously lost revenue.",
+                employee: "Custom AI Employees",
+              },
+              {
+                tag: "Real Estate",
+                stat: "$30,000",
+                statLabel: "commission from one lead",
+                body: "At 11 PM, an auction house's AI receptionist matched a prospect with inventory and suggested an alternative property. The deal closed. The $30k commission paid for years of service from a single after-hours conversation.",
+                employee: "AI Receptionist",
+              },
+              {
+                tag: "Reputation",
+                stat: "21",
+                statLabel: "five-star reviews in 30 days",
+                body: "An auction house deployed an AI Reputation Specialist after every completed transaction. 21 five-star Google reviews in 30 days, without a single staff member manually asking a client.",
+                employee: "AI Reputation Specialist",
+              },
+              {
+                tag: "After-Hours",
+                stat: "+20%",
+                statLabel: "conversion increase",
+                body: "Within the first weekend of launch, an agency's AI receptionist handled a plumbing lead on a Sunday, qualified the prospect, and booked a Monday meeting while the whole team was offline. The agency won the deal.",
+                employee: "AI Receptionist",
+              },
+              {
+                tag: "Pet Services",
+                stat: "$47,000",
+                statLabel: "monthly revenue, 9 locations",
+                body: "A veterinary group deployed AI intake across 9 clinics. The AI triaged emergency inquiries around the clock, directing pet owners to 24-hour clinics during late-night searches. Monthly revenue from AI-captured leads reached $47,000.",
+                employee: "AI Receptionist",
+              },
+              {
+                tag: "Food & Beverage",
+                stat: "3×",
+                statLabel: "annual revenue",
+                body: "A national BBQ champion and caterer tripled annual revenue after deploying an AI catering specialist. The AI managed complex menus and event minimums, securing guaranteed jobs while the owner worked a separate full-time job.",
+                employee: "AI Receptionist",
+              },
+              {
+                tag: "Automotive",
+                stat: "778",
+                statLabel: "qualified leads in 4 months",
+                body: "A car rental company deployed an AI agent that triaged rideshare vs. luxury inquiries 24/7, filtering out unqualified callers and educating prospects on licensing requirements before they ever reached a human.",
+                employee: "AI Receptionist",
+              },
+              {
+                tag: "Automotive",
+                stat: "100%",
+                statLabel: "automated recruiting",
+                body: "While the shop owner was busy in the garage, an AI agent vetted a technician candidate, reviewed their qualifications, and confirmed a resume upload in minutes — all without any human involvement.",
+                employee: "Custom AI Employees",
+              },
+            ].map((c) => (
+              <div key={c.stat + c.tag} className="bg-[#f5f5f7] rounded-[20px] p-7 border border-[#e5e5ea] flex flex-col">
+                <div className="flex items-center justify-between mb-5">
+                  <span className="inline-block bg-[#18b5d8]/10 text-[#18b5d8] text-[11px] font-bold tracking-[0.14em] uppercase px-3 py-1 rounded-full">{c.tag}</span>
+                  <span className="text-[11px] text-[#86868b] font-semibold">{c.employee}</span>
+                </div>
+                <p className="text-[clamp(1.6rem,3vw,2.2rem)] font-black text-[#1d1d1f] leading-none mb-1">{c.stat}</p>
+                <p className="text-[12px] font-semibold text-[#18b5d8] uppercase tracking-[0.1em] mb-4">{c.statLabel}</p>
+                <p className="text-[14px] text-[#6e6e73] leading-relaxed flex-1">{c.body}</p>
+              </div>
+            ))}
+          </div>
+
+          <p className="text-[12px] text-[#86868b] mt-8 text-center">
+            Results from real businesses using AI employees. Industry, business size, and configuration vary per client.
+          </p>
+        </div>
+      </section>
 
 
       {/* ── Why Now ── */}

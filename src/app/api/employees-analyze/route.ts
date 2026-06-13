@@ -10,15 +10,15 @@ const BOTS_CONTEXT = `
 VISIBILITY (Primary Product — leads every pitch when applicable):
 - AI Visibility Toolkit ($497/mo self-directed or $2,000/mo managed): Makes businesses appear in ChatGPT, Google AI Overviews, and Gemini. Fixes citations, listings, NAP consistency, review signals, and entity optimization. Initial changes visible in 7–14 days. BEST FOR: any local service business that relies on customers finding them online — HVAC, real estate, legal, medical, restaurants, retail, contractors, vending, gyms, salons, etc.
 
-MARKETING BOTS (custom pricing, contact for quote):
-- CMO Bot: Weekly market and competitor analysis, campaign strategy briefs, budget allocation, brand voice consistency, monthly performance reviews. BEST FOR: businesses spending money on marketing without a strategy or dedicated marketing director. Growing businesses needing direction without CMO salary.
+MARKETING EMPLOYEES (custom pricing, contact for quote):
+- CMO Employee: Weekly market and competitor analysis, campaign strategy briefs, budget allocation, brand voice consistency, monthly performance reviews. BEST FOR: businesses spending money on marketing without a strategy or dedicated marketing director. Growing businesses needing direction without CMO salary.
 - Reputation & Review AI: Automated review requests triggered by job completion, AI-written responses in brand voice, multi-platform monitoring (Google, Yelp, Facebook), negative review alerts. BEST FOR: businesses where reputation drives decisions — restaurants, contractors, home services, medical, legal, salons, auto repair, any business where reviews are a dealbreaker.
-- Custom Marketing Bots: Social content generation and scheduling, email nurture sequences, lead scoring, automated reporting dashboards. BEST FOR: businesses repeating marketing tasks manually every week — posting, emailing, updating reports.
+- Custom Marketing Employees: Social content generation and scheduling, email nurture sequences, lead scoring, automated reporting dashboards. BEST FOR: businesses repeating marketing tasks manually every week — posting, emailing, updating reports.
 
-OPERATIONS BOTS (custom pricing, contact for quote):
-- AI CRM Bot: Automatic lead capture and enrichment, intelligent follow-up sequences triggered by behavior, pipeline updates without manual data entry, weekly hot lead summaries. BEST FOR: B2B businesses, any business that follows up with leads, service businesses quoting multiple jobs, real estate, legal, insurance, any high-ticket B2C service.
-- Sales Coach Bot: Call analysis and scoring, real-time objection handling suggestions, custom playbooks, team performance tracking, new rep onboarding acceleration. BEST FOR: businesses with sales reps who make calls, multi-rep teams, businesses with inconsistent close rates or high churn in new hires.
-- Custom Operations Bots: Workflow audit, custom bot for highest-leverage process (scheduling, intake, client onboarding, reporting, invoicing). BEST FOR: businesses with admin-heavy processes eating staff hours — medical/dental intake, field service scheduling, contractor job management, franchise operations.
+OPERATIONS EMPLOYEES (custom pricing, contact for quote):
+- AI CRM Employee: Automatic lead capture and enrichment, intelligent follow-up sequences triggered by behavior, pipeline updates without manual data entry, weekly hot lead summaries. BEST FOR: B2B businesses, any business that follows up with leads, service businesses quoting multiple jobs, real estate, legal, insurance, any high-ticket B2C service.
+- Sales Coach Employee: Call analysis and scoring, real-time objection handling suggestions, custom playbooks, team performance tracking, new rep onboarding acceleration. BEST FOR: businesses with sales reps who make calls, multi-rep teams, businesses with inconsistent close rates or high churn in new hires.
+- Custom Operations Employees: Workflow audit, custom employee for highest-leverage process (scheduling, intake, client onboarding, reporting, invoicing). BEST FOR: businesses with admin-heavy processes eating staff hours — medical/dental intake, field service scheduling, contractor job management, franchise operations.
 `
 
 export async function POST(req: NextRequest) {
@@ -40,7 +40,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: 'Business name and industry are required.' }, { status: 400 })
   }
 
-  const prompt = `You are a bot sales advisor for Shark AI Solutions, a Tampa Bay AI consulting firm. Your job is to analyze a prospect business and recommend which AI products to pitch first, with specific reasoning and a conversation opener for each.
+  const prompt = `You are an AI employee sales advisor for Shark Branding Solutions, a Tampa Bay AI consulting firm. Your job is to analyze a prospect business and recommend which AI products to pitch first, with specific reasoning and a conversation opener for each.
 
 Available products:
 ${BOTS_CONTEXT}
@@ -57,11 +57,11 @@ Return ONLY a valid JSON object in this exact shape, no markdown, no code fences
   "business_summary": "<2-3 sentences summarizing what you understand about this business and why they need help>",
   "recommendations": [
     {
-      "bot": "<exact bot name from the list>",
+      "employee": "<exact employee name from the list>",
       "category": "Visibility" | "Marketing" | "Operations",
       "priority": <integer starting at 1, 1 = most important>,
-      "why": "<2-3 sentences specifically about why this bot fits THIS business — reference their industry and situation>",
-      "pitch": "<1-2 sentences Miche can say out loud to open the conversation about this specific bot with this specific prospect>",
+      "why": "<2-3 sentences specifically about why this employee fits THIS business — reference their industry and situation>",
+      "pitch": "<1-2 sentences Miche can say out loud to open the conversation about this specific employee with this specific prospect>",
       "urgency": "high" | "medium" | "low"
     }
   ],
@@ -69,7 +69,7 @@ Return ONLY a valid JSON object in this exact shape, no markdown, no code fences
 }
 
 Rules:
-- Only recommend bots that are a genuine fit. Typically 3-5 recommendations.
+- Only recommend employees that are a genuine fit. Typically 3-5 recommendations.
 - Always evaluate the AI Visibility Toolkit first — it is the flagship product.
 - Be specific. Generic advice is useless. Reference the actual business, industry, and situation.
 - The pitch field should sound like something a human would actually say — not a sales script.`

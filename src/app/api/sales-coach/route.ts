@@ -13,7 +13,7 @@ LOCATION: Tampa Bay / Wesley Chapel, FL
 
 FLAGSHIP OFFER — AI Transformation Partner: $4,500/month
 - AI Visibility Foundation: business appears in ChatGPT, Google AI, Gemini without ads
-- One Custom AI Employee (choose: AI Receptionist, Lead Qualifier Bot, Patient Intake Bot, or Operations Assistant)
+- One Custom AI Employee (choose: AI Receptionist, Lead Qualifier Employee, Patient Intake Employee, or Operations Assistant)
 - Monthly management of both systems
 - Bi-weekly 30-min strategy calls
 - Monthly performance report

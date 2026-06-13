@@ -19,6 +19,42 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "blog-why-tampa-bay-businesses-switching-ai-employees",
+    category: "AI Employees",
+    title: "Why Tampa Bay Businesses Are Switching to AI Employees in 2026",
+    excerpt: "The three reasons local service businesses in Wesley Chapel and Tampa Bay are replacing manual follow-up, review requests, and receptionist tasks with AI employees — and what the results look like.",
+    date: "June 7, 2026",
+    readTime: "7 min read",
+    image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=900&h=420&q=80",
+  },
+  {
+    slug: "blog-ai-receptionist-vs-human-receptionist",
+    category: "AI Employees",
+    title: "AI Receptionist vs. Human Receptionist: What Tampa Bay Businesses Need to Know",
+    excerpt: "An honest comparison for service businesses in Wesley Chapel and Tampa Bay. What each does well, where each falls short, and how to decide which one your business actually needs.",
+    date: "June 7, 2026",
+    readTime: "6 min read",
+    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=900&h=420&q=80",
+  },
+  {
+    slug: "blog-5-automations-wesley-chapel-businesses",
+    category: "AI Employees",
+    title: "5 Tasks Wesley Chapel Business Owners Should Automate First",
+    excerpt: "Most local businesses automate the wrong things first — or nothing at all. Here are the five automations with the fastest, most measurable ROI for service businesses in Wesley Chapel and Tampa Bay.",
+    date: "June 7, 2026",
+    readTime: "7 min read",
+    image: "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?auto=format&fit=crop&w=900&h=420&q=80",
+  },
+  {
+    slug: "blog-what-is-an-ai-employee",
+    category: "AI Employees",
+    title: "What Is an AI Employee? A Plain-English Guide for Local Businesses",
+    excerpt: "An AI employee is a software agent trained to perform a specific job in your business automatically — lead follow-up, review management, booking, content. Here's how they work and why Wesley Chapel and Tampa Bay businesses are adopting them now.",
+    date: "June 7, 2026",
+    readTime: "6 min read",
+    image: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?auto=format&fit=crop&w=900&h=420&q=80",
+  },
+  {
     slug: "blog-aio-aeo-geo-seo-wesley-chapel",
     category: "GEO",
     title: "AIO, GEO, and AEO for Wesley Chapel Businesses: What Actually Gets You Customers in 2026",
@@ -125,7 +161,7 @@ const below = posts.slice(3);
 
 export default function ResourcesPage() {
   return (
-    <div className={playfair.variable}>
+    <div className={`${playfair.variable} overflow-x-hidden`}>
 
       {/* ── Date bar ── */}
       <div className="bg-white border-b border-black/20 px-6 py-2 mt-[60px]">
@@ -143,7 +179,7 @@ export default function ResourcesPage() {
             Est. 2024 &nbsp;&middot;&nbsp; Wesley Chapel, FL &nbsp;&middot;&nbsp; {posts.length + 1} Articles Published
           </p>
           <h1
-            className="text-[48px] sm:text-[64px] md:text-[80px] leading-none tracking-[-0.02em] text-black mb-3"
+            className="text-[32px] sm:text-[52px] md:text-[80px] leading-none tracking-[-0.02em] text-black mb-3 break-words"
             style={{ fontFamily: "var(--font-playfair)", fontWeight: 700 }}
           >
             Shark Branding Intelligence
@@ -275,12 +311,12 @@ export default function ResourcesPage() {
 
       {/* ── Below the fold header ── */}
       <div className="bg-white px-6 pt-8 pb-0">
-        <div className="max-w-[1120px] mx-auto flex items-center gap-5 mb-0">
-          <span className="text-[11px] font-bold uppercase tracking-[0.28em] text-black whitespace-nowrap">
+        <div className="max-w-[1120px] mx-auto flex flex-wrap items-center gap-x-5 gap-y-2 mb-0">
+          <span className="text-[11px] font-bold uppercase tracking-[0.28em] text-black">
             From the Intelligence Desk
           </span>
-          <div className="flex-1 border-t-2 border-black" />
-          <span className="text-[11px] font-bold uppercase tracking-[0.28em] text-black whitespace-nowrap">
+          <div className="flex-1 min-w-[20px] border-t-2 border-black" />
+          <span className="text-[11px] font-bold uppercase tracking-[0.28em] text-black">
             {below.length} More Articles
           </span>
         </div>
@@ -364,9 +400,9 @@ export default function ResourcesPage() {
       {/* ── NTBC Partnership feature ── */}
       <section className="bg-[#f5f5f2] px-6 py-12 border-t-2 border-black">
         <div className="max-w-[1120px] mx-auto">
-          <div className="flex items-center gap-5 mb-8">
-            <span className="text-[11px] font-bold uppercase tracking-[0.28em] text-black whitespace-nowrap">Featured Partnership</span>
-            <div className="flex-1 border-t-2 border-black" />
+          <div className="flex flex-wrap items-center gap-x-5 gap-y-2 mb-8">
+            <span className="text-[11px] font-bold uppercase tracking-[0.28em] text-black">Featured Partnership</span>
+            <div className="flex-1 min-w-[20px] border-t-2 border-black" />
           </div>
           <Link
             href="/resources/blog-ntbc-ai-ready-partnership"

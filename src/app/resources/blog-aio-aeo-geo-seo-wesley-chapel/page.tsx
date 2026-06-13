@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import BlogShell from "@/components/BlogShell";
 
 export const metadata: Metadata = {
@@ -127,7 +128,7 @@ export default function Page() {
    <h3>What do I actually need to do first?</h3>
    <p>Get a baseline. Before spending anything, understand how AI currently sees your business. Our free visibility report covers your NAP consistency, review signals, AI crawler access, and how you appear in responses from ChatGPT, Gemini, and Perplexity for your core service queries. That report is the starting point for any real strategy.</p>
 
-   <p>Visit <a href="/free-report">sharkbrandingsolutions.com/free-report</a> to claim yours.</p>
+   <p>Visit <Link href="/free-report">sharkbrandingsolutions.com/free-report</Link> to claim yours.</p>
 
    <hr />
    <p style={{ fontSize: "0.8rem", color: "#999", lineHeight: "1.6" }}>

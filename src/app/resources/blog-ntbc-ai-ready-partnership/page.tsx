@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import BlogShell from "@/components/BlogShell";
 
 export const metadata: Metadata = {
@@ -87,7 +88,7 @@ export default function Page() {
     <li>Do the machines trust your reputation?</li>
     <li>Are you set up to get chosen over your competitors?</li>
    </ul>
-   <p>You can claim your report right now at <a href="/free-report">sharkbrandingsolutions.com/free-report</a>. It&rsquo;s the first step in future-proofing your business.</p>
+   <p>You can claim your report right now at <Link href="/free-report">sharkbrandingsolutions.com/free-report</Link>. It&rsquo;s the first step in future-proofing your business.</p>
 
    <hr />
 
@@ -132,9 +133,9 @@ export default function Page() {
    <h2>Take Action Today</h2>
    <p>The future doesn&rsquo;t wait for a &ldquo;better time.&rdquo; It&rsquo;s happening right now in every ChatGPT prompt, every voice search, and every place people go looking for trusted resources.</p>
    <ol>
-    <li><strong>Claim Your Free AI Audit:</strong> Visit <a href="/free-report">sharkbrandingsolutions.com/free-report</a> to see exactly where your business stands.</li>
-    <li><strong>Attend a Workshop:</strong> We regularly host deep-dive sessions on AI Visibility. Check out our <a href="/services">upcoming services page</a> to learn how to align your business with modern search behavior.</li>
-    <li><strong>Explore the Toolkit:</strong> See how the Chamber and other local businesses are winning by visiting our <a href="/services">AI Visibility Consulting page</a>.</li>
+    <li><strong>Claim Your Free AI Audit:</strong> Visit <Link href="/free-report">sharkbrandingsolutions.com/free-report</Link> to see exactly where your business stands.</li>
+    <li><strong>Attend a Workshop:</strong> We regularly host deep-dive sessions on AI Visibility. Check out our <Link href="/services">upcoming services page</Link> to learn how to align your business with modern search behavior.</li>
+    <li><strong>Explore the Toolkit:</strong> See how the Chamber and other local businesses are winning by visiting our <Link href="/services">AI Visibility Consulting page</Link>.</li>
    </ol>
    <p>We are incredibly excited to embark on this journey with the North Tampa Bay Chamber. Together, we aren&rsquo;t just building businesses; we are building a future-proof community that is ready to lead the way in the AI era.</p>
    <p>Let&rsquo;s get your business <strong>Found, Trusted, and Chosen.</strong></p>

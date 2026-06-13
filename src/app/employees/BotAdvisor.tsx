@@ -3,7 +3,7 @@
 import { useState } from 'react'
 
 type Recommendation = {
-  bot: string
+  employee: string
   category: 'Visibility' | 'Marketing' | 'Operations'
   priority: number
   why: string
@@ -39,6 +39,7 @@ function CopyButton({ text }: { text: string }) {
   const [copied, setCopied] = useState(false)
   return (
     <button
+      type="button"
       onClick={() => {
         navigator.clipboard.writeText(text)
         setCopied(true)
@@ -70,7 +71,7 @@ export default function BotAdvisor() {
     setError('')
 
     try {
-      const res = await fetch('/api/bots-analyze', {
+      const res = await fetch('/api/employees-analyze', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form),
@@ -91,10 +92,11 @@ export default function BotAdvisor() {
       <form onSubmit={handleSubmit} className="bg-[#07141a] border border-white/8 rounded-2xl p-7 space-y-5">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
           <div>
-            <label className="block text-[12px] font-semibold uppercase tracking-widest text-white/40 mb-2">
+            <label htmlFor="adv-name" className="block text-[12px] font-semibold uppercase tracking-widest text-white/40 mb-2">
               Business Name <span className="text-[#18b5d8]">*</span>
             </label>
             <input
+              id="adv-name"
               type="text"
               required
               placeholder="e.g. Tampa Bay HVAC Pro"
@@ -104,10 +106,11 @@ export default function BotAdvisor() {
             />
           </div>
           <div>
-            <label className="block text-[12px] font-semibold uppercase tracking-widest text-white/40 mb-2">
+            <label htmlFor="adv-industry" className="block text-[12px] font-semibold uppercase tracking-widest text-white/40 mb-2">
               Industry / Type <span className="text-[#18b5d8]">*</span>
             </label>
             <input
+              id="adv-industry"
               type="text"
               required
               placeholder="e.g. HVAC, Real Estate, Restaurant"
@@ -119,10 +122,11 @@ export default function BotAdvisor() {
         </div>
 
         <div>
-          <label className="block text-[12px] font-semibold uppercase tracking-widest text-white/40 mb-2">
+          <label htmlFor="adv-desc" className="block text-[12px] font-semibold uppercase tracking-widest text-white/40 mb-2">
             What they do <span className="text-white/20">(optional)</span>
           </label>
           <textarea
+            id="adv-desc"
             rows={2}
             placeholder="Brief description: services, location, how they get customers…"
             value={form.description}
@@ -133,10 +137,11 @@ export default function BotAdvisor() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
           <div>
-            <label className="block text-[12px] font-semibold uppercase tracking-widest text-white/40 mb-2">
+            <label htmlFor="adv-team" className="block text-[12px] font-semibold uppercase tracking-widest text-white/40 mb-2">
               Team size <span className="text-white/20">(optional)</span>
             </label>
             <select
+              id="adv-team"
               value={form.teamSize}
               onChange={e => setForm(f => ({ ...f, teamSize: e.target.value }))}
               className="w-full bg-[#0a0a0a] border border-white/10 rounded-xl px-4 py-3 text-white text-[15px] focus:outline-none focus:border-[#18b5d8]/50 transition-colors"
@@ -150,10 +155,11 @@ export default function BotAdvisor() {
             </select>
           </div>
           <div>
-            <label className="block text-[12px] font-semibold uppercase tracking-widest text-white/40 mb-2">
+            <label htmlFor="adv-challenge" className="block text-[12px] font-semibold uppercase tracking-widest text-white/40 mb-2">
               Main challenge <span className="text-white/20">(optional)</span>
             </label>
             <input
+              id="adv-challenge"
               type="text"
               placeholder="e.g. Not showing up on Google, losing leads"
               value={form.challenge}
@@ -168,7 +174,7 @@ export default function BotAdvisor() {
           disabled={loading}
           className="w-full bg-[#18b5d8] text-white font-semibold text-[16px] py-4 rounded-xl hover:bg-[#1ec8ee] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
         >
-          {loading ? 'Analyzing…' : 'Get Bot Recommendations →'}
+          {loading ? 'Analyzing…' : 'Get Employee Recommendations →'}
         </button>
       </form>
 
@@ -182,7 +188,7 @@ export default function BotAdvisor() {
       {/* Loading state */}
       {loading && (
         <div className="text-center py-12">
-          <div className="inline-block w-8 h-8 border-2 border-[#18b5d8]/30 border-t-[#18b5d8] rounded-full animate-spin mb-4" />
+          <div className="inline-block size-8 border-2 border-[#18b5d8]/30 border-t-[#18b5d8] rounded-full animate-spin mb-4" />
           <p className="text-white/40 text-[14px]">Analyzing {form.name}…</p>
         </div>
       )}
@@ -199,10 +205,10 @@ export default function BotAdvisor() {
           {/* Recommendations */}
           <div className="space-y-4">
             {result.recommendations
-              .sort((a, b) => a.priority - b.priority)
+              .toSorted((a, b) => a.priority - b.priority)
               .map((rec) => (
                 <div
-                  key={rec.bot}
+                  key={rec.employee}
                   className="bg-[#07141a] border border-white/8 rounded-2xl p-6 space-y-4"
                 >
                   {/* Header row */}
@@ -211,7 +217,7 @@ export default function BotAdvisor() {
                       <span className="font-mono text-[#18b5d8] text-[11px] tracking-[0.22em] uppercase">
                         #{rec.priority}
                       </span>
-                      <h3 className="text-[18px] font-semibold text-white">{rec.bot}</h3>
+                      <h3 className="text-[18px] font-semibold text-white">{rec.employee}</h3>
                       <span className={`text-[11px] font-semibold px-3 py-1 rounded-full ${categoryColors[rec.category]}`}>
                         {rec.category}
                       </span>
@@ -249,6 +255,7 @@ export default function BotAdvisor() {
 
           {/* Reset */}
           <button
+            type="button"
             onClick={() => { setResult(null); setForm({ name: '', industry: '', description: '', teamSize: '', challenge: '' }) }}
             className="text-[13px] text-white/30 hover:text-white/60 transition-colors"
           >

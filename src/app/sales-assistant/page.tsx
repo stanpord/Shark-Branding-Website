@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { checkAuth } from '../secret/actions'
-import { botsLoginAction } from '../bots/actions'
+import { botsLoginAction } from '../employees/actions'
 import SalesAssistant from './SalesAssistant'
 
 export const metadata: Metadata = {
@@ -13,8 +13,7 @@ export default async function SalesAssistantPage({
 }: {
   searchParams: Promise<{ error?: string }>
 }) {
-  const isAuthed = await checkAuth()
-  const params = await searchParams
+  const [isAuthed, params] = await Promise.all([checkAuth(), searchParams])
 
   if (!isAuthed) {
     return (

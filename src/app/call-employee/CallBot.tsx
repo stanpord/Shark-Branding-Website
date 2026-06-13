@@ -68,7 +68,7 @@ export default function CallBot() {
     if (activeCalls.length === 0) return
 
     pollRef.current = setInterval(async () => {
-      for (const call of activeCalls) {
+      await Promise.all(activeCalls.map(async (call) => {
         try {
           const res = await fetch(`/api/vapi-calls?callId=${call.id}`)
           const data = await res.json()
@@ -93,7 +93,7 @@ export default function CallBot() {
         } catch {
           // ignore polling errors
         }
-      }
+      }))
     }, 3000)
 
     return () => {
@@ -201,6 +201,7 @@ export default function CallBot() {
             {error && <p className="text-[#F7555F] text-[12px] pt-1">{error}</p>}
 
             <button
+              type="button"
               onClick={startCall}
               disabled={loading || !form.phone}
               className="w-full bg-[#18b5d8] text-white font-semibold text-[14px] py-2.5 rounded-lg hover:bg-[#1ec8ee] transition-colors disabled:opacity-40 disabled:cursor-not-allowed mt-1"
@@ -219,6 +220,7 @@ export default function CallBot() {
                   const c = STATUS_CONFIG[call.status] ?? STATUS_CONFIG.queued
                   return (
                     <button
+                      type="button"
                       key={call.id}
                       onClick={() => setSelectedCallId(call.id)}
                       className={`w-full text-left px-4 py-3 hover:bg-white/5 transition-colors ${selectedCallId === call.id ? 'bg-white/[0.06]' : ''}`}
@@ -290,9 +292,9 @@ export default function CallBot() {
               <div className="flex-1 overflow-y-auto px-6 py-4">
                 {!selectedCall.transcript && selectedCall.status !== 'ended' && (
                   <div className="flex items-center gap-2 mt-8 justify-center">
-                    <div className="w-1.5 h-1.5 bg-[#18b5d8] rounded-full animate-bounce [animation-delay:0ms]" />
-                    <div className="w-1.5 h-1.5 bg-[#18b5d8] rounded-full animate-bounce [animation-delay:150ms]" />
-                    <div className="w-1.5 h-1.5 bg-[#18b5d8] rounded-full animate-bounce [animation-delay:300ms]" />
+                    <div className="size-1.5 bg-[#18b5d8] rounded-full animate-bounce [animation-delay:0ms]" />
+                    <div className="size-1.5 bg-[#18b5d8] rounded-full animate-bounce [animation-delay:150ms]" />
+                    <div className="size-1.5 bg-[#18b5d8] rounded-full animate-bounce [animation-delay:300ms]" />
                     <span className="text-white/30 text-[12px] ml-1">Waiting for call to connect...</span>
                   </div>
                 )}

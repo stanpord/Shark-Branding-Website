@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import BlogShell from "@/components/BlogShell";
 
 export const metadata: Metadata = {
@@ -97,7 +98,7 @@ export default function Page() {
     style={{ width: "100%", height: "auto" }}
    />
 
-   <p>The shift to AI-mediated service discovery isn&rsquo;t a &ldquo;maybe.&rdquo; It&rsquo;s happening right now. Don&rsquo;t let Google&rsquo;s AI pass you by. Whether you need <a href="/services">local SEO alignment</a> or want to boost your <a href="/services">reputation and revenue</a>, we have the roadmap for your success.</p>
+   <p>The shift to AI-mediated service discovery isn&rsquo;t a &ldquo;maybe.&rdquo; It&rsquo;s happening right now. Don&rsquo;t let Google&rsquo;s AI pass you by. Whether you need <Link href="/services">local SEO alignment</Link> or want to boost your <Link href="/services">reputation and revenue</Link>, we have the roadmap for your success.</p>
 
    <hr />
    <p style={{ fontSize: "0.8rem", color: "#999", lineHeight: "1.6" }}>

@@ -12,8 +12,7 @@ export default async function SecretPage({
 }: {
   searchParams: Promise<{ error?: string }>
 }) {
-  const isAuthed = await checkAuth()
-  const params = await searchParams
+  const [isAuthed, params] = await Promise.all([checkAuth(), searchParams])
 
   if (!isAuthed) {
     return (
