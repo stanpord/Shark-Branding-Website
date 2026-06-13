@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "About — Shark AI Solutions",
   description:
-    "Meet Michelle Stanaland, Founder and CEO of Shark AI Solutions — Top 15 Marketing Expert in Tampa Bay.",
+    "Meet the team behind Shark AI Solutions — Michelle Stanaland, Managing Partner and Founder, and the leadership driving AI strategy for Tampa Bay businesses.",
 };
 
 const values = [
@@ -100,7 +100,7 @@ export default function AboutPage() {
               <span className="text-[13px] font-semibold tracking-[0.08em] uppercase text-white/50">Leadership</span>
             </div>
             <h2 className="display-lg text-white mb-3">Michelle Stanaland</h2>
-            <p className="text-[17px] text-white/40 mb-8">Founder &amp; CEO</p>
+            <p className="text-[17px] text-white/40 mb-8">Managing Partner &amp; Founder</p>
             <div className="inline-flex items-center gap-3 bg-white/6 border border-white/10 rounded-[12px] px-5 py-3">
               <span className="text-[#18b5d8] text-[18px]" aria-hidden="true">★</span>
               <span className="text-[14px] font-semibold text-white">Top 15 Marketing Expert in Tampa Bay</span>
@@ -118,6 +118,46 @@ export default function AboutPage() {
             </p>
             <p className="body-copy text-white/60 leading-relaxed">
               Based in Wesley Chapel, Michelle works directly with clients across Lutz, Land O&rsquo; Lakes, St. Petersburg, and the wider Tampa Bay area, bringing enterprise-level AI strategy to local businesses that deserve to compete.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Josh ── */}
+      <section id="josh" className="bg-[#0a0a0a] px-6 py-14 md:py-24 border-t border-white/5">
+        <div className="max-w-[980px] mx-auto grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-16 items-start">
+          <div>
+            <div className="flex items-center gap-4 mb-8">
+              <span className="font-mono text-[#18b5d8] text-[11px] tracking-[0.22em] uppercase">Technology</span>
+              <span className="w-px h-4 bg-white/20" aria-hidden="true" />
+              <span className="text-[13px] font-semibold tracking-[0.08em] uppercase text-white/50">Leadership</span>
+            </div>
+            <h2 className="display-lg text-white mb-3">Josh</h2>
+            <p className="text-[17px] text-white/40 mb-8">Chief Technology Officer</p>
+          </div>
+          <div className="space-y-6">
+            <p className="body-copy text-white/60 leading-relaxed">
+              Credentials and bio coming soon.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Tiffany ── */}
+      <section id="tiffany" className="bg-[#0a0a0a] px-6 py-14 md:py-24 border-t border-white/5">
+        <div className="max-w-[980px] mx-auto grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-16 items-start">
+          <div>
+            <div className="flex items-center gap-4 mb-8">
+              <span className="font-mono text-[#18b5d8] text-[11px] tracking-[0.22em] uppercase">Operations</span>
+              <span className="w-px h-4 bg-white/20" aria-hidden="true" />
+              <span className="text-[13px] font-semibold tracking-[0.08em] uppercase text-white/50">Leadership</span>
+            </div>
+            <h2 className="display-lg text-white mb-3">Tiffany Fancher</h2>
+            <p className="text-[17px] text-white/40 mb-8">Chief Operating Officer</p>
+          </div>
+          <div className="space-y-6">
+            <p className="body-copy text-white/60 leading-relaxed">
+              Bio and credentials coming soon.
             </p>
           </div>
         </div>
