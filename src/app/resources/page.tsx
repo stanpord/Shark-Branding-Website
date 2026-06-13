@@ -17,6 +17,42 @@ export const metadata: Metadata = {
     "Guides, insights, and practical advice on AI visibility, local SEO, and marketing for Tampa Bay businesses.",
 };
 
+const resourcesSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "CollectionPage",
+      "@id": "https://sharkbrandingsolutions.com/resources",
+      url: "https://sharkbrandingsolutions.com/resources",
+      name: "Resources — AI Visibility and Marketing Guides",
+      description: "Practical guides on AI visibility, GEO, local SEO, and AI employees for Tampa Bay business owners.",
+      isPartOf: { "@id": "https://sharkbrandingsolutions.com/#website" },
+      publisher: { "@id": "https://sharkbrandingsolutions.com/#organization" },
+      inLanguage: "en-US",
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://sharkbrandingsolutions.com/resources#articles",
+      name: "AI Visibility and Marketing Articles",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, url: "https://sharkbrandingsolutions.com/resources/blog-why-tampa-bay-businesses-switching-ai-employees" },
+        { "@type": "ListItem", position: 2, url: "https://sharkbrandingsolutions.com/resources/blog-ai-receptionist-vs-human-receptionist" },
+        { "@type": "ListItem", position: 3, url: "https://sharkbrandingsolutions.com/resources/blog-5-automations-wesley-chapel-businesses" },
+        { "@type": "ListItem", position: 4, url: "https://sharkbrandingsolutions.com/resources/blog-what-is-an-ai-employee" },
+        { "@type": "ListItem", position: 5, url: "https://sharkbrandingsolutions.com/resources/blog-aio-aeo-geo-seo-wesley-chapel" },
+        { "@type": "ListItem", position: 6, url: "https://sharkbrandingsolutions.com/resources/blog-end-of-local-seo-ai-visibility" },
+        { "@type": "ListItem", position: 7, url: "https://sharkbrandingsolutions.com/resources/blog-seo-old-school-geo-ai-shift" },
+        { "@type": "ListItem", position: 8, url: "https://sharkbrandingsolutions.com/resources/blog-google-reviews-ai-recommendations" },
+        { "@type": "ListItem", position: 9, url: "https://sharkbrandingsolutions.com/resources/blog-24-hour-rule-local-trust-ai" },
+        { "@type": "ListItem", position: 10, url: "https://sharkbrandingsolutions.com/resources/blog-trusted-ai-review-responses" },
+        { "@type": "ListItem", position: 11, url: "https://sharkbrandingsolutions.com/resources/blog-ai-funnel-chatgpt-new-front-door" },
+        { "@type": "ListItem", position: 12, url: "https://sharkbrandingsolutions.com/resources/blog-ai-funnel-chatgpt-gemini-path-to-purchase" },
+        { "@type": "ListItem", position: 13, url: "https://sharkbrandingsolutions.com/resources/blog-ntbc-ai-ready-partnership" },
+      ],
+    },
+  ],
+};
+
 const posts = [
   {
     slug: "blog-why-tampa-bay-businesses-switching-ai-employees",
@@ -162,6 +198,7 @@ const below = posts.slice(3);
 export default function ResourcesPage() {
   return (
     <div className={`${playfair.variable} overflow-x-hidden`}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(resourcesSchema) }} />
 
       {/* ── Date bar ── */}
       <div className="bg-white border-b border-black/20 px-6 py-2 mt-[60px]">

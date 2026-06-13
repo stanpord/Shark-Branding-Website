@@ -1,6 +1,68 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+const plansSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://sharkbrandingsolutions.com/plans",
+      url: "https://sharkbrandingsolutions.com/plans",
+      name: "AI Employees & AI Visibility Pricing | Shark AI Solutions",
+      isPartOf: { "@id": "https://sharkbrandingsolutions.com/#website" },
+      about: { "@id": "https://sharkbrandingsolutions.com/#organization" },
+    },
+    {
+      "@type": "Service",
+      "@id": "https://sharkbrandingsolutions.com/plans#full-suite",
+      name: "Full AI Suite",
+      description: "Five AI employees — Chat Receptionist, Voice Receptionist, Reputation Specialist, AI CRM, and AI Sales Coach — deployed and live within one week for Tampa Bay businesses.",
+      provider: { "@id": "https://sharkbrandingsolutions.com/#organization" },
+      url: "https://sharkbrandingsolutions.com/plans",
+      offers: {
+        "@type": "Offer",
+        price: "5000",
+        priceCurrency: "USD",
+        priceSpecification: {
+          "@type": "UnitPriceSpecification",
+          price: "5000",
+          priceCurrency: "USD",
+          unitText: "MONTH",
+        },
+        description: "Starting at $5,000/month. No contracts. Live within 7 days.",
+        seller: { "@id": "https://sharkbrandingsolutions.com/#organization" },
+      },
+      areaServed: { "@type": "State", name: "Florida" },
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://sharkbrandingsolutions.com/plans#faq",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "How long does it take for AI employees to go live?",
+          acceptedAnswer: { "@type": "Answer", text: "Most clients are fully live within 5 to 7 business days. We handle all setup, training, and integration." },
+        },
+        {
+          "@type": "Question",
+          name: "Is $5,000 per month the right investment for a small business?",
+          acceptedAnswer: { "@type": "Answer", text: "If your average job or contract is worth $2,000 or more, you need to close three additional jobs per month to cover it entirely. Most clients close that in week two." },
+        },
+        {
+          "@type": "Question",
+          name: "Can I hire just one AI employee instead of the full suite?",
+          acceptedAnswer: { "@type": "Answer", text: "Yes. Individual AI employees are available. Most clients start with Gemma (chat receptionist) or the Voice Receptionist and expand from there." },
+        },
+        {
+          "@type": "Question",
+          name: "Are there contracts or long-term commitments?",
+          acceptedAnswer: { "@type": "Answer", text: "A 3-month initial agreement is required, after which pricing is month-to-month with no long-term lock-in." },
+        },
+      ],
+    },
+  ],
+};
+
 export const metadata: Metadata = {
   title: "AI Employees & AI Visibility Pricing Tampa Bay | Shark AI Solutions",
   description:
@@ -132,6 +194,7 @@ function TableCheck({ yes }: { yes: boolean }) {
 export default function PlansPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(plansSchema) }} />
       {/* ── Hero ── */}
       <section className="bg-white min-h-[70vh] flex flex-col items-center justify-center text-center px-6 pt-28 pb-16">
         <div className="max-w-[760px] mx-auto">

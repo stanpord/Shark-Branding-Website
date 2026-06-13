@@ -1,6 +1,45 @@
 import type { Metadata } from "next";
 import SnapshotWidget from "@/components/SnapshotWidget";
 
+const freeReportSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://sharkbrandingsolutions.com/free-report",
+      url: "https://sharkbrandingsolutions.com/free-report",
+      name: "Free AI Visibility Audit — Shark AI Solutions",
+      description: "See exactly how your business appears across search, maps, reviews, and AI platforms. Delivered within 48 hours.",
+      isPartOf: { "@id": "https://sharkbrandingsolutions.com/#website" },
+    },
+    {
+      "@type": "Service",
+      "@id": "https://sharkbrandingsolutions.com/free-report#service",
+      name: "Free AI Visibility Audit",
+      description: "A comprehensive audit showing how your business appears across Google, ChatGPT, Gemini, Perplexity, and local search. Delivered within 48 hours and reviewed personally with your team.",
+      provider: { "@id": "https://sharkbrandingsolutions.com/#organization" },
+      url: "https://sharkbrandingsolutions.com/free-report",
+      offers: {
+        "@type": "Offer",
+        price: "0",
+        priceCurrency: "USD",
+        description: "Complimentary AI visibility audit for Tampa Bay businesses.",
+        availability: "https://schema.org/InStock",
+        seller: { "@id": "https://sharkbrandingsolutions.com/#organization" },
+      },
+      areaServed: [
+        { "@type": "City", name: "Wesley Chapel" },
+        { "@type": "City", name: "Tampa" },
+        { "@type": "City", name: "Lutz" },
+        { "@type": "City", name: "Land O Lakes" },
+        { "@type": "City", name: "St. Petersburg" },
+      ],
+      serviceType: "AI Visibility Audit",
+      knowsAbout: ["AI Visibility", "GEO", "Local SEO", "ChatGPT search", "Google AI Overviews", "Perplexity"],
+    },
+  ],
+};
+
 export const metadata: Metadata = {
   title: "Free AI Audit — Shark AI Solutions",
   description:
@@ -10,6 +49,7 @@ export const metadata: Metadata = {
 export default function FreeReportPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(freeReportSchema) }} />
       {/* ── Hero ── */}
       <section className="bg-white min-h-[70vh] flex flex-col items-center justify-center text-center px-6 pt-24 pb-16">
         <div className="max-w-[640px] mx-auto">

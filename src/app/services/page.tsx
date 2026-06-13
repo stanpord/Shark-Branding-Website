@@ -1,6 +1,70 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+const servicesSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://sharkbrandingsolutions.com/services",
+      url: "https://sharkbrandingsolutions.com/services",
+      name: "AI Business Services — Shark AI Solutions",
+      isPartOf: { "@id": "https://sharkbrandingsolutions.com/#website" },
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://sharkbrandingsolutions.com/services#list",
+      name: "AI Business Services",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          item: {
+            "@type": "Service",
+            name: "AI Business Consulting",
+            description: "We optimize your business to appear when ChatGPT, Perplexity, Google AI Overviews, and other AI discovery platforms answer questions your customers are asking.",
+            url: "https://sharkbrandingsolutions.com/services#ai-visibility",
+            provider: { "@id": "https://sharkbrandingsolutions.com/#organization" },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          item: {
+            "@type": "Service",
+            name: "AI Visibility Toolkit",
+            description: "A structured framework that audits your AI presence, builds the authority signals that get you cited, and tracks your mentions across every major AI platform.",
+            url: "https://sharkbrandingsolutions.com/services#toolkit",
+            provider: { "@id": "https://sharkbrandingsolutions.com/#organization" },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          item: {
+            "@type": "Service",
+            name: "AI Employees",
+            description: "Five AI employees — chat receptionist, voice receptionist, reputation specialist, CRM, and sales coach — deployed live within one week.",
+            url: "https://sharkbrandingsolutions.com/aiemployees",
+            provider: { "@id": "https://sharkbrandingsolutions.com/#organization" },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 4,
+          item: {
+            "@type": "Service",
+            name: "Workshops and Training",
+            description: "Live regional AI hackathons and training sessions for Tampa Bay business owners and their teams.",
+            url: "https://sharkbrandingsolutions.com/services#workshops",
+            provider: { "@id": "https://sharkbrandingsolutions.com/#organization" },
+          },
+        },
+      ],
+    },
+  ],
+};
+
 export const metadata: Metadata = {
   title: "AI Business Services — Shark AI Solutions",
   description:
@@ -65,6 +129,7 @@ const services = [
 export default function ServicesPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesSchema) }} />
       {/* ── Hero ── */}
       <section className="bg-white min-h-[90vh] flex flex-col items-center justify-center text-center px-6 pt-24 pb-20">
         <div className="max-w-[720px] mx-auto">
