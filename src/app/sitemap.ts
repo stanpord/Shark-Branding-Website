@@ -24,6 +24,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/ai-visibility-consulting`, lastModified: "2026-06-12", changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE}/how-to-rank-on-chatgpt-for-local-businesses`, lastModified: "2026-06-12", changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE}/vs/marketing-agency`, lastModified: "2026-06-01", changeFrequency: "monthly", priority: 0.8 },
+    { url: `${BASE}/vs/salesforce`, lastModified: "2026-06-01", changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE}/aiemployees`, lastModified: "2026-05-01", changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE}/aiemployees/home-services`, lastModified: "2026-05-01", changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE}/aiemployees/real-estate`, lastModified: "2026-05-01", changeFrequency: "monthly", priority: 0.8 },

@@ -24,7 +24,7 @@ const structuredData = {
       url: 'https://sharkbrandingsolutions.com/resources/blog-why-tampa-bay-businesses-switching-ai-employees',
       datePublished: '2026-06-07',
       dateModified: '2026-06-07',
-      author: { '@type': 'Organization', name: 'Shark Branding Solutions', url: 'https://sharkbrandingsolutions.com' },
+      author: { '@type': 'Organization', name: 'Shark AI Solutions', url: 'https://sharkbrandingsolutions.com' },
       publisher: { '@id': 'https://sharkbrandingsolutions.com/#organization' },
       inLanguage: 'en-US',
       about: [

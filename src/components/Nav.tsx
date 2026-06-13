@@ -11,6 +11,7 @@ const links = [
   { href: "/automation", label: "Automation" },
   { href: "/ai-assessment", label: "AI Assessment" },
   { href: "/case-studies", label: "Case Studies" },
+  { href: "/plans", label: "Pricing" },
   { href: "/resources", label: "Resources" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },

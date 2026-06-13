@@ -320,6 +320,14 @@ export default function ServicesPage() {
               >
                 {s.cta}
               </Link>
+              {s.id === 'ai-visibility' && (
+                <Link
+                  href="/ai-visibility-consulting"
+                  className="mt-4 flex items-center gap-1.5 text-[14px] font-semibold text-[#18b5d8] hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 rounded"
+                >
+                  Deep dive: our full AI visibility consulting approach →
+                </Link>
+              )}
             </div>
           </div>
         </section>
@@ -536,6 +544,21 @@ export default function ServicesPage() {
               </details>
             ))}
           </dl>
+        </div>
+      </section>
+
+      {/* ── Comparison links ── */}
+      <section className="bg-white px-6 py-10 border-t border-[#e8e8ed] text-center">
+        <div className="max-w-[720px] mx-auto">
+          <p className="text-[13px] text-[#7a7a7a] mb-5">Weighing your options?</p>
+          <div className="flex flex-wrap items-center justify-center gap-6">
+            <Link href="/vs/marketing-agency" className="text-[14px] font-semibold text-[#1d1d1f] hover:text-[#18b5d8] motion-safe:transition-colors duration-150">
+              AI Visibility vs. Traditional Marketing Agency →
+            </Link>
+            <Link href="/vs/salesforce" className="text-[14px] font-semibold text-[#1d1d1f] hover:text-[#18b5d8] motion-safe:transition-colors duration-150">
+              AI Employees vs. Salesforce AI Agents →
+            </Link>
+          </div>
         </div>
       </section>
 

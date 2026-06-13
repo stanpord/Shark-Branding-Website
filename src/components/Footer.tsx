@@ -205,7 +205,11 @@ export default function Footer() {
               Terms of Service
             </Link>
             <p className="text-[12px] text-[#86868b]">
-              Serving Wesley Chapel &middot; Lutz &middot; Land O&rsquo; Lakes &middot; St. Petersburg
+              Serving{" "}
+              <Link href="/wesley-chapel" className="hover:text-[#18b5d8] motion-safe:transition-colors">Wesley Chapel</Link>
+              {" "}&middot;{" "}
+              <Link href="/tampa" className="hover:text-[#18b5d8] motion-safe:transition-colors">Tampa</Link>
+              {" "}&middot; Lutz &middot; Land O&rsquo; Lakes &middot; St. Petersburg
             </p>
           </div>
         </div>

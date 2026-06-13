@@ -23,9 +23,10 @@ const structuredData = {
   dateModified: '2026-06-07',
   author: {
     '@type': 'Person',
+    '@id': 'https://sharkbrandingsolutions.com/about#michelle',
     name: 'Michelle Stanaland',
-    url: 'https://sharkbrandingsolutions.com/about',
-    jobTitle: 'Founder & CEO, Shark Branding Solutions',
+    url: 'https://sharkbrandingsolutions.com/about#michelle',
+    jobTitle: 'Managing Partner and Founder, Shark AI Solutions',
   },
   publisher: {
     '@id': 'https://sharkbrandingsolutions.com/#organization',

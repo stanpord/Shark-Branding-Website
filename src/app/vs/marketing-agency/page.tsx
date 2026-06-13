@@ -25,9 +25,10 @@ const structuredData = {
     "A detailed comparison of AI visibility consulting vs traditional marketing agencies for local businesses.",
   author: {
     "@type": "Person",
-    "@id": "https://sharkbrandingsolutions.com/#founder",
+    "@id": "https://sharkbrandingsolutions.com/about#michelle",
     name: "Michelle Stanaland",
-    url: "https://sharkbrandingsolutions.com/about",
+    url: "https://sharkbrandingsolutions.com/about#michelle",
+    jobTitle: "Managing Partner and Founder",
   },
   publisher: {
     "@type": "Organization",
