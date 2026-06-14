@@ -37,7 +37,7 @@ export default function Home() {
       {/* ── Hero ── */}
       <section
         data-scene="hero"
-        className="bg-white min-h-[92vh] flex flex-col items-center justify-center text-center px-6 pt-24 pb-20"
+        className="bg-white sm:min-h-[92vh] flex flex-col items-center justify-center text-center px-6 pt-20 sm:pt-24 pb-12 sm:pb-20"
       >
         {/* Depth-1: glow atmosphere */}
         <div className="hero-glow hero-glow-primary" aria-hidden="true" />
@@ -53,7 +53,7 @@ export default function Home() {
         <div className="max-w-[760px] mx-auto relative z-10">
           <p
             data-animate="hero-label"
-            className="text-[#18b5d8] text-[13px] font-semibold tracking-[0.2em] uppercase mb-8"
+            className="text-[#18b5d8] text-[13px] font-semibold tracking-[0.2em] uppercase mb-4 sm:mb-8"
           >
             AI Visibility · Tampa Bay
           </p>
@@ -74,7 +74,7 @@ export default function Home() {
           <p className="text-[14px] text-[#18b5d8] font-semibold mb-2">
             AI Visibility Consulting for Tampa Bay Businesses
           </p>
-          <p className="text-[14px] text-[#7a7a7a] mb-12">
+          <p className="text-[14px] text-[#7a7a7a] mb-8 sm:mb-12">
             Serving Wesley Chapel, Lutz, Land O' Lakes, St. Petersburg & Tampa
           </p>
           <div data-animate="hero-cta" className="flex flex-wrap items-center justify-center gap-3">
@@ -93,13 +93,13 @@ export default function Home() {
       </section>
 
       {/* ── What Is AI Visibility ── */}
-      <section data-scene="shift" className="bg-[#0a0a0a] px-6 py-20">
+      <section data-scene="shift" className="bg-[#0a0a0a] px-6 py-12 sm:py-20">
         {/* Depth-1: glow atmosphere */}
         <div className="shift-glow shift-glow-a" aria-hidden="true" />
         <div className="shift-glow shift-glow-b" aria-hidden="true" />
 
         <div className="max-w-[980px] mx-auto relative z-10">
-          <div className="max-w-[640px] mx-auto text-center mb-14">
+          <div className="max-w-[640px] mx-auto text-center mb-8 sm:mb-14">
             <p className="text-[#18b5d8] text-[13px] font-semibold tracking-[0.2em] uppercase mb-5">The Shift</p>
             <h2
               data-animate="shift-title"
@@ -128,9 +128,9 @@ export default function Home() {
       </section>
 
       {/* ── Found Trusted Chosen ── */}
-      <section data-scene="framework" className="bg-white px-6 py-20 border-t border-[#e8e8ed]">
+      <section data-scene="framework" className="bg-white px-6 py-12 sm:py-20 border-t border-[#e8e8ed]">
         <div className="max-w-[980px] mx-auto">
-          <div className="text-center mb-14">
+          <div className="text-center mb-8 sm:mb-14">
             <p className="text-[#18b5d8] text-[13px] font-semibold tracking-[0.2em] uppercase mb-5">Our Framework</p>
             <h2 data-animate="framework-title" className="display-lg text-[#0a0a0a]" style={{ textWrap: 'balance' }}>
               Found. Trusted. Chosen.
@@ -180,9 +180,9 @@ export default function Home() {
       </section>
 
       {/* ── How It Works ── */}
-      <section data-scene="steps" className="bg-[#0a0a0a] px-6 py-20 border-t border-white/5">
+      <section data-scene="steps" className="bg-[#0a0a0a] px-6 py-12 sm:py-20 border-t border-white/5">
         <div className="max-w-[980px] mx-auto">
-          <div className="text-center mb-14">
+          <div className="text-center mb-8 sm:mb-14">
             <p className="text-[#18b5d8] text-[13px] font-semibold tracking-[0.2em] uppercase mb-5">The Process</p>
             <h2 data-animate="steps-title" className="display-lg text-white" style={{ textWrap: 'balance' }}>
               Up and running in 30 days.
@@ -201,9 +201,9 @@ export default function Home() {
       </section>
 
       {/* ── Results ── */}
-      <section data-scene="results" className="bg-white px-6 py-20 border-t border-[#e8e8ed]">
+      <section data-scene="results" className="bg-white px-6 py-12 sm:py-20 border-t border-[#e8e8ed]">
         <div className="max-w-[980px] mx-auto">
-          <div className="text-center mb-14">
+          <div className="text-center mb-8 sm:mb-14">
             <p className="text-[#18b5d8] text-[13px] font-semibold tracking-[0.2em] uppercase mb-5">Real Results</p>
             <h2 data-animate="results-title" className="display-lg text-[#0a0a0a]" style={{ textWrap: 'balance' }}>
               Tampa Bay businesses. 30 days.
@@ -235,9 +235,9 @@ export default function Home() {
       </section>
 
       {/* ── Services ── */}
-      <section data-scene="services" className="bg-[#f5f5f7] px-6 py-20 border-t border-[#e8e8ed]">
+      <section data-scene="services" className="bg-[#f5f5f7] px-6 py-12 sm:py-20 border-t border-[#e8e8ed]">
         <div className="max-w-[980px] mx-auto">
-          <div className="text-center mb-12">
+          <div className="text-center mb-6 sm:mb-12">
             <p className="text-[#18b5d8] text-[13px] font-semibold tracking-[0.2em] uppercase mb-5">What We Do</p>
             <h2 className="display-lg text-[#0a0a0a]" style={{ textWrap: 'balance' }}>
               Every service, one outcome.
@@ -260,9 +260,9 @@ export default function Home() {
       </section>
 
       {/* ── AI Employees ── */}
-      <section data-scene="employees" className="bg-white px-6 py-20 border-t border-[#e8e8ed]">
+      <section data-scene="employees" className="bg-white px-6 py-12 sm:py-20 border-t border-[#e8e8ed]">
         <div className="max-w-[980px] mx-auto">
-          <div className="text-center mb-12">
+          <div className="text-center mb-6 sm:mb-12">
             <p className="text-[#18b5d8] text-[13px] font-semibold tracking-[0.2em] uppercase mb-5">AI Employees</p>
             <h2 data-animate="employees-title" className="display-lg text-[#0a0a0a]" style={{ textWrap: 'balance' }}>
               Your business runs 24/7. Your team shouldn't have to.
@@ -283,14 +283,14 @@ export default function Home() {
       </section>
 
       {/* ── CTA ── */}
-      <section data-scene="cta" className="bg-[#0a0a0a] py-28 px-6 text-center">
+      <section data-scene="cta" className="bg-[#0a0a0a] py-16 sm:py-28 px-6 text-center">
         <div className="cta-glow" aria-hidden="true" />
         <div className="max-w-[560px] mx-auto relative z-10">
-          <p data-animate="cta-label" className="text-[13px] font-semibold tracking-[0.2em] uppercase text-[#18b5d8] mb-6">Ready to get visible?</p>
-          <h2 data-animate="cta-title" className="display-lg text-white mb-6" style={{ textWrap: 'balance' }}>
+          <p data-animate="cta-label" className="text-[13px] font-semibold tracking-[0.2em] uppercase text-[#18b5d8] mb-4 sm:mb-6">Ready to get visible?</p>
+          <h2 data-animate="cta-title" className="display-lg text-white mb-4 sm:mb-6" style={{ textWrap: 'balance' }}>
             Find out where you stand.
           </h2>
-          <p data-animate="cta-sub" className="lead-airy text-white/50 mb-12">
+          <p data-animate="cta-sub" className="lead-airy text-white/50 mb-8 sm:mb-12">
             Free AI Audit. No commitment. Reviewed with you personally.
           </p>
           <div data-animate="cta-btn">
