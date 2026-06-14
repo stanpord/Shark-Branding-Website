@@ -80,7 +80,6 @@ function initHero(gsap: any, ScrollTrigger: any): () => void {
   const sub      = hero.querySelector('[data-animate="hero-sub"]')
   const cta      = hero.querySelector('[data-animate="hero-cta"]')
   const label    = hero.querySelector('[data-animate="hero-label"]')
-  const glows    = hero.querySelectorAll('.hero-glow')
   const dots     = hero.querySelectorAll('.hero-dot')
 
   const tl = gsap.timeline({ defaults: { ease: 'power3.out' } })
@@ -105,23 +104,6 @@ function initHero(gsap: any, ScrollTrigger: any): () => void {
 
   // CTA bounces in
   if (cta) tl.from(cta, { scale: 0.85, opacity: 0, duration: 0.6, ease: 'back.out(2)' }, 0.75)
-
-  // Glow blobs drift on scroll
-  if (glows.length) {
-    glows.forEach((glow: Element, i: number) => {
-      gsap.to(glow, {
-        y: i % 2 === 0 ? -120 : 80,
-        x: i % 2 === 0 ? 60 : -40,
-        ease: 'none',
-        scrollTrigger: {
-          trigger: hero,
-          start: 'top top',
-          end: 'bottom top',
-          scrub: 2 + i,
-        }
-      })
-    })
-  }
 
   // Dots parallax
   if (dots.length) {

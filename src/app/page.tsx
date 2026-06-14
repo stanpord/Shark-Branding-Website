@@ -39,9 +39,6 @@ export default function Home() {
         data-scene="hero"
         className="bg-white sm:min-h-[92vh] flex flex-col items-center justify-center text-center px-6 pt-20 sm:pt-24 pb-12 sm:pb-20"
       >
-        {/* Depth-1: glow atmosphere */}
-        <div className="hero-glow hero-glow-primary" aria-hidden="true" />
-        <div className="hero-glow hero-glow-secondary" aria-hidden="true" />
         {/* Depth-5: foreground dots */}
         <div className="hero-dot hero-dot-1" aria-hidden="true" />
         <div className="hero-dot hero-dot-2" aria-hidden="true" />
@@ -94,10 +91,6 @@ export default function Home() {
 
       {/* ── What Is AI Visibility ── */}
       <section data-scene="shift" className="bg-[#0a0a0a] px-6 py-12 sm:py-20">
-        {/* Depth-1: glow atmosphere */}
-        <div className="shift-glow shift-glow-a" aria-hidden="true" />
-        <div className="shift-glow shift-glow-b" aria-hidden="true" />
-
         <div className="max-w-[980px] mx-auto relative z-10">
           <div className="max-w-[640px] mx-auto text-center mb-8 sm:mb-14">
             <p className="text-[#18b5d8] text-[13px] font-semibold tracking-[0.2em] uppercase mb-5">The Shift</p>
@@ -284,7 +277,6 @@ export default function Home() {
 
       {/* ── CTA ── */}
       <section data-scene="cta" className="bg-[#0a0a0a] py-16 sm:py-28 px-6 text-center">
-        <div className="cta-glow" aria-hidden="true" />
         <div className="max-w-[560px] mx-auto relative z-10">
           <p data-animate="cta-label" className="text-[13px] font-semibold tracking-[0.2em] uppercase text-[#18b5d8] mb-4 sm:mb-6">Ready to get visible?</p>
           <h2 data-animate="cta-title" className="display-lg text-white mb-4 sm:mb-6" style={{ textWrap: 'balance' }}>

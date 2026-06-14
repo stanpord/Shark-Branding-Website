@@ -240,77 +240,7 @@ body {
   overflow: hidden;
 }
 
-/* ── Hero glow blobs ── */
-.hero-glow {
-  position: absolute;
-  border-radius: 50%;
-  pointer-events: none;
-  will-change: transform;
-}
-.hero-glow-primary {
-  width: 600px;
-  height: 600px;
-  background: radial-gradient(circle, #18b5d8 0%, transparent 70%);
-  filter: blur(90px);
-  opacity: 0.18;
-  top: -100px;
-  left: 50%;
-  transform: translateX(-50%);
-  animation: glow-drift-a 14s ease-in-out infinite;
-}
-.hero-glow-secondary {
-  width: 400px;
-  height: 400px;
-  background: radial-gradient(circle, #0f8fab 0%, transparent 70%);
-  filter: blur(70px);
-  opacity: 0.12;
-  bottom: 0;
-  right: 10%;
-  animation: glow-drift-b 18s ease-in-out infinite;
-}
-
-/* Shift section glow */
-.shift-glow {
-  position: absolute;
-  border-radius: 50%;
-  pointer-events: none;
-}
-.shift-glow-a {
-  width: 500px;
-  height: 500px;
-  background: radial-gradient(circle, #18b5d8 0%, transparent 70%);
-  filter: blur(100px);
-  opacity: 0.10;
-  top: -80px;
-  right: -100px;
-  animation: glow-drift-a 16s ease-in-out infinite;
-}
-.shift-glow-b {
-  width: 300px;
-  height: 300px;
-  background: radial-gradient(circle, #4FD1A0 0%, transparent 70%);
-  filter: blur(80px);
-  opacity: 0.08;
-  bottom: -40px;
-  left: 5%;
-  animation: glow-drift-b 20s ease-in-out infinite;
-}
-
-/* CTA glow */
-.cta-glow {
-  position: absolute;
-  width: 700px;
-  height: 700px;
-  border-radius: 50%;
-  background: radial-gradient(circle, #18b5d8 0%, transparent 65%);
-  filter: blur(120px);
-  opacity: 0.12;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-  animation: glow-breathe 12s ease-in-out infinite;
-}
+/* Glow orbs removed */
 
 /* ── Floating dots (depth-5 foreground particles) ── */
 .hero-dot {
@@ -327,26 +257,9 @@ body {
 .hero-dot-4 { width: 3px;  height: 3px;  background: #18b5d8; opacity: 0.4; top: 75%; right: 15%; --dur: 8s;  --delay: -1.5s;}
 .hero-dot-5 { width: 8px;  height: 8px;  background: #18b5d8; opacity: 0.25; top: 15%; right: 25%; --dur: 13s; --delay: -3s; }
 
-/* ── Clip-path preset for section reveals ── */
-[data-scene="shift"] {
-  clip-path: inset(0 0 100% 0);
-}
+/* ── Clip-path preset handled via GSAP fromTo — no CSS preset needed ── */
 
 /* ── Keyframes ── */
-@keyframes glow-drift-a {
-  0%, 100% { transform: translateX(-50%) translate(0, 0); }
-  33%       { transform: translateX(-50%) translate(40px, -30px); }
-  66%       { transform: translateX(-50%) translate(-30px, 20px); }
-}
-@keyframes glow-drift-b {
-  0%, 100% { transform: translate(0, 0); }
-  40%       { transform: translate(-50px, 30px); }
-  70%       { transform: translate(30px, -20px); }
-}
-@keyframes glow-breathe {
-  0%, 100% { opacity: 0.12; transform: translate(-50%, -50%) scale(1); }
-  50%       { opacity: 0.18; transform: translate(-50%, -50%) scale(1.08); }
-}
 @keyframes float-dot {
   0%, 100% { transform: translateY(0px); }
   50%       { transform: translateY(-18px); }
@@ -359,10 +272,7 @@ body {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
-  [data-scene="shift"] {
-    clip-path: none !important;
-  }
-  .hero-glow, .shift-glow, .cta-glow, .hero-dot {
+  .hero-dot {
     animation: none !important;
   }
 }
