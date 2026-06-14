@@ -140,7 +140,7 @@ export default function AiEmployeesDeep() {
       `}</style>
 
       {/* ── PAGE HERO ──────────────────────────────────────────────── */}
-      <section className="bg-[#f5f5f7] pt-24 pb-16 px-6 border-b border-[#e5e5ea]">
+      <section className="bg-[#f5f5f7] pt-20 sm:pt-24 pb-10 sm:pb-16 px-6 border-b border-[#e5e5ea]">
         <div className="max-w-3xl mx-auto text-center">
           <FadeUp>
             <span className="inline-block px-3 py-1 rounded-full bg-[#18b5d8]/10 text-[#18b5d8] text-[11px] font-bold uppercase tracking-widest mb-5">Five AI employees. One team.</span>
@@ -185,7 +185,7 @@ export default function AiEmployeesDeep() {
       {/* ══════════════════════════════════════════════════════════════ */}
       {/* ── GEMMA — CHAT RECEPTIONIST ─────────────────────────────── */}
       {/* ══════════════════════════════════════════════════════════════ */}
-      <section id="gemma" className="py-28 px-6">
+      <section id="gemma" className="py-16 sm:py-28 px-6">
         <div className="max-w-5xl mx-auto">
 
           <FadeUp className="mb-16">
@@ -329,7 +329,7 @@ export default function AiEmployeesDeep() {
       {/* ══════════════════════════════════════════════════════════════ */}
       {/* ── VOICE RECEPTIONIST ────────────────────────────────────── */}
       {/* ══════════════════════════════════════════════════════════════ */}
-      <section id="voice" className="bg-[#f5f5f7] py-28 px-6">
+      <section id="voice" className="bg-[#f5f5f7] py-16 sm:py-28 px-6">
         <div className="max-w-5xl mx-auto">
 
           <FadeUp className="mb-16">
@@ -489,7 +489,7 @@ export default function AiEmployeesDeep() {
       {/* ══════════════════════════════════════════════════════════════ */}
       {/* ── REPUTATION SPECIALIST ─────────────────────────────────── */}
       {/* ══════════════════════════════════════════════════════════════ */}
-      <section id="reputation" className="py-28 px-6">
+      <section id="reputation" className="py-16 sm:py-28 px-6">
         <div className="max-w-5xl mx-auto">
 
           <FadeUp className="mb-10">
@@ -635,7 +635,7 @@ export default function AiEmployeesDeep() {
       {/* ══════════════════════════════════════════════════════════════ */}
       {/* ── AI CRM ────────────────────────────────────────────────── */}
       {/* ══════════════════════════════════════════════════════════════ */}
-      <section id="aicrm" className="bg-[#f5f5f7] py-28 px-6">
+      <section id="aicrm" className="bg-[#f5f5f7] py-16 sm:py-28 px-6">
         <div className="max-w-5xl mx-auto">
 
           <FadeUp className="mb-10">
@@ -776,7 +776,7 @@ export default function AiEmployeesDeep() {
       {/* ══════════════════════════════════════════════════════════════ */}
       {/* ── AI SALES ASSISTANT ────────────────────────────────────── */}
       {/* ══════════════════════════════════════════════════════════════ */}
-      <section id="sales-assistant" className="py-28 px-6">
+      <section id="sales-assistant" className="py-16 sm:py-28 px-6">
         <div className="max-w-5xl mx-auto">
 
           <FadeUp className="mb-16">
@@ -945,7 +945,7 @@ export default function AiEmployeesDeep() {
       {/* ══════════════════════════════════════════════════════════════ */}
       {/* ── FULL SUITE PRICING ────────────────────────────────────── */}
       {/* ══════════════════════════════════════════════════════════════ */}
-      <section id="suite" className="bg-[#07141a] py-28 px-6">
+      <section id="suite" className="bg-[#07141a] py-16 sm:py-28 px-6">
         <div className="max-w-5xl mx-auto">
 
           <FadeUp className="text-center mb-16">
@@ -1061,7 +1061,7 @@ export default function AiEmployeesDeep() {
       {/* ══════════════════════════════════════════════════════════════ */}
       {/* ── CUSTOM EMPLOYEE ───────────────────────────────────────── */}
       {/* ══════════════════════════════════════════════════════════════ */}
-      <section id="custom" className="bg-[#f5f5f7] py-28 px-6">
+      <section id="custom" className="bg-[#f5f5f7] py-16 sm:py-28 px-6">
         <div className="max-w-5xl mx-auto">
 
           <FadeUp className="mb-16">
@@ -1125,8 +1125,48 @@ export default function AiEmployeesDeep() {
 
       <SectionDivider />
 
+      {/* ══════════════════════════════════════════════════════════════ */}
+      {/* ── INDUSTRY PAGES ───────────────────────────────────────── */}
+      {/* ══════════════════════════════════════════════════════════════ */}
+      <section className="bg-white py-12 sm:py-20 px-6">
+        <div className="max-w-5xl mx-auto">
+          <FadeUp className="text-center mb-12">
+            <p className="text-[11px] font-bold tracking-[2px] uppercase text-[#18b5d8] mb-3">Built for Your Industry</p>
+            <h2 className="text-[32px] font-extrabold text-[#1d1d1f] leading-tight tracking-tight mb-4">
+              See how AI employees work in your field.
+            </h2>
+            <p className="text-[#6e6e73] text-[17px] leading-relaxed max-w-xl mx-auto">
+              Every deployment is configured for your industry's workflows, lead types, and customer expectations.
+            </p>
+          </FadeUp>
+          <FadeUp>
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+              {[
+                { href: '/aiemployees/hvac',          label: 'HVAC',          desc: '24/7 emergency lead capture' },
+                { href: '/aiemployees/home-services',  label: 'Home Services', desc: 'After-hours booking + follow-up' },
+                { href: '/aiemployees/real-estate',    label: 'Real Estate',   desc: 'Buyer & seller lead qualification' },
+                { href: '/aiemployees/contractors',    label: 'Contractors',   desc: 'Estimate follow-up + reviews' },
+                { href: '/aiemployees/healthcare',     label: 'Healthcare',    desc: 'Patient intake + appointment reminders' },
+                { href: '/aiemployees/legal',          label: 'Legal',         desc: 'Lead intake + consultation booking' },
+              ].map(ind => (
+                <a
+                  key={ind.href}
+                  href={ind.href}
+                  className="bg-[#f5f5f7] rounded-[16px] p-5 border border-[#e5e5ea] hover:border-[#18b5d8] hover:bg-white motion-safe:transition-colors duration-150 group"
+                >
+                  <p className="text-[#1d1d1f] font-bold text-[15px] mb-1 group-hover:text-[#18b5d8] motion-safe:transition-colors">{ind.label}</p>
+                  <p className="text-[#86868b] text-[13px]">{ind.desc}</p>
+                </a>
+              ))}
+            </div>
+          </FadeUp>
+        </div>
+      </section>
+
+      <SectionDivider />
+
       {/* ── BOTTOM CTA ──────────────────────────────────────────────── */}
-      <section className="bg-[#07141a] py-24 px-6">
+      <section className="bg-[#07141a] py-14 sm:py-24 px-6">
         <div className="max-w-2xl mx-auto text-center">
           <FadeUp>
             <p className="text-[11px] font-bold tracking-[2px] uppercase text-[#18b5d8] mb-4">Ready to hire your team?</p>
