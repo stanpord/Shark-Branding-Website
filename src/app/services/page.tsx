@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ServicesAnimations from "@/components/ServicesAnimations";
 
 const servicesSchema = {
   "@context": "https://schema.org",
@@ -129,57 +130,74 @@ const services = [
 export default function ServicesPage() {
   return (
     <>
+      <ServicesAnimations />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesSchema) }} />
+
       {/* ── Hero ── */}
-      <section className="bg-white min-h-[90vh] flex flex-col items-center justify-center text-center px-6 pt-24 pb-20">
+      <section
+        data-scene="services-hero"
+        className="bg-white sm:min-h-[90vh] flex flex-col items-center justify-center text-center px-6 pt-20 sm:pt-24 pb-12 sm:pb-20"
+      >
         <div className="max-w-[720px] mx-auto">
-          <p className="text-[#18b5d8] text-[13px] font-semibold tracking-[0.2em] uppercase mb-8">
+          <p data-animate="hero-label" className="text-[#18b5d8] text-[13px] font-semibold tracking-[0.2em] uppercase mb-4 sm:mb-8">
             Services
           </p>
-          <h1 className="display-hero text-[#0a0a0a] mb-6" style={{ textWrap: "balance" }}>
-            Every service built around
-            <br />
-            <span className="text-[#18b5d8]">one outcome.</span>
+          <h1
+            data-animate="hero-title"
+            className="display-hero text-[#0a0a0a] mb-6"
+            style={{ textWrap: "balance" }}
+          >
+            Every service built around one outcome.
           </h1>
-          <p className="lead-airy text-[#333333] max-w-[520px] mx-auto mb-14" style={{ textWrap: "balance" }}>
+          <p
+            data-animate="hero-sub"
+            className="lead-airy text-[#333333] max-w-[520px] mx-auto mb-8 sm:mb-14"
+            style={{ textWrap: "balance" }}
+          >
             Your business getting found, trusted, and chosen by humans and AI alike.
           </p>
-          <div className="flex flex-wrap items-center justify-center gap-3 mb-8">
+          <div className="flex flex-wrap items-center justify-center gap-3 mb-6 sm:mb-8">
             {services.map((s) => (
               <a
                 key={s.id}
                 href={`#${s.id}`}
+                data-animate="hero-pill"
                 className="text-[13px] font-semibold text-[#1d1d1f] border border-[#e0e0e0] rounded-full px-5 py-2 hover:border-[#18b5d8] hover:text-[#18b5d8] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2"
               >
                 {s.title}
               </a>
             ))}
           </div>
-          <Link
-            href="/free-report"
-            className="btn-press inline-block bg-[#18b5d8] text-white text-[15px] font-semibold rounded-full px-7 py-3.5 hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 [touch-action:manipulation]"
-          >
-            Get My Free AI Audit
-          </Link>
+          <div data-animate="hero-cta">
+            <Link
+              href="/free-report"
+              className="btn-press inline-block bg-[#18b5d8] text-white text-[15px] font-semibold rounded-full px-7 py-3.5 hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 [touch-action:manipulation]"
+            >
+              Get My Free AI Audit
+            </Link>
+          </div>
         </div>
       </section>
 
-      {/* ── Google vs AI — decision context ── */}
-      <section className="bg-[#0a0a0a] px-6 py-20">
+      {/* ── Google vs AI ── */}
+      <section data-scene="services-shift" className="bg-[#0a0a0a] px-6 py-12 sm:py-20">
         <div className="max-w-[980px] mx-auto">
-          <div className="text-center mb-14">
+          <div className="text-center mb-8 sm:mb-14">
             <p className="text-[#18b5d8] text-[13px] font-semibold tracking-[0.2em] uppercase mb-5">The Shift That Changed Everything</p>
-            <h2 className="display-lg text-white max-w-[700px] mx-auto" style={{ textWrap: "balance" }}>
+            <h2
+              data-animate="shift-title"
+              className="display-lg text-white max-w-[700px] mx-auto"
+              style={{ textWrap: "balance" }}
+            >
               Google shows options. AI makes the decision faster.
             </h2>
-            <p className="text-[16px] text-white/50 mt-5 max-w-[560px] mx-auto">
+            <p data-animate="shift-sub" className="text-[16px] text-white/50 mt-5 max-w-[560px] mx-auto">
               The way people search is changing. AI is compressing the journey from search to decision, and businesses that show up get chosen.
             </p>
           </div>
 
-          {/* Google vs AI comparison */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-14">
-            <div className="bg-[#111] rounded-[20px] p-8 border border-white/8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8 sm:mb-14">
+            <div data-animate="shift-card" className="bg-[#111] rounded-[20px] p-8 border border-white/8">
               <span className="inline-block bg-[#1d1d1f] text-white/60 text-[10px] font-bold tracking-[0.18em] uppercase px-3 py-1.5 rounded-full mb-6">Google (Then)</span>
               <p className="text-[18px] font-bold text-white/70 mb-3">A list of options to explore.</p>
               <ul className="space-y-2 text-[14px] text-white/40">
@@ -188,7 +206,7 @@ export default function ServicesPage() {
                 <li>Buyer in comparison mode</li>
               </ul>
             </div>
-            <div className="bg-[#07141a] rounded-[20px] p-8 border border-[#18b5d8]/25">
+            <div data-animate="shift-card" className="bg-[#07141a] rounded-[20px] p-8 border border-[#18b5d8]/25">
               <span className="inline-block bg-[#18b5d8] text-white text-[10px] font-bold tracking-[0.18em] uppercase px-3 py-1.5 rounded-full mb-6">AI (Now)</span>
               <p className="text-[18px] font-bold text-white mb-3">A short list of trusted recommendations.</p>
               <ul className="space-y-2 text-[14px] text-white/70">
@@ -196,19 +214,18 @@ export default function ServicesPage() {
                 <li className="flex items-center gap-2"><span className="text-[#18b5d8]">✓</span> Instant trust signals</li>
                 <li className="flex items-center gap-2"><span className="text-[#18b5d8]">✓</span> Buyer ready to act immediately</li>
               </ul>
-              <p className="text-[13px] text-white/40 mt-5 italic">AI doesn&rsquo;t show everything. It recommends what deserves to be seen.</p>
+              <p className="text-[13px] text-white/40 mt-5 italic">AI doesn't show everything. It recommends what deserves to be seen.</p>
             </div>
           </div>
 
-          {/* 3 stats */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-px bg-white/5 rounded-[20px] overflow-hidden">
             {[
               { v: "44%",  label: "of consumers", body: "now use AI tools to research products, services, and local businesses.", src: "HubSpot, 2024" },
               { v: "4.4×", label: "higher conversion", body: "from AI-driven recommendations compared to traditional search.", src: "BCG, 2024" },
               { v: "70%",  label: "of users", body: "trust AI-generated recommendations when making decisions.", src: "Edelman, 2024" },
             ].map((s) => (
-              <div key={s.v} className="bg-[#111] px-7 py-8 text-center">
-                <p className="text-[clamp(2rem,4vw,3rem)] font-black text-[#18b5d8] leading-none mb-2">{s.v}</p>
+              <div key={s.v} data-animate="shift-stat" className="bg-[#111] px-7 py-8 text-center">
+                <p data-count className="text-[clamp(2rem,4vw,3rem)] font-black text-[#18b5d8] leading-none mb-2">{s.v}</p>
                 <p className="text-[14px] font-semibold text-white mb-2">{s.label}</p>
                 <p className="text-[13px] text-white/45 leading-relaxed">{s.body}</p>
                 <p className="text-[11px] text-white/20 mt-3">{s.src}</p>
@@ -218,13 +235,17 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* ── Buyers Don't Read — 3 Decision Filters ── */}
-      <section className="bg-white px-6 py-20 border-t border-[#e8e8ed]">
+      {/* ── Buyer Decision Filters ── */}
+      <section data-scene="services-filters" className="bg-white px-6 py-12 sm:py-20 border-t border-[#e8e8ed]">
         <div className="max-w-[980px] mx-auto">
-          <div className="text-center mb-14">
+          <div className="text-center mb-8 sm:mb-14">
             <p className="text-[#18b5d8] text-[13px] font-semibold tracking-[0.2em] uppercase mb-5">How Buyers Actually Choose</p>
-            <h2 className="display-lg text-[#0a0a0a]" style={{ textWrap: "balance" }}>
-              Buyers don&rsquo;t read. They filter.
+            <h2
+              data-animate="filters-title"
+              className="display-lg text-[#0a0a0a]"
+              style={{ textWrap: "balance" }}
+            >
+              Buyers don't read. They filter.
             </h2>
             <p className="text-[16px] text-[#555] mt-5 max-w-[540px] mx-auto">
               In seconds, buyers run your business through three subconscious filters. Pass them all, or lose the click.
@@ -258,7 +279,7 @@ export default function ServicesPage() {
                 statLabel: "higher conversion for businesses with strong, recent reviews.",
               },
             ].map((f) => (
-              <div key={f.n} className="bg-[#f5f5f7] rounded-[20px] p-7">
+              <div key={f.n} data-animate="filter-card" className="bg-[#f5f5f7] rounded-[20px] p-7">
                 <div className="size-9 rounded-full bg-[#18b5d8] flex items-center justify-center mb-5">
                   <span className="text-white font-bold text-[13px]">{f.n}</span>
                 </div>
@@ -273,26 +294,27 @@ export default function ServicesPage() {
             ))}
           </div>
 
-          <div className="bg-[#0a0a0a] rounded-[16px] px-8 py-6 text-center">
+          <div data-animate="filters-bar" className="bg-[#0a0a0a] rounded-[16px] px-8 py-6 text-center">
             <p className="text-[16px] text-white/70">
-              Buyers form an opinion in under <strong className="text-white">3 seconds.</strong> If you don&rsquo;t pass all three filters,{" "}
+              Buyers form an opinion in under <strong className="text-white">3 seconds.</strong> If you don't pass all three filters,{" "}
               <strong className="text-white">they move on.</strong>
             </p>
           </div>
         </div>
       </section>
 
-      {/* ── Services ── */}
+      {/* ── Individual Services ── */}
       {services.map((s) => (
         <section
           key={s.id}
           id={s.id}
-          className={s.dark ? "bg-[#0a0a0a] px-6 py-24 border-t border-white/5" : "bg-white px-6 py-24 border-t border-[#e8e8ed]"}
+          data-scene={`service-${s.n}`}
+          className={s.dark ? "bg-[#0a0a0a] px-6 py-14 sm:py-24 border-t border-white/5" : "bg-white px-6 py-14 sm:py-24 border-t border-[#e8e8ed]"}
         >
-          <div className="max-w-[980px] mx-auto grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-16 items-start">
+          <div className="max-w-[980px] mx-auto grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-10 lg:gap-16 items-start">
             {/* Left */}
-            <div>
-              <div className="flex items-center gap-4 mb-8">
+            <div data-animate="service-left">
+              <div className="flex items-center gap-4 mb-6 sm:mb-8">
                 <span className="font-mono text-[#18b5d8] text-[11px] tracking-[0.22em] uppercase">{s.n}</span>
                 <span className={`w-px h-4 ${s.dark ? "bg-white/20" : "bg-[#1d1d1f]/15"}`} aria-hidden="true" />
                 <span className={`text-[13px] font-semibold tracking-[0.08em] uppercase ${s.dark ? "text-white/50" : "text-[#1d1d1f]/50"}`}>{s.eyebrow}</span>
@@ -305,10 +327,10 @@ export default function ServicesPage() {
               </p>
             </div>
             {/* Right */}
-            <div className="lg:pt-[72px]">
+            <div data-animate="service-right" className="lg:pt-[72px]">
               <ul className="space-y-4 mb-10">
                 {s.bullets.map((b) => (
-                  <li key={b} className="flex items-start gap-3">
+                  <li key={b} data-animate="service-bullet" className="flex items-start gap-3">
                     <span className="text-[#18b5d8] font-bold leading-none mt-1 shrink-0" aria-hidden="true">✓</span>
                     <span className={`body-copy ${s.dark ? "text-white/70" : "text-[#333333]"}`}>{b}</span>
                   </li>
@@ -333,12 +355,16 @@ export default function ServicesPage() {
         </section>
       ))}
 
-      {/* ── How This Was Possible in 30 Days ── */}
-      <section className="bg-[#f5f5f7] px-6 py-20 border-t border-[#e8e8ed]">
+      {/* ── 30 Days comparison ── */}
+      <section data-scene="services-compare" className="bg-[#f5f5f7] px-6 py-12 sm:py-20 border-t border-[#e8e8ed]">
         <div className="max-w-[980px] mx-auto">
-          <div className="text-center mb-14">
+          <div className="text-center mb-8 sm:mb-14">
             <p className="text-[#18b5d8] text-[13px] font-semibold tracking-[0.2em] uppercase mb-5">Why Our Clients See Results in 30 Days</p>
-            <h2 className="display-lg text-[#0a0a0a]" style={{ textWrap: "balance" }}>
+            <h2
+              data-animate="compare-title"
+              className="display-lg text-[#0a0a0a]"
+              style={{ textWrap: "balance" }}
+            >
               Most agencies take months. We compressed it into 30 days.
             </h2>
             <p className="text-[16px] text-[#555] mt-5 max-w-[560px] mx-auto">
@@ -347,8 +373,7 @@ export default function ServicesPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {/* Traditional */}
-            <div className="bg-white rounded-[20px] p-8 border border-[#e8e8ed]">
+            <div data-animate="compare-left" className="bg-white rounded-[20px] p-8 border border-[#e8e8ed]">
               <span className="inline-block bg-[#1d1d1f] text-white text-[10px] font-bold tracking-[0.16em] uppercase px-3 py-1.5 rounded-full mb-6">The Traditional Approach</span>
               <p className="text-[17px] font-bold text-[#1d1d1f] mb-5">Slow, manual, and disconnected.</p>
               <ul className="space-y-3">
@@ -367,8 +392,7 @@ export default function ServicesPage() {
               </ul>
             </div>
 
-            {/* Our approach */}
-            <div className="bg-[#0a0a0a] rounded-[20px] p-8 border border-[#18b5d8]/20">
+            <div data-animate="compare-right" className="bg-[#0a0a0a] rounded-[20px] p-8 border border-[#18b5d8]/20">
               <span className="inline-block bg-[#18b5d8] text-white text-[10px] font-bold tracking-[0.16em] uppercase px-3 py-1.5 rounded-full mb-6">Our Approach</span>
               <p className="text-[17px] font-bold text-white mb-5">Fast, intelligent, and fully aligned.</p>
               <ul className="space-y-3">
@@ -391,21 +415,25 @@ export default function ServicesPage() {
             </div>
           </div>
 
-          <div className="bg-[#0a0a0a] rounded-[16px] px-8 py-6 text-center mt-4">
+          <div data-animate="compare-bar" className="bg-[#0a0a0a] rounded-[16px] px-8 py-6 text-center mt-4">
             <p className="text-[16px] text-white/70">
-              This isn&rsquo;t about working harder.{" "}
-              <strong className="text-white">It&rsquo;s about using the right system.</strong>
+              This isn't about working harder.{" "}
+              <strong className="text-white">It's about using the right system.</strong>
             </p>
           </div>
         </div>
       </section>
 
-      {/* ── DIY vs AI Visibility Toolkit ── */}
-      <section className="bg-white px-6 py-20 border-t border-[#e8e8ed]">
+      {/* ── DIY vs Toolkit ── */}
+      <section data-scene="services-compare" className="bg-white px-6 py-12 sm:py-20 border-t border-[#e8e8ed]">
         <div className="max-w-[980px] mx-auto">
-          <div className="text-center mb-14">
+          <div className="text-center mb-8 sm:mb-14">
             <p className="text-[#18b5d8] text-[13px] font-semibold tracking-[0.2em] uppercase mb-5">How to Move Forward</p>
-            <h2 className="display-lg text-[#0a0a0a]" style={{ textWrap: "balance" }}>
+            <h2
+              data-animate="compare-title"
+              className="display-lg text-[#0a0a0a]"
+              style={{ textWrap: "balance" }}
+            >
               Two ways to get visible. One is harder.
             </h2>
             <p className="text-[16px] text-[#555] mt-5 max-w-[560px] mx-auto">
@@ -414,8 +442,7 @@ export default function ServicesPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-            {/* DIY — reframed as The Hard Way */}
-            <div className="bg-[#f5f5f7] rounded-[20px] p-8 border border-[#e8e8ed]">
+            <div data-animate="compare-left" className="bg-[#f5f5f7] rounded-[20px] p-8 border border-[#e8e8ed]">
               <p className="text-[11px] font-bold text-[#7a7a7a] tracking-[0.18em] uppercase mb-3">The Hard Way</p>
               <p className="text-[18px] font-bold text-[#0a0a0a] mb-2">Build it yourself, platform by platform.</p>
               <p className="text-[14px] text-[#555] mb-6">You can build AI visibility manually — but it requires consistent time across every platform, every month.</p>
@@ -440,8 +467,7 @@ export default function ServicesPage() {
               </div>
             </div>
 
-            {/* Toolkit */}
-            <div className="bg-[#0a0a0a] rounded-[20px] p-8 border border-[#18b5d8]/20">
+            <div data-animate="compare-right" className="bg-[#0a0a0a] rounded-[20px] p-8 border border-[#18b5d8]/20">
               <p className="text-[11px] font-bold text-[#18b5d8] tracking-[0.18em] uppercase mb-3">Use the Tools We Use</p>
               <p className="text-[18px] font-bold text-white mb-2">The same system our team uses. Now in your hands.</p>
               <p className="text-[14px] text-white/60 mb-6">Our AI Visibility Toolkit makes it faster, easier, and more effective to stay visible everywhere.</p>
@@ -467,23 +493,22 @@ export default function ServicesPage() {
             </div>
           </div>
 
-          {/* Chamber note */}
-          <div className="bg-[#0a0a0a] rounded-[16px] px-8 py-6 flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left">
+          <div data-animate="compare-bar" className="bg-[#0a0a0a] rounded-[16px] px-8 py-6 flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left">
             <div className="flex-1">
               <p className="text-[14px] text-white/60">
                 Through our partnership with the Chamber, members have direct access to the AI Visibility Toolkit.{" "}
                 <span className="text-white">For any business outside the chamber, this is still something you can implement, either manually or with the same tools.</span>
               </p>
             </div>
-            <p className="text-[12px] font-semibold text-[#18b5d8] shrink-0 uppercase tracking-[0.14em]">The difference isn&rsquo;t whether this works. It&rsquo;s how you choose to implement it.</p>
+            <p className="text-[12px] font-semibold text-[#18b5d8] shrink-0 uppercase tracking-[0.14em]">The difference isn't whether this works. It's how you choose to implement it.</p>
           </div>
         </div>
       </section>
 
       {/* ── FAQ ── */}
-      <section className="bg-[#f5f5f7] px-6 py-20 border-t border-[#e8e8ed]">
+      <section data-scene="services-faq" className="bg-[#f5f5f7] px-6 py-12 sm:py-20 border-t border-[#e8e8ed]">
         <div className="max-w-[720px] mx-auto">
-          <div className="text-center mb-12">
+          <div className="text-center mb-8 sm:mb-12">
             <p className="text-[#18b5d8] text-[13px] font-semibold tracking-[0.2em] uppercase mb-5">Common Questions</p>
             <h2 className="display-lg text-[#0a0a0a]" style={{ textWrap: "balance" }}>
               Everything you need to know.
@@ -527,6 +552,7 @@ export default function ServicesPage() {
             ].map(({ q, a }) => (
               <details
                 key={q}
+                data-animate="faq-item"
                 className="group bg-white rounded-[16px] border border-[#e8e8ed] overflow-hidden"
               >
                 <summary className="flex items-center justify-between gap-4 px-7 py-5 cursor-pointer list-none select-none">
@@ -558,26 +584,31 @@ export default function ServicesPage() {
             <Link href="/vs/salesforce" className="text-[14px] font-semibold text-[#1d1d1f] hover:text-[#18b5d8] motion-safe:transition-colors duration-150">
               AI Employees vs. Salesforce AI Agents →
             </Link>
+            <Link href="/vs/seo" className="text-[14px] font-semibold text-[#1d1d1f] hover:text-[#18b5d8] motion-safe:transition-colors duration-150">
+              AI Visibility vs. Traditional SEO →
+            </Link>
           </div>
         </div>
       </section>
 
       {/* ── CTA ── */}
-      <section className="bg-[#0a0a0a] py-28 px-6 text-center">
+      <section data-scene="services-cta" className="bg-[#0a0a0a] py-16 sm:py-28 px-6 text-center">
         <div className="max-w-[560px] mx-auto">
-          <p className="text-[13px] font-semibold tracking-[0.2em] uppercase text-[#18b5d8] mb-6">Not sure where to start?</p>
-          <h2 className="display-lg text-white mb-6" style={{ textWrap: "balance" }}>
+          <p data-animate="cta-label" className="text-[13px] font-semibold tracking-[0.2em] uppercase text-[#18b5d8] mb-4 sm:mb-6">Not sure where to start?</p>
+          <h2 data-animate="cta-title" className="display-lg text-white mb-4 sm:mb-6" style={{ textWrap: "balance" }}>
             Start with a free AI Audit.
           </h2>
-          <p className="lead-airy text-white/50 mb-12">
+          <p data-animate="cta-sub" className="lead-airy text-white/50 mb-8 sm:mb-12">
             Zero commitment. Maximum clarity.
           </p>
-          <Link
-            href="/free-report"
-            className="btn-press inline-block bg-[#18b5d8] text-white text-[17px] font-semibold rounded-full px-[32px] py-[15px] hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0a0a] [touch-action:manipulation]"
-          >
-            Get My Free AI Audit
-          </Link>
+          <div data-animate="cta-btn">
+            <Link
+              href="/free-report"
+              className="btn-press inline-block bg-[#18b5d8] text-white text-[17px] font-semibold rounded-full px-[32px] py-[15px] hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0a0a] [touch-action:manipulation]"
+            >
+              Get My Free AI Audit
+            </Link>
+          </div>
         </div>
       </section>
     </>
