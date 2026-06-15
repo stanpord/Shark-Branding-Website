@@ -101,7 +101,8 @@ export default function ContactForm() {
           <option value="">Select one…</option>
           <option value="Free Visibility Audit">Free Visibility Audit</option>
           <option value="AI Visibility Toolkit — Done For You ($2,000/mo)">AI Visibility Toolkit — Done For You ($2,000/mo)</option>
-          <option value="AI Visibility Toolkit — Self-Guided ($497/mo)">AI Visibility Toolkit — Self-Guided ($497/mo)</option>
+          <option value="AI Visibility Toolkit — Self-Guided ($997/mo)">AI Visibility Toolkit — Self-Guided ($997/mo)</option>
+          <option value="North Tampa Bay Chamber Member — Member Pricing">North Tampa Bay Chamber Member — Member Pricing</option>
           <option value="AI Marketing Employees">AI Marketing Employees</option>
           <option value="AI Operations Employees">AI Operations Employees</option>
           <option value="Custom AI Consulting">Custom AI Consulting</option>

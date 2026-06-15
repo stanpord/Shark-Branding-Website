@@ -65,7 +65,7 @@ export default function Page() {
     reach over <strong>1.5 billion users every month</strong>, appear across more than{" "}
     <strong>100 countries</strong>, and are served on over{" "}
     <strong>1 trillion queries per year</strong>.<sup>1</sup> By mid-2026, they appear on
-    more than 60% of all Google searches, and they are moving fast into local business queries.
+    more than 60% of all Google searches (Google I/O, 2025), and they are moving fast into local business queries.
    </p>
 
    <p>

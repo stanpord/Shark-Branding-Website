@@ -66,7 +66,7 @@ const plansSchema = {
 export const metadata: Metadata = {
   title: "AI Employees & AI Visibility Pricing Tampa Bay | Shark AI Solutions",
   description:
-    "Get found on Google, ChatGPT, and Gemini without paying for ads. Two plans: Self-Guided at $497/mo or Done For You at $2,000/mo. 90-day results guarantee.",
+    "Get found on Google, ChatGPT, and Gemini without paying for ads. Two plans: Self-Guided at $997/mo or Done For You at $2,000/mo. 90-day results guarantee.",
 };
 
 const selfGuidedFeatures = [
@@ -135,7 +135,7 @@ const faqs = [
   },
   {
     q: "Are both Self-Guided commitment lengths still available?",
-    a: "Yes. The 12-month plan is $497/month — that's a saving of $1,200 compared to paying $597/month for twelve months. The 3-month plan is $597/month for businesses that want to test the framework first. Both include the exact same toolkit.",
+    a: "Yes. The 12-month plan is $997/month. The 3-month plan is $1,297/month for businesses that want to test the framework first. Both include the exact same toolkit.",
   },
   {
     q: "What does \"AI visibility\" actually mean for a local business?",
@@ -247,24 +247,16 @@ export default function PlansPage() {
 
               <div className="mt-6 mb-2">
                 <div className="flex items-baseline gap-2">
-                  <span className="text-[42px] font-semibold text-white leading-none">$497</span>
+                  <span className="text-[42px] font-semibold text-white leading-none">$997</span>
                   <span className="text-[15px] text-white/40">/mo</span>
                   <span className="text-[11px] font-bold tracking-wide uppercase text-[#18b5d8] bg-[#18b5d8]/10 rounded-full px-3 py-1">
-                    Save $1,200
+                    Save $3,600/yr
                   </span>
                 </div>
-                <p className="text-[13px] text-white/35 mt-1">12-month commitment — best value</p>
+                <p className="text-[13px] text-white/35 mt-1">12-month commitment — best value · $1,297/mo month-to-month</p>
               </div>
 
-              {/* Social proof — small business */}
-              <div className="mt-4 bg-white/5 border border-white/10 rounded-[12px] px-4 py-3">
-                <p className="text-[13px] text-white/70 leading-relaxed italic">
-                  &ldquo;We had no idea our business wasn&rsquo;t showing up in AI results. The toolkit made it obvious what to fix first — and within 60 days we were getting calls from ChatGPT searches.&rdquo;
-                </p>
-                <p className="text-[11px] text-white/35 mt-2 not-italic">— Small business owner, Wesley Chapel, FL</p>
-              </div>
-
-              <ul className="mt-6 space-y-3 flex-1">
+<ul className="mt-6 space-y-3 flex-1">
                 {selfGuidedFeatures.map((f) => (
                   <li key={f} className="flex items-start gap-3 text-[14px] text-white/60 leading-snug">
                     <CheckIcon />
@@ -279,7 +271,7 @@ export default function PlansPage() {
                 rel="noopener noreferrer"
                 className="btn-press mt-6 block text-center bg-white text-[#0a0a0a] text-[15px] font-semibold rounded-full px-6 py-3.5 hover:bg-[#18b5d8] hover:text-white motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0a0a] [touch-action:manipulation]"
               >
-                Start 12-Month Plan — $497/mo
+                Start 12-Month Plan — $997/mo
               </a>
               <p className="text-center text-[13px] text-white/30 mt-3">
                 Shorter commitment?{" "}
@@ -289,7 +281,7 @@ export default function PlansPage() {
                   rel="noopener noreferrer"
                   className="text-[#18b5d8] hover:underline"
                 >
-                  3-month plan at $597/mo →
+                  3-month plan at $1,297/mo →
                 </a>
               </p>
             </div>
@@ -446,7 +438,7 @@ export default function PlansPage() {
             <div className="grid grid-cols-4 bg-white/5 border-b border-white/10">
               <div className="px-5 py-4" />
               {[
-                { label: "Toolkit",      sub: "$497/mo",      highlight: false },
+                { label: "Toolkit",      sub: "$997/mo",      highlight: false },
                 { label: "Done For You", sub: "$2,000/mo",    highlight: true  },
                 { label: "Custom",       sub: "From $4,000",  highlight: false },
               ].map((col) => (

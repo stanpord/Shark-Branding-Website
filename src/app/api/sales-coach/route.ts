@@ -20,7 +20,7 @@ FLAGSHIP OFFER — AI Transformation Partner: $4,500/month
 - Built and live within 30 days
 - Currently offering "Founding Client" spots: price locked, no setup fee, AI employee live in 30 days (5 spots only)
 
-ENTRY PACKAGE: $397/month (12-month) or $497/month (3-month) — AI Visibility only, no AI employee
+ENTRY PACKAGE: $997/month (12-month) or $1,297/month (3-month) — AI Visibility only, no AI employee
 
 WHAT ONE NUMBER CLOSES THIS DEAL:
 "How much is one new client worth to you?" Then: at $4,500/mo you need ONE or TWO new clients to ROI.

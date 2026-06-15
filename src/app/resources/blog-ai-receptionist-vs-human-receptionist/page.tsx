@@ -268,6 +268,10 @@ export default function AiVsHumanReceptionistPage() {
                 <span className="text-[#18b5d8] font-bold shrink-0">→</span>
                 <span className="text-[15px] text-[#333] group-hover:text-[#18b5d8] transition-colors">5 Tasks Wesley Chapel Business Owners Should Automate First</span>
               </Link>
+              <Link href="/resources/blog-why-tampa-bay-businesses-switching-ai-employees" className="flex items-center gap-3 group">
+                <span className="text-[#18b5d8] font-bold shrink-0">→</span>
+                <span className="text-[15px] text-[#333] group-hover:text-[#18b5d8] transition-colors">Why Tampa Bay Businesses Are Switching to AI Employees in 2026</span>
+              </Link>
               <Link href="/aiemployees" className="flex items-center gap-3 group">
                 <span className="text-[#18b5d8] font-bold shrink-0">→</span>
                 <span className="text-[15px] text-[#333] group-hover:text-[#18b5d8] transition-colors">Meet Gemma and the full AI employee team</span>

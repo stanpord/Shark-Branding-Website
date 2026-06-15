@@ -95,7 +95,7 @@ const services = [
       "Initial changes visible in 7–14 days",
       "Measurable ranking movement within 30 days",
       "Monthly reporting and strategy calls",
-      "Two engagement levels: Self-Guided ($497/mo) or Done For You ($2,000/mo)",
+      "Two engagement levels: Self-Guided ($997/mo) or Done For You ($2,000/mo)",
     ],
     cta: "Explore the Toolkit", href: "/contact",
   },
@@ -547,7 +547,7 @@ export default function ServicesPage() {
               },
               {
                 q: "What's the difference between the Self-Guided and Done For You Toolkit options?",
-                a: "The Self-Guided plan ($497/month) gives you access to our AI Visibility Toolkit dashboard, tools, and framework so your team can execute the work. The Done For You plan ($2,000/month) means our team handles everything — listings, reviews, content updates, monitoring, and monthly strategy calls. Both include the same proven framework. The difference is who does the work.",
+                a: "The Self-Guided plan ($997/month, 12-month commitment or $1,297/month for 3 months) gives you access to our AI Visibility Toolkit dashboard, tools, and framework so your team can execute the work. The Done For You plan ($2,000/month) means our team handles everything — listings, reviews, content updates, monitoring, and monthly strategy calls. Both include the same proven framework. The difference is who does the work. North Tampa Bay Chamber members have access to a special member rate — reach out directly to learn more.",
               },
             ].map(({ q, a }) => (
               <details

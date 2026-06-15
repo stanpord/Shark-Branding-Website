@@ -5,6 +5,7 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import ChatWidget from "@/components/ChatWidget";
 import ExitIntentPopup from "@/components/ExitIntentPopup";
+import AuditModal from "@/components/AuditModal";
 import { Analytics } from "@vercel/analytics/next";
 
 const inter = Inter({
@@ -153,9 +154,47 @@ const structuredData = {
       "@type": "WebSite",
       "@id": "https://sharkbrandingsolutions.com/#website",
       url: "https://sharkbrandingsolutions.com",
-      name: "Shark Branding Solutions",
+      name: "Shark AI Solutions",
       publisher: { "@id": "https://sharkbrandingsolutions.com/#organization" },
       inLanguage: "en-US",
+    },
+    {
+      "@type": "OfferCatalog",
+      "@id": "https://sharkbrandingsolutions.com/#services",
+      name: "AI Consulting & Automation Services",
+      provider: { "@id": "https://sharkbrandingsolutions.com/#organization" },
+      itemListElement: [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            name: "AI Visibility Consulting",
+            description: "Full audit and optimization of your business's presence across ChatGPT, Google AI Overviews, Gemini, and Perplexity. Includes citation fixes, schema markup, trust signal building, and monthly reporting.",
+            url: "https://sharkbrandingsolutions.com/ai-visibility-consulting",
+            areaServed: "Tampa Bay, FL",
+          },
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            name: "AI Employees",
+            description: "AI-powered employees for local businesses: chat receptionist, voice receptionist, reputation specialist, AI CRM, and sales coach. Automates lead follow-up, review requests, and customer communication 24/7.",
+            url: "https://sharkbrandingsolutions.com/aiemployees",
+            areaServed: "Tampa Bay, FL",
+          },
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            name: "Free AI Visibility Report",
+            description: "Free 48-hour audit showing exactly how your business appears across search, maps, reviews, and AI platforms.",
+            url: "https://sharkbrandingsolutions.com/free-report",
+            areaServed: "Tampa Bay, FL",
+          },
+        },
+      ],
     },
   ],
 };
@@ -184,6 +223,7 @@ export default function RootLayout({
         <Footer />
         <ChatWidget />
         <ExitIntentPopup />
+        <AuditModal />
         <Analytics />
       </body>
     </html>

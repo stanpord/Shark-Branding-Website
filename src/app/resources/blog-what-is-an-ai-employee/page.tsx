@@ -134,7 +134,7 @@ export default function WhatIsAnAiEmployeePage() {
             <h2 className="text-[26px] font-bold text-[#0a0a0a] mt-12 mb-4">Why local businesses in Wesley Chapel and Tampa Bay need them now</h2>
 
             <p>
-              The challenge for most local service businesses is simple: leads come in at unpredictable times, and response speed determines whether you win or lose the job. Research consistently shows that responding to a lead within five minutes makes you 21 times more likely to close it. Most businesses respond in hours. Some never respond at all.
+              The challenge for most local service businesses is simple: leads come in at unpredictable times, and response speed determines whether you win or lose the job. Research from the Harvard Business Review shows that responding to a lead within five minutes makes you 21 times more likely to close it. Most businesses respond in hours. Some never respond at all.
             </p>
 
             <p>
@@ -224,6 +224,25 @@ export default function WhatIsAnAiEmployeePage() {
                   <div className="px-6 pb-5 text-[14px] text-[#555] leading-relaxed">{f.a}</div>
                 </details>
               ))}
+            </div>
+          </div>
+
+          {/* Related reading */}
+          <div className="mt-12 border-t border-[#e8e8ed] pt-10">
+            <p className="text-[13px] font-bold uppercase tracking-[0.15em] text-[#999] mb-4">Related reading</p>
+            <div className="space-y-3">
+              <Link href="/resources/blog-ai-receptionist-vs-human-receptionist" className="flex items-center gap-3 group">
+                <span className="text-[#18b5d8] font-bold shrink-0">→</span>
+                <span className="text-[15px] text-[#333] group-hover:text-[#18b5d8] transition-colors">AI Receptionist vs. Human Receptionist: What Tampa Bay Businesses Need to Know</span>
+              </Link>
+              <Link href="/resources/blog-5-automations-wesley-chapel-businesses" className="flex items-center gap-3 group">
+                <span className="text-[#18b5d8] font-bold shrink-0">→</span>
+                <span className="text-[15px] text-[#333] group-hover:text-[#18b5d8] transition-colors">5 Tasks Wesley Chapel Business Owners Should Automate First</span>
+              </Link>
+              <Link href="/resources/blog-why-tampa-bay-businesses-switching-ai-employees" className="flex items-center gap-3 group">
+                <span className="text-[#18b5d8] font-bold shrink-0">→</span>
+                <span className="text-[15px] text-[#333] group-hover:text-[#18b5d8] transition-colors">Why Tampa Bay Businesses Are Switching to AI Employees in 2026</span>
+              </Link>
             </div>
           </div>
 

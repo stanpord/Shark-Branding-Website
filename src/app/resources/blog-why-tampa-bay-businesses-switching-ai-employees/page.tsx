@@ -224,6 +224,27 @@ export default function BlogWhySwitchingPage() {
         </div>
       </section>
 
+      {/* Related reading */}
+      <section className="bg-white px-6 py-12 border-t border-[#e8e8ed]">
+        <div className="max-w-[760px] mx-auto">
+          <p className="text-[13px] font-bold uppercase tracking-[0.15em] text-[#999] mb-5">Related reading</p>
+          <div className="space-y-3">
+            <Link href="/resources/blog-what-is-an-ai-employee" className="flex items-center gap-3 group">
+              <span className="text-[#18b5d8] font-bold shrink-0">→</span>
+              <span className="text-[15px] text-[#333] group-hover:text-[#18b5d8] transition-colors">What Is an AI Employee? A Plain-English Guide for Local Businesses</span>
+            </Link>
+            <Link href="/resources/blog-ai-receptionist-vs-human-receptionist" className="flex items-center gap-3 group">
+              <span className="text-[#18b5d8] font-bold shrink-0">→</span>
+              <span className="text-[15px] text-[#333] group-hover:text-[#18b5d8] transition-colors">AI Receptionist vs. Human Receptionist: What Tampa Bay Businesses Need to Know</span>
+            </Link>
+            <Link href="/resources/blog-5-automations-wesley-chapel-businesses" className="flex items-center gap-3 group">
+              <span className="text-[#18b5d8] font-bold shrink-0">→</span>
+              <span className="text-[15px] text-[#333] group-hover:text-[#18b5d8] transition-colors">5 Tasks Wesley Chapel Business Owners Should Automate First</span>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="bg-[#0a0a0a] py-28 px-6 text-center">
         <div className="max-w-[560px] mx-auto">

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import SnapshotWidget from "@/components/SnapshotWidget";
+import AuditModalTrigger from "@/components/AuditModalTrigger";
 
 const freeReportSchema = {
   "@context": "https://schema.org",
@@ -43,7 +43,7 @@ const freeReportSchema = {
 export const metadata: Metadata = {
   title: "Free AI Audit — Shark AI Solutions",
   description:
-    "See exactly how your business appears across search, maps, reviews, and AI platforms. Delivered within 48 hours. We walk you through it personally.",
+    "See exactly how your business appears across search, maps, reviews, and AI platforms. We walk through every finding with you in a free 1-hour session.",
 };
 
 export default function FreeReportPage() {
@@ -62,7 +62,7 @@ export default function FreeReportPage() {
             <span className="text-[#18b5d8]">stands — before you spend a dollar.</span>
           </h1>
           <p className="lead-airy text-[#333333] mb-10">
-            We audit how your business appears across AI search, maps, and reviews — then call you personally to walk through what we found. 100% free. No pitch.
+            We audit how your business appears across AI search, maps, and reviews, then walk through every finding with you in a 1-hour session. You leave with a specific action plan. 100% free. No pitch.
           </p>
           {/* Proof strip */}
           <div className="flex items-center justify-center gap-0 border border-[#e8e8ed] rounded-[16px] overflow-hidden divide-x divide-[#e8e8ed] mb-8">
@@ -114,10 +114,40 @@ export default function FreeReportPage() {
         </div>
       </section>
 
-      {/* ── Widget ── */}
-      <section className="bg-[#f5f5f7] px-6 py-16">
+      {/* ── CTA ── */}
+      <section className="bg-[#f5f5f7] px-6 pt-16 pb-0">
+        <div className="max-w-[680px] mx-auto text-center">
+          <p className="text-[13px] font-semibold tracking-[0.2em] uppercase text-[#18b5d8] mb-3">Ready to start?</p>
+          <p className="text-[22px] font-semibold text-[#0a0a0a] mb-8" style={{ textWrap: "balance" }}>Enter your business details to begin the audit</p>
+          <AuditModalTrigger
+            className="btn-press inline-block bg-[#18b5d8] text-white text-[17px] font-semibold rounded-full px-[36px] py-[16px] hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 focus-visible:ring-offset-[#f5f5f7] [touch-action:manipulation]"
+            label="Get My Free AI Audit"
+          />
+          <p className="text-[13px] text-[#86868b] mt-4 mb-16">Free. No commitment. Reviewed with you personally.</p>
+        </div>
+      </section>
+
+      {/* ── Book session ── */}
+      <section className="bg-[#f5f5f7] px-6 pt-8 pb-16">
         <div className="max-w-[680px] mx-auto">
-          <SnapshotWidget />
+          <div className="bg-white border border-[#e8e8ed] rounded-[20px] px-8 py-8 text-center">
+            <div className="w-9 h-9 rounded-full bg-[#18b5d8] flex items-center justify-center mx-auto mb-4">
+              <span className="text-white font-bold text-[13px]">2</span>
+            </div>
+            <p className="text-[15px] font-semibold text-[#1d1d1f] mb-2">Book your review session</p>
+            <p className="text-[14px] text-[#6e6e73] leading-relaxed mb-6" style={{ textWrap: "balance" }}>
+              After you submit your business info above, book your 1-hour review session. This is where we walk through every finding together and you leave with a prioritized action plan.
+            </p>
+            <a
+              href="https://bookmenow.info/book/mstanaland/ai-visibility-report-review"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-[#18b5d8] text-white text-[15px] font-semibold rounded-full px-8 py-4 hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150"
+            >
+              Book My Report Review
+            </a>
+            <p className="text-[12px] text-[#9b9b9b] mt-4">Free. 1 hour. No commitment required.</p>
+          </div>
         </div>
       </section>
 

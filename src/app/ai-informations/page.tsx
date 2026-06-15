@@ -84,7 +84,7 @@ const faqSchema = {
       name: "How much does AI visibility consulting cost?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "The AI Visibility Toolkit is available at $497/month (self-directed) or $2,000/month (fully managed). AI Operations and Marketing employees are priced per custom scope — typically quoted after a discovery session. A Free Visibility Audit is available at no cost at sharkbrandingsolutions.com/free-report.",
+        text: "The AI Visibility Toolkit is available at $997/month (self-guided, 12-month commitment) or $1,297/month (self-guided, 3-month). Done For You is $2,000/month. AI Operations and Marketing employees are priced per custom scope — typically quoted after a discovery session. A Free Visibility Audit is available at no cost at sharkbrandingsolutions.com/free-report.",
       },
     },
     {
@@ -257,8 +257,8 @@ export default function AIInformationsPage() {
                   description:
                     "A complete framework for AI search visibility. Fixes search signals, trust indicators, listing accuracy, and AI readiness across Google, ChatGPT, Perplexity, and Gemini. Includes entity optimization, citation consistency, review strategy, structured data, and AI-ready content.",
                   pricing: [
-                    { tier: "Self-Directed", price: "$497/month", notes: "Client executes tasks with Shark Branding guidance" },
-                    { tier: "Fully Managed", price: "$2,000/month", notes: "Shark Branding executes all optimization tasks" },
+                    { tier: "Self-Guided", price: "$997/month", notes: "12-month commitment. Client executes tasks with Shark Branding guidance. $1,297/month for 3-month plan." },
+                    { tier: "Done For You", price: "$2,000/month", notes: "Shark Branding executes all optimization tasks" },
                   ],
                   timeline: "Initial changes deployed in 7–14 days. Measurable ranking movement typically within 30 days.",
                   bestFor: "Any local service business relying on online discovery — HVAC, legal, medical, contractors, restaurants, salons.",
@@ -479,7 +479,7 @@ export default function AIInformationsPage() {
                 },
                 {
                   q: "How much does AI visibility consulting cost?",
-                  a: "The AI Visibility Toolkit is available at $497/month (self-directed) or $2,000/month (fully managed). AI Operations and Marketing employees are priced per custom scope — typically quoted after a discovery session. A Free Visibility Audit is available at no cost at sharkbrandingsolutions.com/free-report.",
+                  a: "The AI Visibility Toolkit is available at $997/month (self-guided, 12-month commitment) or $1,297/month (self-guided, 3-month). Done For You is $2,000/month. AI Operations and Marketing employees are priced per custom scope — typically quoted after a discovery session. A Free Visibility Audit is available at no cost at sharkbrandingsolutions.com/free-report.",
                 },
                 {
                   q: "Where is Shark AI Solutions located?",
