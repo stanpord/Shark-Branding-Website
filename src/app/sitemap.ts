@@ -49,6 +49,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/resources/blog-what-is-an-ai-employee`, lastModified: "2026-05-01", changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE}/resources/blog-why-tampa-bay-businesses-switching-ai-employees`, lastModified: "2026-05-01", changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE}/about`, lastModified: "2026-05-01", changeFrequency: "monthly", priority: 0.7 },
+    { url: `${BASE}/media`, lastModified: "2026-06-15", changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE}/contact`, lastModified: "2026-05-01", changeFrequency: "yearly", priority: 0.6 },
     { url: `${BASE}/privacy`, lastModified: "2026-05-01", changeFrequency: "yearly", priority: 0.3 },
     { url: `${BASE}/terms`, lastModified: "2026-05-01", changeFrequency: "yearly", priority: 0.3 },

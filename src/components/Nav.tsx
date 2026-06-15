@@ -14,6 +14,7 @@ const links = [
   { href: "/plans", label: "Pricing" },
   { href: "/resources", label: "Resources" },
   { href: "/about", label: "About" },
+  { href: "/media", label: "Media" },
   { href: "/contact", label: "Contact" },
 ];
 
