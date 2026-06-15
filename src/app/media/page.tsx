@@ -10,14 +10,29 @@ export const metadata: Metadata = {
 };
 
 const featuredLogos = [
-  { name: "WFLA News Channel 8", src: "/press-logos/wfla.png", width: 120, height: 40 },
-  { name: "Tampa Bay Times", src: "/press-logos/tampabay.svg", width: 140, height: 36 },
-  { name: "Bay News 9", src: "/press-logos/baynews9.png", width: 80, height: 48 },
   { name: "AIthority", src: "/press-logos/aithority.png", width: 120, height: 36 },
-  { name: "St. Pete Catalyst", src: "/press-logos/stpetecatalyst.png", width: 120, height: 40 },
-  { name: "PR Newswire", src: "/press-logos/prnewswire.svg", width: 130, height: 40 },
-  { name: "Neighborhood News", src: "/press-logos/neighborhoodnews.png", width: 130, height: 44 },
-  { name: "IT Tech Pulse", src: "/press-logos/ittechpulse.png", width: 120, height: 36 },
+  { name: "Bay News 9", src: "/press-logos/baynews9.png", width: 70, height: 70 },
+  { name: "WFLA News Channel 8", src: "/press-logos/wfla.png", width: 130, height: 65 },
+  { name: "Tampa Bay Times", src: "/press-logos/tampabay-times.png", width: 150, height: 56 },
+  { name: "Neighborhood News", src: "/press-logos/neighborhoodnews-pdf.png", width: 150, height: 44 },
+  { name: "St. Pete Catalyst", src: "/press-logos/stpetecatalyst.png", width: 130, height: 40 },
+];
+
+const broadcastLogos = [
+  { name: "Spotify", src: "/press-logos/spotify.png", type: "Podcast" },
+  { name: "Apple Podcasts", src: "/press-logos/apple-podcasts.png", type: "Podcast" },
+  { name: "Google Podcasts", src: "/press-logos/google-podcasts.png", type: "Podcast" },
+  { name: "YouTube TV", src: "/press-logos/youtube-tv.png", type: "Streaming" },
+  { name: "Roku", src: "/press-logos/roku.png", type: "Streaming" },
+  { name: "Fire TV", src: "/press-logos/firetv.png", type: "Streaming" },
+  { name: "Apple TV", src: "/press-logos/apple-tv.png", type: "Streaming" },
+  { name: "AM 860", src: "/press-logos/am860.png", type: "Radio" },
+];
+
+const broadcastText = [
+  { name: "iHeart Radio", type: "Radio / Podcast" },
+  { name: "102.5 The Bone", type: "Radio" },
+  { name: "Binge Networks", type: "Streaming" },
 ];
 
 const editorial = [
@@ -63,35 +78,7 @@ const editorial = [
   },
 ];
 
-const syndications = [
-  { outlet: "PR Newswire", href: "https://pr.sandyjournal.com/article/Shark-Branding-Solutions-Launches-Shark-AI-Hackathon-to-Build-the-Future-of-Human-First-AI-Employees/6a1236f9004597ee6ba12579" },
-  { outlet: "StreetInsider", href: "https://www.streetinsider.com/Press+Releases/Shark+Branding+Solutions+Launches+Shark+AI+Hackathon+to+Build+the+Future+of+Human-First+AI+Employees/26543649.html" },
-  { outlet: "ADVFN", href: "https://www.advfn.com/stock-market/stock-news/98599067/shark-branding-solutions-launches-shark-ai-hackath" },
-  { outlet: "Moultrie Observer", href: "https://pr.moultrieobserver.com/article/Shark-Branding-Solutions-Launches-Shark-AI-Hackathon-to-Build-the-Future-of-Human-First-AI-Employees/6a1236f9004597ee6ba12579" },
-  { outlet: "Wallowa Chieftain", href: "https://pr.wallowa.com/article/Shark-Branding-Solutions-Launches-Shark-AI-Hackathon-to-Build-the-Future-of-Human-First-AI-Employees/6a1236f9004597ee6ba12579" },
-  { outlet: "Baker City Herald", href: "https://pr.bakercityherald.com/article/Shark-Branding-Solutions-Launches-Shark-AI-Hackathon-to-Build-the-Future-of-Human-First-AI-Employees/6a1236f9004597ee6ba12579" },
-  { outlet: "Sandy Journal", href: "https://pr.sandyjournal.com/article/Shark-Branding-Solutions-Launches-Shark-AI-Hackathon-to-Build-the-Future-of-Human-First-AI-Employees/6a1236f9004597ee6ba12579" },
-  { outlet: "Bend Bulletin", href: "https://pr.bendbulletin.com/article/Shark-Branding-Solutions-Launches-Shark-AI-Hackathon-to-Build-the-Future-of-Human-First-AI-Employees/6a1236f9004597ee6ba12579" },
-  { outlet: "The Pioneer", href: "#" },
-  { outlet: "Business Chief", href: "#" },
-  { outlet: "PRWeb / Cision", href: "#" },
-];
 
-const broadcast = [
-  { name: "WFLA News Channel 8", type: "TV" },
-  { name: "Tampa Bay Times", type: "Print / Digital" },
-  { name: "iHeart Radio", type: "Radio / Podcast" },
-  { name: "Spotify", type: "Podcast" },
-  { name: "Apple Podcasts", type: "Podcast" },
-  { name: "Google Podcasts", type: "Podcast" },
-  { name: "AM 860 The Answer / FM 93.7", type: "Radio" },
-  { name: "102.5 The Bone", type: "Radio" },
-  { name: "YouTube TV", type: "Streaming" },
-  { name: "Roku", type: "Streaming" },
-  { name: "Fire TV", type: "Streaming" },
-  { name: "Apple TV", type: "Streaming" },
-  { name: "Binge Networks", type: "Streaming" },
-];
 
 export default function MediaPage() {
   return (
@@ -127,59 +114,19 @@ export default function MediaPage() {
           <p className="text-center text-[11px] font-bold tracking-[2px] uppercase text-[#86868b] mb-10">
             As Seen In
           </p>
-          <div className="flex flex-wrap items-center justify-center gap-8 sm:gap-12">
+          <div className="flex flex-wrap items-center justify-center gap-10 sm:gap-14">
             {featuredLogos.map((logo) => (
-              <div key={logo.name} className="flex items-center justify-center opacity-70 hover:opacity-100 motion-safe:transition-opacity">
+              <div key={logo.name} className="flex items-center justify-center opacity-60 hover:opacity-100 motion-safe:transition-opacity">
                 <Image
                   src={logo.src}
                   alt={logo.name}
                   width={logo.width}
                   height={logo.height}
-                  className="object-contain max-h-10 w-auto"
+                  className="object-contain max-h-12 w-auto"
                   unoptimized
                 />
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Featured press release */}
-      <section className="bg-[#0a0a0a] py-16 px-6">
-        <div className="max-w-[820px] mx-auto">
-          <div className="flex items-center gap-3 mb-6">
-            <span className="text-[11px] font-bold tracking-[2px] uppercase text-[#18b5d8]">
-              Press Release
-            </span>
-            <span className="w-px h-4 bg-[#333]" />
-            <span className="text-[11px] font-semibold uppercase tracking-[1px] text-[#555]">
-              Syndicated in 173 publications
-            </span>
-          </div>
-          <h2
-            className="text-[26px] sm:text-[34px] font-extrabold text-white leading-tight mb-5"
-            style={{ textWrap: "balance" }}
-          >
-            Shark Branding Solutions Launches Shark AI Hackathon to Build the Future of Human-First AI Employees
-          </h2>
-          <p className="text-[#aaa] text-[17px] leading-relaxed mb-8 max-w-[640px]">
-            Shark Branding Solutions announced the launch of its Shark AI Hackathon, an interactive innovation event designed to test, challenge, and shape the next generation of AI employees built for real businesses. The release was distributed across 173 outlets reaching millions of readers.
-          </p>
-          <div className="flex flex-wrap gap-3">
-            {syndications.map((s) => (
-              <a
-                key={s.outlet}
-                href={s.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[12px] font-semibold text-[#888] border border-[#333] rounded-full px-4 py-1.5 hover:border-[#18b5d8] hover:text-[#18b5d8] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0a0a]"
-              >
-                {s.outlet}
-              </a>
-            ))}
-            <span className="text-[12px] font-semibold text-[#555] border border-[#222] rounded-full px-4 py-1.5">
-              +162 more
-            </span>
           </div>
         </div>
       </section>
@@ -257,8 +204,26 @@ export default function MediaPage() {
           <p className="text-[#6e6e73] text-[16px] mb-10 max-w-[520px]">
             Shark AI Solutions and Michelle Stanaland have been featured across TV, radio, and podcast platforms reaching the greater Tampa Bay area and beyond.
           </p>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-6">
+            {broadcastLogos.map((b) => (
+              <div
+                key={b.name}
+                className="bg-white border border-[#e5e5ea] rounded-[16px] p-5 flex flex-col items-center justify-center gap-3 hover:border-[#18b5d8] motion-safe:transition-colors"
+              >
+                <Image
+                  src={b.src}
+                  alt={b.name}
+                  width={100}
+                  height={50}
+                  className="object-contain max-h-10 w-auto"
+                  unoptimized
+                />
+                <span className="text-[11px] text-[#86868b] font-medium text-center">{b.type}</span>
+              </div>
+            ))}
+          </div>
           <div className="flex flex-wrap gap-3">
-            {broadcast.map((b) => (
+            {broadcastText.map((b) => (
               <div
                 key={b.name}
                 className="bg-white border border-[#e5e5ea] rounded-full px-5 py-2.5 flex items-center gap-2"
