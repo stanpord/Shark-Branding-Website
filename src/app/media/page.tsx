@@ -24,7 +24,7 @@ const mentions = [
     headline: "Shark AI Hackathon Aims to Build Human-First AI Employees",
     excerpt:
       "Shark Branding Solutions hosted the Shark AI Hackathon, an interactive innovation event where business leaders, community partners, and invited guests helped test, challenge, and shape the next generation of AI employees built for real businesses.",
-    href: "https://stpetecatalyst.com",
+    href: "https://stpetecatalyst.com/w/shark-branding-solutions-hosted-the-shark-ai-hackathon-an-interactive-innovation-event-where-business-leaders-community-partners-and-invited-guests-helped-test-challenge-and-shape-the-next-genera/",
     featured: false,
   },
   {
@@ -33,7 +33,7 @@ const mentions = [
     headline: "Michelle Stanaland — Neighborhood News",
     excerpt:
       "Neighborhood News features ongoing coverage of Michelle Stanaland and Shark AI Solutions, documenting the firm's growth and impact across the Tampa Bay business community.",
-    href: "https://neighborhoodnewsfl.com",
+    href: "https://neighborhoodnewsonline.net/tag/michelle-stanaland/",
     featured: false,
   },
 ];
