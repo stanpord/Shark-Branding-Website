@@ -15,7 +15,7 @@ const mentions = [
     headline: "Shark Branding Solutions Launches Shark AI Hackathon to Build the Future of Human-First AI Employees",
     excerpt:
       "Shark Branding Solutions announced the launch of its Shark AI Hackathon, an interactive innovation event designed to test, challenge, and shape the next generation of AI employees built for real businesses.",
-    href: "https://www.prnewswire.com",
+    href: "https://pr.sandyjournal.com/article/Shark-Branding-Solutions-Launches-Shark-AI-Hackathon-to-Build-the-Future-of-Human-First-AI-Employees/6a1236f9004597ee6ba12579",
     featured: true,
   },
   {
