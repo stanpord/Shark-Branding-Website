@@ -10,12 +10,12 @@ export const metadata: Metadata = {
 };
 
 const featuredLogos = [
-  { name: "AIthority", src: "/press-logos/aithority.png", width: 120, height: 36 },
-  { name: "Bay News 9", src: "/press-logos/baynews9.png", width: 70, height: 70 },
-  { name: "WFLA News Channel 8", src: "/press-logos/wfla.png", width: 130, height: 65 },
-  { name: "Tampa Bay Times", src: "/press-logos/tampabay-times.png", width: 150, height: 56 },
-  { name: "Neighborhood News", src: "/press-logos/neighborhoodnews-pdf.png", width: 150, height: 44 },
-  { name: "St. Pete Catalyst", src: "/press-logos/stpetecatalyst.png", width: 130, height: 40 },
+  { name: "AIthority", src: "/press-logos/aithority.png", width: 120, height: 36, href: "https://aithority.com/machine-learning/shark-branding-solutions-launches-shark-ai-hackathon-to-build-the-future-of-human-first-ai-employees/" },
+  { name: "Bay News 9", src: "/press-logos/baynews9.png", width: 70, height: 70, href: "https://baynews9.com/fl/tampa/events/2026/05/26/shark_ai_hackathon" },
+  { name: "WFLA News Channel 8", src: "/press-logos/wfla.png", width: 130, height: 65, href: "https://www.wfla.com" },
+  { name: "Tampa Bay Times", src: "/press-logos/tampabay-times.png", width: 150, height: 56, href: "https://www.tampabay.com" },
+  { name: "Neighborhood News", src: "/press-logos/neighborhoodnews-pdf.png", width: 150, height: 44, href: "https://neighborhoodnewsonline.net/tag/michelle-stanaland/" },
+  { name: "St. Pete Catalyst", src: "/press-logos/stpetecatalyst.png", width: 130, height: 40, href: "https://stpetecatalyst.com/w/shark-branding-solutions-hosted-the-shark-ai-hackathon-an-interactive-innovation-event-where-business-leaders-community-partners-and-invited-guests-helped-test-challenge-and-shape-the-next-genera/" },
 ];
 
 const broadcastLogos = [
@@ -116,7 +116,14 @@ export default function MediaPage() {
           </p>
           <div className="flex flex-wrap items-center justify-center gap-10 sm:gap-14">
             {featuredLogos.map((logo) => (
-              <div key={logo.name} className="flex items-center justify-center opacity-60 hover:opacity-100 motion-safe:transition-opacity">
+              <a
+                key={logo.name}
+                href={logo.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={logo.name}
+                className="flex items-center justify-center opacity-60 hover:opacity-100 motion-safe:transition-opacity focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 rounded"
+              >
                 <Image
                   src={logo.src}
                   alt={logo.name}
@@ -125,7 +132,7 @@ export default function MediaPage() {
                   className="object-contain max-h-12 w-auto"
                   unoptimized
                 />
-              </div>
+              </a>
             ))}
           </div>
         </div>
