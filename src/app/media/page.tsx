@@ -1,12 +1,24 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Media & News — Shark AI Solutions Press Coverage",
   description:
-    "Press coverage, news features, and media appearances from Shark AI Solutions. Featured in AIthority, Bay News 9, St. Pete Catalyst, PR Newswire, StreetInsider, and more.",
+    "Press coverage, broadcast features, and media appearances from Shark AI Solutions. Featured on WFLA News Channel 8, Tampa Bay Times, iHeart Radio, Spotify, AIthority, Bay News 9, St. Pete Catalyst, and 173 total outlets.",
   alternates: { canonical: "https://sharkbrandingsolutions.com/media" },
 };
+
+const featuredLogos = [
+  { name: "WFLA News Channel 8", src: "/press-logos/wfla.png", width: 120, height: 40 },
+  { name: "Tampa Bay Times", src: "/press-logos/tampabay.svg", width: 140, height: 36 },
+  { name: "Bay News 9", src: "/press-logos/baynews9.png", width: 80, height: 48 },
+  { name: "AIthority", src: "/press-logos/aithority.png", width: 120, height: 36 },
+  { name: "St. Pete Catalyst", src: "/press-logos/stpetecatalyst.png", width: 120, height: 40 },
+  { name: "PR Newswire", src: "/press-logos/prnewswire.svg", width: 130, height: 40 },
+  { name: "Neighborhood News", src: "/press-logos/neighborhoodnews.png", width: 130, height: 44 },
+  { name: "IT Tech Pulse", src: "/press-logos/ittechpulse.png", width: 120, height: 36 },
+];
 
 const editorial = [
   {
@@ -34,11 +46,11 @@ const editorial = [
     href: "https://stpetecatalyst.com/w/shark-branding-solutions-hosted-the-shark-ai-hackathon-an-interactive-innovation-event-where-business-leaders-community-partners-and-invited-guests-helped-test-challenge-and-shape-the-next-genera/",
   },
   {
-    outlet: "ITTech Pulse",
+    outlet: "IT Tech Pulse",
     outletTag: "Event Coverage",
     headline: "Shark AI Hackathon Aims to Build Human-First AI Employees",
     excerpt:
-      "ITTech Pulse features the Shark AI Hackathon and Shark Branding Solutions' mission to build AI employees that put human connection at the center of business automation.",
+      "IT Tech Pulse features the Shark AI Hackathon and Shark Branding Solutions' mission to build AI employees that put human connection at the center of business automation.",
     href: "https://ittech-pulse.com/news/shark-ai-hackathon-aims-to-build-human-first-ai-employees/",
   },
   {
@@ -56,10 +68,29 @@ const syndications = [
   { outlet: "StreetInsider", href: "https://www.streetinsider.com/Press+Releases/Shark+Branding+Solutions+Launches+Shark+AI+Hackathon+to+Build+the+Future+of+Human-First+AI+Employees/26543649.html" },
   { outlet: "ADVFN", href: "https://www.advfn.com/stock-market/stock-news/98599067/shark-branding-solutions-launches-shark-ai-hackath" },
   { outlet: "Moultrie Observer", href: "https://pr.moultrieobserver.com/article/Shark-Branding-Solutions-Launches-Shark-AI-Hackathon-to-Build-the-Future-of-Human-First-AI-Employees/6a1236f9004597ee6ba12579" },
-  { outlet: "Wallowa", href: "https://pr.wallowa.com/article/Shark-Branding-Solutions-Launches-Shark-AI-Hackathon-to-Build-the-Future-of-Human-First-AI-Employees/6a1236f9004597ee6ba12579" },
+  { outlet: "Wallowa Chieftain", href: "https://pr.wallowa.com/article/Shark-Branding-Solutions-Launches-Shark-AI-Hackathon-to-Build-the-Future-of-Human-First-AI-Employees/6a1236f9004597ee6ba12579" },
   { outlet: "Baker City Herald", href: "https://pr.bakercityherald.com/article/Shark-Branding-Solutions-Launches-Shark-AI-Hackathon-to-Build-the-Future-of-Human-First-AI-Employees/6a1236f9004597ee6ba12579" },
   { outlet: "Sandy Journal", href: "https://pr.sandyjournal.com/article/Shark-Branding-Solutions-Launches-Shark-AI-Hackathon-to-Build-the-Future-of-Human-First-AI-Employees/6a1236f9004597ee6ba12579" },
   { outlet: "Bend Bulletin", href: "https://pr.bendbulletin.com/article/Shark-Branding-Solutions-Launches-Shark-AI-Hackathon-to-Build-the-Future-of-Human-First-AI-Employees/6a1236f9004597ee6ba12579" },
+  { outlet: "The Pioneer", href: "#" },
+  { outlet: "Business Chief", href: "#" },
+  { outlet: "PRWeb / Cision", href: "#" },
+];
+
+const broadcast = [
+  { name: "WFLA News Channel 8", type: "TV" },
+  { name: "Tampa Bay Times", type: "Print / Digital" },
+  { name: "iHeart Radio", type: "Radio / Podcast" },
+  { name: "Spotify", type: "Podcast" },
+  { name: "Apple Podcasts", type: "Podcast" },
+  { name: "Google Podcasts", type: "Podcast" },
+  { name: "AM 860 The Answer / FM 93.7", type: "Radio" },
+  { name: "102.5 The Bone", type: "Radio" },
+  { name: "YouTube TV", type: "Streaming" },
+  { name: "Roku", type: "Streaming" },
+  { name: "Fire TV", type: "Streaming" },
+  { name: "Apple TV", type: "Streaming" },
+  { name: "Binge Networks", type: "Streaming" },
 ];
 
 export default function MediaPage() {
@@ -80,23 +111,34 @@ export default function MediaPage() {
             <br />
             <span className="text-[#18b5d8]">in the news.</span>
           </h1>
-          <p className="text-[#6e6e73] text-[18px] leading-relaxed max-w-[520px] mx-auto">
-            Press coverage, event features, and media appearances from the team building the future of AI visibility and AI employees for service businesses.
+          <p className="text-[#6e6e73] text-[18px] leading-relaxed max-w-[520px] mx-auto mb-10">
+            Press coverage, broadcast features, and media appearances from the team building the future of AI visibility and AI employees for service businesses.
           </p>
+          <div className="inline-flex items-center gap-3 bg-white border border-[#e5e5ea] rounded-full px-6 py-3 shadow-sm">
+            <span className="text-[28px] font-extrabold text-[#18b5d8] leading-none">173</span>
+            <span className="text-[14px] text-[#6e6e73] font-medium">total press placements</span>
+          </div>
         </div>
       </section>
 
-      {/* As Seen In bar */}
-      <section className="border-b border-[#e5e5ea] py-10 px-6">
-        <div className="max-w-[960px] mx-auto">
-          <p className="text-center text-[11px] font-bold tracking-[2px] uppercase text-[#86868b] mb-8">
+      {/* As Seen In — logos */}
+      <section className="border-b border-[#e5e5ea] py-12 px-6 bg-white">
+        <div className="max-w-[1000px] mx-auto">
+          <p className="text-center text-[11px] font-bold tracking-[2px] uppercase text-[#86868b] mb-10">
             As Seen In
           </p>
-          <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-10">
-            {["AIthority", "Bay News 9", "St. Pete Catalyst", "PR Newswire", "StreetInsider", "ITTech Pulse", "Neighborhood News"].map((o) => (
-              <span key={o} className="text-[14px] font-bold text-[#6e6e73] tracking-tight">
-                {o}
-              </span>
+          <div className="flex flex-wrap items-center justify-center gap-8 sm:gap-12">
+            {featuredLogos.map((logo) => (
+              <div key={logo.name} className="flex items-center justify-center opacity-70 hover:opacity-100 motion-safe:transition-opacity">
+                <Image
+                  src={logo.src}
+                  alt={logo.name}
+                  width={logo.width}
+                  height={logo.height}
+                  className="object-contain max-h-10 w-auto"
+                  unoptimized
+                />
+              </div>
             ))}
           </div>
         </div>
@@ -111,7 +153,7 @@ export default function MediaPage() {
             </span>
             <span className="w-px h-4 bg-[#333]" />
             <span className="text-[11px] font-semibold uppercase tracking-[1px] text-[#555]">
-              Syndicated in {syndications.length}+ publications
+              Syndicated in 173 publications
             </span>
           </div>
           <h2
@@ -121,11 +163,9 @@ export default function MediaPage() {
             Shark Branding Solutions Launches Shark AI Hackathon to Build the Future of Human-First AI Employees
           </h2>
           <p className="text-[#aaa] text-[17px] leading-relaxed mb-8 max-w-[640px]">
-            Shark Branding Solutions announced the launch of its Shark AI Hackathon, an interactive innovation event designed to test, challenge, and shape the next generation of AI employees built for real businesses.
+            Shark Branding Solutions announced the launch of its Shark AI Hackathon, an interactive innovation event designed to test, challenge, and shape the next generation of AI employees built for real businesses. The release was distributed across 173 outlets reaching millions of readers.
           </p>
-
-          {/* Syndication links */}
-          <div className="flex flex-wrap gap-3 mb-8">
+          <div className="flex flex-wrap gap-3">
             {syndications.map((s) => (
               <a
                 key={s.outlet}
@@ -137,6 +177,9 @@ export default function MediaPage() {
                 {s.outlet}
               </a>
             ))}
+            <span className="text-[12px] font-semibold text-[#555] border border-[#222] rounded-full px-4 py-1.5">
+              +162 more
+            </span>
           </div>
         </div>
       </section>
@@ -171,9 +214,7 @@ export default function MediaPage() {
                 >
                   {m.headline}
                 </h3>
-                <p className="text-[13px] text-[#6e6e73] leading-relaxed">
-                  {m.excerpt}
-                </p>
+                <p className="text-[13px] text-[#6e6e73] leading-relaxed">{m.excerpt}</p>
               </a>
             ))}
 
@@ -204,8 +245,34 @@ export default function MediaPage() {
         </div>
       </section>
 
+      {/* Broadcast & Podcast */}
+      <section className="bg-[#f5f5f7] border-t border-[#e5e5ea] py-20 px-6">
+        <div className="max-w-[960px] mx-auto">
+          <p className="text-[11px] font-bold tracking-[2px] uppercase text-[#86868b] mb-3">
+            Broadcast &amp; Podcast
+          </p>
+          <h2 className="text-[26px] sm:text-[32px] font-extrabold text-[#1d1d1f] mb-3">
+            On air, on screen, on demand.
+          </h2>
+          <p className="text-[#6e6e73] text-[16px] mb-10 max-w-[520px]">
+            Shark AI Solutions and Michelle Stanaland have been featured across TV, radio, and podcast platforms reaching the greater Tampa Bay area and beyond.
+          </p>
+          <div className="flex flex-wrap gap-3">
+            {broadcast.map((b) => (
+              <div
+                key={b.name}
+                className="bg-white border border-[#e5e5ea] rounded-full px-5 py-2.5 flex items-center gap-2"
+              >
+                <span className="text-[13px] font-semibold text-[#1d1d1f]">{b.name}</span>
+                <span className="text-[11px] text-[#86868b] font-medium">{b.type}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
-      <section className="bg-[#f5f5f7] border-t border-[#e5e5ea] py-20 px-6 text-center">
+      <section className="border-t border-[#e5e5ea] py-20 px-6 text-center">
         <div className="max-w-[540px] mx-auto">
           <p className="text-[11px] font-bold tracking-[2px] uppercase text-[#18b5d8] mb-4">
             Work With Us
