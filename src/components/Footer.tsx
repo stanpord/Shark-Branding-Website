@@ -205,6 +205,9 @@ export default function Footer() {
             <Link href="/terms" className="text-[12px] text-[#86868b] hover:text-[#18b5d8] motion-safe:transition-colors">
               Terms of Service
             </Link>
+            <Link href="/sitemap-html" className="text-[12px] text-[#86868b] hover:text-[#18b5d8] motion-safe:transition-colors">
+              Sitemap
+            </Link>
             <p className="text-[12px] text-[#86868b]">
               Serving{" "}
               <Link href="/wesley-chapel" className="hover:text-[#18b5d8] motion-safe:transition-colors">Wesley Chapel</Link>
