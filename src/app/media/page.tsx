@@ -10,6 +10,7 @@ export const metadata: Metadata = {
 };
 
 const featuredLogos = [
+  { name: "TechNewsWorld", src: "/press-logos/technewsworld.png", width: 160, height: 52, href: "https://www.technewsworld.com/story/study-finds-most-restaurants-missing-from-ai-recommendations-180396.html" },
   { name: "AIthority", src: "/press-logos/aithority.png", width: 120, height: 36, href: "https://aithority.com/machine-learning/shark-branding-solutions-launches-shark-ai-hackathon-to-build-the-future-of-human-first-ai-employees/" },
   { name: "Bay News 9", src: "/press-logos/baynews9.png", width: 70, height: 70, href: "https://baynews9.com/fl/tampa/events/2026/05/26/shark_ai_hackathon" },
   { name: "WFLA News Channel 8", src: "/press-logos/wfla.png", width: 130, height: 65, href: "https://www.wfla.com" },
@@ -36,6 +37,14 @@ const broadcastText = [
 ];
 
 const editorial = [
+  {
+    outlet: "TechNewsWorld",
+    outletTag: "Expert Quote",
+    headline: "Study Finds Most Restaurants Missing From AI Recommendations",
+    excerpt:
+      "Josh Stanaland, CTO of Shark Branding Solutions, is quoted explaining why traditional SEO investments don't translate to AI visibility. \"AI search rewards structured, machine-readable content,\" Josh told TechNewsWorld. \"Most restaurant websites have none of that. So the AI ignores them, regardless of how many reviews they have.\"",
+    href: "https://www.technewsworld.com/story/study-finds-most-restaurants-missing-from-ai-recommendations-180396.html",
+  },
   {
     outlet: "AIthority",
     outletTag: "Press Coverage",
