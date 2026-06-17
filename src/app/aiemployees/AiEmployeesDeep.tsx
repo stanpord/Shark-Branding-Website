@@ -157,6 +157,36 @@ export default function AiEmployeesDeep() {
         </div>
       </section>
 
+      {/* ── HOW IT WORKS + 24/7 CALLOUT ────────────────────────────── */}
+      <section className="bg-white py-14 sm:py-20 px-6 border-b border-[#e5e5ea]">
+        <div className="max-w-[800px] mx-auto">
+          <FadeUp>
+            <p className="text-[11px] font-bold tracking-[1.5px] uppercase text-[#18b5d8] mb-4">How It Works</p>
+            <h2 className="text-[28px] sm:text-[34px] font-extrabold text-[#1d1d1f] leading-tight tracking-tight mb-5" style={{ textWrap: 'balance' }}>
+              How does a Shark Branding AI employee work?
+            </h2>
+            <p className="text-[#444] text-[17px] leading-relaxed mb-10">
+              A Shark Branding AI employee is a software agent configured to perform a single, specific business function automatically — without human supervision. Each one is trained on your business data: your services, your voice, your pricing, and your workflows. When a lead contacts you, the AI employee greets them, qualifies them using your criteria, and either books an appointment, sends a follow-up sequence, or escalates to a human — depending on what the situation requires. Unlike a chatbot that needs constant prompting, an AI employee has a defined job, a fixed data source, and a built-in escalation path. Every interaction is logged and every transcript is saved. Your team sees only the conversations that need a human. Most AI employees go live within five to seven business days. They run continuously — answering calls, responding to reviews, and following up on leads — whether your office is open or not.
+            </p>
+          </FadeUp>
+          <FadeUp delay={100}>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              {[
+                { stat: '24/7', label: 'Always on', sub: 'Nights, weekends, and holidays — no exceptions' },
+                { stat: '< 7 days', label: 'Live fast', sub: 'Most deployments go live within one week of kickoff' },
+                { stat: '5 employees', label: 'One team', sub: 'Chat, voice, reviews, CRM, and sales coaching' },
+              ].map(item => (
+                <div key={item.stat} className="bg-[#f5f5f7] rounded-[16px] p-5 border border-[#e5e5ea]">
+                  <p className="text-[#18b5d8] text-[30px] font-extrabold leading-none mb-1">{item.stat}</p>
+                  <p className="text-[#1d1d1f] font-semibold text-[13px] mb-1">{item.label}</p>
+                  <p className="text-[#86868b] text-[12px] leading-snug">{item.sub}</p>
+                </div>
+              ))}
+            </div>
+          </FadeUp>
+        </div>
+      </section>
+
       {/* ── STICKY ANCHOR NAV ──────────────────────────────────────── */}
       <div className="sticky top-0 z-40 bg-white/90 backdrop-blur border-b border-[#e5e5ea]">
         <div className="max-w-5xl mx-auto px-6 overflow-x-auto">

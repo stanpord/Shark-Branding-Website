@@ -41,6 +41,28 @@ const structuredData = {
   },
 };
 
+const faqStructuredData = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Why isn't my business showing up in ChatGPT or AI search results?",
+      acceptedAnswer: { "@type": "Answer", text: "There are four common reasons a local business is invisible to AI: inconsistent business data across directories (mismatched name, address, or phone number confuses AI models), missing or thin structured data on your website (AI needs machine-readable signals to understand what you do and where you do it), low review volume or recency (ChatGPT and Gemini rely heavily on trust signals like Google reviews to decide who to recommend), and no entity presence in the sources AI models cite most — local news, industry publications, or platforms like Yelp and Google Business Profile. The fix starts with an AI visibility audit. We test your business against 20+ constrained prompts across ChatGPT, Gemini, and Perplexity, find the specific gaps, and tell you exactly what to correct first." },
+    },
+    {
+      "@type": "Question",
+      name: "How is AI visibility consulting different from SEO?",
+      acceptedAnswer: { "@type": "Answer", text: "Traditional SEO optimizes for Google's page-ranking algorithm. AI visibility consulting optimizes for how language models like ChatGPT and Gemini evaluate and recommend businesses. The signals are different: entity consistency, structured data, trust indicators, and citation authority matter more than backlinks and keyword density." },
+    },
+    {
+      "@type": "Question",
+      name: "How quickly will I see results?",
+      acceptedAnswer: { "@type": "Answer", text: "Most clients see measurable movement in AI visibility within 7 to 30 days of implementation. Citation corrections propagate quickly. Schema updates are processed within days. Review volume builds over the first 60 to 90 days." },
+    },
+  ],
+};
+
 const steps = [
   {
     n: "01",
@@ -76,6 +98,10 @@ const steps = [
 
 const faqs = [
   {
+    q: "Why isn't my business showing up in ChatGPT or AI search results?",
+    a: "There are four common reasons a local business is invisible to AI: inconsistent business data across directories (mismatched name, address, or phone number confuses AI models), missing or thin structured data on your website (AI needs machine-readable signals to understand what you do and where you do it), low review volume or recency (ChatGPT and Gemini rely heavily on trust signals like Google reviews to decide who to recommend), and no entity presence in the sources AI models cite most — local news, industry publications, or platforms like Yelp and Google Business Profile. The fix starts with an AI visibility audit. We test your business against 20+ constrained prompts across ChatGPT, Gemini, and Perplexity, find the specific gaps, and tell you exactly what to correct first.",
+  },
+  {
     q: "How is AI visibility consulting different from SEO?",
     a: "Traditional SEO optimizes for Google's page-ranking algorithm. AI visibility consulting optimizes for how language models like ChatGPT and Gemini evaluate and recommend businesses. The signals are different: entity consistency, structured data, trust indicators, and citation authority matter more than backlinks and keyword density.",
   },
@@ -99,6 +125,10 @@ export default function AiVisibilityConsultingPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqStructuredData) }}
       />
 
       <AiVisibilityAnimations />

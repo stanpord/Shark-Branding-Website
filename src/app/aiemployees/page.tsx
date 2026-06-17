@@ -41,6 +41,11 @@ const structuredData = {
       mainEntity: [
         {
           '@type': 'Question',
+          name: 'How does a Shark Branding AI employee work?',
+          acceptedAnswer: { '@type': 'Answer', text: 'A Shark Branding AI employee is a software agent configured to perform a single, specific business function automatically — without human supervision. Each one is trained on your business data: your services, your voice, your pricing, and your workflows. When a lead contacts you, the AI employee greets them, qualifies them using your criteria, and either books an appointment, sends a follow-up sequence, or escalates to a human — depending on what the situation requires. Unlike a chatbot that needs constant prompting, an AI employee has a defined job, a fixed data source, and a built-in escalation path. Every interaction is logged and every transcript is saved. Your team sees only the conversations that need a human. Most AI employees go live within five to seven business days. They run continuously — answering calls, responding to reviews, and following up on leads — whether your office is open or not.' },
+        },
+        {
+          '@type': 'Question',
           name: 'What is an AI employee?',
           acceptedAnswer: { '@type': 'Answer', text: 'An AI employee is a software agent trained to perform a specific business function automatically — such as responding to leads, managing reviews, running follow-up sequences, or coaching your sales reps. Each one is configured for your business, your voice, and your specific workflows.' },
         },
