@@ -54,6 +54,7 @@ const sections = [
       { label: "Shark vs. Traditional Marketing Agency", href: "/vs/marketing-agency" },
       { label: "Shark vs. Salesforce", href: "/vs/salesforce" },
       { label: "Shark vs. SEO", href: "/vs/seo" },
+      { label: "AI Automation vs. Zapier vs. HubSpot", href: "/vs/zapier" },
     ],
   },
   {
@@ -80,6 +81,8 @@ const sections = [
       { label: "AI Visibility Is Not Your Website", href: "/resources/blog-ai-visibility-not-your-website" },
       { label: "5 Automations Wesley Chapel Businesses Should Be Using", href: "/resources/blog-5-automations-wesley-chapel-businesses" },
       { label: "AI Receptionist vs. Human Receptionist", href: "/resources/blog-ai-receptionist-vs-human-receptionist" },
+      { label: "AI Answering Service vs. Live Answering Service", href: "/resources/blog-ai-answering-service-vs-live-answering-service" },
+      { label: "How to Appear in Google AI Overviews", href: "/resources/blog-how-to-appear-in-google-ai-overviews" },
       { label: "AIO, AEO, GEO & SEO: What Wesley Chapel Businesses Need to Know", href: "/resources/blog-aio-aeo-geo-seo-wesley-chapel" },
       { label: "The End of Local SEO: AI Visibility Is What Matters Now", href: "/resources/blog-end-of-local-seo-ai-visibility" },
       { label: "What Is an AI Employee?", href: "/resources/blog-what-is-an-ai-employee" },
