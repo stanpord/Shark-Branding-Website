@@ -1,10 +1,12 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import AuditModalTrigger from '@/components/AuditModalTrigger'
 import EmployeeCarousel from '@/components/EmployeeCarousel'
+import HomepageAnimations from '@/components/HomepageAnimations'
 
 export const metadata: Metadata = {
-  title: 'AI Visibility for Tampa Bay — Shark Branding Solutions',
-  description: 'Shark Branding Solutions helps Tampa Bay businesses get found by ChatGPT, Google AI Overviews, Perplexity, and Gemini. No ad spend. Results in 30 days.',
+  title: 'AI Visibility for Tampa Bay — Shark AI Solutions',
+  description: 'Shark AI Solutions helps Tampa Bay businesses get found by ChatGPT, Google AI Overviews, Perplexity, and Gemini. No ad spend. Results in 30 days.',
 }
 
 const stats = [
@@ -24,39 +26,59 @@ const services = [
   { title: 'AI Business Consulting', body: 'Full-service AI visibility strategy for businesses ready to own their category.', href: '/services#ai-visibility' },
   { title: 'AI Visibility Toolkit', body: 'The complete managed system: listings, reviews, content, and AI readiness in one place.', href: '/services#toolkit' },
   { title: 'AI Employees', body: 'Automate lead follow-up, review requests, content, and social — 24/7, on autopilot.', href: '/aiemployees' },
-  { title: 'Free AI Audit', body: 'See exactly where your business stands across AI platforms. Delivered in 48 hours. No catch.', href: '/free-report' },
+  { title: 'Free AI Audit', body: 'See exactly where your business stands across AI platforms. Reviewed with you personally. No catch.', href: '/free-report' },
 ]
 
 export default function Home() {
   return (
     <>
+      <HomepageAnimations />
+
       {/* ── Hero ── */}
-      <section className="bg-white min-h-[92vh] flex flex-col items-center justify-center text-center px-6 pt-24 pb-20">
-        <div className="max-w-[760px] mx-auto">
-          <p className="text-[#18b5d8] text-[13px] font-semibold tracking-[0.2em] uppercase mb-8">
+      <section
+        data-scene="hero"
+        className="bg-white sm:min-h-[92vh] flex flex-col items-center justify-center text-center px-6 pt-20 sm:pt-24 pb-12 sm:pb-20"
+      >
+        {/* Depth-5: foreground dots */}
+        <div className="hero-dot hero-dot-1" aria-hidden="true" />
+        <div className="hero-dot hero-dot-2" aria-hidden="true" />
+        <div className="hero-dot hero-dot-3" aria-hidden="true" />
+        <div className="hero-dot hero-dot-4" aria-hidden="true" />
+        <div className="hero-dot hero-dot-5" aria-hidden="true" />
+
+        {/* Depth-4: content */}
+        <div className="max-w-[760px] mx-auto relative z-10">
+          <p
+            data-animate="hero-label"
+            className="text-[#18b5d8] text-[13px] font-semibold tracking-[0.2em] uppercase mb-4 sm:mb-8"
+          >
             AI Visibility · Tampa Bay
           </p>
-          <h1 className="display-hero text-[#0a0a0a] mb-6" style={{ textWrap: 'balance' }}>
-            When customers ask AI,
-            <br />
-            <span className="text-[#18b5d8]">does it recommend you?</span>
+          <h1
+            data-animate="hero-title"
+            className="display-hero text-[#0a0a0a] mb-6"
+            style={{ textWrap: 'balance' }}
+          >
+            When customers ask AI, does it recommend you?
           </h1>
-          <p className="lead-airy text-[#333333] max-w-[540px] mx-auto mb-5" style={{ textWrap: 'balance' }}>
-            ChatGPT, Google AI Overviews, Perplexity, and Gemini are now the first stop for buyers searching for local businesses. Most businesses aren&rsquo;t showing up. We fix that.
+          <p
+            data-animate="hero-sub"
+            className="lead-airy text-[#333333] max-w-[540px] mx-auto mb-5"
+            style={{ textWrap: 'balance' }}
+          >
+            ChatGPT, Google AI Overviews, Perplexity, and Gemini are now the first stop for buyers searching for local businesses. Most businesses aren't showing up. We fix that.
           </p>
           <p className="text-[14px] text-[#18b5d8] font-semibold mb-2">
             AI Visibility Consulting for Tampa Bay Businesses
           </p>
-          <p className="text-[14px] text-[#7a7a7a] mb-12">
-            Serving Wesley Chapel, Lutz, Land O&rsquo; Lakes, St. Petersburg &amp; Tampa
+          <p className="text-[14px] text-[#7a7a7a] mb-8 sm:mb-12">
+            Serving Wesley Chapel, Lutz, Land O' Lakes, St. Petersburg & Tampa
           </p>
-          <div className="flex flex-wrap items-center justify-center gap-3">
-            <Link
-              href="/free-report"
+          <div data-animate="hero-cta" className="flex flex-wrap items-center justify-center gap-3">
+            <AuditModalTrigger
               className="btn-press inline-block bg-[#18b5d8] text-white text-[15px] font-semibold rounded-full px-7 py-3.5 hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 [touch-action:manipulation]"
-            >
-              Get My Free AI Audit
-            </Link>
+              label="Get My Free AI Audit"
+            />
             <Link
               href="/services"
               className="inline-block text-[15px] font-semibold text-[#1d1d1f] border border-[#e0e0e0] rounded-full px-7 py-3.5 hover:border-[#18b5d8] hover:text-[#18b5d8] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 [touch-action:manipulation]"
@@ -68,22 +90,26 @@ export default function Home() {
       </section>
 
       {/* ── What Is AI Visibility ── */}
-      <section className="bg-[#0a0a0a] px-6 py-20">
-        <div className="max-w-[980px] mx-auto">
-          <div className="max-w-[640px] mx-auto text-center mb-14">
+      <section data-scene="shift" className="bg-[#0a0a0a] px-6 py-12 sm:py-20">
+        <div className="max-w-[980px] mx-auto relative z-10">
+          <div className="max-w-[640px] mx-auto text-center mb-8 sm:mb-14">
             <p className="text-[#18b5d8] text-[13px] font-semibold tracking-[0.2em] uppercase mb-5">The Shift</p>
-            <h2 className="display-lg text-white mb-5" style={{ textWrap: 'balance' }}>
-              Search has changed. Most businesses haven&rsquo;t.
+            <h2
+              data-animate="shift-title"
+              className="display-lg text-white mb-5"
+              style={{ textWrap: 'balance' }}
+            >
+              Search has changed. Most businesses haven't.
             </h2>
-            <p className="text-[16px] text-white/60 leading-relaxed">
-              AI visibility is how well your business appears when AI platforms answer questions your customers are asking. Instead of showing ten results, these platforms recommend one to three businesses. If you&rsquo;re not in that shortlist, you&rsquo;re invisible to buyers who never reach the traditional search results at all.
+            <p data-animate="shift-sub" className="text-[16px] text-white/60 leading-relaxed">
+              AI visibility is how well your business appears when AI platforms answer questions your customers are asking. Instead of showing ten results, these platforms recommend one to three businesses. If you're not in that shortlist, you're invisible to buyers who never reach the traditional search results at all.
             </p>
           </div>
 
           {/* Stats */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-px bg-white/5 rounded-[20px] overflow-hidden">
             {stats.map((s) => (
-              <div key={s.v} className="bg-[#111] px-7 py-8 text-center">
+              <div key={s.v} data-animate="stat-card" className="bg-[#111] px-7 py-8 text-center">
                 <p className="text-[clamp(2rem,4vw,3rem)] font-black text-[#18b5d8] leading-none mb-2">{s.v}</p>
                 <p className="text-[14px] font-semibold text-white mb-2">{s.label}</p>
                 <p className="text-[13px] text-white/45 leading-relaxed">{s.body}</p>
@@ -95,11 +121,11 @@ export default function Home() {
       </section>
 
       {/* ── Found Trusted Chosen ── */}
-      <section className="bg-white px-6 py-20 border-t border-[#e8e8ed]">
+      <section data-scene="framework" className="bg-white px-6 py-12 sm:py-20 border-t border-[#e8e8ed]">
         <div className="max-w-[980px] mx-auto">
-          <div className="text-center mb-14">
+          <div className="text-center mb-8 sm:mb-14">
             <p className="text-[#18b5d8] text-[13px] font-semibold tracking-[0.2em] uppercase mb-5">Our Framework</p>
-            <h2 className="display-lg text-[#0a0a0a]" style={{ textWrap: 'balance' }}>
+            <h2 data-animate="framework-title" className="display-lg text-[#0a0a0a]" style={{ textWrap: 'balance' }}>
               Found. Trusted. Chosen.
             </h2>
             <p className="text-[16px] text-[#555] mt-5 max-w-[520px] mx-auto">
@@ -127,7 +153,7 @@ export default function Home() {
                 items: ['Answer-ready content structure', 'FAQ and entity definitions', 'Competitive gap analysis'],
               },
             ].map((c) => (
-              <div key={c.label} className="bg-[#f5f5f7] rounded-[20px] p-7">
+              <div key={c.label} data-animate="framework-card" className="bg-[#f5f5f7] rounded-[20px] p-7">
                 <span className={`inline-block ${c.color} text-white text-[11px] font-bold tracking-[0.16em] uppercase px-3 py-1.5 rounded-full mb-5`}>
                   {c.label}
                 </span>
@@ -147,17 +173,17 @@ export default function Home() {
       </section>
 
       {/* ── How It Works ── */}
-      <section className="bg-[#0a0a0a] px-6 py-20 border-t border-white/5">
+      <section data-scene="steps" className="bg-[#0a0a0a] px-6 py-12 sm:py-20 border-t border-white/5">
         <div className="max-w-[980px] mx-auto">
-          <div className="text-center mb-14">
+          <div className="text-center mb-8 sm:mb-14">
             <p className="text-[#18b5d8] text-[13px] font-semibold tracking-[0.2em] uppercase mb-5">The Process</p>
-            <h2 className="display-lg text-white" style={{ textWrap: 'balance' }}>
+            <h2 data-animate="steps-title" className="display-lg text-white" style={{ textWrap: 'balance' }}>
               Up and running in 30 days.
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {steps.map((s) => (
-              <div key={s.n} className="bg-[#111] rounded-[20px] p-7 border border-white/5">
+              <div key={s.n} data-animate="step-card" className="bg-[#111] rounded-[20px] p-7 border border-white/5">
                 <p className="font-mono text-[#18b5d8] text-[11px] tracking-[0.22em] uppercase mb-5">{s.n}</p>
                 <h3 className="text-[17px] font-bold text-white mb-3">{s.title}</h3>
                 <p className="text-[13px] text-white/50 leading-relaxed">{s.body}</p>
@@ -168,11 +194,11 @@ export default function Home() {
       </section>
 
       {/* ── Results ── */}
-      <section className="bg-white px-6 py-20 border-t border-[#e8e8ed]">
+      <section data-scene="results" className="bg-white px-6 py-12 sm:py-20 border-t border-[#e8e8ed]">
         <div className="max-w-[980px] mx-auto">
-          <div className="text-center mb-14">
+          <div className="text-center mb-8 sm:mb-14">
             <p className="text-[#18b5d8] text-[13px] font-semibold tracking-[0.2em] uppercase mb-5">Real Results</p>
-            <h2 className="display-lg text-[#0a0a0a]" style={{ textWrap: 'balance' }}>
+            <h2 data-animate="results-title" className="display-lg text-[#0a0a0a]" style={{ textWrap: 'balance' }}>
               Tampa Bay businesses. 30 days.
             </h2>
             <p className="text-[16px] text-[#555] mt-5 max-w-[520px] mx-auto">
@@ -186,7 +212,7 @@ export default function Home() {
               { result: 'Invisible → #1 AI Result', detail: 'Smart vending company went from zero AI presence to top recommendation in their category.', tag: 'Technology' },
               { result: '96% member gap closed', detail: 'Chamber of commerce members went from invisible to cited across ChatGPT, Gemini, and Perplexity.', tag: 'Association' },
             ].map((r) => (
-              <div key={r.result} className="bg-[#f5f5f7] rounded-[20px] p-7 flex flex-col gap-3">
+              <div key={r.result} data-animate="result-card" className="bg-[#f5f5f7] rounded-[20px] p-7 flex flex-col gap-3">
                 <span className="inline-block bg-[#18b5d8]/10 text-[#18b5d8] text-[11px] font-bold tracking-[0.14em] uppercase px-3 py-1 rounded-full self-start">{r.tag}</span>
                 <p className="text-[20px] font-bold text-[#0a0a0a]">{r.result}</p>
                 <p className="text-[14px] text-[#555] leading-relaxed">{r.detail}</p>
@@ -202,9 +228,9 @@ export default function Home() {
       </section>
 
       {/* ── Services ── */}
-      <section className="bg-[#f5f5f7] px-6 py-20 border-t border-[#e8e8ed]">
+      <section data-scene="services" className="bg-[#f5f5f7] px-6 py-12 sm:py-20 border-t border-[#e8e8ed]">
         <div className="max-w-[980px] mx-auto">
-          <div className="text-center mb-12">
+          <div className="text-center mb-6 sm:mb-12">
             <p className="text-[#18b5d8] text-[13px] font-semibold tracking-[0.2em] uppercase mb-5">What We Do</p>
             <h2 className="display-lg text-[#0a0a0a]" style={{ textWrap: 'balance' }}>
               Every service, one outcome.
@@ -215,6 +241,7 @@ export default function Home() {
               <Link
                 key={s.title}
                 href={s.href}
+                data-animate="service-card"
                 className="group bg-white rounded-[20px] p-7 border border-[#e8e8ed] hover:border-[#18b5d8] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2"
               >
                 <h3 className="text-[17px] font-bold text-[#0a0a0a] mb-2 group-hover:text-[#18b5d8] motion-safe:transition-colors duration-150">{s.title}</h3>
@@ -226,12 +253,12 @@ export default function Home() {
       </section>
 
       {/* ── AI Employees ── */}
-      <section className="bg-white px-6 py-20 border-t border-[#e8e8ed]">
+      <section data-scene="employees" className="bg-white px-6 py-12 sm:py-20 border-t border-[#e8e8ed]">
         <div className="max-w-[980px] mx-auto">
-          <div className="text-center mb-12">
+          <div className="text-center mb-6 sm:mb-12">
             <p className="text-[#18b5d8] text-[13px] font-semibold tracking-[0.2em] uppercase mb-5">AI Employees</p>
-            <h2 className="display-lg text-[#0a0a0a]" style={{ textWrap: 'balance' }}>
-              Your business runs 24/7. Your team shouldn&rsquo;t have to.
+            <h2 data-animate="employees-title" className="display-lg text-[#0a0a0a]" style={{ textWrap: 'balance' }}>
+              Your business runs 24/7. Your team shouldn't have to.
             </h2>
             <p className="text-[16px] text-[#555] mt-5 max-w-[520px] mx-auto">
               AI employees handle lead follow-up, review management, content, and bookings — automatically, while you focus on the work that actually requires you.
@@ -249,21 +276,21 @@ export default function Home() {
       </section>
 
       {/* ── CTA ── */}
-      <section className="bg-[#0a0a0a] py-28 px-6 text-center">
-        <div className="max-w-[560px] mx-auto">
-          <p className="text-[13px] font-semibold tracking-[0.2em] uppercase text-[#18b5d8] mb-6">Ready to get visible?</p>
-          <h2 className="display-lg text-white mb-6" style={{ textWrap: 'balance' }}>
-            Find out where you stand in 48 hours.
+      <section data-scene="cta" className="bg-[#0a0a0a] py-16 sm:py-28 px-6 text-center">
+        <div className="max-w-[560px] mx-auto relative z-10">
+          <p data-animate="cta-label" className="text-[13px] font-semibold tracking-[0.2em] uppercase text-[#18b5d8] mb-4 sm:mb-6">Ready to get visible?</p>
+          <h2 data-animate="cta-title" className="display-lg text-white mb-4 sm:mb-6" style={{ textWrap: 'balance' }}>
+            Find out where you stand.
           </h2>
-          <p className="lead-airy text-white/50 mb-12">
-            Free AI Audit. No commitment. Delivered in 48 hours.
+          <p data-animate="cta-sub" className="lead-airy text-white/50 mb-8 sm:mb-12">
+            Free AI Audit. No commitment. Reviewed with you personally.
           </p>
-          <Link
-            href="/free-report"
-            className="btn-press inline-block bg-[#18b5d8] text-white text-[17px] font-semibold rounded-full px-[32px] py-[15px] hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0a0a] [touch-action:manipulation]"
-          >
-            Get My Free AI Audit
-          </Link>
+          <div data-animate="cta-btn">
+            <AuditModalTrigger
+              className="btn-press inline-block bg-[#18b5d8] text-white text-[17px] font-semibold rounded-full px-[32px] py-[15px] hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0a0a] [touch-action:manipulation]"
+              label="Get My Free AI Audit"
+            />
+          </div>
         </div>
       </section>
     </>

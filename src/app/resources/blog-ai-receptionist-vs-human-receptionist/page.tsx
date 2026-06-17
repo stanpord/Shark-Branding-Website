@@ -23,9 +23,10 @@ const structuredData = {
   dateModified: '2026-06-07',
   author: {
     '@type': 'Person',
+    '@id': 'https://sharkbrandingsolutions.com/about#michelle',
     name: 'Michelle Stanaland',
-    url: 'https://sharkbrandingsolutions.com/about',
-    jobTitle: 'Founder & CEO, Shark Branding Solutions',
+    url: 'https://sharkbrandingsolutions.com/about#michelle',
+    jobTitle: 'Managing Partner and Founder, Shark AI Solutions',
   },
   publisher: {
     '@id': 'https://sharkbrandingsolutions.com/#organization',
@@ -266,6 +267,10 @@ export default function AiVsHumanReceptionistPage() {
               <Link href="/resources/blog-5-automations-wesley-chapel-businesses" className="flex items-center gap-3 group">
                 <span className="text-[#18b5d8] font-bold shrink-0">→</span>
                 <span className="text-[15px] text-[#333] group-hover:text-[#18b5d8] transition-colors">5 Tasks Wesley Chapel Business Owners Should Automate First</span>
+              </Link>
+              <Link href="/resources/blog-why-tampa-bay-businesses-switching-ai-employees" className="flex items-center gap-3 group">
+                <span className="text-[#18b5d8] font-bold shrink-0">→</span>
+                <span className="text-[15px] text-[#333] group-hover:text-[#18b5d8] transition-colors">Why Tampa Bay Businesses Are Switching to AI Employees in 2026</span>
               </Link>
               <Link href="/aiemployees" className="flex items-center gap-3 group">
                 <span className="text-[#18b5d8] font-bold shrink-0">→</span>

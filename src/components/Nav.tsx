@@ -11,8 +11,10 @@ const links = [
   { href: "/automation", label: "Automation" },
   { href: "/ai-assessment", label: "AI Assessment" },
   { href: "/case-studies", label: "Case Studies" },
+  { href: "/plans", label: "Pricing" },
   { href: "/resources", label: "Resources" },
   { href: "/about", label: "About" },
+  { href: "/media", label: "Media" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -20,7 +22,12 @@ export default function Nav() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 inset-x-0 z-50 bg-white border-b border-[#e0e0e0]" style={{ paddingTop: 'env(safe-area-inset-top)' }}>
+    <header className="fixed top-0 inset-x-0 z-50" style={{ paddingTop: 'env(safe-area-inset-top)' }}>
+      {/* Rebrand announcement bar */}
+      <div className="bg-[#18b5d8] text-white text-center text-[12px] font-semibold tracking-wide py-2 px-4">
+        Shark Branding Solutions is now&nbsp;<span className="font-extrabold">Shark AI Solutions</span>&nbsp;— same team, bigger mission.
+      </div>
+      <div className="bg-white border-b border-[#e0e0e0]">
       <nav className="w-full h-11 max-w-[1440px] mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
         <Link
@@ -29,7 +36,7 @@ export default function Nav() {
         >
           <Image
             src="/logo.webp"
-            alt="Shark Branding Solutions"
+            alt="Shark AI Solutions"
             width={120}
             height={32}
             className="h-7 w-auto object-contain"
@@ -76,10 +83,11 @@ export default function Nav() {
           </span>
         </button>
       </nav>
+      </div>{/* end white nav bar */}
 
       {/* Mobile menu */}
       {open && (
-        <div className="md:hidden absolute inset-x-0 bg-white py-6 px-6 flex flex-col gap-5 border-t border-[#e0e0e0]" style={{ top: 'calc(2.75rem + env(safe-area-inset-top))' }}>
+        <div className="md:hidden absolute inset-x-0 bg-white py-6 px-6 flex flex-col gap-5 border-t border-[#e0e0e0]" style={{ top: 'calc(2.75rem + 2rem + env(safe-area-inset-top))' }}>
           {links.map((l) => (
             <Link
               key={l.href}

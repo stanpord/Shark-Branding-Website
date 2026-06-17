@@ -23,9 +23,10 @@ const structuredData = {
   dateModified: '2026-06-07',
   author: {
     '@type': 'Person',
+    '@id': 'https://sharkbrandingsolutions.com/about#michelle',
     name: 'Michelle Stanaland',
-    url: 'https://sharkbrandingsolutions.com/about',
-    jobTitle: 'Founder & CEO, Shark Branding Solutions',
+    url: 'https://sharkbrandingsolutions.com/about#michelle',
+    jobTitle: 'Managing Partner and Founder, Shark AI Solutions',
   },
   publisher: {
     '@id': 'https://sharkbrandingsolutions.com/#organization',
@@ -185,6 +186,14 @@ export default function FiveAutomationsPage() {
               <Link href="/resources/blog-what-is-an-ai-employee" className="flex items-center gap-3 group">
                 <span className="text-[#18b5d8] font-bold shrink-0">→</span>
                 <span className="text-[15px] text-[#333] group-hover:text-[#18b5d8] transition-colors">What Is an AI Employee? A Plain-English Guide for Local Businesses</span>
+              </Link>
+              <Link href="/resources/blog-ai-receptionist-vs-human-receptionist" className="flex items-center gap-3 group">
+                <span className="text-[#18b5d8] font-bold shrink-0">→</span>
+                <span className="text-[15px] text-[#333] group-hover:text-[#18b5d8] transition-colors">AI Receptionist vs. Human Receptionist: What Tampa Bay Businesses Need to Know</span>
+              </Link>
+              <Link href="/resources/blog-why-tampa-bay-businesses-switching-ai-employees" className="flex items-center gap-3 group">
+                <span className="text-[#18b5d8] font-bold shrink-0">→</span>
+                <span className="text-[15px] text-[#333] group-hover:text-[#18b5d8] transition-colors">Why Tampa Bay Businesses Are Switching to AI Employees in 2026</span>
               </Link>
               <Link href="/aiemployees" className="flex items-center gap-3 group">
                 <span className="text-[#18b5d8] font-bold shrink-0">→</span>

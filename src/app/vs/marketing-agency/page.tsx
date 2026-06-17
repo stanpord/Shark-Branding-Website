@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "AI Consulting vs. Marketing Agency | Shark Branding Solutions",
+  title: "AI Consulting vs. Marketing Agency | Shark AI Solutions",
   description:
-    "Traditional agencies optimize for traffic and ads. AI visibility gets your business recommended by ChatGPT, Gemini, and Google AI Overviews — without ad spend.",
+    "Traditional agencies optimize for traffic and ads. AI visibility gets your business recommended by ChatGPT, Gemini, and Google AI Overviews, without ad spend.",
   alternates: {
     canonical: "https://sharkbrandingsolutions.com/vs/marketing-agency",
   },
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     description:
       "See why local businesses are replacing or supplementing their marketing agency with AI visibility consulting — and getting measurable results in 30 days.",
     type: "article",
-    images: [{ url: "https://sharkbrandingsolutions.com/logo.webp", width: 1200, height: 630, alt: "AI Consulting vs. Marketing Agency — Shark Branding Solutions" }],
+    images: [{ url: "https://sharkbrandingsolutions.com/logo.webp", width: 1200, height: 630, alt: "AI Consulting vs. Marketing Agency — Shark AI Solutions" }],
   },
 };
 
@@ -25,14 +25,15 @@ const structuredData = {
     "A detailed comparison of AI visibility consulting vs traditional marketing agencies for local businesses.",
   author: {
     "@type": "Person",
-    "@id": "https://sharkbrandingsolutions.com/#founder",
+    "@id": "https://sharkbrandingsolutions.com/about#michelle",
     name: "Michelle Stanaland",
-    url: "https://sharkbrandingsolutions.com/about",
+    url: "https://sharkbrandingsolutions.com/about#michelle",
+    jobTitle: "Managing Partner and Founder",
   },
   publisher: {
     "@type": "Organization",
     "@id": "https://sharkbrandingsolutions.com/#organization",
-    name: "Shark Branding Solutions",
+    name: "Shark AI Solutions",
     url: "https://sharkbrandingsolutions.com",
     logo: {
       "@type": "ImageObject",
@@ -138,7 +139,7 @@ const comparisonRows = [
   },
   {
     feature: "Starting price",
-    ai:   "From $497/mo (self-guided) or $2,000/mo (done for you)",
+    ai:   "From $997/mo (self-guided) or $2,000/mo (done for you)",
     trad: "Typically $1,500–$5,000+/mo retainer, plus ad spend",
   },
 ];
@@ -256,7 +257,7 @@ export default function VsMarketingAgencyPage() {
           </div>
 
           <p className="text-[12px] text-[#aaa] mt-4">
-            Last updated June 2026 · Shark Branding Solutions is an AI visibility consulting firm.{" "}
+            Last updated June 2026 · Shark AI Solutions is an AI visibility consulting firm.{" "}
             <span className="text-[#ccc]">We're transparent about who we are.</span>
           </p>
         </div>
@@ -319,7 +320,7 @@ export default function VsMarketingAgencyPage() {
               </div>
               <div className="px-5 py-4 text-center border-l border-[#e8e8ed] bg-[#18b5d8]/5">
                 <p className="text-[13px] font-bold text-[#18b5d8]">AI Visibility Consulting</p>
-                <p className="text-[11px] text-[#555] mt-0.5">e.g. Shark Branding Solutions</p>
+                <p className="text-[11px] text-[#555] mt-0.5">e.g. Shark AI Solutions</p>
               </div>
               <div className="px-5 py-4 text-center border-l border-[#e8e8ed]">
                 <p className="text-[13px] font-bold text-[#0a0a0a]">Traditional Marketing Agency</p>

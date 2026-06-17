@@ -142,8 +142,51 @@ export default function ContactForm() {
       {/* Form + info */}
       <section className="bg-white py-20 px-6">
         <div className="max-w-[980px] mx-auto grid grid-cols-1 md:grid-cols-[1fr_380px] gap-16">
-          {/* Widget mounts here */}
-          <div ref={formContainerRef} />
+          <div className="space-y-6">
+            {/* Widget mounts here */}
+            <div ref={formContainerRef} />
+
+            {/* SMS consent — static HTML so approval crawlers can read it */}
+            <div className="border border-[#e8e8ed] rounded-[16px] px-6 py-6 space-y-5 bg-[#f5f5f7]">
+              <p className="text-[13px] font-semibold text-[#1d1d1f] uppercase tracking-wide">
+                Text Message Consent
+              </p>
+
+              <label className="flex items-start gap-3 cursor-pointer">
+                <input
+                  type="checkbox"
+                  name="sms_transactional_consent"
+                  className="mt-1 w-4 h-4 shrink-0 accent-[#18b5d8] cursor-pointer"
+                />
+                <span className="text-[14px] text-[#333333] leading-relaxed">
+                  <span className="font-semibold text-[#1d1d1f]">Service messages (required to receive SMS).</span>{" "}
+                  By checking this box, I consent to receive SMS text messages from Shark AI Solutions regarding appointments, service updates, and follow-up communications. Message and data rates may apply. Message frequency varies. Reply <strong>STOP</strong> to unsubscribe at any time.
+                </span>
+              </label>
+
+              <label className="flex items-start gap-3 cursor-pointer">
+                <input
+                  type="checkbox"
+                  name="sms_marketing_consent"
+                  className="mt-1 w-4 h-4 shrink-0 accent-[#18b5d8] cursor-pointer"
+                />
+                <span className="text-[14px] text-[#333333] leading-relaxed">
+                  <span className="font-semibold text-[#1d1d1f]">Promotional messages (optional).</span>{" "}
+                  By checking this box, I consent to receive SMS messages from Shark AI Solutions about special offers and service announcements. This is not required to submit this form. Message and data rates may apply. Message frequency varies. Reply <strong>STOP</strong> to unsubscribe at any time.
+                </span>
+              </label>
+
+              <p className="text-[12px] text-[#86868b]">
+                Reply <strong>HELP</strong> for assistance or contact us at{" "}
+                <a href="mailto:info@sharkbrandingsolutions.com" className="text-[#18b5d8] underline">
+                  info@sharkbrandingsolutions.com
+                </a>. View our{" "}
+                <a href="/privacy" className="text-[#18b5d8] underline">Privacy Policy</a>{" "}
+                and{" "}
+                <a href="/terms" className="text-[#18b5d8] underline">Terms of Service</a>.
+              </p>
+            </div>
+          </div>
 
           {/* Contact info sidebar */}
           <div className="space-y-8">
@@ -176,6 +219,10 @@ export default function ContactForm() {
                 Location
               </p>
               <p className="text-[17px] text-[#333333] leading-relaxed">
+                27251 Wesley Chapel Blvd.
+                <br />
+                Suite B14 #805
+                <br />
                 Wesley Chapel, FL 33544
                 <br />
                 Serving all of Tampa Bay
@@ -187,10 +234,10 @@ export default function ContactForm() {
                 Free AI Audit
               </p>
               <p className="text-[17px] text-white mb-1">
-                Delivered within 48 hours.
+                Reviewed with you personally.
               </p>
               <p className="text-[14px] text-[#cccccc]">
-                No commitment. We&rsquo;ll walk you through it personally.
+                No commitment. 1-hour session included.
               </p>
             </div>
           </div>

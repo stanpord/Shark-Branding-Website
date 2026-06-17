@@ -1,10 +1,123 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+const structuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://sharkbrandingsolutions.com/#organization",
+      name: "Shark AI Solutions",
+      legalName: "Shark Branding Solutions LLC",
+      url: "https://sharkbrandingsolutions.com",
+      logo: "https://sharkbrandingsolutions.com/logo.webp",
+      description: "AI employees and AI visibility consulting for Tampa Bay local businesses. Automate lead follow-up, review management, and appointment booking — and get found on ChatGPT, Google AI, and Gemini.",
+      foundingDate: "2022",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "27251 Wesley Chapel Blvd., Suite B14 #805",
+        addressLocality: "Wesley Chapel",
+        addressRegion: "FL",
+        postalCode: "33544",
+        addressCountry: "US",
+      },
+      telephone: "+17275133955",
+      email: "info@sharkbrandingsolutions.com",
+      areaServed: [
+        { "@type": "City", name: "Wesley Chapel" },
+        { "@type": "City", name: "Tampa" },
+        { "@type": "City", name: "Lutz" },
+        { "@type": "City", name: "Land O Lakes" },
+        { "@type": "City", name: "St. Petersburg" },
+        { "@type": "City", name: "New Tampa" },
+      ],
+      sameAs: [
+        "https://www.facebook.com/sharkbranding",
+        "https://www.instagram.com/sharkbranding",
+        "https://www.linkedin.com/company/sharkbranding",
+        "https://www.youtube.com/@sharkbranding",
+        "https://www.tiktok.com/@sharkbranding",
+      ],
+      member: [
+        { "@id": "https://sharkbrandingsolutions.com/about#michelle" },
+        { "@id": "https://sharkbrandingsolutions.com/about#josh" },
+        { "@id": "https://sharkbrandingsolutions.com/about#tiffany" },
+      ],
+    },
+    {
+      "@type": "Person",
+      "@id": "https://sharkbrandingsolutions.com/about#michelle",
+      name: "Michelle Stanaland",
+      givenName: "Michelle",
+      familyName: "Stanaland",
+      jobTitle: "Managing Partner and Founder",
+      description: "Recognized marketing strategist and AI visibility expert serving businesses across Tampa Bay. Named one of the Top 15 Marketing Experts in Tampa Bay by Influence Digest in 2025.",
+      worksFor: { "@id": "https://sharkbrandingsolutions.com/#organization" },
+      url: "https://sharkbrandingsolutions.com/about#michelle",
+      knowsAbout: ["AI Visibility", "Local SEO", "GEO", "Marketing Strategy", "AI Employees", "Tampa Bay"],
+      award: "Top 15 Marketing Experts in Tampa Bay — Influence Digest, 2025",
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Wesley Chapel",
+        addressRegion: "FL",
+        addressCountry: "US",
+      },
+    },
+    {
+      "@type": "Person",
+      "@id": "https://sharkbrandingsolutions.com/about#josh",
+      name: "Josh Stanaland",
+      givenName: "Josh",
+      familyName: "Stanaland",
+      jobTitle: "Partner and Chief Technology Officer",
+      description: "Digital growth strategist and technologist. Primary technical architect behind Shark AI Solutions' proprietary software and AI automation frameworks. Designs the backend systems powering the AI Visibility Toolkit and 24/7 AI employee receptionists for service businesses.",
+      worksFor: { "@id": "https://sharkbrandingsolutions.com/#organization" },
+      url: "https://sharkbrandingsolutions.com/about#josh",
+      knowsAbout: ["AI Automation", "Software Architecture", "Conversational AI", "Growth Strategy", "Conversion Analytics", "AI Employees"],
+      hasCredential: "Former therapist with professional athletic organizations including the Jacksonville Jaguars",
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Wesley Chapel",
+        addressRegion: "FL",
+        addressCountry: "US",
+      },
+    },
+    {
+      "@type": "Person",
+      "@id": "https://sharkbrandingsolutions.com/about#tiffany",
+      name: "Tiffany Fancher",
+      givenName: "Tiffany",
+      familyName: "Fancher",
+      jobTitle: "Chief Operating Officer",
+      worksFor: { "@id": "https://sharkbrandingsolutions.com/#organization" },
+      url: "https://sharkbrandingsolutions.com/about#tiffany",
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Wesley Chapel",
+        addressRegion: "FL",
+        addressCountry: "US",
+      },
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://sharkbrandingsolutions.com/about",
+      url: "https://sharkbrandingsolutions.com/about",
+      name: "About — Shark AI Solutions",
+      description: "Meet the team behind Shark AI Solutions — Michelle Stanaland, Managing Partner and Founder, Josh Stanaland, CTO, and Tiffany Fancher, COO.",
+      about: { "@id": "https://sharkbrandingsolutions.com/#organization" },
+      mentions: [
+        { "@id": "https://sharkbrandingsolutions.com/about#michelle" },
+        { "@id": "https://sharkbrandingsolutions.com/about#josh" },
+        { "@id": "https://sharkbrandingsolutions.com/about#tiffany" },
+      ],
+    },
+  ],
+};
+
 export const metadata: Metadata = {
-  title: "About — Shark Branding Solutions",
+  title: "About — Shark AI Solutions",
   description:
-    "Meet Michelle Stanaland, Founder and CEO of Shark Branding Solutions — Top 15 Marketing Expert in Tampa Bay.",
+    "Meet the team behind Shark AI Solutions — Michelle Stanaland, Managing Partner and Founder, and the leadership driving AI strategy for Tampa Bay businesses.",
 };
 
 const values = [
@@ -33,6 +146,10 @@ const values = [
 export default function AboutPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
       {/* ── Hero ── */}
       <section className="bg-white min-h-[50vh] md:min-h-[90vh] flex flex-col items-center justify-center text-center px-6 pt-16 md:pt-24 pb-12 md:pb-20">
         <div className="max-w-[720px] mx-auto">
@@ -45,7 +162,7 @@ export default function AboutPage() {
             <span className="text-[#18b5d8]">impossible to ignore.</span>
           </h1>
           <p className="lead-airy text-[#333333] max-w-[540px] mx-auto" style={{ textWrap: "balance" }}>
-            Shark Branding Solutions was built on a simple belief: every great business deserves to be found by the right people, at the right moment, on every platform.
+            Shark AI Solutions was built on a simple belief: every great business deserves to be found by the right people, at the right moment, on every platform.
           </p>
         </div>
       </section>
@@ -100,7 +217,7 @@ export default function AboutPage() {
               <span className="text-[13px] font-semibold tracking-[0.08em] uppercase text-white/50">Leadership</span>
             </div>
             <h2 className="display-lg text-white mb-3">Michelle Stanaland</h2>
-            <p className="text-[17px] text-white/40 mb-8">Founder &amp; CEO</p>
+            <p className="text-[17px] text-white/40 mb-8">Managing Partner &amp; Founder</p>
             <div className="inline-flex items-center gap-3 bg-white/6 border border-white/10 rounded-[12px] px-5 py-3">
               <span className="text-[#18b5d8] text-[18px]" aria-hidden="true">★</span>
               <span className="text-[14px] font-semibold text-white">Top 15 Marketing Expert in Tampa Bay</span>
@@ -114,7 +231,7 @@ export default function AboutPage() {
               by Influence Digest, a recognition of her commitment to results over rhetoric.
             </p>
             <p className="body-copy text-white/60 leading-relaxed">
-              Before founding Shark Branding Solutions, Michelle observed a consistent pattern: talented, hardworking business owners were losing customers not because of their product or service, but because they couldn&rsquo;t be found. As AI search platforms changed how buyers discover businesses, the gap between visible and invisible grew wider, and she built a firm to close it.
+              Before founding Shark AI Solutions, Michelle observed a consistent pattern: talented, hardworking business owners were losing customers not because of their product or service, but because they couldn&rsquo;t be found. As AI search platforms changed how buyers discover businesses, the gap between visible and invisible grew wider, and she built a firm to close it.
             </p>
             <p className="body-copy text-white/60 leading-relaxed">
               Based in Wesley Chapel, Michelle works directly with clients across Lutz, Land O&rsquo; Lakes, St. Petersburg, and the wider Tampa Bay area, bringing enterprise-level AI strategy to local businesses that deserve to compete.
@@ -123,86 +240,63 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* ── Results & Accomplishments ── */}
-      <section className="bg-[#f5f5f7] px-6 py-14 md:py-24">
-        <div className="max-w-[980px] mx-auto">
-          <div className="text-center mb-14">
-            <p className="text-[13px] font-semibold tracking-[0.2em] uppercase text-[#18b5d8] mb-4">Documented Results</p>
-            <h2 className="display-lg text-[#0a0a0a]" style={{ textWrap: "balance" }}>
-              Our results &amp; accomplishments.
-            </h2>
-          </div>
-
-          {/* Nominations / awards row */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-            <div className="bg-white rounded-[20px] p-7 border-l-4 border-[#18b5d8]">
-              <p className="text-[11px] font-bold text-[#18b5d8] tracking-[0.18em] uppercase mb-3">Nominations</p>
-              <p className="text-[20px] font-bold text-[#0a0a0a] leading-snug">Top 100 Most Influential People in the Marketing &amp; Advertising Industry</p>
+      {/* ── Josh ── */}
+      <section id="josh" className="bg-[#0a0a0a] px-6 py-14 md:py-24 border-t border-white/5">
+        <div className="max-w-[980px] mx-auto grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-16 items-start">
+          <div>
+            <div className="flex items-center gap-4 mb-8">
+              <span className="font-mono text-[#18b5d8] text-[11px] tracking-[0.22em] uppercase">Technology</span>
+              <span className="w-px h-4 bg-white/20" aria-hidden="true" />
+              <span className="text-[13px] font-semibold tracking-[0.08em] uppercase text-white/50">Leadership</span>
             </div>
-            <div className="bg-white rounded-[20px] p-7 border-l-4 border-[#F7555F]">
-              <p className="text-[11px] font-bold text-[#F7555F] tracking-[0.18em] uppercase mb-3">Award</p>
-              <p className="text-[20px] font-bold text-[#0a0a0a] leading-snug">CEO of the Year</p>
+            <h2 className="display-lg text-white mb-3">Josh Stanaland</h2>
+            <p className="text-[17px] text-white/40 mb-8">Partner &amp; CTO</p>
+            <div className="space-y-3">
+              {[
+                { label: 'Technical Architecture', desc: 'AI Visibility Toolkit and automation frameworks' },
+                { label: 'Growth Strategy', desc: 'Conversion analytics and lead infrastructure' },
+                { label: 'Community', desc: 'North Tampa Bay Chamber of Commerce' },
+              ].map(item => (
+                <div key={item.label} className="flex items-start gap-3">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#18b5d8] mt-2 shrink-0" />
+                  <div>
+                    <span className="text-[13px] font-semibold text-white">{item.label}</span>
+                    <span className="text-[13px] text-white/40"> — {item.desc}</span>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
+          <div className="space-y-6">
+            <p className="body-copy text-white/60 leading-relaxed">
+              Josh Stanaland is a digital growth strategist, technologist, and the primary technical architect behind Shark AI Solutions&rsquo; proprietary software and AI automation frameworks. As CTO, he designs the backend systems powering the firm&rsquo;s AI Visibility Toolkit — building tailored AI employees that act as fully automated, 24/7 digital receptionists for service businesses, not off-the-shelf chatbot templates.
+            </p>
+            <p className="body-copy text-white/60 leading-relaxed">
+              At the firm&rsquo;s live regional hackathons, Josh creates real-time simulated versions of attendees&rsquo; existing business websites, embedding custom AI employees to demonstrate — live and without prior setup — how automated systems handle real customer inquiries from the first interaction.
+            </p>
+            <p className="body-copy text-white/60 leading-relaxed">
+              Outside of engineering, he works directly with clients as an enterprise account manager, bridging code and execution to track conversion analytics, eliminate marketing waste, and sharpen lead-generation infrastructure. Before building AI frameworks, Josh spent nearly a decade in high-performance wellness and sports, including work with the Jacksonville Jaguars, before transitioning into sales, operations, and corporate marketing strategy.
+            </p>
+          </div>
+        </div>
+      </section>
 
-          {/* Stats grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {[
-              {
-                stat: "4 min",
-                label: "to first product sale",
-                body: "Product sales within 4 minutes of product launch. 5 media interviews booked within 3 days of new site going live.",
-                color: "#18b5d8",
-              },
-              {
-                stat: "48 hrs",
-                label: "strategy to execution",
-                body: "Shortened marketing strategy and execution plan development from 6 months to 48 hours.",
-                color: "#4FD1A0",
-              },
-              {
-                stat: "$900K+",
-                label: "revenue pipeline",
-                body: "Revenue pipeline within first four months of initial product deployment, without paid ads.",
-                color: "#F9DB79",
-              },
-              {
-                stat: "Top 47%",
-                label: "content creator",
-                body: "Top 47% content creator on social media with 60% engagement rate within 7 days of launch, out of 1M+ creators.",
-                color: "#18b5d8",
-              },
-              {
-                stat: "$54K",
-                label: "closed in 5 days",
-                body: "Closed $54K in annual contracts in 5 days from 5 social media posts, without paid ads.",
-                color: "#4FD1A0",
-              },
-              {
-                stat: "$180K",
-                label: "saved annually",
-                body: "Saves the average business $180,000 annually in software fees through AI-powered systems.",
-                color: "#F7555F",
-              },
-              {
-                stat: "30%+",
-                label: "revenue increase",
-                body: "Clients increased top-line revenue by 30%+ using our marketing strategy.",
-                color: "#18b5d8",
-              },
-              {
-                stat: "$4,320",
-                label: "cut in one day",
-                body: "Cut costs by $4,320 in one day without decreasing operational quality or efficiency.",
-                color: "#4FD1A0",
-              },
-            ].map((item) => (
-              <div key={item.stat} className="bg-white rounded-[20px] p-6">
-                <p className="text-[clamp(1.6rem,3vw,2.2rem)] font-black leading-none mb-1" style={{ color: item.color }}>{item.stat}</p>
-                <p className="text-[12px] font-semibold uppercase tracking-[0.14em] text-[#7a7a7a] mb-3">{item.label}</p>
-                <p className="text-[13px] text-[#555] leading-relaxed">{item.body}</p>
-              </div>
-            ))}
+      {/* ── Tiffany ── */}
+      <section id="tiffany" className="bg-[#0a0a0a] px-6 py-14 md:py-24 border-t border-white/5">
+        <div className="max-w-[980px] mx-auto grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-16 items-start">
+          <div>
+            <div className="flex items-center gap-4 mb-8">
+              <span className="font-mono text-[#18b5d8] text-[11px] tracking-[0.22em] uppercase">Operations</span>
+              <span className="w-px h-4 bg-white/20" aria-hidden="true" />
+              <span className="text-[13px] font-semibold tracking-[0.08em] uppercase text-white/50">Leadership</span>
+            </div>
+            <h2 className="display-lg text-white mb-3">Tiffany Fancher</h2>
+            <p className="text-[17px] text-white/40 mb-8">Chief Operating Officer</p>
+          </div>
+          <div className="space-y-6">
+            <p className="body-copy text-white/60 leading-relaxed">
+              Bio and credentials coming soon.
+            </p>
           </div>
         </div>
       </section>

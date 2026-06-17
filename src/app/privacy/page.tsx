@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Shark Branding Solutions",
-  description: "Privacy Policy for Shark Branding Solutions. Learn how we collect, use, and protect your personal information.",
+  title: "Privacy Policy | Shark AI Solutions",
+  description: "Privacy Policy for Shark AI Solutions. Learn how we collect, use, and protect your personal information.",
 };
 
 export default function PrivacyPage() {
@@ -16,7 +16,7 @@ export default function PrivacyPage() {
           Privacy Policy
         </h1>
         <p className="text-[15px] text-[#7a7a7a] mb-12">
-          Last updated: June 1, 2025
+          Last updated: June 14, 2026
         </p>
 
         <div className="prose-section space-y-10 text-[17px] text-[#333333] leading-relaxed">
@@ -24,7 +24,7 @@ export default function PrivacyPage() {
           <section>
             <h2 className="text-[21px] font-semibold text-[#0a0a0a] mb-4">1. Who We Are</h2>
             <p>
-              Shark Branding Solutions ("we," "us," or "our") is an AI Visibility and Branding firm based in Wesley Chapel, FL, serving businesses across the Tampa Bay region. Our website is sharkbrandingsolutions.com. You can reach us at{" "}
+              Shark AI Solutions ("we," "us," or "our") is an AI Visibility and Branding firm based in Wesley Chapel, FL, serving businesses across the Tampa Bay region. Our website is sharkbrandingsolutions.com. You can reach us at{" "}
               <a href="mailto:info@sharkbrandingsolutions.com" className="text-[#18b5d8] underline">
                 info@sharkbrandingsolutions.com
               </a>{" "}
@@ -61,7 +61,16 @@ export default function PrivacyPage() {
           <section>
             <h2 className="text-[21px] font-semibold text-[#0a0a0a] mb-4">4. SMS Messaging</h2>
             <p className="mb-4">
-              When you provide your phone number and consent to receive text messages, Shark Branding Solutions may send you SMS messages. Message and data rates may apply. Message frequency varies.
+              Shark AI Solutions collects phone numbers for the purpose of sending SMS messages. By providing your phone number and consenting, you may receive the following types of messages from us:
+            </p>
+            <ul className="list-disc pl-6 space-y-2 mb-4">
+              <li>Appointment reminders and scheduling confirmations</li>
+              <li>Service updates related to your engagement with Shark AI Solutions</li>
+              <li>Follow-up messages related to your AI Visibility Report or consulting services</li>
+              <li>Promotional messages about our services, if you have separately consented to receive them</li>
+            </ul>
+            <p className="mb-4">
+              Message and data rates may apply. Message frequency varies.
             </p>
             <p className="mb-4">
               To opt out of SMS messages at any time, reply <strong>STOP</strong> to any message you receive from us. To request help, reply <strong>HELP</strong> or contact us at{" "}
@@ -69,8 +78,8 @@ export default function PrivacyPage() {
                 info@sharkbrandingsolutions.com
               </a>.
             </p>
-            <p>
-              We do not sell, rent, share, or otherwise disclose your phone number or SMS messaging data to third parties for their own marketing purposes. Phone numbers and messaging data collected for SMS communication are used solely to send the messages you consented to receive.
+            <p className="font-medium text-[#0a0a0a]">
+              Phone numbers and SMS messaging data are never sold, rented, or shared with third parties for marketing or any other purpose. Your phone number is used solely to send the messages you have consented to receive from Shark AI Solutions.
             </p>
           </section>
 
@@ -80,11 +89,11 @@ export default function PrivacyPage() {
               We do not sell your personal information. We may share your information only in the following limited circumstances:
             </p>
             <ul className="list-disc pl-6 space-y-2">
-              <li><strong>Service providers:</strong> Trusted third-party vendors who help us operate our website, CRM, and communications tools (e.g., scheduling software, email platforms), who are contractually bound to protect your data.</li>
+              <li><strong>Service providers:</strong> Trusted third-party vendors who help us operate our website, CRM, and communications tools (such as scheduling software and email platforms), who are contractually bound to protect your data and prohibited from using it for their own purposes.</li>
               <li><strong>Legal compliance:</strong> When required by law or to protect our legal rights.</li>
             </ul>
-            <p className="mt-4">
-              We do not share phone numbers or SMS messaging data with unrelated third parties or use them for purposes other than the communications you agreed to receive.
+            <p className="mt-4 font-medium text-[#0a0a0a]">
+              Phone numbers and SMS messaging data are not sold or disclosed to unrelated third parties under any circumstances.
             </p>
           </section>
 
@@ -140,7 +149,7 @@ export default function PrivacyPage() {
               If you have any questions about this Privacy Policy or how we handle your data, please contact us:
             </p>
             <address className="not-italic mt-4 space-y-1 text-[17px]">
-              <p className="font-semibold text-[#0a0a0a]">Shark Branding Solutions</p>
+              <p className="font-semibold text-[#0a0a0a]">Shark AI Solutions</p>
               <p>Wesley Chapel, FL 33544</p>
               <p>
                 <a href="tel:+17275133955" className="text-[#18b5d8] underline">(727) 513-3955</a>

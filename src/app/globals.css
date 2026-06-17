@@ -223,3 +223,56 @@ body {
 .article-prose .callout-box ol {
   margin-bottom: 0;
 }
+
+/* ── Epic Depth System ─────────────────────────────────────────────────── */
+
+:root {
+  --depth-0-factor: 0.10;
+  --depth-1-factor: 0.25;
+  --depth-2-factor: 0.50;
+  --depth-3-factor: 0.80;
+  --scroll-y: 0;
+}
+
+/* Scene wrapper — each major section is a scene */
+[data-scene] {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Glow orbs removed */
+
+/* ── Floating dots (depth-5 foreground particles) ── */
+.hero-dot {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  will-change: transform;
+  animation: float-dot var(--dur, 8s) ease-in-out infinite;
+  animation-delay: var(--delay, 0s);
+}
+.hero-dot-1 { width: 6px;  height: 6px;  background: #18b5d8; opacity: 0.7; top: 22%; left: 12%;  --dur: 7s;  --delay: 0s;   }
+.hero-dot-2 { width: 4px;  height: 4px;  background: #18b5d8; opacity: 0.5; top: 68%; left: 8%;   --dur: 9s;  --delay: -2s;  }
+.hero-dot-3 { width: 5px;  height: 5px;  background: #1ec8ee; opacity: 0.6; top: 35%; right: 10%; --dur: 11s; --delay: -4s;  }
+.hero-dot-4 { width: 3px;  height: 3px;  background: #18b5d8; opacity: 0.4; top: 75%; right: 15%; --dur: 8s;  --delay: -1.5s;}
+.hero-dot-5 { width: 8px;  height: 8px;  background: #18b5d8; opacity: 0.25; top: 15%; right: 25%; --dur: 13s; --delay: -3s; }
+
+/* ── Clip-path preset handled via GSAP fromTo — no CSS preset needed ── */
+
+/* ── Keyframes ── */
+@keyframes float-dot {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-18px); }
+}
+
+/* ── Reduced motion overrides ── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .hero-dot {
+    animation: none !important;
+  }
+}

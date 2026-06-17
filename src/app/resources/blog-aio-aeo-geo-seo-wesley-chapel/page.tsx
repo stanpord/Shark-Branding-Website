@@ -29,7 +29,7 @@ export default function Page() {
   >
    <p>A customer in Wiregrass Ranch opens ChatGPT on their phone and types: &ldquo;Who is the best branding company in Wesley Chapel?&rdquo; The AI thinks for two seconds and names three businesses. Yours is either in that list or it isn&rsquo;t. There is no page two.</p>
    <p>That moment, multiplied across thousands of searches every week, is why the distinction between SEO, AIO, GEO, and AEO matters more today than any conversation about keywords or backlinks. They are not the same thing, and treating them as synonyms is the fastest way to become invisible.</p>
-   <p>This article breaks down exactly what each term means, how they overlap, and why Shark Branding Solutions has made Wesley Chapel a proving ground for what actually works in 2026.</p>
+   <p>This article breaks down exactly what each term means, how they overlap, and why Shark AI Solutions has made Wesley Chapel a proving ground for what actually works in 2026.</p>
 
    <h2>What Is AIO? (And Why Most Definitions Are Wrong)</h2>
    <p>AIO stands for AI Optimization. In the broadest sense it means structuring your business&rsquo;s digital presence so that AI models, including Google&rsquo;s AI Overviews, ChatGPT, Perplexity, and Gemini, can find you, understand you, and confidently recommend you.</p>
@@ -83,7 +83,7 @@ export default function Page() {
    />
 
    <h2>What Does a Full AIO Strategy Actually Include?</h2>
-   <p>When Shark Branding Solutions builds an AIO strategy for a local business, it covers five areas that most agencies ignore entirely.</p>
+   <p>When Shark AI Solutions builds an AIO strategy for a local business, it covers five areas that most agencies ignore entirely.</p>
 
    <h3>1. NAP Standardization Across Every Platform</h3>
    <p>Your business name, address, and phone number must be identical on your website, Google Business Profile, Yelp, Apple Maps, Facebook, and every directory that AI crawlers index. A single discrepancy is enough to lower an AI model&rsquo;s confidence in your data. Low confidence means no recommendation.</p>
@@ -102,13 +102,13 @@ export default function Page() {
 
    <h2>How Shark Branding Approaches This Differently</h2>
    <p>Most marketing agencies in the Tampa Bay area still sell SEO packages built around metrics that were relevant in 2019: domain authority, keyword rankings, monthly reporting decks full of impressions. Those metrics are not wrong, but they are incomplete.</p>
-   <p>Shark Branding Solutions was built around the question: what does it take for an AI to recommend a local business with confidence? That question drives every service we offer. The AI Visibility Toolkit is not a content marketing retainer with a new name on it. It is a structured deployment of the five components above, measured against a single outcome: does the AI name you?</p>
+   <p>Shark AI Solutions was built around the question: what does it take for an AI to recommend a local business with confidence? That question drives every service we offer. The AI Visibility Toolkit is not a content marketing retainer with a new name on it. It is a structured deployment of the five components above, measured against a single outcome: does the AI name you?</p>
    <p>We are based in Wesley Chapel. Our clients are Wesley Chapel and North Tampa Bay businesses. We understand the specific competitive landscape of Wiregrass, Pasco County, and the New Tampa corridor in a way that a generic national agency does not. That proximity translates into faster iteration and more relevant benchmarking data.</p>
    <p>If you want to know where your business currently stands in AI search, the starting point is a visibility audit. We offer that at no cost for Tampa Bay area businesses.</p>
 
    <Image
     src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=1200&h=480&q=80"
-    alt="Shark Branding Solutions team member reviewing AI visibility data for a Wesley Chapel business client"
+    alt="Shark AI Solutions team member reviewing AI visibility data for a Wesley Chapel business client"
     width={1200}
     height={480}
     style={{ width: "100%", height: "auto" }}

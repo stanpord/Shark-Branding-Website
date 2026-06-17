@@ -604,7 +604,7 @@ export default function CaseStudiesPage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {[
-              { heading: "AI search is here now",         body: "Over 60% of Google searches now surface an AI-generated answer before any website link. If your business isn't optimized for that answer, you're invisible at the moment of decision." },
+              { heading: "AI search is here now",         body: "Over 60% of Google searches now surface an AI-generated answer before any website link (Google I/O, 2025). If your business isn't optimized for that answer, you're invisible at the moment of decision." },
               { heading: "Most competitors aren't ready", body: "The vast majority of local businesses haven't touched AI visibility at all. Right now, showing up in AI answers is a genuine competitive advantage, not table stakes." },
               { heading: "Results come in days",          body: "Every case on this page saw measurable movement in under 30 days. This isn't a six-month project. It's a systematic fix with a fast feedback loop." },
             ].map((c) => (

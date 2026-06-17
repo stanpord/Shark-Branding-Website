@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "AI Visibility Foundation — North Tampa Bay Chamber Exclusive | Shark Branding Solutions",
+  title: "AI Visibility Foundation — North Tampa Bay Chamber Exclusive | Shark AI Solutions",
   description: "Exclusive AI visibility offer for North Tampa Bay Chamber members.",
   robots: { index: false, follow: false },
 };

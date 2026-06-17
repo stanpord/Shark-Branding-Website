@@ -5,6 +5,7 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import ChatWidget from "@/components/ChatWidget";
 import ExitIntentPopup from "@/components/ExitIntentPopup";
+import AuditModal from "@/components/AuditModal";
 import { Analytics } from "@vercel/analytics/next";
 
 const inter = Inter({
@@ -15,9 +16,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Shark Branding Solutions — AI Business Consulting",
+  title: "Shark AI Solutions — AI Employees & AI Visibility for Tampa Bay",
   description:
-    "AI Business Consulting that makes your company run better, grow faster, and stay visible — even when you're not there.",
+    "AI employees and AI visibility for Tampa Bay local businesses. Automate leads, follow-up, reviews, and content — and get found on ChatGPT, Google AI, and Gemini.",
   keywords: [
     "AI business consulting",
     "AI visibility",
@@ -37,9 +38,9 @@ export const metadata: Metadata = {
     canonical: "https://sharkbrandingsolutions.com",
   },
   openGraph: {
-    title: "Shark Branding Solutions",
+    title: "Shark AI Solutions",
     description:
-      "Get Found. Get Trusted. Get Chosen. AI solutions for forward-thinking businesses.",
+      "AI employees and AI visibility for Tampa Bay local businesses. Get found on ChatGPT, Google AI, and Gemini.",
     type: "website",
     url: "https://sharkbrandingsolutions.com",
     siteName: "Shark Branding Solutions",
@@ -67,8 +68,8 @@ const structuredData = {
     {
       "@type": "LocalBusiness",
       "@id": "https://sharkbrandingsolutions.com/#organization",
-      name: "Shark Branding Solutions",
-      alternateName: "Shark AI Solutions",
+      name: "Shark AI Solutions",
+      alternateName: "Shark Branding Solutions",
       url: "https://sharkbrandingsolutions.com",
       logo: {
         "@type": "ImageObject",
@@ -99,13 +100,36 @@ const structuredData = {
       ],
       founder: {
         "@type": "Person",
-        "@id": "https://sharkbrandingsolutions.com/#founder",
+        "@id": "https://sharkbrandingsolutions.com/about#michelle",
         name: "Michelle Stanaland",
-        jobTitle: "Founder & CEO",
-        url: "https://sharkbrandingsolutions.com/about",
+        jobTitle: "Managing Partner and Founder",
+        url: "https://sharkbrandingsolutions.com/about#michelle",
         sameAs: ["https://www.linkedin.com/company/shark-branding-solutions"],
         award: "Top 15 Marketing Experts in Tampa Bay — Influence Digest, 2025",
       },
+      employee: [
+        {
+          "@type": "Person",
+          "@id": "https://sharkbrandingsolutions.com/about#michelle",
+          name: "Michelle Stanaland",
+          jobTitle: "Managing Partner and Founder",
+          url: "https://sharkbrandingsolutions.com/about#michelle",
+        },
+        {
+          "@type": "Person",
+          "@id": "https://sharkbrandingsolutions.com/about#josh",
+          name: "Josh Stanaland",
+          jobTitle: "Partner and Chief Technology Officer",
+          url: "https://sharkbrandingsolutions.com/about#josh",
+        },
+        {
+          "@type": "Person",
+          "@id": "https://sharkbrandingsolutions.com/about#tiffany",
+          name: "Tiffany Fancher",
+          jobTitle: "Chief Operating Officer",
+          url: "https://sharkbrandingsolutions.com/about#tiffany",
+        },
+      ],
       knowsAbout: [
         "AI business consulting",
         "AI search optimization",
@@ -130,9 +154,47 @@ const structuredData = {
       "@type": "WebSite",
       "@id": "https://sharkbrandingsolutions.com/#website",
       url: "https://sharkbrandingsolutions.com",
-      name: "Shark Branding Solutions",
+      name: "Shark AI Solutions",
       publisher: { "@id": "https://sharkbrandingsolutions.com/#organization" },
       inLanguage: "en-US",
+    },
+    {
+      "@type": "OfferCatalog",
+      "@id": "https://sharkbrandingsolutions.com/#services",
+      name: "AI Consulting & Automation Services",
+      provider: { "@id": "https://sharkbrandingsolutions.com/#organization" },
+      itemListElement: [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            name: "AI Visibility Consulting",
+            description: "Full audit and optimization of your business's presence across ChatGPT, Google AI Overviews, Gemini, and Perplexity. Includes citation fixes, schema markup, trust signal building, and monthly reporting.",
+            url: "https://sharkbrandingsolutions.com/ai-visibility-consulting",
+            areaServed: "Tampa Bay, FL",
+          },
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            name: "AI Employees",
+            description: "AI-powered employees for local businesses: chat receptionist, voice receptionist, reputation specialist, AI CRM, and sales coach. Automates lead follow-up, review requests, and customer communication 24/7.",
+            url: "https://sharkbrandingsolutions.com/aiemployees",
+            areaServed: "Tampa Bay, FL",
+          },
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            name: "Free AI Visibility Report",
+            description: "Free 48-hour audit showing exactly how your business appears across search, maps, reviews, and AI platforms.",
+            url: "https://sharkbrandingsolutions.com/free-report",
+            areaServed: "Tampa Bay, FL",
+          },
+        },
+      ],
     },
   ],
 };
@@ -161,6 +223,7 @@ export default function RootLayout({
         <Footer />
         <ChatWidget />
         <ExitIntentPopup />
+        <AuditModal />
         <Analytics />
       </body>
     </html>

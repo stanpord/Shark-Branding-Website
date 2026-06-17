@@ -3,7 +3,7 @@ import Image from "next/image";
 import BlogShell from "@/components/BlogShell";
 
 export const metadata: Metadata = {
- title: "What the End of Local SEO Means for Your Business, Shark Branding Solutions",
+ title: "What the End of Local SEO Means for Your Business, Shark AI Solutions",
  description:
   "AI Overviews now appear on over 60% of Google searches. Local SEO as you knew it is ending. Here's what changed, why it matters, and the three things you need to do right now.",
  alternates: {
@@ -65,7 +65,7 @@ export default function Page() {
     reach over <strong>1.5 billion users every month</strong>, appear across more than{" "}
     <strong>100 countries</strong>, and are served on over{" "}
     <strong>1 trillion queries per year</strong>.<sup>1</sup> By mid-2026, they appear on
-    more than 60% of all Google searches, and they are moving fast into local business queries.
+    more than 60% of all Google searches (Google I/O, 2025), and they are moving fast into local business queries.
    </p>
 
    <p>
