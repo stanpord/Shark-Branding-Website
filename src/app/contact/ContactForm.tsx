@@ -1,9 +1,13 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
+
+const BOOKING_URL =
+  "https://bookmenow.info/book/ai-report-visibility-review/Ai-Visitbility-Report-Review";
 
 export default function ContactForm() {
   const formContainerRef = useRef<HTMLDivElement>(null);
+  const [showBooking, setShowBooking] = useState(false);
 
   useEffect(() => {
     if (!formContainerRef.current) return;
@@ -18,6 +22,47 @@ export default function ContactForm() {
       "eyJiYWNrZ3JvdW5kQ29sb3IiOiIjRjRGN0ZBIiwiYmFzZVVSTCI6Imh0dHBzOi8vZm9ybXMtcHJvZC5hcGlnYXRld2F5LmNvIiwiYm9yZGVyQ29sb3IiOiIjMWE3YWRiIiwiYm9yZGVyUmFkaXVzIjoiMTJweCIsImJvcmRlclN0eWxlIjoic29saWQiLCJib3JkZXJXaWR0aCI6IjJweCIsImZvcm1JZCI6IkZvcm1Db25maWdJRC05MGVmYzRmYy0yMDhhLTQyNTAtOTgyYS04NGYxYmVkMzM1ZTIiLCJwYWRkaW5nIjoiMjhweCIsInByaW1hcnlDb2xvciI6IiMxOEI1RDgiLCJwcmltYXJ5Rm9udENvbG9yIjoiIzBEMUYyRCIsIndpZHRoIjoiMTAwJSJ9"
     );
     formContainerRef.current.appendChild(script);
+
+    // Watch for the widget's success state (DOM text changes to a confirmation)
+    const observer = new MutationObserver(() => {
+      const container = formContainerRef.current;
+      if (!container) return;
+      const text = container.innerText.toLowerCase();
+      if (
+        text.includes("thank you") ||
+        text.includes("submitted") ||
+        text.includes("success") ||
+        text.includes("received")
+      ) {
+        setShowBooking(true);
+        observer.disconnect();
+      }
+    });
+
+    observer.observe(formContainerRef.current, {
+      childList: true,
+      subtree: true,
+      characterData: true,
+    });
+
+    // Also catch postMessage events some Vendasta widgets emit
+    const onMessage = (e: MessageEvent) => {
+      if (
+        typeof e.data === "string" &&
+        (e.data.includes("form_submitted") || e.data.includes("success"))
+      ) {
+        setShowBooking(true);
+      }
+      if (typeof e.data === "object" && e.data?.type === "form_submitted") {
+        setShowBooking(true);
+      }
+    };
+    window.addEventListener("message", onMessage);
+
+    return () => {
+      observer.disconnect();
+      window.removeEventListener("message", onMessage);
+    };
   }, []);
 
   return (
@@ -39,6 +84,60 @@ export default function ContactForm() {
           </p>
         </div>
       </section>
+
+      {/* Booking popup — appears after form submission */}
+      {showBooking && (
+        <div
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="booking-modal-title"
+          className="fixed inset-0 z-50 flex items-center justify-center p-4"
+        >
+          {/* Backdrop */}
+          <div
+            className="absolute inset-0 bg-black/60 backdrop-blur-sm"
+            onClick={() => setShowBooking(false)}
+          />
+          {/* Card */}
+          <div className="relative z-10 bg-[#07141a] rounded-[24px] p-10 max-w-[480px] w-full text-center shadow-2xl">
+            <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-[#18b5d8]/20 mb-6">
+              <svg
+                className="w-7 h-7 text-[#18b5d8]"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+            <h2
+              id="booking-modal-title"
+              className="text-[28px] font-bold text-white mb-3"
+            >
+              Report request received!
+            </h2>
+            <p className="text-[#aaaaaa] text-[16px] mb-8 leading-relaxed">
+              Your free AI Visibility Report is on its way. While you wait, book
+              a call so we can walk you through your results personally.
+            </p>
+            <a
+              href={BOOKING_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block w-full bg-[#18b5d8] hover:bg-[#1ec8ee] text-white font-semibold text-[17px] py-4 px-8 rounded-[12px] motion-safe:transition-colors mb-4"
+            >
+              Book your free review call
+            </a>
+            <button
+              onClick={() => setShowBooking(false)}
+              className="text-[14px] text-[#666] hover:text-[#999] motion-safe:transition-colors"
+            >
+              No thanks, I&rsquo;ll wait for the report
+            </button>
+          </div>
+        </div>
+      )}
 
       {/* Form + info */}
       <section className="bg-white py-20 px-6">
