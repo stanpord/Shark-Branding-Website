@@ -109,9 +109,9 @@ export default function Footer() {
             <Image
               src="/logo.webp"
               alt="Shark AI Solutions"
-              width={140}
-              height={48}
-              className="h-10 w-auto object-contain mb-5"
+              width={200}
+              height={72}
+              className="h-16 w-auto object-contain mb-5"
             />
             <p className="text-[13px] text-white/60 mb-6 leading-relaxed max-w-[300px]">
               AI employees and AI visibility for Tampa Bay local businesses. Get found on ChatGPT, Google AI, and Gemini.
