@@ -23,12 +23,12 @@ export default function ArticleCarousel({ posts }: { posts: Post[] }) {
   };
 
   return (
-    <div className="relative">
+    <div className="relative px-12">
       {/* Arrows */}
       <button
         onClick={() => scroll("left")}
         aria-label="Scroll left"
-        className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-3 z-10 w-10 h-10 bg-white border-2 border-black flex items-center justify-center hover:bg-[#18b5d8] hover:border-[#18b5d8] hover:text-white transition-colors duration-150 shadow-sm hidden md:flex"
+        className="absolute left-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-white border-2 border-black flex items-center justify-center hover:bg-[#18b5d8] hover:border-[#18b5d8] hover:text-white transition-colors duration-150 shadow-sm hidden md:flex"
       >
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
           <polyline points="15 18 9 12 15 6" />
@@ -37,7 +37,7 @@ export default function ArticleCarousel({ posts }: { posts: Post[] }) {
       <button
         onClick={() => scroll("right")}
         aria-label="Scroll right"
-        className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-3 z-10 w-10 h-10 bg-white border-2 border-black flex items-center justify-center hover:bg-[#18b5d8] hover:border-[#18b5d8] hover:text-white transition-colors duration-150 shadow-sm hidden md:flex"
+        className="absolute right-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-white border-2 border-black flex items-center justify-center hover:bg-[#18b5d8] hover:border-[#18b5d8] hover:text-white transition-colors duration-150 shadow-sm hidden md:flex"
       >
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
           <polyline points="9 18 15 12 9 6" />
@@ -47,7 +47,7 @@ export default function ArticleCarousel({ posts }: { posts: Post[] }) {
       {/* Carousel track */}
       <div
         ref={ref}
-        className="flex gap-6 overflow-x-auto scroll-smooth pb-4 px-1"
+        className="flex gap-6 overflow-x-auto scroll-smooth pb-4"
         style={{
           scrollSnapType: "x mandatory",
           scrollbarWidth: "none",
