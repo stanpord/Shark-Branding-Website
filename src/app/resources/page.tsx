@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { Playfair_Display } from "next/font/google";
+import ArticleCarousel from "@/components/ArticleCarousel";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -362,78 +363,10 @@ export default function ResourcesPage() {
         </div>
       </div>
 
-      {/* ── Article columns ── */}
+      {/* ── Article carousel ── */}
       <section className="bg-white px-6 pt-6 pb-16">
         <div className="max-w-[1120px] mx-auto">
-
-          {/* Desktop: newspaper columns with rules */}
-          <div className="hidden lg:flex gap-0 border-t border-black/15">
-            {below.map((post, i) => (
-              <div
-                key={post.slug}
-                className={`flex-1 pt-6 ${i > 0 ? "pl-7 border-l border-black/15" : ""} ${i < below.length - 1 ? "pr-7" : ""}`}
-              >
-                <Link href={`/resources/${post.slug}`} className="block mb-4 group">
-                  <Image
-                  src={post.image}
-                  alt={post.title}
-                  width={400}
-                  height={130}
-                  className="w-full object-cover group-hover:opacity-90 transition-opacity"
-                  style={{ height: "130px", width: "100%" }}
-                />
-                </Link>
-                <span className="inline-block text-[9px] font-bold uppercase tracking-[0.22em] text-[#18b5d8] mb-2">
-                  {post.category}
-                </span>
-                <h3
-                  className="text-[17px] leading-[1.2] text-black mb-2"
-                  style={{ fontFamily: "var(--font-playfair)", fontWeight: 700 }}
-                >
-                  <Link href={`/resources/${post.slug}`} className="hover:text-[#18b5d8] transition-colors duration-150">
-                    {post.title}
-                  </Link>
-                </h3>
-                <p className="text-[13px] text-[#666] leading-relaxed mb-3 line-clamp-3">{post.excerpt}</p>
-                <div className="text-[11px] text-[#aaa] uppercase tracking-[0.08em] font-semibold border-t border-black/10 pt-3">
-                  {post.date}
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* Mobile/tablet: 2-column grid */}
-          <div className="lg:hidden grid grid-cols-1 sm:grid-cols-2 gap-8 border-t border-black/15 pt-6">
-            {below.map((post) => (
-              <div key={post.slug}>
-                <Link href={`/resources/${post.slug}`} className="block mb-4 group">
-                  <Image
-                  src={post.image}
-                  alt={post.title}
-                  width={400}
-                  height={160}
-                  className="w-full object-cover group-hover:opacity-90 transition-opacity"
-                  style={{ height: "160px", width: "100%" }}
-                />
-                </Link>
-                <span className="inline-block text-[9px] font-bold uppercase tracking-[0.22em] text-[#18b5d8] mb-2">
-                  {post.category}
-                </span>
-                <h3
-                  className="text-[19px] leading-snug text-black mb-2"
-                  style={{ fontFamily: "var(--font-playfair)", fontWeight: 700 }}
-                >
-                  <Link href={`/resources/${post.slug}`} className="hover:text-[#18b5d8] transition-colors duration-150">
-                    {post.title}
-                  </Link>
-                </h3>
-                <p className="text-[14px] text-[#666] leading-relaxed mb-3">{post.excerpt}</p>
-                <div className="text-[11px] text-[#aaa] uppercase tracking-[0.08em] font-semibold border-t border-black/10 pt-3">
-                  {post.date} &middot; {post.readTime}
-                </div>
-              </div>
-            ))}
-          </div>
+          <ArticleCarousel posts={below} />
         </div>
       </section>
 
