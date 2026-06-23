@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const services = [
   { href: "/services#ai-visibility", label: "AI Business Consulting" },
@@ -81,44 +82,59 @@ const socials = [
 
 export default function Footer() {
   return (
-    <footer className="bg-[#f5f5f7] text-[#333333]">
-      <div className="max-w-[1100px] mx-auto px-8 pt-20 pb-10">
+    <footer className="bg-[#07141a] text-white">
 
-        {/* Top grid — brand column + 3 link columns */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-12 mb-16">
+      {/* ── CTA bar ── */}
+      <div className="border-b border-white/10">
+        <div className="max-w-[1100px] mx-auto px-8 py-10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+          <div>
+            <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-[#18b5d8] mb-1">Ready to get started?</p>
+            <p className="text-[22px] font-bold text-white leading-snug">See how your business appears to AI — free.</p>
+          </div>
+          <Link
+            href="/free-report"
+            className="shrink-0 bg-[#18b5d8] text-white text-[13px] font-bold uppercase tracking-[0.08em] px-7 py-3.5 rounded-full hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 [touch-action:manipulation]"
+          >
+            Get My Free AI Audit
+          </Link>
+        </div>
+      </div>
 
-          {/* Brand + contact + socials — spans 2 cols on lg */}
+      {/* ── Main grid ── */}
+      <div className="max-w-[1100px] mx-auto px-8 pt-16 pb-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-12 mb-14">
+
+          {/* Brand column */}
           <div className="lg:col-span-2">
-            <p className="text-[17px] font-bold text-[#1d1d1f] mb-1">Shark AI Solutions</p>
-            <p className="text-[13px] text-[#6e6e73] mb-6 leading-relaxed">
-              AI employees and AI visibility for Tampa Bay local businesses. Automate your follow-up, reviews, and content — and get found on ChatGPT, Google AI, and Gemini.
+            <Image
+              src="/logo.webp"
+              alt="Shark AI Solutions"
+              width={140}
+              height={48}
+              className="h-10 w-auto object-contain mb-5"
+            />
+            <p className="text-[13px] text-white/60 mb-6 leading-relaxed max-w-[300px]">
+              AI employees and AI visibility for Tampa Bay local businesses. Get found on ChatGPT, Google AI, and Gemini.
             </p>
 
             {/* Address */}
-            <div className="mb-6 space-y-1">
-              <p className="text-[13px] text-[#1d1d1f] font-medium">27251 Wesley Chapel Blvd.</p>
-              <p className="text-[13px] text-[#6e6e73]">Suite B14 #805</p>
-              <p className="text-[13px] text-[#6e6e73]">Wesley Chapel, FL 33544</p>
+            <div className="mb-5 space-y-1">
+              <p className="text-[13px] text-white/80 font-medium">27251 Wesley Chapel Blvd.</p>
+              <p className="text-[13px] text-white/50">Suite B14 #805, Wesley Chapel, FL 33544</p>
             </div>
 
-            {/* Phone + email */}
+            {/* Contact */}
             <div className="mb-8 space-y-1.5">
-              <a
-                href="tel:+17275133955"
-                className="block text-[13px] text-[#333333] hover:text-[#18b5d8] motion-safe:transition-colors"
-              >
+              <a href="tel:+17275133955" className="block text-[13px] text-white/70 hover:text-[#18b5d8] motion-safe:transition-colors">
                 (727) 513-3955
               </a>
-              <a
-                href="mailto:info@sharkbrandingsolutions.com"
-                className="block text-[13px] text-[#333333] hover:text-[#18b5d8] motion-safe:transition-colors"
-              >
+              <a href="mailto:info@sharkbrandingsolutions.com" className="block text-[13px] text-white/70 hover:text-[#18b5d8] motion-safe:transition-colors">
                 info@sharkbrandingsolutions.com
               </a>
             </div>
 
-            {/* Social icons */}
-            <div className="flex items-center gap-3">
+            {/* Socials */}
+            <div className="flex items-center gap-2.5">
               {socials.map((s) => (
                 <a
                   key={s.label}
@@ -126,7 +142,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={s.label}
-                  className="w-11 h-11 rounded-full bg-white border border-[#e0e0e0] flex items-center justify-center text-[#6e6e73] hover:text-[#18b5d8] hover:border-[#18b5d8] motion-safe:transition-colors [touch-action:manipulation]"
+                  className="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center text-white/50 hover:text-[#18b5d8] hover:border-[#18b5d8] motion-safe:transition-colors [touch-action:manipulation]"
                 >
                   {s.icon}
                 </a>
@@ -136,16 +152,13 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h2 className="text-[11px] font-bold text-[#1d1d1f] mb-5 tracking-[1.5px] uppercase">
+            <h2 className="text-[11px] font-bold text-white uppercase tracking-[0.18em] mb-5">
               Services
             </h2>
             <ul className="space-y-3">
               {services.map((s) => (
                 <li key={s.href}>
-                  <Link
-                    href={s.href}
-                    className="text-[14px] text-[#6e6e73] hover:text-[#18b5d8] motion-safe:transition-colors"
-                  >
+                  <Link href={s.href} className="text-[13px] text-white/50 hover:text-[#18b5d8] motion-safe:transition-colors">
                     {s.label}
                   </Link>
                 </li>
@@ -155,16 +168,13 @@ export default function Footer() {
 
           {/* Company */}
           <div>
-            <h2 className="text-[11px] font-bold text-[#1d1d1f] mb-5 tracking-[1.5px] uppercase">
+            <h2 className="text-[11px] font-bold text-white uppercase tracking-[0.18em] mb-5">
               Company
             </h2>
             <ul className="space-y-3">
               {company.map((c) => (
                 <li key={c.href}>
-                  <Link
-                    href={c.href}
-                    className="text-[14px] text-[#6e6e73] hover:text-[#18b5d8] motion-safe:transition-colors"
-                  >
+                  <Link href={c.href} className="text-[13px] text-white/50 hover:text-[#18b5d8] motion-safe:transition-colors">
                     {c.label}
                   </Link>
                 </li>
@@ -174,16 +184,13 @@ export default function Footer() {
 
           {/* Resources */}
           <div>
-            <h2 className="text-[11px] font-bold text-[#1d1d1f] mb-5 tracking-[1.5px] uppercase">
+            <h2 className="text-[11px] font-bold text-white uppercase tracking-[0.18em] mb-5">
               Resources
             </h2>
             <ul className="space-y-3">
               {resources.map((r) => (
                 <li key={r.href}>
-                  <Link
-                    href={r.href}
-                    className="text-[14px] text-[#6e6e73] hover:text-[#18b5d8] motion-safe:transition-colors"
-                  >
+                  <Link href={r.href} className="text-[13px] text-white/50 hover:text-[#18b5d8] motion-safe:transition-colors">
                     {r.label}
                   </Link>
                 </li>
@@ -193,22 +200,22 @@ export default function Footer() {
 
         </div>
 
-        {/* Bottom bar */}
-        <div className="border-t border-[#e0e0e0] pt-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-          <p className="text-[12px] text-[#86868b]">
+        {/* ── Bottom bar ── */}
+        <div className="border-t border-white/10 pt-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+          <p className="text-[12px] text-white/30">
             &copy; {new Date().getFullYear()} Shark AI Solutions. All rights reserved.
           </p>
           <div className="flex flex-wrap items-center gap-5">
-            <Link href="/privacy" className="text-[12px] text-[#86868b] hover:text-[#18b5d8] motion-safe:transition-colors">
+            <Link href="/privacy" className="text-[12px] text-white/30 hover:text-[#18b5d8] motion-safe:transition-colors">
               Privacy Policy
             </Link>
-            <Link href="/terms" className="text-[12px] text-[#86868b] hover:text-[#18b5d8] motion-safe:transition-colors">
+            <Link href="/terms" className="text-[12px] text-white/30 hover:text-[#18b5d8] motion-safe:transition-colors">
               Terms of Service
             </Link>
-            <Link href="/sitemap-html" className="text-[12px] text-[#86868b] hover:text-[#18b5d8] motion-safe:transition-colors">
+            <Link href="/sitemap-html" className="text-[12px] text-white/30 hover:text-[#18b5d8] motion-safe:transition-colors">
               Sitemap
             </Link>
-            <p className="text-[12px] text-[#86868b]">
+            <p className="text-[12px] text-white/30">
               Serving{" "}
               <Link href="/wesley-chapel" className="hover:text-[#18b5d8] motion-safe:transition-colors">Wesley Chapel</Link>
               {" "}&middot;{" "}
@@ -217,8 +224,8 @@ export default function Footer() {
             </p>
           </div>
         </div>
-
       </div>
+
     </footer>
   );
 }
