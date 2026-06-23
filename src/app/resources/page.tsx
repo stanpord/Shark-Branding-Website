@@ -204,7 +204,7 @@ export default function ResourcesPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(resourcesSchema) }} />
 
       {/* ── Date bar ── */}
-      <div className="bg-white border-b border-black/20 px-6 py-2 mt-[60px]">
+      <div className="bg-white border-b border-black/20 px-6 py-2">
         <div className="max-w-[1120px] mx-auto flex flex-wrap items-center justify-between gap-2 text-[10.5px] font-semibold uppercase tracking-[0.18em] text-[#666]">
           <span>Tampa Bay&rsquo;s AI Visibility Resource</span>
           <span className="hidden sm:block">sharkbrandingsolutions.com</span>
