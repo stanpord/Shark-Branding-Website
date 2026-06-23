@@ -28,7 +28,7 @@ export default function Nav() {
         Shark Branding Solutions is now&nbsp;<span className="font-extrabold">Shark AI Solutions</span>&nbsp;— same team, bigger mission.
       </div>
       <div className="bg-white border-b border-[#e0e0e0]">
-      <nav className="w-full h-11 max-w-[1440px] mx-auto px-6 flex items-center justify-between">
+      <nav className="w-full h-16 max-w-[1440px] mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
         <Link
           href="/"
@@ -37,9 +37,9 @@ export default function Nav() {
           <Image
             src="/logo.webp"
             alt="Shark AI Solutions"
-            width={120}
-            height={32}
-            className="h-7 w-auto object-contain"
+            width={160}
+            height={56}
+            className="h-12 w-auto object-contain"
             priority
             onError={() => {}}
           />
