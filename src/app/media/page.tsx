@@ -39,6 +39,14 @@ const broadcastText = [
 
 const editorial = [
   {
+    outlet: "INC.",
+    outletTag: "Expert Quote",
+    headline: "We Stress-Tested a Startup Idea With AI. Here's What Claude and ChatGPT Got Right — and Wrong.",
+    excerpt:
+      "Michelle Stanaland of Shark AI Solutions is quoted in INC. magazine on how AI tools like Claude and ChatGPT can help founders stress-test business ideas, and where human judgment still matters most.",
+    href: "https://www.inc.com/diana-bocco/ai-claude-chatgpt-stress-test-startup-idea/91363659",
+  },
+  {
     outlet: "TechNewsWorld",
     outletTag: "Expert Quote",
     headline: "Study Finds Most Restaurants Missing From AI Recommendations",
