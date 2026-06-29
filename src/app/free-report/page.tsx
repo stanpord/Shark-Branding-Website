@@ -8,7 +8,7 @@ const freeReportSchema = {
       "@type": "WebPage",
       "@id": "https://sharkbrandingsolutions.com/free-report",
       url: "https://sharkbrandingsolutions.com/free-report",
-      name: "Free AI Visibility Audit — Shark AI Solutions",
+      name: "Free AI Visibility Audit | Shark AI Solutions",
       description: "See exactly how your business appears across search, maps, reviews, and AI platforms. Delivered within 48 hours.",
       isPartOf: { "@id": "https://sharkbrandingsolutions.com/#website" },
     },
@@ -41,7 +41,7 @@ const freeReportSchema = {
 };
 
 export const metadata: Metadata = {
-  title: "Free AI Audit — Shark AI Solutions",
+  title: "Free AI Visibility Audit for Tampa Bay | Shark AI Solutions",
   description:
     "See exactly how your business appears across search, maps, reviews, and AI platforms. We walk through every finding with you in a free 1-hour session.",
 };
@@ -59,10 +59,10 @@ export default function FreeReportPage() {
           <h1 className="display-hero text-[#0a0a0a] mb-6" style={{ textWrap: "balance" }}>
             See exactly where your business
             <br />
-            <span className="text-[#18b5d8]">stands — before you spend a dollar.</span>
+            <span className="text-[#18b5d8]">stands, before you spend a dollar.</span>
           </h1>
           <p className="lead-airy text-[#333333] mb-10">
-            We audit how your business appears across AI search, maps, and reviews, then walk through every finding with you in a 1-hour session. You leave with a specific action plan. 100% free. No pitch.
+            We pull your top visibility findings and send them to your inbox within 48 hours. Then we sit down on a Google Meet to build your action plan together. You leave knowing exactly what to fix and in what order. Free, and no commitment required.
           </p>
           {/* Proof strip */}
           <div className="flex items-center justify-center gap-0 border border-[#e8e8ed] rounded-[16px] overflow-hidden divide-x divide-[#e8e8ed] mb-8">
@@ -80,7 +80,7 @@ export default function FreeReportPage() {
           {/* HVAC proof */}
           <div className="bg-[#f5f5f7] border border-[#e0e0e0] rounded-[14px] px-6 py-4 text-left">
             <p className="text-[14px] text-[#333333] leading-relaxed">
-              <strong className="text-[#1d1d1f]">Real result:</strong> An HVAC client&rsquo;s audit revealed 4 fixable visibility gaps. After we fixed them, they moved from <strong className="text-[#18b5d8]">#32 → #2</strong> in 30 days — no paid ads.
+              <strong className="text-[#1d1d1f]">Real result:</strong> An HVAC client&rsquo;s audit revealed 4 fixable visibility gaps. After we fixed them, they moved from <strong className="text-[#18b5d8]">#32 → #2</strong> in 30 days, no paid ads.
             </p>
           </div>
         </div>
@@ -92,9 +92,9 @@ export default function FreeReportPage() {
           <p className="text-center text-[13px] font-semibold tracking-[0.2em] uppercase text-[#18b5d8] mb-8">How It Works</p>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {[
-              { n: "1", title: "Enter your business", body: "Takes 60 seconds. Just your business name and location." },
-              { n: "2", title: "We run the audit", body: "Our team checks your AI visibility, listings, reviews, and search presence." },
-              { n: "3", title: "Book your results walkthrough", body: "Pick a time on our calendar. We go through every finding together and you leave with a prioritized action plan — your team can tackle it, or we can help." },
+              { n: "1", title: "Tell us about your business", body: "Takes 60 seconds. Your business name, location, and the best email to reach you." },
+              { n: "2", title: "Get your top findings", body: "We check your AI visibility, listings, reviews, and search presence. Your findings hit your inbox within 48 hours. Real gaps, specific to your business." },
+              { n: "3", title: "Build your plan on a call", body: "Once you have your findings, book a Google Meet with us. We go deeper on everything and you leave with a prioritized list of what to fix first. That's where the strategy happens." },
             ].map((step) => (
               <div key={step.n} className="bg-[#f5f5f7] rounded-[16px] p-6 text-center">
                 <div className="w-9 h-9 rounded-full bg-[#18b5d8] flex items-center justify-center mx-auto mb-4">
@@ -108,7 +108,7 @@ export default function FreeReportPage() {
           {/* Objection */}
           <div className="mt-6 bg-[#f5f5f7] border-l-4 border-[#18b5d8] rounded-r-[12px] px-6 py-4">
             <p className="text-[14px] text-[#333333] leading-relaxed">
-              <strong className="text-[#1d1d1f]">Is this really free?</strong> Yes — no credit card, no contract, no sales pressure. You get a real report and a real call. If you want help fixing what we find, we can talk about that. If not, the audit is yours to keep.
+              <strong className="text-[#1d1d1f]">Is this really free?</strong> Yes. No credit card, no contract. You get real findings in your inbox, then a real conversation with us on Google Meet. If you want our help fixing what we find, we can talk about that. If not, you still walk away knowing exactly where you stand.
             </p>
           </div>
         </div>
@@ -118,7 +118,7 @@ export default function FreeReportPage() {
       <section className="bg-[#f5f5f7] px-6 pt-16 pb-0">
         <div className="max-w-[680px] mx-auto text-center">
           <p className="text-[13px] font-semibold tracking-[0.2em] uppercase text-[#18b5d8] mb-3">Ready to start?</p>
-          <p className="text-[22px] font-semibold text-[#0a0a0a] mb-8" style={{ textWrap: "balance" }}>Enter your business details to begin the audit</p>
+          <p className="text-[22px] font-semibold text-[#0a0a0a] mb-8" style={{ textWrap: "balance" }}>Enter your business details and we will get started</p>
           <AuditModalTrigger
             className="btn-press inline-block bg-[#18b5d8] text-white text-[17px] font-semibold rounded-full px-[36px] py-[16px] hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 focus-visible:ring-offset-[#f5f5f7] [touch-action:manipulation]"
             label="Get My Free AI Audit"
@@ -131,12 +131,10 @@ export default function FreeReportPage() {
       <section className="bg-[#f5f5f7] px-6 pt-8 pb-16">
         <div className="max-w-[680px] mx-auto">
           <div className="bg-white border border-[#e8e8ed] rounded-[20px] px-8 py-8 text-center">
-            <div className="w-9 h-9 rounded-full bg-[#18b5d8] flex items-center justify-center mx-auto mb-4">
-              <span className="text-white font-bold text-[13px]">2</span>
-            </div>
-            <p className="text-[15px] font-semibold text-[#1d1d1f] mb-2">Book your review session</p>
+            <p className="text-[13px] font-semibold tracking-[0.2em] uppercase text-[#18b5d8] mb-3">Step 3</p>
+            <p className="text-[15px] font-semibold text-[#1d1d1f] mb-2">Book your strategy call</p>
             <p className="text-[14px] text-[#6e6e73] leading-relaxed mb-6" style={{ textWrap: "balance" }}>
-              After you submit your business info above, book your 1-hour review session. This is where we walk through every finding together and you leave with a prioritized action plan.
+              Once your findings land in your inbox, book a Google Meet with us. We go through everything together, prioritize what matters most, and build your action plan on the call. Your team can run with it, or we can help.
             </p>
             <a
               href="https://bookmenow.info/book/mstanaland/ai-visibility-report-review"
@@ -144,7 +142,7 @@ export default function FreeReportPage() {
               rel="noopener noreferrer"
               className="inline-block bg-[#18b5d8] text-white text-[15px] font-semibold rounded-full px-8 py-4 hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150"
             >
-              Book My Report Review
+              Book My Results Walkthrough
             </a>
             <p className="text-[12px] text-[#9b9b9b] mt-4">Free. 1 hour. No commitment required.</p>
           </div>
