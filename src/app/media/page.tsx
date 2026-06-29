@@ -3,13 +3,14 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Media & News — Shark AI Solutions Press Coverage",
+  title: "Press Coverage & Media | Shark AI Solutions",
   description:
     "Press coverage, broadcast features, and media appearances from Shark AI Solutions. Featured on WFLA News Channel 8, Tampa Bay Times, iHeart Radio, Spotify, AIthority, Bay News 9, St. Pete Catalyst, and 173 total outlets.",
   alternates: { canonical: "https://sharkbrandingsolutions.com/media" },
 };
 
 const featuredLogos = [
+  { name: "INC.", src: "/press-logos/inc.svg", width: 80, height: 30, href: "https://www.inc.com/diana-bocco/ai-claude-chatgpt-stress-test-startup-idea/91363659" },
   { name: "TechNewsWorld", src: "/press-logos/technewsworld.png", width: 160, height: 52, href: "https://www.technewsworld.com/story/study-finds-most-restaurants-missing-from-ai-recommendations-180396.html" },
   { name: "AIthority", src: "/press-logos/aithority.png", width: 120, height: 36, href: "https://aithority.com/machine-learning/shark-branding-solutions-launches-shark-ai-hackathon-to-build-the-future-of-human-first-ai-employees/" },
   { name: "Bay News 9", src: "/press-logos/baynews9.png", width: 70, height: 70, href: "https://baynews9.com/fl/tampa/events/2026/05/26/shark_ai_hackathon" },
@@ -56,7 +57,7 @@ const editorial = [
   {
     outlet: "Bay News 9",
     outletTag: "Event Feature",
-    headline: "Shark AI Hackathon — Tampa Bay Event",
+    headline: "Shark AI Hackathon, Tampa Bay Event",
     excerpt:
       "Bay News 9 listed the Shark AI Hackathon as a featured Tampa Bay area event, bringing together business leaders and community partners to shape the future of AI employees for local businesses.",
     href: "https://baynews9.com/fl/tampa/events/2026/05/26/shark_ai_hackathon",
@@ -80,7 +81,7 @@ const editorial = [
   {
     outlet: "Neighborhood News",
     outletTag: "Ongoing Coverage",
-    headline: "Michelle Stanaland — Neighborhood News",
+    headline: "Michelle Stanaland, Neighborhood News",
     excerpt:
       "Neighborhood News features ongoing coverage of Michelle Stanaland and Shark AI Solutions, documenting the firm's growth and impact across the Tampa Bay business community.",
     href: "https://neighborhoodnewsonline.net/tag/michelle-stanaland/",
@@ -117,7 +118,7 @@ export default function MediaPage() {
         </div>
       </section>
 
-      {/* As Seen In — logos */}
+      {/* As Seen In, logos */}
       <section className="border-b border-[#e5e5ea] py-12 px-6 bg-white">
         <div className="max-w-[1000px] mx-auto">
           <p className="text-center text-[11px] font-bold tracking-[2px] uppercase text-[#86868b] mb-10">
