@@ -118,20 +118,20 @@ export default function WhatIsAiSalesAssistantPage() {
 
           <div className="text-[17px] leading-[1.75] text-[#333] space-y-6 mb-16">
             <p>
-              Most service business owners have had the same frustrating experience. You spend 45 minutes on the phone with someone who seems interested, you follow up twice, and then they disappear. Or you find out after the fact that they were never actually the decision maker. Or their budget was half of what your service costs.
+              You spend 45 minutes on the phone with someone who seems genuinely interested. You follow up twice. Then they disappear. Or you find out they were never the decision maker. Or their budget was half of what your service costs.
             </p>
             <p>
               That time is gone. There is no recovering it.
             </p>
             <p>
-              Lead qualification exists to solve this problem. BANT and Sandler are two of the most proven frameworks for doing it. An AI Sales Assistant applies them automatically before your team spends a single minute on a prospect.
+              BANT and Sandler are two frameworks sales teams have used for decades to stop that from happening. An AI Sales Assistant applies both automatically before your team spends a single minute on a prospect.
             </p>
           </div>
 
           <div className="text-[17px] leading-[1.75] text-[#333] space-y-6 mb-16">
             <h2 className="text-[26px] font-bold text-[#0a0a0a] mt-2 mb-4">What BANT actually means</h2>
             <p>
-              BANT stands for Budget, Authority, Need, and Timeline. It was developed by IBM in the 1950s and has been adapted and refined by sales organizations ever since. The premise is simple: before your closer gets on the phone with a prospect, you want to know four things.
+              BANT stands for Budget, Authority, Need, and Timeline. IBM developed it in the 1950s and sales organizations have been using it ever since because it works. Before your closer gets on the phone, you want to know four things.
             </p>
           </div>
 

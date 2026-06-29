@@ -148,10 +148,10 @@ export default function WhatIsAiCrmPage() {
               An AI CRM captures data from the source instead of asking your team to enter it later. When the AI voice receptionist takes a call, the caller&apos;s name, number, reason for the call, and every qualifying detail from the conversation lands in the CRM automatically. No one has to type anything. No one has to remember.
             </p>
             <p>
-              The same happens with chat interactions, inbound texts, and follow-up emails sent by the AI. Every touchpoint builds the contact record without a person in the middle.
+              Chat interactions, inbound texts, and follow-up emails sent by the AI work the same way. Every touchpoint builds the contact record without a person in the middle.
             </p>
             <p>
-              Lead scoring works the same way. Instead of rules based on form fills and page views, the AI scores based on what the contact actually said. A caller who mentions they need service this week and owns the property scores differently than someone who is comparing prices for next year. That difference drives who gets an immediate callback and who goes into a nurture sequence.
+              Scoring is based on what the contact actually said, not just whether a form was filled out. A caller who mentions they need service this week and owns the property scores differently than someone comparing prices for next year. That difference drives who gets an immediate callback and who goes into a nurture sequence.
             </p>
             <p>
               Follow-up does not wait for a reminder to appear on someone&apos;s calendar. It runs automatically based on lead score, timing, and where the contact is in the pipeline.

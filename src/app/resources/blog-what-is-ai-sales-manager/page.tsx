@@ -134,13 +134,13 @@ export default function WhatIsAiSalesManagerPage() {
           <div className="text-[17px] leading-[1.75] text-[#333] space-y-6 mb-16">
             <h2 className="text-[26px] font-bold text-[#0a0a0a] mt-2 mb-4">What an AI Sales Manager actually does</h2>
             <p>
-              Think of it as the layer between your lead capture and your human team. Every lead that comes in through the AI voice receptionist, the chat widget, or a web form hits the AI Sales Manager first.
+              Every lead that comes in through the AI voice receptionist, the chat widget, or a web form hits the AI Sales Manager first. It sits between lead capture and your human team, and it makes decisions automatically.
             </p>
             <p>
-              From there it scores the lead based on the conversation content. Not just whether a form was filled out, but what the person actually said. Is this a job for this week or are they shopping for next year? Did they mention a budget? Did they say they own the property? Those signals drive the score, and the score drives what happens next.
+              It scores each lead based on what the person actually said. Not just whether a form was filled out. Is this a job for this week or are they shopping for next year? Did they mention a budget? Did they say they own the property? Those signals drive the score, and the score drives what happens next.
             </p>
             <p>
-              High-value leads get routed to a senior team member immediately, with full context on the call. Mid-tier leads go into a follow-up sequence. Leads that are clearly not ready enter a longer-term nurture flow. None of this requires a decision from your team. The rules are configured once and the AI applies them to every lead that comes through.
+              A high-value lead goes directly to a senior team member with full context on the call. Someone who needs more time goes into a follow-up sequence. Someone who is clearly not ready enters a longer nurture flow. Your team never touches any of this. The rules are set once. The AI runs them on every lead, every time.
             </p>
             <p>
               Follow-up does not wait. The first message goes out within minutes of the lead coming in. For a service business where speed to response is a competitive advantage, that matters more than most people realize. Studies from Harvard Business Review put the odds of qualifying a lead at 21 times higher when you respond within five minutes versus 30 minutes. The AI Sales Manager responds in under five minutes, every time, even at 11 PM on a Sunday.

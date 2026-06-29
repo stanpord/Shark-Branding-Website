@@ -169,18 +169,15 @@ export default function FullAiSuitePricingPage() {
           <div className="text-[17px] leading-[1.75] text-[#333] space-y-6 mb-16">
             <h2 className="text-[26px] font-bold text-[#0a0a0a] mt-2 mb-4">What the DIY stack costs</h2>
             <p>
-              We ran the numbers on what it costs to build the equivalent stack using separate vendors. At a standard SMB usage level of 100 calls per month, 500 voice minutes, and 200 chat interactions, the closest competitive alternatives run between $3,500 and $4,500 per month across four or more platforms.
+              The closest competitors to the Full AI Suite are not single products. They are four or five separate platforms stitched together. A voice answering service. A chat tool. A CRM. A follow-up automation tool. A reputation management platform. At the usage level of a typical Tampa Bay service business, that stack runs $3,500 to $4,500 per month before annual contracts and implementation.
             </p>
             <p>
-              That does not include annual contracts, which most of those platforms require. It does not include implementation time. It does not include the ongoing management of keeping four separate systems connected and configured correctly as your business changes.
-            </p>
-            <p>
-              And none of them come pre-configured for your business. You get software. We give you a working system.
+              Most of those platforms require annual contracts. None of them talk to each other by default. And none of them are configured for your business. You get software. We give you a working system.
             </p>
 
             <h2 className="text-[26px] font-bold text-[#0a0a0a] mt-8 mb-4">How to think about the ROI</h2>
             <p>
-              The simplest way to look at it is this. One additional booked job per month from a lead that would have otherwise gone to voicemail covers a significant portion of the monthly cost for most service businesses. For HVAC companies, roofers, plumbers, law firms, and home services businesses in Tampa Bay, a single after-hours call that gets answered and booked instead of lost can represent $500 to $5,000 in revenue.
+              One booked job per month from a lead that would have gone to voicemail covers a significant portion of the monthly cost. For an HVAC company or a law firm in Tampa Bay, a single after-hours call that gets answered and converts instead of disappearing can represent $500 to $5,000 in revenue.
             </p>
             <p>
               The AI voice receptionist answers every call. The AI Sales Manager follows up with every lead. The AI Sales Assistant warms every prospect before your closer gets involved. None of those things require anyone on your team to be awake.
