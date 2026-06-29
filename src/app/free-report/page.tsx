@@ -5,6 +5,28 @@ const freeReportSchema = {
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "FAQPage",
+      "@id": "https://sharkbrandingsolutions.com/free-report#faq",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "What's included in the Free AI Audit?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "The Free AI Audit covers search presence (how you rank on Google and Bing for searches your customers are making), maps and listings (whether your business information is accurate and consistent across directories), reviews and trust (your star rating, review volume, and how your reputation compares to local competitors), and AI readiness (whether ChatGPT, Perplexity, and Google AI Overviews would recommend your business). Your findings are delivered to your inbox within 48 hours.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How long does the Free AI Audit take?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Getting started takes 60 seconds — just your business name, location, and email. Your top visibility findings are delivered to your inbox within 48 hours. From there, you book a Google Meet with the Shark AI Solutions team to go through everything together, prioritize what matters most, and build your action plan. The call is free and takes about one hour.",
+          },
+        },
+      ],
+    },
+    {
       "@type": "WebPage",
       "@id": "https://sharkbrandingsolutions.com/free-report",
       url: "https://sharkbrandingsolutions.com/free-report",
@@ -118,7 +140,15 @@ export default function FreeReportPage() {
       <section className="bg-[#f5f5f7] px-6 pt-16 pb-0">
         <div className="max-w-[680px] mx-auto text-center">
           <p className="text-[13px] font-semibold tracking-[0.2em] uppercase text-[#18b5d8] mb-3">Ready to start?</p>
-          <p className="text-[22px] font-semibold text-[#0a0a0a] mb-8" style={{ textWrap: "balance" }}>Enter your business details and we will get started</p>
+          <p className="text-[22px] font-semibold text-[#0a0a0a] mb-6" style={{ textWrap: "balance" }}>Enter your business details and we will get started</p>
+          <p className="text-[12px] text-[#9b9b9b] font-semibold tracking-[0.1em] uppercase mb-6">
+            As seen in{" "}
+            <a href="https://www.inc.com/" target="_blank" rel="noopener noreferrer" className="text-[#555] hover:text-[#18b5d8] transition-colors">INC.</a>
+            {" · "}
+            <a href="https://www.wfla.com" target="_blank" rel="noopener noreferrer" className="text-[#555] hover:text-[#18b5d8] transition-colors">WFLA News</a>
+            {" · "}
+            <a href="https://www.tampabay.com" target="_blank" rel="noopener noreferrer" className="text-[#555] hover:text-[#18b5d8] transition-colors">Tampa Bay Times</a>
+          </p>
           <AuditModalTrigger
             className="btn-press inline-block bg-[#18b5d8] text-white text-[17px] font-semibold rounded-full px-[36px] py-[16px] hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 focus-visible:ring-offset-[#f5f5f7] [touch-action:manipulation]"
             label="Get My Free AI Audit"
