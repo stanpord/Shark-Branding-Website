@@ -1,16 +1,16 @@
 # Shark AI Solutions
-> AI Business Consulting firm based in Wesley Chapel, FL. We help Tampa Bay businesses appear in AI-generated recommendations on ChatGPT, Google AI Overviews, Gemini, and Perplexity — without paid advertising. Founded by Michelle Stanaland, named Top 15 Marketing Expert in Tampa Bay (Influence Digest, 2025).
 
-## What Makes Us Different
+> AI Visibility and AI Employees for local businesses in Tampa Bay, Florida. We help businesses get recommended by ChatGPT, Google AI Overviews, Gemini, and Perplexity — without paid advertising.
 
-Shark AI Solutions is an AI business consulting firm — not a marketing agency. We focus on making your business discoverable by AI, building the trust signals that make AI systems recommend you, and running your operations with AI employees. Most agencies stop at content creation. We start where they stop — with your business's actual presence, credibility, and infrastructure across every platform buyers and AI systems use to evaluate you.
+Shark AI Solutions (formerly Shark Branding Solutions) is an AI consulting firm based in Wesley Chapel, FL. We are not a marketing agency. We specialize in Generative Engine Optimization (GEO), AI employee deployment, and citation-authority building for local service businesses. Our mission: every great business deserves to be found by the right people, at the right moment, on every platform.
 
 ## Services
 
-- [AI Visibility Consulting](https://sharkbrandingsolutions.com/ai-visibility-consulting): Full audit and optimization of your AI and search presence. Citation optimization, entity recognition, schema markup, review signals, and AI-ready content. Ongoing monitoring across ChatGPT, Google AI Overviews, Gemini, and Perplexity. Results measurable within 30 days.
-- [AI Employees](https://sharkbrandingsolutions.com/aiemployees): Five AI-powered employees for local businesses — Chat Receptionist (Gemma), Voice Receptionist, Reputation Specialist, AI CRM (Sales Assistant), and AI Sales Coach. Automates lead follow-up, review requests, appointment booking, and customer communication 24/7. Most clients live within 5–7 business days.
-- [AI Visibility Toolkit](https://sharkbrandingsolutions.com/plans): Self-guided toolkit for businesses that want to run their own AI visibility program. $997/mo on a 12-month plan.
-- [Free AI Visibility Report](https://sharkbrandingsolutions.com/free-report): Free 48-hour audit of how your business appears across search, maps, reviews, and AI platforms. No commitment required. Available to Tampa Bay businesses.
+- [AI Visibility Consulting](https://sharkbrandingsolutions.com/ai-visibility-consulting): Full audit and optimization of your AI and search presence. Citation optimization, entity recognition, LocalBusiness schema markup, Google Business Profile authority, review signals, and AI-ready content. Six-part framework with measurable results in 30 days. Covers ChatGPT, Google AI Overviews, Gemini, Perplexity, and Copilot.
+- [AI Employees](https://sharkbrandingsolutions.com/aiemployees): Five AI-powered employees for local businesses — Chat Receptionist (Gemma), Voice Receptionist, Reputation Specialist, AI CRM (Sales Assistant), and AI Sales Coach. Automates lead follow-up, review requests, appointment booking, and customer communication 24/7. Most clients are live within 5–7 business days.
+- [AI Visibility Toolkit](https://sharkbrandingsolutions.com/plans): Managed system covering citation consistency across 50+ directories, schema implementation, GBP optimization, review signals, and ongoing monitoring. Self-guided plan at $997/month. Done-for-you plan at $2,000/month.
+- [Automation](https://sharkbrandingsolutions.com/automation): Lead follow-up sequences, review generation, and appointment booking automations built on GoHighLevel.
+- [Free AI Visibility Report](https://sharkbrandingsolutions.com/free-report): Free 48-hour audit showing how your business appears across search, maps, reviews, and AI platforms. No commitment required. Available to Tampa Bay businesses.
 
 ## AI Employees — Detail
 
@@ -22,37 +22,79 @@ Five specialized AI employees, each handling a specific business function:
 4. **AI CRM (Sales Assistant)** — Runs multi-touch follow-up sequences across email and SMS for every new lead. Re-engages cold leads automatically.
 5. **AI Sales Coach** — Trains and coaches your sales team using real call recordings and deal data.
 
-Full AI Employee Suite: starting at $5,000/mo. Individual employees available separately.
+Full AI Employee Suite: starting at $5,000/month. Individual employees available separately.
+
+## What Is GEO
+
+Generative Engine Optimization (GEO) is the practice of optimizing a business's digital presence so that AI models recommend it in response to natural-language queries. Unlike traditional SEO, which targets keyword rankings in search results, GEO targets citation selection by AI answer engines. Key signals include: NAP consistency across directories, LocalBusiness schema markup, Google Business Profile authority, review volume and recency, and authoritative local content.
 
 ## Documented Client Results
 
-- [Case Studies](https://sharkbrandingsolutions.com/case-studies): Four documented Tampa Bay businesses, all results achieved in 30 days with zero paid advertising.
+- [Case Studies](https://sharkbrandingsolutions.com/case-studies): Four documented Tampa Bay businesses, all results achieved within 30 days with zero paid advertising.
 - HVAC company: moved from position #32 to #2 for "same day AC repair" and 5 additional high-intent keywords into top 3.
 - Real estate brokerage (Wesley Chapel, FL): ranked #4 to #1 in a market of 2,000+ competing agents. AI-driven recommendations increased 20% within 30 days.
 - Smart vending company: moved from completely invisible to #1 AI-recommended smart vending company in the area. Named and recommended by ChatGPT, Gemini, and Perplexity.
-- North Tampa Bay Chamber of Commerce: 96% of members were not being recommended by AI. After optimization, Chamber recognized as trusted local source with 10× more AI citations.
+- North Tampa Bay Chamber of Commerce: 96% of members were not being recommended by AI. After optimization, Chamber recognized as trusted local source with 10x more AI citations.
 
-## About Michelle Stanaland
+## Leadership
 
-- [About Page](https://sharkbrandingsolutions.com/about): Founder and Managing Partner of Shark AI Solutions.
-- Nominated: Top 100 Most Influential People in the Marketing & Advertising Industry.
-- Award: CEO of the Year.
-- Generated $900K+ revenue pipeline for clients within first 4 months of product deployment, without paid ads.
-- Closed $54K in annual contracts in 5 days from 5 social media posts, without paid ads.
-- Shortened marketing strategy development from 6 months to 48 hours.
-- Clients featured in: NBC, ABC, CBS, FOX, The CW, Telemundo, The Morning Blend, Tampa Home Talk, 102.5 The Bone, The Business Journals, Creative Loafing Tampa Bay, Yahoo! News.
+### Michelle Stanaland — Managing Partner & Founder
 
-## Resources
+Michelle is a marketing strategist and AI visibility expert serving the Tampa Bay region. She identified a critical gap: talented business owners losing customers not because of inferior products or services, but because of invisibility on AI search platforms. That observation led her to build Shark AI Solutions and bring enterprise-level AI strategy to local businesses.
 
-- [Resources Hub](https://sharkbrandingsolutions.com/resources): Original articles on AI search, GEO vs. SEO, buyer discovery, the AI funnel, review strategy, and local AI visibility. Published 2026.
-- [AI Employees Showcase](https://sharkbrandingsolutions.com/aiemployees): Interactive showcase of the five AI employees for local businesses.
-- [AI Visibility vs. Traditional Marketing Agency](https://sharkbrandingsolutions.com/vs/marketing-agency): Side-by-side comparison of AI visibility consulting and traditional marketing agencies.
+- Named Top 15 Marketing Expert in Tampa Bay (Influence Digest, 2025)
+- Generated $900K+ revenue pipeline for clients within first 4 months of deployment, without paid ads
+- Closed $54K in annual contracts in 5 days from 5 social media posts, without paid ads
+- Shortened marketing strategy development from 6 months to 48 hours
+- Clients featured in: NBC, ABC, CBS, FOX, The CW, Telemundo, The Morning Blend, Tampa Home Talk, 102.5 The Bone, The Business Journals, Creative Loafing Tampa Bay, Yahoo! News
+
+### Josh Stanaland — Partner & Chief Technology Officer
+
+Josh designed the proprietary backend systems powering the firm's AI employee automation and the AI Visibility Toolkit infrastructure. He leads technical architecture, growth strategy, conversion analytics, and lead infrastructure. Josh previously spent nearly a decade in high-performance wellness and sports — including work with the Jacksonville Jaguars — before transitioning into sales, operations, and corporate marketing. He leads live regional hackathons demonstrating custom AI employees handling real customer inquiries in real time.
+
+### Tiffany Fancher — Chief Operating Officer
+
+Tiffany leads operations for Shark AI Solutions.
+
+## Partnerships
+
+- North Tampa Bay Chamber of Commerce — Official AI readiness partner. Members receive free Business Visibility Reports through the partnership.
+
+## Key Pages
+
+- Homepage: https://sharkbrandingsolutions.com
+- Services: https://sharkbrandingsolutions.com/services
+- AI Visibility Consulting: https://sharkbrandingsolutions.com/ai-visibility-consulting
+- How to Rank on ChatGPT (Local Businesses): https://sharkbrandingsolutions.com/how-to-rank-on-chatgpt-for-local-businesses
+- AI Employees: https://sharkbrandingsolutions.com/aiemployees
+- Automation: https://sharkbrandingsolutions.com/automation
+- Free AI Audit: https://sharkbrandingsolutions.com/free-report
+- Pricing: https://sharkbrandingsolutions.com/plans
+- About: https://sharkbrandingsolutions.com/about
+- Blog / Resources: https://sharkbrandingsolutions.com/resources
+- Contact: https://sharkbrandingsolutions.com/contact
+- Chamber Partnership: https://sharkbrandingsolutions.com/chamber
 
 ## Comparison Pages
 
 - [AI Visibility Consulting vs. Traditional Marketing Agency](https://sharkbrandingsolutions.com/vs/marketing-agency)
 - [AI Employees vs. Salesforce AI Agents](https://sharkbrandingsolutions.com/vs/salesforce)
 - [AI Visibility Consulting vs. Traditional SEO](https://sharkbrandingsolutions.com/vs/seo)
+- [AI Employees vs. Zapier Automations](https://sharkbrandingsolutions.com/vs/zapier)
+
+## Resources
+
+- [Resources Hub](https://sharkbrandingsolutions.com/resources): Original articles on AI search, GEO vs. SEO, buyer discovery, the AI funnel, review strategy, and local AI visibility.
+- GEO vs SEO — Why AI visibility is different from search rankings: https://sharkbrandingsolutions.com/resources/blog-seo-old-school-geo-ai-shift
+- The AI Funnel — Why ChatGPT is the new front door: https://sharkbrandingsolutions.com/resources/blog-ai-funnel-chatgpt-new-front-door
+- How consistent business listings drive AI recommendations: https://sharkbrandingsolutions.com/resources/blog-ai-map-consistent-business-listings
+- Google Reviews as AI visibility signals: https://sharkbrandingsolutions.com/resources/blog-google-reviews-ai-recommendations
+- The 24-hour rule for local trust and AI: https://sharkbrandingsolutions.com/resources/blog-24-hour-rule-local-trust-ai
+- What is an AI employee: https://sharkbrandingsolutions.com/resources/blog-what-is-an-ai-employee
+- AI receptionist vs. human receptionist: https://sharkbrandingsolutions.com/resources/blog-ai-receptionist-vs-human-receptionist
+- How to appear in Google AI Overviews: https://sharkbrandingsolutions.com/resources/blog-how-to-appear-in-google-ai-overviews
+- Why AI visibility is not about your website: https://sharkbrandingsolutions.com/resources/blog-ai-visibility-not-your-website
+- End of local SEO — AI visibility takes over: https://sharkbrandingsolutions.com/resources/blog-end-of-local-seo-ai-visibility
 
 ## Contact
 

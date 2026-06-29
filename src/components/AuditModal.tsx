@@ -108,9 +108,9 @@ export default function AuditModal() {
               <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
             </svg>
           </div>
-          <h2 className="text-[28px] font-bold text-white mb-3">Report request received!</h2>
+          <h2 className="text-[28px] font-bold text-white mb-3">Audit submitted!</h2>
           <p className="text-[#aaaaaa] text-[16px] mb-8 leading-relaxed">
-            Your free AI Visibility Report is on its way. Book a call now so we can walk you through your results personally.
+            Your AI Visibility Report is running now. You&rsquo;ll receive your findings within 48 hours. Once they land, book your walkthrough below and we&rsquo;ll go through every finding together.
           </p>
           <a
             href={BOOKING_URL}
@@ -118,13 +118,13 @@ export default function AuditModal() {
             rel="noopener noreferrer"
             className="inline-block w-full bg-[#18b5d8] hover:bg-[#1ec8ee] text-white font-semibold text-[17px] py-4 px-8 rounded-[12px] motion-safe:transition-colors mb-4"
           >
-            Book your free review call
+            Schedule my results walkthrough
           </a>
           <button
             onClick={closeModal}
             className="text-[14px] text-[#666] hover:text-[#999] motion-safe:transition-colors"
           >
-            No thanks, I&rsquo;ll wait for the report
+            I&rsquo;ll book after I receive my audit
           </button>
         </div>
       ) : (

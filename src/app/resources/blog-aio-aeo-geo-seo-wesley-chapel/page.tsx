@@ -14,7 +14,8 @@ export const metadata: Metadata = {
 
 export default function Page() {
  return (
-  <BlogShell
+  <BlogShellurl="https://sharkbrandingsolutions.com/resources/blog-aio-aeo-geo-seo-wesley-chapel"
+   
    relatedPosts={[
     { href: "/resources/blog-seo-old-school-geo-ai-shift", title: "Why Your Business Needs GEO for the AI Search Shift", category: "GEO" },
     { href: "/resources/blog-ai-funnel-chatgpt-new-front-door", title: "ChatGPT Is the New Front Door for Your Customers", category: "AI Visibility" },
@@ -100,7 +101,7 @@ export default function Page() {
    <h3>5. AI Crawler Access and Technical Foundation</h3>
    <p>GPTBot, ClaudeBot, and PerplexityBot must be allowed in your robots.txt file. Your website must serve real content server-side rather than relying entirely on JavaScript rendering, because most AI crawlers do not execute JavaScript. These are fixable technical issues that have a direct impact on whether AI models can even read your site.</p>
 
-   <h2>How Shark Branding Approaches This Differently</h2>
+   <h2>How Shark AI Solutions Approaches This Differently</h2>
    <p>Most marketing agencies in the Tampa Bay area still sell SEO packages built around metrics that were relevant in 2019: domain authority, keyword rankings, monthly reporting decks full of impressions. Those metrics are not wrong, but they are incomplete.</p>
    <p>Shark AI Solutions was built around the question: what does it take for an AI to recommend a local business with confidence? That question drives every service we offer. The AI Visibility Toolkit is not a content marketing retainer with a new name on it. It is a structured deployment of the five components above, measured against a single outcome: does the AI name you?</p>
    <p>We are based in Wesley Chapel. Our clients are Wesley Chapel and North Tampa Bay businesses. We understand the specific competitive landscape of Wiregrass, Pasco County, and the New Tampa corridor in a way that a generic national agency does not. That proximity translates into faster iteration and more relevant benchmarking data.</p>

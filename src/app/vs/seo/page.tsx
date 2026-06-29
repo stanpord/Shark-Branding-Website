@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "AI Visibility vs. SEO | Shark AI Solutions",
   description:
-    "You already pay for SEO. Here's what it doesn't cover — and why your business is still invisible on ChatGPT, Google AI Overviews, and Gemini.",
+    "You already pay for SEO. Here's what it doesn't cover, and why your business is still invisible on ChatGPT, Google AI Overviews, and Gemini.",
   alternates: {
     canonical: "https://sharkbrandingsolutions.com/vs/seo",
   },
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     description:
       "SEO optimizes your website for Google's algorithm. AI visibility optimizes your entire business presence for what AI systems use to recommend you. They're not the same thing.",
     type: "article",
-    images: [{ url: "https://sharkbrandingsolutions.com/logo.webp", width: 1200, height: 630, alt: "AI Visibility vs SEO — Shark AI Solutions" }],
+    images: [{ url: "https://sharkbrandingsolutions.com/logo.webp", width: 1200, height: 630, alt: "AI Visibility vs SEO | Shark AI Solutions" }],
   },
 };
 
@@ -22,7 +22,7 @@ const structuredData = {
   "@type": "Article",
   headline: "AI Visibility Consulting vs. Traditional SEO",
   description:
-    "A detailed comparison of AI visibility consulting vs traditional SEO for local businesses. SEO and AI visibility solve different problems — here's what each one covers.",
+    "A detailed comparison of AI visibility consulting vs traditional SEO for local businesses. SEO and AI visibility solve different problems, here's what each one covers.",
   author: {
     "@type": "Person",
     "@id": "https://sharkbrandingsolutions.com/about#michelle",
@@ -53,7 +53,7 @@ const faqSchema = {
       name: "Can I keep my SEO agency and add AI visibility consulting?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes — and this is the most common setup for our clients. SEO and AI visibility work on different layers. Your SEO agency handles your website rankings. We handle the signals AI platforms use to recommend your business: citations, entity data, Google Business Profile, review signals, and structured data outside your website. They don't conflict.",
+        text: "Yes, and this is the most common setup for our clients. SEO and AI visibility work on different layers. Your SEO agency handles your website rankings. We handle the signals AI platforms use to recommend your business: citations, entity data, Google Business Profile, review signals, and structured data outside your website. They don't conflict.",
       },
     },
     {
@@ -61,7 +61,7 @@ const faqSchema = {
       name: "Why can't my SEO agency handle AI visibility?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "SEO agencies are trained to optimize for Google's classic ranking algorithm — keywords, backlinks, page speed, and on-page content. AI search platforms like ChatGPT, Perplexity, and Google AI Overviews pull from a completely different set of signals: citation consistency, entity recognition, review sentiment, structured data, and business authority across the entire web — most of which has nothing to do with your website. Most SEO agencies haven't retooled for this yet.",
+        text: "SEO agencies are trained to optimize for Google's classic ranking algorithm, keywords, backlinks, page speed, and on-page content. AI search platforms like ChatGPT, Perplexity, and Google AI Overviews pull from a completely different set of signals: citation consistency, entity recognition, review sentiment, structured data, and business authority across the entire web, most of which has nothing to do with your website. Most SEO agencies haven't retooled for this yet.",
       },
     },
     {
@@ -69,7 +69,7 @@ const faqSchema = {
       name: "Does SEO help at all with AI Overviews?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Partially. Google AI Overviews do use the Google index, so strong organic rankings help. But AI Overviews also weight structured data, FAQ schema, entity authority, and citation signals that traditional SEO doesn't specifically target. And for ChatGPT, Perplexity, and Gemini — those pull from Bing, their own crawlers, and blended indices where Google rankings are mostly irrelevant.",
+        text: "Partially. Google AI Overviews do use the Google index, so strong organic rankings help. But AI Overviews also weight structured data, FAQ schema, entity authority, and citation signals that traditional SEO doesn't specifically target. And for ChatGPT, Perplexity, and Gemini, those pull from Bing, their own crawlers, and blended indices where Google rankings are mostly irrelevant.",
       },
     },
     {
@@ -77,7 +77,7 @@ const faqSchema = {
       name: "Do you need access to my website to do AI visibility work?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "No — and this surprises most clients. The majority of AI visibility work is off-website: Google Business Profile optimization, citation cleanup across directories, review strategy, entity data consistency, and trust signal building. Schema markup is the one area that benefits from website access, but it can also be implemented via Google Tag Manager without touching your CMS. If your SEO agency controls your website, that doesn't block AI visibility work.",
+        text: "No, and this surprises most clients. The majority of AI visibility work is off-website: Google Business Profile optimization, citation cleanup across directories, review strategy, entity data consistency, and trust signal building. Schema markup is the one area that benefits from website access, but it can also be implemented via Google Tag Manager without touching your CMS. If your SEO agency controls your website, that doesn't block AI visibility work.",
       },
     },
     {
@@ -85,7 +85,7 @@ const faqSchema = {
       name: "Will AI visibility replace my need for SEO?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Not entirely — they serve different purposes. SEO builds your organic Google rankings over 6-12 months. AI visibility builds your presence in AI-generated recommendations in 30-60 days. Most established local businesses benefit from both. If you have to choose one based on where your customers are actually looking right now, AI visibility is moving faster — 60% of Google searches now show an AI-generated answer before any website link (Google I/O, 2025).",
+        text: "Not entirely, they serve different purposes. SEO builds your organic Google rankings over 6-12 months. AI visibility builds your presence in AI-generated recommendations in 30-60 days. Most established local businesses benefit from both. If you have to choose one based on where your customers are actually looking right now, AI visibility is moving faster, 60% of Google searches now show an AI-generated answer before any website link (Google I/O, 2025).",
       },
     },
   ],
@@ -99,8 +99,8 @@ const comparisonRows = [
   },
   {
     feature: "Website access required",
-    ai:   "No — most work is off-website (GBP, citations, reviews, entity data)",
-    trad: "Yes — requires CMS access to optimize pages, meta tags, and content",
+    ai:   "No, most work is off-website (GBP, citations, reviews, entity data)",
+    trad: "Yes, requires CMS access to optimize pages, meta tags, and content",
   },
   {
     feature: "Where optimization happens",
@@ -114,8 +114,8 @@ const comparisonRows = [
   },
   {
     feature: "Works for ChatGPT & Perplexity",
-    ai:   "Yes — built specifically for AI-driven discovery across all major platforms",
-    trad: "Partially — Google SEO helps with AI Overviews but not ChatGPT or Perplexity",
+    ai:   "Yes, built specifically for AI-driven discovery across all major platforms",
+    trad: "Partially, Google SEO helps with AI Overviews but not ChatGPT or Perplexity",
   },
   {
     feature: "What signals get fixed",
@@ -124,7 +124,7 @@ const comparisonRows = [
   },
   {
     feature: "Results when you stop paying",
-    ai:   "Off-site signals persist — GBP data, citations, and reviews remain",
+    ai:   "Off-site signals persist, GBP data, citations, and reviews remain",
     trad: "Rankings slowly decay without continued link building and content",
   },
   {
@@ -160,7 +160,7 @@ const verdicts = [
     dark: true,
     points: [
       "Your customers are asking ChatGPT or Gemini who to hire in your industry",
-      "You want to show up in AI answers — not just Google's blue links",
+      "You want to show up in AI answers, not just Google's blue links",
       "Your SEO agency can't explain why you're not appearing in AI search results",
       "You don't have access to your website and need results without waiting on your web person",
     ],
@@ -170,23 +170,23 @@ const verdicts = [
 const faqs = [
   {
     q: "Can I keep my SEO agency and add AI visibility?",
-    a: "Yes — and this is the most common setup for our clients. SEO and AI visibility work on different layers. Your SEO agency handles your website rankings. We handle the signals AI platforms use to recommend your business: citations, entity data, Google Business Profile, review signals, and structured data outside your website. They don't conflict.",
+    a: "Yes, and this is the most common setup for our clients. SEO and AI visibility work on different layers. Your SEO agency handles your website rankings. We handle the signals AI platforms use to recommend your business: citations, entity data, Google Business Profile, review signals, and structured data outside your website. They don't conflict.",
   },
   {
     q: "Why can't my SEO agency handle this?",
-    a: "SEO agencies are trained to optimize for Google's classic ranking algorithm — keywords, backlinks, page speed, and on-page content. AI search platforms pull from a completely different set of signals: citation consistency, entity recognition, review sentiment, and business authority across the entire web — most of which has nothing to do with your website. Most SEO agencies haven't retooled for this yet.",
+    a: "SEO agencies are trained to optimize for Google's classic ranking algorithm, keywords, backlinks, page speed, and on-page content. AI search platforms pull from a completely different set of signals: citation consistency, entity recognition, review sentiment, and business authority across the entire web, most of which has nothing to do with your website. Most SEO agencies haven't retooled for this yet.",
   },
   {
     q: "Does SEO help at all with AI search?",
-    a: "Partially. Google AI Overviews do use the Google index, so strong rankings help. But for ChatGPT, Perplexity, and Gemini — those pull from Bing, their own crawlers, and blended indices where Google rankings are mostly irrelevant. AI visibility optimization covers all of them.",
+    a: "Partially. Google AI Overviews do use the Google index, so strong rankings help. But for ChatGPT, Perplexity, and Gemini, those pull from Bing, their own crawlers, and blended indices where Google rankings are mostly irrelevant. AI visibility optimization covers all of them.",
   },
   {
     q: "Do you need access to my website?",
-    a: "No — and this surprises most clients. The majority of AI visibility work is off-website: Google Business Profile, citation cleanup, review strategy, entity data, and trust signals. Schema markup benefits from site access, but can be added via Google Tag Manager without touching your CMS. If your SEO agency controls your website, that doesn't block this work.",
+    a: "No, and this surprises most clients. The majority of AI visibility work is off-website: Google Business Profile, citation cleanup, review strategy, entity data, and trust signals. Schema markup benefits from site access, but can be added via Google Tag Manager without touching your CMS. If your SEO agency controls your website, that doesn't block this work.",
   },
   {
     q: "Will this replace SEO?",
-    a: "Not entirely — they serve different purposes. SEO builds your Google rankings over 6-12 months. AI visibility builds your presence in AI recommendations in 30-60 days. Most established local businesses benefit from both. If you have to choose based on where customers are looking right now: 60% of Google searches now show an AI-generated answer before any website link (Google I/O, 2025).",
+    a: "Not entirely, they serve different purposes. SEO builds your Google rankings over 6-12 months. AI visibility builds your presence in AI recommendations in 30-60 days. Most established local businesses benefit from both. If you have to choose based on where customers are looking right now: 60% of Google searches now show an AI-generated answer before any website link (Google I/O, 2025).",
   },
 ];
 
@@ -232,7 +232,7 @@ export default function VsSeoPage() {
           </h1>
           <p className="lead-airy text-[#333] max-w-[580px] mx-auto mb-10" style={{ textWrap: "balance" }}>
             SEO optimizes your website for Google&rsquo;s ranking algorithm. AI visibility optimizes your entire
-            business presence for what AI systems use to recommend you. They&rsquo;re not the same thing —
+            business presence for what AI systems use to recommend you. They&rsquo;re not the same thing , 
             and your SEO agency almost certainly isn&rsquo;t covering both.
           </p>
 
@@ -275,7 +275,7 @@ export default function VsSeoPage() {
               You can rank #1 on Google and still be completely invisible when someone asks ChatGPT, Perplexity, or Gemini who to hire in your industry. Those AI systems don&rsquo;t read your page rankings. They read your citations, your reviews, your entity data, and dozens of signals your SEO agency isn&rsquo;t touching.
             </p>
             <p className="text-[15px] text-white/60 leading-relaxed">
-              60% of Google searches now show an AI-generated answer before any website link (Google I/O, 2025). That answer didn&rsquo;t come from your SEO. It came from trust signals built across the entire web — most of which have nothing to do with your website.
+              60% of Google searches now show an AI-generated answer before any website link (Google I/O, 2025). That answer didn&rsquo;t come from your SEO. It came from trust signals built across the entire web, most of which have nothing to do with your website.
             </p>
           </div>
           <div className="grid grid-cols-2 gap-3">
@@ -397,7 +397,7 @@ export default function VsSeoPage() {
 
           <div className="mt-8 bg-[#f5f5f7] border border-[#e8e8ed] rounded-[16px] px-7 py-5">
             <p className="text-[15px] text-[#333] leading-relaxed">
-              <strong className="text-[#0a0a0a]">The honest answer:</strong> You probably need both — but they do different things. SEO builds your Google rankings over time. AI visibility builds your presence in AI-generated recommendations now. The mistake most businesses make is assuming one covers the other. It doesn&rsquo;t. Your SEO agency is optimizing for a search algorithm that&rsquo;s no longer the only game in town.
+              <strong className="text-[#0a0a0a]">The honest answer:</strong> You probably need both, but they do different things. SEO builds your Google rankings over time. AI visibility builds your presence in AI-generated recommendations now. The mistake most businesses make is assuming one covers the other. It doesn&rsquo;t. Your SEO agency is optimizing for a search algorithm that&rsquo;s no longer the only game in town.
             </p>
           </div>
         </div>
@@ -473,10 +473,10 @@ export default function VsSeoPage() {
             We don&rsquo;t do SEO. That&rsquo;s intentional.
           </h2>
           <p className="text-[15px] text-[#555] leading-relaxed mb-6" style={{ textWrap: "balance" }}>
-            We don&rsquo;t build backlinks, optimize title tags, or run keyword campaigns. If that&rsquo;s what your business needs, keep your SEO agency — they&rsquo;re the right tool for that job.
+            We don&rsquo;t build backlinks, optimize title tags, or run keyword campaigns. If that&rsquo;s what your business needs, keep your SEO agency, they&rsquo;re the right tool for that job.
           </p>
           <p className="text-[15px] text-[#555] leading-relaxed" style={{ textWrap: "balance" }}>
-            What we do — exclusively — is make your business the one AI platforms recommend when someone in your market asks a question your business should answer. That focus is why our clients see results in 30 days. SEO and AI visibility can run in parallel. Most of our clients do exactly that.
+            What we do, exclusively, is make your business the one AI platforms recommend when someone in your market asks a question your business should answer. That focus is why our clients see results in 30 days. SEO and AI visibility can run in parallel. Most of our clients do exactly that.
           </p>
         </div>
       </section>
@@ -549,7 +549,7 @@ export default function VsSeoPage() {
           </h2>
           <p className="lead-airy text-white/50 mb-12" style={{ textWrap: "balance" }}>
             We&rsquo;ll audit your business across ChatGPT, Google AI Overviews, Gemini, and local
-            listings — and show you exactly where you&rsquo;re missing. Free, in 48 hours, no commitment.
+            listings, and show you exactly where you&rsquo;re missing. Free, in 48 hours, no commitment.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
             <Link

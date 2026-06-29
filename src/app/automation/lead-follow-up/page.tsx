@@ -2,15 +2,15 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Lead Follow-Up Automation | Shark Branding Solutions',
+  title: 'Lead Follow-Up Automation | Shark AI Solutions',
   description: 'Automated lead follow-up for Wesley Chapel and Tampa Bay businesses. Every lead gets an immediate multi-touch response across email, SMS, and phone. Live in one week.',
   alternates: { canonical: 'https://sharkbrandingsolutions.com/automation/lead-follow-up' },
   openGraph: {
-    title: 'Lead Follow-Up Automation | Shark Branding Solutions',
-    description: 'Stop losing leads to slow response times. Automated multi-touch follow-up across email, SMS, and phone — configured for your business and live in one week.',
+    title: 'Lead Follow-Up Automation | Shark AI Solutions',
+    description: 'Stop losing leads to slow response times. Automated multi-touch follow-up across email, SMS, and phone, configured for your business and live in one week.',
     url: 'https://sharkbrandingsolutions.com/automation/lead-follow-up',
     type: 'website',
-    images: [{ url: 'https://sharkbrandingsolutions.com/logo.webp', width: 1200, height: 630, alt: 'Lead Follow-Up Automation — Shark Branding Solutions' }],
+    images: [{ url: 'https://sharkbrandingsolutions.com/logo.webp', width: 1200, height: 630, alt: 'Lead Follow-Up Automation | Shark AI Solutions' }],
   },
 }
 
@@ -43,12 +43,12 @@ const structuredData = {
         {
           '@type': 'Question',
           name: 'Why is response speed so important for local businesses in Tampa Bay?',
-          acceptedAnswer: { '@type': 'Answer', text: 'Research from the Harvard Business Review found that businesses that respond to a lead within five minutes are 21 times more likely to qualify that lead than those who wait 30 minutes. Most local businesses in Tampa Bay respond in hours. Automation closes that gap permanently — every lead, every time.' },
+          acceptedAnswer: { '@type': 'Answer', text: 'Research from the Harvard Business Review found that businesses that respond to a lead within five minutes are 21 times more likely to qualify that lead than those who wait 30 minutes. Most local businesses in Tampa Bay respond in hours. Automation closes that gap permanently, every lead, every time.' },
         },
         {
           '@type': 'Question',
           name: 'What happens to leads that go cold?',
-          acceptedAnswer: { '@type': 'Answer', text: 'Leads that do not respond to the initial sequence are enrolled in cold lead re-engagement campaigns at 30, 60, and 90 days. A significant percentage of cold leads eventually convert — they were never gone, they just were not ready yet. Automated re-engagement captures those deals that manual follow-up always misses.' },
+          acceptedAnswer: { '@type': 'Answer', text: 'Leads that do not respond to the initial sequence are enrolled in cold lead re-engagement campaigns at 30, 60, and 90 days. A significant percentage of cold leads eventually convert, they were never gone, they just were not ready yet. Automated re-engagement captures those deals that manual follow-up always misses.' },
         },
       ],
     },
@@ -57,8 +57,8 @@ const structuredData = {
 
 const steps = [
   { time: 'Immediately', channel: 'Email', label: 'Acknowledgment', body: 'The lead receives a personalized email confirming you received their inquiry and setting expectations for next steps.' },
-  { time: '5 minutes', channel: 'SMS', label: 'First SMS', body: 'A brief, conversational text that opens a dialogue — not a sales pitch. Something like: "Hey, saw your inquiry — happy to help. What\'s the best time to connect?"' },
-  { time: '24 hours', channel: 'Email', label: 'Value follow-up', body: 'A second email that adds something useful — a relevant case study, an answer to a common question, or a specific reason to move forward.' },
+  { time: '5 minutes', channel: 'SMS', label: 'First SMS', body: 'A brief, conversational text that opens a dialogue, not a sales pitch. Something like: "Hey, saw your inquiry, happy to help. What\'s the best time to connect?"' },
+  { time: '24 hours', channel: 'Email', label: 'Value follow-up', body: 'A second email that adds something useful, a relevant case study, an answer to a common question, or a specific reason to move forward.' },
   { time: 'Day 3', channel: 'Phone', label: 'Outbound call', body: 'An automated outbound call attempts to reach the lead directly. If voicemail, a brief personalized message is left.' },
   { time: 'Day 5', channel: 'SMS', label: 'Check-in', body: 'A second SMS that acknowledges the lead may be busy and makes it easy to respond with a single word or tap.' },
   { time: 'Day 10', channel: 'Email', label: 'Final touch', body: 'A closing email that assumes they may have moved in a different direction but leaves the door open for future conversations.' },
@@ -112,7 +112,7 @@ export default function LeadFollowUpPage() {
               Most leads are lost in the first five minutes.
             </h2>
             <p className="text-[16px] text-white/60 leading-relaxed">
-              Research from the Harvard Business Review found that businesses responding within five minutes are 21 times more likely to qualify a lead than those who wait 30 minutes. Most local service businesses in Wesley Chapel respond in hours — if they respond at all.
+              Research from the Harvard Business Review found that businesses responding within five minutes are 21 times more likely to qualify a lead than those who wait 30 minutes. Most local service businesses in Wesley Chapel respond in hours, if they respond at all.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-px bg-white/5 rounded-[20px] overflow-hidden">
@@ -178,7 +178,7 @@ export default function LeadFollowUpPage() {
                 Leads that went cold are not gone.
               </h2>
               <p className="text-[16px] text-[#555] leading-relaxed mb-6">
-                A lead that did not respond three months ago may be ready now. Their project timeline changed. Their budget came through. They got three quotes and yours was the best. Automated re-engagement sends the right message at 30, 60, and 90 days — so you are there when they are finally ready.
+                A lead that did not respond three months ago may be ready now. Their project timeline changed. Their budget came through. They got three quotes and yours was the best. Automated re-engagement sends the right message at 30, 60, and 90 days, so you are there when they are finally ready.
               </p>
               <p className="text-[16px] text-[#555] leading-relaxed">
                 Most Wesley Chapel service businesses never follow up more than twice. The businesses using automated re-engagement are closing deals their competitors think are dead.
@@ -187,7 +187,7 @@ export default function LeadFollowUpPage() {
             <div className="space-y-3">
               {[
                 { day: '30 days', msg: 'A check-in message acknowledging time has passed and asking if they are still thinking about the project.' },
-                { day: '60 days', msg: 'A value message — a relevant before/after, a case study, or a seasonal hook specific to your service.' },
+                { day: '60 days', msg: 'A value message, a relevant before/after, a case study, or a seasonal hook specific to your service.' },
                 { day: '90 days', msg: 'A final re-engagement that makes it easy to restart the conversation with a low-commitment ask.' },
               ].map((r) => (
                 <div key={r.day} className="bg-white rounded-[14px] px-6 py-4 border border-[#e8e8ed]">

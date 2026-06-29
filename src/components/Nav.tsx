@@ -25,7 +25,7 @@ export default function Nav() {
     <header className="fixed top-0 inset-x-0 z-50" style={{ paddingTop: 'env(safe-area-inset-top)' }}>
       {/* Rebrand announcement bar */}
       <div className="bg-[#18b5d8] text-white text-center text-[12px] font-semibold tracking-wide py-2 px-4">
-        Shark Branding Solutions is now&nbsp;<span className="font-extrabold">Shark AI Solutions</span>&nbsp;— same team, bigger mission.
+        Shark Branding Solutions is now&nbsp;<span className="font-extrabold">Shark AI Solutions</span>&nbsp;,  same team, bigger mission.
       </div>
       <div className="bg-white border-b border-[#e0e0e0]">
       <nav className="w-full h-20 max-w-[1440px] mx-auto px-6 flex items-center justify-between">

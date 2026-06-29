@@ -174,7 +174,7 @@ export default function SalesAssistant() {
 
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     recognition.onerror = (event: any) => {
-      // no-speech and network are transient — onend will auto-restart, ignore them
+      // no-speech and network are transient, onend will auto-restart, ignore them
       if (event.error !== 'no-speech' && event.error !== 'network') {
         setError(`Mic error: ${event.error}`)
       }
@@ -279,10 +279,10 @@ export default function SalesAssistant() {
         </label>
       </div>
 
-      {/* Main layout — two columns, each independently scrollable */}
+      {/* Main layout, two columns, each independently scrollable */}
       <div className="flex gap-0 divide-x divide-white/10">
 
-        {/* Left — Transcript */}
+        {/* Left, Transcript */}
         <div className="flex-1 flex flex-col min-w-0">
           <div className="px-4 py-2 border-b border-white/5 flex items-center justify-between">
             <span className="text-[11px] font-semibold uppercase tracking-widest text-white/30">Live Transcript</span>
@@ -319,7 +319,7 @@ export default function SalesAssistant() {
             <div ref={transcriptEndRef} />
           </div>
 
-          {/* Controls — always visible */}
+          {/* Controls, always visible */}
           <div className="border-t border-white/10 px-4 py-3 flex gap-2 bg-[#0a0a0a]">
             {!listening ? (
               <button
@@ -356,13 +356,13 @@ export default function SalesAssistant() {
           </div>
         </div>
 
-        {/* Right — Coaching Panel */}
+        {/* Right, Coaching Panel */}
         <div className="w-[360px] shrink-0 flex flex-col">
           <div className="px-4 py-2 border-b border-white/5">
             <span className="text-[11px] font-semibold uppercase tracking-widest text-white/30">AI Coach</span>
           </div>
 
-          {/* Coaching panel — glanceable, not readable */}
+          {/* Coaching panel, glanceable, not readable */}
           <div className="flex flex-col p-4 gap-3" style={{ minHeight: '300px', maxHeight: '55vh', overflowY: 'auto' }}>
 
             {/* Signal badge */}
@@ -374,7 +374,7 @@ export default function SalesAssistant() {
               </div>
             )}
 
-            {/* The one thing to say — LARGE */}
+            {/* The one thing to say, LARGE */}
             {coaching && !loading && (
               <div className="bg-white/5 border border-white/15 rounded-xl px-4 py-5 flex-1">
                 <p className="text-white text-[22px] leading-snug font-bold">
@@ -410,7 +410,7 @@ export default function SalesAssistant() {
             )}
           </div>
 
-          {/* Quick Reference — always visible */}
+          {/* Quick Reference, always visible */}
           <div className="border-t border-white/10 px-4 py-3 bg-[#0a0a0a]">
             <p className="text-[10px] font-bold uppercase tracking-widest text-white/20 mb-2">Quick Close</p>
             <p className="text-white/40 text-[11px] leading-relaxed">

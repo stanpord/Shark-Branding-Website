@@ -3,19 +3,19 @@ import Link from "next/link";
 import AiVisibilityAnimations from "@/components/AiVisibilityAnimations";
 
 export const metadata: Metadata = {
-  title: "AI Visibility Consulting — Tampa Bay | Shark Branding Solutions",
+  title: "AI Visibility Consulting in Tampa Bay | Shark AI Solutions",
   description:
-    "AI visibility consulting for Tampa Bay businesses. Get recommended by ChatGPT, Gemini, and Google AI Overviews. Free AI audit delivered in 48 hours.",
+    "AI visibility consulting for Tampa Bay businesses. Get recommended by ChatGPT, Gemini, and Google AI Overviews in 30 days. Free AI audit delivered in 48 hours.",
   alternates: {
     canonical: "https://sharkbrandingsolutions.com/ai-visibility-consulting",
   },
   openGraph: {
-    title: "AI Visibility Consulting — Tampa Bay | Shark Branding Solutions",
+    title: "AI Visibility Consulting in Tampa Bay | Shark AI Solutions",
     description:
       "AI visibility consulting for Tampa Bay businesses. Get recommended by ChatGPT, Gemini, and Google AI Overviews. Free AI audit in 48 hours.",
     url: "https://sharkbrandingsolutions.com/ai-visibility-consulting",
     type: "website",
-    images: [{ url: "https://sharkbrandingsolutions.com/logo.webp", width: 1200, height: 630, alt: "AI Visibility Consulting — Shark Branding Solutions" }],
+    images: [{ url: "https://sharkbrandingsolutions.com/logo.webp", width: 1200, height: 630, alt: "AI Visibility Consulting | Shark AI Solutions" }],
   },
 };
 
@@ -24,7 +24,7 @@ const structuredData = {
   "@type": "Service",
   name: "AI Visibility Consulting",
   description:
-    "AI visibility consulting for local businesses in Tampa Bay. Shark Branding Solutions helps businesses get recommended by ChatGPT, Google AI Overviews, Perplexity, and Gemini through citation optimization, schema markup, review management, and authoritative content.",
+    "AI visibility consulting for local businesses in Tampa Bay. Shark AI Solutions helps businesses get recommended by ChatGPT, Google AI Overviews, Perplexity, and Gemini through citation optimization, schema markup, review management, and authoritative content.",
   url: "https://sharkbrandingsolutions.com/ai-visibility-consulting",
   provider: { "@id": "https://sharkbrandingsolutions.com/#organization" },
   areaServed: [
@@ -37,7 +37,7 @@ const structuredData = {
     "@type": "Offer",
     price: "997",
     priceCurrency: "USD",
-    description: "AI Visibility Foundation — starting at $997/mo",
+    description: "AI Visibility Foundation, starting at $997/mo",
   },
 };
 
@@ -48,7 +48,7 @@ const faqStructuredData = {
     {
       "@type": "Question",
       name: "Why isn't my business showing up in ChatGPT or AI search results?",
-      acceptedAnswer: { "@type": "Answer", text: "There are four common reasons a local business is invisible to AI: inconsistent business data across directories (mismatched name, address, or phone number confuses AI models), missing or thin structured data on your website (AI needs machine-readable signals to understand what you do and where you do it), low review volume or recency (ChatGPT and Gemini rely heavily on trust signals like Google reviews to decide who to recommend), and no entity presence in the sources AI models cite most — local news, industry publications, or platforms like Yelp and Google Business Profile. The fix starts with an AI visibility audit. We test your business against 20+ constrained prompts across ChatGPT, Gemini, and Perplexity, find the specific gaps, and tell you exactly what to correct first." },
+      acceptedAnswer: { "@type": "Answer", text: "There are four common reasons a local business is invisible to AI: inconsistent business data across directories (mismatched name, address, or phone number confuses AI models), missing or thin structured data on your website (AI needs machine-readable signals to understand what you do and where you do it), low review volume or recency (ChatGPT and Gemini rely heavily on trust signals like Google reviews to decide who to recommend), and no entity presence in the sources AI models cite most, local news, industry publications, or platforms like Yelp and Google Business Profile. The fix starts with an AI visibility audit. We test your business against 20+ constrained prompts across ChatGPT, Gemini, and Perplexity, find the specific gaps, and tell you exactly what to correct first." },
     },
     {
       "@type": "Question",
@@ -99,7 +99,7 @@ const steps = [
 const faqs = [
   {
     q: "Why isn't my business showing up in ChatGPT or AI search results?",
-    a: "There are four common reasons a local business is invisible to AI: inconsistent business data across directories (mismatched name, address, or phone number confuses AI models), missing or thin structured data on your website (AI needs machine-readable signals to understand what you do and where you do it), low review volume or recency (ChatGPT and Gemini rely heavily on trust signals like Google reviews to decide who to recommend), and no entity presence in the sources AI models cite most — local news, industry publications, or platforms like Yelp and Google Business Profile. The fix starts with an AI visibility audit. We test your business against 20+ constrained prompts across ChatGPT, Gemini, and Perplexity, find the specific gaps, and tell you exactly what to correct first.",
+    a: "There are four common reasons a local business is invisible to AI: inconsistent business data across directories (mismatched name, address, or phone number confuses AI models), missing or thin structured data on your website (AI needs machine-readable signals to understand what you do and where you do it), low review volume or recency (ChatGPT and Gemini rely heavily on trust signals like Google reviews to decide who to recommend), and no entity presence in the sources AI models cite most, local news, industry publications, or platforms like Yelp and Google Business Profile. The fix starts with an AI visibility audit. We test your business against 20+ constrained prompts across ChatGPT, Gemini, and Perplexity, find the specific gaps, and tell you exactly what to correct first.",
   },
   {
     q: "How is AI visibility consulting different from SEO?",
@@ -184,8 +184,8 @@ export default function AiVisibilityConsultingPage() {
           <p data-animate="what-para" className="lead-airy text-[#444] mb-5 sm:mb-6">
             AI Overviews now appear on more than 60% of Google searches (Google I/O, 2025). Perplexity and
             ChatGPT handle tens of millions of local business queries every month. The buyers
-            most likely to convert — those who have already decided to buy and are just
-            choosing who — are going to AI first.
+            most likely to convert, those who have already decided to buy and are just
+            choosing who, are going to AI first.
           </p>
           <p data-animate="what-para" className="lead-airy text-[#444]">
             AI visibility consulting is the process of making sure your business appears, and
@@ -234,8 +234,8 @@ export default function AiVisibilityConsultingPage() {
           </h2>
           <p data-animate="who-sub" className="lead-airy text-white/65 mb-8 sm:mb-12">
             AI visibility consulting works best for established local businesses in competitive
-            markets — HVAC, legal, real estate, healthcare, home services, and professional
-            services — that are ready to stop relying solely on word of mouth and traditional
+            markets, HVAC, legal, real estate, healthcare, home services, and professional
+            services, that are ready to stop relying solely on word of mouth and traditional
             search.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-left mb-8 sm:mb-12">

@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import BlogShell from "@/components/BlogShell";
@@ -14,7 +14,8 @@ export const metadata: Metadata = {
 
 export default function Page() {
  return (
-  <BlogShell
+  <BlogShellurl="https://sharkbrandingsolutions.com/resources/blog-ai-funnel-chatgpt-gemini-path-to-purchase"
+   
    relatedPosts={[{ href: "/resources/blog-ai-funnel-chatgpt-new-front-door", title: "ChatGPT Is the New Front Door for Your Customers", category: "AI Funnel" }, { href: "/resources/blog-seo-old-school-geo-ai-shift", title: "Why Your Business Needs GEO for the AI Search Shift", category: "GEO" }, { href: "/resources/blog-ai-map-consistent-business-listings", title: "Consistent Listings: The Secret to Being Found by AI", category: "Listings" }]}
    category="AI Visibility"
    title="The AI Funnel: How ChatGPT and Gemini Are Reshaping the Path to Purchase"

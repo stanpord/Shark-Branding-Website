@@ -2,15 +2,15 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Business Automation — Tampa Bay | Shark Branding Solutions',
+  title: 'Business Automation for Tampa Bay | Shark AI Solutions',
   description: 'AI-powered automation for Wesley Chapel and Tampa Bay. Automate lead follow-up, review requests, appointment booking, and after-hours chat. Live in one week.',
   alternates: { canonical: 'https://sharkbrandingsolutions.com/automation' },
   openGraph: {
-    title: 'Business Automation — Tampa Bay | Shark Branding Solutions',
+    title: 'Business Automation for Tampa Bay | Shark AI Solutions',
     description: 'Stop losing leads, reviews, and revenue to manual processes. AI automation built for local service businesses in Wesley Chapel and Tampa Bay.',
     url: 'https://sharkbrandingsolutions.com/automation',
     type: 'website',
-    images: [{ url: 'https://sharkbrandingsolutions.com/logo.webp', width: 1200, height: 630, alt: 'Business Automation — Shark Branding Solutions' }],
+    images: [{ url: 'https://sharkbrandingsolutions.com/logo.webp', width: 1200, height: 630, alt: 'Business Automation | Shark AI Solutions' }],
   },
 }
 
@@ -58,7 +58,7 @@ const structuredData = {
         {
           '@type': 'Question',
           name: 'Does business automation work for small businesses in Tampa Bay?',
-          acceptedAnswer: { '@type': 'Answer', text: 'Yes. AI automation is particularly effective for local service businesses in Tampa Bay — home services, HVAC, real estate, healthcare, legal, and contractors — where leads come in at unpredictable times and manual follow-up is inconsistent.' },
+          acceptedAnswer: { '@type': 'Answer', text: 'Yes. AI automation is particularly effective for local service businesses in Tampa Bay, home services, HVAC, real estate, healthcare, legal, and contractors, where leads come in at unpredictable times and manual follow-up is inconsistent.' },
         },
       ],
     },
@@ -69,21 +69,21 @@ const useCases = [
   {
     title: 'Lead follow-up',
     href: '/automation/lead-follow-up',
-    body: 'Every new lead gets an immediate response and a multi-touch follow-up sequence across email, SMS, and phone — automatically, without anyone on your team lifting a finger.',
+    body: 'Every new lead gets an immediate response and a multi-touch follow-up sequence across email, SMS, and phone, automatically, without anyone on your team lifting a finger.',
     stat: '2–4',
     statLabel: 'extra closed deals per month recovered from cold leads',
   },
   {
     title: 'Review generation',
     href: '/automation/review-generation',
-    body: 'Post-job review requests go out automatically after every completed service. Responses to every review — positive or negative — are handled in your brand voice within two hours.',
+    body: 'Post-job review requests go out automatically after every completed service. Responses to every review, positive or negative, are handled in your brand voice within two hours.',
     stat: '35–55%',
     statLabel: 'of satisfied customers leave a review when asked automatically',
   },
   {
     title: 'Appointment booking',
     href: '/automation/appointment-booking',
-    body: 'An AI receptionist on your website qualifies visitors and books them directly to your calendar 24/7 — no phone tag, no scheduling delays, no dropped leads.',
+    body: 'An AI receptionist on your website qualifies visitors and books them directly to your calendar 24/7, no phone tag, no scheduling delays, no dropped leads.',
     stat: '3–7',
     statLabel: 'qualified after-hours leads captured per day on average',
   },
@@ -109,7 +109,7 @@ export default function AutomationPage() {
             <span className="text-[#18b5d8]">for Local Businesses</span>
           </h1>
           <p className="lead-airy text-[#333] max-w-[520px] mx-auto mb-12" style={{ textWrap: 'balance' }}>
-            Stop losing leads, reviews, and revenue to slow response times and inconsistent follow-up. AI automation handles the repetitive work — 24/7, on autopilot.
+            Stop losing leads, reviews, and revenue to slow response times and inconsistent follow-up. AI automation handles the repetitive work, 24/7, on autopilot.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-3">
             <Link
@@ -137,7 +137,7 @@ export default function AutomationPage() {
               Manual processes are costing Wesley Chapel businesses real money.
             </h2>
             <p className="text-[16px] text-white/60 leading-relaxed">
-              Every missed call, every lead that waits two hours for a response, every job completed without a review request — these are not minor inconveniences. They are compounding revenue losses that automation eliminates permanently.
+              Every missed call, every lead that waits two hours for a response, every job completed without a review request, these are not minor inconveniences. They are compounding revenue losses that automation eliminates permanently.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-px bg-white/5 rounded-[20px] overflow-hidden">
@@ -194,9 +194,9 @@ export default function AutomationPage() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
             {[
               { n: '01', title: 'Free AI Audit', body: 'We assess your current workflow and identify which automations will have the biggest immediate impact on your business.' },
-              { n: '02', title: 'Custom setup', body: 'We configure everything to your business — your voice, your service area, your specific workflows. Nothing is a generic template.' },
+              { n: '02', title: 'Custom setup', body: 'We configure everything to your business, your voice, your service area, your specific workflows. Nothing is a generic template.' },
               { n: '03', title: 'Review and approve', body: 'You see exactly what every automation will do before anything goes live. Nothing deploys without your sign-off.' },
-              { n: '04', title: 'Live and running', body: 'Your automations go live and start capturing leads, requesting reviews, and following up — while you focus on the work.' },
+              { n: '04', title: 'Live and running', body: 'Your automations go live and start capturing leads, requesting reviews, and following up, while you focus on the work.' },
             ].map((s) => (
               <div key={s.n} className="bg-white rounded-[20px] p-7 border border-[#e8e8ed]">
                 <p className="font-mono text-[#18b5d8] text-[11px] tracking-[0.22em] uppercase mb-5">{s.n}</p>

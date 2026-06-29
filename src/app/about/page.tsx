@@ -11,7 +11,7 @@ const structuredData = {
       legalName: "Shark Branding Solutions LLC",
       url: "https://sharkbrandingsolutions.com",
       logo: "https://sharkbrandingsolutions.com/logo.webp",
-      description: "AI employees and AI visibility consulting for Tampa Bay local businesses. Automate lead follow-up, review management, and appointment booking — and get found on ChatGPT, Google AI, and Gemini.",
+      description: "AI employees and AI visibility consulting for Tampa Bay local businesses. Automate lead follow-up, review management, and appointment booking, and get found on ChatGPT, Google AI, and Gemini.",
       foundingDate: "2022",
       address: {
         "@type": "PostalAddress",
@@ -55,7 +55,7 @@ const structuredData = {
       worksFor: { "@id": "https://sharkbrandingsolutions.com/#organization" },
       url: "https://sharkbrandingsolutions.com/about#michelle",
       knowsAbout: ["AI Visibility", "Local SEO", "GEO", "Marketing Strategy", "AI Employees", "Tampa Bay"],
-      award: "Top 15 Marketing Experts in Tampa Bay — Influence Digest, 2025",
+      award: "Top 15 Marketing Experts in Tampa Bay, Influence Digest 2025",
       address: {
         "@type": "PostalAddress",
         addressLocality: "Wesley Chapel",
@@ -102,8 +102,8 @@ const structuredData = {
       "@type": "WebPage",
       "@id": "https://sharkbrandingsolutions.com/about",
       url: "https://sharkbrandingsolutions.com/about",
-      name: "About — Shark AI Solutions",
-      description: "Meet the team behind Shark AI Solutions — Michelle Stanaland, Managing Partner and Founder, Josh Stanaland, CTO, and Tiffany Fancher, COO.",
+      name: "About Shark AI Solutions | AI Consulting in Tampa Bay",
+      description: "Meet the team behind Shark AI Solutions. Michelle Stanaland, Managing Partner and Founder. Josh Stanaland, CTO. Tiffany Fancher, COO.",
       about: { "@id": "https://sharkbrandingsolutions.com/#organization" },
       mentions: [
         { "@id": "https://sharkbrandingsolutions.com/about#michelle" },
@@ -115,9 +115,9 @@ const structuredData = {
 };
 
 export const metadata: Metadata = {
-  title: "About — Shark AI Solutions",
+  title: "About Shark AI Solutions | AI Consulting in Tampa Bay",
   description:
-    "Meet the team behind Shark AI Solutions — Michelle Stanaland, Managing Partner and Founder, and the leadership driving AI strategy for Tampa Bay businesses.",
+    "Meet the team behind Shark AI Solutions. Michelle Stanaland, Managing Partner and Founder, and the leadership driving AI strategy for Tampa Bay businesses.",
 };
 
 const values = [
@@ -167,7 +167,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* ── Seen In — scrolling media strip ── */}
+      {/* ── Seen In, scrolling media strip ── */}
       <div className="bg-[#111] py-8 overflow-hidden border-y border-white/5">
         <p className="text-center text-[10px] font-semibold uppercase tracking-[0.28em] text-white/25 mb-6">As Seen In</p>
         <div
@@ -261,7 +261,7 @@ export default function AboutPage() {
                   <span className="w-1.5 h-1.5 rounded-full bg-[#18b5d8] mt-2 shrink-0" />
                   <div>
                     <span className="text-[13px] font-semibold text-white">{item.label}</span>
-                    <span className="text-[13px] text-white/40"> — {item.desc}</span>
+                    <span className="text-[13px] text-white/40">: {item.desc}</span>
                   </div>
                 </div>
               ))}
@@ -269,10 +269,10 @@ export default function AboutPage() {
           </div>
           <div className="space-y-6">
             <p className="body-copy text-white/60 leading-relaxed">
-              Josh Stanaland is a digital growth strategist, technologist, and the primary technical architect behind Shark AI Solutions&rsquo; proprietary software and AI automation frameworks. As CTO, he designs the backend systems powering the firm&rsquo;s AI Visibility Toolkit — building tailored AI employees that act as fully automated, 24/7 digital receptionists for service businesses, not off-the-shelf chatbot templates.
+              Josh Stanaland is a digital growth strategist, technologist, and the primary technical architect behind Shark AI Solutions&rsquo; proprietary software and AI automation frameworks. As CTO, he designs the backend systems powering the firm&rsquo;s AI Visibility Toolkit, building tailored AI employees that act as fully automated, 24/7 digital receptionists for service businesses, not off-the-shelf chatbot templates.
             </p>
             <p className="body-copy text-white/60 leading-relaxed">
-              At the firm&rsquo;s live regional hackathons, Josh creates real-time simulated versions of attendees&rsquo; existing business websites, embedding custom AI employees to demonstrate — live and without prior setup — how automated systems handle real customer inquiries from the first interaction.
+              At the firm&rsquo;s live regional hackathons, Josh creates real-time simulated versions of attendees&rsquo; existing business websites, embedding custom AI employees to demonstrate live, without prior setup, how automated systems handle real customer inquiries from the first interaction.
             </p>
             <p className="body-copy text-white/60 leading-relaxed">
               Outside of engineering, he works directly with clients as an enterprise account manager, bridging code and execution to track conversion analytics, eliminate marketing waste, and sharpen lead-generation infrastructure. Before building AI frameworks, Josh spent nearly a decade in high-performance wellness and sports, including work with the Jacksonville Jaguars, before transitioning into sales, operations, and corporate marketing strategy.

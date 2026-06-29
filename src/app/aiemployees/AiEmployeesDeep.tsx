@@ -148,7 +148,7 @@ export default function AiEmployeesDeep() {
               Your business runs.<br className="hidden sm:block" /> You sleep.
             </h1>
             <p className="text-[#6e6e73] text-[18px] leading-relaxed max-w-xl mx-auto mb-8">
-              Every employee below answers calls, books appointments, responds to reviews, follows up on leads, and coaches your sales reps — automatically, starting within the week.
+              Every employee below answers calls, books appointments, responds to reviews, follows up on leads, and coaches your sales reps, automatically, starting within the week.
             </p>
             <a href="#suite" className="inline-block bg-[#18b5d8] text-white font-bold text-[14px] px-7 py-3.5 rounded-full hover:bg-[#14a0c0] transition-colors">
               See pricing
@@ -166,13 +166,13 @@ export default function AiEmployeesDeep() {
               How does a Shark Branding AI employee work?
             </h2>
             <p className="text-[#444] text-[17px] leading-relaxed mb-10">
-              A Shark Branding AI employee is a software agent configured to perform a single, specific business function automatically — without human supervision. Each one is trained on your business data: your services, your voice, your pricing, and your workflows. When a lead contacts you, the AI employee greets them, qualifies them using your criteria, and either books an appointment, sends a follow-up sequence, or escalates to a human — depending on what the situation requires. Unlike a chatbot that needs constant prompting, an AI employee has a defined job, a fixed data source, and a built-in escalation path. Every interaction is logged and every transcript is saved. Your team sees only the conversations that need a human. Most AI employees go live within five to seven business days. They run continuously — answering calls, responding to reviews, and following up on leads — whether your office is open or not.
+              A Shark Branding AI employee is a software agent configured to perform a single, specific business function automatically, without human supervision. Each one is trained on your business data: your services, your voice, your pricing, and your workflows. When a lead contacts you, the AI employee greets them, qualifies them using your criteria, and either books an appointment, sends a follow-up sequence, or escalates to a human, depending on what the situation requires. Unlike a chatbot that needs constant prompting, an AI employee has a defined job, a fixed data source, and a built-in escalation path. Every interaction is logged and every transcript is saved. Your team sees only the conversations that need a human. Most AI employees go live within five to seven business days. They run continuously, answering calls, responding to reviews, and following up on leads, whether your office is open or not.
             </p>
           </FadeUp>
           <FadeUp delay={100}>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               {[
-                { stat: '24/7', label: 'Always on', sub: 'Nights, weekends, and holidays — no exceptions' },
+                { stat: '24/7', label: 'Always on', sub: 'Nights, weekends, and holidays, no exceptions' },
                 { stat: '< 7 days', label: 'Live fast', sub: 'Most deployments go live within one week of kickoff' },
                 { stat: '5 employees', label: 'One team', sub: 'Chat, voice, reviews, CRM, and sales coaching' },
               ].map(item => (
@@ -213,7 +213,7 @@ export default function AiEmployeesDeep() {
       </div>
 
       {/* ══════════════════════════════════════════════════════════════ */}
-      {/* ── GEMMA — CHAT RECEPTIONIST ─────────────────────────────── */}
+      {/* ── GEMMA, CHAT RECEPTIONIST ─────────────────────────────── */}
       {/* ══════════════════════════════════════════════════════════════ */}
       <section id="gemma" className="py-16 sm:py-28 px-6">
         <div className="max-w-5xl mx-auto">
@@ -222,7 +222,7 @@ export default function AiEmployeesDeep() {
             <span className="inline-block px-3 py-1 rounded-full bg-[#18b5d8]/10 text-[#18b5d8] text-[11px] font-bold uppercase tracking-wide mb-4">Chat Receptionist</span>
             <h2 className="text-[40px] sm:text-[48px] font-extrabold text-[#1d1d1f] leading-tight tracking-tight mb-4">Gemma</h2>
             <p className="text-[#6e6e73] text-[18px] leading-relaxed max-w-2xl">
-              Gemma sits on your website 24/7, greets every visitor, qualifies them, and books appointments — before they can bounce to a competitor.
+              Gemma sits on your website 24/7, greets every visitor, qualifies them, and books appointments, before they can bounce to a competitor.
             </p>
           </FadeUp>
 
@@ -248,7 +248,7 @@ export default function AiEmployeesDeep() {
                   </div>
                   <div className="flex justify-start">
                     <div className="bg-white border border-[#e5e5ea] text-[#1d1d1f] text-[12px] rounded-[14px] rounded-tl-[4px] px-3.5 py-2.5 max-w-[85%] leading-relaxed">
-                      Great — what zip code is the project in? And is this a full gut or cosmetic update?
+                      Great, what zip code is the project in? And is this a full gut or cosmetic update?
                     </div>
                   </div>
                   <div className="flex justify-start items-end gap-1.5 pt-1">
@@ -275,7 +275,7 @@ export default function AiEmployeesDeep() {
                 Most leads decide in seconds whether to reach out. Gemma greets every visitor instantly, asks qualifying questions, and captures contact info before they bounce.
               </p>
               <ul className="space-y-2">
-                {['Instant greeting — no wait time', 'Customizable qualifying questions', 'Lead info captured automatically', 'Hands off to your team when ready'].map(t => <CheckItem key={t} text={t} />)}
+                {['Instant greeting, no wait time', 'Customizable qualifying questions', 'Lead info captured automatically', 'Hands off to your team when ready'].map(t => <CheckItem key={t} text={t} />)}
               </ul>
             </FadeUp>
           </div>
@@ -324,8 +324,8 @@ export default function AiEmployeesDeep() {
               <div className="bg-[#f5f5f7] rounded-[20px] p-6 border border-[#e5e5ea] demo-card">
                 <p className="text-[11px] font-bold tracking-[1.5px] uppercase text-[#86868b] mb-4">Overnight Lead Capture</p>
                 {[
-                  { time: '11:42 PM', name: 'Sarah K.', msg: 'Needs kitchen quote — Tampa', status: 'Booked' },
-                  { time: '1:17 AM',  name: 'Mike R.',  msg: 'Roofing inspection — Clearwater', status: 'Qualified' },
+                  { time: '11:42 PM', name: 'Sarah K.', msg: 'Needs kitchen quote, Tampa', status: 'Booked' },
+                  { time: '1:17 AM',  name: 'Mike R.',  msg: 'Roofing inspection, Clearwater', status: 'Qualified' },
                   { time: '6:03 AM',  name: 'Denise P.',msg: 'Bathroom remodel inquiry', status: 'Booked' },
                 ].map(lead => (
                   <div key={lead.name} className="flex items-center gap-3 py-3 border-b border-[#e5e5ea] last:border-0">
@@ -342,12 +342,12 @@ export default function AiEmployeesDeep() {
             </FadeUp>
             <FadeUp delay={120}>
               <p className="text-[11px] font-bold tracking-[1.5px] uppercase text-[#86868b] mb-3">Feature 03</p>
-              <h3 className="text-[26px] font-bold text-[#1d1d1f] leading-tight tracking-tight mb-4">Never miss a lead — not even at 2 AM.</h3>
+              <h3 className="text-[26px] font-bold text-[#1d1d1f] leading-tight tracking-tight mb-4">Never miss a lead, not even at 2 AM.</h3>
               <p className="text-[#6e6e73] text-[16px] leading-relaxed mb-5">
-                Most leads contact you outside business hours. Gemma never clocks out. She captures, qualifies, and books overnight — so your morning starts with a full calendar.
+                Most leads contact you outside business hours. Gemma never clocks out. She captures, qualifies, and books overnight, so your morning starts with a full calendar.
               </p>
               <ul className="space-y-2">
-                {['24/7 availability — no exceptions', 'Full conversation transcript saved', 'Instant notification to your team', 'Overnight leads in your CRM by 8 AM'].map(t => <CheckItem key={t} text={t} />)}
+                {['24/7 availability, no exceptions', 'Full conversation transcript saved', 'Instant notification to your team', 'Overnight leads in your CRM by 8 AM'].map(t => <CheckItem key={t} text={t} />)}
               </ul>
             </FadeUp>
           </div>
@@ -366,11 +366,11 @@ export default function AiEmployeesDeep() {
             <span className="inline-block px-3 py-1 rounded-full bg-purple-100 text-purple-700 text-[11px] font-bold uppercase tracking-wide mb-4">Call Handler</span>
             <h2 className="text-[40px] sm:text-[48px] font-extrabold text-[#1d1d1f] leading-tight tracking-tight mb-4">Voice Receptionist</h2>
             <p className="text-[#6e6e73] text-[18px] leading-relaxed max-w-2xl">
-              Every inbound call gets answered in your voice — instantly. No hold music. No missed calls. No voicemail purgatory. Callers get answers, get qualified, and get booked without a human on the line.
+              Every inbound call gets answered in your voice, instantly. No hold music. No missed calls. No voicemail purgatory. Callers get answers, get qualified, and get booked without a human on the line.
             </p>
           </FadeUp>
 
-          {/* Feature 01 — Answers every call */}
+          {/* Feature 01, Answers every call */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-6">
             <FadeUp delay={0}>
               <div className="bg-white rounded-[20px] p-6 border border-[#e5e5ea] shadow-sm demo-card ai-float">
@@ -390,7 +390,7 @@ export default function AiEmployeesDeep() {
                 <p className="text-[10px] font-bold tracking-[1.5px] uppercase text-[#86868b] mb-3">Live Transcript</p>
                 <div className="space-y-2.5">
                   {[
-                    { speaker: 'AI', text: 'Thanks for calling Clearwater Plumbing. This is Aria — how can I help you today?' },
+                    { speaker: 'AI', text: 'Thanks for calling Clearwater Plumbing. This is Aria, how can I help you today?' },
                     { speaker: 'Caller', text: 'Hi, my water heater stopped working this morning.' },
                     { speaker: 'AI', text: 'I can get someone out to you. Is it a gas or electric unit, and what city are you in?' },
                     { speaker: 'Caller', text: 'Electric. I\'m in St. Pete, zip 33701.' },
@@ -420,20 +420,20 @@ export default function AiEmployeesDeep() {
                 Your Voice Receptionist answers in your business name, in your tone, the moment the phone rings. No hold music. No "press 1 for service." A real conversation from the first second.
               </p>
               <ul className="space-y-2">
-                {['Answers in your brand voice', 'Zero hold time — immediate response', 'Handles multiple simultaneous calls', 'Full transcript saved after every call'].map(t => <CheckItem key={t} text={t} />)}
+                {['Answers in your brand voice', 'Zero hold time, immediate response', 'Handles multiple simultaneous calls', 'Full transcript saved after every call'].map(t => <CheckItem key={t} text={t} />)}
               </ul>
             </FadeUp>
           </div>
 
           <Connector />
 
-          {/* Feature 02 — FAQ handling */}
+          {/* Feature 02, FAQ handling */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-6">
             <FadeUp delay={0} className="order-2 lg:order-1">
               <p className="text-[11px] font-bold tracking-[1.5px] uppercase text-[#86868b] mb-3">Feature 02</p>
               <h3 className="text-[26px] font-bold text-[#1d1d1f] leading-tight tracking-tight mb-4">Handles your most common calls without you.</h3>
               <p className="text-[#6e6e73] text-[16px] leading-relaxed mb-5">
-                Hours, pricing, service area, availability — your Voice Receptionist knows the answers. It handles the calls your team answers 10 times a day so they can focus on the work that actually moves revenue.
+                Hours, pricing, service area, availability, your Voice Receptionist knows the answers. It handles the calls your team answers 10 times a day so they can focus on the work that actually moves revenue.
               </p>
               <ul className="space-y-2">
                 {['Custom FAQ knowledge base', 'Service area and hours verification', 'Price range and estimate questions', 'Routes to a human when needed'].map(t => <CheckItem key={t} text={t} />)}
@@ -448,7 +448,7 @@ export default function AiEmployeesDeep() {
                     { q: 'Do you service Bradenton?', action: 'Auto-answered', color: 'bg-green-100 text-green-700' },
                     { q: 'How much does an inspection cost?', action: 'Auto-answered', color: 'bg-green-100 text-green-700' },
                     { q: 'I need to speak to the owner', action: 'Transferred', color: 'bg-orange-100 text-orange-700' },
-                    { q: 'Emergency — water is flooding', action: 'Priority route', color: 'bg-red-100 text-red-700' },
+                    { q: 'Emergency, water is flooding', action: 'Priority route', color: 'bg-red-100 text-red-700' },
                   ].map(row => (
                     <div key={row.q} className="flex items-center gap-3 py-2.5 border-b border-[#f5f5f7] last:border-0">
                       <p className="text-[12px] text-[#1d1d1f] flex-1">{row.q}</p>
@@ -463,7 +463,7 @@ export default function AiEmployeesDeep() {
 
           <Connector />
 
-          {/* Feature 03 — Books without a human */}
+          {/* Feature 03, Books without a human */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <FadeUp delay={0}>
               <div className="bg-white rounded-[20px] p-6 border border-[#e5e5ea] shadow-sm demo-card">
@@ -471,7 +471,7 @@ export default function AiEmployeesDeep() {
                   <div className="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center text-[20px]">✅</div>
                   <div>
                     <p className="text-[#1d1d1f] font-bold text-[14px]">Appointment Confirmed</p>
-                    <p className="text-[#86868b] text-[12px]">Booked via Voice — no human needed</p>
+                    <p className="text-[#86868b] text-[12px]">Booked via Voice, no human needed</p>
                   </div>
                 </div>
                 <div className="bg-[#f5f5f7] rounded-[14px] p-4 space-y-2.5">
@@ -504,7 +504,7 @@ export default function AiEmployeesDeep() {
               <p className="text-[11px] font-bold tracking-[1.5px] uppercase text-[#86868b] mb-3">Feature 03</p>
               <h3 className="text-[26px] font-bold text-[#1d1d1f] leading-tight tracking-tight mb-4">Callers hang up with a confirmed appointment.</h3>
               <p className="text-[#6e6e73] text-[16px] leading-relaxed mb-5">
-                After qualifying a caller, your Voice Receptionist pulls up your calendar, offers available slots, confirms the booking, and texts a confirmation — end to end, no human involved.
+                After qualifying a caller, your Voice Receptionist pulls up your calendar, offers available slots, confirms the booking, and texts a confirmation, end to end, no human involved.
               </p>
               <ul className="space-y-2">
                 {['Live calendar booking during the call', 'SMS and email confirmation sent instantly', 'Job details logged in your CRM', 'Sends reminder 24 hours before'].map(t => <CheckItem key={t} text={t} />)}
@@ -526,14 +526,14 @@ export default function AiEmployeesDeep() {
             <span className="inline-block px-3 py-1 rounded-full bg-yellow-100 text-yellow-700 text-[11px] font-bold uppercase tracking-wide mb-4">Review Manager</span>
             <h2 className="text-[40px] sm:text-[48px] font-extrabold text-[#1d1d1f] leading-tight tracking-tight mb-4">Reputation Specialist</h2>
             <p className="text-[#6e6e73] text-[18px] leading-relaxed max-w-2xl">
-              Your Reputation Specialist monitors, responds to, and analyzes every Google and Facebook review — automatically — so your brand always looks its best without touching your team's workload.
+              Your Reputation Specialist monitors, responds to, and analyzes every Google and Facebook review, automatically, so your brand always looks its best without touching your team's workload.
             </p>
           </FadeUp>
 
           <FadeUp className="flex justify-center mb-20">
             <img
               src="/Reputation-Management-specialist-hero-img.webp"
-              alt="AI Reputation Specialist — automated review response and sentiment analysis"
+              alt="AI Reputation Specialist, automated review response and sentiment analysis"
               className="w-full max-w-2xl rounded-[20px] shadow-md"
             />
           </FadeUp>
@@ -556,8 +556,8 @@ export default function AiEmployeesDeep() {
                 </div>
                 <p className="text-[#1d1d1f] text-[13px] mb-5 leading-relaxed">"Amazing experience start to finish. Professional, responsive, and went above and beyond. Highly recommend!"</p>
                 <div className="bg-white rounded-[12px] border border-[#e5e5ea] p-4">
-                  <span className="text-[9px] font-bold px-2 py-0.5 rounded-full bg-[#18b5d8]/10 text-[#18b5d8] uppercase tracking-wide">AI Response — Draft Ready</span>
-                  <p className="text-[#1d1d1f] text-[12px] leading-relaxed mt-2">"Thank you so much for the kind words! We love hearing when clients feel taken care of — we'll pass this along to the whole team!"</p>
+                  <span className="text-[9px] font-bold px-2 py-0.5 rounded-full bg-[#18b5d8]/10 text-[#18b5d8] uppercase tracking-wide">AI Response, Draft Ready</span>
+                  <p className="text-[#1d1d1f] text-[12px] leading-relaxed mt-2">"Thank you so much for the kind words! We love hearing when clients feel taken care of, we'll pass this along to the whole team!"</p>
                   <div className="flex gap-2 mt-3">
                     <button className="flex-1 bg-[#18b5d8] text-white text-[11px] font-semibold rounded-full py-1.5 text-center">Post Reply</button>
                     <button className="flex-1 border border-[#e5e5ea] text-[#1d1d1f] text-[11px] font-semibold rounded-full py-1.5 text-center">Edit</button>
@@ -569,7 +569,7 @@ export default function AiEmployeesDeep() {
               <p className="text-[11px] font-bold tracking-[1.5px] uppercase text-[#86868b] mb-3">Feature 01</p>
               <h3 className="text-[26px] font-bold text-[#1d1d1f] leading-tight tracking-tight mb-4">Reputation-safe responses, on autopilot.</h3>
               <p className="text-[#6e6e73] text-[16px] leading-relaxed mb-5">
-                Your AI crafts personalized replies for every review — matching your voice for 5-star praise and handling negative feedback with care and professionalism.
+                Your AI crafts personalized replies for every review, matching your voice for 5-star praise and handling negative feedback with care and professionalism.
               </p>
               <ul className="space-y-2">
                 {['Responds to positive and negative reviews', 'Brand-safe tone on every reply', 'Multi-platform: Google and Facebook', 'Multilingual response support'].map(t => <CheckItem key={t} text={t} />)}
@@ -585,7 +585,7 @@ export default function AiEmployeesDeep() {
               <p className="text-[11px] font-bold tracking-[1.5px] uppercase text-[#86868b] mb-3">Feature 02</p>
               <h3 className="text-[26px] font-bold text-[#1d1d1f] leading-tight tracking-tight mb-4">Your rules. Your standards.</h3>
               <p className="text-[#6e6e73] text-[16px] leading-relaxed mb-5">
-                Configure star-rating thresholds, response timing, platform preferences, and tone guidelines — so every reply reflects exactly how you want to show up.
+                Configure star-rating thresholds, response timing, platform preferences, and tone guidelines, so every reply reflects exactly how you want to show up.
               </p>
               <ul className="space-y-2">
                 {['Star-rating response thresholds', 'Auto-post or draft-for-review mode', 'Response timing controls', 'Per-platform tone settings'].map(t => <CheckItem key={t} text={t} />)}
@@ -650,7 +650,7 @@ export default function AiEmployeesDeep() {
               <p className="text-[11px] font-bold tracking-[1.5px] uppercase text-[#86868b] mb-3">Feature 03</p>
               <h3 className="text-[26px] font-bold text-[#1d1d1f] leading-tight tracking-tight mb-4">Ask your reviews anything.</h3>
               <p className="text-[#6e6e73] text-[16px] leading-relaxed mb-5">
-                Chat directly with your review data to surface sentiment shifts, keyword trends, and actionable recommendations — in plain English, in seconds.
+                Chat directly with your review data to surface sentiment shifts, keyword trends, and actionable recommendations, in plain English, in seconds.
               </p>
               <ul className="space-y-2">
                 {['Sentiment trend analysis', 'Top keyword and topic patterns', 'NPS and rating breakdowns', 'Actionable improvement suggestions'].map(t => <CheckItem key={t} text={t} />)}
@@ -672,14 +672,14 @@ export default function AiEmployeesDeep() {
             <span className="inline-block px-3 py-1 rounded-full bg-[#18b5d8]/10 text-[#18b5d8] text-[11px] font-bold uppercase tracking-wide mb-4">Lead Qualifier</span>
             <h2 className="text-[40px] sm:text-[48px] font-extrabold text-[#1d1d1f] leading-tight tracking-tight mb-4">AI CRM</h2>
             <p className="text-[#6e6e73] text-[18px] leading-relaxed max-w-2xl">
-              Your AI CRM logs every interaction, runs automated multi-touch follow-up across email, SMS, and phone, and enriches your pipeline — without anyone on your team lifting a finger.
+              Your AI CRM logs every interaction, runs automated multi-touch follow-up across email, SMS, and phone, and enriches your pipeline, without anyone on your team lifting a finger.
             </p>
           </FadeUp>
 
           <FadeUp className="flex justify-center mb-20">
             <img
               src="/AI-Sales-Assistant-hero-img.webp"
-              alt="AI CRM — automated lead follow-up and pipeline management"
+              alt="AI CRM, automated lead follow-up and pipeline management"
               className="w-full max-w-2xl rounded-[20px] shadow-md"
             />
           </FadeUp>
@@ -688,9 +688,9 @@ export default function AiEmployeesDeep() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-6">
             <FadeUp delay={0}>
               <div className="bg-white rounded-[20px] p-6 border border-[#e5e5ea] shadow-sm demo-card ai-float">
-                <p className="text-[11px] font-bold tracking-[1.5px] uppercase text-[#86868b] mb-4">Follow-Up Sequence — Lead: Dave M.</p>
+                <p className="text-[11px] font-bold tracking-[1.5px] uppercase text-[#86868b] mb-4">Follow-Up Sequence, Lead: Dave M.</p>
                 {[
-                  { day: 'Day 1',  channel: 'Email', msg: "Thanks for reaching out — here's your quote", sent: true },
+                  { day: 'Day 1',  channel: 'Email', msg: "Thanks for reaching out, here's your quote", sent: true },
                   { day: 'Day 2',  channel: 'SMS',   msg: 'Hey Dave, just checking in on that quote…', sent: true },
                   { day: 'Day 5',  channel: 'Phone', msg: 'Outbound call attempt', sent: true },
                   { day: 'Day 10', channel: 'Email', msg: 'Still interested? We have an opening this week', sent: false },
@@ -712,7 +712,7 @@ export default function AiEmployeesDeep() {
               <p className="text-[11px] font-bold tracking-[1.5px] uppercase text-[#86868b] mb-3">Feature 01</p>
               <h3 className="text-[26px] font-bold text-[#1d1d1f] leading-tight tracking-tight mb-4">Multi-touch follow-up that actually converts.</h3>
               <p className="text-[#6e6e73] text-[16px] leading-relaxed mb-5">
-                Most leads need 5 to 8 touchpoints before they buy. Your AI runs the full sequence — email, SMS, and outbound calls — so your team only talks to people who are ready.
+                Most leads need 5 to 8 touchpoints before they buy. Your AI runs the full sequence, email, SMS, and outbound calls, so your team only talks to people who are ready.
               </p>
               <ul className="space-y-2">
                 {['Email, SMS, and phone in one sequence', 'Customizable timing and messaging', 'Stops automatically on reply or booking', 'Cold lead re-engagement campaigns'].map(t => <CheckItem key={t} text={t} />)}
@@ -728,7 +728,7 @@ export default function AiEmployeesDeep() {
               <p className="text-[11px] font-bold tracking-[1.5px] uppercase text-[#86868b] mb-3">Feature 02</p>
               <h3 className="text-[26px] font-bold text-[#1d1d1f] leading-tight tracking-tight mb-4">Automate CRM updates so you focus on selling.</h3>
               <p className="text-[#6e6e73] text-[16px] leading-relaxed mb-5">
-                Every call, email, and meeting gets logged automatically. No more manual data entry — your pipeline stays accurate without your team touching it.
+                Every call, email, and meeting gets logged automatically. No more manual data entry, your pipeline stays accurate without your team touching it.
               </p>
               <ul className="space-y-2">
                 {['Auto-logs every call and email', 'Meeting notes captured instantly', 'Pipeline stages updated in real time', 'Zero manual CRM work'].map(t => <CheckItem key={t} text={t} />)}
@@ -740,7 +740,7 @@ export default function AiEmployeesDeep() {
                 {[
                   { icon: '📞', label: 'Call with Marcus T.', detail: 'Discussed budget · 12 min', time: 'Just now', auto: true },
                   { icon: '📧', label: 'Follow-up email sent', detail: 'Proposal + pricing deck', time: '2h ago', auto: true },
-                  { icon: '📅', label: 'Meeting notes saved', detail: 'Demo call — ready to close', time: 'Yesterday', auto: true },
+                  { icon: '📅', label: 'Meeting notes saved', detail: 'Demo call, ready to close', time: 'Yesterday', auto: true },
                 ].map((row, i) => (
                   <div key={i} className="flex items-center gap-3 py-3 border-b border-[#f0f0f0] last:border-0">
                     <div className="w-9 h-9 rounded-xl bg-[#f5f5f7] flex items-center justify-center text-[16px] shrink-0">{row.icon}</div>
@@ -813,11 +813,11 @@ export default function AiEmployeesDeep() {
             <span className="inline-block px-3 py-1 rounded-full bg-emerald-100 text-emerald-700 text-[11px] font-bold uppercase tracking-wide mb-4">Revenue AI</span>
             <h2 className="text-[40px] sm:text-[48px] font-extrabold text-[#1d1d1f] leading-tight tracking-tight mb-4">AI Sales Coach</h2>
             <p className="text-[#6e6e73] text-[18px] leading-relaxed max-w-2xl">
-              After every sales call, your AI scores the lead, fills the CRM, and delivers coaching notes to your rep — so every conversation gets better than the last one.
+              After every sales call, your AI scores the lead, fills the CRM, and delivers coaching notes to your rep, so every conversation gets better than the last one.
             </p>
           </FadeUp>
 
-          {/* Feature 01 — BANT scorecard */}
+          {/* Feature 01, BANT scorecard */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-6">
             <FadeUp delay={0}>
               <div className="bg-[#f5f5f7] rounded-[20px] p-6 border border-[#e5e5ea] demo-card ai-float">
@@ -867,13 +867,13 @@ export default function AiEmployeesDeep() {
 
           <Connector />
 
-          {/* Feature 02 — Transcript + CRM auto-fill */}
+          {/* Feature 02, Transcript + CRM auto-fill */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-6">
             <FadeUp delay={0} className="order-2 lg:order-1">
               <p className="text-[11px] font-bold tracking-[1.5px] uppercase text-[#86868b] mb-3">Feature 02</p>
               <h3 className="text-[26px] font-bold text-[#1d1d1f] leading-tight tracking-tight mb-4">Full transcript. CRM filled. Zero admin.</h3>
               <p className="text-[#6e6e73] text-[16px] leading-relaxed mb-5">
-                Every word of every call is transcribed, tagged, and pushed into your CRM fields. Your reps spend zero time writing notes after calls — that time goes back into selling.
+                Every word of every call is transcribed, tagged, and pushed into your CRM fields. Your reps spend zero time writing notes after calls, that time goes back into selling.
               </p>
               <ul className="space-y-2">
                 {['Word-for-word transcript saved', 'Key moments tagged automatically', 'CRM fields auto-populated', 'Objections and commitments extracted'].map(t => <CheckItem key={t} text={t} />)}
@@ -881,7 +881,7 @@ export default function AiEmployeesDeep() {
             </FadeUp>
             <FadeUp delay={120} className="order-1 lg:order-2">
               <div className="bg-[#f5f5f7] rounded-[20px] p-6 border border-[#e5e5ea] demo-card">
-                <p className="text-[11px] font-bold tracking-[1.5px] uppercase text-[#86868b] mb-4">Post-Call Summary — Marcus T.</p>
+                <p className="text-[11px] font-bold tracking-[1.5px] uppercase text-[#86868b] mb-4">Post-Call Summary, Marcus T.</p>
                 <div className="space-y-2 mb-5">
                   {[
                     { tag: 'Budget mentioned', quote: '"We have about $10k set aside for this"', color: 'bg-emerald-100 text-emerald-700' },
@@ -895,7 +895,7 @@ export default function AiEmployeesDeep() {
                   ))}
                 </div>
                 <div className="bg-white rounded-[12px] border border-[#e5e5ea] p-4">
-                  <p className="text-[11px] font-bold text-[#1d1d1f] mb-2">CRM — Auto-filled fields</p>
+                  <p className="text-[11px] font-bold text-[#1d1d1f] mb-2">CRM, Auto-filled fields</p>
                   <div className="space-y-2">
                     {[
                       { field: 'Budget', val: '$10,000' },
@@ -916,14 +916,14 @@ export default function AiEmployeesDeep() {
 
           <Connector />
 
-          {/* Feature 03 — Coaching notes */}
+          {/* Feature 03, Coaching notes */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <FadeUp delay={0}>
               <div className="bg-[#f5f5f7] rounded-[20px] p-6 border border-[#e5e5ea] demo-card">
                 <div className="flex items-center gap-3 mb-5">
                   <div className="w-9 h-9 rounded-full bg-emerald-100 flex items-center justify-center text-[18px]">🏋️</div>
                   <div>
-                    <p className="text-[#1d1d1f] font-bold text-[13px]">Coaching Notes — Tyler R.</p>
+                    <p className="text-[#1d1d1f] font-bold text-[13px]">Coaching Notes, Tyler R.</p>
                     <p className="text-[#86868b] text-[11px]">3 insights from today's call</p>
                   </div>
                 </div>
@@ -931,7 +931,7 @@ export default function AiEmployeesDeep() {
                   {[
                     {
                       type: 'Missed opportunity',
-                      note: 'Marcus said "still comparing" — next time, ask who he\'s comparing and address it directly before sending a proposal.',
+                      note: 'Marcus said "still comparing", next time, ask who he\'s comparing and address it directly before sending a proposal.',
                       icon: '⚠️',
                       color: 'border-orange-200 bg-orange-50',
                     },
@@ -943,7 +943,7 @@ export default function AiEmployeesDeep() {
                     },
                     {
                       type: 'Prep for next call',
-                      note: 'He mentioned the Q3 deadline twice. Lead with urgency — his install window closes in 6 weeks.',
+                      note: 'He mentioned the Q3 deadline twice. Lead with urgency, his install window closes in 6 weeks.',
                       icon: '🎯',
                       color: 'border-[#18b5d8]/30 bg-[#18b5d8]/5',
                     },
@@ -960,10 +960,10 @@ export default function AiEmployeesDeep() {
               <p className="text-[11px] font-bold tracking-[1.5px] uppercase text-[#86868b] mb-3">Feature 03</p>
               <h3 className="text-[26px] font-bold text-[#1d1d1f] leading-tight tracking-tight mb-4">Reps get better without a manager listening to every call.</h3>
               <p className="text-[#6e6e73] text-[16px] leading-relaxed mb-5">
-                After every call, your AI delivers specific, actionable coaching notes — what went well, what to fix, and exactly how to approach the next conversation. Your team gets better by default.
+                After every call, your AI delivers specific, actionable coaching notes, what went well, what to fix, and exactly how to approach the next conversation. Your team gets better by default.
               </p>
               <ul className="space-y-2">
-                {['Specific coaching per call — not generic tips', 'Sandler methodology compliance scoring', 'Objection handling recommendations', 'Prep notes delivered before the next call'].map(t => <CheckItem key={t} text={t} />)}
+                {['Specific coaching per call, not generic tips', 'Sandler methodology compliance scoring', 'Objection handling recommendations', 'Prep notes delivered before the next call'].map(t => <CheckItem key={t} text={t} />)}
               </ul>
             </FadeUp>
           </div>
@@ -1100,7 +1100,7 @@ export default function AiEmployeesDeep() {
               Don't see what you need? We'll build it.
             </h2>
             <p className="text-[#6e6e73] text-[18px] leading-relaxed max-w-2xl">
-              Every business is different. If none of our standard AI employees fits your exact workflow, we design and build a custom one from scratch — trained on your process, your voice, and your goals.
+              Every business is different. If none of our standard AI employees fits your exact workflow, we design and build a custom one from scratch, trained on your process, your voice, and your goals.
             </p>
           </FadeUp>
 
@@ -1126,7 +1126,7 @@ export default function AiEmployeesDeep() {
               <p className="text-[13px] font-bold text-[#1d1d1f] mb-5">How the custom build works:</p>
               <div className="space-y-4">
                 {[
-                  { n: '01', title: 'Discovery call', desc: 'We map your workflow — where leads fall through, what your team does manually, and what the ideal AI outcome looks like.' },
+                  { n: '01', title: 'Discovery call', desc: 'We map your workflow, where leads fall through, what your team does manually, and what the ideal AI outcome looks like.' },
                   { n: '02', title: 'AI design and spec', desc: 'We design the AI employee: what it does, what tools it uses, what it says, and how it integrates with your existing systems.' },
                   { n: '03', title: 'Build and train', desc: 'We build it on your stack, train it on your voice and offer, and test every scenario before anything goes live.' },
                   { n: '04', title: 'Live and optimize', desc: 'We launch, monitor the first 30 days, and tune based on real performance data.' },
@@ -1204,7 +1204,7 @@ export default function AiEmployeesDeep() {
               Your first AI employee can be live within the week.
             </h2>
             <p className="text-[#8a9ba8] text-[17px] leading-relaxed mb-8">
-              Book a free strategy call. We'll map out which AI employees will have the biggest impact on your business — and show you exactly what they'll do.
+              Book a free strategy call. We'll map out which AI employees will have the biggest impact on your business, and show you exactly what they'll do.
             </p>
             <a
               href="/contact"

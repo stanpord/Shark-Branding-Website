@@ -9,8 +9,54 @@ const servicesSchema = {
       "@type": "WebPage",
       "@id": "https://sharkbrandingsolutions.com/services",
       url: "https://sharkbrandingsolutions.com/services",
-      name: "AI Business Services — Shark AI Solutions",
+      name: "AI Business Services | Shark AI Solutions",
       isPartOf: { "@id": "https://sharkbrandingsolutions.com/#website" },
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://sharkbrandingsolutions.com/services#faq",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "What exactly is AI visibility, and why does it matter for my business?",
+          acceptedAnswer: { "@type": "Answer", text: "AI visibility is how well your business appears when AI platforms like ChatGPT, Google AI Overviews, Perplexity, and Gemini answer questions your customers are asking. Instead of showing a list of ten results, these platforms recommend one to three businesses. If your business isn't in that shortlist, you're invisible to buyers who never see the traditional search results at all." },
+        },
+        {
+          "@type": "Question",
+          name: "What is GEO, and how is it different from SEO?",
+          acceptedAnswer: { "@type": "Answer", text: "GEO stands for Generative Engine Optimization. Traditional SEO helps your business rank in a list of Google results. GEO helps AI platforms recognize your business as a credible, trustworthy answer to a specific question. SEO gets you on the list. GEO gets you recommended. Both matter, but GEO is the layer most businesses are missing entirely." },
+        },
+        {
+          "@type": "Question",
+          name: "Which AI platforms do you optimize for?",
+          acceptedAnswer: { "@type": "Answer", text: "We optimize for the platforms your customers actually use: Google AI Overviews, ChatGPT, Perplexity, Gemini, and Microsoft Copilot. Each platform uses a different index and ranking logic. Our process covers all three major index families, Google, Bing, and independent crawlers, so you're not invisible on any of them." },
+        },
+        {
+          "@type": "Question",
+          name: "How fast will I see results?",
+          acceptedAnswer: { "@type": "Answer", text: "Most clients see initial movement in 7 to 14 days. Measurable ranking changes typically appear within 30 days. Speed depends on how many visibility gaps exist at the start and how quickly we can push corrected signals across platforms. We track progress monthly and share transparent reporting at every stage." },
+        },
+        {
+          "@type": "Question",
+          name: "Do I need a website to get started?",
+          acceptedAnswer: { "@type": "Answer", text: "No. A significant portion of AI visibility comes from signals outside your website, Google Business Profile, directory listings, reviews, structured citations, and how consistently your business information appears across the internet. We work with what you have and build from there." },
+        },
+        {
+          "@type": "Question",
+          name: "What industries do you work with?",
+          acceptedAnswer: { "@type": "Answer", text: "We work primarily with local service businesses in the Tampa Bay area, including home services, real estate, healthcare, professional services, restaurants, and retail. We also work with chambers of commerce and business associations looking to improve visibility for their members. If your customers use Google or AI to find businesses like yours, we can help." },
+        },
+        {
+          "@type": "Question",
+          name: "What's included in the Free AI Audit?",
+          acceptedAnswer: { "@type": "Answer", text: "The Free AI Audit covers how your business appears across search, maps, reviews, and AI platforms. We assess listing accuracy, trust signals, review presence, and AI platform readability, then deliver a prioritized action report within 48 hours. There's no sales pitch attached, just a clear picture of where you stand and what to fix first." },
+        },
+        {
+          "@type": "Question",
+          name: "What's the difference between the Self-Guided and Done For You Toolkit options?",
+          acceptedAnswer: { "@type": "Answer", text: "The Self-Guided plan ($997/month, 12-month commitment or $1,297/month for 3 months) gives you access to our AI Visibility Toolkit dashboard, tools, and framework so your team can execute the work. The Done For You plan ($2,000/month) means our team handles everything, listings, reviews, content updates, monitoring, and monthly strategy calls. Both include the same proven framework. The difference is who does the work." },
+        },
+      ],
     },
     {
       "@type": "ItemList",
@@ -45,7 +91,7 @@ const servicesSchema = {
           item: {
             "@type": "Service",
             name: "AI Employees",
-            description: "Five AI employees — chat receptionist, voice receptionist, reputation specialist, CRM, and sales coach — deployed live within one week.",
+            description: "Five AI employees, chat receptionist, voice receptionist, reputation specialist, CRM, and sales coach, deployed live within one week.",
             url: "https://sharkbrandingsolutions.com/aiemployees",
             provider: { "@id": "https://sharkbrandingsolutions.com/#organization" },
           },
@@ -67,9 +113,9 @@ const servicesSchema = {
 };
 
 export const metadata: Metadata = {
-  title: "AI Business Services — Shark AI Solutions",
+  title: "AI Visibility Services & AI Employees | Shark AI Solutions",
   description:
-    "AI Business Consulting, AI Toolkit, Workshops, and Free AI Audits for Tampa Bay businesses.",
+    "AI visibility consulting, AI employees, and automation for Tampa Bay local businesses. Get found on ChatGPT and Google AI, automate leads and reviews, and grow without adding headcount.",
 };
 
 const services = [
@@ -81,7 +127,7 @@ const services = [
       "Full audit of your AI and search presence",
       "Structured optimization of trust signals and listings",
       "Structured data signals that help ChatGPT, Gemini, and Google AI identify your business",
-      "Ongoing monitoring across AI discovery channels — we act before you notice a drop",
+      "Ongoing monitoring across AI discovery channels, we act before you notice a drop",
       "Competitive gap analysis across your local market",
     ],
     cta: "Start Consulting", href: "/contact",
@@ -445,10 +491,10 @@ export default function ServicesPage() {
             <div data-animate="compare-left" className="bg-[#f5f5f7] rounded-[20px] p-8 border border-[#e8e8ed]">
               <p className="text-[11px] font-bold text-[#7a7a7a] tracking-[0.18em] uppercase mb-3">The Hard Way</p>
               <p className="text-[18px] font-bold text-[#0a0a0a] mb-2">Build it yourself, platform by platform.</p>
-              <p className="text-[14px] text-[#555] mb-6">You can build AI visibility manually — but it requires consistent time across every platform, every month.</p>
+              <p className="text-[14px] text-[#555] mb-6">You can build AI visibility manually, but it requires consistent time across every platform, every month.</p>
               <ul className="space-y-4">
                 {[
-                  { label: "Manage Listings Manually", body: "Update your business info across dozens of directories — and keep them aligned as things change." },
+                  { label: "Manage Listings Manually", body: "Update your business info across dozens of directories, and keep them aligned as things change." },
                   { label: "Build Reviews Consistently", body: "Earn new reviews every month, respond to all of them, and track your reputation manually." },
                   { label: "Optimize Content Yourself", body: "Keep your website and listings clear, accurate, and AI-friendly without guidance on what to prioritize." },
                   { label: "Do It All Again Next Month", body: "AI visibility isn't a one-time task. It requires ongoing updates, monitoring, and adjustments." },
@@ -463,7 +509,7 @@ export default function ServicesPage() {
                 ))}
               </ul>
               <div className="mt-6 bg-white rounded-[12px] px-5 py-4 border border-[#e8e8ed]">
-                <p className="text-[13px] text-[#555]">Most business owners start here. Most eventually stop — because running a business is already a full-time job.</p>
+                <p className="text-[13px] text-[#555]">Most business owners start here. Most eventually stop, because running a business is already a full-time job.</p>
               </div>
             </div>
 
@@ -527,7 +573,7 @@ export default function ServicesPage() {
               },
               {
                 q: "Which AI platforms do you optimize for?",
-                a: "We optimize for the platforms your customers actually use: Google AI Overviews, ChatGPT, Perplexity, Gemini, and Microsoft Copilot. Each platform uses a different index and ranking logic. Our process covers all three major index families — Google, Bing, and independent crawlers — so you're not invisible on any of them.",
+                a: "We optimize for the platforms your customers actually use: Google AI Overviews, ChatGPT, Perplexity, Gemini, and Microsoft Copilot. Each platform uses a different index and ranking logic. Our process covers all three major index families, Google, Bing, and independent crawlers, so you're not invisible on any of them.",
               },
               {
                 q: "How fast will I see results?",
@@ -535,7 +581,7 @@ export default function ServicesPage() {
               },
               {
                 q: "Do I need a website to get started?",
-                a: "No. A significant portion of AI visibility comes from signals outside your website — Google Business Profile, directory listings, reviews, structured citations, and how consistently your business information appears across the internet. We work with what you have and build from there.",
+                a: "No. A significant portion of AI visibility comes from signals outside your website, Google Business Profile, directory listings, reviews, structured citations, and how consistently your business information appears across the internet. We work with what you have and build from there.",
               },
               {
                 q: "What industries do you work with?",
@@ -543,11 +589,11 @@ export default function ServicesPage() {
               },
               {
                 q: "What's included in the Free AI Audit?",
-                a: "The Free AI Audit covers how your business appears across search, maps, reviews, and AI platforms. We assess listing accuracy, trust signals, review presence, and AI platform readability, then deliver a prioritized action report within 48 hours. There's no sales pitch attached — just a clear picture of where you stand and what to fix first.",
+                a: "The Free AI Audit covers how your business appears across search, maps, reviews, and AI platforms. We assess listing accuracy, trust signals, review presence, and AI platform readability, then deliver a prioritized action report within 48 hours. There's no sales pitch attached, just a clear picture of where you stand and what to fix first.",
               },
               {
                 q: "What's the difference between the Self-Guided and Done For You Toolkit options?",
-                a: "The Self-Guided plan ($997/month, 12-month commitment or $1,297/month for 3 months) gives you access to our AI Visibility Toolkit dashboard, tools, and framework so your team can execute the work. The Done For You plan ($2,000/month) means our team handles everything — listings, reviews, content updates, monitoring, and monthly strategy calls. Both include the same proven framework. The difference is who does the work. North Tampa Bay Chamber members have access to a special member rate — reach out directly to learn more.",
+                a: "The Self-Guided plan ($997/month, 12-month commitment or $1,297/month for 3 months) gives you access to our AI Visibility Toolkit dashboard, tools, and framework so your team can execute the work. The Done For You plan ($2,000/month) means our team handles everything, listings, reviews, content updates, monitoring, and monthly strategy calls. Both include the same proven framework. The difference is who does the work. North Tampa Bay Chamber members have access to a special member rate, reach out directly to learn more.",
               },
             ].map(({ q, a }) => (
               <details

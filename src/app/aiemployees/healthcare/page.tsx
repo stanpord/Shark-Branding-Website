@@ -2,15 +2,15 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'AI Employees for Healthcare Practices | Shark Branding',
+  title: 'AI Employees for Healthcare Practices | Shark AI Solutions',
   description: 'AI employees for medical practices and clinics in Wesley Chapel and Tampa Bay. Patient follow-up, appointment reminders, review requests, and 24/7 booking. Live in one week.',
   alternates: { canonical: 'https://sharkbrandingsolutions.com/aiemployees/healthcare' },
   openGraph: {
-    title: 'AI Employees for Healthcare Practices | Shark Branding',
+    title: 'AI Employees for Healthcare Practices | Shark AI Solutions',
     description: 'Stop losing patients to slow response times and manual scheduling. AI employees handle inbound inquiries, appointment reminders, and reviews 24/7.',
     url: 'https://sharkbrandingsolutions.com/aiemployees/healthcare',
     type: 'website',
-    images: [{ url: 'https://sharkbrandingsolutions.com/logo.webp', width: 1200, height: 630, alt: 'AI Employees for Healthcare — Shark Branding Solutions' }],
+    images: [{ url: 'https://sharkbrandingsolutions.com/logo.webp', width: 1200, height: 630, alt: 'AI Employees for Healthcare | Shark AI Solutions' }],
   },
 }
 
@@ -63,7 +63,7 @@ const employees = [
     role: 'Chat Receptionist',
     color: '#18b5d8',
     colorBg: '#e8f8fc',
-    problem: 'New patients shopping for a provider in Wesley Chapel check two or three practices online before calling anyone. The practice that responds first — to a website inquiry, a contact form, or a chat message — wins the new patient. Most practices respond during business hours, which means after-hours inquiries sit until morning.',
+    problem: 'New patients shopping for a provider in Wesley Chapel check two or three practices online before calling anyone. The practice that responds first, to a website inquiry, a contact form, or a chat message, wins the new patient. Most practices respond during business hours, which means after-hours inquiries sit until morning.',
     solution: 'Gemma greets every website visitor immediately, answers common questions about services, accepted insurance, and office hours, and collects contact details for scheduling follow-up. For straightforward appointment types, she books directly to your calendar. After-hours inquiries receive an immediate acknowledgment and a callback or booking confirmation by the start of the next business day.',
     bullets: ['Responds to every inquiry immediately', 'Answers FAQs about services and insurance', 'Books new patient appointments 24/7', 'After-hours coverage every night and weekend'],
   },
@@ -73,7 +73,7 @@ const employees = [
     color: '#18b5d8',
     colorBg: '#e8f8fc',
     problem: 'Healthcare practices lose new patients in two places: inquiries that never convert to appointments, and no-shows that were never reminded. Both are expensive. A missed new patient slot costs the practice that appointment\'s revenue. A no-show costs the slot entirely.',
-    solution: 'Every new patient inquiry gets an immediate acknowledgment and a structured follow-up sequence until they book. Every scheduled appointment gets a reminder SMS 24 hours before and again 2 hours before — with a one-tap option to confirm or reschedule. Patients who cancel can be offered the next available slot automatically, keeping the schedule full.',
+    solution: 'Every new patient inquiry gets an immediate acknowledgment and a structured follow-up sequence until they book. Every scheduled appointment gets a reminder SMS 24 hours before and again 2 hours before, with a one-tap option to confirm or reschedule. Patients who cancel can be offered the next available slot automatically, keeping the schedule full.',
     bullets: ['New patient follow-up until they book', '24-hour and 2-hour appointment reminders', 'One-tap confirm or reschedule option', 'Cancellation recovery with next-slot offer'],
   },
   {
@@ -82,7 +82,7 @@ const employees = [
     color: '#d4a200',
     colorBg: '#fef9e7',
     problem: 'Patients choosing a new healthcare provider check Google reviews before calling. A practice with 15 reviews loses new patients to one with 150, even if the care is identical. Most practices never ask for reviews because it feels awkward in a clinical setting and staff are too busy at checkout to remember.',
-    solution: 'Within a few hours of a completed visit, your Reputation Specialist sends a brief, warm SMS thanking the patient for their visit and including a direct link to your Google review page. The message is configured to match your practice\'s tone — professional, warm, and never pushy. Every review that comes in gets a brand-voice response within two hours.',
+    solution: 'Within a few hours of a completed visit, your Reputation Specialist sends a brief, warm SMS thanking the patient for their visit and including a direct link to your Google review page. The message is configured to match your practice\'s tone, professional, warm, and never pushy. Every review that comes in gets a brand-voice response within two hours.',
     bullets: ['Post-visit review requests via SMS', 'Warm, professional tone configured for your practice', 'Responds to every review within 2 hours', 'Google and Healthgrades coverage'],
   },
 ]
@@ -119,7 +119,7 @@ export default function HealthcarePage() {
             <span className="text-[#18b5d8]">Healthcare Practices</span>
           </h1>
           <p className="lead-airy text-[#333] max-w-[520px] mx-auto mb-12" style={{ textWrap: 'balance' }}>
-            New patients decide in seconds whether to call. Your AI team responds instantly, eliminates no-shows with automated reminders, and collects reviews after every visit — without adding to your front desk workload.
+            New patients decide in seconds whether to call. Your AI team responds instantly, eliminates no-shows with automated reminders, and collects reviews after every visit, without adding to your front desk workload.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-3">
             <Link
@@ -169,7 +169,7 @@ export default function HealthcarePage() {
                 Every missed appointment is revenue that never comes back.
               </h2>
               <p className="text-[16px] text-[#555] leading-relaxed mb-6">
-                Healthcare practices in Tampa Bay see no-show rates between 18 and 23 percent without automated reminders. At a typical appointment value, that is four to six missed appointments per week — revenue your practice will never recover from those slots.
+                Healthcare practices in Tampa Bay see no-show rates between 18 and 23 percent without automated reminders. At a typical appointment value, that is four to six missed appointments per week, revenue your practice will never recover from those slots.
               </p>
               <p className="text-[16px] text-[#555] leading-relaxed">
                 Automated reminders sent 24 hours and 2 hours before every appointment reduce no-shows by 60 to 75 percent within the first month. Patients who need to cancel are offered a reschedule option immediately, keeping the schedule full instead of leaving an open slot.
@@ -179,7 +179,7 @@ export default function HealthcarePage() {
               {[
                 { time: '24 hrs before', msg: 'Hi [Name], this is a reminder for your appointment tomorrow at 10:30 AM with Dr. Patel. Reply C to confirm or R to reschedule.', status: 'Confirmed' },
                 { time: '2 hrs before', msg: 'Reminder: your appointment is at 10:30 AM today. We look forward to seeing you! Reply R if you need to reschedule.', status: 'Confirmed' },
-                { time: 'Reschedule trigger', msg: 'No problem at all — here are the next available times. Tap to choose one and we\'ll get you booked right away.', status: 'Rebooked' },
+                { time: 'Reschedule trigger', msg: 'No problem at all, here are the next available times. Tap to choose one and we\'ll get you booked right away.', status: 'Rebooked' },
               ].map((r) => (
                 <div key={r.time} className="bg-white rounded-[14px] px-5 py-4 border border-[#e8e8ed]">
                   <div className="flex items-center justify-between mb-2">
@@ -273,7 +273,7 @@ export default function HealthcarePage() {
         <div className="max-w-[560px] mx-auto">
           <p className="text-[13px] font-semibold tracking-[0.2em] uppercase text-[#18b5d8] mb-6">Healthcare · Wesley Chapel & Tampa Bay</p>
           <h2 className="display-lg text-white mb-6" style={{ textWrap: 'balance' }}>
-            Fill your schedule and cut no-shows — without adding front desk staff.
+            Fill your schedule and cut no-shows, without adding front desk staff.
           </h2>
           <p className="lead-airy text-white/50 mb-12">
             Free AI Audit delivered in 48 hours. We identify exactly how many patients your current process is losing before you invest in anything.

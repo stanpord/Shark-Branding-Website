@@ -16,7 +16,7 @@ const plansSchema = {
       "@type": "Service",
       "@id": "https://sharkbrandingsolutions.com/plans#full-suite",
       name: "Full AI Suite",
-      description: "Five AI employees — Chat Receptionist, Voice Receptionist, Reputation Specialist, AI CRM, and AI Sales Coach — deployed and live within one week for Tampa Bay businesses.",
+      description: "Five AI employees, Chat Receptionist, Voice Receptionist, Reputation Specialist, AI CRM, and AI Sales Coach, deployed and live within one week for Tampa Bay businesses.",
       provider: { "@id": "https://sharkbrandingsolutions.com/#organization" },
       url: "https://sharkbrandingsolutions.com/plans",
       offers: {
@@ -64,13 +64,13 @@ const plansSchema = {
 };
 
 export const metadata: Metadata = {
-  title: "AI Employees & AI Visibility Pricing Tampa Bay | Shark AI Solutions",
+  title: "AI Visibility Pricing & Plans | Shark AI Solutions",
   description:
     "Get found on Google, ChatGPT, and Gemini without paying for ads. Two plans: Self-Guided at $997/mo or Done For You at $2,000/mo. 90-day results guarantee.",
 };
 
 const selfGuidedFeatures = [
-  "Full AI Visibility Toolkit framework — the same system our team uses for managed clients",
+  "Full AI Visibility Toolkit framework, the same system our team uses for managed clients",
   "Step-by-step action plan across listings, reviews, AI signals, and local content",
   "Clear priority sequence so your team always knows what to work on next",
   "Templates and implementation guides for each phase",
@@ -97,22 +97,22 @@ const customFeatures = [
 const pricingObjections = [
   {
     q: "Is this just another tool?",
-    a: "No. There's no dashboard to log into, no software to learn, and no algorithm to game. This is hands-on consulting backed by a proven framework. Done For You means our team does the work. Self-Guided means you execute the same framework we use — with clear instructions at every step.",
+    a: "No. There's no dashboard to log into, no software to learn, and no algorithm to game. This is hands-on consulting backed by a proven framework. Done For You means our team does the work. Self-Guided means you execute the same framework we use, with clear instructions at every step.",
   },
   {
     q: "What if I'm not technical?",
-    a: "You don't need to be. The Done For You plan requires nothing from you except a 30-minute onboarding call. Even the Self-Guided Toolkit is built for business owners, not developers — every phase has plain-English instructions and templates.",
+    a: "You don't need to be. The Done For You plan requires nothing from you except a 30-minute onboarding call. Even the Self-Guided Toolkit is built for business owners, not developers, every phase has plain-English instructions and templates.",
   },
   {
     q: "How is this different from my current agency?",
-    a: "Most agencies focus on ads, social posts, and traffic metrics. We focus on AI visibility signals — the data ChatGPT, Gemini, and Google AI Overviews use to decide which businesses to recommend. It's a different layer entirely. Most of our clients run us alongside their existing agency.",
+    a: "Most agencies focus on ads, social posts, and traffic metrics. We focus on AI visibility signals, the data ChatGPT, Gemini, and Google AI Overviews use to decide which businesses to recommend. It's a different layer entirely. Most of our clients run us alongside their existing agency.",
   },
 ];
 
 const objections = [
   {
     q: "I've paid for SEO before and it didn't work. How is this different?",
-    a: "Traditional SEO targets search engine algorithms. This targets AI search engines — the systems behind ChatGPT, Gemini, and Google AI Overviews that now drive a growing share of local business discovery. The signals are different, the work is different, and the timeline is faster. Our HVAC client saw position movement in 30 days, not six months.",
+    a: "Traditional SEO targets search engine algorithms. This targets AI search engines, the systems behind ChatGPT, Gemini, and Google AI Overviews that now drive a growing share of local business discovery. The signals are different, the work is different, and the timeline is faster. Our HVAC client saw position movement in 30 days, not six months.",
   },
   {
     q: "What actually happens after I buy?",
@@ -120,18 +120,18 @@ const objections = [
   },
   {
     q: "How long until I see results?",
-    a: "Visibility signals typically begin moving within 30–60 days. Significant position changes — like the HVAC results below — can happen faster with consistent execution.",
+    a: "Visibility signals typically begin moving within 30–60 days. Significant position changes, like the HVAC results below, can happen faster with consistent execution.",
   },
   {
     q: "Is there a contract? Can I cancel?",
-    a: "The Self-Guided plan has a 12-month or 3-month minimum commitment — after that, cancel with 60 days' notice (12-month plan) or at the end of your term (3-month plan). Done For You has no required annual contract; cancel any time with reasonable notice. Questions? Reach out before you commit.",
+    a: "The Self-Guided plan has a 12-month or 3-month minimum commitment, after that, cancel with 60 days' notice (12-month plan) or at the end of your term (3-month plan). Done For You has no required annual contract; cancel any time with reasonable notice. Questions? Reach out before you commit.",
   },
 ];
 
 const faqs = [
   {
     q: "Which plan should I choose?",
-    a: "If your team has bandwidth to execute a structured framework internally, start with Self-Guided. If you want the work done for you — no managing, no wondering if you're doing it right — choose Done For You. Either way, start with the free Visibility Audit: it makes the right call obvious before you spend a dollar.",
+    a: "If your team has bandwidth to execute a structured framework internally, start with Self-Guided. If you want the work done for you, no managing, no wondering if you're doing it right, choose Done For You. Either way, start with the free Visibility Audit: it makes the right call obvious before you spend a dollar.",
   },
   {
     q: "Are both Self-Guided commitment lengths still available?",
@@ -139,11 +139,11 @@ const faqs = [
   },
   {
     q: "What does \"AI visibility\" actually mean for a local business?",
-    a: "When someone asks ChatGPT, Gemini, or Google's AI Overviews \"who is the best HVAC company near me?\" — AI systems pull from citation data, reviews, local listings, and structured content signals to decide which businesses to mention. If those signals aren't in order, your business gets skipped. This toolkit fixes that systematically.",
+    a: "When someone asks ChatGPT, Gemini, or Google's AI Overviews \"who is the best HVAC company near me?\", AI systems pull from citation data, reviews, local listings, and structured content signals to decide which businesses to mention. If those signals aren't in order, your business gets skipped. This toolkit fixes that systematically.",
   },
   {
     q: "Does this work for my industry?",
-    a: "The framework applies to any local service business that relies on customers finding them online — HVAC, real estate, legal, medical, home services, restaurants, retail, and more. The signals AI systems look for are consistent across industries. If your customers search locally, this applies to you.",
+    a: "The framework applies to any local service business that relies on customers finding them online, HVAC, real estate, legal, medical, home services, restaurants, retail, and more. The signals AI systems look for are consistent across industries. If your customers search locally, this applies to you.",
   },
   {
     q: "Is there special pricing for Chamber members?",
@@ -239,7 +239,7 @@ export default function PlansPage() {
             {/* Card 1: Self-Guided Toolkit */}
             <div className="bg-[#07141a] rounded-[20px] p-7 border border-white/8 flex flex-col">
               <span className="font-mono text-[#18b5d8] text-[11px] tracking-[0.22em] uppercase block mb-5">
-                Toolkit — Self-Guided
+                Toolkit, Self-Guided
               </span>
               <h2 className="text-[22px] font-semibold text-white mb-1 leading-snug">
                 You run it.<br />We built the map.
@@ -253,7 +253,7 @@ export default function PlansPage() {
                     Save $3,600/yr
                   </span>
                 </div>
-                <p className="text-[13px] text-white/35 mt-1">12-month commitment — best value · $1,297/mo month-to-month</p>
+                <p className="text-[13px] text-white/35 mt-1">12-month commitment, best value · $1,297/mo month-to-month</p>
               </div>
 
 <ul className="mt-6 space-y-3 flex-1">
@@ -271,7 +271,7 @@ export default function PlansPage() {
                 rel="noopener noreferrer"
                 className="btn-press mt-6 block text-center bg-white text-[#0a0a0a] text-[15px] font-semibold rounded-full px-6 py-3.5 hover:bg-[#18b5d8] hover:text-white motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0a0a] [touch-action:manipulation]"
               >
-                Start 12-Month Plan — $997/mo
+                Start 12-Month Plan, $997/mo
               </a>
               <p className="text-center text-[13px] text-white/30 mt-3">
                 Shorter commitment?{" "}
@@ -295,7 +295,7 @@ export default function PlansPage() {
               </div>
 
               <span className="font-mono text-[#18b5d8] text-[11px] tracking-[0.22em] uppercase block mb-5 mt-2">
-                Toolkit — Done For You
+                Toolkit, Done For You
               </span>
               <h2 className="text-[22px] font-semibold text-white mb-1 leading-snug">
                 We handle it.<br />You watch it move.
@@ -315,13 +315,13 @@ export default function PlansPage() {
                   <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="#18b5d8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
                 <p className="text-[12px] text-[#18b5d8] font-semibold leading-snug">
-                  Done For You clients typically replace agency, VA, and tool costs — saving $500–$1,500/month
+                  Done For You clients typically replace agency, VA, and tool costs, saving $500–$1,500/month
                 </p>
               </div>
 
               {/* HVAC social proof */}
               <div className="mt-4 bg-white/5 border border-white/10 rounded-[12px] px-4 py-3 text-[13px] text-white/70 leading-relaxed">
-                <strong className="text-white font-semibold">HVAC client result:</strong> Moved from position #32 → #2 in 30 days across four high-intent keywords. No paid ads — just this framework, executed by our team.
+                <strong className="text-white font-semibold">HVAC client result:</strong> Moved from position #32 → #2 in 30 days across four high-intent keywords. No paid ads, just this framework, executed by our team.
               </div>
 
               <ul className="mt-6 space-y-3 flex-1">
@@ -339,7 +339,7 @@ export default function PlansPage() {
                 rel="noopener noreferrer"
                 className="btn-press mt-6 block text-center bg-[#18b5d8] text-white text-[15px] font-semibold rounded-full px-6 py-3.5 hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0a0a] [touch-action:manipulation]"
               >
-                Start Done For You — $2,000/mo
+                Start Done For You, $2,000/mo
               </a>
             </div>
 
@@ -612,7 +612,7 @@ export default function PlansPage() {
         </div>
       </section>
 
-      {/* ── Final CTA — extra bottom padding on mobile for sticky bar ── */}
+      {/* ── Final CTA, extra bottom padding on mobile for sticky bar ── */}
       <section className="bg-[#0a0a0a] py-28 px-6 text-center pb-36 md:pb-28">
         <div className="max-w-[600px] mx-auto">
           <p className="text-[13px] font-semibold tracking-[0.2em] uppercase text-[#18b5d8] mb-6">
@@ -647,7 +647,7 @@ export default function PlansPage() {
           href="/free-report"
           className="block text-center text-white text-[15px] font-semibold [touch-action:manipulation]"
         >
-          Book a Free Visibility Audit — No Commitment
+          Book a Free Visibility Audit, No Commitment
         </Link>
       </div>
     </>

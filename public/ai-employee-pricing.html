@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Employees — Beta Pricing | Shark Branding Solutions</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #fff;
+      color: #111;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .page {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 48px 40px;
+    }
+
+    /* Header */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 36px;
+      padding-bottom: 24px;
+      border-bottom: 3px solid #15B4D6;
+    }
+    .header-left h1 {
+      font-size: 26px;
+      font-weight: 800;
+      color: #000;
+      line-height: 1.1;
+    }
+    .header-left h1 span {
+      color: #15B4D6;
+    }
+    .header-left p {
+      font-size: 13px;
+      color: #555;
+      margin-top: 6px;
+    }
+    .header-right {
+      text-align: right;
+    }
+    .header-right .company {
+      font-size: 15px;
+      font-weight: 700;
+      color: #000;
+    }
+    .header-right .url {
+      font-size: 12px;
+      color: #15B4D6;
+    }
+    .header-logo {
+      height: 56px;
+      width: auto;
+      display: block;
+    }
+
+    /* Beta badge */
+    .beta-banner {
+      background: #000;
+      color: #fff;
+      border-radius: 10px;
+      padding: 16px 24px;
+      margin-bottom: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .beta-banner .badge {
+      background: #15B4D6;
+      color: #fff;
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 4px;
+      margin-right: 14px;
+      white-space: nowrap;
+    }
+    .beta-banner .beta-text {
+      font-size: 13px;
+      color: #ccc;
+      flex: 1;
+    }
+    .beta-banner .beta-text strong {
+      color: #fff;
+    }
+    .beta-banner .normal-price {
+      text-align: right;
+      white-space: nowrap;
+    }
+    .beta-banner .normal-price .label {
+      font-size: 10px;
+      color: #888;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+    .beta-banner .normal-price .amount {
+      font-size: 18px;
+      font-weight: 700;
+      color: #fff;
+      text-decoration: line-through;
+      opacity: 0.5;
+    }
+
+    /* Section titles */
+    .section-title {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: #15B4D6;
+      margin-bottom: 12px;
+      margin-top: 28px;
+    }
+
+    /* Products grid */
+    .products {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-bottom: 32px;
+    }
+    .product-card {
+      border: 1.5px solid #e5e5e5;
+      border-radius: 10px;
+      padding: 18px 16px;
+    }
+    .product-card .icon {
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+    .product-card .name {
+      font-size: 13px;
+      font-weight: 700;
+      color: #000;
+      margin-bottom: 4px;
+    }
+    .product-card .desc {
+      font-size: 11.5px;
+      color: #666;
+      margin-bottom: 12px;
+      line-height: 1.5;
+    }
+    .product-card .price-row {
+      display: flex;
+      align-items: baseline;
+      gap: 4px;
+    }
+    .product-card .price {
+      font-size: 22px;
+      font-weight: 800;
+      color: #000;
+    }
+    .product-card .per {
+      font-size: 11px;
+      color: #999;
+    }
+    .product-card .normal {
+      font-size: 11px;
+      color: #aaa;
+      text-decoration: line-through;
+      margin-left: 6px;
+    }
+
+    /* Full suite callout */
+    .suite-callout {
+      background: #000;
+      border-radius: 10px;
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 32px;
+    }
+    .suite-callout .left .label {
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: #15B4D6;
+      margin-bottom: 4px;
+    }
+    .suite-callout .left .name {
+      font-size: 17px;
+      font-weight: 800;
+      color: #fff;
+    }
+    .suite-callout .left .desc {
+      font-size: 12px;
+      color: #888;
+      margin-top: 2px;
+    }
+    .suite-callout .right {
+      text-align: right;
+    }
+    .suite-callout .right .beta-label {
+      font-size: 10px;
+      color: #15B4D6;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      font-weight: 700;
+    }
+    .suite-callout .right .beta-price {
+      font-size: 36px;
+      font-weight: 800;
+      color: #fff;
+      line-height: 1;
+    }
+    .suite-callout .right .beta-price span {
+      font-size: 14px;
+      font-weight: 400;
+      color: #888;
+    }
+    .suite-callout .right .normal-price {
+      font-size: 12px;
+      color: #555;
+      margin-top: 4px;
+    }
+    .suite-callout .right .normal-price s {
+      color: #666;
+    }
+    .suite-callout .middle {
+      text-align: center;
+      padding: 0 24px;
+    }
+    .suite-callout .middle .savings {
+      background: #15B4D6;
+      color: #fff;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 20px;
+      white-space: nowrap;
+    }
+
+    /* Comparison table */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 28px;
+      font-size: 12.5px;
+    }
+    thead tr {
+      background: #000;
+      color: #fff;
+    }
+    thead th {
+      padding: 11px 14px;
+      text-align: left;
+      font-weight: 600;
+      font-size: 12px;
+    }
+    thead th:not(:first-child) {
+      text-align: center;
+    }
+    tbody tr {
+      border-bottom: 1px solid #f0f0f0;
+    }
+    tbody tr:nth-child(even) {
+      background: #fafafa;
+    }
+    tbody tr.highlight {
+      background: #f0fbfe;
+    }
+    tbody td {
+      padding: 10px 14px;
+      color: #333;
+    }
+    tbody td:not(:first-child) {
+      text-align: center;
+    }
+    .check { color: #15B4D6; font-weight: 700; font-size: 14px; }
+    .cross { color: #ccc; font-size: 14px; }
+    .tag-blue {
+      background: #15B4D6;
+      color: #fff;
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 2px 7px;
+      border-radius: 3px;
+      margin-left: 6px;
+    }
+    .tag-red {
+      background: #fee2e2;
+      color: #b91c1c;
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 2px 7px;
+      border-radius: 3px;
+      margin-left: 6px;
+    }
+
+    /* Two-col layout */
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+
+    .info-box {
+      border: 1.5px solid #e5e5e5;
+      border-radius: 10px;
+      padding: 18px;
+    }
+    .info-box .box-title {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: #999;
+      margin-bottom: 12px;
+    }
+    .info-box table {
+      margin-bottom: 0;
+      font-size: 12px;
+    }
+    .info-box table thead tr {
+      background: #f5f5f5;
+    }
+    .info-box table thead th {
+      color: #333;
+      font-size: 11px;
+    }
+
+    /* AAA box */
+    .aaa-box {
+      background: #f0fbfe;
+      border: 1.5px solid #15B4D6;
+      border-radius: 10px;
+      padding: 18px 22px;
+      margin-bottom: 28px;
+    }
+    .aaa-box .aaa-title {
+      font-size: 12px;
+      font-weight: 700;
+      color: #1F7085;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+    }
+    .aaa-box .aaa-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 6px 0;
+      border-bottom: 1px solid #d4eff8;
+      font-size: 12.5px;
+    }
+    .aaa-box .aaa-row:last-child {
+      border-bottom: none;
+      font-weight: 700;
+      font-size: 13px;
+      padding-top: 10px;
+    }
+    .aaa-box .aaa-row .val-blue { color: #15B4D6; font-weight: 700; }
+    .aaa-box .aaa-row .val-green { color: #059669; font-weight: 700; }
+
+    /* Setup note */
+    .setup-note {
+      background: #f9f9f9;
+      border-left: 3px solid #15B4D6;
+      padding: 10px 16px;
+      font-size: 12px;
+      color: #555;
+      margin-bottom: 28px;
+      border-radius: 0 6px 6px 0;
+    }
+    .setup-note strong { color: #000; }
+
+    /* Footer */
+    .footer {
+      border-top: 1px solid #e5e5e5;
+      padding-top: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 11px;
+      color: #aaa;
+    }
+    .footer strong { color: #15B4D6; }
+
+    @media print {
+      body { font-size: 12px; }
+      .page { padding: 32px 32px; }
+      @page { margin: 0.5in; }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-left">
+      <h1>AI Employees <span>Pricing Overview</span></h1>
+      <p>Done-for-you AI workforce — live in one week, no platform license required</p>
+    </div>
+    <div class="header-right">
+      <img src="SBS_Blue_Logo.png" alt="Shark Branding Solutions" class="header-logo" />
+      <div class="url" style="margin-top:6px;">sharkbrandingsolutions.com</div>
+    </div>
+  </div>
+
+  <!-- Beta Banner -->
+  <div class="beta-banner">
+    <span class="badge">Beta Access</span>
+    <div class="beta-text">
+      <strong>Limited-time beta pricing.</strong> Early adopters lock in this rate for the life of their contract while we finalize the full product suite. Standard pricing launches at $4,000–$7,000/mo.
+    </div>
+    <div class="normal-price" style="margin-left:24px;">
+      <div class="label">Standard rate</div>
+      <div class="amount">$4,000–$7,000/mo</div>
+    </div>
+  </div>
+
+  <!-- Products -->
+  <div class="section-title">The AI Employees</div>
+  <div class="products">
+    <div class="product-card">
+      <div class="icon">📞</div>
+      <div class="name">AI Voice Receptionist</div>
+      <div class="desc">Answers inbound calls, books appointments, handles after-hours — 24/7, never on hold.</div>
+      <div class="price-row">
+        <span class="price">$697</span>
+        <span class="per">/mo</span>
+        <span class="normal">~$2,500–$3,200 staff</span>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="icon">🤖</div>
+      <div class="name">AI Sales Agent (CRM)</div>
+      <div class="desc">Follows up with every lead, manages pipeline, sends outreach sequences automatically.</div>
+      <div class="price-row">
+        <span class="price">$597</span>
+        <span class="per">/mo</span>
+        <span class="normal">~$3,000–$4,500 staff</span>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="icon">💬</div>
+      <div class="name">AI Webchat Receptionist</div>
+      <div class="desc">Engages website visitors, qualifies leads, and books appointments via live chat.</div>
+      <div class="price-row">
+        <span class="price">$497</span>
+        <span class="per">/mo</span>
+        <span class="normal">~$1,800–$2,500 staff</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Full Suite -->
+  <div class="suite-callout">
+    <div class="left">
+      <div class="label">Full Suite Bundle</div>
+      <div class="name">All Three AI Employees</div>
+      <div class="desc">Voice + Sales Agent + Webchat — one setup, one invoice</div>
+    </div>
+    <div class="middle">
+      <div class="savings">You save $291/mo vs. individual</div>
+    </div>
+    <div class="right">
+      <div class="beta-label">Beta Price</div>
+      <div class="beta-price">$1,500 <span>/mo</span></div>
+      <div class="normal-price">Standard rate: <s>$4,000–$7,000/mo</s></div>
+    </div>
+  </div>
+
+  <!-- Setup note -->
+  <div class="setup-note">
+    <strong>One-time setup fee: $1,500</strong> — covers discovery, build, training, configuration, and launch review for all deployed AI employees.
+  </div>
+
+  <!-- Side by Side Comparison -->
+  <div class="section-title">Side-by-Side: SBS vs. Salesforce Agentforce</div>
+  <table>
+    <thead>
+      <tr>
+        <th style="width:36%;">Factor</th>
+        <th>Salesforce Agentforce</th>
+        <th>SBS AI Employees <span class="tag-blue">Beta</span></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Setup / Implementation</td>
+        <td>$10,000–$20,000 (partner required)</td>
+        <td><strong>$1,500</strong></td>
+      </tr>
+      <tr class="highlight">
+        <td>Monthly cost (full suite)</td>
+        <td>$1,500–$2,500/mo</td>
+        <td><strong>$1,500/mo</strong> <span class="tag-blue">Beta</span></td>
+      </tr>
+      <tr>
+        <td>Standard / future price</td>
+        <td>$1,500–$2,500/mo</td>
+        <td><strong>$4,000–$7,000/mo</strong></td>
+      </tr>
+      <tr>
+        <td>CRM platform license required</td>
+        <td>Yes — $75–$150/user/mo extra</td>
+        <td><strong>No</strong></td>
+      </tr>
+      <tr>
+        <td>Done-for-you setup</td>
+        <td><span class="cross">✗</span> Requires Salesforce-certified partner</td>
+        <td><span class="check">✓</span> Fully handled by SBS</td>
+      </tr>
+      <tr>
+        <td>Time to go live</td>
+        <td>30–90 days</td>
+        <td><strong>~1 week</strong></td>
+      </tr>
+      <tr>
+        <td>Annual contract required</td>
+        <td><span class="tag-red">Yes</span></td>
+        <td><span class="check">✓</span> No long-term contract</td>
+      </tr>
+      <tr>
+        <td>Pricing model</td>
+        <td>Consumption-based (unpredictable)</td>
+        <td><strong>Flat monthly (predictable)</strong></td>
+      </tr>
+      <tr>
+        <td>Voice receptionist</td>
+        <td><span class="check">✓</span> $0.15/action (variable)</td>
+        <td><span class="check">✓</span> Included in flat rate</td>
+      </tr>
+      <tr>
+        <td>Sales agent / CRM automation</td>
+        <td><span class="check">✓</span> $125/user/mo add-on</td>
+        <td><span class="check">✓</span> Included in flat rate</td>
+      </tr>
+      <tr>
+        <td>Webchat receptionist</td>
+        <td><span class="check">✓</span> $2/conversation</td>
+        <td><span class="check">✓</span> Included in flat rate</td>
+      </tr>
+      <tr class="highlight">
+        <td><strong>Year 1 total cost</strong></td>
+        <td><strong>$28,000–$50,000</strong></td>
+        <td><strong>$19,500</strong></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Two col: human replacement + bundles -->
+  <div class="two-col">
+    <div class="info-box">
+      <div class="box-title">vs. Hiring Staff</div>
+      <table>
+        <thead>
+          <tr>
+            <th>Role Replaced</th>
+            <th>Staff Cost</th>
+            <th>SBS</th>
+            <th>Saves</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Receptionist</td>
+            <td>$2,500–$3,200</td>
+            <td>$697</td>
+            <td style="color:#059669;font-weight:700;">~$2,000</td>
+          </tr>
+          <tr>
+            <td>Sales rep</td>
+            <td>$3,000–$4,500</td>
+            <td>$597</td>
+            <td style="color:#059669;font-weight:700;">~$2,900</td>
+          </tr>
+          <tr>
+            <td>Chat agent</td>
+            <td>$1,800–$2,500</td>
+            <td>$497</td>
+            <td style="color:#059669;font-weight:700;">~$1,600</td>
+          </tr>
+          <tr style="font-weight:700;background:#f9f9f9;">
+            <td>All three</td>
+            <td>$7,300–$10,200</td>
+            <td>$1,500</td>
+            <td style="color:#059669;font-weight:700;">~$6,500</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="info-box">
+      <div class="box-title">Bundle Options</div>
+      <table>
+        <thead>
+          <tr>
+            <th>Bundle</th>
+            <th>Includes</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Starter</td>
+            <td>Webchat</td>
+            <td>$497/mo</td>
+          </tr>
+          <tr>
+            <td>Communicator</td>
+            <td>Voice + Webchat</td>
+            <td>$997/mo</td>
+          </tr>
+          <tr>
+            <td>Sales Stack</td>
+            <td>Sales + Webchat</td>
+            <td>$897/mo</td>
+          </tr>
+          <tr style="font-weight:700;background:#f0fbfe;">
+            <td>Full Suite</td>
+            <td>All Three</td>
+            <td style="color:#15B4D6;">$1,500/mo</td>
+          </tr>
+        </tbody>
+      </table>
+      <div style="margin-top:12px;font-size:11.5px;color:#555;">
+        All bundles include one-time $1,500 setup fee. Beta pricing locked for the life of the contract. 6-month minimum agreement. 60-day written notice required to cancel.
+      </div>
+    </div>
+  </div>
+
+  <!-- AAA Reimbursement -->
+  <div class="aaa-box">
+    <div class="aaa-title">AAA Agent Reimbursement Example (50% Marketing Cost-Share)</div>
+    <div class="aaa-row">
+      <span>AI Sales Agent</span>
+      <span>$597/mo</span>
+    </div>
+    <div class="aaa-row">
+      <span>AI Voice Receptionist</span>
+      <span>$697/mo</span>
+    </div>
+    <div class="aaa-row">
+      <span>AI Webchat Receptionist</span>
+      <span>$497/mo</span>
+    </div>
+    <div class="aaa-row">
+      <span>Full Suite Total</span>
+      <span>$1,791/mo (individual rate)</span>
+    </div>
+    <div class="aaa-row">
+      <span>AAA Reimburses (50%)</span>
+      <span class="val-blue">-$750/mo</span>
+    </div>
+    <div class="aaa-row">
+      <span>Net Out-of-Pocket (Beta Bundle)</span>
+      <span class="val-green">$750/mo</span>
+    </div>
+  </div>
+
+  <!-- Terms -->
+  <div style="background:#f9f9f9;border:1.5px solid #e5e5e5;border-radius:10px;padding:16px 20px;margin-bottom:24px;">
+    <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.2em;color:#999;margin-bottom:10px;">Agreement Terms</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;">
+      <div>
+        <div style="font-size:11px;font-weight:700;color:#000;margin-bottom:3px;">Minimum Term</div>
+        <div style="font-size:12px;color:#555;">6-month minimum agreement required for all AI employee deployments.</div>
+      </div>
+      <div>
+        <div style="font-size:11px;font-weight:700;color:#000;margin-bottom:3px;">Cancellation Notice</div>
+        <div style="font-size:12px;color:#555;">60-day written notice required prior to cancellation after the initial term.</div>
+      </div>
+      <div>
+        <div style="font-size:11px;font-weight:700;color:#000;margin-bottom:3px;">Beta Rate Lock</div>
+        <div style="font-size:12px;color:#555;">Beta pricing is locked for the life of the contract for early adopters.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div>Shark Branding Solutions &mdash; <strong>sharkbrandingsolutions.com</strong></div>
+    <div>Beta pricing valid for early adopters. Standard rate $4,000–$7,000/mo at full launch.</div>
+    <div>Confidential &mdash; Not for distribution</div>
+  </div>
+
+</div>
+</body>
+</html>

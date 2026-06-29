@@ -4,7 +4,7 @@ import { botsLoginAction } from '../employees/actions'
 import SalesAssistant from './SalesAssistant'
 
 export const metadata: Metadata = {
-  title: 'Sales Assistant — Shark AI Internal',
+  title: 'Sales Assistant, Shark AI Internal',
   robots: { index: false, follow: false },
 }
 

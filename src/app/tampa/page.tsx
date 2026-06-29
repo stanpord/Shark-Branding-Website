@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'AI Visibility — Tampa, FL | Shark Branding Solutions',
-  description: 'Shark Branding Solutions helps Tampa businesses get recommended by ChatGPT, Google AI Overviews, Perplexity, and Gemini. Free AI Audit delivered in 48 hours.',
+  title: 'AI Visibility in Tampa, FL | Shark AI Solutions',
+  description: 'Shark AI Solutions helps Tampa businesses get recommended by ChatGPT, Google AI Overviews, Perplexity, and Gemini. Free AI Audit delivered in 48 hours.',
   alternates: { canonical: 'https://sharkbrandingsolutions.com/tampa' },
 }
 
@@ -29,7 +29,7 @@ const structuredData = {
 const results = [
   { stat: '#1', detail: 'AI result for a Tampa smart vending company that had zero AI presence before. 30 days.' },
   { stat: '30', detail: 'Days to measurable AI visibility movement for Tampa Bay clients.' },
-  { stat: '3', detail: 'AI platforms — ChatGPT, Gemini, Perplexity — monitored for every client.' },
+  { stat: '3', detail: 'AI platforms, ChatGPT, Gemini, Perplexity, monitored for every client.' },
 ]
 
 export default function TampaPage() {
@@ -77,7 +77,7 @@ export default function TampaPage() {
           <div className="max-w-[640px] mx-auto text-center mb-14">
             <p className="text-[#18b5d8] text-[13px] font-semibold tracking-[0.2em] uppercase mb-5">The Tampa Problem</p>
             <h2 className="display-lg text-white mb-5" style={{ textWrap: 'balance' }}>
-              Tampa is a competitive market. AI search is making it even harder to stand out — unless you know how to play.
+              Tampa is a competitive market. AI search is making it even harder to stand out, unless you know how to play.
             </h2>
             <p className="text-[16px] text-white/60 leading-relaxed">
               Tampa buyers are increasingly skipping Google&rsquo;s blue links entirely and asking ChatGPT and Google AI for direct recommendations. If AI doesn&rsquo;t recognize your business as a credible local provider, you lose that customer before the search even begins.
@@ -123,7 +123,7 @@ export default function TampaPage() {
               {
                 step: '03',
                 title: 'Ongoing Monitoring',
-                body: 'AI algorithms change constantly. We watch your visibility across platforms every month and adapt before you notice a drop — keeping you in the recommendation shortlist.',
+                body: 'AI algorithms change constantly. We watch your visibility across platforms every month and adapt before you notice a drop, keeping you in the recommendation shortlist.',
               },
             ].map((s) => (
               <div key={s.step} className="bg-[#f5f5f7] rounded-[20px] p-7">
@@ -150,7 +150,7 @@ export default function TampaPage() {
             AI visibility is what local SEO in Tampa looks like now.
           </h2>
           <p className="text-[16px] text-[#444] leading-relaxed mb-5">
-            Tampa is one of the most competitive local markets in Florida. Businesses in every category are fighting for the same pool of buyers — and those buyers have shifted. They are using ChatGPT, Google AI Overviews, and Perplexity to find local providers before they ever open a map or visit a website.
+            Tampa is one of the most competitive local markets in Florida. Businesses in every category are fighting for the same pool of buyers, and those buyers have shifted. They are using ChatGPT, Google AI Overviews, and Perplexity to find local providers before they ever open a map or visit a website.
           </p>
           <p className="text-[16px] text-[#444] leading-relaxed mb-5">
             AI visibility consulting in Tampa builds on top of local SEO fundamentals. Citation accuracy, Google Business Profile optimization, and review management are still the foundation. What is different is the layer of AI-specific signals that determine whether ChatGPT and Gemini include your Tampa business in their shortlist recommendations: schema markup, entity consistency, authoritative local content, and trust signals that AI models can read and validate.

@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SEO Strategy Proposal — McFarland Gould Law</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-size: 13.5px;
+    color: #1a1a1a;
+    background: #f2f4f6;
+    padding: 30px 20px;
+  }
+  .page {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0 2px 30px rgba(0,0,0,0.10);
+  }
+
+  /* COVER */
+  .cover {
+    background: #0f3a4a;
+    color: #fff;
+    padding: 60px 56px 52px;
+    position: relative;
+    overflow: hidden;
+  }
+  .cover::before {
+    content: '';
+    position: absolute;
+    top: -60px; right: -60px;
+    width: 320px; height: 320px;
+    border-radius: 50%;
+    background: rgba(21,180,214,0.12);
+  }
+  .cover::after {
+    content: '';
+    position: absolute;
+    bottom: -80px; left: -40px;
+    width: 250px; height: 250px;
+    border-radius: 50%;
+    background: rgba(21,180,214,0.08);
+  }
+  .cover img { height: 52px; margin-bottom: 40px; display: block; position: relative; z-index: 1; }
+  .cover-label {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    color: #15B4D6;
+    margin-bottom: 14px;
+    position: relative; z-index: 1;
+  }
+  .cover h1 {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 8px;
+    position: relative; z-index: 1;
+  }
+  .cover h1 strong { font-weight: 700; }
+  .cover-sub {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 14px;
+    color: rgba(255,255,255,0.65);
+    margin-top: 14px;
+    position: relative; z-index: 1;
+    line-height: 1.7;
+  }
+  .cover-meta {
+    margin-top: 44px;
+    display: flex;
+    gap: 48px;
+    position: relative; z-index: 1;
+    border-top: 1px solid rgba(255,255,255,0.15);
+    padding-top: 24px;
+  }
+  .cover-meta div { font-family: 'Segoe UI', Arial, sans-serif; }
+  .cover-meta .label { font-size: 10px; text-transform: uppercase; letter-spacing: 1.5px; color: #15B4D6; margin-bottom: 4px; }
+  .cover-meta .value { font-size: 13px; color: rgba(255,255,255,0.85); }
+
+  /* BODY */
+  .body { padding: 0; }
+
+  /* SECTION */
+  .section { padding: 44px 56px; border-bottom: 1px solid #eef0f2; }
+  .section:last-of-type { border-bottom: none; }
+
+  .section-label {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #15B4D6;
+    margin-bottom: 10px;
+  }
+  h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #0f3a4a;
+    margin-bottom: 16px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.3;
+  }
+  h3 {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: #0f3a4a;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin: 24px 0 10px;
+  }
+  p {
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 12px;
+  }
+  p:last-child { margin-bottom: 0; }
+
+  /* CALLOUT BOX */
+  .callout {
+    background: #eaf9fc;
+    border-left: 4px solid #15B4D6;
+    border-radius: 0 6px 6px 0;
+    padding: 16px 20px;
+    margin: 20px 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 13.5px;
+    line-height: 1.7;
+    color: #0f3a4a;
+  }
+  .callout strong { color: #0a2a37; }
+
+  .warning-box {
+    background: #fff8e6;
+    border-left: 4px solid #F9DB79;
+    border-radius: 0 6px 6px 0;
+    padding: 14px 20px;
+    margin: 14px 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.7;
+    color: #5a4500;
+  }
+
+  /* FINDINGS GRID */
+  .findings-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin: 20px 0;
+  }
+  .finding-card {
+    border-radius: 8px;
+    padding: 18px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+  }
+  .finding-card.strength {
+    background: #f0fbf6;
+    border: 1px solid #b8ead2;
+  }
+  .finding-card.gap {
+    background: #fff5f5;
+    border: 1px solid #f5b8b8;
+  }
+  .finding-card h4 {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+  }
+  .finding-card.strength h4 { color: #1a7a4a; }
+  .finding-card.gap h4 { color: #c0392b; }
+  .finding-card ul { padding-left: 0; list-style: none; }
+  .finding-card ul li {
+    font-size: 12.5px;
+    padding: 4px 0 4px 20px;
+    position: relative;
+    line-height: 1.5;
+    color: #333;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+  }
+  .finding-card ul li:last-child { border-bottom: none; }
+  .finding-card.strength ul li::before { content: '✓'; position: absolute; left: 0; color: #1a7a4a; font-weight: 700; }
+  .finding-card.gap ul li::before { content: '✗'; position: absolute; left: 0; color: #c0392b; font-weight: 700; }
+
+  /* KPI TABLE */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 12.5px;
+    margin: 16px 0;
+  }
+  thead tr {
+    background: #0f3a4a;
+    color: #fff;
+  }
+  thead th {
+    padding: 10px 14px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+  }
+  tbody tr:nth-child(even) { background: #f8fafb; }
+  tbody tr:hover { background: #eaf9fc; }
+  tbody td {
+    padding: 10px 14px;
+    border-bottom: 1px solid #eef0f2;
+    vertical-align: top;
+    line-height: 1.5;
+  }
+  tbody td:first-child { font-weight: 600; color: #0f3a4a; }
+  .td-good { color: #1a7a4a; font-weight: 600; }
+  .td-warn { color: #c0392b; font-weight: 600; }
+
+  /* PHASE TIMELINE */
+  .phase-row {
+    display: flex;
+    gap: 0;
+    margin: 20px 0;
+  }
+  .phase-card {
+    flex: 1;
+    padding: 18px 16px;
+    border-right: 1px solid #e0e0e0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+  }
+  .phase-card:last-child { border-right: none; }
+  .phase-num {
+    width: 30px; height: 30px;
+    background: #15B4D6;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 13px;
+    font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 10px;
+  }
+  .phase-card h4 { font-size: 12px; font-weight: 700; color: #0f3a4a; margin-bottom: 4px; }
+  .phase-card .phase-time { font-size: 11px; color: #15B4D6; margin-bottom: 8px; font-weight: 600; }
+  .phase-card ul { padding-left: 0; list-style: none; }
+  .phase-card ul li {
+    font-size: 11.5px;
+    color: #444;
+    padding: 3px 0 3px 14px;
+    position: relative;
+    line-height: 1.4;
+  }
+  .phase-card ul li::before {
+    content: '›';
+    position: absolute; left: 0;
+    color: #15B4D6; font-weight: 700;
+  }
+  .phase-row-wrap {
+    background: #f8fafb;
+    border: 1px solid #e0e8ec;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 16px 0;
+  }
+
+  /* DELIVERABLES */
+  .deliverables-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 14px;
+    margin: 16px 0;
+  }
+  .deliverable-card {
+    background: #f8fafb;
+    border: 1px solid #e0e8ec;
+    border-radius: 8px;
+    padding: 16px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    text-align: center;
+  }
+  .deliverable-icon {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+  .deliverable-card h4 { font-size: 12px; font-weight: 700; color: #0f3a4a; margin-bottom: 4px; }
+  .deliverable-card p { font-size: 11px; color: #666; margin: 0; line-height: 1.5; }
+
+  /* KEYWORD TABLE */
+  .kw-chip {
+    display: inline-block;
+    background: #eaf9fc;
+    color: #0a6a82;
+    border-radius: 4px;
+    padding: 2px 8px;
+    font-size: 11px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Arial, sans-serif;
+  }
+  .kw-chip.low { background: #f0fbf6; color: #1a7a4a; }
+  .kw-chip.med { background: #fff8e6; color: #8a5c00; }
+  .kw-chip.high { background: #fff0f0; color: #c0392b; }
+
+  /* INVESTMENT */
+  .investment-row {
+    display: flex;
+    gap: 16px;
+    margin: 20px 0;
+  }
+  .investment-card {
+    flex: 1;
+    border-radius: 10px;
+    padding: 24px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    text-align: center;
+  }
+  .investment-card.featured {
+    background: #0f3a4a;
+    color: #fff;
+  }
+  .investment-card.standard {
+    background: #f8fafb;
+    border: 2px solid #e0e8ec;
+    color: #0f3a4a;
+  }
+  .investment-card .amount {
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+  .investment-card .amount span { font-size: 16px; font-weight: 400; opacity: 0.7; }
+  .investment-card .plan-name { font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 16px; opacity: 0.7; }
+  .investment-card .plan-label { font-size: 13px; font-weight: 700; margin-bottom: 12px; }
+  .investment-card ul { list-style: none; text-align: left; padding: 0; }
+  .investment-card ul li {
+    font-size: 12px;
+    padding: 5px 0 5px 20px;
+    position: relative;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    line-height: 1.4;
+  }
+  .investment-card.standard ul li { border-bottom-color: #eee; }
+  .investment-card ul li::before { content: '✓'; position: absolute; left: 0; color: #15B4D6; font-weight: 700; }
+  .investment-card ul li:last-child { border-bottom: none; }
+
+  /* NEXT STEPS */
+  .steps-list { counter-reset: steps; padding: 0; list-style: none; margin: 16px 0; }
+  .steps-list li {
+    counter-increment: steps;
+    padding: 14px 0 14px 52px;
+    position: relative;
+    border-bottom: 1px solid #eef0f2;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 13.5px;
+    line-height: 1.6;
+  }
+  .steps-list li:last-child { border-bottom: none; }
+  .steps-list li::before {
+    content: counter(steps);
+    position: absolute; left: 0; top: 12px;
+    width: 32px; height: 32px;
+    background: #15B4D6;
+    color: #fff;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 13px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .steps-list li strong { color: #0f3a4a; }
+
+  /* FOOTER */
+  footer {
+    background: #0f3a4a;
+    color: rgba(255,255,255,0.6);
+    padding: 20px 56px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 11.5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer span { color: #fff; }
+
+  @media print {
+    body { background: #fff; padding: 0; }
+    .page { box-shadow: none; }
+    .section { page-break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- COVER -->
+  <div class="cover">
+    <img src="SBS_Blue_Logo.png" alt="Shark Branding Solutions">
+    <div class="cover-label">Prepared exclusively for</div>
+    <h1><strong>McFarland, Gould, Lyons,</strong><br>Sullivan &amp; Hogan P.A.</h1>
+    <div class="cover-sub">
+      A comprehensive SEO and AI visibility strategy to grow your<br>
+      organic presence across all seven Tampa Bay office markets.
+    </div>
+    <div class="cover-meta">
+      <div><div class="label">Prepared by</div><div class="value">Shark Branding Solutions</div></div>
+      <div><div class="label">Date</div><div class="value">June 2026</div></div>
+      <div><div class="label">Website</div><div class="value">mcfarlandgouldlaw.com</div></div>
+      <div><div class="label">Offices</div><div class="value">7 Tampa Bay Locations</div></div>
+    </div>
+  </div>
+
+  <div class="body">
+
+    <!-- EXECUTIVE SUMMARY -->
+    <div class="section">
+      <div class="section-label">Overview</div>
+      <h2>The Opportunity in Front of You</h2>
+      <p>McFarland, Gould, Lyons, Sullivan &amp; Hogan P.A. carries one of the most powerful competitive advantages in the Tampa Bay legal market: <strong>80 years of continuous operation</strong>, seven offices spanning the entire metro area, and eight distinct practice areas. Very few local law firms can make that claim.</p>
+      <p>The challenge is that none of this is being communicated effectively to Google, AI search platforms, or the thousands of potential clients searching for legal help across your markets every month. Your digital foundation has critical gaps that are costing you visibility — and more importantly, clients — right now.</p>
+      <p>This proposal outlines exactly what we found, what it will take to fix it, and what you can expect in return over the next 12 months.</p>
+
+      <div class="callout">
+        <strong>The short version:</strong> Your firm's history, credentials, and geographic footprint are stronger than most of your competitors. We need to make sure Google and AI platforms know that. The strategy below does exactly that.
+      </div>
+    </div>
+
+    <!-- CURRENT STATE -->
+    <div class="section">
+      <div class="section-label">Audit Findings</div>
+      <h2>Where You Stand Today</h2>
+      <p>We conducted a full technical and content audit of mcfarlandgouldlaw.com and your Google Business Profile presence across all seven locations. Here is what we found.</p>
+
+      <div class="findings-grid">
+        <div class="finding-card strength">
+          <h4>What's Working</h4>
+          <ul>
+            <li>80-year founding history (1946) — major trust signal</li>
+            <li>7 physical offices across Tampa Bay metro</li>
+            <li>8 distinct practice areas — broad keyword surface</li>
+            <li>Christie Sullivan: FBI Tampa CAAA Board (Feb 2025)</li>
+            <li>Chuck Sullivan: Martindale-Hubbell Gold Champion</li>
+            <li>Active blog in 2025 — 9 posts this year</li>
+            <li>Free consultation CTA is prominent</li>
+            <li>Multi-attorney team (2 partners, 2 associates)</li>
+          </ul>
+        </div>
+        <div class="finding-card gap">
+          <h4>Critical Gaps</h4>
+          <ul>
+            <li>No location pages — Wesley Chapel returns a 404 error</li>
+            <li>No FAQ schema on any practice area page</li>
+            <li>No LegalService or Attorney structured data</li>
+            <li>No service + city combination pages</li>
+            <li>Attorney credentials buried in blog posts, not bios</li>
+            <li>No reviews or case results page</li>
+            <li>4-year blog gap (2020–2024) — thin content history</li>
+            <li>No sitemap confirmed submitted to Google</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="warning-box">
+        <strong>Most urgent:</strong> Your Wesley Chapel office has no location page on your website. This means Google cannot confirm you serve that market, your GBP listing for that office has no supporting web page, and every potential client in Wesley Chapel searching for your services is being sent to a competitor.
+      </div>
+    </div>
+
+    <!-- KEYWORD OPPORTUNITY -->
+    <div class="section">
+      <div class="section-label">Search Demand</div>
+      <h2>What Your Clients Are Searching For</h2>
+      <p>These are the searches happening right now in your markets. None of them have a dedicated, optimized page on your website.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Keyword</th>
+            <th>Monthly Searches</th>
+            <th>Competition</th>
+            <th>Your Page Today</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Personal injury attorney Clearwater FL</td>
+            <td>200–400</td>
+            <td><span class="kw-chip med">Medium</span></td>
+            <td class="td-warn">No dedicated page</td>
+          </tr>
+          <tr>
+            <td>Personal injury attorney Wesley Chapel</td>
+            <td>100–200</td>
+            <td><span class="kw-chip low">Low</span></td>
+            <td class="td-warn">404 error</td>
+          </tr>
+          <tr>
+            <td>DUI attorney Clearwater</td>
+            <td>100–300</td>
+            <td><span class="kw-chip med">Medium</span></td>
+            <td class="td-warn">No dedicated page</td>
+          </tr>
+          <tr>
+            <td>Estate planning attorney Clearwater</td>
+            <td>100–200</td>
+            <td><span class="kw-chip med">Medium</span></td>
+            <td class="td-warn">No dedicated page</td>
+          </tr>
+          <tr>
+            <td>Foreclosure defense attorney Tampa</td>
+            <td>100–200</td>
+            <td><span class="kw-chip med">Medium</span></td>
+            <td class="td-warn">No dedicated page</td>
+          </tr>
+          <tr>
+            <td>Estate planning attorney Wesley Chapel</td>
+            <td>50–150</td>
+            <td><span class="kw-chip low">Low</span></td>
+            <td class="td-warn">404 error</td>
+          </tr>
+          <tr>
+            <td>Construction attorney Tampa Bay</td>
+            <td>50–150</td>
+            <td><span class="kw-chip low">Low</span></td>
+            <td class="td-warn">No dedicated page</td>
+          </tr>
+          <tr>
+            <td>Real estate attorney Clearwater FL</td>
+            <td>100–200</td>
+            <td><span class="kw-chip med">Medium</span></td>
+            <td class="td-warn">No dedicated page</td>
+          </tr>
+          <tr>
+            <td>Business attorney Tampa Bay</td>
+            <td>100–200</td>
+            <td><span class="kw-chip med">Medium</span></td>
+            <td class="td-warn">No dedicated page</td>
+          </tr>
+          <tr>
+            <td>Medicaid planning attorney Florida</td>
+            <td>100–300</td>
+            <td><span class="kw-chip med">Medium</span></td>
+            <td class="td-warn">No dedicated page</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="callout">
+        Across your 8 practice areas and 7 locations, there are <strong>56+ high-intent keyword combinations</strong> that have no dedicated page on your website. These searches represent real people looking for an attorney right now, and your competitors are capturing them.
+      </div>
+    </div>
+
+    <!-- COMPETITIVE LANDSCAPE -->
+    <div class="section">
+      <div class="section-label">Competitive Context</div>
+      <h2>Who You're Competing Against</h2>
+
+      <p>Your competitive landscape splits into two tiers. The strategy we're recommending is designed to win in both.</p>
+
+      <h3>Tier 1 — Regional Powerhouses</h3>
+      <p>Firms like Florin|Roebig and Morgan &amp; Morgan dominate broad personal injury keywords with massive content libraries, national PR coverage, and domain ratings of 45–70+. You are not going to outrank them for "personal injury attorney Florida" — and you don't need to.</p>
+      <p>These firms are almost entirely PI-focused. Your estate planning, construction law, foreclosure defense, and corporate practice areas are open competitive space they are not fighting for.</p>
+
+      <h3>Tier 2 — Local Tampa Bay Firms (Your Real Battleground)</h3>
+      <p>For searches in Clearwater, Wesley Chapel, Dunedin, New Port Richey, and your other markets, you're competing against local solo practitioners and small boutique firms with domain ratings between 5 and 20, minimal content, and no structured data. These firms are significantly weaker than McFarland Gould in every measurable dimension — they just happen to have location pages and you don't.</p>
+
+      <div class="callout">
+        <strong>Your competitive advantage is significant.</strong> No other multi-practice firm in the Tampa Bay area has your combination of 80-year history, 7 offices, and 8 practice areas. The strategy below turns that into rankings.
+      </div>
+    </div>
+
+    <!-- STRATEGY -->
+    <div class="section">
+      <div class="section-label">Our Approach</div>
+      <h2>The Four-Phase Strategy</h2>
+      <p>We build your SEO authority in four sequential phases. Each phase creates the foundation for the next. Results begin appearing within 30 days of Phase 1 completion.</p>
+
+      <div class="phase-row-wrap">
+        <div class="phase-row">
+          <div class="phase-card">
+            <div class="phase-num">1</div>
+            <h4>Foundation</h4>
+            <div class="phase-time">Weeks 1–4 | July 2026</div>
+            <ul>
+              <li>GSC setup + sitemap submission</li>
+              <li>Wesley Chapel + Clearwater location pages</li>
+              <li>Attorney credentials in structured data</li>
+              <li>LegalService + Organization schema</li>
+              <li>FAQ schema on Personal Injury page</li>
+              <li>Citation audit across all 7 offices</li>
+              <li>GBP verification + NAP consistency</li>
+            </ul>
+          </div>
+          <div class="phase-card">
+            <div class="phase-num">2</div>
+            <h4>Expansion</h4>
+            <div class="phase-time">Weeks 5–12 | Aug–Sep 2026</div>
+            <ul>
+              <li>All 7 location pages completed</li>
+              <li>FAQ schema on all 8 practice pages</li>
+              <li>Practice area sub-pages (estate planning, medicaid, probate)</li>
+              <li>Blog at 2 posts/month with attorney bylines</li>
+              <li>Case results page (PI + civil litigation)</li>
+              <li>Citation errors corrected firm-wide</li>
+              <li>Avvo profiles for all 4 attorneys</li>
+            </ul>
+          </div>
+          <div class="phase-card">
+            <div class="phase-num">3</div>
+            <h4>Scale</h4>
+            <div class="phase-time">Weeks 13–24 | Oct–Dec 2026</div>
+            <ul>
+              <li>Service + city combo pages (8 pages, Tier 1)</li>
+              <li>Blog scales to 4 posts/month</li>
+              <li>Bar association + chamber directory links</li>
+              <li>Reviews page with AggregateRating schema</li>
+              <li>Review request strategy via CRM</li>
+              <li>Martindale, Super Lawyers, FindLaw profiles</li>
+            </ul>
+          </div>
+          <div class="phase-card">
+            <div class="phase-num">4</div>
+            <h4>Authority</h4>
+            <div class="phase-time">Months 7–12 | 2027</div>
+            <ul>
+              <li>Best Lawyers / Super Lawyers submissions</li>
+              <li>Media pitches for attorney expert quotes</li>
+              <li>AI citation monitoring (ChatGPT, Perplexity)</li>
+              <li>Tampa locations service+city combos</li>
+              <li>Long-form pillar pages per practice area</li>
+              <li>Advanced schema (SpeakableSpecification)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DELIVERABLES -->
+    <div class="section">
+      <div class="section-label">What We Do</div>
+      <h2>Monthly Deliverables</h2>
+
+      <div class="deliverables-grid">
+        <div class="deliverable-card">
+          <div class="deliverable-icon">📍</div>
+          <h4>Location Pages</h4>
+          <p>Dedicated, schema-optimized pages for each of your 7 offices</p>
+        </div>
+        <div class="deliverable-card">
+          <div class="deliverable-icon">✍️</div>
+          <h4>Content Creation</h4>
+          <p>Attorney-attributed blog posts, practice area expansions, FAQ content</p>
+        </div>
+        <div class="deliverable-card">
+          <div class="deliverable-icon">🔧</div>
+          <h4>Technical SEO</h4>
+          <p>Schema markup, sitemap, GSC monitoring, Core Web Vitals</p>
+        </div>
+        <div class="deliverable-card">
+          <div class="deliverable-icon">🗂️</div>
+          <h4>Citation Management</h4>
+          <p>NAP accuracy across 67+ directories for all 7 office locations</p>
+        </div>
+        <div class="deliverable-card">
+          <div class="deliverable-icon">🔗</div>
+          <h4>Link Building</h4>
+          <p>Bar associations, chamber directories, legal industry listings</p>
+        </div>
+        <div class="deliverable-card">
+          <div class="deliverable-icon">📊</div>
+          <h4>Monthly Reporting</h4>
+          <p>Rankings, traffic, GBP insights, and strategy review call</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- KPI TARGETS -->
+    <div class="section">
+      <div class="section-label">Projected Outcomes</div>
+      <h2>What to Expect</h2>
+      <p>These projections are based on your current baseline, competitive landscape, and the scope of work outlined in this proposal. Local law firm SEO typically yields measurable results within 30–60 days of foundational fixes.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Metric</th>
+            <th>Baseline (Est.)</th>
+            <th>3 Months</th>
+            <th>6 Months</th>
+            <th>12 Months</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Organic Monthly Traffic</td>
+            <td>300–500 sessions</td>
+            <td class="td-good">+30%</td>
+            <td class="td-good">+80%</td>
+            <td class="td-good">+200%</td>
+          </tr>
+          <tr>
+            <td>Top-10 Keyword Rankings</td>
+            <td>&lt;20 keywords</td>
+            <td class="td-good">40+</td>
+            <td class="td-good">80+</td>
+            <td class="td-good">150+</td>
+          </tr>
+          <tr>
+            <td>Indexed Pages</td>
+            <td>~25–35 pages</td>
+            <td class="td-good">50+</td>
+            <td class="td-good">80+</td>
+            <td class="td-good">120+</td>
+          </tr>
+          <tr>
+            <td>Local Pack Presence</td>
+            <td>Limited (2–3 offices)</td>
+            <td class="td-good">4–5 locations</td>
+            <td class="td-good">6 locations</td>
+            <td class="td-good">All 7 locations</td>
+          </tr>
+          <tr>
+            <td>Domain Rating</td>
+            <td>Est. 15–25</td>
+            <td class="td-good">20–25</td>
+            <td class="td-good">25–30</td>
+            <td class="td-good">35–40</td>
+          </tr>
+          <tr>
+            <td>GBP Profile Views</td>
+            <td>Baseline</td>
+            <td class="td-good">+25%</td>
+            <td class="td-good">+60%</td>
+            <td class="td-good">+100%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- INVESTMENT -->
+    <div class="section">
+      <div class="section-label">Investment</div>
+      <h2>Engagement Options</h2>
+      <p>We offer two engagement structures. Both include the full scope of work outlined in this proposal.</p>
+
+      <div class="investment-row">
+        <div class="investment-card featured">
+          <div class="plan-name">Recommended</div>
+          <div class="amount">$______<span>/mo</span></div>
+          <div class="plan-label">12-Month Partnership</div>
+          <ul>
+            <li>All 7 location pages built and optimized</li>
+            <li>Full schema implementation (LegalService, Attorney, FAQ)</li>
+            <li>Citation management — all 7 offices</li>
+            <li>2–4 blog posts/month with attorney attribution</li>
+            <li>Service + city combination pages (Phase 2–3)</li>
+            <li>Link building — bar associations, chambers, directories</li>
+            <li>Monthly strategy call + performance report</li>
+            <li>Google Business Profile management</li>
+            <li>Priority support response</li>
+          </ul>
+        </div>
+        <div class="investment-card standard">
+          <div class="plan-name">Flexible Option</div>
+          <div class="amount">$______<span>/mo</span></div>
+          <div class="plan-label">3-Month Engagement</div>
+          <ul>
+            <li>All 7 location pages built and optimized</li>
+            <li>Full schema implementation</li>
+            <li>Citation management — all 7 offices</li>
+            <li>2 blog posts/month</li>
+            <li>Monthly strategy call + performance report</li>
+            <li>Google Business Profile management</li>
+            <li>Option to renew at 12-month rate after 3 months</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="callout">
+        Both engagements include a <strong>one-time onboarding and technical setup</strong> in the first 30 days covering GSC configuration, sitemap submission, schema deployment, and full baseline audit. Work begins within 48 hours of contract execution.
+      </div>
+    </div>
+
+    <!-- WHY SBS -->
+    <div class="section">
+      <div class="section-label">Why Shark Branding Solutions</div>
+      <h2>What Makes Us Different</h2>
+      <p>We are a Wesley Chapel-based AI visibility and branding firm that specializes in helping Tampa Bay businesses compete in the new search landscape — one where Google AI Overviews, ChatGPT, and Gemini are increasingly influencing who potential clients find and trust.</p>
+      <p>We are not a national agency with a managed account model. We are local, we are in your market, and we build strategies based on what is actually happening in Tampa Bay search right now — not templates from other regions.</p>
+      <p>We are also the marketing partner for the North Tampa Bay Chamber of Commerce, which means we understand the local business community your firm serves, and we have a front-row seat to how AI and search behavior is changing for your potential clients.</p>
+
+      <div class="callout">
+        <strong>We built this proposal from a live audit of your website.</strong> Every finding in this document reflects your actual current state — not a hypothetical. You can verify every gap we identified within minutes of reading this.
+      </div>
+    </div>
+
+    <!-- NEXT STEPS -->
+    <div class="section">
+      <div class="section-label">Getting Started</div>
+      <h2>Next Steps</h2>
+
+      <ol class="steps-list">
+        <li><strong>Review this proposal</strong> with your partners. We are happy to schedule a call to walk through any section in detail or answer questions about methodology.</li>
+        <li><strong>Select your engagement option</strong> — 12-month partnership or 3-month flexible — and we will send the service agreement and invoice within 24 hours.</li>
+        <li><strong>Onboarding call</strong> — Within one week of contract execution, we schedule a 60-minute kickoff call to collect access credentials (GSC, GBP, website admin) and align on priority order.</li>
+        <li><strong>Work begins</strong> — Wesley Chapel and Clearwater location pages go live within the first 30 days. You will see your first ranking movements within 30–60 days of those pages indexing.</li>
+        <li><strong>Monthly check-ins</strong> — You receive a performance report each month and a strategy call to review what's working and what's coming next.</li>
+      </ol>
+    </div>
+
+  </div><!-- end body -->
+
+  <footer>
+    <div>
+      <span>Shark Branding Solutions</span> &nbsp;|&nbsp; Wesley Chapel, FL &nbsp;|&nbsp; sharkbrandingsolutions.com
+    </div>
+    <div>
+      chamber@sharkbrandingsolutions.com &nbsp;|&nbsp; (720) 855-6505
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>

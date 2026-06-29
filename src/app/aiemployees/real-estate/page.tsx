@@ -2,15 +2,15 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'AI Employees for Real Estate | Shark Branding Solutions',
-  description: 'AI employees for real estate agents in Wesley Chapel and Tampa Bay. 24/7 lead capture, automated follow-up, review generation, and content — live in one week.',
+  title: 'AI Employees for Real Estate | Shark AI Solutions',
+  description: 'AI employees for real estate agents in Wesley Chapel and Tampa Bay. 24/7 lead capture, automated follow-up, review generation, and content, live in one week.',
   alternates: { canonical: 'https://sharkbrandingsolutions.com/aiemployees/real-estate' },
   openGraph: {
-    title: 'AI Employees for Real Estate | Shark Branding Solutions',
+    title: 'AI Employees for Real Estate | Shark AI Solutions',
     description: 'Stop losing real estate leads to slow response times. AI employees handle inbound buyer and seller inquiries, follow-up, reviews, and booking 24/7.',
     url: 'https://sharkbrandingsolutions.com/aiemployees/real-estate',
     type: 'website',
-    images: [{ url: 'https://sharkbrandingsolutions.com/logo.webp', width: 1200, height: 630, alt: 'AI Employees for Real Estate — Shark Branding Solutions' }],
+    images: [{ url: 'https://sharkbrandingsolutions.com/logo.webp', width: 1200, height: 630, alt: 'AI Employees for Real Estate | Shark AI Solutions' }],
   },
 }
 
@@ -40,7 +40,7 @@ const structuredData = {
         {
           '@type': 'Question',
           name: 'How do AI employees help real estate agents in Wesley Chapel?',
-          acceptedAnswer: { '@type': 'Answer', text: 'Real estate leads are time-sensitive. A buyer who submits an inquiry at 9 PM and does not hear back until morning has already moved on to the next agent. Gemma, the AI chat receptionist, responds to every inbound lead within seconds — qualifying buyer readiness, seller timeline, price range, and property type before a human agent ever gets involved. The AI CRM runs follow-up across email and SMS for every lead that does not book immediately. The Reputation Specialist requests a review after every closed transaction.' },
+          acceptedAnswer: { '@type': 'Answer', text: 'Real estate leads are time-sensitive. A buyer who submits an inquiry at 9 PM and does not hear back until morning has already moved on to the next agent. Gemma, the AI chat receptionist, responds to every inbound lead within seconds, qualifying buyer readiness, seller timeline, price range, and property type before a human agent ever gets involved. The AI CRM runs follow-up across email and SMS for every lead that does not book immediately. The Reputation Specialist requests a review after every closed transaction.' },
         },
         {
           '@type': 'Question',
@@ -63,8 +63,8 @@ const employees = [
     role: 'Chat Receptionist',
     color: '#18b5d8',
     colorBg: '#e8f8fc',
-    problem: 'Real estate leads shop multiple agents simultaneously. Whoever responds first wins. Most agents respond in hours — if at all — because they are showing properties, in appointments, or simply off the clock.',
-    solution: 'Gemma greets every visitor to your website 24/7, qualifies their buyer or seller intent with targeted questions — timeline, budget, property type, neighborhood — and either books a consultation directly to your calendar or schedules a callback. Every lead is in your pipeline with full notes before you start your morning.',
+    problem: 'Real estate leads shop multiple agents simultaneously. Whoever responds first wins. Most agents respond in hours, if at all, because they are showing properties, in appointments, or simply off the clock.',
+    solution: 'Gemma greets every visitor to your website 24/7, qualifies their buyer or seller intent with targeted questions, timeline, budget, property type, neighborhood, and either books a consultation directly to your calendar or schedules a callback. Every lead is in your pipeline with full notes before you start your morning.',
     bullets: ['Responds within seconds at any hour', 'Qualifies buyer or seller intent automatically', 'Books consultations to your calendar', 'Captures leads while you are showing properties'],
   },
   {
@@ -72,7 +72,7 @@ const employees = [
     role: 'Sales Assistant',
     color: '#18b5d8',
     colorBg: '#e8f8fc',
-    problem: 'A buyer who requested a showing last month and went quiet is not necessarily gone — they may still be in the market. Most agents never follow up past the first or second attempt. Cold lead re-engagement is left on the table.',
+    problem: 'A buyer who requested a showing last month and went quiet is not necessarily gone, they may still be in the market. Most agents never follow up past the first or second attempt. Cold lead re-engagement is left on the table.',
     solution: 'Every new lead gets an immediate acknowledgment and a multi-touch follow-up sequence across email and SMS over the following 10 days. Leads that go cold at 30, 60, or 90 days get automated re-engagement messages. The sequence stops automatically the moment a lead responds or books.',
     bullets: ['Immediate response to every new inquiry', 'Email and SMS follow-up sequences', 'Stops automatically when lead engages', '30/60/90-day cold lead re-engagement'],
   },
@@ -82,7 +82,7 @@ const employees = [
     color: '#d4a200',
     colorBg: '#fef9e7',
     problem: 'In real estate, reviews are a primary trust signal. Buyers and sellers research agents on Google and Zillow before making contact. Most agents have fewer than 15 reviews because asking feels awkward after a transaction and the moment passes.',
-    solution: 'Within 24 hours of a closed transaction, your Reputation Specialist sends a personalized review request by SMS. If there is no response in 48 hours, a second reminder goes out. Every review that comes in gets a brand-voice response within two hours — positive or critical — automatically.',
+    solution: 'Within 24 hours of a closed transaction, your Reputation Specialist sends a personalized review request by SMS. If there is no response in 48 hours, a second reminder goes out. Every review that comes in gets a brand-voice response within two hours, positive or critical, automatically.',
     bullets: ['Post-transaction review requests sent automatically', 'Two-message sequence with smart timing', 'Responds to every review within 2 hours', 'Handles Google, Zillow, and Facebook'],
   },
 ]
@@ -113,7 +113,7 @@ export default function RealEstatePage() {
             <span className="text-[#18b5d8]">Real Estate Professionals</span>
           </h1>
           <p className="lead-airy text-[#333] max-w-[520px] mx-auto mb-12" style={{ textWrap: 'balance' }}>
-            Real estate leads do not wait. The agent who responds first wins. Your AI team responds instantly, follows up consistently, and requests reviews after every closed deal — so you capture more clients without adding overhead.
+            Real estate leads do not wait. The agent who responds first wins. Your AI team responds instantly, follows up consistently, and requests reviews after every closed deal, so you capture more clients without adding overhead.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-3">
             <Link

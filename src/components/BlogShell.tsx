@@ -18,6 +18,11 @@ interface RelatedPost {
   category: string;
 }
 
+interface Faq {
+  q: string;
+  a: string;
+}
+
 interface BlogShellProps {
   category: string;
   title: string;
@@ -27,6 +32,8 @@ interface BlogShellProps {
   heroAlt: string;
   children: React.ReactNode;
   relatedPosts?: RelatedPost[];
+  url?: string;
+  faqs?: Faq[];
 }
 
 export default function BlogShell({
@@ -38,34 +45,63 @@ export default function BlogShell({
   heroAlt,
   children,
   relatedPosts,
+  url,
+  faqs,
 }: BlogShellProps) {
   const isoDate = toIsoDate(date);
-  const blogSchema = {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    headline: title,
-    image: heroImage,
-    datePublished: isoDate,
-    dateModified: isoDate,
-    author: {
-      "@type": "Person",
-      "@id": "https://sharkbrandingsolutions.com/about#michelle",
-      name: "Michelle Stanaland",
-      url: "https://sharkbrandingsolutions.com/about#michelle",
-      jobTitle: "Managing Partner and Founder, Shark AI Solutions",
-    },
-    publisher: {
-      "@type": "Organization",
-      "@id": "https://sharkbrandingsolutions.com/#organization",
-      name: "Shark Branding Solutions",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://sharkbrandingsolutions.com/logo.webp",
+
+  const schemaGraph: object[] = [
+    {
+      "@type": "BlogPosting",
+      headline: title,
+      image: heroImage,
+      datePublished: isoDate,
+      dateModified: isoDate,
+      ...(url ? { url, mainEntityOfPage: { "@type": "WebPage", "@id": url } } : {}),
+      author: {
+        "@type": "Person",
+        "@id": "https://sharkbrandingsolutions.com/about#michelle",
+        name: "Michelle Stanaland",
+        url: "https://sharkbrandingsolutions.com/about#michelle",
+        jobTitle: "Managing Partner and Founder, Shark AI Solutions",
       },
+      publisher: {
+        "@type": "Organization",
+        "@id": "https://sharkbrandingsolutions.com/#organization",
+        name: "Shark AI Solutions",
+        logo: {
+          "@type": "ImageObject",
+          url: "https://sharkbrandingsolutions.com/logo.webp",
+        },
+      },
+      isPartOf: { "@id": "https://sharkbrandingsolutions.com/#website" },
+      articleSection: category,
     },
-    isPartOf: { "@id": "https://sharkbrandingsolutions.com/#website" },
-    articleSection: category,
-  };
+  ];
+
+  if (url) {
+    schemaGraph.push({
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://sharkbrandingsolutions.com" },
+        { "@type": "ListItem", position: 2, name: "Resources", item: "https://sharkbrandingsolutions.com/resources" },
+        { "@type": "ListItem", position: 3, name: title, item: url },
+      ],
+    });
+  }
+
+  if (faqs && faqs.length > 0) {
+    schemaGraph.push({
+      "@type": "FAQPage",
+      mainEntity: faqs.map(({ q, a }) => ({
+        "@type": "Question",
+        name: q,
+        acceptedAnswer: { "@type": "Answer", text: a },
+      })),
+    });
+  }
+
+  const blogSchema = { "@context": "https://schema.org", "@graph": schemaGraph };
 
   return (
     <>
@@ -100,6 +136,24 @@ export default function BlogShell({
             style={{ width: "100%", height: "auto", maxHeight: "480px" }}
           />
           <div className="article-prose">{children}</div>
+
+          {/* FAQ section */}
+          {faqs && faqs.length > 0 && (
+            <div className="mt-12 pt-10 border-t border-[#e8e8ed]">
+              <h2 className="text-[22px] font-bold text-[#0a0a0a] mb-6">Frequently Asked Questions</h2>
+              <dl className="space-y-3">
+                {faqs.map(({ q, a }) => (
+                  <details key={q} className="group bg-[#f5f5f7] rounded-[14px] border border-[#e8e8ed] overflow-hidden">
+                    <summary className="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer list-none select-none">
+                      <span className="text-[15px] font-semibold text-[#0a0a0a] leading-snug">{q}</span>
+                      <span className="shrink-0 size-6 rounded-full bg-white flex items-center justify-center text-[#18b5d8] font-bold text-[14px] group-open:rotate-45 motion-safe:transition-transform duration-200" aria-hidden="true">+</span>
+                    </summary>
+                    <p className="px-6 pb-5 text-[14px] text-[#555] leading-relaxed border-t border-[#e8e8ed] pt-4">{a}</p>
+                  </details>
+                ))}
+              </dl>
+            </div>
+          )}
 
           {/* Author byline */}
           <div className="mt-10 pt-8 border-t border-[#e8e8ed] flex items-center gap-4">

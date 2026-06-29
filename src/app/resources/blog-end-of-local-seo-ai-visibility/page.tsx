@@ -3,7 +3,7 @@ import Image from "next/image";
 import BlogShell from "@/components/BlogShell";
 
 export const metadata: Metadata = {
- title: "What the End of Local SEO Means for Your Business, Shark AI Solutions",
+ title: "The End of Local SEO: What It Means for Your Business",
  description:
   "AI Overviews now appear on over 60% of Google searches. Local SEO as you knew it is ending. Here's what changed, why it matters, and the three things you need to do right now.",
  alternates: {
@@ -13,7 +13,8 @@ export const metadata: Metadata = {
 
 export default function Page() {
  return (
-  <BlogShell
+  <BlogShellurl="https://sharkbrandingsolutions.com/resources/blog-end-of-local-seo-ai-visibility"
+   
    relatedPosts={[
     {
      href: "/resources/blog-seo-old-school-geo-ai-shift",

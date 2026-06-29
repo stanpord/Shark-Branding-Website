@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: '5 Tasks Wesley Chapel Business Owners Should Automate First — Shark Branding Solutions',
+  title: '5 Things Wesley Chapel Businesses Should Automate (2026)',
   description: 'The five highest-ROI automations for Wesley Chapel small businesses: missed call follow-up, review requests, lead follow-up, appointment reminders, and after-hours chat. Start here.',
   alternates: { canonical: 'https://sharkbrandingsolutions.com/resources/blog-5-automations-wesley-chapel-businesses' },
   openGraph: {
@@ -38,20 +38,30 @@ const structuredData = {
   keywords: ['business automation Wesley Chapel', 'AI automation Tampa Bay', 'automate small business', 'AI employees Wesley Chapel', 'lead follow-up automation'],
   articleSection: 'AI Employees',
 }
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://sharkbrandingsolutions.com' },
+    { '@type': 'ListItem', position: 2, name: 'Resources', item: 'https://sharkbrandingsolutions.com/resources' },
+    { '@type': 'ListItem', position: 3, name: structuredData.headline, item: 'https://sharkbrandingsolutions.com/resources/blog-5-automations-wesley-chapel-businesses' },
+  ],
+}
+
 
 const automations = [
   {
     n: '01',
     title: 'Missed call text-back',
     why: 'The average Wesley Chapel service business loses 30 to 50 percent of inbound calls to voicemail. Most of those callers move on to a competitor before you call back.',
-    what: 'When a call goes unanswered, your AI sends an immediate text: "Hey, sorry we missed you — what can we help you with?" That one message recovers 20 to 40 percent of missed calls that would otherwise be lost.',
+    what: 'When a call goes unanswered, your AI sends an immediate text: "Hey, sorry we missed you, what can we help you with?" That one message recovers 20 to 40 percent of missed calls that would otherwise be lost.',
     impact: 'Highest immediate ROI of any automation. A single recovered job per week more than pays for a full AI employee package.',
     employee: 'Gemma (AI Chat Receptionist)',
   },
   {
     n: '02',
     title: 'Post-job review requests',
-    why: 'Businesses with more than 50 Google reviews convert at 2.7x the rate of businesses with under 10. Most service businesses in Wesley Chapel have fewer than 20. The gap is not because customers are unwilling — it\'s because no one asks consistently.',
+    why: 'Businesses with more than 50 Google reviews convert at 2.7x the rate of businesses with under 10. Most service businesses in Wesley Chapel have fewer than 20. The gap is not because customers are unwilling, it\'s because no one asks consistently.',
     what: 'Within two hours of a completed job, your AI sends a personalized review request via SMS. It follows a simple sequence: first ask, one reminder 48 hours later if no response. Response rates for this approach run 35 to 55 percent for satisfied customers.',
     impact: 'One extra review per week compounding over 12 months puts most Wesley Chapel businesses in the top 10 percent of their category for review count.',
     employee: 'Reputation Specialist',
@@ -59,7 +69,7 @@ const automations = [
   {
     n: '03',
     title: 'Lead follow-up sequences',
-    why: 'Research from the Harvard Business Review found that the odds of qualifying a lead decrease by 400 percent if you wait longer than five minutes to respond. Most small businesses respond in hours — or not at all.',
+    why: 'Research from the Harvard Business Review found that the odds of qualifying a lead decrease by 400 percent if you wait longer than five minutes to respond. Most small businesses respond in hours, or not at all.',
     what: 'Every new lead triggers an automated multi-touch sequence: immediate email acknowledgment, SMS follow-up within five minutes, a second touchpoint at 24 hours, and a re-engagement message at day five if there\'s been no response. The sequence stops the moment the lead replies or books.',
     impact: 'Clients using this system typically recover two to four additional closed deals per month from leads that previously went cold.',
     employee: 'AI CRM (Sales Assistant)',
@@ -67,7 +77,7 @@ const automations = [
   {
     n: '04',
     title: 'Appointment reminders and confirmations',
-    why: 'No-show rates for service appointments in the Tampa Bay area average 18 to 22 percent. Each no-show is a wasted slot that could have been filled — and most happen because the customer simply forgot.',
+    why: 'No-show rates for service appointments in the Tampa Bay area average 18 to 22 percent. Each no-show is a wasted slot that could have been filled, and most happen because the customer simply forgot.',
     what: 'Automated reminders go out 24 hours before and again two hours before every appointment. They include the time, address, and a one-tap option to reschedule. Confirmations are logged automatically.',
     impact: 'Most businesses see no-show rates drop by 60 to 75 percent within the first month. That alone can recover four to six hours of billable time per week.',
     employee: 'AI CRM (Sales Assistant)',
@@ -75,7 +85,7 @@ const automations = [
   {
     n: '05',
     title: 'After-hours chat reception',
-    why: 'In Wesley Chapel and the surrounding Pasco County area, a significant share of home service leads come in between 8 PM and midnight — after work hours, when homeowners have time to research. Most businesses have nothing running during those hours.',
+    why: 'In Wesley Chapel and the surrounding Pasco County area, a significant share of home service leads come in between 8 PM and midnight, after work hours, when homeowners have time to research. Most businesses have nothing running during those hours.',
     what: 'An AI chat receptionist greets every website visitor after hours, qualifies them with two to three targeted questions, captures their contact information, and either books them directly to your calendar or schedules a callback for the morning. By the time you start your day, those leads are already in your pipeline.',
     impact: 'Clients routinely find three to seven qualified after-hours leads waiting each morning that would previously have bounced with no contact.',
     employee: 'Gemma (AI Chat Receptionist)',
@@ -89,6 +99,7 @@ export default function FiveAutomationsPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       {/* Hero */}
       <section className="bg-white pt-24 pb-16 px-6 border-b border-[#e8e8ed]">
@@ -105,7 +116,7 @@ export default function FiveAutomationsPage() {
             5 Tasks Wesley Chapel Business Owners Should Automate First
           </h1>
           <p className="lead-airy text-[#555] mb-8" style={{ textWrap: 'balance' }}>
-            Most local businesses automate the wrong things first — or nothing at all. Here are the five automations that move the needle fastest for service businesses in Wesley Chapel, Lutz, and the greater Tampa Bay area.
+            Most local businesses automate the wrong things first, or nothing at all. Here are the five automations that move the needle fastest for service businesses in Wesley Chapel, Lutz, and the greater Tampa Bay area.
           </p>
           <div className="flex items-center gap-3 text-[13px] text-[#999]">
             <span>By Michelle Stanaland</span>
@@ -172,7 +183,7 @@ export default function FiveAutomationsPage() {
               If your biggest problem is losing leads after hours, start with after-hours chat reception. If you know you&rsquo;re losing potential reviews every week, start with post-job review requests. If your follow-up is inconsistent, start with the lead follow-up sequence.
             </p>
             <p>
-              All five of these automations are available through our AI employee program. Each one is configured specifically for your business, your service area, and your voice — not a generic template dropped into your account.
+              All five of these automations are available through our AI employee program. Each one is configured specifically for your business, your service area, and your voice, not a generic template dropped into your account.
             </p>
             <p>
               The free AI Audit identifies exactly which automation would have the biggest immediate impact for your specific business. It takes 48 hours and there&rsquo;s no commitment attached.

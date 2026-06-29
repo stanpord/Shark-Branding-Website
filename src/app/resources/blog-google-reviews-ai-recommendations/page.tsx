@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Image from "next/image";
 import BlogShell from "@/components/BlogShell";
 
@@ -13,7 +13,8 @@ export const metadata: Metadata = {
 
 export default function Page() {
  return (
-  <BlogShell
+  <BlogShellurl="https://sharkbrandingsolutions.com/resources/blog-google-reviews-ai-recommendations"
+   
    relatedPosts={[{ href: "/resources/blog-24-hour-rule-local-trust-ai", title: "The 24-Hour Rule: AI Review Responses for Local Trust", category: "Strategy" }, { href: "/resources/blog-trusted-ai-review-responses", title: "AI Review Responses: Mastering Found, Trusted, Chosen", category: "Strategy" }, { href: "/resources/blog-seo-old-school-geo-ai-shift", title: "Why Your Business Needs GEO for the AI Search Shift", category: "GEO" }]}
    category="Strategy"
    title="The Future Is AI Visibility: Turning Google Reviews Into AI Recommendations"

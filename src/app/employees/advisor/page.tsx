@@ -6,7 +6,7 @@ import { logoutAction } from '../../secret/actions'
 import BotAdvisor from '../BotAdvisor'
 
 export const metadata: Metadata = {
-  title: 'AI Advisor — Shark AI Internal',
+  title: 'AI Advisor, Shark AI Internal',
   robots: { index: false, follow: false },
 }
 

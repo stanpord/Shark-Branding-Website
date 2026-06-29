@@ -18,7 +18,7 @@ function GemmaResults() {
     <div className="bg-[#f5f5f7] rounded-[16px] p-5 border border-[#e8e8ed]">
       <div className="flex items-center gap-2 mb-4">
         <div className="w-2 h-2 rounded-full bg-green-400" />
-        <p className="text-[11px] font-bold uppercase tracking-[0.15em] text-[#999]">Live Activity — Today</p>
+        <p className="text-[11px] font-bold uppercase tracking-[0.15em] text-[#999]">Live Activity, Today</p>
       </div>
       <div className="space-y-2">
         {rows.map((r) => (
@@ -77,7 +77,7 @@ function CRMResults() {
   ]
   return (
     <div className="bg-[#f5f5f7] rounded-[16px] p-5 border border-[#e8e8ed]">
-      <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-[#999] mb-4">Pipeline Activity — This Week</p>
+      <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-[#999] mb-4">Pipeline Activity, This Week</p>
       <div className="space-y-2">
         {rows.map((r) => (
           <div key={r.label} className="flex items-center gap-3 py-2.5 border-b border-[#e8e8ed] last:border-0">
@@ -169,7 +169,7 @@ export default function EmployeeCarousel() {
       <div className="rounded-[24px] overflow-hidden" style={{ background: emp.colorBg }}>
         <div className="grid grid-cols-1 md:grid-cols-2">
 
-          {/* Left — Identity + stats */}
+          {/* Left, Identity + stats */}
           <div className="p-8 md:p-10 flex flex-col justify-between" style={{ background: emp.color }}>
             <div>
               <span
@@ -202,7 +202,7 @@ export default function EmployeeCarousel() {
             </div>
           </div>
 
-          {/* Right — Results snapshot (unique to home, not shown on /aiemployees) */}
+          {/* Right, Results snapshot (unique to home, not shown on /aiemployees) */}
           <div className="p-6 md:p-8 flex flex-col justify-between bg-white">
             <div className="mb-6">
               <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-[#999] mb-4">Results at a glance</p>

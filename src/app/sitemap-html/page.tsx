@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Sitemap — Shark Branding Solutions",
-  description: "A full directory of all pages on SharkBrandingSolutions.com — services, AI employees, automation, resources, and more.",
+  title: "Sitemap | Shark AI Solutions",
+  description: "A full directory of all pages on SharkBrandingSolutions.com, services, AI employees, automation, resources, and more.",
 };
 
 const sections = [
@@ -76,7 +76,7 @@ const sections = [
       { label: "Google AI Price Check: Are You Ready to Be Chosen?", href: "/resources/blog-google-ai-price-check-ready-to-be-chosen" },
       { label: "Google Reviews & AI Recommendations", href: "/resources/blog-google-reviews-ai-recommendations" },
       { label: "NTBC AI-Ready Partnership", href: "/resources/blog-ntbc-ai-ready-partnership" },
-      { label: "SEO Is Old School — The GEO & AI Shift Is Here", href: "/resources/blog-seo-old-school-geo-ai-shift" },
+      { label: "SEO Is Old School, The GEO & AI Shift Is Here", href: "/resources/blog-seo-old-school-geo-ai-shift" },
       { label: "How to Write Trusted AI Review Responses", href: "/resources/blog-trusted-ai-review-responses" },
       { label: "AI Visibility Is Not Your Website", href: "/resources/blog-ai-visibility-not-your-website" },
       { label: "5 Automations Wesley Chapel Businesses Should Be Using", href: "/resources/blog-5-automations-wesley-chapel-businesses" },

@@ -2,15 +2,15 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'AI Visibility — Wesley Chapel, FL | Shark Branding Solutions',
-  description: 'Shark Branding Solutions helps Wesley Chapel businesses get found by ChatGPT, Google AI Overviews, Perplexity, and Gemini. Free AI Audit in 48 hours.',
+  title: 'AI Visibility in Wesley Chapel, FL | Shark AI Solutions',
+  description: 'Shark AI Solutions helps Wesley Chapel businesses get found by ChatGPT, Google AI Overviews, Perplexity, and Gemini. Free AI Audit in 48 hours.',
   alternates: { canonical: 'https://sharkbrandingsolutions.com/wesley-chapel' },
 }
 
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'ProfessionalService',
-  name: 'Shark Branding Solutions',
+  name: 'Shark AI Solutions',
   description: 'AI visibility consulting for Wesley Chapel businesses. We help local companies get found and recommended by ChatGPT, Google AI Overviews, Perplexity, and Gemini.',
   url: 'https://sharkbrandingsolutions.com/wesley-chapel',
   telephone: '+17275133955',
@@ -35,7 +35,7 @@ const faqSchema = {
       name: 'What is AI visibility consulting in Wesley Chapel?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'AI visibility consulting helps Wesley Chapel businesses get recommended by ChatGPT, Google AI Overviews, Perplexity, and Gemini when local buyers search for services. Shark Branding Solutions audits your AI presence, fixes citation and schema issues, and builds the trust signals that AI models use to recommend your business.',
+        text: 'AI visibility consulting helps Wesley Chapel businesses get recommended by ChatGPT, Google AI Overviews, Perplexity, and Gemini when local buyers search for services. Shark AI Solutions audits your AI presence, fixes citation and schema issues, and builds the trust signals that AI models use to recommend your business.',
       },
     },
     {
@@ -48,10 +48,10 @@ const faqSchema = {
     },
     {
       '@type': 'Question',
-      name: 'Does Shark Branding Solutions serve businesses outside of Wesley Chapel?',
+      name: 'Does Shark AI Solutions serve businesses outside of Wesley Chapel?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes. Shark Branding Solutions is headquartered in Wesley Chapel and serves all Tampa Bay area businesses, including Lutz, Land O\' Lakes, Zephyrhills, New Tampa, and the broader Pasco and Hillsborough County region. Virtual consulting is also available for businesses outside Tampa Bay.',
+        text: 'Yes. Shark AI Solutions is headquartered in Wesley Chapel and serves all Tampa Bay area businesses, including Lutz, Land O\' Lakes, Zephyrhills, New Tampa, and the broader Pasco and Hillsborough County region. Virtual consulting is also available for businesses outside Tampa Bay.',
       },
     },
     {
@@ -59,7 +59,7 @@ const faqSchema = {
       name: 'How do I get started with AI visibility for my Wesley Chapel business?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'The first step is a free AI Audit. We run your Wesley Chapel business through ChatGPT, Gemini, Perplexity, Google AI Overviews, and Copilot to identify where you are invisible or inconsistent. The audit is delivered within 48 hours and comes with no commitment. Contact Shark Branding Solutions at (727) 513-3955 or info@sharkbrandingsolutions.com.',
+        text: 'The first step is a free AI Audit. We run your Wesley Chapel business through ChatGPT, Gemini, Perplexity, Google AI Overviews, and Copilot to identify where you are invisible or inconsistent. The audit is delivered within 48 hours and comes with no commitment. Contact Shark AI Solutions at (727) 513-3955 or info@sharkbrandingsolutions.com.',
       },
     },
   ],
@@ -68,7 +68,7 @@ const faqSchema = {
 const results = [
   { stat: '#1', detail: 'Realtor in Wesley Chapel in a market of 2,000+ agents. 30 days.' },
   { stat: '30', detail: 'Days to measurable AI visibility movement for Wesley Chapel clients.' },
-  { stat: '3', detail: 'AI platforms — ChatGPT, Gemini, Perplexity — monitored for every client.' },
+  { stat: '3', detail: 'AI platforms, ChatGPT, Gemini, Perplexity, monitored for every client.' },
 ]
 
 export default function WesleyChapelPage() {
@@ -166,7 +166,7 @@ export default function WesleyChapelPage() {
               {
                 step: '03',
                 title: 'Ongoing Monitoring',
-                body: 'AI algorithms change constantly. We watch your visibility across platforms every month and adapt before you notice a drop — keeping you in the recommendation shortlist.',
+                body: 'AI algorithms change constantly. We watch your visibility across platforms every month and adapt before you notice a drop, keeping you in the recommendation shortlist.',
               },
             ].map((s) => (
               <div key={s.step} className="bg-[#f5f5f7] rounded-[20px] p-7">
@@ -193,13 +193,13 @@ export default function WesleyChapelPage() {
             Local SEO in Wesley Chapel has changed. Most businesses haven&rsquo;t caught up.
           </h2>
           <p className="text-[16px] text-[#444] leading-relaxed mb-5">
-            Wesley Chapel is one of the fastest-growing markets in Pasco County. That means more local businesses competing for the same buyers — and buyers using AI to shortcut the search. Traditional local SEO got you onto Google&rsquo;s map pack. AI visibility gets you into the shortlist ChatGPT and Gemini hand to the buyer who has already decided to spend money.
+            Wesley Chapel is one of the fastest-growing markets in Pasco County. That means more local businesses competing for the same buyers, and buyers using AI to shortcut the search. Traditional local SEO got you onto Google&rsquo;s map pack. AI visibility gets you into the shortlist ChatGPT and Gemini hand to the buyer who has already decided to spend money.
           </p>
           <p className="text-[16px] text-[#444] leading-relaxed mb-5">
             The local SEO fundamentals still matter: citation consistency, Google Business Profile, and review volume. But the ranking criteria have expanded. AI models also weigh schema markup, authoritative local content, and the depth of trust signals across the web. If your local SEO strategy stops at traditional search, you are already behind the businesses that have extended their optimization to the AI layer.
           </p>
           <p className="text-[16px] text-[#444] leading-relaxed">
-            Shark Branding Solutions is based in Wesley Chapel. We work exclusively in this market and the surrounding communities — Lutz, Land O&rsquo; Lakes, Zephyrhills, and New Tampa. We know the competitors, the buying behavior, and the search patterns specific to this area. Local SEO for Wesley Chapel is not a generic service we run remotely. It is what we do every day.
+            Shark AI Solutions is based in Wesley Chapel. We work exclusively in this market and the surrounding communities, Lutz, Land O&rsquo; Lakes, Zephyrhills, and New Tampa. We know the competitors, the buying behavior, and the search patterns specific to this area. Local SEO for Wesley Chapel is not a generic service we run remotely. It is what we do every day.
           </p>
         </div>
       </section>
@@ -237,7 +237,7 @@ export default function WesleyChapelPage() {
                 AI employees for Wesley Chapel businesses.
               </h2>
               <p className="text-[16px] text-[#555] leading-relaxed mb-6">
-                Beyond visibility, we build AI employees that run your business around the clock. From a 24/7 chat receptionist that qualifies and books leads, to automated review management and multi-touch follow-up sequences — Wesley Chapel businesses are cutting manual work and closing more without adding headcount.
+                Beyond visibility, we build AI employees that run your business around the clock. From a 24/7 chat receptionist that qualifies and books leads, to automated review management and multi-touch follow-up sequences, Wesley Chapel businesses are cutting manual work and closing more without adding headcount.
               </p>
               <Link
                 href="/aiemployees"

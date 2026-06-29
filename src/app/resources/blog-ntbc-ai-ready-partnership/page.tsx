@@ -4,9 +4,9 @@ import Link from "next/link";
 import BlogShell from "@/components/BlogShell";
 
 export const metadata: Metadata = {
- title: "Shark Branding & North Tampa Bay Chamber: AI-Ready",
+ title: "Shark AI Solutions & North Tampa Bay Chamber Partnership",
  description:
-  "Shark Branding joins the North Tampa Bay Chamber to help local businesses get found by AI. Learn the Found, Trusted, Chosen framework.",
+  "Shark AI Solutions joins the North Tampa Bay Chamber to help local businesses get found by AI. Learn the Found, Trusted, Chosen framework.",
  alternates: {
   canonical: "https://sharkbrandingsolutions.com/resources/blog-ntbc-ai-ready-partnership",
  },
@@ -14,7 +14,8 @@ export const metadata: Metadata = {
 
 export default function Page() {
  return (
-  <BlogShell
+  <BlogShellurl="https://sharkbrandingsolutions.com/resources/blog-ntbc-ai-ready-partnership"
+   
    relatedPosts={[{ href: "/resources/blog-ai-funnel-chatgpt-new-front-door", title: "ChatGPT Is the New Front Door for Your Customers", category: "AI Funnel" }, { href: "/resources/blog-seo-old-school-geo-ai-shift", title: "Why Your Business Needs GEO for the AI Search Shift", category: "GEO" }, { href: "/resources/blog-ai-map-consistent-business-listings", title: "Consistent Listings: The Secret to Being Found by AI", category: "Listings" }]}
    category="Partnership"
    title="AI-Ready: Shark AI Solutions Partners with North Tampa Bay Chamber to Future-Proof Local Business"

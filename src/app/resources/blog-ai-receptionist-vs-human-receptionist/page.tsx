@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'AI Receptionist vs. Human Receptionist: What Tampa Bay Businesses Need to Know — Shark Branding Solutions',
+  title: 'AI Receptionist vs. Human Receptionist | Shark AI Solutions',
   description: 'Comparing AI and human receptionists for Tampa Bay service businesses. Cost, availability, response speed, and which one makes sense for your business.',
   alternates: { canonical: 'https://sharkbrandingsolutions.com/resources/blog-ai-receptionist-vs-human-receptionist' },
   openGraph: {
@@ -38,11 +38,21 @@ const structuredData = {
   keywords: ['AI receptionist', 'AI employees Wesley Chapel', 'business automation Tampa Bay', 'Gemma AI receptionist', 'virtual receptionist'],
   articleSection: 'AI Employees',
 }
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://sharkbrandingsolutions.com' },
+    { '@type': 'ListItem', position: 2, name: 'Resources', item: 'https://sharkbrandingsolutions.com/resources' },
+    { '@type': 'ListItem', position: 3, name: structuredData.headline, item: 'https://sharkbrandingsolutions.com/resources/blog-ai-receptionist-vs-human-receptionist' },
+  ],
+}
+
 
 const faqs = [
   {
     q: 'Can an AI receptionist replace a human receptionist?',
-    a: 'For inbound lead capture, after-hours coverage, appointment booking, and FAQ handling — yes, fully. For complex client relationship management, sensitive conflict resolution, or situations requiring judgment calls that a human would handle better — no. Most businesses use both: AI for the volume and availability, humans for the relationship.',
+    a: 'For inbound lead capture, after-hours coverage, appointment booking, and FAQ handling, yes, fully. For complex client relationship management, sensitive conflict resolution, or situations requiring judgment calls that a human would handle better, no. Most businesses use both: AI for the volume and availability, humans for the relationship.',
   },
   {
     q: 'How much does an AI receptionist cost compared to a human?',
@@ -50,11 +60,11 @@ const faqs = [
   },
   {
     q: 'What is Gemma and how does she work as an AI receptionist?',
-    a: 'Gemma is the AI chat receptionist we deploy for clients at Shark Branding Solutions. She sits on your website 24/7, greets every visitor, qualifies them with 2-3 targeted questions, captures their contact information, and either books a time on your calendar or schedules a callback. She responds in under 5 seconds at any hour.',
+    a: 'Gemma is the AI chat receptionist we deploy for clients at Shark AI Solutions. She sits on your website 24/7, greets every visitor, qualifies them with 2-3 targeted questions, captures their contact information, and either books a time on your calendar or schedules a callback. She responds in under 5 seconds at any hour.',
   },
   {
     q: 'Do AI receptionists work for home service businesses in Wesley Chapel?',
-    a: 'Yes, and this is one of the highest-ROI use cases for AI receptionists. Home service leads in Wesley Chapel and Tampa Bay frequently come in after business hours — evenings and weekends when homeowners have time to research. An AI receptionist captures every one of those leads that a human would miss.',
+    a: 'Yes, and this is one of the highest-ROI use cases for AI receptionists. Home service leads in Wesley Chapel and Tampa Bay frequently come in after business hours, evenings and weekends when homeowners have time to research. An AI receptionist captures every one of those leads that a human would miss.',
   },
 ]
 
@@ -110,6 +120,7 @@ export default function AiVsHumanReceptionistPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -213,7 +224,7 @@ export default function AiVsHumanReceptionistPage() {
             <h2 className="text-[26px] font-bold text-[#0a0a0a] mt-8 mb-4">The practical answer for most Tampa Bay service businesses</h2>
 
             <p>
-              Most service businesses in Wesley Chapel and Tampa Bay do not need to choose. They need an AI receptionist for volume, availability, and consistency — and they need human touch for relationship maintenance and complex situations.
+              Most service businesses in Wesley Chapel and Tampa Bay do not need to choose. They need an AI receptionist for volume, availability, and consistency, and they need human touch for relationship maintenance and complex situations.
             </p>
 
             <p>
@@ -227,7 +238,7 @@ export default function AiVsHumanReceptionistPage() {
             <h2 className="text-[26px] font-bold text-[#0a0a0a] mt-8 mb-4">What Gemma actually does in this context</h2>
 
             <p>
-              Gemma is the AI chat receptionist we configure for clients at Shark Branding Solutions. She is not a generic chatbot. She is configured specifically for your business: your service types, your service area, your qualifying questions, and your calendar.
+              Gemma is the AI chat receptionist we configure for clients at Shark AI Solutions. She is not a generic chatbot. She is configured specifically for your business: your service types, your service area, your qualifying questions, and your calendar.
             </p>
 
             <p>

@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marketing Strategy — Worthington Agency | Shark Branding Solutions</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #fff;
+      color: #111;
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    .page {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 48px 40px;
+    }
+
+    /* Header */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 32px;
+      padding-bottom: 22px;
+      border-bottom: 3px solid #15B4D6;
+    }
+    .header-left .eyebrow {
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.22em;
+      color: #15B4D6;
+      margin-bottom: 6px;
+    }
+    .header-left h1 {
+      font-size: 24px;
+      font-weight: 800;
+      color: #000;
+      line-height: 1.15;
+    }
+    .header-left h1 span { color: #15B4D6; }
+    .header-left .sub {
+      font-size: 12.5px;
+      color: #555;
+      margin-top: 5px;
+    }
+    .header-right { text-align: right; }
+    .header-logo { height: 52px; width: auto; display: block; margin-left: auto; }
+    .header-right .url { font-size: 11px; color: #15B4D6; margin-top: 5px; }
+
+    /* Section label */
+    .section-label {
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.22em;
+      color: #15B4D6;
+      margin-bottom: 10px;
+      margin-top: 32px;
+    }
+
+    /* Campaign header bar */
+    .campaign-bar {
+      border-radius: 10px;
+      padding: 18px 24px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .campaign-bar.dark { background: #000; }
+    .campaign-bar.teal { background: #1F7085; }
+    .campaign-bar .c-left .c-tag {
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: #15B4D6;
+      margin-bottom: 4px;
+    }
+    .campaign-bar.teal .c-left .c-tag { color: #4FD1A0; }
+    .campaign-bar .c-left .c-name {
+      font-size: 19px;
+      font-weight: 800;
+      color: #fff;
+    }
+    .campaign-bar .c-left .c-desc {
+      font-size: 12px;
+      color: #aaa;
+      margin-top: 3px;
+    }
+    .campaign-bar .c-right {
+      text-align: right;
+    }
+    .campaign-bar .c-right .c-pill {
+      display: inline-block;
+      background: #15B4D6;
+      color: #fff;
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      padding: 5px 12px;
+      border-radius: 20px;
+      margin-bottom: 5px;
+    }
+    .campaign-bar.teal .c-right .c-pill { background: #4FD1A0; color: #000; }
+    .campaign-bar .c-right .c-goal {
+      font-size: 11px;
+      color: #888;
+      display: block;
+    }
+
+    /* Three col grid */
+    .three-col {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .four-col {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+
+    /* Info card */
+    .card {
+      border: 1.5px solid #e5e5e5;
+      border-radius: 10px;
+      padding: 16px;
+    }
+    .card.blue-border { border-color: #15B4D6; }
+    .card.teal-border { border-color: #4FD1A0; }
+    .card .card-icon { font-size: 18px; margin-bottom: 6px; }
+    .card .card-title {
+      font-size: 12px;
+      font-weight: 700;
+      color: #000;
+      margin-bottom: 5px;
+    }
+    .card .card-body {
+      font-size: 11.5px;
+      color: #555;
+      line-height: 1.55;
+    }
+    .card ul {
+      list-style: none;
+      margin-top: 6px;
+    }
+    .card ul li {
+      font-size: 11.5px;
+      color: #444;
+      padding: 2px 0;
+    }
+    .card ul li::before { content: "– "; color: #15B4D6; font-weight: 700; }
+    .card.teal-theme ul li::before { content: "– "; color: #4FD1A0; }
+
+    /* Stat cards */
+    .stat-card {
+      border: 1.5px solid #e5e5e5;
+      border-radius: 10px;
+      padding: 14px 16px;
+      text-align: center;
+    }
+    .stat-card .stat-label {
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: #999;
+      margin-bottom: 6px;
+    }
+    .stat-card .stat-val {
+      font-size: 24px;
+      font-weight: 800;
+      color: #000;
+      line-height: 1;
+    }
+    .stat-card .stat-val.blue { color: #15B4D6; }
+    .stat-card .stat-val.green { color: #059669; }
+    .stat-card .stat-val.teal { color: #4FD1A0; }
+    .stat-card .stat-sub {
+      font-size: 10.5px;
+      color: #888;
+      margin-top: 4px;
+    }
+
+    /* Ad copy box */
+    .ad-copy {
+      background: #f9f9f9;
+      border-left: 3px solid #15B4D6;
+      border-radius: 0 8px 8px 0;
+      padding: 14px 18px;
+      margin-bottom: 10px;
+    }
+    .ad-copy.teal-left { border-left-color: #4FD1A0; }
+    .ad-copy .ad-tag {
+      font-size: 9px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: #15B4D6;
+      margin-bottom: 4px;
+    }
+    .ad-copy.teal-left .ad-tag { color: #4FD1A0; }
+    .ad-copy .ad-headline {
+      font-size: 14px;
+      font-weight: 700;
+      color: #000;
+      margin-bottom: 3px;
+    }
+    .ad-copy .ad-body {
+      font-size: 12px;
+      color: #555;
+      line-height: 1.55;
+    }
+    .ad-copy .ad-cta {
+      font-size: 11px;
+      font-weight: 700;
+      color: #15B4D6;
+      margin-top: 6px;
+    }
+    .ad-copy.teal-left .ad-cta { color: #4FD1A0; }
+
+    /* Table */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+      font-size: 12px;
+    }
+    thead tr { background: #000; color: #fff; }
+    thead th {
+      padding: 10px 14px;
+      text-align: left;
+      font-weight: 600;
+      font-size: 11.5px;
+    }
+    thead th:not(:first-child) { text-align: center; }
+    tbody tr { border-bottom: 1px solid #f0f0f0; }
+    tbody tr:nth-child(even) { background: #fafafa; }
+    tbody tr.total-row { background: #f0fbfe; font-weight: 700; }
+    tbody td { padding: 9px 14px; color: #333; }
+    tbody td:not(:first-child) { text-align: center; }
+    .green { color: #059669; font-weight: 700; }
+    .blue { color: #15B4D6; font-weight: 700; }
+
+    /* Divider */
+    .divider {
+      border: none;
+      border-top: 2px dashed #e5e5e5;
+      margin: 36px 0;
+    }
+
+    /* Reimbursement box */
+    .reimb-box {
+      background: #f0fbfe;
+      border: 1.5px solid #15B4D6;
+      border-radius: 10px;
+      padding: 20px 24px;
+      margin-bottom: 20px;
+    }
+    .reimb-box .reimb-title {
+      font-size: 12px;
+      font-weight: 700;
+      color: #1F7085;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      margin-bottom: 14px;
+    }
+    .reimb-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 7px 0;
+      border-bottom: 1px solid #d4eff8;
+      font-size: 12.5px;
+    }
+    .reimb-row:last-child { border-bottom: none; font-weight: 700; font-size: 13px; padding-top: 12px; }
+    .reimb-row .eligible-tag {
+      font-size: 9px;
+      font-weight: 700;
+      text-transform: uppercase;
+      background: #d1fae5;
+      color: #059669;
+      padding: 2px 7px;
+      border-radius: 3px;
+      margin-left: 8px;
+    }
+    .reimb-row .check-tag {
+      font-size: 9px;
+      font-weight: 700;
+      text-transform: uppercase;
+      background: #fef9c3;
+      color: #854d0e;
+      padding: 2px 7px;
+      border-radius: 3px;
+      margin-left: 8px;
+    }
+
+    /* Timeline */
+    .timeline {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0;
+      margin-bottom: 20px;
+      border: 1.5px solid #e5e5e5;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .timeline-phase {
+      padding: 18px 16px;
+      border-right: 1.5px solid #e5e5e5;
+    }
+    .timeline-phase:last-child { border-right: none; }
+    .timeline-phase .phase-tag {
+      font-size: 9px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: #15B4D6;
+      margin-bottom: 4px;
+    }
+    .timeline-phase .phase-name {
+      font-size: 13px;
+      font-weight: 800;
+      color: #000;
+      margin-bottom: 8px;
+    }
+    .timeline-phase ul { list-style: none; }
+    .timeline-phase ul li {
+      font-size: 11.5px;
+      color: #555;
+      padding: 2px 0;
+    }
+    .timeline-phase ul li::before { content: "✓ "; color: #15B4D6; font-weight: 700; }
+
+    /* Footer */
+    .footer {
+      border-top: 1px solid #e5e5e5;
+      padding-top: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 11px;
+      color: #aaa;
+      margin-top: 32px;
+    }
+    .footer strong { color: #15B4D6; }
+
+    @media print {
+      body { font-size: 12px; }
+      .page { padding: 32px; }
+      .campaign-bar { break-inside: avoid; }
+      @page { margin: 0.5in; }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-left">
+      <div class="eyebrow">Marketing Strategy — AAA Insurance</div>
+      <h1>Worthington Agency <span>Growth Plan</span></h1>
+      <div class="sub">Two-campaign strategy + Local SEO + AI employee integration + AAA cost-share reimbursement plan</div>
+    </div>
+    <div class="header-right">
+      <img src="SBS_Blue_Logo.png" alt="Shark Branding Solutions" class="header-logo" />
+      <div class="url">sharkbrandingsolutions.com</div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       CAMPAIGN 1
+  ════════════════════════════════════════════ -->
+  <div class="section-label">Campaign 1 of 2</div>
+  <div class="campaign-bar dark">
+    <div class="c-left">
+      <div class="c-tag">Premium Homeowners</div>
+      <div class="c-name">The Estancia Campaign</div>
+      <div class="c-desc">Good credit, homeowners, multifamily, retirees — Wesley Chapel's nicer neighborhoods</div>
+    </div>
+    <div class="c-right">
+      <span class="c-pill">High-Value Prospects</span>
+      <span class="c-goal">Goal: New policies from premium zip codes</span>
+    </div>
+  </div>
+
+  <!-- Target Audience -->
+  <div class="section-label">Target Audience</div>
+  <div class="three-col">
+    <div class="card blue-border">
+      <div class="card-title">Who We're Targeting</div>
+      <ul>
+        <li>Homeowners, credit score 720+</li>
+        <li>Multifamily property owners</li>
+        <li>Retirees 60+ with paid-off homes</li>
+        <li>Dual-income households $100k+</li>
+        <li>New construction buyers (move-in ready)</li>
+      </ul>
+    </div>
+    <div class="card blue-border">
+      <div class="card-title">Target Neighborhoods (Wesley Chapel)</div>
+      <ul>
+        <li>Estancia — luxury golf community</li>
+        <li>Wiregrass Ranch</li>
+        <li>Seven Oaks</li>
+        <li>Persimmon Park</li>
+        <li>Epperson (Crystal Lagoon)</li>
+        <li>K-Bar Ranch</li>
+      </ul>
+    </div>
+    <div class="card blue-border">
+      <div class="card-title">Why AAA Wins Here</div>
+      <ul>
+        <li>AAA brand trust resonates with retirees</li>
+        <li>Multi-policy bundling = more savings</li>
+        <li>Roadside + home = one relationship</li>
+        <li>Good credit often means lower premiums</li>
+        <li>Multifamily owners need umbrella policies</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Channels -->
+  <div class="section-label">Advertising Channels</div>
+  <div class="three-col">
+    <div class="card">
+      <div class="card-icon">📘</div>
+      <div class="card-title">Facebook + Instagram Ads</div>
+      <div class="card-body">Target by zip code (33543, 33544, 33545), homeowner status, age 55+, income level, and life events (recently moved, retirement). Carousel ads showing bundle savings.</div>
+    </div>
+    <div class="card">
+      <div class="card-icon">🖥</div>
+      <div class="card-title">Google Display &amp; Search</div>
+      <div class="card-body">Retarget website visitors and serve display ads across Wesley Chapel zip codes. Search ads for "homeowners insurance Wesley Chapel" and "AAA home insurance Tampa Bay."</div>
+    </div>
+    <div class="card">
+      <div class="card-icon">✉</div>
+      <div class="card-title">Direct Mail — Neighborhood Drop</div>
+      <div class="card-body">Targeted mailers to Estancia, Wiregrass, Seven Oaks by home value ($400k+). Personalized with neighborhood name. QR code drives to landing page or call.</div>
+    </div>
+  </div>
+
+  <!-- Ad Copy -->
+  <div class="section-label">Sample Ad Copy</div>
+  <div class="two-col">
+    <div>
+      <div class="ad-copy">
+        <div class="ad-tag">Facebook / Instagram — Retiree</div>
+        <div class="ad-headline">You built something worth protecting.</div>
+        <div class="ad-body">AAA members in Wesley Chapel save an average of $600/year bundling home and auto. Get a free quote from a local agent who knows your neighborhood.</div>
+        <div class="ad-cta">Get Your Free Quote →</div>
+      </div>
+      <div class="ad-copy">
+        <div class="ad-tag">Facebook — Multifamily Owner</div>
+        <div class="ad-headline">One policy isn't enough for multiple properties.</div>
+        <div class="ad-body">If you own rental or multifamily properties in Wesley Chapel, AAA offers umbrella coverage that protects everything under one roof — and one agent.</div>
+        <div class="ad-cta">Talk to a Local AAA Agent →</div>
+      </div>
+    </div>
+    <div>
+      <div class="ad-copy">
+        <div class="ad-tag">Direct Mail — Estancia / Wiregrass</div>
+        <div class="ad-headline">Estancia homeowners: Is your home underinsured?</div>
+        <div class="ad-body">Home values in your neighborhood have risen significantly. Most policies haven't kept up. A free AAA review takes 10 minutes and could save you from a major gap in coverage.</div>
+        <div class="ad-cta">Scan to schedule your free review.</div>
+      </div>
+      <div class="ad-copy">
+        <div class="ad-tag">Google Search</div>
+        <div class="ad-headline">AAA Home Insurance — Wesley Chapel Residents</div>
+        <div class="ad-body">Local AAA agent serving Estancia, Wiregrass, Seven Oaks. Bundle home + auto and save. Free quotes. No obligation. Call or chat now.</div>
+        <div class="ad-cta">Call Now — Free Quote in 10 Minutes</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Campaign 1 Budget -->
+  <div class="section-label">Campaign 1 — Monthly Budget</div>
+  <table>
+    <thead>
+      <tr>
+        <th>Channel</th>
+        <th>Monthly Spend</th>
+        <th>AAA Eligible</th>
+        <th>Reimbursed (50%)</th>
+        <th>Net Cost</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Facebook + Instagram Ads</td>
+        <td>$800</td>
+        <td class="green">Yes</td>
+        <td class="green">$400</td>
+        <td>$400</td>
+      </tr>
+      <tr>
+        <td>Google Display + Search</td>
+        <td>$600</td>
+        <td class="green">Yes</td>
+        <td class="green">$300</td>
+        <td>$300</td>
+      </tr>
+      <tr>
+        <td>Direct Mail (quarterly drop)</td>
+        <td>$400</td>
+        <td class="green">Yes</td>
+        <td class="green">$200</td>
+        <td>$200</td>
+      </tr>
+      <tr class="total-row">
+        <td><strong>Campaign 1 Total</strong></td>
+        <td class="blue">$1,800/mo</td>
+        <td></td>
+        <td class="green">$900/mo back</td>
+        <td class="green"><strong>$900/mo net</strong></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <hr class="divider" />
+
+  <!-- ═══════════════════════════════════════════
+       CAMPAIGN 2
+  ════════════════════════════════════════════ -->
+  <div class="section-label">Campaign 2 of 2</div>
+  <div class="campaign-bar teal">
+    <div class="c-left">
+      <div class="c-tag">Older Homes — New Opportunity</div>
+      <div class="c-name">The New Roof Campaign</div>
+      <div class="c-desc">Homes built 2002 and under with new roofs — the hardest-to-insure segment that most carriers abandon</div>
+    </div>
+    <div class="c-right">
+      <span class="c-pill">Underserved Market</span>
+      <span class="c-goal">Goal: Capture policies competitors won't write</span>
+    </div>
+  </div>
+
+  <!-- Target Audience -->
+  <div class="section-label">Target Audience</div>
+  <div class="three-col">
+    <div class="card teal-border">
+      <div class="card-title">Who We're Targeting</div>
+      <ul class="teal-theme">
+        <li>Homeowners in homes built 1985–2002</li>
+        <li>Homeowners with roof replaced 2018–present</li>
+        <li>Currently uninsured or underinsured</li>
+        <li>Dropped by previous carrier (Citizens overflow)</li>
+        <li>Looking to bundle auto for extra savings</li>
+      </ul>
+    </div>
+    <div class="card teal-border">
+      <div class="card-title">Target Neighborhoods</div>
+      <ul class="teal-theme">
+        <li>Meadow Pointe (built early 2000s)</li>
+        <li>Quail Hollow</li>
+        <li>Country Walk</li>
+        <li>Oakstead (Land O' Lakes)</li>
+        <li>Older Seven Oaks sections</li>
+        <li>New Tampa adjacent neighborhoods</li>
+      </ul>
+    </div>
+    <div class="card teal-border">
+      <div class="card-title">Why This Segment Wins</div>
+      <ul class="teal-theme">
+        <li>Most carriers won't touch pre-2002 homes</li>
+        <li>New roof = much better risk profile</li>
+        <li>These homeowners are desperate for coverage</li>
+        <li>Low competition from other AAA agents</li>
+        <li>High close rate — they need you more than you need them</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Channels -->
+  <div class="section-label">Advertising Channels</div>
+  <div class="three-col">
+    <div class="card">
+      <div class="card-icon">📘</div>
+      <div class="card-title">Facebook — Homeowner Targeting</div>
+      <div class="card-body">Target homeowners in older zip codes by home age (county data available via custom audience lists). Message: "Got a new roof? You may qualify for coverage most carriers deny."</div>
+    </div>
+    <div class="card">
+      <div class="card-icon">📬</div>
+      <div class="card-title">Direct Mail by Home Vintage</div>
+      <div class="card-body">Pull addresses from county property records filtered by year built (pre-2002) in Meadow Pointe, Quail Hollow, Country Walk. Send targeted mailers with a new-roof qualifier message.</div>
+    </div>
+    <div class="card">
+      <div class="card-icon">🔧</div>
+      <div class="card-title">Roofing Company Partnership</div>
+      <div class="card-body">Partner with 2-3 local roofing contractors. When they finish a job, they hand the homeowner a flyer: "Your new roof may qualify you for better insurance rates — free AAA quote." Referral arrangement.</div>
+    </div>
+  </div>
+
+  <!-- Auto Bundle Angle -->
+  <div class="section-label">Auto Bundle Strategy</div>
+  <div class="two-col">
+    <div class="card">
+      <div class="card-title">Why Bundle Works for This Segment</div>
+      <div class="card-body">Homeowners with older homes often have older vehicles and are sensitive to cost. Bundling home + auto with AAA saves them money on both — and AAA roadside assistance is a built-in differentiator that competitors can't match. This segment responds strongly to "one bill, one agent, one relationship."</div>
+      <ul style="margin-top:10px;">
+        <li>Typical home + auto bundle saves $400–$800/year</li>
+        <li>AAA membership adds roadside value</li>
+        <li>One agent for all policies = stickier relationship</li>
+        <li>Higher lifetime value per client</li>
+      </ul>
+    </div>
+    <div>
+      <div class="ad-copy teal-left">
+        <div class="ad-tag">Facebook — New Roof Qualifier</div>
+        <div class="ad-headline">New roof? Most carriers still won't cover you. AAA will.</div>
+        <div class="ad-body">If your Wesley Chapel home was built before 2002 and you've replaced your roof, you may qualify for coverage that most insurance companies deny. Get a free quote from a local AAA agent today.</div>
+        <div class="ad-cta" style="color:#4FD1A0;">Check If You Qualify — Free Quote →</div>
+      </div>
+      <div class="ad-copy teal-left">
+        <div class="ad-tag">Direct Mail Headline</div>
+        <div class="ad-headline">Did you get a new roof? Read this.</div>
+        <div class="ad-body">Your neighbors are being dropped by their insurance carriers because of home age. But if you've replaced your roof recently, AAA may be able to cover your home AND your car — and save you money on both.</div>
+        <div class="ad-cta" style="color:#4FD1A0;">Scan to get your free quote in 10 minutes.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Campaign 2 Budget -->
+  <div class="section-label">Campaign 2 — Monthly Budget</div>
+  <table>
+    <thead>
+      <tr>
+        <th>Channel</th>
+        <th>Monthly Spend</th>
+        <th>AAA Eligible</th>
+        <th>Reimbursed (50%)</th>
+        <th>Net Cost</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Facebook Ads — Older Home Targeting</td>
+        <td>$600</td>
+        <td class="green">Yes</td>
+        <td class="green">$300</td>
+        <td>$300</td>
+      </tr>
+      <tr>
+        <td>Direct Mail — Pre-2002 Addresses</td>
+        <td>$500</td>
+        <td class="green">Yes</td>
+        <td class="green">$250</td>
+        <td>$250</td>
+      </tr>
+      <tr>
+        <td>Roofing Partner Referral Materials</td>
+        <td>$200</td>
+        <td class="green">Yes (Print)</td>
+        <td class="green">$100</td>
+        <td>$100</td>
+      </tr>
+      <tr class="total-row">
+        <td><strong>Campaign 2 Total</strong></td>
+        <td class="blue">$1,300/mo</td>
+        <td></td>
+        <td class="green">$650/mo back</td>
+        <td class="green"><strong>$650/mo net</strong></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <hr class="divider" />
+
+  <!-- ═══════════════════════════════════════════
+       AI EMPLOYEE INTEGRATION
+  ════════════════════════════════════════════ -->
+  <div class="section-label">AI Employee Integration</div>
+  <div class="campaign-bar dark">
+    <div class="c-left">
+      <div class="c-tag">Shark Branding Solutions</div>
+      <div class="c-name">Your AI Workforce</div>
+      <div class="c-desc">Three AI employees that capture, qualify, and follow up with every lead from both campaigns — 24/7</div>
+    </div>
+    <div class="c-right">
+      <span class="c-pill">Done-For-You</span>
+      <span class="c-goal">Live within one week of kickoff</span>
+    </div>
+  </div>
+
+  <div class="three-col">
+    <div class="card blue-border">
+      <div class="card-icon">📞</div>
+      <div class="card-title">AI Voice Receptionist</div>
+      <div class="card-body">Answers every inbound call from your ads. Books quote appointments automatically. Handles after-hours inquiries so weekend ad spend never goes to voicemail.</div>
+      <div style="margin-top:10px;font-size:12px;font-weight:700;color:#000;">$697/mo</div>
+    </div>
+    <div class="card blue-border">
+      <div class="card-icon">🤖</div>
+      <div class="card-title">AI Sales Agent (CRM)</div>
+      <div class="card-body">Follows up with every lead that fills out a form or contacts the agency. Sends quote reminders, nurtures prospects who didn't close, and keeps your pipeline moving automatically.</div>
+      <div style="margin-top:10px;font-size:12px;font-weight:700;color:#000;">$597/mo</div>
+    </div>
+    <div class="card blue-border">
+      <div class="card-icon">💬</div>
+      <div class="card-title">AI Webchat Receptionist</div>
+      <div class="card-body">Engages every visitor from your Google and Facebook ads on your website. Qualifies leads (homeowner? home age? new roof?), collects contact info, and books appointments without any manual effort.</div>
+      <div style="margin-top:10px;font-size:12px;font-weight:700;color:#000;">$497/mo</div>
+    </div>
+  </div>
+
+  <div class="four-col">
+    <div class="stat-card">
+      <div class="stat-label">Setup Fee (one-time)</div>
+      <div class="stat-val">$1,500</div>
+      <div class="stat-sub">all three AI employees</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Monthly — All Three</div>
+      <div class="stat-val blue">$1,791</div>
+      <div class="stat-sub">individual rates</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">AAA Reimburses</div>
+      <div class="stat-val green">$895</div>
+      <div class="stat-sub">50% of CRM/AMS line</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Net AI Cost/Mo</div>
+      <div class="stat-val">$896</div>
+      <div class="stat-sub">after reimbursement</div>
+    </div>
+  </div>
+
+  <hr class="divider" />
+
+  <!-- ═══════════════════════════════════════════
+       AAA REIMBURSEMENT PLAN
+  ════════════════════════════════════════════ -->
+  <div class="section-label">AAA Marketing Cost-Share Reimbursement Plan</div>
+
+  <div class="reimb-box">
+    <div class="reimb-title">Monthly Spend + Reimbursement Breakdown</div>
+    <div class="reimb-row">
+      <span>Campaign 1 — Premium Homeowners (Digital + Mail)</span>
+      <span class="eligible-tag">Eligible</span>
+      <span style="margin-left:auto;padding-left:20px;">$1,800/mo</span>
+    </div>
+    <div class="reimb-row">
+      <span>Campaign 2 — New Roof / Older Homes (Digital + Mail + Print)</span>
+      <span class="eligible-tag">Eligible</span>
+      <span style="margin-left:auto;padding-left:20px;">$1,300/mo</span>
+    </div>
+    <div class="reimb-row">
+      <span>AI Sales Agent / CRM</span>
+      <span class="eligible-tag">Eligible — CRM/AMS</span>
+      <span style="margin-left:auto;padding-left:20px;">$597/mo</span>
+    </div>
+    <div class="reimb-row">
+      <span>AI Voice Receptionist</span>
+      <span class="check-tag">Pre-Approval Required</span>
+      <span style="margin-left:auto;padding-left:20px;">$697/mo</span>
+    </div>
+    <div class="reimb-row">
+      <span>AI Webchat Receptionist</span>
+      <span class="check-tag">Pre-Approval Required</span>
+      <span style="margin-left:auto;padding-left:20px;">$497/mo</span>
+    </div>
+    <div class="reimb-row">
+      <span>IT Support &amp; System Management</span>
+      <span class="check-tag">Not AAA Eligible</span>
+      <span style="margin-left:auto;padding-left:20px;">$350/mo</span>
+    </div>
+    <div class="reimb-row">
+      <span><strong>Total Monthly Spend</strong></span>
+      <span style="margin-left:auto;padding-left:20px;color:#15B4D6;font-weight:700;"><strong>$5,241/mo</strong></span>
+    </div>
+    <div class="reimb-row">
+      <span><strong>Total Monthly Eligible (AAA)</strong></span>
+      <span style="margin-left:auto;padding-left:20px;color:#15B4D6;font-weight:700;"><strong>$4,891/mo</strong></span>
+    </div>
+    <div class="reimb-row">
+      <span><strong>AAA Reimburses (50%)</strong></span>
+      <span style="margin-left:auto;padding-left:20px;color:#059669;font-weight:700;"><strong>$2,446/mo back</strong></span>
+    </div>
+    <div class="reimb-row">
+      <span><strong>Net Out-of-Pocket</strong></span>
+      <span style="margin-left:auto;padding-left:20px;font-weight:700;"><strong>$2,795/mo</strong></span>
+    </div>
+  </div>
+
+  <!-- Quarterly view -->
+  <div class="section-label">Quarterly Reimbursement View — Q1 vs. Q2</div>
+
+  <div style="background:#fef9c3;border:1.5px solid #fbbf24;border-radius:8px;padding:11px 16px;font-size:12px;color:#78350f;margin-bottom:14px;">
+    <strong>Q1 Deadline: June 30, 2026 — 21 days remaining.</strong> AI employees are already live. Campaign 1 ads are running. Q1 reimbursement will not hit the $5,000 cap due to limited time remaining — Q2 is structured to hit the cap exactly. Submit Campaign 2 EADS pre-approval by June 20 for a clean July 1 launch.
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th style="width:36%;">Item</th>
+        <th>Q1 Spend<br/><span style="font-weight:400;font-size:10px;">June 9–30 (in progress)</span></th>
+        <th>Q1 Reimbursed</th>
+        <th>Q2 Spend<br/><span style="font-weight:400;font-size:10px;">July–Sept (full quarter)</span></th>
+        <th>Q2 Reimbursed</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Campaign 1 — Estancia (ads + mail) <span style="font-size:10px;color:#059669;">ACTIVE</span></td>
+        <td>$1,260 <span style="font-size:10px;color:#999;">(3 wks)</span></td>
+        <td class="green">$630</td>
+        <td>$2,700</td>
+        <td class="green">$1,350</td>
+      </tr>
+      <tr>
+        <td>Campaign 2 — New Roof (ads + mail)</td>
+        <td style="color:#ccc;">—</td>
+        <td style="color:#ccc;">—</td>
+        <td>$1,950</td>
+        <td class="green">$975</td>
+      </tr>
+      <tr>
+        <td>AI Sales Agent / CRM <span style="font-size:10px;color:#059669;">LIVE</span></td>
+        <td>$597</td>
+        <td class="green">$299</td>
+        <td>$1,791</td>
+        <td class="green">$896</td>
+      </tr>
+      <tr>
+        <td>AI Voice Receptionist <span style="font-size:10px;color:#059669;">LIVE</span></td>
+        <td>$697</td>
+        <td class="green">$349</td>
+        <td>$2,091</td>
+        <td class="green">$1,046 <span style="font-size:10px;color:#999;">(cap limit)</span></td>
+      </tr>
+      <tr>
+        <td>AI Webchat Receptionist <span style="font-size:10px;color:#059669;">LIVE</span></td>
+        <td>$497</td>
+        <td class="green">$249</td>
+        <td>$1,491</td>
+        <td class="green">$733 <span style="font-size:10px;color:#999;">(cap limit)</span></td>
+      </tr>
+      <tr>
+        <td>IT Support &amp; System Management</td>
+        <td>$350</td>
+        <td style="color:#ccc;">—</td>
+        <td>$1,050</td>
+        <td style="color:#ccc;">—</td>
+      </tr>
+      <tr class="total-row">
+        <td><strong>Totals</strong></td>
+        <td class="blue"><strong>$3,401</strong></td>
+        <td class="green"><strong>$1,527</strong></td>
+        <td class="blue"><strong>$11,073</strong></td>
+        <td class="green"><strong>$5,000 (cap hit)</strong></td>
+      </tr>
+      <tr style="background:#f9f9f9;">
+        <td><strong>Net Out-of-Pocket</strong></td>
+        <td colspan="2" style="text-align:center;font-weight:700;">$1,874</td>
+        <td colspan="2" style="text-align:center;font-weight:700;color:#059669;"><strong>$6,073</strong></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div style="background:#fefce8;border:1.5px solid #fbbf24;border-radius:8px;padding:12px 16px;font-size:12px;color:#78350f;margin-bottom:20px;">
+    <strong>Next action:</strong> Submit Campaign 2 EADS pre-approval by June 20 for a July 1 launch. Q2 eligible spend is structured at $10,023 to hit the $5,000 reimbursement cap exactly — no budget is wasted above the cap.
+  </div>
+
+  <hr class="divider" />
+
+  <!-- ═══════════════════════════════════════════
+       LOCAL SEO
+  ════════════════════════════════════════════ -->
+  <div class="section-label">Organic Growth — Local SEO</div>
+  <div class="campaign-bar dark">
+    <div class="c-left">
+      <div class="c-tag">Long-Term Visibility</div>
+      <div class="c-name">Local SEO Strategy</div>
+      <div class="c-desc">Free organic leads from Google Search and Google Maps — compounds over time while paid ads stop the moment you pause spend</div>
+    </div>
+    <div class="c-right">
+      <span class="c-pill">No Ad Spend Required</span>
+      <span class="c-goal">Results build month over month</span>
+    </div>
+  </div>
+
+  <div class="three-col">
+    <div class="card blue-border">
+      <div class="card-icon">📍</div>
+      <div class="card-title">Google Business Profile (GBP)</div>
+      <div class="card-body">Your GBP listing is the #1 driver of local search visibility. Optimizing it correctly puts Worthington Agency in the Map Pack — the three businesses that appear above all organic results.</div>
+      <ul>
+        <li>Complete every field — services, hours, categories</li>
+        <li>Add "AAA Insurance Agent — Wesley Chapel" as primary category</li>
+        <li>Upload 10+ photos of the office and team</li>
+        <li>Post weekly updates (offers, tips, news)</li>
+        <li>Add service area cities: Wesley Chapel, Land O' Lakes, Zephyrhills, New Tampa</li>
+      </ul>
+    </div>
+    <div class="card blue-border">
+      <div class="card-icon">⭐</div>
+      <div class="card-title">Review Generation</div>
+      <div class="card-body">Google ranks local businesses heavily by review volume and recency. The AI Sales Agent can automatically request reviews after every closed policy — a set-it-and-forget engine that builds your rating while you sleep.</div>
+      <ul>
+        <li>Automated review request via CRM after close</li>
+        <li>Text + email sequence: "How was your experience?"</li>
+        <li>Target: 5+ new Google reviews per month</li>
+        <li>Respond to every review within 24 hours</li>
+        <li>Goal: 50+ reviews with 4.8+ average by month 6</li>
+      </ul>
+    </div>
+    <div class="card blue-border">
+      <div class="card-icon">🗂</div>
+      <div class="card-title">Citation &amp; NAP Consistency</div>
+      <div class="card-body">Google cross-references your business name, address, and phone number (NAP) across dozens of directories. Inconsistencies hurt your Map Pack ranking. Consistent citations build authority.</div>
+      <ul>
+        <li>Audit and fix listings on Yelp, BBB, Yellow Pages, Apple Maps, Bing Places</li>
+        <li>Submit to insurance-specific directories (InsureMe, NetQuote, Trusted Choice)</li>
+        <li>Ensure NAP matches exactly across every platform</li>
+        <li>Add Wesley Chapel Chamber of Commerce listing</li>
+        <li>NTBCC partnership listing (if applicable)</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="three-col">
+    <div class="card">
+      <div class="card-icon">📝</div>
+      <div class="card-title">Local Content Strategy</div>
+      <div class="card-body">Google rewards businesses that publish location-specific, helpful content. These pages rank for searches like "homeowners insurance Wesley Chapel" and bring in leads without ad spend.</div>
+      <ul>
+        <li>"Home Insurance in Wesley Chapel, FL" — service page</li>
+        <li>"AAA Auto + Home Bundle — Tampa Bay" — bundle page</li>
+        <li>"Insurance for Older Homes with New Roofs in Florida" — blog post</li>
+        <li>"Best Neighborhoods to Buy a Home in Wesley Chapel" — community post</li>
+        <li>Monthly blog: Florida insurance tips, hurricane prep, roof replacement guides</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-icon">🔗</div>
+      <div class="card-title">Local Link Building</div>
+      <div class="card-body">Links from local websites signal to Google that you are a trusted Wesley Chapel business. These are earned, not paid — and they permanently boost your organic ranking.</div>
+      <ul>
+        <li>North Tampa Bay Chamber of Commerce member page</li>
+        <li>Roofing company partner cross-links (Campaign 2 synergy)</li>
+        <li>Wesley Chapel community blogs and neighborhood Facebook groups</li>
+        <li>AAA member directory listing</li>
+        <li>Sponsor local events for press mentions</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-icon">📊</div>
+      <div class="card-title">Tracking &amp; Reporting</div>
+      <div class="card-body">Local SEO results are measurable. Monthly reporting shows exactly how your visibility grows and where leads are coming from.</div>
+      <ul>
+        <li>Google Business Profile insights (calls, direction requests, searches)</li>
+        <li>Google Search Console — keyword rankings by month</li>
+        <li>Map Pack position tracking for target keywords</li>
+        <li>Review count and average rating trend</li>
+        <li>Organic vs. paid lead source attribution in CRM</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- SEO Timeline -->
+  <div class="section-label">Local SEO — What to Expect</div>
+  <table>
+    <thead>
+      <tr>
+        <th>Timeframe</th>
+        <th>Milestone</th>
+        <th>Expected Outcome</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Month 1</td>
+        <td>GBP fully optimized, citations fixed, review system live</td>
+        <td>Appear in more local searches, review requests start flowing</td>
+      </tr>
+      <tr>
+        <td>Month 2–3</td>
+        <td>10–20 new reviews, local content pages published</td>
+        <td>Map Pack appearances for "AAA insurance Wesley Chapel" type searches</td>
+      </tr>
+      <tr>
+        <td>Month 4–6</td>
+        <td>30–50 reviews, 5+ blog posts indexed, local links building</td>
+        <td>Consistent Page 1 rankings, organic calls begin reducing ad dependency</td>
+      </tr>
+      <tr class="total-row">
+        <td>Month 6+</td>
+        <td>Established local authority, compounding traffic</td>
+        <td>Organic leads reduce cost-per-acquisition significantly over time</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <hr class="divider" />
+
+  <!-- 90-Day Plan -->
+  <div class="section-label">90-Day Action Plan</div>
+  <div class="timeline">
+    <div class="timeline-phase">
+      <div class="phase-tag">Month 1 — In Progress (June)</div>
+      <div class="phase-name">Already Live — What's Next</div>
+      <ul>
+        <li style="color:#059669;font-weight:600;">DONE: AI employees active in system</li>
+        <li style="color:#059669;font-weight:600;">DONE: Campaign 1 ads running</li>
+        <li style="color:#059669;font-weight:600;">DONE: EADS pre-approval submitted</li>
+        <li style="color:#059669;font-weight:600;">DONE: Review automation in CRM live</li>
+        <li style="color:#059669;font-weight:600;">DONE: Campaign 1 direct mail sent</li>
+        <li>Submit Campaign 2 EADS pre-approval by June 20</li>
+        <li>Optimize Google Business Profile fully</li>
+        <li>Audit + fix all citation listings</li>
+        <li>Publish first local content page</li>
+      </ul>
+    </div>
+    <div class="timeline-phase">
+      <div class="phase-tag">Month 2 — Activate (July)</div>
+      <div class="phase-name">Scale &amp; Optimize</div>
+      <ul>
+        <li>Launch Campaign 2 (new roof targeting)</li>
+        <li>Begin roofing company partnership outreach</li>
+        <li>Review lead quality from AI webchat</li>
+        <li>Optimize Facebook ads based on CTR data</li>
+        <li>Send Campaign 2 direct mail drop</li>
+        <li>Publish 2 blog posts (older homes, bundle savings)</li>
+        <li>Begin local link outreach (chamber, partners)</li>
+        <li>Track closed policies per campaign source</li>
+        <li>Submit Q2 EADS pre-approval</li>
+      </ul>
+    </div>
+    <div class="timeline-phase">
+      <div class="phase-tag">Month 3 — Optimize (August)</div>
+      <div class="phase-name">Review &amp; Renew</div>
+      <ul>
+        <li>Submit Q1 reimbursement documentation</li>
+        <li>Review cost-per-lead by channel</li>
+        <li>Double down on best-performing ad sets</li>
+        <li>Check Map Pack rankings — adjust GBP</li>
+        <li>Review count check — target 15+ reviews</li>
+        <li>Publish 2 more local content pieces</li>
+        <li>Plan Q3 budget based on closed policies</li>
+        <li>Report: organic vs. paid lead split</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div>Shark Branding Solutions &mdash; <strong>sharkbrandingsolutions.com</strong></div>
+    <div>Prepared for Worthington Agency — AAA Insurance, Wesley Chapel FL</div>
+    <div>Confidential &mdash; Not for distribution</div>
+  </div>
+
+</div>
+</body>
+</html>

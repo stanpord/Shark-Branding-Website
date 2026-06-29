@@ -2,12 +2,12 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'What Is an AI Employee? A Plain-English Guide for Local Businesses — Shark Branding Solutions',
-  description: 'An AI employee is a software agent trained to do a specific job in your business automatically — lead follow-up, review management, booking, content. Here\'s how they work.',
+  title: 'AI Employees Explained: What They Do | Shark AI Solutions',
+  description: 'An AI employee is a software agent trained to do a specific job in your business automatically, lead follow-up, review management, booking, content. Here\'s how they work.',
   alternates: { canonical: 'https://sharkbrandingsolutions.com/resources/blog-what-is-an-ai-employee' },
   openGraph: {
     title: 'What Is an AI Employee? A Plain-English Guide for Local Businesses',
-    description: 'AI employees handle lead follow-up, review responses, appointment booking, and content — automatically. Here\'s what they actually are and how they work.',
+    description: 'AI employees handle lead follow-up, review responses, appointment booking, and content, automatically. Here\'s what they actually are and how they work.',
     url: 'https://sharkbrandingsolutions.com/resources/blog-what-is-an-ai-employee',
     type: 'article',
   },
@@ -38,15 +38,25 @@ const structuredData = {
   keywords: ['AI employee', 'AI automation', 'AI employees Wesley Chapel', 'business automation Tampa Bay', 'AI chatbot vs AI employee'],
   articleSection: 'AI Employees',
 }
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://sharkbrandingsolutions.com' },
+    { '@type': 'ListItem', position: 2, name: 'Resources', item: 'https://sharkbrandingsolutions.com/resources' },
+    { '@type': 'ListItem', position: 3, name: structuredData.headline, item: 'https://sharkbrandingsolutions.com/resources/blog-what-is-an-ai-employee' },
+  ],
+}
+
 
 const faqs = [
   {
     q: 'What is an AI employee?',
-    a: 'An AI employee is a software agent trained to perform a specific job function in your business automatically — such as responding to leads, managing reviews, booking appointments, or publishing content. Unlike a generic chatbot, each AI employee is configured for your specific workflows, your brand voice, and your business goals.',
+    a: 'An AI employee is a software agent trained to perform a specific job function in your business automatically, such as responding to leads, managing reviews, booking appointments, or publishing content. Unlike a generic chatbot, each AI employee is configured for your specific workflows, your brand voice, and your business goals.',
   },
   {
     q: 'How is an AI employee different from a chatbot?',
-    a: 'A chatbot answers questions. An AI employee takes action. It qualifies leads, books calendar appointments, sends follow-up sequences across email and SMS, requests reviews after completed jobs, and logs everything to your CRM — without a human triggering each step.',
+    a: 'A chatbot answers questions. An AI employee takes action. It qualifies leads, books calendar appointments, sends follow-up sequences across email and SMS, requests reviews after completed jobs, and logs everything to your CRM, without a human triggering each step.',
   },
   {
     q: 'What tasks can AI employees handle?',
@@ -54,7 +64,7 @@ const faqs = [
   },
   {
     q: 'Do AI employees work for local businesses in Wesley Chapel and Tampa Bay?',
-    a: 'Yes. AI employees are particularly effective for local service businesses — home services, real estate, HVAC, healthcare, legal, and contractors — where leads come in at unpredictable hours and manual follow-up is inconsistent.',
+    a: 'Yes. AI employees are particularly effective for local service businesses, home services, real estate, HVAC, healthcare, legal, and contractors, where leads come in at unpredictable hours and manual follow-up is inconsistent.',
   },
 ]
 
@@ -65,6 +75,7 @@ export default function WhatIsAnAiEmployeePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -147,7 +158,7 @@ export default function WhatIsAnAiEmployeePage() {
 
             <h2 className="text-[26px] font-bold text-[#0a0a0a] mt-12 mb-4">The five AI employees and what each one does</h2>
 
-            <p>At Shark Branding Solutions, we build five core AI employees for local businesses. Each one handles a specific part of your operations:</p>
+            <p>At Shark AI Solutions, we build five core AI employees for local businesses. Each one handles a specific part of your operations:</p>
 
             <div className="space-y-5 my-8">
               {[

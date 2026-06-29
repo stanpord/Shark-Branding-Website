@@ -2,15 +2,15 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Review Generation Automation | Shark Branding Solutions',
+  title: 'Review Generation Automation | Shark AI Solutions',
   description: 'Automated review requests for Wesley Chapel and Tampa Bay. Post-job SMS requests, smart follow-up, and brand-voice responses to every review. Live in one week.',
   alternates: { canonical: 'https://sharkbrandingsolutions.com/automation/review-generation' },
   openGraph: {
-    title: 'Review Generation Automation | Shark Branding Solutions',
+    title: 'Review Generation Automation | Shark AI Solutions',
     description: 'Stop leaving review opportunities uncollected after every completed job. Automated review requests and responses configured for your business.',
     url: 'https://sharkbrandingsolutions.com/automation/review-generation',
     type: 'website',
-    images: [{ url: 'https://sharkbrandingsolutions.com/logo.webp', width: 1200, height: 630, alt: 'Review Generation Automation — Shark Branding Solutions' }],
+    images: [{ url: 'https://sharkbrandingsolutions.com/logo.webp', width: 1200, height: 630, alt: 'Review Generation Automation | Shark AI Solutions' }],
   },
 }
 
@@ -38,7 +38,7 @@ const structuredData = {
         {
           '@type': 'Question',
           name: 'How does automated review generation work for Wesley Chapel businesses?',
-          acceptedAnswer: { '@type': 'Answer', text: 'After every completed job or transaction, the automation sends a personalized SMS to the customer requesting a Google review. If there is no response within 48 hours, a second message goes out. Every review that comes in — positive or critical — receives a brand-voice response within two hours, automatically. The entire process runs without any input from your team.' },
+          acceptedAnswer: { '@type': 'Answer', text: 'After every completed job or transaction, the automation sends a personalized SMS to the customer requesting a Google review. If there is no response within 48 hours, a second message goes out. Every review that comes in, positive or critical, receives a brand-voice response within two hours, automatically. The entire process runs without any input from your team.' },
         },
         {
           '@type': 'Question',
@@ -142,12 +142,12 @@ export default function ReviewGenerationPage() {
               {
                 step: '03',
                 title: 'Smart follow-up',
-                body: 'If there is no response after 48 hours, a second message goes out. After that, the sequence ends — no aggressive spam, no harassing satisfied customers.',
+                body: 'If there is no response after 48 hours, a second message goes out. After that, the sequence ends, no aggressive spam, no harassing satisfied customers.',
               },
               {
                 step: '04',
                 title: 'Automatic response',
-                body: 'Every review that comes in — five stars or one star — gets a brand-voice response within two hours. Positive reviews are acknowledged warmly. Critical reviews are handled professionally and constructively.',
+                body: 'Every review that comes in, five stars or one star, gets a brand-voice response within two hours. Positive reviews are acknowledged warmly. Critical reviews are handled professionally and constructively.',
               },
             ].map((s) => (
               <div key={s.step} className="bg-[#f5f5f7] rounded-[20px] p-7 border border-[#e8e8ed]">
@@ -168,7 +168,7 @@ export default function ReviewGenerationPage() {
             One new review per week is 52 reviews per year.
           </h2>
           <p className="text-[17px] text-[#555] leading-relaxed mb-8">
-            A service business completing 10 to 15 jobs per week, with a 35 percent review response rate, collects 3 to 5 new reviews every week. At that pace, a business with 20 reviews today has over 150 in a year — putting them in the top tier of their category for review count in Wesley Chapel and Tampa Bay.
+            A service business completing 10 to 15 jobs per week, with a 35 percent review response rate, collects 3 to 5 new reviews every week. At that pace, a business with 20 reviews today has over 150 in a year, putting them in the top tier of their category for review count in Wesley Chapel and Tampa Bay.
           </p>
           <p className="text-[17px] text-[#555] leading-relaxed">
             That is not just a vanity metric. More reviews means higher local search rankings, more trust from prospective customers, and more citations from AI search tools that use review count as a credibility signal.

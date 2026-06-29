@@ -35,7 +35,7 @@ export default function HomepageAnimations() {
   useEffect(() => {
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
     if (window.matchMedia('(pointer: coarse)').matches) {
-      // Mobile: lighter effects only — no pinning, simpler reveals
+      // Mobile: lighter effects only, no pinning, simpler reveals
       initMobile(); return
     }
 
@@ -365,7 +365,7 @@ function initCTA(gsap: any, ScrollTrigger: any): () => void {
 
 // ─── MOBILE (reduced set) ─────────────────────────────────────────────────
 function initMobile() {
-  // Simple fade-in via IntersectionObserver — no GSAP needed on mobile
+  // Simple fade-in via IntersectionObserver, no GSAP needed on mobile
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {

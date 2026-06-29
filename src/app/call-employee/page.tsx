@@ -4,7 +4,7 @@ import { botsLoginAction } from '../employees/actions'
 import CallBot from './CallBot'
 
 export const metadata: Metadata = {
-  title: 'Call Employee — Shark AI Internal',
+  title: 'Call Employee, Shark AI Internal',
   robots: { index: false, follow: false },
 }
 

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import BlogShell from "@/components/BlogShell";
 
 export const metadata: Metadata = {
-  title: "How to Rank on ChatGPT for Local Businesses | Shark Branding",
+  title: "Rank Your Local Business on ChatGPT | Shark AI Solutions",
   description:
     "A practical guide for local business owners on getting recommended by ChatGPT, Gemini, and Google AI Overviews. Fix your citations, schema, and trust signals.",
   alternates: {
@@ -26,7 +26,7 @@ export default function Page() {
       date="June 12, 2026"
       readTime="9 min read"
       heroImage="/ai-visibility-hero.webp"
-      heroAlt="AI visibility for local businesses — ChatGPT and Gemini recommendations"
+      heroAlt="AI visibility for local businesses, ChatGPT and Gemini recommendations"
       relatedPosts={[
         { href: "/resources/blog-end-of-local-seo-ai-visibility", title: "What the End of Local SEO Means for Your Business", category: "AI Visibility" },
         { href: "/resources/blog-ai-map-consistent-business-listings", title: "Why Consistent Business Listings Are the Secret to Being Found by AI", category: "AI Visibility" },
@@ -178,7 +178,7 @@ export default function Page() {
 
       <h2>How Long Does It Take to See Results?</h2>
       <p>
-        Most businesses working with Shark Branding Solutions see measurable movement in AI
+        Most businesses working with Shark AI Solutions see measurable movement in AI
         visibility within 7 to 30 days of implementation. Citation corrections propagate
         quickly. Schema updates are processed within days. Review volume builds over time.
       </p>

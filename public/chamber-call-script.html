@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chamber Affinity Program – Call Script</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 14px;
+    color: #1a1a1a;
+    background: #f4f6f8;
+    padding: 30px 20px;
+  }
+  .page {
+    max-width: 860px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+  }
+  header {
+    background: #0f3a4a;
+    color: #fff;
+    padding: 28px 36px 22px;
+  }
+  header img { height: 48px; margin-bottom: 12px; display: block; }
+  header h1 { font-size: 22px; font-weight: 700; letter-spacing: 0.3px; }
+  header p { font-size: 13px; color: #7ed6ea; margin-top: 4px; }
+  .badge {
+    display: inline-block;
+    background: #15B4D6;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+
+  .body-wrap { padding: 32px 36px; }
+
+  .quick-ref {
+    background: #eaf9fc;
+    border-left: 4px solid #15B4D6;
+    border-radius: 6px;
+    padding: 14px 18px;
+    margin-bottom: 28px;
+    font-size: 13px;
+    line-height: 1.8;
+  }
+  .quick-ref strong { color: #0f3a4a; }
+
+  h2 {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: #15B4D6;
+    margin-bottom: 10px;
+    margin-top: 28px;
+    border-bottom: 1px solid #e0f5fa;
+    padding-bottom: 5px;
+  }
+  h2:first-of-type { margin-top: 0; }
+
+  .step {
+    margin-bottom: 24px;
+  }
+  .step-label {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #888;
+    margin-bottom: 4px;
+  }
+  .script-block {
+    background: #f0fafd;
+    border-radius: 6px;
+    padding: 14px 18px;
+    line-height: 1.8;
+    font-size: 14px;
+    border-left: 3px solid #15B4D6;
+  }
+  .script-block em {
+    color: #0f7a95;
+    font-style: normal;
+    font-weight: 600;
+  }
+  .note {
+    background: #fff8e6;
+    border-left: 3px solid #F9DB79;
+    border-radius: 4px;
+    padding: 10px 14px;
+    font-size: 12.5px;
+    color: #6b5a00;
+    margin-top: 8px;
+    line-height: 1.6;
+  }
+
+  .objection-block {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 14px;
+    overflow: hidden;
+  }
+  .objection-q {
+    background: #f7f7f7;
+    padding: 10px 16px;
+    font-weight: 700;
+    font-size: 13px;
+    color: #333;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  .objection-a {
+    padding: 12px 16px;
+    font-size: 13.5px;
+    line-height: 1.75;
+    background: #fff;
+  }
+
+  .pricing-row {
+    display: flex;
+    gap: 16px;
+    margin: 16px 0;
+  }
+  .pricing-card {
+    flex: 1;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+  }
+  .pricing-card.primary {
+    background: #0f3a4a;
+    color: #fff;
+  }
+  .pricing-card.secondary {
+    background: #eaf9fc;
+    border: 1px solid #15B4D6;
+    color: #0f3a4a;
+  }
+  .pricing-card .amount {
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 1;
+  }
+  .pricing-card .period { font-size: 13px; opacity: 0.75; margin-top: 2px; }
+  .pricing-card .term { font-size: 12px; margin-top: 6px; font-weight: 600; }
+
+  .checklist { padding-left: 0; list-style: none; }
+  .checklist li {
+    padding: 5px 0 5px 24px;
+    position: relative;
+    font-size: 13.5px;
+    line-height: 1.5;
+  }
+  .checklist li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #15B4D6;
+    font-weight: 700;
+  }
+
+  .flow-steps {
+    counter-reset: flow;
+    padding-left: 0;
+    list-style: none;
+  }
+  .flow-steps li {
+    counter-increment: flow;
+    padding: 10px 0 10px 44px;
+    position: relative;
+    border-bottom: 1px dashed #e8e8e8;
+    font-size: 13.5px;
+    line-height: 1.6;
+  }
+  .flow-steps li:last-child { border-bottom: none; }
+  .flow-steps li::before {
+    content: counter(flow);
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 28px;
+    height: 28px;
+    background: #15B4D6;
+    color: #fff;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer {
+    background: #0f3a4a;
+    color: #7ed6ea;
+    text-align: center;
+    padding: 16px;
+    font-size: 12px;
+  }
+  footer span { color: #fff; font-weight: 600; }
+
+  @media print {
+    body { background: #fff; padding: 0; }
+    .page { box-shadow: none; border-radius: 0; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <img src="SBS_Blue_Logo.png" alt="Shark Branding Solutions">
+    <h1>Chamber Affinity Program – Call Script</h1>
+    <p>North Tampa Bay Chamber of Commerce | Local Business Toolkit</p>
+    <div class="badge">Caller Reference Guide</div>
+  </header>
+
+  <div class="body-wrap">
+
+    <!-- QUICK REFERENCE -->
+    <div class="quick-ref">
+      <strong>Product:</strong> The Local Business Toolkit (AI Search Visibility + Listings + Reputation)<br>
+      <strong>Audience:</strong> North Tampa Bay Chamber members — small and mid-size local businesses<br>
+      <strong>Offer:</strong> Free AI Visibility Audit (no obligation) then present toolkit<br>
+      <strong>Pricing:</strong> $397/mo (12-month) or $497/mo (3-month) — Chamber exclusive rates<br>
+      <strong>Goal of this call:</strong> Book a 30-minute audit screen-share call — do NOT hard sell on first contact<br>
+      <strong>Email:</strong> chamber@sharkbrandingsolutions.com &nbsp;|&nbsp; <strong>Phone:</strong> (720) 855-6505
+    </div>
+
+
+    <!-- SECTION 1: OPENING -->
+    <h2>Step 1 — Opening (Warm Introduction)</h2>
+    <div class="step">
+      <div class="step-label">Say this when they answer</div>
+      <div class="script-block">
+        "Hi, may I speak with <em>[Contact Name]</em>?<br><br>
+        Hi <em>[Name]</em>, my name is <em>[Your Name]</em> and I'm calling on behalf of Shark Branding Solutions. We're the marketing partner for the North Tampa Bay Chamber of Commerce.<br><br>
+        Do you have about 60 seconds? I promise I'll keep it quick."
+      </div>
+      <div class="note">If they say they're busy: "Absolutely, no problem. When would be a better time to reach you? It really is just 60 seconds, I promise it's worth it."</div>
+    </div>
+
+    <div class="step">
+      <div class="step-label">Once you have their attention</div>
+      <div class="script-block">
+        "We're working with the chamber right now on something exclusive for members. The way people search for businesses has completely changed. Google AI, ChatGPT, Apple Maps, voice search — these are all pulling results differently now, and most local businesses have no idea how they're showing up, or if they're showing up at all.<br><br>
+        What we're offering chamber members is a completely <em>free AI visibility audit</em> — no strings attached. We pull a report that shows exactly where your business is and is not showing up across AI search, and we walk you through it together. Takes about 30 minutes.<br><br>
+        Would that be something useful for you?"
+      </div>
+    </div>
+
+
+    <!-- SECTION 2: QUALIFYING -->
+    <h2>Step 2 — Quick Qualifying Questions</h2>
+    <div class="note" style="margin-bottom:14px;">If they say yes to the audit, ask 2-3 quick questions before booking so the audit is personalized. Keep it conversational.</div>
+
+    <ul class="checklist">
+      <li>"Are you currently doing any digital marketing or running any ads?" <em style="color:#888; font-size:12px; font-weight:400;">(understand their baseline)</em></li>
+      <li>"Do you have a Google Business Profile set up?" <em style="color:#888; font-size:12px; font-weight:400;">(almost all do, helps set up the conversation)</em></li>
+      <li>"If someone types your service into ChatGPT or Google AI right now, do you know if you come up?" <em style="color:#888; font-size:12px; font-weight:400;">(creates curiosity)</em></li>
+      <li>"Are you the right person to talk to about marketing decisions, or is there someone else I should loop in?" <em style="color:#888; font-size:12px; font-weight:400;">(get the decision maker)</em></li>
+    </ul>
+
+
+    <!-- SECTION 3: BOOKING THE AUDIT -->
+    <h2>Step 3 — Book the Audit Call</h2>
+    <div class="step">
+      <div class="script-block">
+        "Perfect. What I'll do is have our team pull your report before we meet, so when we get on the call we're looking at your actual data — not a generic demo. It's a real snapshot of how your business is showing up right now in AI search.<br><br>
+        It's a screen share call, about 30 minutes. We've got availability this week — does <em>[day]</em> or <em>[day]</em> work for you, morning or afternoon?"
+      </div>
+      <div class="note">Collect: name, business name, website URL, best email, and preferred call time. Send a calendar invite immediately after hanging up. Copy in chamber@sharkbrandingsolutions.com.</div>
+    </div>
+
+
+    <!-- SECTION 4: WHAT TO COVER IN THE AUDIT (for context) -->
+    <h2>What the Audit Shows (Context for You)</h2>
+    <div class="note" style="margin-bottom: 14px;">You don't need to explain all of this on the first call. This is background so you can answer questions intelligently.</div>
+    <ol class="flow-steps">
+      <li><strong>AI Citation Score</strong> — How many times the business shows up in ChatGPT, Google AI Overviews, and Gemini responses for relevant local searches.</li>
+      <li><strong>Listing Accuracy</strong> — There are 67+ sites AI uses to confirm a business is legitimate (name, address, phone). Most local businesses have errors, inconsistencies, or are missing entirely from many of them.</li>
+      <li><strong>Review Signals</strong> — How many reviews, which platforms, and whether reviews are being responded to (AI rewards response activity).</li>
+      <li><strong>Social Media Visibility</strong> — Whether AI can read and index their social profiles. A wrong privacy setting or missing business page = invisible to AI.</li>
+      <li><strong>Website Load Speed</strong> — AI crawlers skip pages that take more than 2 seconds to load on mobile. Most local business sites fail this.</li>
+      <li><strong>Schema / Structured Data</strong> — Whether the website has the technical code that tells AI what the business does and where it is located.</li>
+    </ol>
+
+
+    <!-- SECTION 5: PRESENTING THE TOOLKIT -->
+    <h2>Step 4 — After the Audit: Presenting the Solution</h2>
+    <div class="note" style="margin-bottom: 14px;">This happens on the audit call, not the first cold call. Use this section when you're ready to present pricing.</div>
+
+    <div class="step">
+      <div class="step-label">Transition from audit to solution</div>
+      <div class="script-block">
+        "So what you're seeing here is pretty common for local businesses right now. The good news is this is all fixable, and that's exactly what the Local Business Toolkit is built to do.<br><br>
+        Because you're a chamber member, we worked with the chamber to create an exclusive rate that's significantly lower than what we'd normally offer outside the chamber. And we handle all of this for you — you don't have to figure out the tech side."
+      </div>
+    </div>
+
+    <div class="pricing-row">
+      <div class="pricing-card primary">
+        <div class="amount">$397<span style="font-size:16px; font-weight:400">/mo</span></div>
+        <div class="period">Chamber Member Rate</div>
+        <div class="term">12-Month Commitment</div>
+        <div class="term" style="margin-top:8px; font-size:11px; opacity:0.8;">Best value — locks in your rate</div>
+      </div>
+      <div class="pricing-card secondary">
+        <div class="amount">$497<span style="font-size:16px; font-weight:400">/mo</span></div>
+        <div class="period">Chamber Member Rate</div>
+        <div class="term">3-Month Commitment</div>
+        <div class="term" style="margin-top:8px; font-size:11px; color:#888;">Flexible — move to $397 after</div>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-label">What's included — say this</div>
+      <div class="script-block">
+        "Both plans include everything: we clean up and manage your listings across all 67+ sites, we optimize your AI visibility across Google AI, ChatGPT, Gemini and the others, we work on your review strategy, we make sure your social signals are readable by AI, and you get access to our business intelligence platform where you can see all your leads and analytics in one place. You also get a monthly strategy call with our team and a weekly performance report."
+      </div>
+    </div>
+
+    <ul class="checklist" style="margin-top: 10px;">
+      <li>AI visibility monitoring across ChatGPT, Google AI, Gemini, Bing/Copilot, Perplexity</li>
+      <li>Citation cleanup and ongoing management across 67+ directories</li>
+      <li>Review monitoring and response strategy</li>
+      <li>Social media AI-readiness optimization</li>
+      <li>Business intelligence dashboard (connect Google, Facebook, Instagram, YouTube)</li>
+      <li>Weekly performance reports + monthly strategy call</li>
+      <li>Mobile app access (iOS and Android)</li>
+      <li>Works alongside your existing website team or agency</li>
+    </ul>
+
+
+    <!-- SECTION 6: OBJECTION HANDLING -->
+    <h2>Objection Handling</h2>
+
+    <div class="objection-block">
+      <div class="objection-q">"I already have someone doing my SEO / marketing."</div>
+      <div class="objection-a">
+        "That's great, and this is actually designed to work alongside them, not replace them. What most SEO agencies focus on is your website and traditional search rankings. What we focus on is specifically how AI platforms like ChatGPT, Google AI Overviews, and Gemini are reading and recommending your business. Those are two different things, and a lot of businesses are putting all their money into traditional SEO and getting skipped completely by AI search because of listing errors and missing signals outside the website. We're filling that gap."
+      </div>
+    </div>
+
+    <div class="objection-block">
+      <div class="objection-q">"I can't afford another monthly expense right now."</div>
+      <div class="objection-a">
+        "I totally understand, and I don't want to add something that doesn't pay for itself. That's why we start with the free audit — we want you to actually see the gaps first and decide if it makes sense. A lot of members are surprised how much business they're losing right now because AI isn't recommending them. At $397 a month, one or two new customers a month from AI search covers it. But again, let's look at your audit together first and you can make that call with real information."
+      </div>
+    </div>
+
+    <div class="objection-block">
+      <div class="objection-q">"I'm not sure how much AI search really matters for my type of business."</div>
+      <div class="objection-a">
+        "That's a fair question. Here's what we're seeing: Google AI now has over 2 billion monthly users. ChatGPT is close to that. When someone types 'best [your service] near me' into any of these platforms, it gives them a list of businesses. Right now you cannot pay to be at the top of that list — it's completely based on how well AI can read and trust your business data. The businesses that get recommended are the ones that have their digital foundation clean and consistent. The audit will actually show you right now where you stand, so it's not a guess."
+      </div>
+    </div>
+
+    <div class="objection-block">
+      <div class="objection-q">"How is this different from what Google already does?"</div>
+      <div class="objection-a">
+        "Google AI Overviews are actually one of the platforms we optimize for — but it's not just Google anymore. ChatGPT, Gemini, Apple's AI, Perplexity, Microsoft Copilot — people are using all of these to find local businesses now. Each one pulls from different data sources. Our job is to make sure your business data is accurate, consistent, and readable across all of them. Google Search Console helps with your website, but it doesn't fix your listings on those 67 other sites that AI uses to verify you."
+      </div>
+    </div>
+
+    <div class="objection-block">
+      <div class="objection-q">"I need to think about it / talk to my partner."</div>
+      <div class="objection-a">
+        "Of course, absolutely. Can I ask — is there any specific concern that's making you hesitate, or is it just a matter of timing? I want to make sure you have everything you need to make a good decision. What I'd suggest is we send you over the audit report so you have it in writing, and you can review it together. Would that help? And is there a good day later this week when it might make sense to reconnect?"
+      </div>
+    </div>
+
+    <div class="objection-block">
+      <div class="objection-q">"How long before I see results?"</div>
+      <div class="objection-a">
+        "Most clients start seeing movement within 30 days — you'll see your listing scores improving and your AI citation numbers going up. Full results typically build over 90 days, which is actually why we structured the short-term option around 3 months. Some AI platforms like ChatGPT refresh their index every 90 days, so that's the natural window. You'll see it in your weekly reports, and we'll walk through it with you on your monthly call."
+      </div>
+    </div>
+
+    <div class="objection-block">
+      <div class="objection-q">"Can I just do this myself?"</div>
+      <div class="objection-a">
+        "You can, and we'll actually show you exactly what needs to be fixed in the audit. The challenge is the citation cleanup alone takes about 300 hours to do manually — and every time you change an address, phone number, or anything else, you have to do it all over again. We manage that on an ongoing basis so you don't have to. But yes, the audit is yours to keep either way."
+      </div>
+    </div>
+
+
+    <!-- SECTION 7: CLOSING -->
+    <h2>Step 5 — Closing the Audit Booking</h2>
+    <div class="step">
+      <div class="script-block">
+        "So the next step is simple — I'll get your website URL and have our team pull your report before we talk. The audit itself is free, there's no obligation, and the worst case is you walk away knowing exactly where you stand with AI search right now.<br><br>
+        Can I grab your website address and the best email to send the invite to?"
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-label">If they're ready to move forward after the audit</div>
+      <div class="script-block">
+        "Great. I'll send over the terms and invoice today. Once that's processed, our team starts onboarding you right away and we'll get a kickoff call on the calendar for about a week out. That's where we connect all your accounts, walk you through the platform, and map out the first 90 days. Sound good?"
+      </div>
+    </div>
+
+
+    <!-- SECTION 8: WRAP UP -->
+    <h2>Call Wrap-Up Checklist</h2>
+    <ul class="checklist">
+      <li>Got their name, business name, website URL, and email</li>
+      <li>Booked a specific date and time for the audit call</li>
+      <li>Sent calendar invite to their email (copy chamber@sharkbrandingsolutions.com)</li>
+      <li>Noted any competitors, concerns, or current vendors they mentioned</li>
+      <li>Logged the call in CRM with next follow-up date</li>
+    </ul>
+
+    <div class="note" style="margin-top: 20px; font-size: 13px;">
+      <strong>Remember:</strong> The goal of the first call is the audit booking — not the sale. The audit does the selling. Be friendly, be brief, and get the appointment. If they're not ready to book, ask for permission to follow up in a week and send them the flyer by email.
+    </div>
+
+  </div><!-- end body-wrap -->
+
+  <footer>
+    <span>Shark Branding Solutions</span> &nbsp;|&nbsp; chamber@sharkbrandingsolutions.com &nbsp;|&nbsp; (720) 855-6505 &nbsp;|&nbsp; sharkbrandingsolutions.com
+  </footer>
+
+</div>
+</body>
+</html>

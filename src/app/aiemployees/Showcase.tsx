@@ -349,7 +349,7 @@ export default function Showcase() {
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <div className="inline-flex items-center gap-2 bg-[#f0fafd] border border-[#18b5d8]/20 rounded-full px-4 py-1.5 mb-8">
             <span className="w-1.5 h-1.5 rounded-full bg-[#18b5d8]" style={{ animation: 'blink 1.5s infinite' }} />
-            <span className="text-[#18b5d8] text-[12px] font-semibold tracking-wide">Shark AI Solutions — Tampa Bay</span>
+            <span className="text-[#18b5d8] text-[12px] font-semibold tracking-wide">Shark AI Solutions, Tampa Bay</span>
           </div>
 
           <h1 className="text-[52px] sm:text-[68px] font-extrabold text-[#1d1d1f] leading-[1.05] tracking-tight mb-6">
@@ -871,7 +871,7 @@ export default function Showcase() {
             <div style={{ background: 'linear-gradient(135deg,#18b5d8,#1282a0)' }} className="px-5 py-4 flex items-center gap-3">
               <div className="w-9 h-9 rounded-full bg-white/20 flex items-center justify-center text-white font-extrabold text-[14px]">G</div>
               <div className="flex-1">
-                <p className="text-white font-bold text-[13px]">Gemma — Chat Receptionist</p>
+                <p className="text-white font-bold text-[13px]">Gemma, Chat Receptionist</p>
                 <p className="text-white/70 text-[11px] flex items-center gap-1">
                   <span className="w-1.5 h-1.5 rounded-full bg-green-300 inline-block" style={{ animation: 'blink 1.5s infinite' }} />
                   Online · Shark AI Solutions
@@ -890,7 +890,7 @@ export default function Showcase() {
                   {m.text === '__booking__' ? (
                     <div className="bg-[#f0fafd] border-[1.5px] border-[#18b5d8] rounded-xl p-3 max-w-[80%]">
                       <p className="text-[#18b5d8] font-bold text-[11.5px] mb-2">&#128197; Appointment Confirmed</p>
-                      {[['Date','Thursday, this week'],['Time','2:00 PM EST'],['Host','Miche — Shark AI'],['Type','Live AI Demo']].map(([l,v]) => (
+                      {[['Date','Thursday, this week'],['Time','2:00 PM EST'],['Host','Miche, Shark AI'],['Type','Live AI Demo']].map(([l,v]) => (
                         <div key={l} className="flex justify-between mb-1">
                           <span className="text-[11px] text-gray-400">{l}</span>
                           <span className="text-[11px] font-semibold text-gray-800">{v}</span>

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import BookingWidget from "./BookingWidget";
 
 export const metadata: Metadata = {
-  title: "Free 15-Minute AI Assessment — Shark AI Solutions",
+  title: "Free 15-Minute AI Assessment | Shark AI Solutions",
   description:
     "Book your complimentary 15-minute AI assessment. Find out which AI employee or automation could start working in your business today.",
 };
@@ -56,7 +56,7 @@ export default function AiAssessmentPage() {
               {
                 num: "01",
                 title: "Where you're losing time",
-                body: "We look at your current workflow — lead follow-up, review management, content, bookings — and spot exactly where time is being wasted or leads are falling through.",
+                body: "We look at your current workflow, lead follow-up, review management, content, bookings, and spot exactly where time is being wasted or leads are falling through.",
               },
               {
                 num: "02",
@@ -112,7 +112,7 @@ export default function AiAssessmentPage() {
               },
               {
                 q: "What kind of businesses is this for?",
-                a: "Any local or service business that handles leads, bookings, reviews, or customer communication. HVAC, real estate, wellness, home services, professional services — if you have a sales or operations process, there's likely an AI that fits.",
+                a: "Any local or service business that handles leads, bookings, reviews, or customer communication. HVAC, real estate, wellness, home services, professional services, if you have a sales or operations process, there's likely an AI that fits.",
               },
               {
                 q: "What if I'm not ready to sign up for anything?",

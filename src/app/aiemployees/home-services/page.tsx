@@ -2,15 +2,15 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'AI Employees for Home Services | Shark Branding Solutions',
-  description: 'AI employees for home service businesses in Wesley Chapel and Tampa Bay. Lead follow-up, review requests, 24/7 chat booking, and content — live in one week.',
+  title: 'AI Employees for Home Services | Shark AI Solutions',
+  description: 'AI employees for home service businesses in Wesley Chapel and Tampa Bay. Lead follow-up, review requests, 24/7 chat booking, and content, live in one week.',
   alternates: { canonical: 'https://sharkbrandingsolutions.com/aiemployees/home-services' },
   openGraph: {
-    title: 'AI Employees for Home Services | Shark Branding Solutions',
+    title: 'AI Employees for Home Services | Shark AI Solutions',
     description: 'Stop losing home service leads to slow response times. AI employees handle inbound chat, follow-up, reviews, and booking 24/7.',
     url: 'https://sharkbrandingsolutions.com/aiemployees/home-services',
     type: 'website',
-    images: [{ url: 'https://sharkbrandingsolutions.com/logo.webp', width: 1200, height: 630, alt: 'AI Employees for Home Services — Shark Branding Solutions' }],
+    images: [{ url: 'https://sharkbrandingsolutions.com/logo.webp', width: 1200, height: 630, alt: 'AI Employees for Home Services | Shark AI Solutions' }],
   },
 }
 
@@ -38,7 +38,7 @@ const structuredData = {
         {
           '@type': 'Question',
           name: 'How do AI employees help home service businesses in Wesley Chapel?',
-          acceptedAnswer: { '@type': 'Answer', text: 'AI employees handle the tasks that cause home service businesses to lose leads: slow response times, inconsistent follow-up, and missed review requests. A chat receptionist responds to every inbound lead immediately — including after hours. An AI CRM runs follow-up sequences across email, SMS, and phone. A Reputation Specialist requests a review after every completed job.' },
+          acceptedAnswer: { '@type': 'Answer', text: 'AI employees handle the tasks that cause home service businesses to lose leads: slow response times, inconsistent follow-up, and missed review requests. A chat receptionist responds to every inbound lead immediately, including after hours. An AI CRM runs follow-up sequences across email, SMS, and phone. A Reputation Specialist requests a review after every completed job.' },
         },
         {
           '@type': 'Question',
@@ -61,16 +61,16 @@ const employees = [
     role: 'Chat Receptionist',
     color: '#18b5d8',
     colorBg: '#e8f8fc',
-    problem: 'Home service leads come in at all hours — evenings, weekends, late nights. Most go unanswered until the next business day, and by then the lead has called someone else.',
+    problem: 'Home service leads come in at all hours, evenings, weekends, late nights. Most go unanswered until the next business day, and by then the lead has called someone else.',
     solution: 'Gemma greets every visitor to your website 24/7, asks two to three qualifying questions specific to your trade, captures their contact info, and either books them directly to your calendar or schedules a callback. By morning, every overnight lead is in your pipeline with full notes.',
-    bullets: ['Responds within seconds — not hours', 'Qualifies by trade, location, and job type', 'Books to your calendar automatically', 'Handles after-hours leads every night'],
+    bullets: ['Responds within seconds, not hours', 'Qualifies by trade, location, and job type', 'Books to your calendar automatically', 'Handles after-hours leads every night'],
   },
   {
     name: 'AI CRM',
     role: 'Sales Assistant',
     color: '#18b5d8',
     colorBg: '#e8f8fc',
-    problem: 'Home service jobs are competitive. If a prospect gets a quote from three companies and yours is the slowest to follow up, you lose — even if you\'re the best option.',
+    problem: 'Home service jobs are competitive. If a prospect gets a quote from three companies and yours is the slowest to follow up, you lose, even if you\'re the best option.',
     solution: 'Every new lead gets an immediate acknowledgment, a follow-up SMS within five minutes, and a multi-touch email and phone sequence over the next five to ten days. The sequence stops the moment they reply or book. Cold leads from 30, 60, or 90 days ago get re-engagement campaigns automatically.',
     bullets: ['Immediate response to every new lead', 'Email, SMS, and phone follow-up sequences', 'Stops automatically when lead responds', 'Cold lead re-engagement built in'],
   },
@@ -80,7 +80,7 @@ const employees = [
     color: '#d4a200',
     colorBg: '#fef9e7',
     problem: 'Every home service job is a review opportunity. Most businesses leave them uncollected because asking feels awkward, they forget, or the crew is already on to the next job.',
-    solution: 'Within two hours of a completed job, your Reputation Specialist sends a personalized review request by SMS. If there\'s no response in 48 hours, a second reminder goes out. Every review that comes in — positive or critical — gets a brand-voice response within two hours, automatically.',
+    solution: 'Within two hours of a completed job, your Reputation Specialist sends a personalized review request by SMS. If there\'s no response in 48 hours, a second reminder goes out. Every review that comes in, positive or critical, gets a brand-voice response within two hours, automatically.',
     bullets: ['Post-job review requests sent automatically', 'Two-message sequence with smart timing', 'Responds to every review within 2 hours', 'Handles Google and Facebook'],
   },
 ]
@@ -111,7 +111,7 @@ export default function HomeServicesPage() {
             <span className="text-[#18b5d8]">Home Service Businesses</span>
           </h1>
           <p className="lead-airy text-[#333] max-w-[520px] mx-auto mb-12" style={{ textWrap: 'balance' }}>
-            Home service leads don&rsquo;t wait. Your AI team responds instantly, follows up consistently, and requests reviews after every job — so you close more work without adding headcount.
+            Home service leads don&rsquo;t wait. Your AI team responds instantly, follows up consistently, and requests reviews after every job, so you close more work without adding headcount.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-3">
             <Link

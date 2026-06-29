@@ -89,7 +89,7 @@ export default function Footer() {
         <div className="max-w-[1100px] mx-auto px-8 py-10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
           <div>
             <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-[#18b5d8] mb-1">Ready to get started?</p>
-            <p className="text-[22px] font-bold text-white leading-snug">See how your business appears to AI — free.</p>
+            <p className="text-[22px] font-bold text-white leading-snug">See how your business appears to AI, free.</p>
           </div>
           <Link
             href="/free-report"

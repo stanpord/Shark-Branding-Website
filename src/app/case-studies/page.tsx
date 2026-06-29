@@ -3,9 +3,9 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Case Studies — Tampa Bay AI Success | Shark Branding",
+  title: "Case Studies: Tampa Bay AI Results | Shark AI Solutions",
   description:
-    "HVAC, real estate, smart vending, and chamber of commerce — four Tampa Bay businesses that went from invisible to #1 in AI search in under 30 days.",
+    "HVAC, real estate, smart vending, and chamber of commerce, four Tampa Bay businesses that went from invisible to #1 in AI search in under 30 days.",
 };
 
 export default function CaseStudiesPage() {
@@ -64,7 +64,7 @@ export default function CaseStudiesPage() {
 
 
       {/* ══════════════════════════════════════════
-          CASE 01 — HVAC
+          CASE 01, HVAC
       ══════════════════════════════════════════ */}
       <article id="hvac">
 
@@ -115,7 +115,7 @@ export default function CaseStudiesPage() {
               <div>
                 <p className="text-[11px] font-bold tracking-[2px] uppercase text-[#18b5d8] mb-4">The Problem</p>
                 <p className="text-[#6e6e73] text-[17px] leading-relaxed">
-                  This HVAC company was doing excellent work but wasn&rsquo;t showing up where it mattered. When homeowners searched for urgent help — "same day AC repair," "emergency AC repair," "HVAC near me" — every call went to whoever ranked at the top. They were invisible right when buyers needed them most.
+                  This HVAC company was doing excellent work but wasn&rsquo;t showing up where it mattered. When homeowners searched for urgent help, "same day AC repair," "emergency AC repair," "HVAC near me", every call went to whoever ranked at the top. They were invisible right when buyers needed them most.
                 </p>
               </div>
               <div>
@@ -152,12 +152,12 @@ export default function CaseStudiesPage() {
               </div>
             </div>
 
-            {/* Live Analytics — actual screenshots */}
+            {/* Live Analytics, actual screenshots */}
             <p className="text-[11px] font-bold tracking-[2px] uppercase text-[#18b5d8] mb-5">Live Business Impact: Real Data, Real Results</p>
 
             <div className="bg-[#07141a] rounded-[20px] overflow-hidden border border-[#18b5d8]/15 mb-4">
               <div className="px-6 pt-5 pb-3">
-                <p className="text-[11px] font-bold text-[#18b5d8]/60 uppercase tracking-[0.18em]">Google Maps Local Ranking — HVAC Emergency Repair</p>
+                <p className="text-[11px] font-bold text-[#18b5d8]/60 uppercase tracking-[0.18em]">Google Maps Local Ranking, HVAC Emergency Repair</p>
               </div>
               <Image
                 src="/case-studies/hvac/maps-ranking.png"
@@ -170,7 +170,7 @@ export default function CaseStudiesPage() {
 
             <div className="bg-[#07141a] rounded-[20px] overflow-hidden border border-[#18b5d8]/15 mb-4">
               <div className="px-6 pt-5 pb-3">
-                <p className="text-[11px] font-bold text-[#18b5d8]/60 uppercase tracking-[0.18em]">Keyword Rankings — All tracked keywords moved to #1</p>
+                <p className="text-[11px] font-bold text-[#18b5d8]/60 uppercase tracking-[0.18em]">Keyword Rankings, All tracked keywords moved to #1</p>
               </div>
               <Image
                 src="/case-studies/hvac/keyword-rankings.png"
@@ -183,7 +183,7 @@ export default function CaseStudiesPage() {
 
             <div className="bg-[#07141a] rounded-[20px] overflow-hidden border border-[#18b5d8]/15 mb-14">
               <div className="px-6 pt-5 pb-3">
-                <p className="text-[11px] font-bold text-[#18b5d8]/60 uppercase tracking-[0.18em]">Marketing Dashboard — Impressions, Engagement &amp; Leads</p>
+                <p className="text-[11px] font-bold text-[#18b5d8]/60 uppercase tracking-[0.18em]">Marketing Dashboard, Impressions, Engagement &amp; Leads</p>
               </div>
               <Image
                 src="/case-studies/hvac/vendasta-dashboard.png"
@@ -212,7 +212,7 @@ export default function CaseStudiesPage() {
 
 
       {/* ══════════════════════════════════════════
-          CASE 02 — Real Estate
+          CASE 02, Real Estate
       ══════════════════════════════════════════ */}
       <article id="emorys-rock-realty">
 
@@ -260,13 +260,13 @@ export default function CaseStudiesPage() {
               <div>
                 <p className="text-[11px] font-bold tracking-[2px] uppercase text-[#18b5d8] mb-4">The Problem</p>
                 <p className="text-[#6e6e73] text-[17px] leading-relaxed">
-                  Not consistently showing up in AI-driven results. Inconsistent business data across platforms created weak trust signals for search and AI — causing buyers and sellers to land on competitors instead.
+                  Not consistently showing up in AI-driven results. Inconsistent business data across platforms created weak trust signals for search and AI, causing buyers and sellers to land on competitors instead.
                 </p>
               </div>
               <div>
                 <p className="text-[11px] font-bold tracking-[2px] uppercase text-[#18b5d8] mb-4">What We Did</p>
                 <p className="text-[#6e6e73] text-[17px] leading-relaxed">
-                  We built stronger, more consistent digital presence — aligned entity signals, strengthened local authority, and positioned Emory&rsquo;s Rock Realty to be the agent AI recommends when buyers, sellers, and investors ask who to work with.
+                  We built stronger, more consistent digital presence, aligned entity signals, strengthened local authority, and positioned Emory&rsquo;s Rock Realty to be the agent AI recommends when buyers, sellers, and investors ask who to work with.
                 </p>
               </div>
             </div>
@@ -274,7 +274,7 @@ export default function CaseStudiesPage() {
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-14">
               {[
                 { stat: "$20–$100+", label: "per click",         body: "Real estate keywords cost $20–$100+ per click. Paid visibility is expensive and temporary." },
-                { stat: "Organic",   label: "AI positioning",    body: "AI Visibility means organic positioning — showing up without paying for every click." },
+                { stat: "Organic",   label: "AI positioning",    body: "AI Visibility means organic positioning, showing up without paying for every click." },
                 { stat: "2,000+",    label: "agents outranked",  body: "In a market this large, being chosen matters more than being seen." },
               ].map((c) => (
                 <div key={c.stat} className="bg-[#f5f5f7] rounded-[16px] px-6 py-6 text-center border border-[#e5e5ea]">
@@ -317,7 +317,7 @@ export default function CaseStudiesPage() {
 
 
       {/* ══════════════════════════════════════════
-          CASE 03 — Diamond Dogs Smart Vending
+          CASE 03, Diamond Dogs Smart Vending
       ══════════════════════════════════════════ */}
       <article id="diamond-dogs">
 
@@ -380,7 +380,7 @@ export default function CaseStudiesPage() {
               {[
                 { label: "Clear Entity Definition",  body: "Structured data helped AI identify Diamond Dogs as the primary entity for this service category in the local market." },
                 { label: "Service Relevance",         body: "Site language matched how AI describes modern smart vending: AI vision, telemetry, tap-to-pay, and grab-and-go retail." },
-                { label: "Trusted Local References",  body: "Chamber and Shark Branding references gave AI an external trust path instead of relying on one website alone." },
+                { label: "Trusted Local References",  body: "Chamber and Shark AI Solutions references gave AI an external trust path instead of relying on one website alone." },
               ].map((c) => (
                 <div key={c.label} className="bg-[#f5f5f7] rounded-[16px] px-6 py-6 border border-[#e5e5ea]">
                   <p className="text-[11px] font-bold text-[#18b5d8] uppercase tracking-[1.5px] mb-3">{c.label}</p>
@@ -406,7 +406,7 @@ export default function CaseStudiesPage() {
 
 
       {/* ══════════════════════════════════════════
-          CASE 04 — North Tampa Bay Chamber
+          CASE 04, North Tampa Bay Chamber
       ══════════════════════════════════════════ */}
       <article id="north-tampa-bay-chamber">
 
@@ -454,7 +454,7 @@ export default function CaseStudiesPage() {
               <div>
                 <p className="text-[11px] font-bold tracking-[2px] uppercase text-[#18b5d8] mb-4">The Problem</p>
                 <p className="text-[#6e6e73] text-[17px] leading-relaxed">
-                  Most Chamber member businesses weren&rsquo;t showing up in AI search at all. When buyers asked AI who to trust locally, it could only recommend businesses it could verify — and most couldn&rsquo;t clear that bar. Inconsistent information caused businesses to be skipped entirely.
+                  Most Chamber member businesses weren&rsquo;t showing up in AI search at all. When buyers asked AI who to trust locally, it could only recommend businesses it could verify, and most couldn&rsquo;t clear that bar. Inconsistent information caused businesses to be skipped entirely.
                 </p>
               </div>
               <div>
@@ -511,7 +511,7 @@ export default function CaseStudiesPage() {
               More results from businesses running our AI employees.
             </h3>
             <p className="text-[16px] text-[#6e6e73] max-w-[600px] leading-relaxed">
-              These results come from businesses using the same AI employees we configure for our clients — Gemma, Reputation Specialist, AI CRM, and custom-built roles across home services, real estate, healthcare, and more.
+              These results come from businesses using the same AI employees we configure for our clients, Gemma, Reputation Specialist, AI CRM, and custom-built roles across home services, real estate, healthcare, and more.
             </p>
           </div>
 
@@ -570,7 +570,7 @@ export default function CaseStudiesPage() {
                 tag: "Automotive",
                 stat: "100%",
                 statLabel: "automated recruiting",
-                body: "While the shop owner was busy in the garage, an AI agent vetted a technician candidate, reviewed their qualifications, and confirmed a resume upload in minutes — all without any human involvement.",
+                body: "While the shop owner was busy in the garage, an AI agent vetted a technician candidate, reviewed their qualifications, and confirmed a resume upload in minutes, all without any human involvement.",
                 employee: "Custom AI Employees",
               },
             ].map((c) => (
@@ -626,7 +626,7 @@ export default function CaseStudiesPage() {
             Your competitors haven&rsquo;t done this yet. You could be next.
           </h2>
           <p className="text-white/60 text-[18px] leading-relaxed mb-3" style={{ textWrap: "balance" }}>
-            We&rsquo;ll run your business through the same audit we ran for these four clients — and show you exactly where you stand.
+            We&rsquo;ll run your business through the same audit we ran for these four clients, and show you exactly where you stand.
           </p>
           <p className="text-[14px] text-white/30 mb-12">Free. No sales pressure. Delivered in 48 hours.</p>
           <div className="flex flex-wrap items-center justify-center gap-4">

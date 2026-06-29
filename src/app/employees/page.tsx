@@ -4,7 +4,7 @@ import { botsLoginAction } from './actions'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'AI Tools — Shark AI Internal',
+  title: 'AI Tools, Shark AI Internal',
   robots: { index: false, follow: false },
 }
 

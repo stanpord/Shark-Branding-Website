@@ -49,7 +49,7 @@ export default function AiVisibilityAnimations() {
         const tl = gsap.timeline({ defaults: { ease: 'power3.out' } })
         if (label) tl.from(label, { y: -16, opacity: 0, duration: 0.55 }, 0)
         if (h1) {
-          // block fade — preserves colored <span> inside h1
+          // block fade, preserves colored <span> inside h1
           tl.from(h1, { y: 36, opacity: 0, duration: 0.75, ease: 'power3.out' }, 0.15)
         }
         if (sub) tl.from(sub, { y: 26, opacity: 0, duration: 0.7 }, 0.5)

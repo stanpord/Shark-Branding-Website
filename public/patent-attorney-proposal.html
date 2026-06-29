@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Employee Proposal — Patent Attorney | Shark Branding Solutions</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #fff;
+      color: #111;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .page {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 48px 40px;
+    }
+
+    /* Header */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 32px;
+      padding-bottom: 24px;
+      border-bottom: 3px solid #15B4D6;
+    }
+    .header-left .prepared {
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: #15B4D6;
+      margin-bottom: 6px;
+    }
+    .header-left h1 {
+      font-size: 24px;
+      font-weight: 800;
+      color: #000;
+      line-height: 1.1;
+    }
+    .header-left h1 span { color: #15B4D6; }
+    .header-left p {
+      font-size: 12.5px;
+      color: #555;
+      margin-top: 6px;
+    }
+    .header-right { text-align: right; }
+    .header-logo { height: 54px; width: auto; display: block; margin-left: auto; }
+    .header-right .url {
+      font-size: 11.5px;
+      color: #15B4D6;
+      margin-top: 6px;
+      text-align: right;
+    }
+
+    /* Intro strip */
+    .intro-strip {
+      background: #000;
+      border-radius: 10px;
+      padding: 18px 24px;
+      margin-bottom: 32px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .intro-strip .law-icon {
+      font-size: 32px;
+      flex-shrink: 0;
+    }
+    .intro-strip p {
+      font-size: 13px;
+      color: #ccc;
+      line-height: 1.6;
+    }
+    .intro-strip p strong { color: #fff; }
+
+    /* Section titles */
+    .section-title {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: #15B4D6;
+      margin-bottom: 12px;
+      margin-top: 28px;
+    }
+
+    /* Products grid */
+    .products {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .product-card {
+      border: 1.5px solid #e5e5e5;
+      border-radius: 10px;
+      padding: 18px 16px;
+    }
+    .product-card .icon { font-size: 22px; margin-bottom: 8px; }
+    .product-card .name {
+      font-size: 13px;
+      font-weight: 700;
+      color: #000;
+      margin-bottom: 4px;
+    }
+    .product-card .desc {
+      font-size: 11.5px;
+      color: #666;
+      line-height: 1.55;
+      margin-bottom: 12px;
+    }
+    .product-card .features {
+      list-style: none;
+      margin-bottom: 12px;
+    }
+    .product-card .features li {
+      font-size: 11px;
+      color: #444;
+      padding: 2px 0;
+    }
+    .product-card .features li::before {
+      content: "✓ ";
+      color: #15B4D6;
+      font-weight: 700;
+    }
+    .product-card .ind-price {
+      font-size: 11px;
+      color: #aaa;
+      border-top: 1px solid #f0f0f0;
+      padding-top: 10px;
+      margin-top: 4px;
+    }
+    .product-card .ind-price strong { color: #333; font-size: 13px; }
+
+    /* Full suite callout */
+    .suite-callout {
+      background: #000;
+      border-radius: 10px;
+      padding: 22px 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 28px;
+    }
+    .suite-callout .left .label {
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: #15B4D6;
+      margin-bottom: 5px;
+    }
+    .suite-callout .left .name {
+      font-size: 18px;
+      font-weight: 800;
+      color: #fff;
+    }
+    .suite-callout .left .desc {
+      font-size: 12px;
+      color: #888;
+      margin-top: 4px;
+    }
+    .suite-callout .right { text-align: right; }
+    .suite-callout .right .price-label {
+      font-size: 10px;
+      color: #15B4D6;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      font-weight: 700;
+    }
+    .suite-callout .right .price {
+      font-size: 42px;
+      font-weight: 800;
+      color: #fff;
+      line-height: 1;
+    }
+    .suite-callout .right .price span {
+      font-size: 15px;
+      font-weight: 400;
+      color: #888;
+    }
+    .suite-callout .right .setup {
+      font-size: 12px;
+      color: #666;
+      margin-top: 5px;
+    }
+    .suite-callout .middle { padding: 0 28px; }
+    .suite-callout .middle .pill {
+      background: #15B4D6;
+      color: #fff;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 7px 16px;
+      border-radius: 20px;
+      white-space: nowrap;
+      display: block;
+      margin-bottom: 8px;
+      text-align: center;
+    }
+    .suite-callout .middle .pill2 {
+      background: #1F7085;
+      color: #fff;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 5px 12px;
+      border-radius: 20px;
+      white-space: nowrap;
+      display: block;
+      text-align: center;
+    }
+
+    /* Savings table */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 24px;
+      font-size: 12.5px;
+    }
+    thead tr { background: #000; color: #fff; }
+    thead th {
+      padding: 11px 14px;
+      text-align: left;
+      font-weight: 600;
+      font-size: 12px;
+    }
+    thead th:not(:first-child) { text-align: center; }
+    tbody tr { border-bottom: 1px solid #f0f0f0; }
+    tbody tr:nth-child(even) { background: #fafafa; }
+    tbody tr.total-row {
+      background: #f0fbfe;
+      font-weight: 700;
+    }
+    tbody td { padding: 10px 14px; color: #333; }
+    tbody td:not(:first-child) { text-align: center; }
+    .savings-val { color: #059669; font-weight: 700; }
+    .ai-val { color: #15B4D6; font-weight: 700; }
+
+    /* ROI box */
+    .roi-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin-bottom: 28px;
+    }
+    .roi-card {
+      border: 1.5px solid #e5e5e5;
+      border-radius: 10px;
+      padding: 16px 14px;
+      text-align: center;
+    }
+    .roi-card .roi-label {
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: #999;
+      margin-bottom: 6px;
+    }
+    .roi-card .roi-val {
+      font-size: 22px;
+      font-weight: 800;
+      color: #000;
+      line-height: 1;
+    }
+    .roi-card .roi-val.blue { color: #15B4D6; }
+    .roi-card .roi-val.green { color: #059669; }
+    .roi-card .roi-sub {
+      font-size: 10.5px;
+      color: #888;
+      margin-top: 4px;
+    }
+
+    /* Why box */
+    .why-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 28px;
+    }
+    .why-card {
+      background: #f9f9f9;
+      border-radius: 10px;
+      padding: 16px 18px;
+      border-left: 3px solid #15B4D6;
+    }
+    .why-card .why-title {
+      font-size: 12px;
+      font-weight: 700;
+      color: #000;
+      margin-bottom: 5px;
+    }
+    .why-card .why-desc {
+      font-size: 11.5px;
+      color: #555;
+      line-height: 1.55;
+    }
+
+    /* Terms */
+    .terms-box {
+      background: #f9f9f9;
+      border: 1.5px solid #e5e5e5;
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin-bottom: 24px;
+    }
+    .terms-box .terms-title {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: #999;
+      margin-bottom: 12px;
+    }
+    .terms-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 16px;
+    }
+    .terms-grid .term-label {
+      font-size: 11px;
+      font-weight: 700;
+      color: #000;
+      margin-bottom: 3px;
+    }
+    .terms-grid .term-desc {
+      font-size: 11.5px;
+      color: #555;
+      line-height: 1.5;
+    }
+
+    /* Footer */
+    .footer {
+      border-top: 1px solid #e5e5e5;
+      padding-top: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 11px;
+      color: #aaa;
+    }
+    .footer strong { color: #15B4D6; }
+
+    @media print {
+      body { font-size: 12px; }
+      .page { padding: 32px 32px; }
+      @page { margin: 0.5in; }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-left">
+      <div class="prepared">Custom Proposal — Patent Law</div>
+      <h1>AI Employees for <span>Your Practice</span></h1>
+      <p>A done-for-you AI workforce built specifically for patent attorneys — live in one week.</p>
+    </div>
+    <div class="header-right">
+      <img src="SBS_Blue_Logo.png" alt="Shark Branding Solutions" class="header-logo" />
+      <div class="url">sharkbrandingsolutions.com</div>
+    </div>
+  </div>
+
+  <!-- Intro -->
+  <div class="intro-strip">
+    <div class="law-icon">⚖️</div>
+    <p>
+      Patent attorneys face a unique challenge: <strong>every missed call or slow follow-up is a potential client lost to a competitor.</strong> Inventors move fast. If they don't reach you, they find someone else. These three AI employees work 24/7 so every inquiry gets answered, every lead gets followed up, and your front office runs without adding headcount.
+    </p>
+  </div>
+
+  <!-- Products -->
+  <div class="section-title">Your Three AI Employees</div>
+  <div class="products">
+    <div class="product-card">
+      <div class="icon">📞</div>
+      <div class="name">AI Voice Receptionist</div>
+      <div class="desc">Answers every inbound call around the clock. Handles after-hours inventor inquiries so no opportunity goes to voicemail.</div>
+      <ul class="features">
+        <li>24/7 inbound call handling</li>
+        <li>Books consultations automatically</li>
+        <li>Answers FAQs about your practice</li>
+        <li>After-hours &amp; weekend coverage</li>
+        <li>Transfers urgent calls to attorney</li>
+      </ul>
+      <div class="ind-price">Individual rate: <strong>$2,200/mo</strong></div>
+    </div>
+    <div class="product-card">
+      <div class="icon">🤖</div>
+      <div class="name">AI Client Intake Agent</div>
+      <div class="desc">Follows up with every lead that contacts your firm. Nurtures potential clients from first inquiry through booked consultation.</div>
+      <ul class="features">
+        <li>Automated lead follow-up sequences</li>
+        <li>Pre-qualifies invention inquiries</li>
+        <li>Sends consultation reminders</li>
+        <li>Re-engages cold leads automatically</li>
+        <li>Tracks every prospect in your CRM</li>
+      </ul>
+      <div class="ind-price">Individual rate: <strong>$1,900/mo</strong></div>
+    </div>
+    <div class="product-card">
+      <div class="icon">💬</div>
+      <div class="name">AI Webchat Receptionist</div>
+      <div class="desc">Engages every visitor on your website instantly. Qualifies inventor inquiries and books consultations without lifting a finger.</div>
+      <ul class="features">
+        <li>Live chat on your website 24/7</li>
+        <li>Qualifies invention type &amp; stage</li>
+        <li>Books consultations from chat</li>
+        <li>Handles basic patent process FAQs</li>
+        <li>Captures leads after hours</li>
+      </ul>
+      <div class="ind-price">Individual rate: <strong>$1,600/mo</strong></div>
+    </div>
+  </div>
+
+  <!-- Full Suite -->
+  <div class="suite-callout">
+    <div class="left">
+      <div class="label">Full Suite</div>
+      <div class="name">All Three AI Employees</div>
+      <div class="desc">Voice Receptionist + Client Intake Agent + Webchat — one setup, one invoice, fully managed by SBS.</div>
+    </div>
+    <div class="middle">
+      <span class="pill">Save $700/mo vs. individual</span>
+      <span class="pill2">One-time $1,500 setup</span>
+    </div>
+    <div class="right">
+      <div class="price-label">Monthly Investment</div>
+      <div class="price">$5,000 <span>/mo</span></div>
+      <div class="setup">+ $1,500 one-time setup fee</div>
+    </div>
+  </div>
+
+  <!-- Staff Cost Savings -->
+  <div class="section-title">Cost Savings vs. Hiring Staff</div>
+  <table>
+    <thead>
+      <tr>
+        <th style="width:28%;">Role</th>
+        <th>Monthly Salary</th>
+        <th>Benefits &amp; Taxes (~30%)</th>
+        <th>Total Staff Cost</th>
+        <th>AI Employee Cost</th>
+        <th>Monthly Savings</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Legal Receptionist</td>
+        <td>$3,500–$4,800</td>
+        <td>$1,050–$1,440</td>
+        <td>$4,550–$6,240</td>
+        <td class="ai-val">$2,200</td>
+        <td class="savings-val">$2,350–$4,040</td>
+      </tr>
+      <tr>
+        <td>Client Intake Coordinator</td>
+        <td>$4,000–$5,800</td>
+        <td>$1,200–$1,740</td>
+        <td>$5,200–$7,540</td>
+        <td class="ai-val">$1,900</td>
+        <td class="savings-val">$3,300–$5,640</td>
+      </tr>
+      <tr>
+        <td>Website Chat / Admin</td>
+        <td>$3,200–$4,500</td>
+        <td>$960–$1,350</td>
+        <td>$4,160–$5,850</td>
+        <td class="ai-val">$1,600</td>
+        <td class="savings-val">$2,560–$4,250</td>
+      </tr>
+      <tr>
+        <td>After-Hours Answering Service</td>
+        <td>N/A</td>
+        <td>N/A</td>
+        <td>$600–$1,400/mo</td>
+        <td class="ai-val">Included</td>
+        <td class="savings-val">$600–$1,400</td>
+      </tr>
+      <tr class="total-row">
+        <td><strong>Total</strong></td>
+        <td><strong>$10,700–$15,100</strong></td>
+        <td><strong>$3,210–$4,530</strong></td>
+        <td><strong>$14,510–$21,030/mo</strong></td>
+        <td style="color:#15B4D6;font-weight:700;text-align:center;"><strong>$5,000/mo</strong></td>
+        <td style="color:#059669;font-weight:700;text-align:center;"><strong>$9,510–$16,030/mo</strong></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- ROI Summary -->
+  <div class="section-title">Return on Investment</div>
+  <div class="roi-grid">
+    <div class="roi-card">
+      <div class="roi-label">Monthly Savings</div>
+      <div class="roi-val green">$9,500+</div>
+      <div class="roi-sub">vs. equivalent staff costs</div>
+    </div>
+    <div class="roi-card">
+      <div class="roi-label">Annual Savings</div>
+      <div class="roi-val green">$114k+</div>
+      <div class="roi-sub">year over year</div>
+    </div>
+    <div class="roi-card">
+      <div class="roi-label">Setup Payback</div>
+      <div class="roi-val blue">&lt; 5 days</div>
+      <div class="roi-sub">one-time $1,500 fee recovered</div>
+    </div>
+    <div class="roi-card">
+      <div class="roi-label">Availability</div>
+      <div class="roi-val blue">24/7</div>
+      <div class="roi-sub">no sick days, no overtime</div>
+    </div>
+  </div>
+
+  <!-- Why it matters for patent law -->
+  <div class="section-title">Why This Matters for Patent Attorneys</div>
+  <div class="why-grid">
+    <div class="why-card">
+      <div class="why-title">Inventors don't wait</div>
+      <div class="why-desc">An inventor who can't reach your office calls the next attorney on the list. An AI receptionist answers every call in under 3 seconds — day or night — so you never lose a client to voicemail.</div>
+    </div>
+    <div class="why-card">
+      <div class="why-title">Missed leads are lost revenue</div>
+      <div class="why-desc">A single patent filing can be worth $5,000–$15,000+ in fees. If your intake process drops leads, the cost adds up fast. The AI intake agent follows up with every inquiry automatically.</div>
+    </div>
+    <div class="why-card">
+      <div class="why-title">No hiring, no training, no turnover</div>
+      <div class="why-desc">Replacing a legal receptionist costs $4,000–$8,000 in recruiting and lost productivity. Your AI employees never quit, never call in sick, and don't need retraining when processes change.</div>
+    </div>
+    <div class="why-card">
+      <div class="why-title">Scale without adding headcount</div>
+      <div class="why-desc">Whether you get 10 inquiries a month or 100, your AI employees handle the same volume at the same cost. No overtime, no additional hires — your front office scales with your caseload.</div>
+    </div>
+  </div>
+
+  <!-- Year 1 Summary -->
+  <div class="section-title">Year 1 Investment Summary</div>
+  <table>
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Cost</th>
+        <th>Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>One-time setup fee</td>
+        <td style="text-align:center;">$1,500</td>
+        <td style="text-align:center;">Discovery, build, training, launch review</td>
+      </tr>
+      <tr>
+        <td>Monthly full suite (12 months)</td>
+        <td style="text-align:center;">$60,000</td>
+        <td style="text-align:center;">$5,000/mo × 12</td>
+      </tr>
+      <tr class="total-row">
+        <td><strong>Total Year 1 Investment</strong></td>
+        <td style="text-align:center;color:#15B4D6;font-weight:700;"><strong>$61,500</strong></td>
+        <td style="text-align:center;">vs. $174,000–$252,000 in equivalent staff</td>
+      </tr>
+      <tr>
+        <td><strong>Year 1 Net Savings</strong></td>
+        <td style="text-align:center;color:#059669;font-weight:700;"><strong>$112,500–$190,500</strong></td>
+        <td style="text-align:center;">Conservative estimate based on 3-role replacement</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Terms -->
+  <div class="terms-box">
+    <div class="terms-title">Agreement Terms</div>
+    <div class="terms-grid">
+      <div>
+        <div class="term-label">Minimum Term</div>
+        <div class="term-desc">6-month minimum agreement required for all AI employee deployments.</div>
+      </div>
+      <div>
+        <div class="term-label">Cancellation Notice</div>
+        <div class="term-desc">60-day written notice required prior to cancellation after the initial term.</div>
+      </div>
+      <div>
+        <div class="term-label">What's Included</div>
+        <div class="term-desc">Setup, training, configuration, ongoing monitoring, and support — fully managed by SBS.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div>Shark Branding Solutions &mdash; <strong>sharkbrandingsolutions.com</strong></div>
+    <div>Prepared exclusively for your practice. Confidential &mdash; Not for distribution.</div>
+    <div>Questions? Contact us at sharkbrandingsolutions.com</div>
+  </div>
+
+</div>
+</body>
+</html>

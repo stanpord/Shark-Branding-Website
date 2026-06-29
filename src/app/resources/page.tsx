@@ -13,7 +13,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Resources — Shark AI Solutions",
+  title: "AI Visibility Resources & Blog | Shark AI Solutions",
   description:
     "Guides, insights, and practical advice on AI visibility, local SEO, and marketing for Tampa Bay businesses.",
 };
@@ -25,7 +25,7 @@ const resourcesSchema = {
       "@type": "CollectionPage",
       "@id": "https://sharkbrandingsolutions.com/resources",
       url: "https://sharkbrandingsolutions.com/resources",
-      name: "Resources — AI Visibility and Marketing Guides",
+      name: "Resources, AI Visibility and Marketing Guides",
       description: "Practical guides on AI visibility, GEO, local SEO, and AI employees for Tampa Bay business owners.",
       isPartOf: { "@id": "https://sharkbrandingsolutions.com/#website" },
       publisher: { "@id": "https://sharkbrandingsolutions.com/#organization" },
@@ -62,7 +62,7 @@ const posts = [
     slug: "blog-why-tampa-bay-businesses-switching-ai-employees",
     category: "AI Employees",
     title: "Why Tampa Bay Businesses Are Switching to AI Employees in 2026",
-    excerpt: "The three reasons local service businesses in Wesley Chapel and Tampa Bay are replacing manual follow-up, review requests, and receptionist tasks with AI employees — and what the results look like.",
+    excerpt: "The three reasons local service businesses in Wesley Chapel and Tampa Bay are replacing manual follow-up, review requests, and receptionist tasks with AI employees, and what the results look like.",
     date: "June 7, 2026",
     readTime: "7 min read",
     image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=900&h=420&q=80",
@@ -80,7 +80,7 @@ const posts = [
     slug: "blog-5-automations-wesley-chapel-businesses",
     category: "AI Employees",
     title: "5 Tasks Wesley Chapel Business Owners Should Automate First",
-    excerpt: "Most local businesses automate the wrong things first — or nothing at all. Here are the five automations with the fastest, most measurable ROI for service businesses in Wesley Chapel and Tampa Bay.",
+    excerpt: "Most local businesses automate the wrong things first, or nothing at all. Here are the five automations with the fastest, most measurable ROI for service businesses in Wesley Chapel and Tampa Bay.",
     date: "June 7, 2026",
     readTime: "7 min read",
     image: "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?auto=format&fit=crop&w=900&h=420&q=80",
@@ -89,7 +89,7 @@ const posts = [
     slug: "blog-what-is-an-ai-employee",
     category: "AI Employees",
     title: "What Is an AI Employee? A Plain-English Guide for Local Businesses",
-    excerpt: "An AI employee is a software agent trained to perform a specific job in your business automatically — lead follow-up, review management, booking, content. Here's how they work and why Wesley Chapel and Tampa Bay businesses are adopting them now.",
+    excerpt: "An AI employee is a software agent trained to perform a specific job in your business automatically, lead follow-up, review management, booking, content. Here's how they work and why Wesley Chapel and Tampa Bay businesses are adopting them now.",
     date: "June 7, 2026",
     readTime: "6 min read",
     image: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?auto=format&fit=crop&w=900&h=420&q=80",
@@ -324,7 +324,7 @@ export default function ResourcesPage() {
                 </div>
               ))}
 
-              {/* Free report callout — styled like a newspaper ad */}
+              {/* Free report callout, styled like a newspaper ad */}
               <div className="mt-auto border-2 border-black p-5">
                 <div className="text-[9px] font-bold uppercase tracking-[0.3em] text-[#18b5d8] mb-2 border-b border-black/10 pb-2">
                   Free for Tampa Bay Businesses

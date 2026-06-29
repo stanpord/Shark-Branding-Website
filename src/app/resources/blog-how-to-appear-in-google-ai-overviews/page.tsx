@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'How to Appear in Google AI Overviews: A Guide for Local Businesses — Shark Branding Solutions',
+  title: 'How to Appear in Google AI Overviews | Shark AI Solutions',
   description: 'How to get your local business recommended in Google AI Overviews. Covers structured data, review signals, citation consistency, and the local business signals that matter most.',
   alternates: { canonical: 'https://sharkbrandingsolutions.com/resources/blog-how-to-appear-in-google-ai-overviews' },
   openGraph: {
@@ -26,7 +26,7 @@ const structuredData = {
     '@id': 'https://sharkbrandingsolutions.com/about#josh',
     name: 'Josh Stanaland',
     url: 'https://sharkbrandingsolutions.com/about#josh',
-    jobTitle: 'Partner and CTO, Shark Branding Solutions',
+    jobTitle: 'Partner and CTO, Shark AI Solutions',
   },
   publisher: { '@id': 'https://sharkbrandingsolutions.com/#organization' },
   mainEntityOfPage: {
@@ -36,23 +36,33 @@ const structuredData = {
   keywords: ['Google AI Overviews', 'AI search optimization', 'GEO', 'local business AI visibility', 'structured data', 'schema markup'],
   articleSection: 'AI Visibility',
 }
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://sharkbrandingsolutions.com' },
+    { '@type': 'ListItem', position: 2, name: 'Resources', item: 'https://sharkbrandingsolutions.com/resources' },
+    { '@type': 'ListItem', position: 3, name: structuredData.headline, item: 'https://sharkbrandingsolutions.com/resources/blog-how-to-appear-in-google-ai-overviews' },
+  ],
+}
+
 
 const faqs = [
   {
     q: 'Do you need to rank on Google to appear in Google AI Overviews?',
-    a: 'Not necessarily. Google AI Overviews draw from a broader set of signals than traditional search ranking — including structured data, Google Business Profile completeness, review volume and recency, and entity consistency across directories. A business that ranks on page 2 for a keyword can still appear in an AI Overview for a related query if its structured signals are strong. That said, pages ranking in the top 10 do have a statistical advantage, and strong traditional SEO supports AI visibility rather than working against it.',
+    a: 'Not necessarily. Google AI Overviews draw from a broader set of signals than traditional search ranking, including structured data, Google Business Profile completeness, review volume and recency, and entity consistency across directories. A business that ranks on page 2 for a keyword can still appear in an AI Overview for a related query if its structured signals are strong. That said, pages ranking in the top 10 do have a statistical advantage, and strong traditional SEO supports AI visibility rather than working against it.',
   },
   {
     q: 'How long does it take to appear in Google AI Overviews?',
-    a: 'There is no fixed timeline, but most businesses that implement the core signals see movement within 30 to 90 days. Citation corrections propagate within weeks. Schema updates are processed within days of Googlebot recrawling your pages. Review volume builds over the first 60 to 90 days of a systematic review request program. The AI Overview surface updates continuously — it is not a one-time indexing event.',
+    a: 'There is no fixed timeline, but most businesses that implement the core signals see movement within 30 to 90 days. Citation corrections propagate within weeks. Schema updates are processed within days of Googlebot recrawling your pages. Review volume builds over the first 60 to 90 days of a systematic review request program. The AI Overview surface updates continuously, it is not a one-time indexing event.',
   },
   {
     q: 'Can a small local business appear in Google AI Overviews?',
-    a: 'Yes. Local queries are one of the most active surfaces for AI Overviews. When someone asks "best HVAC company in Wesley Chapel" or "plumber near me open on Saturday," Google AI Overviews pull from local signals specifically — Google Business Profile data, review count and recency, service area, and structured data on your website. A well-optimized local business with strong GBP signals and clean schema can outperform larger national competitors in AI Overview results for local queries.',
+    a: 'Yes. Local queries are one of the most active surfaces for AI Overviews. When someone asks "best HVAC company in Wesley Chapel" or "plumber near me open on Saturday," Google AI Overviews pull from local signals specifically, Google Business Profile data, review count and recency, service area, and structured data on your website. A well-optimized local business with strong GBP signals and clean schema can outperform larger national competitors in AI Overview results for local queries.',
   },
   {
     q: 'What is the difference between Google AI Overviews and ChatGPT recommendations?',
-    a: 'Google AI Overviews are generated by Google\'s Gemini model and pull from Google\'s index and Google Business Profile data. They appear at the top of Google search results for certain queries. ChatGPT recommendations are generated by OpenAI\'s models and pull from a separate training corpus and real-time web browsing. The optimization signals overlap — both favor structured data, consistent citations, and authoritative content — but the specific sources differ. Appearing in one does not guarantee appearing in the other.',
+    a: 'Google AI Overviews are generated by Google\'s Gemini model and pull from Google\'s index and Google Business Profile data. They appear at the top of Google search results for certain queries. ChatGPT recommendations are generated by OpenAI\'s models and pull from a separate training corpus and real-time web browsing. The optimization signals overlap, both favor structured data, consistent citations, and authoritative content, but the specific sources differ. Appearing in one does not guarantee appearing in the other.',
   },
 ]
 
@@ -63,6 +73,7 @@ export default function HowToAppearInGoogleAiOverviewsPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -114,11 +125,11 @@ export default function HowToAppearInGoogleAiOverviewsPage() {
             <h2 className="text-[26px] font-bold text-[#0a0a0a] mb-4">What are Google AI Overviews?</h2>
 
             <p>
-              Google AI Overviews are AI-generated summaries that appear at the top of Google search results for certain queries. They are generated by Google&apos;s Gemini model and synthesize information from multiple sources — your website, your Google Business Profile, directory listings, review platforms, and other content Google has indexed — into a single answer block. For local queries like &ldquo;best plumber in Wesley Chapel&rdquo; or &ldquo;HVAC company open on Saturday near me,&rdquo; AI Overviews often include a short list of recommended businesses with ratings, hours, and a brief description.
+              Google AI Overviews are AI-generated summaries that appear at the top of Google search results for certain queries. They are generated by Google&apos;s Gemini model and synthesize information from multiple sources, your website, your Google Business Profile, directory listings, review platforms, and other content Google has indexed, into a single answer block. For local queries like &ldquo;best plumber in Wesley Chapel&rdquo; or &ldquo;HVAC company open on Saturday near me,&rdquo; AI Overviews often include a short list of recommended businesses with ratings, hours, and a brief description.
             </p>
 
             <p>
-              As of 2025, AI Overviews appear on more than 60% of Google searches. For local service queries specifically — where someone is looking for a business to hire, not just information to read — AI Overviews are appearing with increasing frequency and often replacing the traditional local pack as the first thing a buyer sees.
+              As of 2025, AI Overviews appear on more than 60% of Google searches. For local service queries specifically, where someone is looking for a business to hire, not just information to read, AI Overviews are appearing with increasing frequency and often replacing the traditional local pack as the first thing a buyer sees.
             </p>
 
             <h2 className="text-[26px] font-bold text-[#0a0a0a] mt-8 mb-4">How Google selects content for AI Overviews</h2>
@@ -139,7 +150,7 @@ export default function HowToAppearInGoogleAiOverviewsPage() {
                 <p className="text-[#18b5d8] text-[11px] font-bold tracking-[0.2em] uppercase mb-2">Signal 01</p>
                 <h3 className="text-[18px] font-bold text-[#0a0a0a] mb-3">Google Business Profile completeness and activity</h3>
                 <p className="text-[15px] text-[#555] leading-relaxed">
-                  Your Google Business Profile is the single most important data source for local AI Overviews. A complete, active GBP — with accurate categories, full service descriptions, updated hours, recent photos, and weekly posts — signals to Google that this business is real, active, and authoritative in its area. A dormant GBP with missing information is one of the most common reasons a well-ranked local business does not appear in AI Overview recommendations.
+                  Your Google Business Profile is the single most important data source for local AI Overviews. A complete, active GBP, with accurate categories, full service descriptions, updated hours, recent photos, and weekly posts, signals to Google that this business is real, active, and authoritative in its area. A dormant GBP with missing information is one of the most common reasons a well-ranked local business does not appear in AI Overview recommendations.
                 </p>
               </div>
 
@@ -147,7 +158,7 @@ export default function HowToAppearInGoogleAiOverviewsPage() {
                 <p className="text-[#18b5d8] text-[11px] font-bold tracking-[0.2em] uppercase mb-2">Signal 02</p>
                 <h3 className="text-[18px] font-bold text-[#0a0a0a] mb-3">Review volume, recency, and response rate</h3>
                 <p className="text-[15px] text-[#555] leading-relaxed">
-                  Google&apos;s model reads reviews as trust signals. Volume matters — a business with 200 reviews is more confident to recommend than one with 12. Recency matters — a business getting reviews consistently signals ongoing activity. Response rate matters — responding to reviews, especially negative ones, shows engagement and professionalism. The language in reviews also influences which queries the AI associates your business with: a review that mentions &ldquo;same-day HVAC repair&rdquo; helps you appear for same-day queries.
+                  Google&apos;s model reads reviews as trust signals. Volume matters, a business with 200 reviews is more confident to recommend than one with 12. Recency matters, a business getting reviews consistently signals ongoing activity. Response rate matters, responding to reviews, especially negative ones, shows engagement and professionalism. The language in reviews also influences which queries the AI associates your business with: a review that mentions &ldquo;same-day HVAC repair&rdquo; helps you appear for same-day queries.
                 </p>
               </div>
 
@@ -155,7 +166,7 @@ export default function HowToAppearInGoogleAiOverviewsPage() {
                 <p className="text-[#18b5d8] text-[11px] font-bold tracking-[0.2em] uppercase mb-2">Signal 03</p>
                 <h3 className="text-[18px] font-bold text-[#0a0a0a] mb-3">NAP consistency across directories</h3>
                 <p className="text-[15px] text-[#555] leading-relaxed">
-                  NAP stands for Name, Address, and Phone number. When your business information is consistent across 50+ directories — Google, Yelp, Bing, Apple Maps, Facebook, industry-specific listings — the AI model can confidently attribute that entity to a real, verifiable location. When the name is slightly different on one platform, the address uses a different format on another, and the phone number is outdated on a third, the model has lower confidence and is less likely to surface your business. Citation consistency is unglamorous work with a significant impact.
+                  NAP stands for Name, Address, and Phone number. When your business information is consistent across 50+ directories, Google, Yelp, Bing, Apple Maps, Facebook, industry-specific listings, the AI model can confidently attribute that entity to a real, verifiable location. When the name is slightly different on one platform, the address uses a different format on another, and the phone number is outdated on a third, the model has lower confidence and is less likely to surface your business. Citation consistency is unglamorous work with a significant impact.
                 </p>
               </div>
 
@@ -163,7 +174,7 @@ export default function HowToAppearInGoogleAiOverviewsPage() {
                 <p className="text-[#18b5d8] text-[11px] font-bold tracking-[0.2em] uppercase mb-2">Signal 04</p>
                 <h3 className="text-[18px] font-bold text-[#0a0a0a] mb-3">Structured data on your website</h3>
                 <p className="text-[15px] text-[#555] leading-relaxed">
-                  Structured data — specifically Schema.org markup — gives Google a direct machine-readable description of your business, services, location, and reputation. A <code className="bg-[#e8e8ed] px-1 py-0.5 rounded text-[13px]">LocalBusiness</code> schema with your name, address, phone, hours, and service area removes ambiguity. A <code className="bg-[#e8e8ed] px-1 py-0.5 rounded text-[13px]">FAQPage</code> schema helps the AI match your content to specific question-based queries. A <code className="bg-[#e8e8ed] px-1 py-0.5 rounded text-[13px]">Service</code> schema for each service type helps the model understand what you do and associate your business with the right queries. Without structured data, the model has to infer all of this from unstructured text — and it often gets it wrong or ignores it entirely.
+                  Structured data, specifically Schema.org markup, gives Google a direct machine-readable description of your business, services, location, and reputation. A <code className="bg-[#e8e8ed] px-1 py-0.5 rounded text-[13px]">LocalBusiness</code> schema with your name, address, phone, hours, and service area removes ambiguity. A <code className="bg-[#e8e8ed] px-1 py-0.5 rounded text-[13px]">FAQPage</code> schema helps the AI match your content to specific question-based queries. A <code className="bg-[#e8e8ed] px-1 py-0.5 rounded text-[13px]">Service</code> schema for each service type helps the model understand what you do and associate your business with the right queries. Without structured data, the model has to infer all of this from unstructured text, and it often gets it wrong or ignores it entirely.
                 </p>
               </div>
 
@@ -221,11 +232,11 @@ export default function HowToAppearInGoogleAiOverviewsPage() {
             <div className="space-y-3">
               <Link href="/ai-visibility-consulting" className="flex items-center gap-3 group">
                 <span className="text-[#18b5d8] font-bold shrink-0">→</span>
-                <span className="text-[15px] text-[#333] group-hover:text-[#18b5d8] transition-colors">AI Visibility Consulting — our full six-part framework</span>
+                <span className="text-[15px] text-[#333] group-hover:text-[#18b5d8] transition-colors">AI Visibility Consulting, our full six-part framework</span>
               </Link>
               <Link href="/resources/blog-seo-old-school-geo-ai-shift" className="flex items-center gap-3 group">
                 <span className="text-[#18b5d8] font-bold shrink-0">→</span>
-                <span className="text-[15px] text-[#333] group-hover:text-[#18b5d8] transition-colors">SEO Is Old School — The GEO and AI Shift Is Here</span>
+                <span className="text-[15px] text-[#333] group-hover:text-[#18b5d8] transition-colors">SEO Is Old School, The GEO and AI Shift Is Here</span>
               </Link>
               <Link href="/resources/blog-google-reviews-ai-recommendations" className="flex items-center gap-3 group">
                 <span className="text-[#18b5d8] font-bold shrink-0">→</span>

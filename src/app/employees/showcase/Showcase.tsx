@@ -19,14 +19,14 @@ const SNAP_SPEED = 0.12  // ease toward nearest card
 const CONVO = [
   { role: 'bot', text: "Hey! I'm Gemma. What brings you to Shark AI Solutions today?", delay: 600 },
   { role: 'user', text: "I want to know how AI employees work and what they cost.", delay: 0 },
-  { role: 'bot', text: "Great question. We build AI employees that handle lead qualification, follow-up, and appointment booking — so your team only talks to people ready to buy. What part of your sales process feels like the biggest bottleneck?", delay: 1400 },
+  { role: 'bot', text: "Great question. We build AI employees that handle lead qualification, follow-up, and appointment booking, so your team only talks to people ready to buy. What part of your sales process feels like the biggest bottleneck?", delay: 1400 },
   { role: 'user', text: "Follow-up. Leads go cold and we never catch them in time.", delay: 0 },
-  { role: 'bot', text: "That's exactly what our Follow-Up AI solves. It runs multi-touch sequences across email, SMS, and phone — automatically. Re-engages cold leads at the right moment without anyone lifting a finger.", delay: 1600 },
-  { role: 'bot', text: "Quick question — roughly how many new leads do you see per month?", delay: 800 },
+  { role: 'bot', text: "That's exactly what our Follow-Up AI solves. It runs multi-touch sequences across email, SMS, and phone, automatically. Re-engages cold leads at the right moment without anyone lifting a finger.", delay: 1600 },
+  { role: 'bot', text: "Quick question, roughly how many new leads do you see per month?", delay: 800 },
   { role: 'user', text: "Around 80 to 100 per month.", delay: 0 },
   { role: 'bot', text: "Perfect fit. At that volume you'd recover 20–30 leads per month that currently go cold. That's typically 2–4 extra closed deals monthly for our clients.", delay: 1500 },
   { role: 'bot', text: "Can I grab a 30-minute call on your calendar so you can see this live with your real numbers?", delay: 900 },
-  { role: 'user', text: "Yes — Thursday afternoon works.", delay: 0 },
+  { role: 'user', text: "Yes, Thursday afternoon works.", delay: 0 },
   { role: 'bot', text: '__booking__', delay: 1200 },
 ]
 
@@ -329,7 +329,7 @@ export default function Showcase() {
                 name: 'Gemma',
                 title: 'Chat Receptionist',
                 color: '#18b5d8',
-                desc: 'Answers every inbound chat 24/7, qualifies the visitor, and routes hot leads directly to your calendar — before you check your phone.',
+                desc: 'Answers every inbound chat 24/7, qualifies the visitor, and routes hot leads directly to your calendar, before you check your phone.',
               },
               {
                 icon: '✍️',
@@ -350,7 +350,7 @@ export default function Showcase() {
                 name: 'Lead Qualifier',
                 title: 'Sales Employee',
                 color: '#18b5d8',
-                desc: 'Engages every inbound lead in real time, scores fit against your ICP, and books only the qualified ones — saving your team hours every week.',
+                desc: 'Engages every inbound lead in real time, scores fit against your ICP, and books only the qualified ones, saving your team hours every week.',
               },
               {
                 icon: '📱',
@@ -490,7 +490,7 @@ export default function Showcase() {
             <div style={{ background: 'linear-gradient(135deg,#18b5d8,#1282a0)' }} className="px-5 py-4 flex items-center gap-3">
               <div className="w-9 h-9 rounded-full bg-white/20 flex items-center justify-center text-white font-extrabold text-[14px]">G</div>
               <div className="flex-1">
-                <p className="text-white font-bold text-[13px]">Gemma — Chat Receptionist</p>
+                <p className="text-white font-bold text-[13px]">Gemma, Chat Receptionist</p>
                 <p className="text-white/60 text-[11px] flex items-center gap-1">
                   <span className="w-1.5 h-1.5 rounded-full bg-green-300 inline-block" style={{ animation: 'blink 1.5s infinite' }} />
                   Online · Shark AI Solutions
@@ -510,7 +510,7 @@ export default function Showcase() {
                   {m.text === '__booking__' ? (
                     <div className="bg-[#f0fafd] border-[1.5px] border-[#18b5d8] rounded-xl p-3 max-w-[80%]">
                       <p className="text-[#18b5d8] font-bold text-[11.5px] mb-2">📅 Appointment Confirmed</p>
-                      {[['Date','Thursday, this week'],['Time','2:00 PM EST'],['Host','Miche — Shark AI'],['Type','Live AI Demo']].map(([l,v]) => (
+                      {[['Date','Thursday, this week'],['Time','2:00 PM EST'],['Host','Miche, Shark AI'],['Type','Live AI Demo']].map(([l,v]) => (
                         <div key={l} className="flex justify-between mb-1">
                           <span className="text-[11px] text-gray-400">{l}</span>
                           <span className="text-[11px] font-semibold text-gray-800">{v}</span>

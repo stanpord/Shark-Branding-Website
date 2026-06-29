@@ -160,7 +160,7 @@ export default function CallBot() {
 
       <div className="flex divide-x divide-white/10" style={{ minHeight: 'calc(100vh - 113px)' }}>
 
-        {/* Left — Form + History */}
+        {/* Left, Form + History */}
         <div className="w-[300px] shrink-0 flex flex-col">
 
           {/* New Call Form */}
@@ -244,7 +244,7 @@ export default function CallBot() {
           </div>
         </div>
 
-        {/* Right — Live Call View */}
+        {/* Right, Live Call View */}
         <div className="flex-1 flex flex-col min-w-0">
           {!selectedCall ? (
             <div className="flex-1 flex items-center justify-center">

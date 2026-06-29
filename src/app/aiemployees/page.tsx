@@ -2,16 +2,16 @@ import type { Metadata } from 'next'
 import AiEmployeesDeep from './AiEmployeesDeep'
 
 export const metadata: Metadata = {
-  title: 'Meet Your AI Team — Shark AI Solutions',
+  title: 'AI Employees for Tampa Bay Businesses | Shark AI Solutions',
   description: 'Five AI employees for Tampa Bay businesses: Chat Receptionist, Voice Receptionist, Reputation Specialist, AI CRM, and AI Sales Coach. Live within one week.',
   alternates: { canonical: 'https://sharkbrandingsolutions.com/aiemployees' },
   robots: { index: true, follow: true },
   openGraph: {
-    title: 'Meet Your AI Team — Shark AI Solutions',
-    description: 'Five AI employees built for local Tampa Bay businesses. Chat, voice, reviews, CRM, and sales coaching — live within a week.',
+    title: 'AI Employees for Tampa Bay Businesses | Shark AI Solutions',
+    description: 'Five AI employees built for local Tampa Bay businesses. Chat, voice, reviews, CRM, and sales coaching, live within a week.',
     url: 'https://sharkbrandingsolutions.com/aiemployees',
     type: 'website',
-    images: [{ url: 'https://sharkbrandingsolutions.com/logo.webp', width: 1200, height: 630, alt: 'AI Employees — Shark AI Solutions' }],
+    images: [{ url: 'https://sharkbrandingsolutions.com/logo.webp', width: 1200, height: 630, alt: 'AI Employees | Shark AI Solutions' }],
   },
 }
 
@@ -22,7 +22,7 @@ const structuredData = {
       '@type': 'Service',
       '@id': 'https://sharkbrandingsolutions.com/aiemployees#service',
       name: 'AI Employees for Tampa Bay Businesses',
-      description: 'AI employees that handle lead qualification, automated follow-up, review management, appointment booking, and sales coaching — 24/7, without adding headcount. Built and deployed for Wesley Chapel, Tampa Bay, Lutz, and Land O\'Lakes businesses.',
+      description: 'AI employees that handle lead qualification, automated follow-up, review management, appointment booking, and sales coaching, 24/7, without adding headcount. Built and deployed for Wesley Chapel, Tampa Bay, Lutz, and Land O\'Lakes businesses.',
       url: 'https://sharkbrandingsolutions.com/aiemployees',
       provider: { '@id': 'https://sharkbrandingsolutions.com/#organization' },
       areaServed: [
@@ -42,12 +42,12 @@ const structuredData = {
         {
           '@type': 'Question',
           name: 'How does a Shark Branding AI employee work?',
-          acceptedAnswer: { '@type': 'Answer', text: 'A Shark Branding AI employee is a software agent configured to perform a single, specific business function automatically — without human supervision. Each one is trained on your business data: your services, your voice, your pricing, and your workflows. When a lead contacts you, the AI employee greets them, qualifies them using your criteria, and either books an appointment, sends a follow-up sequence, or escalates to a human — depending on what the situation requires. Unlike a chatbot that needs constant prompting, an AI employee has a defined job, a fixed data source, and a built-in escalation path. Every interaction is logged and every transcript is saved. Your team sees only the conversations that need a human. Most AI employees go live within five to seven business days. They run continuously — answering calls, responding to reviews, and following up on leads — whether your office is open or not.' },
+          acceptedAnswer: { '@type': 'Answer', text: 'A Shark Branding AI employee is a software agent configured to perform a single, specific business function automatically, without human supervision. Each one is trained on your business data: your services, your voice, your pricing, and your workflows. When a lead contacts you, the AI employee greets them, qualifies them using your criteria, and either books an appointment, sends a follow-up sequence, or escalates to a human, depending on what the situation requires. Unlike a chatbot that needs constant prompting, an AI employee has a defined job, a fixed data source, and a built-in escalation path. Every interaction is logged and every transcript is saved. Your team sees only the conversations that need a human. Most AI employees go live within five to seven business days. They run continuously, answering calls, responding to reviews, and following up on leads, whether your office is open or not.' },
         },
         {
           '@type': 'Question',
           name: 'What is an AI employee?',
-          acceptedAnswer: { '@type': 'Answer', text: 'An AI employee is a software agent trained to perform a specific business function automatically — such as responding to leads, managing reviews, running follow-up sequences, or coaching your sales reps. Each one is configured for your business, your voice, and your specific workflows.' },
+          acceptedAnswer: { '@type': 'Answer', text: 'An AI employee is a software agent trained to perform a specific business function automatically, such as responding to leads, managing reviews, running follow-up sequences, or coaching your sales reps. Each one is configured for your business, your voice, and your specific workflows.' },
         },
         {
           '@type': 'Question',
@@ -57,7 +57,7 @@ const structuredData = {
         {
           '@type': 'Question',
           name: 'Which businesses in Wesley Chapel and Tampa Bay benefit most from AI employees?',
-          acceptedAnswer: { '@type': 'Answer', text: 'Any local service business that handles leads, bookings, reviews, or customer communication — including home services, HVAC, real estate, healthcare, legal, contractors, and professional services across Wesley Chapel, Tampa, Lutz, and Land O\'Lakes.' },
+          acceptedAnswer: { '@type': 'Answer', text: 'Any local service business that handles leads, bookings, reviews, or customer communication, including home services, HVAC, real estate, healthcare, legal, contractors, and professional services across Wesley Chapel, Tampa, Lutz, and Land O\'Lakes.' },
         },
         {
           '@type': 'Question',

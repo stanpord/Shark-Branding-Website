@@ -2,15 +2,15 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'AI Employees for Law Firms | Shark Branding Solutions',
+  title: 'AI Employees for Law Firms | Shark AI Solutions',
   description: 'AI employees for law firms in Wesley Chapel and Tampa Bay. Lead follow-up, client intake, review requests, and 24/7 chat response. Live in one week.',
   alternates: { canonical: 'https://sharkbrandingsolutions.com/aiemployees/legal' },
   openGraph: {
-    title: 'AI Employees for Law Firms | Shark Branding Solutions',
+    title: 'AI Employees for Law Firms | Shark AI Solutions',
     description: 'Stop losing prospective clients to slow intake response. AI employees handle inbound inquiries, follow-up, and reviews 24/7 for law firms in Tampa Bay.',
     url: 'https://sharkbrandingsolutions.com/aiemployees/legal',
     type: 'website',
-    images: [{ url: 'https://sharkbrandingsolutions.com/logo.webp', width: 1200, height: 630, alt: 'AI Employees for Law Firms — Shark Branding Solutions' }],
+    images: [{ url: 'https://sharkbrandingsolutions.com/logo.webp', width: 1200, height: 630, alt: 'AI Employees for Law Firms | Shark AI Solutions' }],
   },
 }
 
@@ -63,8 +63,8 @@ const employees = [
     role: 'Chat Receptionist',
     color: '#18b5d8',
     colorBg: '#e8f8fc',
-    problem: 'Someone searching for an attorney in Wesley Chapel is usually in a time-sensitive situation. They contact two or three firms online. The first one that responds with something useful — not an autoresponder, not a voicemail — earns the consultation. Most firms don\'t respond until the next business day.',
-    solution: 'Gemma responds to every website inquiry immediately — day or night. She answers basic questions about your practice areas, fee arrangements, and process, collects the prospective client\'s name, contact information, and a brief description of their matter, and either books a consultation directly or routes the inquiry to your intake team with full notes. After-hours contacts receive an immediate acknowledgment and a first-business-day follow-up.',
+    problem: 'Someone searching for an attorney in Wesley Chapel is usually in a time-sensitive situation. They contact two or three firms online. The first one that responds with something useful, not an autoresponder, not a voicemail, earns the consultation. Most firms don\'t respond until the next business day.',
+    solution: 'Gemma responds to every website inquiry immediately, day or night. She answers basic questions about your practice areas, fee arrangements, and process, collects the prospective client\'s name, contact information, and a brief description of their matter, and either books a consultation directly or routes the inquiry to your intake team with full notes. After-hours contacts receive an immediate acknowledgment and a first-business-day follow-up.',
     bullets: ['Responds to every inquiry immediately', 'Answers FAQs about practice areas and process', 'Collects intake information before your team touches it', 'After-hours coverage every night and weekend'],
   },
   {
@@ -73,7 +73,7 @@ const employees = [
     color: '#18b5d8',
     colorBg: '#e8f8fc',
     problem: 'Law firms lose a significant share of prospective clients not because they lost the case evaluation, but because the intake follow-up was inconsistent. A potential client submits a contact form, gets a call two days later, doesn\'t answer, and moves on. Nobody called again. That case went to another firm.',
-    solution: 'Every new prospective client gets an immediate acknowledgment and a structured follow-up sequence across email, SMS, and phone at the right intervals for a legal intake timeline. The sequence stops the moment they respond or schedule a consultation. Prospective clients who went cold at 30 or 60 days get a re-engagement message — some are still looking and just got busy.',
+    solution: 'Every new prospective client gets an immediate acknowledgment and a structured follow-up sequence across email, SMS, and phone at the right intervals for a legal intake timeline. The sequence stops the moment they respond or schedule a consultation. Prospective clients who went cold at 30 or 60 days get a re-engagement message, some are still looking and just got busy.',
     bullets: ['Immediate response to every new inquiry', 'Multi-touch follow-up across email, SMS, and phone', 'Timing designed for legal intake cycles', 'Cold lead re-engagement at 30 and 60 days'],
   },
   {
@@ -81,8 +81,8 @@ const employees = [
     role: 'Review Manager',
     color: '#d4a200',
     colorBg: '#fef9e7',
-    problem: 'Law firms have a persistent review problem. Clients whose matters resolved well often don\'t think to leave a review unless asked — and asking feels awkward after a legal matter. Most firms collect reviews sporadically. Firms with 10 reviews lose visibility to firms with 100, regardless of quality.',
-    solution: 'After every successfully resolved matter — a closed case, a completed estate plan, a finalized transaction — your Reputation Specialist sends a brief, warm message thanking the client and including a direct link to your Google review page. The timing and tone are configured to feel appropriate for a post-legal-matter context. Every review that comes in gets a professional, brand-voice response within two hours.',
+    problem: 'Law firms have a persistent review problem. Clients whose matters resolved well often don\'t think to leave a review unless asked, and asking feels awkward after a legal matter. Most firms collect reviews sporadically. Firms with 10 reviews lose visibility to firms with 100, regardless of quality.',
+    solution: 'After every successfully resolved matter, a closed case, a completed estate plan, a finalized transaction, your Reputation Specialist sends a brief, warm message thanking the client and including a direct link to your Google review page. The timing and tone are configured to feel appropriate for a post-legal-matter context. Every review that comes in gets a professional, brand-voice response within two hours.',
     bullets: ['Post-matter review requests timed appropriately', 'Professional tone configured for legal context', 'Responds to every review within 2 hours', 'Compounds visibility over 6 to 12 months'],
   },
 ]
@@ -119,7 +119,7 @@ export default function LegalPage() {
             <span className="text-[#18b5d8]">Law Firms & Attorneys</span>
           </h1>
           <p className="lead-airy text-[#333] max-w-[520px] mx-auto mb-12" style={{ textWrap: 'balance' }}>
-            Prospective clients contact two or three firms and hire the first one that responds usefully. Your AI team responds immediately, follows up consistently, and collects reviews after every resolved matter — so your firm wins more of the work it deserves.
+            Prospective clients contact two or three firms and hire the first one that responds usefully. Your AI team responds immediately, follows up consistently, and collects reviews after every resolved matter, so your firm wins more of the work it deserves.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-3">
             <Link

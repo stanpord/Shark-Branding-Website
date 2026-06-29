@@ -47,7 +47,7 @@ export default function ContactForm() {
             {/* Widget mounts here */}
             <div ref={formContainerRef} />
 
-            {/* SMS consent — static HTML so approval crawlers can read it */}
+            {/* SMS consent, static HTML so approval crawlers can read it */}
             <div className="border border-[#e8e8ed] rounded-[16px] px-6 py-6 space-y-5 bg-[#f5f5f7]">
               <p className="text-[13px] font-semibold text-[#1d1d1f] uppercase tracking-wide">
                 Text Message Consent

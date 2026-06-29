@@ -123,7 +123,7 @@ function initShift(gsap: any, ScrollTrigger: any): () => void {
     })
   }
 
-  // Google vs AI cards — come from opposite sides
+  // Google vs AI cards, come from opposite sides
   if (cards.length >= 2) {
     gsap.from(cards[0], { x: -40, opacity: 0, duration: 0.7, ease: 'power3.out',
       scrollTrigger: { trigger: cards[0], start: 'top 85%' }

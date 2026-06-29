@@ -2,15 +2,15 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Appointment Booking Automation | Shark Branding Solutions',
+  title: 'Appointment Booking Automation | Shark AI Solutions',
   description: 'AI appointment booking for Wesley Chapel and Tampa Bay. 24/7 lead qualification and calendar booking without phone tag or scheduling delays. Live in one week.',
   alternates: { canonical: 'https://sharkbrandingsolutions.com/automation/appointment-booking' },
   openGraph: {
-    title: 'Appointment Booking Automation | Shark Branding Solutions',
+    title: 'Appointment Booking Automation | Shark AI Solutions',
     description: 'Stop losing leads to phone tag and scheduling delays. AI chat books qualified appointments to your calendar 24/7 without any effort from your team.',
     url: 'https://sharkbrandingsolutions.com/automation/appointment-booking',
     type: 'website',
-    images: [{ url: 'https://sharkbrandingsolutions.com/logo.webp', width: 1200, height: 630, alt: 'Appointment Booking Automation — Shark Branding Solutions' }],
+    images: [{ url: 'https://sharkbrandingsolutions.com/logo.webp', width: 1200, height: 630, alt: 'Appointment Booking Automation | Shark AI Solutions' }],
   },
 }
 
@@ -75,7 +75,7 @@ export default function AppointmentBookingPage() {
             <span className="text-[#18b5d8]">Automation</span>
           </h1>
           <p className="lead-airy text-[#333] max-w-[520px] mx-auto mb-12" style={{ textWrap: 'balance' }}>
-            An AI receptionist on your website qualifies every visitor and books them directly to your calendar — 24/7, no phone tag, no scheduling delays. Reminders go out automatically before every appointment, cutting no-shows by 60 to 75 percent.
+            An AI receptionist on your website qualifies every visitor and books them directly to your calendar, 24/7, no phone tag, no scheduling delays. Reminders go out automatically before every appointment, cutting no-shows by 60 to 75 percent.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-3">
             <Link
@@ -132,7 +132,7 @@ export default function AppointmentBookingPage() {
               {
                 n: '01',
                 title: 'Qualify',
-                body: 'Every website visitor is greeted by Gemma, the AI receptionist. She asks 2 to 3 qualifying questions specific to your service — location, job type, timeline — and determines whether they are a good fit.',
+                body: 'Every website visitor is greeted by Gemma, the AI receptionist. She asks 2 to 3 qualifying questions specific to your service, location, job type, timeline, and determines whether they are a good fit.',
               },
               {
                 n: '02',
@@ -165,7 +165,7 @@ export default function AppointmentBookingPage() {
                 Your calendar fills while you sleep.
               </h2>
               <p className="text-[16px] text-[#555] leading-relaxed mb-6">
-                In Wesley Chapel and Tampa Bay, a significant share of service leads come in between 7 PM and midnight — after work, after dinner, when homeowners and business owners finally have time to take care of things. Most businesses have nothing running during those hours.
+                In Wesley Chapel and Tampa Bay, a significant share of service leads come in between 7 PM and midnight, after work, after dinner, when homeowners and business owners finally have time to take care of things. Most businesses have nothing running during those hours.
               </p>
               <p className="text-[16px] text-[#555] leading-relaxed">
                 An AI receptionist runs 24/7. Every after-hours visitor gets the same response as a 10 AM visitor. By the time you start your day, three to seven qualified appointments are already on the calendar.
@@ -173,10 +173,10 @@ export default function AppointmentBookingPage() {
             </div>
             <div className="space-y-3">
               {[
-                { time: '8:47 PM', name: 'Marcus T.', detail: 'AC repair quote needed — booked for Thursday 9 AM' },
-                { time: '10:12 PM', name: 'Sara K.', detail: 'Kitchen remodel consultation — booked for Friday 2 PM' },
-                { time: '11:55 PM', name: 'David R.', detail: 'Roof inspection after storm — booked for Wednesday 8 AM' },
-                { time: '6:03 AM', name: 'Leila M.', detail: 'Plumbing estimate — booked for Thursday 11 AM' },
+                { time: '8:47 PM', name: 'Marcus T.', detail: 'AC repair quote needed, booked for Thursday 9 AM' },
+                { time: '10:12 PM', name: 'Sara K.', detail: 'Kitchen remodel consultation, booked for Friday 2 PM' },
+                { time: '11:55 PM', name: 'David R.', detail: 'Roof inspection after storm, booked for Wednesday 8 AM' },
+                { time: '6:03 AM', name: 'Leila M.', detail: 'Plumbing estimate, booked for Thursday 11 AM' },
               ].map((lead) => (
                 <div key={lead.name} className="bg-white rounded-[14px] px-5 py-4 border border-[#e8e8ed] flex items-start gap-4">
                   <div className="text-[11px] text-[#999] font-semibold w-16 shrink-0 mt-0.5">{lead.time}</div>

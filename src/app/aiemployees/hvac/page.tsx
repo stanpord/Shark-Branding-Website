@@ -2,15 +2,15 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'AI Employees for HVAC Companies | Shark Branding Solutions',
+  title: 'AI Employees for HVAC Companies | Shark AI Solutions',
   description: 'AI employees for HVAC companies in Wesley Chapel and Tampa Bay. 24/7 emergency lead capture, automated follow-up, review requests, and content. Live in one week.',
   alternates: { canonical: 'https://sharkbrandingsolutions.com/aiemployees/hvac' },
   openGraph: {
-    title: 'AI Employees for HVAC Companies | Shark Branding Solutions',
+    title: 'AI Employees for HVAC Companies | Shark AI Solutions',
     description: 'Stop losing HVAC leads to competitors who respond faster. AI employees handle inbound calls, emergency inquiries, follow-up, and review requests 24/7.',
     url: 'https://sharkbrandingsolutions.com/aiemployees/hvac',
     type: 'website',
-    images: [{ url: 'https://sharkbrandingsolutions.com/logo.webp', width: 1200, height: 630, alt: 'AI Employees for HVAC Companies — Shark Branding Solutions' }],
+    images: [{ url: 'https://sharkbrandingsolutions.com/logo.webp', width: 1200, height: 630, alt: 'AI Employees for HVAC Companies | Shark AI Solutions' }],
   },
 }
 
@@ -72,7 +72,7 @@ const employees = [
     role: 'Sales Assistant',
     color: '#18b5d8',
     colorBg: '#e8f8fc',
-    problem: 'HVAC is a competitive market. A homeowner who requests a quote from three companies and gets called back by one within five minutes — and by the others a day later — will book with the fast one, even if the price is the same.',
+    problem: 'HVAC is a competitive market. A homeowner who requests a quote from three companies and gets called back by one within five minutes, and by the others a day later, will book with the fast one, even if the price is the same.',
     solution: 'Every new lead gets an immediate acknowledgment and a multi-touch follow-up across email and SMS over the next five to ten days. Maintenance agreement prospects and cold leads from 30, 60, or 90 days ago get re-engagement campaigns automatically. The sequence stops the moment a lead books or responds.',
     bullets: ['Immediate response to every new lead', 'Email and SMS follow-up sequences', 'Maintenance agreement upsell sequences', 'Cold lead re-engagement built in'],
   },
@@ -82,7 +82,7 @@ const employees = [
     color: '#d4a200',
     colorBg: '#fef9e7',
     problem: 'When a Tampa Bay homeowner searches for HVAC companies, the top results have 100 or more reviews. Most mid-size HVAC companies have 20 to 40. That review gap costs jobs every week because homeowners use review count as a proxy for reliability.',
-    solution: 'Within two hours of a completed job, your Reputation Specialist sends a personalized review request by SMS. If there is no response in 48 hours, a second reminder goes out. Every review that comes in gets a brand-voice response within two hours — positive or critical — automatically.',
+    solution: 'Within two hours of a completed job, your Reputation Specialist sends a personalized review request by SMS. If there is no response in 48 hours, a second reminder goes out. Every review that comes in gets a brand-voice response within two hours, positive or critical, automatically.',
     bullets: ['Post-job review requests sent automatically', 'Two-message sequence with smart timing', 'Responds to every review within 2 hours', 'Handles Google and Facebook'],
   },
 ]
@@ -113,7 +113,7 @@ export default function HvacPage() {
             <span className="text-[#18b5d8]">HVAC Companies</span>
           </h1>
           <p className="lead-airy text-[#333] max-w-[520px] mx-auto mb-12" style={{ textWrap: 'balance' }}>
-            In Tampa Bay, AC emergencies do not wait for business hours. Your AI team responds to every inbound inquiry instantly, follows up consistently, and builds your review count after every job — so you win more calls without missing a single one.
+            In Tampa Bay, AC emergencies do not wait for business hours. Your AI team responds to every inbound inquiry instantly, follows up consistently, and builds your review count after every job, so you win more calls without missing a single one.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-3">
             <Link

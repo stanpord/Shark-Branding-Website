@@ -2,15 +2,15 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'AI Employees for Contractors | Shark Branding Solutions',
+  title: 'AI Employees for Contractors | Shark AI Solutions',
   description: 'AI employees for contractors in Wesley Chapel and Tampa Bay. Lead follow-up, estimate reminders, review requests, and 24/7 chat booking. Live in one week.',
   alternates: { canonical: 'https://sharkbrandingsolutions.com/aiemployees/contractors' },
   openGraph: {
-    title: 'AI Employees for Contractors | Shark Branding Solutions',
+    title: 'AI Employees for Contractors | Shark AI Solutions',
     description: 'Stop losing contractor leads to slow response times and un-followed estimates. AI employees handle inbound chat, follow-up, and reviews 24/7.',
     url: 'https://sharkbrandingsolutions.com/aiemployees/contractors',
     type: 'website',
-    images: [{ url: 'https://sharkbrandingsolutions.com/logo.webp', width: 1200, height: 630, alt: 'AI Employees for Contractors — Shark Branding Solutions' }],
+    images: [{ url: 'https://sharkbrandingsolutions.com/logo.webp', width: 1200, height: 630, alt: 'AI Employees for Contractors | Shark AI Solutions' }],
   },
 }
 
@@ -45,7 +45,7 @@ const structuredData = {
         {
           '@type': 'Question',
           name: 'What happens to estimates that do not get a response?',
-          acceptedAnswer: { '@type': 'Answer', text: 'Most contractors send an estimate and wait. If the homeowner does not respond within a day or two, the estimate goes cold and they move on. An AI CRM sends a structured follow-up sequence — email, SMS, and phone — at the right intervals, re-engaging every unsold estimate automatically. Contractors using this approach recover 2 to 4 extra closed jobs per month from estimates they would have otherwise abandoned.' },
+          acceptedAnswer: { '@type': 'Answer', text: 'Most contractors send an estimate and wait. If the homeowner does not respond within a day or two, the estimate goes cold and they move on. An AI CRM sends a structured follow-up sequence, email, SMS, and phone, at the right intervals, re-engaging every unsold estimate automatically. Contractors using this approach recover 2 to 4 extra closed jobs per month from estimates they would have otherwise abandoned.' },
         },
         {
           '@type': 'Question',
@@ -64,7 +64,7 @@ const employees = [
     color: '#18b5d8',
     colorBg: '#e8f8fc',
     problem: 'Contractor leads are high-value but impatient. A homeowner shopping for a remodel or roof replacement contacts two or three companies. The first one to respond wins the bid conversation. Most contractors are not the first.',
-    solution: 'Gemma sits on your website 24/7 and responds to every visitor within seconds. She asks the right qualifying questions — project type, location, timeline, budget range — captures full contact details, and books a site visit or callback directly to your calendar. Leads that come in at 9 PM are ready in your pipeline by 8 AM.',
+    solution: 'Gemma sits on your website 24/7 and responds to every visitor within seconds. She asks the right qualifying questions, project type, location, timeline, budget range, captures full contact details, and books a site visit or callback directly to your calendar. Leads that come in at 9 PM are ready in your pipeline by 8 AM.',
     bullets: ['Responds to every visitor within seconds', 'Qualifies by project type, timeline, and budget', 'Books site visits directly to your calendar', 'Handles evenings, weekends, and holidays'],
   },
   {
@@ -73,8 +73,8 @@ const employees = [
     color: '#18b5d8',
     colorBg: '#e8f8fc',
     problem: 'Contractors send estimates and hope. When a homeowner goes quiet after receiving a quote, most contractors follow up once or twice and then move on. That estimate is dead revenue sitting in a spreadsheet.',
-    solution: 'Every new lead gets an immediate acknowledgment and a follow-up SMS within five minutes. Every sent estimate gets its own follow-up sequence — email, SMS, and outbound call — with smart timing designed for a contractor sales cycle. Homeowners who went cold 30, 60, or 90 days ago get re-engagement campaigns automatically. The sequence stops the moment they respond.',
-    bullets: ['Immediate response to every new inquiry', 'Estimate follow-up sequence built in', 'Email, SMS, and phone — all automated', 'Cold lead re-engagement at 30, 60, and 90 days'],
+    solution: 'Every new lead gets an immediate acknowledgment and a follow-up SMS within five minutes. Every sent estimate gets its own follow-up sequence, email, SMS, and outbound call, with smart timing designed for a contractor sales cycle. Homeowners who went cold 30, 60, or 90 days ago get re-engagement campaigns automatically. The sequence stops the moment they respond.',
+    bullets: ['Immediate response to every new inquiry', 'Estimate follow-up sequence built in', 'Email, SMS, and phone, all automated', 'Cold lead re-engagement at 30, 60, and 90 days'],
   },
   {
     name: 'Reputation Specialist',
@@ -82,7 +82,7 @@ const employees = [
     color: '#d4a200',
     colorBg: '#fef9e7',
     problem: 'Contractor reputation is everything in Wesley Chapel. Homeowners check Google before they call. A contractor with 8 reviews loses to one with 80, even if the work is identical. Most contractors never ask for reviews because the job is done and they have already moved on.',
-    solution: 'Within two hours of a completed project, your Reputation Specialist sends a personalized review request by SMS — the customer\'s name, the project type, and a direct link to your Google page. If there is no response in 48 hours, a second message goes out. Every review that comes in gets a brand-voice response within two hours. You never have to think about it.',
+    solution: 'Within two hours of a completed project, your Reputation Specialist sends a personalized review request by SMS, the customer\'s name, the project type, and a direct link to your Google page. If there is no response in 48 hours, a second message goes out. Every review that comes in gets a brand-voice response within two hours. You never have to think about it.',
     bullets: ['Post-job review requests sent automatically', 'Smart two-message sequence', 'Responds to every review within 2 hours', 'Handles Google and Facebook reviews'],
   },
 ]
@@ -119,7 +119,7 @@ export default function ContractorsPage() {
             <span className="text-[#18b5d8]">General Contractors</span>
           </h1>
           <p className="lead-airy text-[#333] max-w-[520px] mx-auto mb-12" style={{ textWrap: 'balance' }}>
-            Contractor leads are won by the first company to respond. Your AI team responds instantly, follows up on every estimate, and collects reviews after every job — without adding a single person to your payroll.
+            Contractor leads are won by the first company to respond. Your AI team responds instantly, follows up on every estimate, and collects reviews after every job, without adding a single person to your payroll.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-3">
             <Link
@@ -172,14 +172,14 @@ export default function ContractorsPage() {
                 The average contractor sends an estimate and waits. If the homeowner doesn&rsquo;t respond in 48 hours, the estimate goes cold. No follow-up. No re-engagement. That job goes to whoever followed up twice more than you did.
               </p>
               <p className="text-[16px] text-[#555] leading-relaxed">
-                An AI CRM follows up on every estimate automatically — at the right time, through the right channel — until it gets a response. Most contractors using this recover two to four extra closed jobs per month from estimates they would have written off.
+                An AI CRM follows up on every estimate automatically, at the right time, through the right channel, until it gets a response. Most contractors using this recover two to four extra closed jobs per month from estimates they would have written off.
               </p>
             </div>
             <div className="space-y-3">
               {[
-                { day: 'Day 1', channel: 'Email', msg: 'Estimate sent — thanks for the opportunity, here\'s your quote' },
-                { day: 'Day 2', channel: 'SMS', msg: 'Hey, just checking in on that estimate — any questions?' },
-                { day: 'Day 5', channel: 'Phone', msg: 'Outbound call attempt — voicemail with brief message' },
+                { day: 'Day 1', channel: 'Email', msg: 'Estimate sent, thanks for the opportunity, here\'s your quote' },
+                { day: 'Day 2', channel: 'SMS', msg: 'Hey, just checking in on that estimate, any questions?' },
+                { day: 'Day 5', channel: 'Phone', msg: 'Outbound call attempt, voicemail with brief message' },
                 { day: 'Day 10', channel: 'Email', msg: 'Still considering? We have an opening on your schedule this week' },
               ].map((step) => (
                 <div key={step.day} className="bg-white rounded-[14px] px-5 py-4 border border-[#e8e8ed] flex items-center gap-4">
