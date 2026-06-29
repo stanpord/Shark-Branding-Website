@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Salesforce AI Agents Alternatives for Small Business | Shark AI Solutions",
+  title: "AI Employees vs. Salesforce AI Agents | Shark AI Solutions",
   description:
-    "Comparing Salesforce Agentforce alternatives for small and mid-size businesses. See how Shark AI Solutions stacks up against Salesforce AI agents and Reputation.com on features, pricing, and time to value.",
+    "Comparing Salesforce Agentforce alternatives for small and mid-size businesses. See how Shark AI Solutions stacks up against Salesforce AI agents on features, pricing, and time to value.",
   keywords: [
     "salesforce ai agents alternatives",
     "salesforce agentforce alternative",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Salesforce AI Agents Alternatives for Small Business",
     description:
-      "Most small businesses pay for enterprise tools they never fully use. See the full comparison: Salesforce Agentforce vs. Reputation.com vs. Full AI Suite.",
+      "Most small businesses pay for enterprise tools they never fully use. See the full comparison: Salesforce Agentforce vs. Full AI Suite.",
     type: "article",
   },
 };
@@ -32,7 +32,7 @@ const faqSchema = {
       name: "What is a good Salesforce AI agents alternative for small business?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "For small and mid-size businesses, the Shark AI Solutions Full AI Suite is a practical Salesforce Agentforce alternative. It includes AI Voice Receptionist, AI Chat, AI CRM, AI Sales Manager, and Reputation AI in one flat monthly rate with no setup cost and no annual contract — compared to Salesforce's $93k–$140k+ year-one cost for a comparable configuration.",
+        text: "For small and mid-size businesses, the Shark AI Solutions Full AI Suite is a practical Salesforce Agentforce alternative. It includes AI Voice Receptionist, AI Chat, AI CRM, AI Sales Manager, and Reputation AI for a flat $5,000/month with a one-time $2,000 setup fee and no annual contract, compared to Salesforce's $93k–$140k+ year-one cost for a comparable configuration.",
       },
     },
     {
@@ -40,7 +40,7 @@ const faqSchema = {
       name: "How does Salesforce Agentforce compare to the Full AI Suite?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Salesforce Agentforce is enterprise software that requires a dedicated admin, a $15k–$75k implementation partner, and charges $2 per AI conversation. The Full AI Suite is designed for small business teams: no internal admin needed, $0 setup, no per-conversation billing, and includes AI voice, chat, CRM, sales follow-up, and reputation management for a flat monthly rate.",
+        text: "Salesforce Agentforce is enterprise software that requires a dedicated admin, a $15k–$75k implementation partner, and charges $2 per AI conversation. The Full AI Suite is designed for small business teams: no internal admin needed, a one-time $2,000 setup fee, no per-conversation billing, and includes AI voice, chat, CRM, sales follow-up, and reputation management for a flat $5,000/month.",
       },
     },
     {
@@ -53,10 +53,10 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "What does Reputation.com not do that the Full AI Suite does?",
+      name: "How long does it take to set up the Full AI Suite?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Reputation.com focuses on review monitoring and listings. It does not include AI voice, AI chat for lead capture, a CRM, or automated sales follow-up. Businesses that use Reputation.com still need to purchase separate tools for all of those functions. The Full AI Suite includes Reputation AI alongside voice, chat, CRM, and sales manager for one flat rate.",
+        text: "Most clients are live within a week. The one-time $2,000 setup fee covers full configuration and onboarding. Salesforce deployments typically take 3 to 6 months with a systems integrator costing $15,000–$75,000+.",
       },
     },
   ],
@@ -85,7 +85,6 @@ export default function SalesforceVsPage() {
           --red: #c0392b;
           --orange: #d97706;
           --sf-blue: #0070d2;
-          --rep-purple: #7c3aed;
         }
         .vs-body { font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', sans-serif; background: var(--paper-2); color: var(--ink); line-height: 1.5; }
         .vs-hero { background: linear-gradient(160deg, #0a0a0a 0%, #1a1a2e 50%, #0d2d3a 100%); color: white; text-align: center; padding: 80px 40px 64px; }
@@ -94,24 +93,20 @@ export default function SalesforceVsPage() {
         .vs-hero h1 span { color: var(--shark-blue); }
         .vs-hero p { font-size: 17px; color: rgba(255,255,255,0.65); max-width: 640px; margin: 0 auto 24px; line-height: 1.6; }
         .vs-hero-note { font-size: 13px; color: rgba(255,255,255,0.4); max-width: 540px; margin: 0 auto; }
-        .vs-verdict-strip { display: grid; grid-template-columns: 1fr 1fr 1fr; border-bottom: 1px solid var(--hairline); }
+        .vs-verdict-strip { display: grid; grid-template-columns: 1fr 1fr; border-bottom: 1px solid var(--hairline); }
         .vs-verdict-cell { padding: 28px 24px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 6px; }
         .vs-verdict-cell.sf { background: #f0f4ff; border-right: 1px solid var(--hairline); }
-        .vs-verdict-cell.rep { background: #f5f0ff; border-right: 1px solid var(--hairline); }
         .vs-verdict-cell.sbs { background: #edfaf5; }
         .vs-verdict-label { font-size: 10px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--ink-3); }
         .vs-verdict-name { font-size: 17px; font-weight: 700; line-height: 1.2; }
         .vs-verdict-name.sf { color: var(--sf-blue); }
-        .vs-verdict-name.rep { color: var(--rep-purple); }
         .vs-verdict-name.sbs { color: var(--deep-teal); }
         .vs-verdict-price { font-size: 28px; font-weight: 700; letter-spacing: -0.5px; }
         .vs-verdict-price.sf { color: var(--sf-blue); }
-        .vs-verdict-price.rep { color: var(--rep-purple); }
         .vs-verdict-price.sbs { color: var(--shark-blue); }
         .vs-verdict-sub { font-size: 12px; color: var(--ink-3); }
         .vs-verdict-setup { font-size: 12px; font-weight: 600; }
         .vs-verdict-setup.sf { color: var(--red); }
-        .vs-verdict-setup.rep { color: var(--orange); }
         .vs-verdict-setup.sbs { color: var(--green); }
         .vs-container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
         .vs-section-header { padding: 56px 0 24px; text-align: center; }
@@ -121,11 +116,10 @@ export default function SalesforceVsPage() {
         .vs-comp-table thead tr { background: var(--paper-3); }
         .vs-comp-table th { padding: 14px 16px; font-size: 12px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; color: var(--ink-2); text-align: left; }
         .vs-comp-table th.col-sf { color: var(--sf-blue); text-align: center; }
-        .vs-comp-table th.col-rep { color: var(--rep-purple); text-align: center; }
         .vs-comp-table th.col-sbs { color: var(--deep-teal); text-align: center; }
         .vs-comp-table td { padding: 16px; border-top: 1px solid var(--hairline); font-size: 14px; vertical-align: top; }
-        .vs-comp-table td.col-feature { font-weight: 600; color: var(--ink); min-width: 180px; }
-        .vs-comp-table td.col-sf, .vs-comp-table td.col-rep, .vs-comp-table td.col-sbs { text-align: center; color: var(--ink-2); font-size: 13px; }
+        .vs-comp-table td.col-feature { font-weight: 600; color: var(--ink); min-width: 220px; }
+        .vs-comp-table td.col-sf, .vs-comp-table td.col-sbs { text-align: center; color: var(--ink-2); font-size: 13px; }
         .vs-comp-table tr:nth-child(even) td { background: #fafafa; }
         .vs-comp-table tr:hover td { background: #f0fafd; transition: background 0.15s; }
         .vs-check { color: var(--green); font-weight: 700; font-size: 18px; }
@@ -138,15 +132,13 @@ export default function SalesforceVsPage() {
         .vs-tag.blue { background: #e8f8fc; border-color: #a0dded; color: var(--deep-teal); }
         .vs-tag.orange { background: #fff8ed; border-color: #fdd9a0; color: var(--orange); }
         .vs-cat-row td { background: linear-gradient(90deg, #f5f5f7, #fafafa) !important; font-size: 10px !important; font-weight: 800 !important; letter-spacing: 2px !important; text-transform: uppercase !important; color: var(--ink-3) !important; padding: 9px 16px !important; }
-        .vs-cost-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; margin-bottom: 48px; }
+        .vs-cost-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 48px; max-width: 900px; margin-left: auto; margin-right: auto; }
         .vs-cost-card { background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
         .vs-cost-card-header { padding: 18px 20px 14px; display: flex; align-items: center; gap: 10px; }
         .vs-cost-card-header.sf { background: #f0f4ff; border-bottom: 2px solid var(--sf-blue); }
-        .vs-cost-card-header.rep { background: #f5f0ff; border-bottom: 2px solid var(--rep-purple); }
         .vs-cost-card-header.sbs { background: #edfaf5; border-bottom: 2px solid var(--shark-blue); }
         .vs-cost-logo { width: 36px; height: 36px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 800; }
         .vs-cost-logo.sf { background: var(--sf-blue); color: white; }
-        .vs-cost-logo.rep { background: var(--rep-purple); color: white; }
         .vs-cost-logo.sbs { background: var(--shark-blue); color: white; }
         .vs-cost-card-title { font-size: 14px; font-weight: 700; color: var(--ink); }
         .vs-cost-card-sub { font-size: 11px; color: var(--ink-3); }
@@ -161,12 +153,10 @@ export default function SalesforceVsPage() {
         .vs-cost-line-value.orange { color: var(--orange); }
         .vs-cost-total { display: flex; justify-content: space-between; align-items: center; padding: 16px 20px; font-weight: 700; }
         .vs-cost-total.sf { background: #f0f4ff; }
-        .vs-cost-total.rep { background: #f5f0ff; }
         .vs-cost-total.sbs { background: #edfaf5; }
         .vs-cost-total-label { font-size: 12px; text-transform: uppercase; letter-spacing: 1px; color: var(--ink-3); }
         .vs-cost-total-value { font-size: 22px; letter-spacing: -0.5px; }
         .vs-cost-total-value.sf { color: var(--sf-blue); }
-        .vs-cost-total-value.rep { color: var(--rep-purple); }
         .vs-cost-total-value.sbs { color: var(--shark-blue); }
         .vs-bottom-line { background: var(--ink); color: white; border-radius: 20px; padding: 48px 40px; margin-bottom: 64px; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; }
         .vs-bl-left h2 { font-size: 26px; font-weight: 700; letter-spacing: -0.8px; margin-bottom: 16px; line-height: 1.2; }
@@ -190,7 +180,7 @@ export default function SalesforceVsPage() {
         .vs-cta a:hover { opacity: 0.92; }
         @media (max-width: 800px) {
           .vs-verdict-strip { grid-template-columns: 1fr; }
-          .vs-verdict-cell.sf, .vs-verdict-cell.rep { border-right: none; border-bottom: 1px solid var(--hairline); }
+          .vs-verdict-cell.sf { border-right: none; border-bottom: 1px solid var(--hairline); }
           .vs-cost-grid { grid-template-columns: 1fr; }
           .vs-bottom-line { grid-template-columns: 1fr; }
           .vs-hero { padding: 60px 20px 48px; }
@@ -201,9 +191,9 @@ export default function SalesforceVsPage() {
       <div className="vs-body">
         {/* ── HERO ── */}
         <div className="vs-hero">
-          <div className="vs-hero-eyebrow">Three-Way Head-to-Head</div>
+          <div className="vs-hero-eyebrow">Head-to-Head Comparison</div>
           <h1>
-            Salesforce AI Agents vs. Reputation.com<br />
+            Salesforce AI Agents<br />
             vs.&nbsp;<span>Full AI Suite</span>
           </h1>
           <p>
@@ -223,19 +213,12 @@ export default function SalesforceVsPage() {
             <div className="vs-verdict-sub">3-user deployment with AI add-ons</div>
             <div className="vs-verdict-setup sf">+ $15,000–$75,000 setup</div>
           </div>
-          <div className="vs-verdict-cell rep">
-            <div className="vs-verdict-label">Reputation.com</div>
-            <div className="vs-verdict-name rep">Reputation.com Platform</div>
-            <div className="vs-verdict-price rep">$400–$1,200<span style={{ fontSize: 14, fontWeight: 400, color: 'var(--ink-3)' }}>/mo</span></div>
-            <div className="vs-verdict-sub">SMB tier, quote-based pricing</div>
-            <div className="vs-verdict-setup rep">Annual contract required</div>
-          </div>
           <div className="vs-verdict-cell sbs">
             <div className="vs-verdict-label">Shark AI Solutions</div>
             <div className="vs-verdict-name sbs">Full AI Suite</div>
-            <div className="vs-verdict-price sbs">Starting at $5,000<span style={{ fontSize: 14, fontWeight: 400, color: 'var(--ink-3)' }}>/mo</span></div>
+            <div className="vs-verdict-price sbs">$5,000<span style={{ fontSize: 14, fontWeight: 400, color: 'var(--ink-3)' }}>/mo</span></div>
             <div className="vs-verdict-sub">All five AI employees, no seat pricing</div>
-            <div className="vs-verdict-setup sbs">$0 setup, month-to-month</div>
+            <div className="vs-verdict-setup sbs">$2,000 setup, month-to-month</div>
           </div>
         </div>
 
@@ -250,149 +233,127 @@ export default function SalesforceVsPage() {
           <table className="vs-comp-table">
             <thead>
               <tr>
-                <th style={{ width: '28%' }}>Feature</th>
-                <th className="col-sf" style={{ width: '24%' }}>Salesforce Agentforce</th>
-                <th className="col-rep" style={{ width: '24%' }}>Reputation.com</th>
-                <th className="col-sbs" style={{ width: '24%' }}>Full AI Suite</th>
+                <th style={{ width: '40%' }}>Feature</th>
+                <th className="col-sf" style={{ width: '30%' }}>Salesforce Agentforce</th>
+                <th className="col-sbs" style={{ width: '30%' }}>Full AI Suite</th>
               </tr>
             </thead>
             <tbody>
 
-              <tr className="vs-cat-row"><td colSpan={4}>AI Voice Receptionist</td></tr>
+              <tr className="vs-cat-row"><td colSpan={3}>AI Voice Receptionist</td></tr>
               <tr>
                 <td className="col-feature">Answers inbound calls 24/7</td>
                 <td className="col-sf"><span className="vs-x">✗</span><span className="vs-note">Not native. Requires 3rd-party telephony (Amazon Connect, Five9) at additional cost.</span></td>
-                <td className="col-rep"><span className="vs-x">✗</span><span className="vs-note">Not offered. Reputation AI is a reviews platform, not a phone system.</span></td>
                 <td className="col-sbs"><span className="vs-check">✓</span><span className="vs-note">Included. Answers every call, qualifies callers, captures contact info.</span></td>
               </tr>
               <tr>
                 <td className="col-feature">Live call transfer to human</td>
                 <td className="col-sf"><span className="vs-partial">~</span><span className="vs-note">Possible with telephony partner. Custom build required.</span></td>
-                <td className="col-rep"><span className="vs-x">✗</span><span className="vs-note">Not offered.</span></td>
                 <td className="col-sbs"><span className="vs-check">✓</span><span className="vs-note">Included.</span></td>
               </tr>
               <tr>
                 <td className="col-feature">After-hours call coverage</td>
                 <td className="col-sf"><span className="vs-x">✗</span><span className="vs-note">Requires telephony middleware. Separate vendor contract.</span></td>
-                <td className="col-rep"><span className="vs-x">✗</span><span className="vs-note">Not offered.</span></td>
                 <td className="col-sbs"><span className="vs-check">✓</span><span className="vs-note">Included. Never misses a call.</span></td>
               </tr>
 
-              <tr className="vs-cat-row"><td colSpan={4}>AI Chat Receptionist (Website)</td></tr>
+              <tr className="vs-cat-row"><td colSpan={3}>AI Chat Receptionist (Website)</td></tr>
               <tr>
                 <td className="col-feature">Embedded chat widget on website</td>
                 <td className="col-sf"><span className="vs-partial">~</span><span className="vs-note">Requires Service Cloud license (~$165–$330/user/mo).</span></td>
-                <td className="col-rep"><span className="vs-partial">~</span><span className="vs-note">Messaging available but focused on review responses, not lead capture.</span></td>
                 <td className="col-sbs"><span className="vs-check">✓</span><span className="vs-note">Included. One script, works on any website.</span></td>
               </tr>
               <tr>
                 <td className="col-feature">Captures leads and books appointments</td>
                 <td className="col-sf"><span className="vs-partial">~</span><span className="vs-note">Requires Agentforce SDR add-on and Scheduler configuration.</span><span className="vs-tag red">+ Add-on required</span></td>
-                <td className="col-rep"><span className="vs-x">✗</span><span className="vs-note">Not designed for lead capture or appointment booking.</span></td>
                 <td className="col-sbs"><span className="vs-check">✓</span><span className="vs-note">Included. Books directly into your calendar.</span></td>
               </tr>
               <tr>
                 <td className="col-feature">Conversational AI (not just a bot)</td>
                 <td className="col-sf"><span className="vs-partial">~</span><span className="vs-note">Agentforce is LLM-powered but billed at $2 per conversation on top of base license.</span><span className="vs-tag red">+ $2 / conversation</span></td>
-                <td className="col-rep"><span className="vs-partial">~</span><span className="vs-note">AI used for review response suggestions, not full sales conversations.</span></td>
                 <td className="col-sbs"><span className="vs-check">✓</span><span className="vs-note">Included. No per-conversation billing.</span></td>
               </tr>
               <tr>
                 <td className="col-feature">Responds 24/7 without human oversight</td>
                 <td className="col-sf"><span className="vs-partial">~</span><span className="vs-note">Requires careful configuration and guardrails to run autonomously.</span></td>
-                <td className="col-rep"><span className="vs-x">✗</span><span className="vs-note">Designed for human-reviewed responses, not autonomous 24/7 sales chat.</span></td>
                 <td className="col-sbs"><span className="vs-check">✓</span><span className="vs-note">Included.</span></td>
               </tr>
 
-              <tr className="vs-cat-row"><td colSpan={4}>AI CRM</td></tr>
+              <tr className="vs-cat-row"><td colSpan={3}>AI CRM</td></tr>
               <tr>
                 <td className="col-feature">CRM platform included</td>
                 <td className="col-sf"><span className="vs-partial">~</span><span className="vs-note">Sales Cloud is a full CRM. AI features require Unlimited tier.</span><span className="vs-tag red">$165–$330 / user / mo for AI</span></td>
-                <td className="col-rep"><span className="vs-x">✗</span><span className="vs-note">No native CRM. Reputation AI integrates with existing CRMs but doesn&apos;t replace them.</span></td>
                 <td className="col-sbs"><span className="vs-check">✓</span><span className="vs-note">CRM included. No per-seat pricing.</span><span className="vs-tag green">Included</span></td>
               </tr>
               <tr>
                 <td className="col-feature">Auto-logs calls and conversations</td>
                 <td className="col-sf"><span className="vs-check">✓</span><span className="vs-note">Einstein Conversation Insights. Requires $50/user/mo add-on or Unlimited edition.</span><span className="vs-tag red">+ $50 / user / mo</span></td>
-                <td className="col-rep"><span className="vs-x">✗</span><span className="vs-note">Not offered.</span></td>
                 <td className="col-sbs"><span className="vs-check">✓</span><span className="vs-note">Included.</span></td>
               </tr>
               <tr>
                 <td className="col-feature">Pipeline visibility and deal tracking</td>
                 <td className="col-sf"><span className="vs-check">✓</span><span className="vs-note">Best-in-class. Full capability on Professional tier and above.</span></td>
-                <td className="col-rep"><span className="vs-x">✗</span><span className="vs-note">Not a sales pipeline tool.</span></td>
                 <td className="col-sbs"><span className="vs-check">✓</span><span className="vs-note">Included. Visual pipeline, deal stages, contact history.</span></td>
               </tr>
               <tr>
                 <td className="col-feature">BANT scoring and Sandler scorecards</td>
                 <td className="col-sf"><span className="vs-partial">~</span><span className="vs-note">Einstein Lead Scoring available. BANT/Sandler requires custom configuration.</span><span className="vs-tag red">Unlimited tier required</span></td>
-                <td className="col-rep"><span className="vs-x">✗</span><span className="vs-note">Not offered.</span></td>
                 <td className="col-sbs"><span className="vs-check">✓</span><span className="vs-note">Included in AI Sales Assistant. Post-call BANT and Sandler scorecard delivered automatically.</span></td>
               </tr>
 
-              <tr className="vs-cat-row"><td colSpan={4}>AI Sales Manager and Follow-Up</td></tr>
+              <tr className="vs-cat-row"><td colSpan={3}>AI Sales Manager and Follow-Up</td></tr>
               <tr>
                 <td className="col-feature">Follows up with leads automatically</td>
                 <td className="col-sf"><span className="vs-partial">~</span><span className="vs-note">Agentforce SDR agent. Billed at $2/conversation on top of Sales Cloud.</span><span className="vs-tag red">+ $2 / conversation</span></td>
-                <td className="col-rep"><span className="vs-x">✗</span><span className="vs-note">Not a sales follow-up tool.</span></td>
                 <td className="col-sbs"><span className="vs-check">✓</span><span className="vs-note">Included. Follows up within minutes of a new lead arriving.</span></td>
               </tr>
               <tr>
                 <td className="col-feature">Runs multi-step outreach sequences</td>
                 <td className="col-sf"><span className="vs-partial">~</span><span className="vs-note">Requires Sales Engagement add-on at ~$75/user/mo.</span><span className="vs-tag red">+ $75 / user / mo</span></td>
-                <td className="col-rep"><span className="vs-x">✗</span><span className="vs-note">Not offered.</span></td>
                 <td className="col-sbs"><span className="vs-check">✓</span><span className="vs-note">Included.</span></td>
               </tr>
               <tr>
                 <td className="col-feature">Re-engages cold and gone-quiet leads</td>
                 <td className="col-sf"><span className="vs-partial">~</span><span className="vs-note">Possible with SDR agent and custom prompt configuration.</span></td>
-                <td className="col-rep"><span className="vs-x">✗</span><span className="vs-note">Not offered.</span></td>
                 <td className="col-sbs"><span className="vs-check">✓</span><span className="vs-note">Included. Flags and re-engages automatically.</span></td>
               </tr>
 
-              <tr className="vs-cat-row"><td colSpan={4}>Reputation and Review Management</td></tr>
+              <tr className="vs-cat-row"><td colSpan={3}>Reputation and Review Management</td></tr>
               <tr>
                 <td className="col-feature">Review monitoring across platforms</td>
                 <td className="col-sf"><span className="vs-x">✗</span><span className="vs-note">Not a native feature. Requires 3rd-party integration.</span></td>
-                <td className="col-rep"><span className="vs-check">✓</span><span className="vs-note">Core product. Monitors Google, Facebook, and 100+ review sites.</span></td>
                 <td className="col-sbs"><span className="vs-check">✓</span><span className="vs-note">Included via Reputation AI, part of the Full AI Suite.</span></td>
               </tr>
               <tr>
                 <td className="col-feature">AI-generated review response suggestions</td>
                 <td className="col-sf"><span className="vs-x">✗</span><span className="vs-note">Not offered.</span></td>
-                <td className="col-rep"><span className="vs-check">✓</span><span className="vs-note">Core AI feature. Drafts on-brand responses for review replies.</span></td>
                 <td className="col-sbs"><span className="vs-check">✓</span><span className="vs-note">Included. Reputation AI drafts on-brand responses automatically.</span></td>
               </tr>
               <tr>
                 <td className="col-feature">Business listing sync (NAP)</td>
                 <td className="col-sf"><span className="vs-x">✗</span><span className="vs-note">Not offered natively.</span></td>
-                <td className="col-rep"><span className="vs-check">✓</span><span className="vs-note">Pushes consistent NAP data across directories.</span></td>
                 <td className="col-sbs"><span className="vs-check">✓</span><span className="vs-note">Included via Reputation AI.</span></td>
               </tr>
 
-              <tr className="vs-cat-row"><td colSpan={4}>Setup, Support, and Ongoing Costs</td></tr>
+              <tr className="vs-cat-row"><td colSpan={3}>Setup, Support, and Ongoing Costs</td></tr>
               <tr>
                 <td className="col-feature">Implementation / setup cost</td>
                 <td className="col-sf"><span className="vs-x">✗</span><span className="vs-note">SI partner engagement typically $15,000–$75,000+.</span><span className="vs-tag red">$15k–$75k+ one-time</span></td>
-                <td className="col-rep"><span className="vs-partial">~</span><span className="vs-note">Platform setup and onboarding typically requires paid engagement.</span><span className="vs-tag orange">$500–$2,000 onboarding</span></td>
-                <td className="col-sbs"><span className="vs-check">✓</span><span className="vs-tag green">$0 setup</span></td>
+                <td className="col-sbs"><span className="vs-check">✓</span><span className="vs-tag green">$2,000 one-time</span></td>
               </tr>
               <tr>
                 <td className="col-feature">Time to go live</td>
                 <td className="col-sf"><span className="vs-x">✗</span><span className="vs-note">3–6 months for a properly configured deployment.</span></td>
-                <td className="col-rep"><span className="vs-partial">~</span><span className="vs-note">2–4 weeks for full platform setup and listing syndication.</span></td>
                 <td className="col-sbs"><span className="vs-check">✓</span><span className="vs-note">Days, not months.</span></td>
               </tr>
               <tr>
                 <td className="col-feature">Annual contract required</td>
                 <td className="col-sf"><span className="vs-x">✗</span><span className="vs-note">Annual contract mandatory. Early termination typically not allowed.</span></td>
-                <td className="col-rep"><span className="vs-x">✗</span><span className="vs-note">Annual contracts standard for SMB tier.</span></td>
                 <td className="col-sbs"><span className="vs-check">✓</span><span className="vs-note">Month-to-month. No lock-in.</span></td>
               </tr>
               <tr>
                 <td className="col-feature">Built for SMB without an internal admin</td>
                 <td className="col-sf"><span className="vs-x">✗</span><span className="vs-note">Requires a dedicated Salesforce admin to run effectively.</span></td>
-                <td className="col-rep"><span className="vs-partial">~</span><span className="vs-note">More approachable than Salesforce but still requires someone managing the platform.</span></td>
                 <td className="col-sbs"><span className="vs-check">✓</span><span className="vs-note">Designed for small teams. No internal admin needed.</span></td>
               </tr>
 
@@ -427,27 +388,6 @@ export default function SalesforceVsPage() {
               <div className="vs-cost-total sf"><div className="vs-cost-total-label">Year 1 Total</div><div className="vs-cost-total-value sf">$93k–$140k+</div></div>
             </div>
 
-            {/* REPUTATION */}
-            <div className="vs-cost-card">
-              <div className="vs-cost-card-header rep">
-                <div className="vs-cost-logo rep">REP</div>
-                <div>
-                  <div className="vs-cost-card-title">Reputation.com</div>
-                  <div className="vs-cost-card-sub">SMB tier, quote-based pricing</div>
-                </div>
-              </div>
-              <div className="vs-cost-line"><div className="vs-cost-line-label">Core platform (reviews + listings)<small>Quote-based, estimated SMB tier</small></div><div className="vs-cost-line-value orange">$400–$800/mo</div></div>
-              <div className="vs-cost-line"><div className="vs-cost-line-label">AI response suggestions add-on<small>Higher tiers only</small></div><div className="vs-cost-line-value orange">$200–$400/mo</div></div>
-              <div className="vs-cost-line"><div className="vs-cost-line-label">Survey / feedback module<small>Add-on or bundled depending on tier</small></div><div className="vs-cost-line-value orange">Varies</div></div>
-              <div className="vs-cost-line"><div className="vs-cost-line-label">AI Voice Receptionist</div><div className="vs-cost-line-value red">Not offered</div></div>
-              <div className="vs-cost-line"><div className="vs-cost-line-label">AI CRM</div><div className="vs-cost-line-value red">Not offered</div></div>
-              <div className="vs-cost-line"><div className="vs-cost-line-label">AI Sales Manager / outreach</div><div className="vs-cost-line-value red">Not offered</div></div>
-              <div className="vs-cost-line" style={{ borderTop: '2px solid var(--hairline)' }}><div className="vs-cost-line-label"><strong>Est. Monthly Recurring</strong></div><div className="vs-cost-line-value orange"><strong>$600–$1,200/mo</strong></div></div>
-              <div className="vs-cost-line"><div className="vs-cost-line-label">Onboarding fee (one-time)</div><div className="vs-cost-line-value orange">$500–$2,000</div></div>
-              <div className="vs-cost-line"><div className="vs-cost-line-label">Annual contract lock-in</div><div className="vs-cost-line-value orange">12 months</div></div>
-              <div className="vs-cost-total rep"><div className="vs-cost-total-label">Year 1 Total</div><div className="vs-cost-total-value rep">$8k–$16k</div></div>
-            </div>
-
             {/* FULL AI SUITE */}
             <div className="vs-cost-card">
               <div className="vs-cost-card-header sbs">
@@ -465,10 +405,10 @@ export default function SalesforceVsPage() {
               <div className="vs-cost-line"><div className="vs-cost-line-label">All conversations, unlimited seats<small>No per-conversation billing</small></div><div className="vs-cost-line-value blue">Included</div></div>
               <div className="vs-cost-line"><div className="vs-cost-line-label">Reputation AI<small>Review monitoring, AI responses, listing sync</small></div><div className="vs-cost-line-value blue">Included</div></div>
               <div className="vs-cost-line"><div className="vs-cost-line-label">Shark AI Solutions account support and optimization</div><div className="vs-cost-line-value blue">Included</div></div>
-              <div className="vs-cost-line" style={{ borderTop: '2px solid var(--hairline)' }}><div className="vs-cost-line-label"><strong>Monthly Recurring</strong></div><div className="vs-cost-line-value green"><strong>Starting at $5,000/mo</strong></div></div>
-              <div className="vs-cost-line"><div className="vs-cost-line-label">Implementation / setup</div><div className="vs-cost-line-value green">$0</div></div>
+              <div className="vs-cost-line" style={{ borderTop: '2px solid var(--hairline)' }}><div className="vs-cost-line-label"><strong>Monthly Recurring</strong></div><div className="vs-cost-line-value green"><strong>$5,000/mo</strong></div></div>
+              <div className="vs-cost-line"><div className="vs-cost-line-label">Implementation / setup (one-time)</div><div className="vs-cost-line-value blue">$2,000</div></div>
               <div className="vs-cost-line"><div className="vs-cost-line-label">Internal admin cost required</div><div className="vs-cost-line-value green">$0</div></div>
-              <div className="vs-cost-total sbs"><div className="vs-cost-total-label">Year 1 Total</div><div className="vs-cost-total-value sbs">Starting at $60,000</div></div>
+              <div className="vs-cost-total sbs"><div className="vs-cost-total-label">Year 1 Total</div><div className="vs-cost-total-value sbs">$62,000</div></div>
             </div>
           </div>
 
@@ -477,25 +417,24 @@ export default function SalesforceVsPage() {
             <div className="vs-bl-left">
               <h2>The <span>honest</span> takeaway.</h2>
               <p>Salesforce is enterprise software built for companies with dedicated admins and six-figure implementation budgets. For most small businesses, it is overkill at every level.</p>
-              <p>Reputation.com does one thing well: reviews and listings. It will not answer your phones, it will not follow up with a lead, and it has no CRM. Businesses that use it still need to buy everything else separately.</p>
-              <p>The Full AI Suite includes Reputation AI alongside AI Voice, AI Chat, AI CRM, AI Sales Manager, and AI Sales Assistant, all for a single flat rate with no setup cost and no annual contract. You are not choosing between reputation management and lead conversion. You get both.</p>
+              <p>The Full AI Suite includes AI Voice, AI Chat, AI CRM, AI Sales Manager, AI Sales Assistant, and Reputation AI for a flat $5,000/month with a one-time $2,000 setup fee. You are operational within days, not months, and you are not locked into an annual contract.</p>
             </div>
             <div className="vs-bl-right">
               <div className="vs-bl-point">
                 <div className="vs-bl-icon">📞</div>
-                <div className="vs-bl-text"><strong>Neither competitor answers your phones.</strong>Salesforce needs a third-party telephony build. Reputation AI does not offer voice at all.</div>
+                <div className="vs-bl-text"><strong>Salesforce does not answer your phones.</strong>AI voice capability requires a third-party telephony build. The Full AI Suite includes a built-in AI Voice Receptionist from day one.</div>
               </div>
               <div className="vs-bl-point">
                 <div className="vs-bl-icon">💬</div>
-                <div className="vs-bl-text"><strong>Salesforce charges $2 per conversation.</strong>500 monthly interactions adds $1,000 to your bill before anything else.</div>
+                <div className="vs-bl-text"><strong>Salesforce charges $2 per conversation.</strong>500 monthly interactions adds $1,000 to your bill before anything else. The Full AI Suite has no per-conversation billing.</div>
               </div>
               <div className="vs-bl-point">
                 <div className="vs-bl-icon">⭐</div>
-                <div className="vs-bl-text"><strong>Reputation AI is already inside the Full AI Suite.</strong>Reputation.com charges $600–$1,200/mo just for reviews. You get that, plus voice, chat, CRM, and sales follow-up, all in one package.</div>
+                <div className="vs-bl-text"><strong>Reputation management is built in.</strong>Review monitoring, AI-generated responses, and listing sync are all included. No separate platform or additional subscription needed.</div>
               </div>
               <div className="vs-bl-point">
                 <div className="vs-bl-icon">🔒</div>
-                <div className="vs-bl-text"><strong>Both lock you into annual contracts.</strong>The Full AI Suite is month-to-month. You stay because it works, not because you signed a contract.</div>
+                <div className="vs-bl-text"><strong>Salesforce locks you into annual contracts.</strong>The Full AI Suite is month-to-month. You stay because it works, not because you signed a contract.</div>
               </div>
             </div>
           </div>
@@ -505,23 +444,19 @@ export default function SalesforceVsPage() {
             <h2>Common questions about Salesforce AI agents alternatives</h2>
             <div className="vs-faq-item">
               <h3>What is a good Salesforce AI agents alternative for small business?</h3>
-              <p>For small and mid-size businesses, the Shark AI Solutions Full AI Suite is a practical Salesforce Agentforce alternative. It includes AI Voice Receptionist, AI Chat, AI CRM, AI Sales Manager, and Reputation AI in one flat monthly rate with no setup cost and no annual contract, compared to Salesforce&apos;s $93k to $140k+ year-one cost for a comparable configuration.</p>
+              <p>For small and mid-size businesses, the Shark AI Solutions Full AI Suite is a practical Salesforce Agentforce alternative. It includes AI Voice Receptionist, AI Chat, AI CRM, AI Sales Manager, and Reputation AI for a flat $5,000/month with a one-time $2,000 setup fee and no annual contract, compared to Salesforce&apos;s $93k to $140k+ year-one cost for a comparable configuration.</p>
             </div>
             <div className="vs-faq-item">
               <h3>How does Salesforce Agentforce compare to the Full AI Suite?</h3>
-              <p>Salesforce Agentforce is enterprise software that requires a dedicated admin, a $15k to $75k implementation partner, and charges $2 per AI conversation. The Full AI Suite is designed for small business teams: no internal admin needed, $0 setup, no per-conversation billing, and includes AI voice, chat, CRM, sales follow-up, and reputation management for a flat monthly rate.</p>
+              <p>Salesforce Agentforce is enterprise software that requires a dedicated admin, a $15k to $75k implementation partner, and charges $2 per AI conversation. The Full AI Suite is designed for small business teams: no internal admin needed, a one-time $2,000 setup fee, no per-conversation billing, and includes AI voice, chat, CRM, sales follow-up, and reputation management for a flat $5,000/month.</p>
             </div>
             <div className="vs-faq-item">
               <h3>Does Salesforce have a built-in AI voice receptionist?</h3>
               <p>No. Salesforce does not natively answer inbound phone calls. AI voice capability requires a third-party telephony integration like Amazon Connect or Five9, adding cost and complexity. The Shark AI Solutions Full AI Suite includes a built-in AI Voice Receptionist that answers every call, qualifies the caller, and books appointments.</p>
             </div>
             <div className="vs-faq-item">
-              <h3>What does Reputation.com not do that the Full AI Suite does?</h3>
-              <p>Reputation.com focuses on review monitoring and listings. It does not include AI voice, AI chat for lead capture, a CRM, or automated sales follow-up. Businesses that use Reputation.com still need to purchase separate tools for all of those functions. The Full AI Suite includes Reputation AI alongside voice, chat, CRM, and sales manager for one flat rate.</p>
-            </div>
-            <div className="vs-faq-item">
               <h3>How long does it take to set up the Full AI Suite?</h3>
-              <p>Most clients are live within a week. Salesforce deployments typically take 3 to 6 months with a systems integrator. The Full AI Suite has no lengthy configuration requirement and no setup fee.</p>
+              <p>Most clients are live within a week. The one-time $2,000 setup fee covers full configuration and onboarding. Salesforce deployments typically take 3 to 6 months with a systems integrator costing $15,000 to $75,000+. There is no lengthy configuration requirement and no annual contract.</p>
             </div>
           </div>
 
