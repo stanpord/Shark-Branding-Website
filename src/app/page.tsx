@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 const pressLogos = [
   { name: 'INC.', src: '/press-logos/inc.webp', width: 80, height: 30, href: 'https://www.inc.com/', imgClass: 'invert' },
   { name: 'WFLA News Channel 8', src: '/press-logos/wfla.png', width: 110, height: 55, href: 'https://www.wfla.com' },
-  { name: 'Tampa Bay Times', src: '/press-logos/tampabay-times.png', width: 160, height: 60, href: 'https://www.tampabay.com' },
+  { name: 'Tampa Bay Times', src: '/press-logos/tampabay-times.png', width: 220, height: 80, href: 'https://www.tampabay.com', imgClass: 'min-w-[170px]' },
   { name: 'TechNewsWorld', src: '/press-logos/technewsworld.png', width: 130, height: 42, href: 'https://www.technewsworld.com/story/study-finds-most-restaurants-missing-from-ai-recommendations-180396.html' },
 ]
 
@@ -153,7 +153,7 @@ export default function Home() {
                   alt={logo.name}
                   width={logo.width}
                   height={logo.height}
-                  className={`object-contain max-h-10 w-auto opacity-40 grayscale hover:opacity-70 hover:grayscale-0 motion-safe:transition-all duration-150${logo.imgClass ? ` ${logo.imgClass}` : ''}`}
+                  className={`object-contain max-h-12 w-auto opacity-40 grayscale hover:opacity-70 hover:grayscale-0 motion-safe:transition-all duration-150${logo.imgClass ? ` ${logo.imgClass}` : ''}`}
                   unoptimized
                 />
               </a>
