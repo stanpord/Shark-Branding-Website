@@ -10,12 +10,12 @@ export const metadata: Metadata = {
 };
 
 const featuredLogos = [
-  { name: "INC.", src: "/press-logos/inc.svg", width: 80, height: 30, href: "https://www.inc.com/" },
+  { name: "INC.", src: "/press-logos/inc.webp", width: 90, height: 34, href: "https://www.inc.com/", imgClass: "invert" },
   { name: "TechNewsWorld", src: "/press-logos/technewsworld.png", width: 160, height: 52, href: "https://www.technewsworld.com/story/study-finds-most-restaurants-missing-from-ai-recommendations-180396.html" },
   { name: "AIthority", src: "/press-logos/aithority.png", width: 120, height: 36, href: "https://aithority.com/machine-learning/shark-branding-solutions-launches-shark-ai-hackathon-to-build-the-future-of-human-first-ai-employees/" },
   { name: "Bay News 9", src: "/press-logos/baynews9.png", width: 70, height: 70, href: "https://baynews9.com/fl/tampa/events/2026/05/26/shark_ai_hackathon" },
   { name: "WFLA News Channel 8", src: "/press-logos/wfla.png", width: 130, height: 65, href: "https://www.wfla.com" },
-  { name: "Tampa Bay Times", src: "/press-logos/tampabay-times.png", width: 150, height: 56, href: "https://www.tampabay.com" },
+  { name: "Tampa Bay Times", src: "/press-logos/tampabay-times.png", width: 190, height: 70, href: "https://www.tampabay.com" },
   { name: "Neighborhood News", src: "/press-logos/neighborhoodnews-pdf.png", width: 150, height: 44, href: "https://neighborhoodnewsonline.net/tag/michelle-stanaland/" },
   { name: "St. Pete Catalyst", src: "/press-logos/stpetecatalyst.png", width: 130, height: 40, href: "https://stpetecatalyst.com/w/shark-branding-solutions-hosted-the-shark-ai-hackathon-an-interactive-innovation-event-where-business-leaders-community-partners-and-invited-guests-helped-test-challenge-and-shape-the-next-genera/" },
 ];
@@ -147,7 +147,7 @@ export default function MediaPage() {
                   alt={logo.name}
                   width={logo.width}
                   height={logo.height}
-                  className="object-contain max-h-12 w-auto"
+                  className={`object-contain max-h-12 w-auto${logo.imgClass ? ` ${logo.imgClass}` : ""}`}
                   unoptimized
                 />
               </a>
