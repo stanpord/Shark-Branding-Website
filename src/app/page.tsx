@@ -1,12 +1,52 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
+import Script from 'next/script'
 import AuditModalTrigger from '@/components/AuditModalTrigger'
 import EmployeeCarousel from '@/components/EmployeeCarousel'
 import HomepageAnimations from '@/components/HomepageAnimations'
 
 export const metadata: Metadata = {
-  title: 'AI Visibility for Tampa Bay — Shark AI Solutions',
+  title: 'AI Visibility for Tampa Bay | Shark AI Solutions',
   description: 'Shark AI Solutions helps Tampa Bay businesses get found by ChatGPT, Google AI Overviews, Perplexity, and Gemini. No ad spend. Results in 30 days.',
+}
+
+const pressLogos = [
+  { name: 'INC.', src: '/press-logos/inc.webp', width: 80, height: 30, href: 'https://www.inc.com/', imgClass: 'invert' },
+  { name: 'WFLA News Channel 8', src: '/press-logos/wfla.png', width: 110, height: 55, href: 'https://www.wfla.com' },
+  { name: 'Tampa Bay Times', src: '/press-logos/tampabay-times.png', width: 160, height: 60, href: 'https://www.tampabay.com' },
+  { name: 'TechNewsWorld', src: '/press-logos/technewsworld.png', width: 130, height: 42, href: 'https://www.technewsworld.com/story/study-finds-most-restaurants-missing-from-ai-recommendations-180396.html' },
+]
+
+const homepageFAQ = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'What is AI visibility for local businesses?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'AI visibility is how well your business appears when AI platforms like ChatGPT, Google AI Overviews, Perplexity, and Gemini answer questions your customers are asking. Instead of showing ten results, these platforms recommend one to three businesses. If your business is not in that shortlist, you are invisible to buyers who never reach the traditional search results at all.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'How fast do businesses see results from AI visibility work?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Most Shark AI Solutions clients see measurable movement in AI visibility within 30 days. One HVAC client moved from position #32 to #2 across four high-intent keywords in 30 days without paid ads. Results vary based on how many visibility gaps exist at the start and how quickly corrected signals propagate across platforms.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What does the AI visibility process include?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'The process covers four steps: an AI Audit to find exactly where your business is invisible, inconsistent, or outranked; a Visibility Fix to correct listings, structured data, and trust signals; an Authority Build to develop reviews, citations, and AI-readable content; and ongoing Monitor and Maintain work to adapt as AI algorithms change. Most clients are fully in motion within 30 days of kickoff.',
+      },
+    },
+  ],
 }
 
 const stats = [
@@ -17,7 +57,7 @@ const stats = [
 
 const steps = [
   { n: '01', title: 'AI Audit', body: 'We run your business through every major AI platform to find exactly where you\'re invisible, inconsistent, or outranked.' },
-  { n: '02', title: 'Visibility Fix', body: 'We correct your signals: listings, structured data, trust indicators, and content — everything AI needs to recognize and recommend you.' },
+  { n: '02', title: 'Visibility Fix', body: 'We correct your signals: listings, structured data, trust indicators, and content. Everything AI needs to recognize and recommend you.' },
   { n: '03', title: 'Authority Build', body: 'We build the reputation layer: reviews, citations, and AI-readable content that makes you the obvious answer to your customers\' questions.' },
   { n: '04', title: 'Monitor & Maintain', body: 'AI algorithms change constantly. We watch, adapt, and keep your visibility growing every month.' },
 ]
@@ -25,13 +65,18 @@ const steps = [
 const services = [
   { title: 'AI Business Consulting', body: 'Full-service AI visibility strategy for businesses ready to own their category.', href: '/services#ai-visibility' },
   { title: 'AI Visibility Toolkit', body: 'The complete managed system: listings, reviews, content, and AI readiness in one place.', href: '/services#toolkit' },
-  { title: 'AI Employees', body: 'Automate lead follow-up, review requests, content, and social — 24/7, on autopilot.', href: '/aiemployees' },
+  { title: 'AI Employees', body: 'Automate lead follow-up, review requests, content, and social, 24/7, on autopilot.', href: '/aiemployees' },
   { title: 'Free AI Audit', body: 'See exactly where your business stands across AI platforms. Reviewed with you personally. No catch.', href: '/free-report' },
 ]
 
 export default function Home() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homepageFAQ) }}
+      />
+      <Script src="https://cdn.apigateway.co/review-widget-client..prod/sdk.js" strategy="lazyOnload" />
       <HomepageAnimations />
 
       {/* ── Hero ── */}
@@ -85,6 +130,34 @@ export default function Home() {
             >
               See How It Works
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ── As Seen In Press Strip ── */}
+      <section className="bg-white border-b border-[#e8e8ed] py-8 px-6">
+        <div className="max-w-[980px] mx-auto">
+          <p className="text-center text-[11px] font-bold tracking-[0.2em] uppercase text-[#b0b0b0] mb-7">As Seen In</p>
+          <div className="flex flex-wrap items-center justify-center gap-8 sm:gap-14">
+            {pressLogos.map((logo) => (
+              <a
+                key={logo.name}
+                href={logo.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={logo.name}
+                className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 rounded"
+              >
+                <Image
+                  src={logo.src}
+                  alt={logo.name}
+                  width={logo.width}
+                  height={logo.height}
+                  className={`object-contain max-h-10 w-auto opacity-40 grayscale hover:opacity-70 hover:grayscale-0 motion-safe:transition-all duration-150${logo.imgClass ? ` ${logo.imgClass}` : ''}`}
+                  unoptimized
+                />
+              </a>
+            ))}
           </div>
         </div>
       </section>
@@ -227,6 +300,20 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ── Reviews ── */}
+      <section className="bg-[#f5f5f7] px-6 py-12 sm:py-20 border-t border-[#e8e8ed]">
+        <div className="max-w-[980px] mx-auto">
+          <div className="text-center mb-10">
+            <p className="text-[#18b5d8] text-[13px] font-semibold tracking-[0.2em] uppercase mb-5">What Clients Say</p>
+            <h2 className="display-lg text-[#0a0a0a]" style={{ textWrap: 'balance' }}>
+              Real businesses. Real reviews.
+            </h2>
+          </div>
+          {/* @ts-ignore */}
+          <review-widget widget-id="widget-973a3aee-1eaa-41ad-b5f9-d7ef1bd85c85"></review-widget>
+        </div>
+      </section>
+
       {/* ── Services ── */}
       <section data-scene="services" className="bg-[#f5f5f7] px-6 py-12 sm:py-20 border-t border-[#e8e8ed]">
         <div className="max-w-[980px] mx-auto">
@@ -261,7 +348,7 @@ export default function Home() {
               Your business runs 24/7. Your team shouldn't have to.
             </h2>
             <p className="text-[16px] text-[#555] mt-5 max-w-[520px] mx-auto">
-              AI employees handle lead follow-up, review management, content, and bookings — automatically, while you focus on the work that actually requires you.
+              AI employees handle lead follow-up, review management, content, and bookings automatically, while you focus on the work that actually requires you.
             </p>
           </div>
 
