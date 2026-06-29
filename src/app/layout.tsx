@@ -16,9 +16,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Shark AI Solutions — AI Employees & AI Visibility for Tampa Bay",
+  title: "Shark AI Solutions: AI Employees & AI Visibility for Tampa Bay",
   description:
-    "AI employees and AI visibility for Tampa Bay local businesses. Automate leads, follow-up, reviews, and content — and get found on ChatGPT, Google AI, and Gemini.",
+    "AI employees and AI visibility for Tampa Bay local businesses. Automate leads, follow-up, reviews, and content, and get found on ChatGPT, Google AI, and Gemini.",
   keywords: [
     "AI business consulting",
     "AI visibility",
@@ -43,20 +43,20 @@ export const metadata: Metadata = {
       "AI employees and AI visibility for Tampa Bay local businesses. Get found on ChatGPT, Google AI, and Gemini.",
     type: "website",
     url: "https://sharkbrandingsolutions.com",
-    siteName: "Shark Branding Solutions",
+    siteName: "Shark AI Solutions",
     locale: "en_US",
     images: [
       {
         url: "https://sharkbrandingsolutions.com/logo.webp",
         width: 1200,
         height: 630,
-        alt: "Shark Branding Solutions — AI Business Consulting",
+        alt: "Shark AI Solutions: AI Employees & AI Visibility for Tampa Bay",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Shark Branding Solutions",
+    title: "Shark AI Solutions",
     description: "Get Found. Get Trusted. Get Chosen. AI solutions for forward-thinking businesses.",
     images: ["https://sharkbrandingsolutions.com/logo.webp"],
   },
@@ -105,7 +105,7 @@ const structuredData = {
         jobTitle: "Managing Partner and Founder",
         url: "https://sharkbrandingsolutions.com/about#michelle",
         sameAs: ["https://www.linkedin.com/company/shark-branding-solutions"],
-        award: "Top 15 Marketing Experts in Tampa Bay — Influence Digest, 2025",
+        award: "Top 15 Marketing Experts in Tampa Bay, Influence Digest 2025",
       },
       employee: [
         {

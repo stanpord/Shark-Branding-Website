@@ -42,7 +42,7 @@ export default function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
-      <input type="hidden" name="subject" value="New inquiry — Shark Branding Solutions" />
+      <input type="hidden" name="subject" value="New inquiry | Shark AI Solutions" />
       <input type="hidden" name="from_name" value="Shark Website" />
       <input type="checkbox" name="botcheck" className="hidden" />
 
@@ -100,9 +100,9 @@ export default function ContactForm() {
         >
           <option value="">Select one…</option>
           <option value="Free Visibility Audit">Free Visibility Audit</option>
-          <option value="AI Visibility Toolkit — Done For You ($2,000/mo)">AI Visibility Toolkit — Done For You ($2,000/mo)</option>
-          <option value="AI Visibility Toolkit — Self-Guided ($997/mo)">AI Visibility Toolkit — Self-Guided ($997/mo)</option>
-          <option value="North Tampa Bay Chamber Member — Member Pricing">North Tampa Bay Chamber Member — Member Pricing</option>
+          <option value="AI Visibility Toolkit, Done For You ($2,000/mo)">AI Visibility Toolkit, Done For You ($2,000/mo)</option>
+          <option value="AI Visibility Toolkit, Self-Guided ($997/mo)">AI Visibility Toolkit, Self-Guided ($997/mo)</option>
+          <option value="North Tampa Bay Chamber Member, Member Pricing">North Tampa Bay Chamber Member, Member Pricing</option>
           <option value="AI Marketing Employees">AI Marketing Employees</option>
           <option value="AI Operations Employees">AI Operations Employees</option>
           <option value="Custom AI Consulting">Custom AI Consulting</option>
@@ -122,7 +122,7 @@ export default function ContactForm() {
       </div>
 
       {status === "error" && (
-        <p className="text-red-500 text-[13px]">Something went wrong — try emailing us directly at info@sharkbrandingsolutions.com.</p>
+        <p className="text-red-500 text-[13px]">Something went wrong, try emailing us directly at info@sharkbrandingsolutions.com.</p>
       )}
 
       <button
