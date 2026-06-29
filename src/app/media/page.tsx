@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 };
 
 const featuredLogos = [
-  { name: "INC.", src: "/press-logos/inc.svg", width: 80, height: 30, href: "https://www.inc.com/diana-bocco/ai-claude-chatgpt-stress-test-startup-idea/91363659" },
+  { name: "INC.", src: "/press-logos/inc.svg", width: 80, height: 30, href: "https://www.inc.com/" },
   { name: "TechNewsWorld", src: "/press-logos/technewsworld.png", width: 160, height: 52, href: "https://www.technewsworld.com/story/study-finds-most-restaurants-missing-from-ai-recommendations-180396.html" },
   { name: "AIthority", src: "/press-logos/aithority.png", width: 120, height: 36, href: "https://aithority.com/machine-learning/shark-branding-solutions-launches-shark-ai-hackathon-to-build-the-future-of-human-first-ai-employees/" },
   { name: "Bay News 9", src: "/press-logos/baynews9.png", width: 70, height: 70, href: "https://baynews9.com/fl/tampa/events/2026/05/26/shark_ai_hackathon" },
