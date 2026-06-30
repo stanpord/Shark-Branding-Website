@@ -121,7 +121,7 @@ export default function WhatIsAiSalesManagerPage() {
 
           <div className="text-[17px] leading-[1.75] text-[#333] space-y-6 mb-16">
             <p>
-              Here is what sales management looks like at most small service businesses in Tampa Bay. A lead comes in. Someone catches it eventually. If they are busy, they get to it later. Maybe they follow up once. If the lead does not respond, it gets forgotten. The pipeline is whatever is in someone&apos;s head.
+              Ask any service business owner in Tampa Bay how they manage leads and you get the same answer. Someone catches the call when they can. If they are busy, they get to it later. Maybe one follow-up. If the lead does not respond, it fades. The pipeline lives in someone&apos;s head.
             </p>
             <p>
               That is not a people problem. It is a systems problem. Your team is not lazy. They are doing the work. Sales management is just nobody&apos;s actual job.
@@ -143,7 +143,7 @@ export default function WhatIsAiSalesManagerPage() {
               A high-value lead goes directly to a senior team member with full context on the call. Someone who needs more time goes into a follow-up sequence. Someone who is clearly not ready enters a longer nurture flow. Your team never touches any of this. The rules are set once. The AI runs them on every lead, every time.
             </p>
             <p>
-              Follow-up does not wait. The first message goes out within minutes of the lead coming in. For a service business where speed to response is a competitive advantage, that matters more than most people realize. Studies from Harvard Business Review put the odds of qualifying a lead at 21 times higher when you respond within five minutes versus 30 minutes. The AI Sales Manager responds in under five minutes, every time, even at 11 PM on a Sunday.
+              Follow-up does not wait. The first message goes out within minutes of the lead coming in. The Harvard Business Review tracked this: respond within five minutes instead of 30 and you are 21 times more likely to qualify the lead. The AI Sales Manager responds in under five minutes, every time, including 11 PM on a Sunday.
             </p>
 
             <h2 className="text-[26px] font-bold text-[#0a0a0a] mt-8 mb-4">What it does with leads that do not convert right away</h2>
@@ -221,7 +221,7 @@ export default function WhatIsAiSalesManagerPage() {
               </Link>
               <Link href="/resources/blog-what-is-ai-crm-vs-hubspot" className="flex items-center gap-3 group">
                 <span className="text-[#18b5d8] font-bold shrink-0">→</span>
-                <span className="text-[15px] text-[#333] group-hover:text-[#18b5d8] transition-colors">What Is an AI CRM (And How Is It Different From HubSpot)?</span>
+                <span className="text-[15px] text-[#333] group-hover:text-[#18b5d8] transition-colors">What Is an AI CRM (And How Is It Different From Traditional CRMs)?</span>
               </Link>
               <Link href="/resources/blog-what-is-ai-sales-assistant-bant-sandler" className="flex items-center gap-3 group">
                 <span className="text-[#18b5d8] font-bold shrink-0">→</span>

@@ -143,7 +143,7 @@ export default function FullAiSuitePricingPage() {
               So let us be direct. The Full AI Suite is $2,000 to set up and $5,000 per month. That number does not go up because you get more calls. It does not go up because you hire another person. It does not change because you need support or a configuration update.
             </p>
             <p>
-              What changes is how much value you get out of it as your business grows.
+              More calls, more team members, more growth. The price stays the same.
             </p>
           </div>
 
@@ -216,7 +216,7 @@ export default function FullAiSuitePricingPage() {
               </Link>
               <Link href="/resources/blog-what-is-ai-crm-vs-hubspot" className="flex items-center gap-3 group">
                 <span className="text-[#18b5d8] font-bold shrink-0">→</span>
-                <span className="text-[15px] text-[#333] group-hover:text-[#18b5d8] transition-colors">What Is an AI CRM (And How Is It Different From HubSpot)?</span>
+                <span className="text-[15px] text-[#333] group-hover:text-[#18b5d8] transition-colors">What Is an AI CRM (And How Is It Different From Traditional CRMs)?</span>
               </Link>
               <Link href="/resources/blog-what-is-ai-sales-manager" className="flex items-center gap-3 group">
                 <span className="text-[#18b5d8] font-bold shrink-0">→</span>

@@ -168,7 +168,7 @@ export default function WhatIsAiSalesAssistantPage() {
               Why does this work? Because people convince themselves more readily than they are convinced by others. When a prospect describes the problem in their own words, they own it. By the time your closer gets on the phone, the prospect has already sold themselves on why the problem needs solving.
             </p>
             <p>
-              The AI Sales Assistant can be configured to use Sandler-style discovery in its follow-up sequences. Instead of sending &ldquo;Just checking in, are you still interested?&rdquo;, it asks questions like: &ldquo;What has this been costing you in time or missed revenue?&rdquo; or &ldquo;What happens if this does not get fixed before summer?&rdquo; The answers warm the lead and give your closer a roadmap for the conversation.
+              The AI Sales Assistant uses Sandler-style discovery in its follow-up sequences. Instead of sending &ldquo;Just checking in, are you still interested?&rdquo;, it asks questions like: &ldquo;What has this been costing you in time or missed revenue?&rdquo; or &ldquo;What happens if this does not get fixed before summer?&rdquo; The answers warm the lead and give your closer a roadmap before they ever pick up the phone.
             </p>
 
             <h2 className="text-[26px] font-bold text-[#0a0a0a] mt-8 mb-4">What your human team actually does</h2>
@@ -179,7 +179,7 @@ export default function WhatIsAiSalesAssistantPage() {
               Every lead your closer gets has already been through intake, qualification, and at least one or two nurture touchpoints. They know what the prospect needs, what their budget is, whether they are the decision maker, and what their timeline looks like. The conversation your closer has is not an exploratory call. It is a closing call.
             </p>
             <p>
-              That is a fundamentally different experience for your team and for your prospect. Your closer is not starting from zero. They are picking up where the AI left off with full context and a warm lead.
+              That is a different conversation entirely. Your closer is not starting from zero. They are picking up where the AI left off with full context and a warm lead.
             </p>
 
             <h2 className="text-[26px] font-bold text-[#0a0a0a] mt-8 mb-4">What this looks like for a service business in Tampa Bay</h2>
