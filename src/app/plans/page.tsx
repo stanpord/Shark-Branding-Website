@@ -45,11 +45,6 @@ const plansSchema = {
         },
         {
           "@type": "Question",
-          name: "Is $5,000 per month the right investment for a small business?",
-          acceptedAnswer: { "@type": "Answer", text: "If your average job or contract is worth $2,000 or more, you need to close three additional jobs per month to cover it entirely. Most clients close that in week two." },
-        },
-        {
-          "@type": "Question",
           name: "Can I hire just one AI employee instead of the full suite?",
           acceptedAnswer: { "@type": "Answer", text: "Yes. Individual AI employees are available. Most clients start with Gemma (chat receptionist) or the Voice Receptionist and expand from there." },
         },
@@ -87,10 +82,12 @@ const doneForYouFeatures = [
 ];
 
 const customFeatures = [
-  "Multi-location businesses needing visibility across several markets",
+  "Dedicated account lead and priority support",
+  "Custom SLA and quarterly business reviews",
+  "Multi-location and multi-market visibility management",
+  "White-glove onboarding and executive strategy workshops",
+  "Custom reporting, dashboards, and executive summaries",
   "Agencies managing AI visibility for their own clients",
-  "Organizations needing a dedicated account lead and custom reporting",
-  "White-glove onboarding and strategy workshops",
 ];
 
 // 3 objections shown directly below pricing
@@ -144,10 +141,6 @@ const faqs = [
   {
     q: "Does this work for my industry?",
     a: "The framework applies to any local service business that relies on customers finding them online, HVAC, real estate, legal, medical, home services, restaurants, retail, and more. The signals AI systems look for are consistent across industries. If your customers search locally, this applies to you.",
-  },
-  {
-    q: "Is there special pricing for Chamber members?",
-    a: "Yes. North Tampa Bay Chamber members can request member-only pricing directly from the team. We keep that off the public page and share it with qualified members directly.",
   },
 ];
 
@@ -214,7 +207,7 @@ export default function PlansPage() {
             {[
               { text: "HVAC client: #32 → #2 in 30 days" },
               { text: "No paid ads required" },
-              { text: "North Tampa Bay Chamber partner", href: "https://www.northtampabay.org" },
+              { text: "Multi-state retail client: $1M+ weekend revenue" },
             ].map((item) => (
               <div key={item.text} className="flex items-center gap-2 text-[14px] font-semibold text-[#333333]">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
@@ -346,10 +339,10 @@ export default function PlansPage() {
             {/* Card 3: Custom */}
             <div className="bg-[#07141a] rounded-[20px] p-7 border border-dashed border-white/10 flex flex-col">
               <span className="font-mono text-[#18b5d8] text-[11px] tracking-[0.22em] uppercase block mb-5">
-                Custom / Multi-Location
+                Enterprise
               </span>
               <h2 className="text-[22px] font-semibold text-white mb-1 leading-snug">
-                Full-Service<br />Custom Scope
+                Multi-Location.<br />Dedicated Scope.
               </h2>
 
               <div className="mt-6 mb-2">
@@ -373,7 +366,7 @@ export default function PlansPage() {
                 href="/contact"
                 className="btn-press mt-6 block text-center text-white text-[15px] font-semibold rounded-full px-6 py-3.5 border border-white/20 hover:border-white/50 motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0a0a] [touch-action:manipulation]"
               >
-                Request a Custom Quote
+                Request Enterprise Pricing
               </Link>
             </div>
 
@@ -440,7 +433,7 @@ export default function PlansPage() {
               {[
                 { label: "Toolkit",      sub: "$997/mo",      highlight: false },
                 { label: "Done For You", sub: "$2,000/mo",    highlight: true  },
-                { label: "Custom",       sub: "From $4,000",  highlight: false },
+                { label: "Enterprise",    sub: "From $4,000",  highlight: false },
               ].map((col) => (
                 <div key={col.label} className={`px-5 py-4 text-center ${col.highlight ? "bg-[#18b5d8]/10" : ""}`}>
                   <p className={`text-[13px] font-semibold ${col.highlight ? "text-[#18b5d8]" : "text-white"}`}>{col.label}</p>

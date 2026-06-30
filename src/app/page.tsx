@@ -7,8 +7,8 @@ import EmployeeCarousel from '@/components/EmployeeCarousel'
 import HomepageAnimations from '@/components/HomepageAnimations'
 
 export const metadata: Metadata = {
-  title: 'AI Visibility for Tampa Bay | Shark AI Solutions',
-  description: 'Shark AI Solutions helps Tampa Bay businesses get found by ChatGPT, Google AI Overviews, Perplexity, and Gemini. No ad spend. Results in 30 days.',
+  title: 'AI Visibility + Automation | Shark AI Solutions',
+  description: 'Shark AI Solutions helps regional and multi-location businesses get found by ChatGPT, Google AI Overviews, Perplexity, and Gemini. Results in 30 days.',
 }
 
 const pressLogos = [
@@ -50,7 +50,7 @@ const homepageFAQ = {
 }
 
 const stats = [
-  { v: '44%',  label: 'of consumers', body: 'now use AI tools to research products and local businesses before making a decision.', src: 'HubSpot, 2024' },
+  { v: '$1M+', label: 'weekend revenue', body: 'Driven for a multi-state retail client through full-funnel campaigns on streaming, CTV, and live sports.', src: 'Shark AI Solutions client result' },
   { v: '1–3',  label: 'businesses', body: 'is all AI recommends. If you\'re not in that shortlist, you don\'t exist to that buyer.', src: 'Google AI Overviews data' },
   { v: '30',   label: 'days', body: 'is how fast our clients see measurable movement in AI visibility across platforms.', src: 'Shark Branding client results' },
 ]
@@ -97,7 +97,7 @@ export default function Home() {
             data-animate="hero-label"
             className="text-[#18b5d8] text-[13px] font-semibold tracking-[0.2em] uppercase mb-4 sm:mb-8"
           >
-            AI Visibility · Tampa Bay
+            AI Visibility + Automation
           </p>
           <h1
             data-animate="hero-title"
@@ -113,11 +113,8 @@ export default function Home() {
           >
             ChatGPT, Google AI Overviews, Perplexity, and Gemini are now the first stop for buyers searching for local businesses. Most businesses aren't showing up. We fix that.
           </p>
-          <p className="text-[14px] text-[#18b5d8] font-semibold mb-2">
-            AI Visibility Consulting for Tampa Bay Businesses
-          </p>
           <p className="text-[14px] text-[#7a7a7a] mb-8 sm:mb-12">
-            Serving Wesley Chapel, Lutz, Land O' Lakes, St. Petersburg & Tampa
+            AI Visibility + Sales Automation for Regional and Multi-Location Businesses
           </p>
           <div data-animate="hero-cta" className="flex flex-wrap items-center justify-center gap-3">
             <AuditModalTrigger
@@ -272,7 +269,7 @@ export default function Home() {
           <div className="text-center mb-8 sm:mb-14">
             <p className="text-[#18b5d8] text-[13px] font-semibold tracking-[0.2em] uppercase mb-5">Real Results</p>
             <h2 data-animate="results-title" className="display-lg text-[#0a0a0a]" style={{ textWrap: 'balance' }}>
-              Tampa Bay businesses. 30 days.
+              Real results. 30 days.
             </h2>
             <p className="text-[16px] text-[#555] mt-5 max-w-[520px] mx-auto">
               Every number is documented from a real client. No projections.
@@ -283,7 +280,7 @@ export default function Home() {
               { result: 'Page 3 → #2 on Google', detail: 'HVAC company. 6 keywords moved into top 3. 30 days.', tag: 'Home Services' },
               { result: '#4 → #1 Realtor', detail: 'Ranked #1 in a market of 2,000+ agents. 20% increase in AI-driven recommendations.', tag: 'Real Estate' },
               { result: 'Invisible → #1 AI Result', detail: 'Smart vending company went from zero AI presence to top recommendation in their category.', tag: 'Technology' },
-              { result: '96% member gap closed', detail: 'Chamber of commerce members went from invisible to cited across ChatGPT, Gemini, and Perplexity.', tag: 'Association' },
+              { result: '$1M+ Weekend Revenue', detail: 'Multi-state jewelry retailer. Full campaign management across Spotify, Amazon, Hulu, Pandora, and Monday Night Football — conception to completion.', tag: 'Retail Media' },
             ].map((r) => (
               <div key={r.result} data-animate="result-card" className="bg-[#f5f5f7] rounded-[20px] p-7 flex flex-col gap-3">
                 <span className="inline-block bg-[#18b5d8]/10 text-[#18b5d8] text-[11px] font-bold tracking-[0.14em] uppercase px-3 py-1 rounded-full self-start">{r.tag}</span>
@@ -292,7 +289,17 @@ export default function Home() {
               </div>
             ))}
           </div>
-          <div className="text-center">
+          <div className="mt-4 bg-[#f5f5f7] rounded-[16px] px-6 py-5 border border-[#e8e8ed]">
+            <p className="text-[11px] font-bold tracking-[0.2em] uppercase text-[#b0b0b0] mb-3 text-center">Campaigns executed on</p>
+            <div className="flex flex-wrap items-center justify-center gap-3">
+              {["Spotify", "Amazon", "Hulu", "Pandora", "Monday Night Football"].map((platform) => (
+                <span key={platform} className="text-[13px] font-semibold text-[#555] bg-white border border-[#e8e8ed] rounded-full px-4 py-1.5">
+                  {platform}
+                </span>
+              ))}
+            </div>
+          </div>
+          <div className="text-center mt-6">
             <Link href="/case-studies" className="text-[14px] font-semibold text-[#18b5d8] hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 rounded-sm">
               Read the full case studies →
             </Link>

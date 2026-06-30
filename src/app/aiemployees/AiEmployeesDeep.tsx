@@ -40,6 +40,55 @@ const NAV_ITEMS = [
   { id: 'suite',          label: 'Full Suite',          role: 'Pricing' },
 ]
 
+/* ── Employee team data ─────────────────────────────────────────────── */
+const EMPLOYEES = [
+  {
+    id: 'gemma',
+    name: 'Gemma',
+    role: 'Chat Receptionist',
+    initial: 'G',
+    avatarBg: 'bg-[#18b5d8]',
+    tagColor: 'bg-[#18b5d8]/10 text-[#18b5d8]',
+    tagline: 'Captures and books every website visitor before they can bounce to a competitor.',
+  },
+  {
+    id: 'voice',
+    name: 'Voice Receptionist',
+    role: 'Call Handler',
+    initial: 'VR',
+    avatarBg: 'bg-purple-500',
+    tagColor: 'bg-purple-100 text-purple-700',
+    tagline: 'Answers every inbound call in your brand voice. No hold music. No missed leads.',
+  },
+  {
+    id: 'reputation',
+    name: 'Reputation Specialist',
+    role: 'Review Manager',
+    initial: 'RS',
+    avatarBg: 'bg-yellow-500',
+    tagColor: 'bg-yellow-100 text-yellow-700',
+    tagline: 'Monitors, responds to, and analyzes every Google and Facebook review automatically.',
+  },
+  {
+    id: 'aicrm',
+    name: 'AI CRM',
+    role: 'Lead Qualifier',
+    initial: 'CRM',
+    avatarBg: 'bg-sky-600',
+    tagColor: 'bg-sky-100 text-sky-700',
+    tagline: 'Runs multi-touch follow-up across email, SMS, and phone without any manual work.',
+  },
+  {
+    id: 'sales-assistant',
+    name: 'AI Sales Coach',
+    role: 'Revenue AI',
+    initial: 'SC',
+    avatarBg: 'bg-emerald-500',
+    tagColor: 'bg-emerald-100 text-emerald-700',
+    tagline: 'Scores every call, fills your CRM, and delivers coaching notes after every conversation.',
+  },
+]
+
 /* ── Helpers ────────────────────────────────────────────────────────── */
 function CheckItem({ text }: { text: string }) {
   return (
@@ -145,14 +194,112 @@ export default function AiEmployeesDeep() {
           <FadeUp>
             <span className="inline-block px-3 py-1 rounded-full bg-[#18b5d8]/10 text-[#18b5d8] text-[11px] font-bold uppercase tracking-widest mb-5">Five AI employees. One team.</span>
             <h1 className="text-[48px] sm:text-[58px] font-extrabold text-[#1d1d1f] leading-tight tracking-tight mb-4">
-              Your business runs.<br className="hidden sm:block" /> You sleep.
+              Your AI workforce,<br className="hidden sm:block" /> ready to grow your business.
             </h1>
             <p className="text-[#6e6e73] text-[18px] leading-relaxed max-w-xl mx-auto mb-8">
-              Every employee below answers calls, books appointments, responds to reviews, follows up on leads, and coaches your sales reps, automatically, starting within the week.
+              Five AI employees that automate lead capture, follow-up, reviews, CRM, and sales coaching — using your business data, starting within the week.
             </p>
-            <a href="#suite" className="inline-block bg-[#18b5d8] text-white font-bold text-[14px] px-7 py-3.5 rounded-full hover:bg-[#14a0c0] transition-colors">
-              See pricing
-            </a>
+            <div className="flex flex-col sm:flex-row gap-3 justify-center">
+              <a href="/contact" className="inline-block bg-[#18b5d8] text-white font-bold text-[14px] px-7 py-3.5 rounded-full hover:bg-[#14a0c0] transition-colors">
+                Book a free strategy call
+              </a>
+              <a href="#suite" className="inline-block bg-white border border-[#e5e5ea] text-[#1d1d1f] font-bold text-[14px] px-7 py-3.5 rounded-full hover:border-[#18b5d8] hover:text-[#18b5d8] transition-colors">
+                See pricing
+              </a>
+            </div>
+          </FadeUp>
+        </div>
+      </section>
+
+      {/* ── MEET YOUR AI TEAM ──────────────────────────────────────── */}
+      <section className="bg-white py-14 sm:py-20 px-6 border-b border-[#e5e5ea]">
+        <div className="max-w-5xl mx-auto">
+          <FadeUp className="text-center mb-12">
+            <p className="text-[11px] font-bold tracking-[2px] uppercase text-[#18b5d8] mb-3">Your AI Team</p>
+            <h2 className="text-[32px] sm:text-[40px] font-extrabold text-[#1d1d1f] leading-tight tracking-tight mb-4">
+              Meet your AI employees
+            </h2>
+            <p className="text-[#6e6e73] text-[17px] leading-relaxed max-w-xl mx-auto">
+              Five specialists. One team. All working for your business, around the clock, from day one.
+            </p>
+          </FadeUp>
+          <FadeUp delay={100}>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {EMPLOYEES.map(emp => (
+                <a
+                  key={emp.id}
+                  href={`#${emp.id}`}
+                  className="group bg-[#f5f5f7] rounded-[20px] border border-[#e5e5ea] p-6 hover:border-[#18b5d8] hover:bg-white transition-all duration-200"
+                >
+                  <div className={`w-14 h-14 rounded-2xl flex items-center justify-center text-white text-[13px] font-extrabold mb-4 ${emp.avatarBg}`}>
+                    {emp.initial}
+                  </div>
+                  <span className={`text-[10px] font-bold uppercase tracking-wide px-2 py-0.5 rounded-full ${emp.tagColor} mb-3 inline-block`}>
+                    {emp.role}
+                  </span>
+                  <h3 className="text-[18px] font-bold text-[#1d1d1f] mb-1.5 group-hover:text-[#18b5d8] transition-colors">{emp.name}</h3>
+                  <p className="text-[#6e6e73] text-[13px] leading-relaxed">{emp.tagline}</p>
+                  <p className="mt-4 text-[12px] font-semibold text-[#18b5d8] opacity-0 group-hover:opacity-100 transition-opacity">
+                    See how it works →
+                  </p>
+                </a>
+              ))}
+              {/* Custom slot */}
+              <a
+                href="#custom"
+                className="group bg-[#07141a] rounded-[20px] border border-white/10 p-6 hover:border-[#18b5d8]/50 transition-all duration-200"
+              >
+                <div className="w-14 h-14 rounded-2xl flex items-center justify-center bg-[#18b5d8]/20 text-[#18b5d8] text-[13px] font-extrabold mb-4">
+                  +
+                </div>
+                <span className="text-[10px] font-bold uppercase tracking-wide px-2 py-0.5 rounded-full bg-white/10 text-white/60 mb-3 inline-block">
+                  Built for You
+                </span>
+                <h3 className="text-[18px] font-bold text-white mb-1.5">Custom AI Employee</h3>
+                <p className="text-white/50 text-[13px] leading-relaxed">Don't see what you need? We'll design and build it from scratch.</p>
+                <p className="mt-4 text-[12px] font-semibold text-[#18b5d8] opacity-0 group-hover:opacity-100 transition-opacity">
+                  Learn more →
+                </p>
+              </a>
+            </div>
+          </FadeUp>
+        </div>
+      </section>
+
+      {/* ── CORE CAPABILITIES ──────────────────────────────────────── */}
+      <section className="bg-[#f5f5f7] py-14 sm:py-20 px-6 border-b border-[#e5e5ea]">
+        <div className="max-w-5xl mx-auto">
+          <FadeUp className="text-center mb-12">
+            <h2 className="text-[28px] sm:text-[36px] font-extrabold text-[#1d1d1f] leading-tight tracking-tight">
+              Smart AI employees, ready for every step of your customer journey
+            </h2>
+          </FadeUp>
+          <FadeUp delay={80}>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+              {[
+                {
+                  icon: '⚡',
+                  title: 'Ready within the week',
+                  desc: 'Every AI employee is configured for your business, your voice, and your workflows. Most go live within 5 to 7 business days, no IT team required.',
+                },
+                {
+                  icon: '🔗',
+                  title: 'Works on every channel',
+                  desc: 'Phone, chat, SMS, email. Your AI employees meet customers wherever they reach out, with a consistent, professional experience every time.',
+                },
+                {
+                  icon: '🧠',
+                  title: 'Trained on your data',
+                  desc: 'Your services, your pricing, your offer. Each AI employee is trained on your specific business data so it speaks in your voice, not a generic script.',
+                },
+              ].map(cap => (
+                <div key={cap.title} className="bg-white rounded-[20px] border border-[#e5e5ea] p-7">
+                  <div className="text-[30px] mb-4">{cap.icon}</div>
+                  <h3 className="text-[17px] font-bold text-[#1d1d1f] mb-2">{cap.title}</h3>
+                  <p className="text-[#6e6e73] text-[14px] leading-relaxed">{cap.desc}</p>
+                </div>
+              ))}
+            </div>
           </FadeUp>
         </div>
       </section>
@@ -973,6 +1120,101 @@ export default function AiEmployeesDeep() {
       <SectionDivider />
 
       {/* ══════════════════════════════════════════════════════════════ */}
+      {/* ── CUSTOMER JOURNEY ─────────────────────────────────────── */}
+      {/* ══════════════════════════════════════════════════════════════ */}
+      <section className="bg-[#f5f5f7] py-16 sm:py-24 px-6">
+        <div className="max-w-5xl mx-auto">
+          <FadeUp className="text-center mb-14">
+            <p className="text-[11px] font-bold tracking-[2px] uppercase text-[#18b5d8] mb-3">End-to-End Automation</p>
+            <h2 className="text-[32px] sm:text-[40px] font-extrabold text-[#1d1d1f] leading-tight tracking-tight mb-4">
+              Let AI power every step of your customer journey
+            </h2>
+            <p className="text-[#6e6e73] text-[17px] max-w-xl mx-auto leading-relaxed">
+              Your five AI employees cover the complete lifecycle, from first contact to five-star review, without your team lifting a finger.
+            </p>
+          </FadeUp>
+          <FadeUp delay={80}>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              {[
+                {
+                  step: '01',
+                  stage: 'Discover',
+                  who: 'Reputation Specialist',
+                  desc: 'Your reviews are polished and ready before a prospect ever sees your name.',
+                  accent: 'text-yellow-700',
+                  bg: 'bg-yellow-50 border-yellow-200',
+                },
+                {
+                  step: '02',
+                  stage: 'Capture',
+                  who: 'Gemma + Voice',
+                  desc: 'Every website visitor and inbound call is captured, qualified, and booked automatically.',
+                  accent: 'text-[#18b5d8]',
+                  bg: 'bg-[#18b5d8]/5 border-[#18b5d8]/20',
+                },
+                {
+                  step: '03',
+                  stage: 'Nurture',
+                  who: 'AI CRM',
+                  desc: 'Multi-touch email, SMS, and call sequences run until the lead responds or books.',
+                  accent: 'text-sky-700',
+                  bg: 'bg-sky-50 border-sky-200',
+                },
+                {
+                  step: '04',
+                  stage: 'Close',
+                  who: 'AI Sales Coach',
+                  desc: 'Every call is scored, every rep is coached, and no hot lead gets dropped.',
+                  accent: 'text-emerald-700',
+                  bg: 'bg-emerald-50 border-emerald-200',
+                },
+                {
+                  step: '05',
+                  stage: 'Serve',
+                  who: 'Voice Receptionist',
+                  desc: 'Follow-up calls, appointment reminders, and job updates happen without your team.',
+                  accent: 'text-purple-700',
+                  bg: 'bg-purple-50 border-purple-200',
+                },
+                {
+                  step: '06',
+                  stage: 'Review',
+                  who: 'Reputation Specialist',
+                  desc: 'After every job, review requests go out and responses are posted within hours.',
+                  accent: 'text-yellow-700',
+                  bg: 'bg-yellow-50 border-yellow-200',
+                },
+                {
+                  step: '07',
+                  stage: 'Retain',
+                  who: 'AI CRM',
+                  desc: 'Re-engagement campaigns and seasonal outreach keep past customers coming back.',
+                  accent: 'text-sky-700',
+                  bg: 'bg-sky-50 border-sky-200',
+                },
+                {
+                  step: '08',
+                  stage: 'Analyze',
+                  who: 'AI Sales Coach',
+                  desc: 'Sentiment, pipeline health, and rep performance, all synthesized into clear next steps.',
+                  accent: 'text-emerald-700',
+                  bg: 'bg-emerald-50 border-emerald-200',
+                },
+              ].map(item => (
+                <div key={item.step} className={`rounded-[16px] border p-5 ${item.bg}`}>
+                  <p className={`text-[11px] font-extrabold tracking-[2px] uppercase mb-2 ${item.accent}`}>{item.step} · {item.stage}</p>
+                  <p className="text-[#1d1d1f] font-bold text-[14px] mb-1.5">{item.who}</p>
+                  <p className="text-[#6e6e73] text-[12px] leading-relaxed">{item.desc}</p>
+                </div>
+              ))}
+            </div>
+          </FadeUp>
+        </div>
+      </section>
+
+      <SectionDivider />
+
+      {/* ══════════════════════════════════════════════════════════════ */}
       {/* ── FULL SUITE PRICING ────────────────────────────────────── */}
       {/* ══════════════════════════════════════════════════════════════ */}
       <section id="suite" className="bg-[#07141a] py-16 sm:py-28 px-6">
@@ -1080,6 +1322,62 @@ export default function AiEmployeesDeep() {
                   </summary>
                   <p className="text-[#8a9ba8] text-[14px] leading-relaxed mt-4">{item.a}</p>
                 </details>
+              ))}
+            </div>
+          </FadeUp>
+        </div>
+      </section>
+
+      <SectionDivider />
+
+      {/* ══════════════════════════════════════════════════════════════ */}
+      {/* ── REAL RESULTS ─────────────────────────────────────────── */}
+      {/* ══════════════════════════════════════════════════════════════ */}
+      <section className="bg-white py-16 sm:py-24 px-6">
+        <div className="max-w-5xl mx-auto">
+          <FadeUp className="text-center mb-12">
+            <p className="text-[11px] font-bold tracking-[2px] uppercase text-[#18b5d8] mb-3">Real Results</p>
+            <h2 className="text-[32px] sm:text-[40px] font-extrabold text-[#1d1d1f] leading-tight tracking-tight mb-4">
+              What AI employees are doing for real businesses
+            </h2>
+            <p className="text-[#6e6e73] text-[17px] max-w-xl mx-auto leading-relaxed">
+              Deployed for service businesses across Tampa Bay and beyond.
+            </p>
+          </FadeUp>
+          <FadeUp delay={80}>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
+              {[
+                {
+                  stat: '3×',
+                  outcome: 'more leads converted',
+                  industry: 'HVAC / Home Services',
+                  employee: 'AI CRM + Gemma',
+                  detail: 'After-hours capture plus automated follow-up sequences turned missed site visits into booked jobs before the competition could call back.',
+                },
+                {
+                  stat: '94%',
+                  outcome: 'of calls handled without staff',
+                  industry: 'Plumbing',
+                  employee: 'Voice Receptionist',
+                  detail: 'Qualifications, bookings, and FAQ handling, all resolved before a single employee picked up the phone.',
+                },
+                {
+                  stat: '4.8★',
+                  outcome: 'average Google rating maintained',
+                  industry: 'Professional Services',
+                  employee: 'Reputation Specialist',
+                  detail: 'Personalized review responses posted within two hours of every review, positive or negative, every single time.',
+                },
+              ].map(story => (
+                <div key={story.stat} className="bg-[#f5f5f7] rounded-[20px] border border-[#e5e5ea] p-6">
+                  <p className="text-[#18b5d8] text-[44px] font-extrabold leading-none mb-1">{story.stat}</p>
+                  <p className="text-[#1d1d1f] font-bold text-[16px] mb-4">{story.outcome}</p>
+                  <div className="border-t border-[#e5e5ea] pt-4 space-y-1.5">
+                    <p className="text-[12px] text-[#86868b]"><span className="font-semibold text-[#1d1d1f]">Industry:</span> {story.industry}</p>
+                    <p className="text-[12px] text-[#86868b]"><span className="font-semibold text-[#1d1d1f]">AI Employee:</span> {story.employee}</p>
+                    <p className="text-[12px] text-[#6e6e73] leading-relaxed mt-2">{story.detail}</p>
+                  </div>
+                </div>
               ))}
             </div>
           </FadeUp>
