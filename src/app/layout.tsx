@@ -7,6 +7,7 @@ import ChatWidget from "@/components/ChatWidget";
 import ExitIntentPopup from "@/components/ExitIntentPopup";
 import AuditModal from "@/components/AuditModal";
 import { Analytics } from "@vercel/analytics/next";
+import Script from "next/script";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -225,6 +226,18 @@ export default function RootLayout({
         <ExitIntentPopup />
         <AuditModal />
         <Analytics />
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-N8D9SY4FH3"
+          strategy="afterInteractive"
+        />
+        <Script id="ga4-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-N8D9SY4FH3');
+          `}
+        </Script>
       </body>
     </html>
   );
