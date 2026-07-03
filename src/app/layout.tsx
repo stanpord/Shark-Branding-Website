@@ -143,12 +143,20 @@ const structuredData = {
         "marketing automation",
         "reputation management",
       ],
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: "5",
+        reviewCount: "7",
+        bestRating: "5",
+        worstRating: "1",
+      },
       sameAs: [
         "https://www.linkedin.com/company/shark-branding-solutions",
         "https://www.facebook.com/sharkbrandingsolutions",
         "https://www.instagram.com/sharkbranding",
         "https://www.youtube.com/@sharkbranding",
         "https://www.tiktok.com/@sharkbranding",
+        "https://share.google/qmY6FsoMpxip8rslm",
       ],
     },
     {
