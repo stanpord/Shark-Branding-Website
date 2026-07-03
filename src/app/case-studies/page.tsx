@@ -15,15 +15,18 @@ export default function CaseStudiesPage() {
       {/* ── Hero ── */}
       <section className="bg-[#f5f5f7] pt-28 pb-20 px-6 border-b border-[#e5e5ea]">
         <div className="max-w-[800px] mx-auto text-center">
-          <p className="text-[11px] font-bold tracking-[2px] uppercase text-[#18b5d8] mb-4">
-            Documented Results
-          </p>
-          <h1 className="text-[38px] sm:text-[52px] lg:text-[64px] font-extrabold text-[#1d1d1f] leading-tight tracking-tight mb-6" style={{ textWrap: "balance" }}>
+          <h1
+            className="text-[38px] sm:text-[52px] lg:text-[64px] font-extrabold text-[#1d1d1f] leading-[1.06] tracking-[-0.02em] mb-6"
+            style={{ textWrap: "balance" } as React.CSSProperties}
+          >
             Real clients.<br />
             <span className="text-[#18b5d8]">Real rankings.</span><br />
             30 days.
           </h1>
-          <p className="text-[#6e6e73] text-[19px] leading-relaxed max-w-[540px] mx-auto mb-12" style={{ textWrap: "balance" }}>
+          <p
+            className="text-[#6e6e73] text-[19px] leading-relaxed max-w-[540px] mx-auto mb-12"
+            style={{ textWrap: "balance" } as React.CSSProperties}
+          >
             Every number on this page is documented from a real Tampa Bay business. No projections, no estimates.
           </p>
 
@@ -35,9 +38,9 @@ export default function CaseStudiesPage() {
               { v: "6+",  label: "Keywords top 3" },
               { v: "3",   label: "AI platforms" },
             ].map((s) => (
-              <div key={s.label} className="bg-white rounded-[16px] border border-[#e5e5ea] px-4 py-5 text-center shadow-sm">
+              <div key={s.label} className="bg-white rounded-xl border border-[#e5e5ea] px-4 py-5 text-center">
                 <p className="text-[32px] font-extrabold text-[#18b5d8] leading-none mb-1">{s.v}</p>
-                <p className="text-[11px] text-[#86868b] uppercase tracking-[1px] font-semibold">{s.label}</p>
+                <p className="text-[11px] text-[#6e6e73] uppercase tracking-[0.08em] font-semibold">{s.label}</p>
               </div>
             ))}
           </div>
@@ -45,10 +48,10 @@ export default function CaseStudiesPage() {
           {/* Jump links */}
           <div className="flex flex-wrap items-center justify-center gap-2">
             {[
-              { label: "HVAC",             href: "#hvac" },
-              { label: "Real Estate",      href: "#emorys-rock-realty" },
-              { label: "Smart Vending",    href: "#diamond-dogs" },
-              { label: "Chamber",          href: "#north-tampa-bay-chamber" },
+              { label: "HVAC",          href: "#hvac" },
+              { label: "Real Estate",   href: "#emorys-rock-realty" },
+              { label: "Smart Vending", href: "#diamond-dogs" },
+              { label: "Chamber",       href: "#north-tampa-bay-chamber" },
             ].map((c) => (
               <a
                 key={c.href}
@@ -64,7 +67,7 @@ export default function CaseStudiesPage() {
 
 
       {/* ══════════════════════════════════════════
-          CASE 01, HVAC
+          CASE 01 — HVAC
       ══════════════════════════════════════════ */}
       <article id="hvac">
 
@@ -80,11 +83,13 @@ export default function CaseStudiesPage() {
           <div className="absolute inset-0 bg-gradient-to-t from-[#1d1d1f]/90 via-[#1d1d1f]/30 to-transparent" />
           <div className="absolute bottom-0 left-0 right-0 px-6 pb-12 max-w-[1000px] mx-auto">
             <div className="flex flex-wrap items-center gap-3 mb-3">
-              <span className="text-[11px] font-bold tracking-[2px] uppercase text-[#18b5d8]">Case 01</span>
-              <span className="w-px h-3 bg-white/30" />
-              <span className="text-[12px] font-semibold text-white/60 uppercase tracking-wide">Home Services / HVAC · Tampa Bay, FL</span>
+              <span className="text-white/30 text-[12px] font-mono tabular-nums">01 —</span>
+              <span className="text-[12px] text-white/55">Home Services / HVAC · Tampa Bay, FL</span>
             </div>
-            <h2 className="text-[36px] sm:text-[44px] font-extrabold text-white leading-tight tracking-tight" style={{ textWrap: "balance" }}>
+            <h2
+              className="text-[36px] sm:text-[44px] font-extrabold text-white leading-tight tracking-[-0.02em]"
+              style={{ textWrap: "balance" } as React.CSSProperties}
+            >
               Page 3 to <span className="text-[#18b5d8]">#2 on Google</span> in 30 days.
             </h2>
           </div>
@@ -94,14 +99,14 @@ export default function CaseStudiesPage() {
         <div className="bg-[#f5f5f7] border-b border-[#e5e5ea] px-6 py-12">
           <div className="max-w-[1000px] mx-auto grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-[#e5e5ea]">
             {[
-              { v: "#32→#2", label: "Best keyword jump",   sub: '"same day AC repair"' },
-              { v: "6",      label: "Keywords in top 3",   sub: "all high-intent local" },
-              { v: "30d",    label: "Time to results",     sub: "page 3 to top local" },
+              { v: "#32→#2", label: "Best keyword jump",  sub: '"same day AC repair"' },
+              { v: "6",      label: "Keywords in top 3",  sub: "all high-intent local" },
+              { v: "30d",    label: "Time to results",    sub: "page 3 to top local" },
             ].map((s) => (
               <div key={s.label} className="py-6 sm:py-0 sm:px-6 text-center sm:first:pl-0 sm:last:pr-0">
                 <p className="text-[36px] sm:text-[44px] font-extrabold text-[#18b5d8] leading-none mb-2">{s.v}</p>
                 <p className="text-[14px] font-semibold text-[#1d1d1f] mb-1">{s.label}</p>
-                <p className="text-[12px] text-[#86868b]">{s.sub}</p>
+                <p className="text-[12px] text-[#6e6e73]">{s.sub}</p>
               </div>
             ))}
           </div>
@@ -113,13 +118,13 @@ export default function CaseStudiesPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
               <div>
-                <p className="text-[11px] font-bold tracking-[2px] uppercase text-[#18b5d8] mb-4">The Problem</p>
+                <p className="text-[14px] font-bold text-[#1d1d1f] mb-3">The Problem</p>
                 <p className="text-[#6e6e73] text-[17px] leading-relaxed">
                   This HVAC company was doing excellent work but wasn&rsquo;t showing up where it mattered. When homeowners searched for urgent help, "same day AC repair," "emergency AC repair," "HVAC near me", every call went to whoever ranked at the top. They were invisible right when buyers needed them most.
                 </p>
               </div>
               <div>
-                <p className="text-[11px] font-bold tracking-[2px] uppercase text-[#18b5d8] mb-4">What We Did</p>
+                <p className="text-[14px] font-bold text-[#1d1d1f] mb-3">What We Did</p>
                 <p className="text-[#6e6e73] text-[17px] leading-relaxed">
                   Using the AI Visibility Toolkit, we addressed search readiness, authority signals, and accurate business data across every platform. We cleaned up location and service data so AI systems connected the right business to the right searches, across Google, Maps, voice search, and AI-assisted discovery.
                 </p>
@@ -128,8 +133,8 @@ export default function CaseStudiesPage() {
 
             {/* Before / After */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12">
-              <div className="bg-[#f5f5f7] rounded-[20px] p-8 border border-[#e5e5ea]">
-                <span className="inline-block bg-[#1d1d1f] text-white text-[10px] font-bold tracking-[1.5px] uppercase px-3 py-1.5 rounded-full mb-6">Before</span>
+              <div className="bg-[#f5f5f7] rounded-[14px] p-8 border border-[#e5e5ea]">
+                <span className="inline-block bg-[#1d1d1f] text-white text-[10px] font-bold tracking-[0.12em] uppercase px-3 py-1.5 rounded-full mb-6">Before</span>
                 <p className="text-[20px] font-bold text-[#1d1d1f] mb-5">Hard to find. Easy to skip.</p>
                 <ul className="space-y-3">
                   {["Not ranking for high-intent keywords","Low visibility in local search","Inconsistent online presence","Minimal inbound calls or engagement"].map((item) => (
@@ -139,8 +144,8 @@ export default function CaseStudiesPage() {
                   ))}
                 </ul>
               </div>
-              <div className="bg-[#07141a] rounded-[20px] p-8 border border-[#18b5d8]/20">
-                <span className="inline-block bg-[#18b5d8] text-white text-[10px] font-bold tracking-[1.5px] uppercase px-3 py-1.5 rounded-full mb-6">After 30 Days</span>
+              <div className="bg-[#07141a] rounded-[14px] p-8 border border-[#18b5d8]/20">
+                <span className="inline-block bg-[#18b5d8] text-white text-[10px] font-bold tracking-[0.12em] uppercase px-3 py-1.5 rounded-full mb-6">After 30 Days</span>
                 <p className="text-[20px] font-bold text-white mb-5">Top 3 rankings. More calls. Real growth.</p>
                 <ul className="space-y-3">
                   {[`Multiple keywords moved into Top 3 "Money Zone"`,"High-intent searches captured","Significant increase in calls & engagement","Dominating local visibility in key service areas"].map((item) => (
@@ -152,10 +157,8 @@ export default function CaseStudiesPage() {
               </div>
             </div>
 
-            {/* Live Analytics, actual screenshots */}
-            <p className="text-[11px] font-bold tracking-[2px] uppercase text-[#18b5d8] mb-5">Live Business Impact: Real Data, Real Results</p>
-
-            <div className="bg-[#07141a] rounded-[20px] overflow-hidden border border-[#18b5d8]/15 mb-4">
+            {/* Screenshots */}
+            <div className="bg-[#07141a] rounded-[14px] overflow-hidden border border-[#18b5d8]/15 mb-4">
               <div className="px-6 pt-5 pb-3">
                 <p className="text-[11px] font-bold text-[#18b5d8]/60 uppercase tracking-[0.18em]">Google Maps Local Ranking, HVAC Emergency Repair</p>
               </div>
@@ -168,7 +171,7 @@ export default function CaseStudiesPage() {
               />
             </div>
 
-            <div className="bg-[#07141a] rounded-[20px] overflow-hidden border border-[#18b5d8]/15 mb-4">
+            <div className="bg-[#07141a] rounded-[14px] overflow-hidden border border-[#18b5d8]/15 mb-4">
               <div className="px-6 pt-5 pb-3">
                 <p className="text-[11px] font-bold text-[#18b5d8]/60 uppercase tracking-[0.18em]">Keyword Rankings, All tracked keywords moved to #1</p>
               </div>
@@ -181,7 +184,7 @@ export default function CaseStudiesPage() {
               />
             </div>
 
-            <div className="bg-[#07141a] rounded-[20px] overflow-hidden border border-[#18b5d8]/15 mb-14">
+            <div className="bg-[#07141a] rounded-[14px] overflow-hidden border border-[#18b5d8]/15 mb-14">
               <div className="px-6 pt-5 pb-3">
                 <p className="text-[11px] font-bold text-[#18b5d8]/60 uppercase tracking-[0.18em]">Marketing Dashboard, Impressions, Engagement &amp; Leads</p>
               </div>
@@ -195,11 +198,12 @@ export default function CaseStudiesPage() {
             </div>
 
             {/* Pull quote */}
-            <blockquote className="border-l-4 border-[#18b5d8] pl-8 py-2 mb-12">
+            <blockquote className="relative pl-10 py-2 mb-12">
+              <span className="absolute top-[-12px] left-0 text-[80px] leading-none text-[#18b5d8] opacity-20 font-serif select-none" aria-hidden="true">&ldquo;</span>
               <p className="text-[20px] text-[#1d1d1f] leading-relaxed italic mb-3">
                 &ldquo;We went from getting beat out by competitors every day to being the first name that shows up. The phone didn&rsquo;t stop ringing after that.&rdquo;
               </p>
-              <p className="text-[13px] font-semibold text-[#86868b] uppercase tracking-wide">HVAC Company Owner, Tampa Bay FL</p>
+              <p className="text-[13px] font-semibold text-[#6e6e73] uppercase tracking-[0.08em]">HVAC Company Owner, Tampa Bay FL</p>
             </blockquote>
 
             <div className="flex flex-wrap items-center gap-4">
@@ -212,7 +216,7 @@ export default function CaseStudiesPage() {
 
 
       {/* ══════════════════════════════════════════
-          CASE 02, Real Estate
+          CASE 02 — Real Estate
       ══════════════════════════════════════════ */}
       <article id="emorys-rock-realty">
 
@@ -227,11 +231,13 @@ export default function CaseStudiesPage() {
           <div className="absolute inset-0 bg-gradient-to-t from-[#1d1d1f]/90 via-[#1d1d1f]/30 to-transparent" />
           <div className="absolute bottom-0 left-0 right-0 px-6 pb-12 max-w-[1000px] mx-auto">
             <div className="flex flex-wrap items-center gap-3 mb-3">
-              <span className="text-[11px] font-bold tracking-[2px] uppercase text-[#18b5d8]">Case 02</span>
-              <span className="w-px h-3 bg-white/30" />
-              <span className="text-[12px] font-semibold text-white/60 uppercase tracking-wide">Real Estate · Wesley Chapel, FL</span>
+              <span className="text-white/30 text-[12px] font-mono tabular-nums">02 —</span>
+              <span className="text-[12px] text-white/55">Real Estate · Wesley Chapel, FL</span>
             </div>
-            <h2 className="text-[36px] sm:text-[44px] font-extrabold text-white leading-tight tracking-tight" style={{ textWrap: "balance" }}>
+            <h2
+              className="text-[36px] sm:text-[44px] font-extrabold text-white leading-tight tracking-[-0.02em]"
+              style={{ textWrap: "balance" } as React.CSSProperties}
+            >
               <span className="text-[#18b5d8]">#1 realtor</span> in a market of 2,000+ agents.
             </h2>
           </div>
@@ -247,7 +253,7 @@ export default function CaseStudiesPage() {
               <div key={s.label} className="py-6 sm:py-0 sm:px-6 text-center sm:first:pl-0 sm:last:pr-0">
                 <p className="text-[36px] sm:text-[44px] font-extrabold text-[#18b5d8] leading-none mb-2">{s.v}</p>
                 <p className="text-[14px] font-semibold text-[#1d1d1f] mb-1">{s.label}</p>
-                <p className="text-[12px] text-[#86868b]">{s.sub}</p>
+                <p className="text-[12px] text-[#6e6e73]">{s.sub}</p>
               </div>
             ))}
           </div>
@@ -258,13 +264,13 @@ export default function CaseStudiesPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-14">
               <div>
-                <p className="text-[11px] font-bold tracking-[2px] uppercase text-[#18b5d8] mb-4">The Problem</p>
+                <p className="text-[14px] font-bold text-[#1d1d1f] mb-3">The Problem</p>
                 <p className="text-[#6e6e73] text-[17px] leading-relaxed">
                   Not consistently showing up in AI-driven results. Inconsistent business data across platforms created weak trust signals for search and AI, causing buyers and sellers to land on competitors instead.
                 </p>
               </div>
               <div>
-                <p className="text-[11px] font-bold tracking-[2px] uppercase text-[#18b5d8] mb-4">What We Did</p>
+                <p className="text-[14px] font-bold text-[#1d1d1f] mb-3">What We Did</p>
                 <p className="text-[#6e6e73] text-[17px] leading-relaxed">
                   We built stronger, more consistent digital presence, aligned entity signals, strengthened local authority, and positioned Emory&rsquo;s Rock Realty to be the agent AI recommends when buyers, sellers, and investors ask who to work with.
                 </p>
@@ -273,23 +279,24 @@ export default function CaseStudiesPage() {
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-14">
               {[
-                { stat: "$20–$100+", label: "per click",         body: "Real estate keywords cost $20–$100+ per click. Paid visibility is expensive and temporary." },
-                { stat: "Organic",   label: "AI positioning",    body: "AI Visibility means organic positioning, showing up without paying for every click." },
-                { stat: "2,000+",    label: "agents outranked",  body: "In a market this large, being chosen matters more than being seen." },
+                { stat: "$20–$100+", label: "per click",        body: "Real estate keywords cost $20–$100+ per click. Paid visibility is expensive and temporary." },
+                { stat: "Organic",   label: "AI positioning",   body: "AI Visibility means organic positioning, showing up without paying for every click." },
+                { stat: "2,000+",    label: "agents outranked", body: "In a market this large, being chosen matters more than being seen." },
               ].map((c) => (
-                <div key={c.stat} className="bg-[#f5f5f7] rounded-[16px] px-6 py-6 text-center border border-[#e5e5ea]">
+                <div key={c.stat} className="bg-[#f5f5f7] rounded-xl px-6 py-6 text-center border border-[#e5e5ea]">
                   <p className="text-[28px] font-extrabold text-[#18b5d8] leading-none mb-1">{c.stat}</p>
-                  <p className="text-[11px] font-bold uppercase tracking-[1.5px] text-[#86868b] mb-3">{c.label}</p>
+                  <p className="text-[11px] font-bold uppercase tracking-[0.12em] text-[#6e6e73] mb-3">{c.label}</p>
                   <p className="text-[14px] text-[#6e6e73] leading-relaxed">{c.body}</p>
                 </div>
               ))}
             </div>
 
-            <blockquote className="border-l-4 border-[#18b5d8] pl-8 py-2 mb-12">
+            <blockquote className="relative pl-10 py-2 mb-12">
+              <span className="absolute top-[-12px] left-0 text-[80px] leading-none text-[#18b5d8] opacity-20 font-serif select-none" aria-hidden="true">&ldquo;</span>
               <p className="text-[20px] text-[#1d1d1f] leading-relaxed italic mb-3">
                 &ldquo;In a market this competitive, a 20% increase in AI recommendations isn&rsquo;t incremental. It&rsquo;s a competitive advantage.&rdquo;
               </p>
-              <p className="text-[13px] font-semibold text-[#86868b] uppercase tracking-wide">Emory&rsquo;s Rock Realty, Wesley Chapel FL</p>
+              <p className="text-[13px] font-semibold text-[#6e6e73] uppercase tracking-[0.08em]">Emory&rsquo;s Rock Realty, Wesley Chapel FL</p>
             </blockquote>
 
             <div className="flex flex-wrap items-center gap-4">
@@ -304,8 +311,10 @@ export default function CaseStudiesPage() {
       {/* ── Mid-page CTA ── */}
       <section className="bg-[#18b5d8] px-6 py-16 text-center">
         <div className="max-w-[640px] mx-auto">
-          <p className="text-white/70 text-[13px] font-bold uppercase tracking-[2px] mb-4">Your business could be next</p>
-          <h3 className="text-[32px] font-extrabold text-white mb-5 leading-tight" style={{ textWrap: "balance" }}>
+          <h3
+            className="text-[32px] font-extrabold text-white mb-5 leading-tight tracking-[-0.02em]"
+            style={{ textWrap: "balance" } as React.CSSProperties}
+          >
             Most businesses in your market haven&rsquo;t done this yet. That window closes fast.
           </h3>
           <p className="text-white/80 text-[17px] mb-8">Find out where you stand before your competitor does.</p>
@@ -317,7 +326,7 @@ export default function CaseStudiesPage() {
 
 
       {/* ══════════════════════════════════════════
-          CASE 03, Diamond Dogs Smart Vending
+          CASE 03 — Diamond Dogs Smart Vending
       ══════════════════════════════════════════ */}
       <article id="diamond-dogs">
 
@@ -332,11 +341,13 @@ export default function CaseStudiesPage() {
           <div className="absolute inset-0 bg-gradient-to-t from-[#1d1d1f]/90 via-[#1d1d1f]/30 to-transparent" />
           <div className="absolute bottom-0 left-0 right-0 px-6 pb-12 max-w-[1000px] mx-auto">
             <div className="flex flex-wrap items-center gap-3 mb-3">
-              <span className="text-[11px] font-bold tracking-[2px] uppercase text-[#18b5d8]">Case 03</span>
-              <span className="w-px h-3 bg-white/30" />
-              <span className="text-[12px] font-semibold text-white/60 uppercase tracking-wide">Smart Vending / Tech · Wesley Chapel, FL</span>
+              <span className="text-white/30 text-[12px] font-mono tabular-nums">03 —</span>
+              <span className="text-[12px] text-white/55">Smart Vending / Tech · Wesley Chapel, FL</span>
             </div>
-            <h2 className="text-[36px] sm:text-[44px] font-extrabold text-white leading-tight tracking-tight" style={{ textWrap: "balance" }}>
+            <h2
+              className="text-[36px] sm:text-[44px] font-extrabold text-white leading-tight tracking-[-0.02em]"
+              style={{ textWrap: "balance" } as React.CSSProperties}
+            >
               Invisible to AI. Then <span className="text-[#18b5d8]">the #1 result.</span>
             </h2>
           </div>
@@ -346,13 +357,13 @@ export default function CaseStudiesPage() {
           <div className="max-w-[1000px] mx-auto grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-[#e5e5ea]">
             {[
               { v: "#1",  label: "AI recommended",    sub: "Named, described & linked by AI" },
-              { v: "3",   label: "AI platforms",       sub: "ChatGPT, Gemini, Perplexity" },
+              { v: "3",   label: "AI platforms",      sub: "ChatGPT, Gemini, Perplexity" },
               { v: "30d", label: "Time to visibility", sub: "invisible to top result" },
             ].map((s) => (
               <div key={s.label} className="py-6 sm:py-0 sm:px-6 text-center sm:first:pl-0 sm:last:pr-0">
                 <p className="text-[36px] sm:text-[44px] font-extrabold text-[#18b5d8] leading-none mb-2">{s.v}</p>
                 <p className="text-[14px] font-semibold text-[#1d1d1f] mb-1">{s.label}</p>
-                <p className="text-[12px] text-[#86868b]">{s.sub}</p>
+                <p className="text-[12px] text-[#6e6e73]">{s.sub}</p>
               </div>
             ))}
           </div>
@@ -363,13 +374,13 @@ export default function CaseStudiesPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-14">
               <div>
-                <p className="text-[11px] font-bold tracking-[2px] uppercase text-[#18b5d8] mb-4">The Problem</p>
+                <p className="text-[14px] font-bold text-[#1d1d1f] mb-3">The Problem</p>
                 <p className="text-[#6e6e73] text-[17px] leading-relaxed">
                   Diamond Dogs had a real operating business, but zero AI-visible reinforcement to appear in recommendation answers for local smart vending demand. Without strong entity signals, AI answers pointed to national suppliers instead of the right local operator.
                 </p>
               </div>
               <div>
-                <p className="text-[11px] font-bold tracking-[2px] uppercase text-[#18b5d8] mb-4">What We Did</p>
+                <p className="text-[14px] font-bold text-[#1d1d1f] mb-3">What We Did</p>
                 <p className="text-[#6e6e73] text-[17px] leading-relaxed">
                   Three layers made the difference: JSON-LD structured data to give AI a clear understanding of who Diamond Dogs is; Chamber toolkit authority creating a trusted local reference layer; and AI-readable service language giving AI the right hooks to recommend them.
                 </p>
@@ -378,22 +389,23 @@ export default function CaseStudiesPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-14">
               {[
-                { label: "Clear Entity Definition",  body: "Structured data helped AI identify Diamond Dogs as the primary entity for this service category in the local market." },
-                { label: "Service Relevance",         body: "Site language matched how AI describes modern smart vending: AI vision, telemetry, tap-to-pay, and grab-and-go retail." },
-                { label: "Trusted Local References",  body: "Chamber and Shark AI Solutions references gave AI an external trust path instead of relying on one website alone." },
+                { label: "Clear Entity Definition", body: "Structured data helped AI identify Diamond Dogs as the primary entity for this service category in the local market." },
+                { label: "Service Relevance",        body: "Site language matched how AI describes modern smart vending: AI vision, telemetry, tap-to-pay, and grab-and-go retail." },
+                { label: "Trusted Local References", body: "Chamber and Shark AI Solutions references gave AI an external trust path instead of relying on one website alone." },
               ].map((c) => (
-                <div key={c.label} className="bg-[#f5f5f7] rounded-[16px] px-6 py-6 border border-[#e5e5ea]">
-                  <p className="text-[11px] font-bold text-[#18b5d8] uppercase tracking-[1.5px] mb-3">{c.label}</p>
+                <div key={c.label} className="bg-[#f5f5f7] rounded-xl px-6 py-6 border border-[#e5e5ea]">
+                  <p className="text-[14px] font-bold text-[#1d1d1f] mb-3">{c.label}</p>
                   <p className="text-[15px] text-[#6e6e73] leading-relaxed">{c.body}</p>
                 </div>
               ))}
             </div>
 
-            <blockquote className="border-l-4 border-[#18b5d8] pl-8 py-2 mb-12">
+            <blockquote className="relative pl-10 py-2 mb-12">
+              <span className="absolute top-[-12px] left-0 text-[80px] leading-none text-[#18b5d8] opacity-20 font-serif select-none" aria-hidden="true">&ldquo;</span>
               <p className="text-[20px] text-[#1d1d1f] leading-relaxed italic mb-3">
                 &ldquo;ChatGPT literally names us by name now. Before Shark Branding, we didn&rsquo;t exist to AI at all. It&rsquo;s like being handed an entire new channel for free.&rdquo;
               </p>
-              <p className="text-[13px] font-semibold text-[#86868b] uppercase tracking-wide">Diamond Dogs Smart Vending, Wesley Chapel FL</p>
+              <p className="text-[13px] font-semibold text-[#6e6e73] uppercase tracking-[0.08em]">Diamond Dogs Smart Vending, Wesley Chapel FL</p>
             </blockquote>
 
             <div className="flex flex-wrap items-center gap-4">
@@ -406,7 +418,7 @@ export default function CaseStudiesPage() {
 
 
       {/* ══════════════════════════════════════════
-          CASE 04, North Tampa Bay Chamber
+          CASE 04 — North Tampa Bay Chamber
       ══════════════════════════════════════════ */}
       <article id="north-tampa-bay-chamber">
 
@@ -421,11 +433,13 @@ export default function CaseStudiesPage() {
           <div className="absolute inset-0 bg-gradient-to-t from-[#1d1d1f]/90 via-[#1d1d1f]/30 to-transparent" />
           <div className="absolute bottom-0 left-0 right-0 px-6 pb-12 max-w-[1000px] mx-auto">
             <div className="flex flex-wrap items-center gap-3 mb-3">
-              <span className="text-[11px] font-bold tracking-[2px] uppercase text-[#18b5d8]">Case 04</span>
-              <span className="w-px h-3 bg-white/30" />
-              <span className="text-[12px] font-semibold text-white/60 uppercase tracking-wide">Chamber of Commerce · North Tampa Bay, FL</span>
+              <span className="text-white/30 text-[12px] font-mono tabular-nums">04 —</span>
+              <span className="text-[12px] text-white/55">Chamber of Commerce · North Tampa Bay, FL</span>
             </div>
-            <h2 className="text-[36px] sm:text-[44px] font-extrabold text-white leading-tight tracking-tight" style={{ textWrap: "balance" }}>
+            <h2
+              className="text-[36px] sm:text-[44px] font-extrabold text-white leading-tight tracking-[-0.02em]"
+              style={{ textWrap: "balance" } as React.CSSProperties}
+            >
               From standard directory to <span className="text-[#18b5d8]">trusted AI source.</span>
             </h2>
           </div>
@@ -434,14 +448,14 @@ export default function CaseStudiesPage() {
         <div className="bg-[#f5f5f7] border-b border-[#e5e5ea] px-6 py-12">
           <div className="max-w-[1000px] mx-auto grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-[#e5e5ea]">
             {[
-              { v: "96%", label: "AI visibility gap",  sub: "members not recommended by AI" },
-              { v: "10×", label: "More AI citations",  sub: "Chamber as trusted local source" },
-              { v: "30d", label: "Days to results",    sub: "measurable visibility gains" },
+              { v: "96%", label: "AI visibility gap", sub: "members not recommended by AI" },
+              { v: "10×", label: "More AI citations", sub: "Chamber as trusted local source" },
+              { v: "30d", label: "Days to results",   sub: "measurable visibility gains" },
             ].map((s) => (
               <div key={s.label} className="py-6 sm:py-0 sm:px-6 text-center sm:first:pl-0 sm:last:pr-0">
                 <p className="text-[36px] sm:text-[44px] font-extrabold text-[#18b5d8] leading-none mb-2">{s.v}</p>
                 <p className="text-[14px] font-semibold text-[#1d1d1f] mb-1">{s.label}</p>
-                <p className="text-[12px] text-[#86868b]">{s.sub}</p>
+                <p className="text-[12px] text-[#6e6e73]">{s.sub}</p>
               </div>
             ))}
           </div>
@@ -452,13 +466,13 @@ export default function CaseStudiesPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-14">
               <div>
-                <p className="text-[11px] font-bold tracking-[2px] uppercase text-[#18b5d8] mb-4">The Problem</p>
+                <p className="text-[14px] font-bold text-[#1d1d1f] mb-3">The Problem</p>
                 <p className="text-[#6e6e73] text-[17px] leading-relaxed">
                   Most Chamber member businesses weren&rsquo;t showing up in AI search at all. When buyers asked AI who to trust locally, it could only recommend businesses it could verify, and most couldn&rsquo;t clear that bar. Inconsistent information caused businesses to be skipped entirely.
                 </p>
               </div>
               <div>
-                <p className="text-[11px] font-bold tracking-[2px] uppercase text-[#18b5d8] mb-4">What We Did</p>
+                <p className="text-[14px] font-bold text-[#1d1d1f] mb-3">What We Did</p>
                 <p className="text-[#6e6e73] text-[17px] leading-relaxed">
                   Three targeted steps: cleaned and unified business information across every platform AI relies on, built stronger digital authority so AI could clearly trust the Chamber as a local source, and aligned member visibility so the Chamber&rsquo;s credibility actively translated into member recommendations.
                 </p>
@@ -466,31 +480,32 @@ export default function CaseStudiesPage() {
             </div>
 
             {/* Before / after table */}
-            <div className="rounded-[20px] overflow-hidden border border-[#e5e5ea] mb-14">
+            <div className="rounded-[14px] overflow-hidden border border-[#e5e5ea] mb-14">
               <div className="hidden md:grid grid-cols-3 bg-[#f5f5f7] border-b border-[#e5e5ea] px-8 py-5 gap-6">
-                <span className="text-[11px] font-bold tracking-[1.5px] uppercase text-[#86868b]">Visibility Factor</span>
-                <span className="text-[11px] font-bold tracking-[1.5px] uppercase text-[#86868b]">Before</span>
-                <span className="text-[11px] font-bold tracking-[1.5px] uppercase text-[#18b5d8]">After (30 Days)</span>
+                <span className="text-[11px] font-bold tracking-[0.1em] uppercase text-[#6e6e73]">Visibility Factor</span>
+                <span className="text-[11px] font-bold tracking-[0.1em] uppercase text-[#6e6e73]">Before</span>
+                <span className="text-[11px] font-bold tracking-[0.1em] uppercase text-[#18b5d8]">After (30 Days)</span>
               </div>
               {[
-                { factor: "AI Recommendations",     before: "Not showing up in AI results",                      after: "Increased presence in AI-generated answers" },
-                { factor: "Chamber Authority",       before: "Standard local directory",                          after: "Recognized as a trusted local source by AI" },
-                { factor: "Member Visibility",       before: "Hard for AI to find and validate",                 after: "Members easier for AI to find, verify, and recommend" },
-                { factor: "Info Consistency",        before: "Inconsistencies causing businesses to be skipped", after: "Unified data across every platform AI relies on" },
+                { factor: "AI Recommendations", before: "Not showing up in AI results",                      after: "Increased presence in AI-generated answers" },
+                { factor: "Chamber Authority",   before: "Standard local directory",                          after: "Recognized as a trusted local source by AI" },
+                { factor: "Member Visibility",   before: "Hard for AI to find and validate",                 after: "Members easier for AI to find, verify, and recommend" },
+                { factor: "Info Consistency",    before: "Inconsistencies causing businesses to be skipped", after: "Unified data across every platform AI relies on" },
               ].map((row, i) => (
                 <div key={row.factor} className={`grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-6 px-6 md:px-8 py-5 border-b border-[#f0f0f0] last:border-0 ${i % 2 === 1 ? "bg-[#fafafa]" : "bg-white"}`}>
                   <p className="text-[15px] font-semibold text-[#1d1d1f]">{row.factor}</p>
-                  <p className="text-[14px] text-[#86868b] flex items-start gap-2"><span className="text-red-400 font-bold shrink-0">✕</span>{row.before}</p>
+                  <p className="text-[14px] text-[#6e6e73] flex items-start gap-2"><span className="text-red-400 font-bold shrink-0">✕</span>{row.before}</p>
                   <p className="text-[14px] text-[#18b5d8] flex items-start gap-2"><span className="font-bold shrink-0">✓</span>{row.after}</p>
                 </div>
               ))}
             </div>
 
-            <blockquote className="border-l-4 border-[#18b5d8] pl-8 py-2 mb-12">
+            <blockquote className="relative pl-10 py-2 mb-12">
+              <span className="absolute top-[-12px] left-0 text-[80px] leading-none text-[#18b5d8] opacity-20 font-serif select-none" aria-hidden="true">&ldquo;</span>
               <p className="text-[20px] text-[#1d1d1f] leading-relaxed italic mb-3">
                 &ldquo;96% of our members were invisible to AI before this. Now when people ask who to trust in North Tampa Bay, the Chamber actually shows up as the answer.&rdquo;
               </p>
-              <p className="text-[13px] font-semibold text-[#86868b] uppercase tracking-wide">North Tampa Bay Chamber of Commerce, FL</p>
+              <p className="text-[13px] font-semibold text-[#6e6e73] uppercase tracking-[0.08em]">North Tampa Bay Chamber of Commerce, FL</p>
             </blockquote>
 
             <div className="flex flex-wrap items-center gap-4">
@@ -506,24 +521,35 @@ export default function CaseStudiesPage() {
       <section className="bg-white border-t border-[#e5e5ea] px-6 py-20">
         <div className="max-w-[1000px] mx-auto">
           <div className="mb-12">
-            <p className="text-[11px] font-bold tracking-[2px] uppercase text-[#18b5d8] mb-3">AI Employee Results</p>
-            <h3 className="text-[36px] sm:text-[44px] font-extrabold text-[#1d1d1f] leading-tight tracking-tight max-w-[640px] mb-4" style={{ textWrap: "balance" }}>
+            <h3
+              className="text-[36px] sm:text-[44px] font-extrabold text-[#1d1d1f] leading-tight tracking-[-0.02em] max-w-[640px] mb-4"
+              style={{ textWrap: "balance" } as React.CSSProperties}
+            >
               More results from businesses running our AI employees.
             </h3>
             <p className="text-[16px] text-[#6e6e73] max-w-[600px] leading-relaxed">
-              These results come from businesses using the same AI employees we configure for our clients, Gemma, Reputation Specialist, AI CRM, and custom-built roles across home services, real estate, healthcare, and more.
+              These results come from businesses using the same AI employees we configure for our clients — Gemma, Reputation Specialist, AI CRM, and custom-built roles across home services, real estate, healthcare, and more.
             </p>
           </div>
 
+          {/* Featured first card (full-width horizontal) */}
+          <div className="bg-[#07141a] rounded-[14px] p-8 border border-[#18b5d8]/20 flex flex-col sm:flex-row gap-8 items-start mb-4">
+            <div className="shrink-0">
+              <p className="text-[clamp(2.5rem,5vw,3.2rem)] font-black text-[#18b5d8] leading-none">15%→50%</p>
+              <p className="text-[12px] font-semibold text-[#18b5d8]/60 uppercase tracking-[0.1em] mt-1 mb-4">close rate</p>
+              <span className="inline-block text-[11px] font-bold uppercase tracking-[0.1em] px-3 py-1 rounded-full" style={{ background: "rgba(24,181,216,0.12)", color: "#18b5d8" }}>Home Services</span>
+            </div>
+            <div>
+              <p className="text-[11px] font-semibold text-white/35 uppercase tracking-[0.1em] mb-2">Custom AI Employees</p>
+              <p className="text-[16px] text-white/70 leading-relaxed">
+                A construction company replaced its manual quoting process with custom AI employees. Close rate tripled. The AI surfaced silent sales killers in recorded calls, coaching the team to close millions in previously lost revenue.
+              </p>
+            </div>
+          </div>
+
+          {/* Remaining 7 in 3-col grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {[
-              {
-                tag: "Home Services",
-                stat: "15% → 50%",
-                statLabel: "close rate",
-                body: "A construction company replaced its manual quoting process with custom AI employees. Close rate tripled. The AI surfaced silent sales killers in recorded calls, coaching the team to close millions in previously lost revenue.",
-                employee: "Custom AI Employees",
-              },
               {
                 tag: "Real Estate",
                 stat: "$30,000",
@@ -549,7 +575,7 @@ export default function CaseStudiesPage() {
                 tag: "Pet Services",
                 stat: "$47,000",
                 statLabel: "monthly revenue, 9 locations",
-                body: "A veterinary group deployed AI intake across 9 clinics. The AI triaged emergency inquiries around the clock, directing pet owners to 24-hour clinics during late-night searches. Monthly revenue from AI-captured leads reached $47,000.",
+                body: "A veterinary group deployed AI intake across 9 clinics. The AI triaged emergency inquiries around the clock, directing pet owners to 24-hour clinics during late-night searches.",
                 employee: "AI Receptionist",
               },
               {
@@ -574,10 +600,10 @@ export default function CaseStudiesPage() {
                 employee: "Custom AI Employees",
               },
             ].map((c) => (
-              <div key={c.stat + c.tag} className="bg-[#f5f5f7] rounded-[20px] p-7 border border-[#e5e5ea] flex flex-col">
+              <div key={c.stat + c.tag} className="bg-[#f5f5f7] rounded-[14px] p-7 border border-[#e5e5ea] flex flex-col">
                 <div className="flex items-center justify-between mb-5">
-                  <span className="inline-block bg-[#18b5d8]/10 text-[#18b5d8] text-[11px] font-bold tracking-[0.14em] uppercase px-3 py-1 rounded-full">{c.tag}</span>
-                  <span className="text-[11px] text-[#86868b] font-semibold">{c.employee}</span>
+                  <span className="inline-block bg-[#18b5d8]/10 text-[#18b5d8] text-[11px] font-bold tracking-[0.1em] uppercase px-3 py-1 rounded-full">{c.tag}</span>
+                  <span className="text-[11px] text-[#6e6e73] font-semibold">{c.employee}</span>
                 </div>
                 <p className="text-[clamp(1.6rem,3vw,2.2rem)] font-black text-[#1d1d1f] leading-none mb-1">{c.stat}</p>
                 <p className="text-[12px] font-semibold text-[#18b5d8] uppercase tracking-[0.1em] mb-4">{c.statLabel}</p>
@@ -586,7 +612,7 @@ export default function CaseStudiesPage() {
             ))}
           </div>
 
-          <p className="text-[12px] text-[#86868b] mt-8 text-center">
+          <p className="text-[12px] text-[#6e6e73] mt-8 text-center">
             Results from real businesses using AI employees. Industry, business size, and configuration vary per client.
           </p>
         </div>
@@ -596,19 +622,19 @@ export default function CaseStudiesPage() {
       {/* ── Why Now ── */}
       <section className="bg-[#f5f5f7] border-t border-[#e5e5ea] px-6 py-20">
         <div className="max-w-[1000px] mx-auto">
-          <div className="mb-12">
-            <p className="text-[11px] font-bold tracking-[2px] uppercase text-[#18b5d8] mb-3">Why this matters right now</p>
-            <h3 className="text-[36px] sm:text-[44px] font-extrabold text-[#1d1d1f] leading-tight tracking-tight max-w-[600px]" style={{ textWrap: "balance" }}>
-              The businesses that move first will own this for years.
-            </h3>
-          </div>
+          <h3
+            className="text-[36px] sm:text-[44px] font-extrabold text-[#1d1d1f] leading-tight tracking-[-0.02em] max-w-[600px] mb-12"
+            style={{ textWrap: "balance" } as React.CSSProperties}
+          >
+            The businesses that move first will own this for years.
+          </h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {[
               { heading: "AI search is here now",         body: "Over 60% of Google searches now surface an AI-generated answer before any website link (Google I/O, 2025). If your business isn't optimized for that answer, you're invisible at the moment of decision." },
               { heading: "Most competitors aren't ready", body: "The vast majority of local businesses haven't touched AI visibility at all. Right now, showing up in AI answers is a genuine competitive advantage, not table stakes." },
               { heading: "Results come in days",          body: "Every case on this page saw measurable movement in under 30 days. This isn't a six-month project. It's a systematic fix with a fast feedback loop." },
             ].map((c) => (
-              <div key={c.heading} className="bg-white rounded-[20px] px-7 py-7 border border-[#e5e5ea] shadow-sm">
+              <div key={c.heading} className="bg-white rounded-[14px] px-7 py-7 border border-[#e5e5ea]">
                 <p className="text-[17px] font-bold text-[#1d1d1f] mb-3">{c.heading}</p>
                 <p className="text-[15px] text-[#6e6e73] leading-relaxed">{c.body}</p>
               </div>
@@ -621,11 +647,13 @@ export default function CaseStudiesPage() {
       {/* ── Final CTA ── */}
       <section className="bg-[#07141a] py-28 px-6 text-center">
         <div className="max-w-[600px] mx-auto">
-          <p className="text-[11px] font-bold tracking-[2px] uppercase text-[#18b5d8] mb-6">Your turn</p>
-          <h2 className="text-[40px] sm:text-[48px] font-extrabold text-white leading-tight tracking-tight mb-6" style={{ textWrap: "balance" }}>
+          <h2
+            className="text-[40px] sm:text-[52px] font-extrabold text-white leading-tight tracking-[-0.02em] mb-6"
+            style={{ textWrap: "balance" } as React.CSSProperties}
+          >
             Your competitors haven&rsquo;t done this yet. You could be next.
           </h2>
-          <p className="text-white/60 text-[18px] leading-relaxed mb-3" style={{ textWrap: "balance" }}>
+          <p className="text-white/60 text-[18px] leading-relaxed mb-3" style={{ textWrap: "balance" } as React.CSSProperties}>
             We&rsquo;ll run your business through the same audit we ran for these four clients, and show you exactly where you stand.
           </p>
           <p className="text-[14px] text-white/30 mb-12">Free. No sales pressure. Delivered in 48 hours.</p>
