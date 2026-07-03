@@ -204,11 +204,11 @@ export default function PlansPage() {
 
           {/* Proof strip */}
           <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 mb-4">
-            {[
+            {(([
               { text: "HVAC client: #32 → #2 in 30 days" },
               { text: "No paid ads required" },
               { text: "Multi-state retail client: $1M+ weekend revenue" },
-            ].map((item) => (
+            ]) as { text: string; href?: string }[]).map((item) => (
               <div key={item.text} className="flex items-center gap-2 text-[14px] font-semibold text-[#333333]">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                   <polyline points="20 6 9 17 4 12" stroke="#18b5d8" strokeWidth="2.5" strokeLinecap="round" />

@@ -98,7 +98,6 @@ export default function Footer() {
       <div className="border-b border-white/10">
         <div className="max-w-[1100px] mx-auto px-8 py-10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
           <div>
-            <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-[#18b5d8] mb-1">Ready to get started?</p>
             <p className="text-[22px] font-bold text-white leading-snug">See how your business appears to AI, free.</p>
           </div>
           <Link
@@ -124,7 +123,7 @@ export default function Footer() {
               className="h-16 w-auto object-contain mb-5"
             />
             <p className="text-[13px] text-white/60 mb-6 leading-relaxed max-w-[300px]">
-              AI employees and AI visibility for Tampa Bay local businesses. Get found on ChatGPT, Google AI, and Gemini.
+              AI visibility consulting and AI employees for growing franchises, multi-location brands, and established businesses ready to own AI search.
             </p>
 
             {/* Address */}
@@ -152,7 +151,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={s.label}
-                  className="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center text-white/50 hover:text-[#18b5d8] hover:border-[#18b5d8] motion-safe:transition-colors [touch-action:manipulation]"
+                  className="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center text-white/65 hover:text-[#18b5d8] hover:border-[#18b5d8] motion-safe:transition-colors [touch-action:manipulation]"
                 >
                   {s.icon}
                 </a>
@@ -162,13 +161,13 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h2 className="text-[11px] font-bold text-white uppercase tracking-[0.18em] mb-5">
+            <h2 className="text-[11px] font-bold text-white uppercase tracking-[0.10em] mb-5">
               Services
             </h2>
             <ul className="space-y-3">
               {services.map((s) => (
                 <li key={s.href}>
-                  <Link href={s.href} className="text-[13px] text-white/50 hover:text-[#18b5d8] motion-safe:transition-colors">
+                  <Link href={s.href} className="text-[13px] text-white/65 hover:text-[#18b5d8] motion-safe:transition-colors">
                     {s.label}
                   </Link>
                 </li>
@@ -178,13 +177,13 @@ export default function Footer() {
 
           {/* Company */}
           <div>
-            <h2 className="text-[11px] font-bold text-white uppercase tracking-[0.18em] mb-5">
+            <h2 className="text-[11px] font-bold text-white uppercase tracking-[0.10em] mb-5">
               Company
             </h2>
             <ul className="space-y-3">
               {company.map((c) => (
                 <li key={c.href}>
-                  <Link href={c.href} className="text-[13px] text-white/50 hover:text-[#18b5d8] motion-safe:transition-colors">
+                  <Link href={c.href} className="text-[13px] text-white/65 hover:text-[#18b5d8] motion-safe:transition-colors">
                     {c.label}
                   </Link>
                 </li>
@@ -194,13 +193,13 @@ export default function Footer() {
 
           {/* Resources */}
           <div>
-            <h2 className="text-[11px] font-bold text-white uppercase tracking-[0.18em] mb-5">
+            <h2 className="text-[11px] font-bold text-white uppercase tracking-[0.10em] mb-5">
               Resources
             </h2>
             <ul className="space-y-3">
               {resources.map((r) => (
                 <li key={r.href}>
-                  <Link href={r.href} className="text-[13px] text-white/50 hover:text-[#18b5d8] motion-safe:transition-colors">
+                  <Link href={r.href} className="text-[13px] text-white/65 hover:text-[#18b5d8] motion-safe:transition-colors">
                     {r.label}
                   </Link>
                 </li>
@@ -212,20 +211,20 @@ export default function Footer() {
 
         {/* ── Bottom bar ── */}
         <div className="border-t border-white/10 pt-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-          <p className="text-[12px] text-white/30">
+          <p className="text-[12px] text-white/55">
             &copy; {new Date().getFullYear()} Shark AI Solutions. All rights reserved.
           </p>
           <div className="flex flex-wrap items-center gap-5">
-            <Link href="/privacy" className="text-[12px] text-white/30 hover:text-[#18b5d8] motion-safe:transition-colors">
+            <Link href="/privacy" className="text-[12px] text-white/55 hover:text-[#18b5d8] motion-safe:transition-colors">
               Privacy Policy
             </Link>
-            <Link href="/terms" className="text-[12px] text-white/30 hover:text-[#18b5d8] motion-safe:transition-colors">
+            <Link href="/terms" className="text-[12px] text-white/55 hover:text-[#18b5d8] motion-safe:transition-colors">
               Terms of Service
             </Link>
-            <Link href="/sitemap-html" className="text-[12px] text-white/30 hover:text-[#18b5d8] motion-safe:transition-colors">
+            <Link href="/sitemap-html" className="text-[12px] text-white/55 hover:text-[#18b5d8] motion-safe:transition-colors">
               Sitemap
             </Link>
-            <p className="text-[12px] text-white/30">
+            <p className="text-[12px] text-white/55">
               Serving{" "}
               <Link href="/wesley-chapel" className="hover:text-[#18b5d8] motion-safe:transition-colors">Wesley Chapel</Link>
               {" "}&middot;{" "}

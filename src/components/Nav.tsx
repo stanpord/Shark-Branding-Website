@@ -4,16 +4,10 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState, useRef } from "react";
 
-const links = [
-  { href: "/", label: "Home" },
-  { href: "/services", label: "Services" },
-  { href: "/automation", label: "Automation" },
-  { href: "/ai-assessment", label: "AI Assessment" },
-  { href: "/case-studies", label: "Case Studies" },
-  { href: "/plans", label: "Pricing" },
-  { href: "/about", label: "About" },
-  { href: "/media", label: "Media" },
-  { href: "/contact", label: "Contact" },
+const servicesDropdown = [
+  { href: "/services", label: "AI Visibility", desc: "ChatGPT, Google AI, Gemini citations" },
+  { href: "/automation", label: "AI Automation", desc: "Workflows that replace manual tasks" },
+  { href: "/ai-assessment", label: "AI Assessment", desc: "See where you stand in 48 hours" },
 ];
 
 const aiEmployeesDropdown = [
@@ -32,11 +26,36 @@ const resourcesDropdown = [
   { href: "/resources/blog-ai-funnel-chatgpt-new-front-door", label: "ChatGPT Is the New Front Door" },
 ];
 
-type DropdownKey = "aiEmployees" | "resources" | null;
+const flatLinks = [
+  { href: "/case-studies", label: "Case Studies" },
+  { href: "/plans", label: "Plans" },
+  { href: "/contact", label: "Contact" },
+];
+
+type DropdownKey = "services" | "aiEmployees" | "resources" | null;
+
+function Chevron({ isOpen }: { isOpen: boolean }) {
+  return (
+    <svg
+      width="10" height="6" viewBox="0 0 10 6" fill="none"
+      className={`shrink-0 transition-transform duration-150 ${isOpen ? "rotate-180" : ""}`}
+      aria-hidden="true"
+    >
+      <path d="M1 1l4 4 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
+const linkBase =
+  "flex items-center gap-1 text-[13px] font-medium text-[#1d1d1f] hover:text-[#18b5d8] px-3 py-2 rounded-lg motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2";
+
+const dropdownPanel =
+  "absolute top-full mt-2 bg-white rounded-2xl shadow-[0_4px_28px_rgba(0,0,0,0.11)] p-3 z-50";
 
 export default function Nav() {
   const [open, setOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<DropdownKey>(null);
+  const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
   const [mobileAiOpen, setMobileAiOpen] = useState(false);
   const [mobileResourcesOpen, setMobileResourcesOpen] = useState(false);
   const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -50,233 +69,302 @@ export default function Nav() {
     closeTimer.current = setTimeout(() => setActiveDropdown(null), 120);
   }
 
-  const chevron = (open: boolean) => (
-    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" className={`transition-transform duration-150 ${open ? 'rotate-180' : ''}`}>
-      <path d="M1 1l4 4 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-    </svg>
-  );
+  function closeAll() {
+    setOpen(false);
+    setMobileServicesOpen(false);
+    setMobileAiOpen(false);
+    setMobileResourcesOpen(false);
+  }
 
   return (
-    <header className="fixed top-0 inset-x-0 z-50" style={{ paddingTop: 'env(safe-area-inset-top)' }}>
-      {/* Rebrand announcement bar */}
-      <div className="bg-[#18b5d8] text-white text-center text-[12px] font-semibold tracking-wide py-2 px-4">
-        Shark Branding Solutions is now&nbsp;<span className="font-extrabold">Shark AI Solutions</span>&nbsp;,  same team, bigger mission.
+    <header className="fixed top-0 inset-x-0 z-50" style={{ paddingTop: "env(safe-area-inset-top)" }}>
+      {/* Rebrand bar */}
+      <div className="bg-[#18b5d8] text-white text-center text-[12px] font-medium py-2 px-4 leading-[18px]">
+        Shark Branding Solutions is now&nbsp;<strong className="font-bold">Shark AI Solutions</strong>&nbsp;— same team, bigger mission.
       </div>
-      <div className="bg-white border-b border-[#e0e0e0]">
-      <nav className="w-full h-20 max-w-[1440px] mx-auto px-6 flex items-center justify-between">
-        {/* Logo */}
-        <Link
-          href="/"
-          className="flex items-center shrink-0 rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2"
-        >
-          <Image
-            src="/logo.webp"
-            alt="Shark AI Solutions"
-            width={200}
-            height={72}
-            className="h-16 w-auto object-contain"
-            priority
-            onError={() => {}}
-          />
-        </Link>
 
-        {/* Desktop links */}
-        <ul className="hidden md:flex items-center gap-4">
-          {links.map((l) => (
-            <li key={l.href}>
-              <Link
-                href={l.href}
-                className="nav-link rounded motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 text-[#1d1d1f] hover:text-[#18b5d8]"
-              >
-                {l.label}
-              </Link>
-            </li>
-          ))}
+      <div className="bg-white/95 backdrop-blur-sm border-b border-[#e0e0e0]">
+        <nav className="w-full h-20 max-w-[1440px] mx-auto px-6 flex items-center justify-between">
 
-          {/* AI Employees dropdown */}
-          <li className="relative" onMouseEnter={() => handleEnter("aiEmployees")} onMouseLeave={handleLeave}>
-            <Link
-              href="/aiemployees"
-              className="nav-link rounded motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 text-[#1d1d1f] hover:text-[#18b5d8] flex items-center gap-1"
-            >
-              AI Employees
-              {chevron(activeDropdown === "aiEmployees")}
-            </Link>
-            {activeDropdown === "aiEmployees" && (
-              <div
-                className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-[280px] bg-white rounded-[20px] border border-[#e8e8ed] shadow-[0_8px_40px_rgba(0,0,0,0.10)] p-5"
-                onMouseEnter={() => handleEnter("aiEmployees")}
-                onMouseLeave={handleLeave}
-              >
-                <div className="absolute -top-[7px] left-1/2 -translate-x-1/2 w-3 h-3 bg-white border-l border-t border-[#e8e8ed] rotate-45" />
-                <p className="text-[11px] font-bold uppercase tracking-[0.15em] text-[#18b5d8] mb-3">AI Employees</p>
-                <ul className="space-y-2">
-                  {aiEmployeesDropdown.map((item) => (
-                    <li key={item.href}>
-                      <Link
-                        href={item.href}
-                        onClick={() => setActiveDropdown(null)}
-                        className={`text-[13px] hover:text-[#18b5d8] transition-colors leading-snug block py-0.5 ${item.bold ? 'font-semibold text-[#0a0a0a]' : 'text-[#333]'}`}
-                      >
-                        {item.label}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
-          </li>
-
-          {/* Resources dropdown */}
-          <li className="relative" onMouseEnter={() => handleEnter("resources")} onMouseLeave={handleLeave}>
-            <Link
-              href="/resources"
-              className="nav-link rounded motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 text-[#1d1d1f] hover:text-[#18b5d8] flex items-center gap-1"
-            >
-              Resources
-              {chevron(activeDropdown === "resources")}
-            </Link>
-            {activeDropdown === "resources" && (
-              <div
-                className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-[300px] bg-white rounded-[20px] border border-[#e8e8ed] shadow-[0_8px_40px_rgba(0,0,0,0.10)] p-5"
-                onMouseEnter={() => handleEnter("resources")}
-                onMouseLeave={handleLeave}
-              >
-                <div className="absolute -top-[7px] left-1/2 -translate-x-1/2 w-3 h-3 bg-white border-l border-t border-[#e8e8ed] rotate-45" />
-                <p className="text-[11px] font-bold uppercase tracking-[0.15em] text-[#18b5d8] mb-3">AI Visibility</p>
-                <ul className="space-y-2">
-                  {resourcesDropdown.map((item) => (
-                    <li key={item.href}>
-                      <Link
-                        href={item.href}
-                        onClick={() => setActiveDropdown(null)}
-                        className="text-[13px] text-[#333] hover:text-[#18b5d8] transition-colors leading-snug block py-0.5"
-                      >
-                        {item.label}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-                <div className="mt-4 pt-3 border-t border-[#f0f0f0]">
-                  <Link
-                    href="/resources"
-                    onClick={() => setActiveDropdown(null)}
-                    className="text-[13px] font-semibold text-[#18b5d8] hover:underline"
-                  >
-                    View all resources →
-                  </Link>
-                </div>
-              </div>
-            )}
-          </li>
-        </ul>
-
-        {/* CTA */}
-        <div className="hidden md:flex items-center gap-3">
+          {/* Logo */}
           <Link
-            href="/free-report"
-            className="btn-press bg-[#18b5d8] text-white text-[12px] font-semibold rounded-full px-4 py-1.5 hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 [touch-action:manipulation]"
+            href="/"
+            className="flex items-center shrink-0 rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2"
           >
-            Get My Free AI Audit
+            <Image
+              src="/logo.webp"
+              alt="Shark AI Solutions"
+              width={200}
+              height={72}
+              className="h-16 w-auto object-contain"
+              priority
+              onError={() => {}}
+            />
           </Link>
-        </div>
 
-        {/* Mobile hamburger */}
-        <button
-          className="md:hidden text-[#1d1d1f] min-h-[44px] min-w-[44px] flex items-center justify-center rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 [touch-action:manipulation]"
-          onClick={() => setOpen(!open)}
-          aria-label="Toggle menu"
-          aria-expanded={open}
-        >
-          <span className="flex flex-col gap-[5px]" aria-hidden="true">
-            <span className="block w-5 h-px bg-[#1d1d1f]" />
-            <span className="block w-5 h-px bg-[#1d1d1f]" />
-            <span className="block w-5 h-px bg-[#1d1d1f]" />
-          </span>
-        </button>
-      </nav>
+          {/* Desktop nav */}
+          <ul className="hidden lg:flex items-center gap-0.5">
+
+            {/* Services dropdown */}
+            <li className="relative" onMouseEnter={() => handleEnter("services")} onMouseLeave={handleLeave}>
+              <Link href="/services" className={linkBase}>
+                Services
+                <Chevron isOpen={activeDropdown === "services"} />
+              </Link>
+              {activeDropdown === "services" && (
+                <div
+                  className={`${dropdownPanel} left-1/2 -translate-x-1/2 w-[296px]`}
+                  onMouseEnter={() => handleEnter("services")}
+                  onMouseLeave={handleLeave}
+                >
+                  <ul className="space-y-0.5">
+                    {servicesDropdown.map((item) => (
+                      <li key={item.href}>
+                        <Link
+                          href={item.href}
+                          onClick={() => setActiveDropdown(null)}
+                          className="group flex flex-col gap-0.5 px-3 py-2.5 rounded-xl hover:bg-[#f5f5f7] transition-colors"
+                        >
+                          <span className="text-[13px] font-semibold text-[#1d1d1f] group-hover:text-[#18b5d8] transition-colors">
+                            {item.label}
+                          </span>
+                          <span className="text-[12px] text-[#6e6e73]">{item.desc}</span>
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </li>
+
+            {/* AI Employees dropdown */}
+            <li className="relative" onMouseEnter={() => handleEnter("aiEmployees")} onMouseLeave={handleLeave}>
+              <Link href="/aiemployees" className={linkBase}>
+                AI Employees
+                <Chevron isOpen={activeDropdown === "aiEmployees"} />
+              </Link>
+              {activeDropdown === "aiEmployees" && (
+                <div
+                  className={`${dropdownPanel} left-1/2 -translate-x-1/2 w-[272px]`}
+                  onMouseEnter={() => handleEnter("aiEmployees")}
+                  onMouseLeave={handleLeave}
+                >
+                  <ul className="space-y-0.5">
+                    {aiEmployeesDropdown.map((item) => (
+                      <li key={item.href}>
+                        <Link
+                          href={item.href}
+                          onClick={() => setActiveDropdown(null)}
+                          className={`block px-3 py-2 rounded-xl text-[13px] leading-snug hover:bg-[#f5f5f7] hover:text-[#18b5d8] transition-colors ${
+                            item.bold ? "font-semibold text-[#1d1d1f]" : "text-[#444]"
+                          }`}
+                        >
+                          {item.label}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </li>
+
+            {/* Flat links */}
+            {flatLinks.map((l) => (
+              <li key={l.href}>
+                <Link href={l.href} className={linkBase}>
+                  {l.label}
+                </Link>
+              </li>
+            ))}
+
+            {/* Resources dropdown */}
+            <li className="relative" onMouseEnter={() => handleEnter("resources")} onMouseLeave={handleLeave}>
+              <Link href="/resources" className={linkBase}>
+                Resources
+                <Chevron isOpen={activeDropdown === "resources"} />
+              </Link>
+              {activeDropdown === "resources" && (
+                <div
+                  className={`${dropdownPanel} right-0 w-[296px]`}
+                  onMouseEnter={() => handleEnter("resources")}
+                  onMouseLeave={handleLeave}
+                >
+                  <ul className="space-y-0.5">
+                    {resourcesDropdown.map((item) => (
+                      <li key={item.href}>
+                        <Link
+                          href={item.href}
+                          onClick={() => setActiveDropdown(null)}
+                          className="block px-3 py-2 rounded-xl text-[13px] text-[#444] leading-snug hover:bg-[#f5f5f7] hover:text-[#18b5d8] transition-colors"
+                        >
+                          {item.label}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                  <div className="mt-2 pt-2 border-t border-[#f0f0f0] px-3">
+                    <Link
+                      href="/resources"
+                      onClick={() => setActiveDropdown(null)}
+                      className="text-[13px] font-semibold text-[#18b5d8] hover:underline"
+                    >
+                      View all resources →
+                    </Link>
+                  </div>
+                </div>
+              )}
+            </li>
+          </ul>
+
+          {/* Desktop CTA */}
+          <div className="hidden lg:flex items-center">
+            <Link
+              href="/free-report"
+              className="btn-press bg-[#18b5d8] text-white text-[13px] font-semibold rounded-full px-5 py-2 hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 [touch-action:manipulation]"
+            >
+              Get Free AI Audit
+            </Link>
+          </div>
+
+          {/* Mobile hamburger */}
+          <button
+            className="lg:hidden min-h-[44px] min-w-[44px] flex items-center justify-center rounded text-[#1d1d1f] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 [touch-action:manipulation]"
+            onClick={() => setOpen(!open)}
+            aria-label={open ? "Close menu" : "Open menu"}
+            aria-expanded={open}
+          >
+            <span className="flex flex-col gap-[5px]" aria-hidden="true">
+              <span className={`block w-5 h-px bg-current transition-transform duration-200 origin-center ${open ? "rotate-45 translate-y-[6px]" : ""}`} />
+              <span className={`block w-5 h-px bg-current transition-opacity duration-200 ${open ? "opacity-0" : ""}`} />
+              <span className={`block w-5 h-px bg-current transition-transform duration-200 origin-center ${open ? "-rotate-45 -translate-y-[6px]" : ""}`} />
+            </span>
+          </button>
+        </nav>
       </div>
 
-      {/* Mobile menu */}
-      {open && (
-        <div className="md:hidden absolute inset-x-0 bg-white py-6 px-6 flex flex-col gap-5 border-t border-[#e0e0e0]" style={{ top: 'calc(5rem + 2.25rem + env(safe-area-inset-top))' }}>
-          {links.map((l) => (
-            <Link
-              key={l.href}
-              href={l.href}
-              onClick={() => setOpen(false)}
-              className="min-h-[44px] flex items-center text-base motion-safe:transition-colors rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 text-[#1d1d1f] hover:text-[#18b5d8]"
-            >
-              {l.label}
-            </Link>
-          ))}
+      {/* Mobile menu — always rendered, CSS-animated */}
+      <div
+        aria-hidden={!open}
+        className={`lg:hidden absolute inset-x-0 bg-white border-t border-[#e0e0e0] overflow-y-auto transition-[opacity,transform] duration-200 ease-out ${
+          open ? "opacity-100 translate-y-0 pointer-events-auto visible" : "opacity-0 -translate-y-2 pointer-events-none invisible"
+        }`}
+        style={{
+          top: "calc(5rem + 34px + env(safe-area-inset-top))",
+          maxHeight: "calc(100dvh - 5rem - 34px - env(safe-area-inset-top))",
+        }}
+      >
+        <div className="py-3 px-6 flex flex-col">
 
-          {/* Mobile AI Employees accordion */}
-          <div>
+          {/* Services accordion */}
+          <div className="border-b border-[#f5f5f7]">
+            <button
+              onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
+              className="min-h-[48px] flex items-center justify-between w-full text-[15px] font-medium text-[#1d1d1f] hover:text-[#18b5d8] transition-colors"
+            >
+              Services
+              <Chevron isOpen={mobileServicesOpen} />
+            </button>
+            <div className={`overflow-hidden transition-all duration-200 ease-out ${mobileServicesOpen ? "max-h-[240px] pb-3" : "max-h-0"}`}>
+              <div className="flex flex-col gap-0.5 pl-1">
+                {servicesDropdown.map((item) => (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    onClick={closeAll}
+                    className="flex flex-col gap-0.5 py-2 px-3 rounded-xl hover:bg-[#f5f5f7]"
+                  >
+                    <span className="text-[14px] font-semibold text-[#1d1d1f]">{item.label}</span>
+                    <span className="text-[12px] text-[#6e6e73]">{item.desc}</span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* AI Employees accordion */}
+          <div className="border-b border-[#f5f5f7]">
             <button
               onClick={() => setMobileAiOpen(!mobileAiOpen)}
-              className="min-h-[44px] flex items-center justify-between w-full text-base text-[#1d1d1f] hover:text-[#18b5d8] transition-colors"
+              className="min-h-[48px] flex items-center justify-between w-full text-[15px] font-medium text-[#1d1d1f] hover:text-[#18b5d8] transition-colors"
             >
               AI Employees
-              {chevron(mobileAiOpen)}
+              <Chevron isOpen={mobileAiOpen} />
             </button>
-            {mobileAiOpen && (
-              <div className="mt-2 pl-4 flex flex-col gap-2">
+            <div className={`overflow-hidden transition-all duration-200 ease-out ${mobileAiOpen ? "max-h-[360px] pb-3" : "max-h-0"}`}>
+              <div className="flex flex-col gap-0.5 pl-1">
                 {aiEmployeesDropdown.map((item) => (
                   <Link
                     key={item.href}
                     href={item.href}
-                    onClick={() => { setOpen(false); setMobileAiOpen(false); }}
-                    className={`block py-1.5 text-[14px] hover:text-[#18b5d8] transition-colors ${item.bold ? 'font-semibold text-[#0a0a0a]' : 'text-[#333]'}`}
+                    onClick={closeAll}
+                    className={`block py-2 px-3 rounded-xl text-[14px] leading-snug hover:bg-[#f5f5f7] hover:text-[#18b5d8] transition-colors ${
+                      item.bold ? "font-semibold text-[#1d1d1f]" : "text-[#444]"
+                    }`}
                   >
                     {item.label}
                   </Link>
                 ))}
               </div>
-            )}
+            </div>
           </div>
 
-          {/* Mobile Resources accordion */}
-          <div>
+          {/* Flat links */}
+          {flatLinks.map((l) => (
+            <div key={l.href} className="border-b border-[#f5f5f7]">
+              <Link
+                href={l.href}
+                onClick={closeAll}
+                className="min-h-[48px] flex items-center text-[15px] font-medium text-[#1d1d1f] hover:text-[#18b5d8] transition-colors"
+              >
+                {l.label}
+              </Link>
+            </div>
+          ))}
+
+          {/* Resources accordion */}
+          <div className="border-b border-[#f5f5f7]">
             <button
               onClick={() => setMobileResourcesOpen(!mobileResourcesOpen)}
-              className="min-h-[44px] flex items-center justify-between w-full text-base text-[#1d1d1f] hover:text-[#18b5d8] transition-colors"
+              className="min-h-[48px] flex items-center justify-between w-full text-[15px] font-medium text-[#1d1d1f] hover:text-[#18b5d8] transition-colors"
             >
               Resources
-              {chevron(mobileResourcesOpen)}
+              <Chevron isOpen={mobileResourcesOpen} />
             </button>
-            {mobileResourcesOpen && (
-              <div className="mt-2 pl-4 flex flex-col gap-2">
+            <div className={`overflow-hidden transition-all duration-200 ease-out ${mobileResourcesOpen ? "max-h-[360px] pb-3" : "max-h-0"}`}>
+              <div className="flex flex-col gap-0.5 pl-1">
                 {resourcesDropdown.map((item) => (
                   <Link
                     key={item.href}
                     href={item.href}
-                    onClick={() => { setOpen(false); setMobileResourcesOpen(false); }}
-                    className="block py-1.5 text-[14px] text-[#333] hover:text-[#18b5d8] transition-colors"
+                    onClick={closeAll}
+                    className="block py-2 px-3 rounded-xl text-[14px] text-[#444] leading-snug hover:bg-[#f5f5f7] hover:text-[#18b5d8] transition-colors"
                   >
                     {item.label}
                   </Link>
                 ))}
                 <Link
                   href="/resources"
-                  onClick={() => { setOpen(false); setMobileResourcesOpen(false); }}
-                  className="text-[13px] font-semibold text-[#18b5d8] mt-1"
+                  onClick={closeAll}
+                  className="block py-2 px-3 text-[13px] font-semibold text-[#18b5d8]"
                 >
                   View all resources →
                 </Link>
               </div>
-            )}
+            </div>
           </div>
 
-          <Link
-            href="/free-report"
-            onClick={() => setOpen(false)}
-            className="btn-press self-start bg-[#18b5d8] text-white text-[15px] font-semibold rounded-full px-5 py-3 hover:bg-[#1ec8ee] motion-safe:transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 [touch-action:manipulation]"
-          >
-            Get My Free AI Audit
-          </Link>
+          {/* Mobile CTA */}
+          <div className="pt-5 pb-4">
+            <Link
+              href="/free-report"
+              onClick={closeAll}
+              className="btn-press block w-full text-center bg-[#18b5d8] text-white text-[15px] font-semibold rounded-full px-5 py-3.5 hover:bg-[#1ec8ee] motion-safe:transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 [touch-action:manipulation]"
+            >
+              Get My Free AI Audit
+            </Link>
+          </div>
         </div>
-      )}
+      </div>
     </header>
   );
 }

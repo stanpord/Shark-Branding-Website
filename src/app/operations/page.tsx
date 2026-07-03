@@ -119,6 +119,68 @@ export default function OperationsPage() {
         </section>
       ))}
 
+      {/* ── We run on our own ── */}
+      <section className="bg-[#f5f5f7] px-6 py-16 md:py-24 border-t border-[#e8e8ed]">
+        <div className="max-w-[900px] mx-auto">
+          <div className="text-center mb-12">
+            <p className="text-[#18b5d8] text-[13px] font-semibold tracking-[0.2em] uppercase mb-4">
+              Proof of concept
+            </p>
+            <h2 className="text-[28px] font-semibold text-[#0a0a0a] mb-4" style={{ textWrap: "balance" }}>
+              We run Shark AI Solutions on our own AI employees.
+            </h2>
+            <p className="text-[15px] text-[#555] max-w-[560px] mx-auto leading-relaxed" style={{ textWrap: "balance" }}>
+              Before we deploy AI employees for clients, we build and run them ourselves.
+              Our CFO Agent monitors QuickBooks daily and sends financial briefings every morning.
+              Our CMO Agent drafts content and tracks inbound leads every Monday.
+              Every tool we sell, we use.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {[
+              {
+                label: "CFO Agent",
+                eyebrow: "Finance",
+                description: "Connects to QuickBooks daily. Pulls AR aging, cash position, P&L, and cash flow — then emails a structured briefing with recommended actions every morning at 9 AM.",
+                metrics: ["Daily cash & AR briefing", "Weekly MRR snapshot", "Monthly P&L deep dive"],
+              },
+              {
+                label: "CMO Agent",
+                eyebrow: "Marketing",
+                description: "Runs every Monday morning. Scans Gmail for new inbound leads, checks the content queue in Google Drive, drafts a LinkedIn post, and delivers a weekly marketing brief.",
+                metrics: ["Inbound lead monitoring", "Weekly content draft", "Content pipeline tracking"],
+              },
+            ].map((agent) => (
+              <div key={agent.label} className="bg-white rounded-[20px] p-8 border border-[#e8e8ed]">
+                <div className="flex items-center gap-3 mb-5">
+                  <span className="text-[11px] font-bold tracking-[0.2em] uppercase text-[#18b5d8]">{agent.eyebrow}</span>
+                  <span className="w-px h-3 bg-[#1d1d1f]/15" aria-hidden="true" />
+                  <span className="text-[15px] font-bold text-[#0a0a0a]">{agent.label}</span>
+                  <span className="ml-auto inline-flex items-center gap-1.5 bg-[#18b5d8]/10 text-[#18b5d8] text-[11px] font-semibold rounded-full px-3 py-1">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#18b5d8] animate-pulse" aria-hidden="true" />
+                    Live
+                  </span>
+                </div>
+                <p className="text-[14px] text-[#555] leading-relaxed mb-6">{agent.description}</p>
+                <ul className="space-y-2">
+                  {agent.metrics.map((m) => (
+                    <li key={m} className="flex items-center gap-2.5 text-[13px] text-[#333] font-medium">
+                      <span className="text-[#18b5d8] font-bold shrink-0" aria-hidden="true">✓</span>
+                      {m}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+
+          <p className="text-center text-[13px] text-[#999] mt-8">
+            These are the same agents we build for clients. Deployed in days. Running autonomously.
+          </p>
+        </div>
+      </section>
+
       {/* ── CTA ── */}
       <section className="bg-[#0a0a0a] py-16 md:py-28 px-6 text-center">
         <div className="max-w-[560px] mx-auto">
