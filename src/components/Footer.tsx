@@ -118,9 +118,9 @@ export default function Footer() {
             <Image
               src="/logo.webp"
               alt="Shark AI Solutions"
-              width={200}
-              height={72}
-              className="h-16 w-auto object-contain mb-5"
+              width={240}
+              height={86}
+              className="h-20 w-auto object-contain mb-5"
             />
             <p className="text-[13px] text-white/60 mb-6 leading-relaxed max-w-[300px]">
               AI visibility consulting and AI employees for growing franchises, multi-location brands, and established businesses ready to own AI search.

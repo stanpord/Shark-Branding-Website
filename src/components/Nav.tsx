@@ -94,9 +94,9 @@ export default function Nav() {
             <Image
               src="/logo.webp"
               alt="Shark AI Solutions"
-              width={200}
-              height={72}
-              className="h-16 w-auto object-contain"
+              width={240}
+              height={86}
+              className="h-20 w-auto object-contain"
               priority
               onError={() => {}}
             />
