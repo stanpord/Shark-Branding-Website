@@ -148,13 +148,13 @@ export default function WhatIsAiVoiceReceptionistPage() {
 
             <h2 className="text-[26px] font-bold text-[#0a0a0a] mt-8 mb-4">How it compares to a traditional answering service</h2>
             <p>
-              A traditional answering service bills by the minute. A busy service business fielding 200 calls per month, with average calls running five minutes at a dollar per minute, is spending $1,000 per month just for someone to take a message.
+              <Link href="/resources/blog-ai-answering-service-vs-live-answering-service" className="text-[#18b5d8] hover:underline">A traditional answering service bills by the minute.</Link> A busy service business fielding 200 calls per month, with average calls running five minutes at a dollar per minute, is spending $1,000 per month just for someone to take a message.
             </p>
             <p>
               That same operator is working across a dozen other accounts at the same time. Your caller may wait. The script they follow is whatever you gave them when you signed up. If your services changed, the script probably did not.
             </p>
             <p>
-              An AI voice receptionist runs on a flat monthly rate. Two hundred calls or two thousand calls, the number does not change. And the &ldquo;script&rdquo; updates whenever your business does, because it is trained on your specific services, not a document someone filed away three years ago.
+              <Link href="/aiemployees" className="text-[#18b5d8] hover:underline">An AI voice receptionist</Link> runs on a flat monthly rate. Two hundred calls or two thousand calls, the number does not change. And the &ldquo;script&rdquo; updates whenever your business does, because it is trained on your specific services, not a document someone filed away three years ago.
             </p>
           </div>
 
@@ -194,10 +194,10 @@ export default function WhatIsAiVoiceReceptionistPage() {
               If you are sending any calls to voicemail, an AI voice receptionist will pay for itself. One booked job per month from a lead that would have gone to voicemail covers the cost for most service businesses in this area. That is not a stretch. It is just math.
             </p>
             <p>
-              The use case most business owners underestimate is after-hours. The calls that come in at 8 PM on a Thursday, or Saturday morning, or during the holidays. Those callers are not leaving messages. They are moving down the list. The AI answers every one of them the same way it answers a Tuesday afternoon call.
+              The use case most business owners underestimate is after-hours. The calls that come in at 8 PM on a Thursday, or Saturday morning, or during the holidays. Those callers are not leaving messages. They are moving down the list. The AI answers every one of them the same way it answers a Tuesday afternoon call. This is <Link href="/resources/blog-why-tampa-bay-businesses-switching-ai-employees" className="text-[#18b5d8] hover:underline">why so many Tampa Bay businesses are making the switch</Link>.
             </p>
             <p>
-              If your business handles sensitive intake, a medical practice or a legal firm with confidential information, the AI still handles the intake portion well. It just hands off to a human earlier. The caller gets a fast, professional response. Your team handles the details.
+              If your business handles sensitive intake, a medical practice or a legal firm with confidential information, the AI still handles the intake portion well. It just hands off to a human earlier. The caller gets a fast, professional response. Your team handles the details. <Link href="/free-report" className="text-[#18b5d8] hover:underline">Get our free AI visibility report</Link> to see exactly what coverage gaps exist in your current setup.
             </p>
           </div>
 

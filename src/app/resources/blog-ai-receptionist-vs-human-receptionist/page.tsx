@@ -200,7 +200,7 @@ export default function AiVsHumanReceptionistPage() {
             <h2 className="text-[26px] font-bold text-[#0a0a0a] mt-2 mb-4">Where AI wins by a significant margin</h2>
 
             <p>
-              After-hours lead capture is the clearest example. In Wesley Chapel and the surrounding Pasco County area, a significant portion of home service leads come in between 7 PM and midnight. These are homeowners who finished work, had dinner, and finally sat down to look into the AC problem or the roof damage or the plumbing issue they have been ignoring.
+              After-hours lead capture is the clearest example, and one of the key reasons <Link href="/resources/blog-why-tampa-bay-businesses-switching-ai-employees" className="text-[#18b5d8] hover:underline">Tampa Bay businesses are switching to AI employees</Link> at an accelerating pace. In Wesley Chapel and the surrounding Pasco County area, a significant portion of home service leads come in between 7 PM and midnight. These are homeowners who finished work, had dinner, and finally sat down to look into the AC problem or the roof damage or the plumbing issue they have been ignoring.
             </p>
 
             <p>
@@ -232,13 +232,13 @@ export default function AiVsHumanReceptionistPage() {
             </p>
 
             <p>
-              That combination costs a fraction of what a full-time receptionist costs, runs 24/7, and does not require managing a person who might call in sick or quit with two weeks notice.
+              That combination costs a fraction of what a full-time receptionist costs, runs 24/7, and does not require managing a person who might call in sick or quit with two weeks notice. To see what this looks like in practice alongside the other automations businesses pair with AI reception, see <Link href="/resources/blog-5-automations-wesley-chapel-businesses" className="text-[#18b5d8] hover:underline">the five automations Wesley Chapel businesses should deploy first</Link>.
             </p>
 
             <h2 className="text-[26px] font-bold text-[#0a0a0a] mt-8 mb-4">What Gemma actually does in this context</h2>
 
             <p>
-              Gemma is the AI chat receptionist we configure for clients at Shark AI Solutions. She is not a generic chatbot. She is configured specifically for your business: your service types, your service area, your qualifying questions, and your calendar.
+              Gemma is the AI chat receptionist we configure for clients at Shark AI Solutions. She is not a generic chatbot. If you want to understand the full distinction between chatbots and true AI employees, our <Link href="/resources/blog-what-is-an-ai-employee" className="text-[#18b5d8] hover:underline">plain-English guide to AI employees</Link> covers it in detail. Gemma is configured specifically for your business: your service types, your service area, your qualifying questions, and your calendar.
             </p>
 
             <p>

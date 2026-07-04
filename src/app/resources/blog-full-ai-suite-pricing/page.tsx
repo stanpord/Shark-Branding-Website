@@ -172,7 +172,7 @@ export default function FullAiSuitePricingPage() {
               The closest competitors to the Full AI Suite are not single products. They are four or five separate platforms stitched together. A voice answering service. A chat tool. A CRM. A follow-up automation tool. A reputation management platform. At the usage level of a typical Tampa Bay service business, that stack runs $3,500 to $4,500 per month before annual contracts and implementation.
             </p>
             <p>
-              Most of those platforms require annual contracts. None of them talk to each other by default. And none of them are configured for your business. You get software. We give you a working system.
+              Most of those platforms require annual contracts. None of them talk to each other by default. And none of them are configured for your business. You get software. We give you a working system. See <Link href="/case-studies" className="text-[#18b5d8] hover:underline">our client results</Link> to understand what that difference looks like in practice.
             </p>
 
             <h2 className="text-[26px] font-bold text-[#0a0a0a] mt-8 mb-4">How to think about the ROI</h2>
@@ -180,13 +180,13 @@ export default function FullAiSuitePricingPage() {
               One booked job per month from a lead that would have gone to voicemail covers a significant portion of the monthly cost. For an HVAC company or a law firm in Tampa Bay, a single after-hours call that gets answered and converts instead of disappearing can represent $500 to $5,000 in revenue.
             </p>
             <p>
-              The AI voice receptionist answers every call. The AI Sales Manager follows up with every lead. The AI Sales Assistant warms every prospect before your closer gets involved. None of those things require anyone on your team to be awake.
+              The <Link href="/resources/blog-what-is-ai-voice-receptionist" className="text-[#18b5d8] hover:underline">AI voice receptionist</Link> answers every call. The <Link href="/resources/blog-what-is-ai-sales-manager" className="text-[#18b5d8] hover:underline">AI Sales Manager</Link> follows up with every lead. The <Link href="/resources/blog-what-is-ai-sales-assistant-bant-sandler" className="text-[#18b5d8] hover:underline">AI Sales Assistant</Link> warms every prospect before your closer gets involved. None of those things require anyone on your team to be awake.
             </p>
             <p>
               The question is not whether $5,000 per month is expensive. It is whether you are currently leaving more than $5,000 per month on the table because your phones are not answered, your follow-up is inconsistent, and your pipeline is running out of someone&apos;s memory.
             </p>
             <p>
-              For most businesses that call us, the answer is yes.
+              For most businesses that call us, the answer is yes. <Link href="/free-report" className="text-[#18b5d8] hover:underline">Our free AI visibility report</Link> makes that calculation specific to your business within 48 hours.
             </p>
           </div>
 

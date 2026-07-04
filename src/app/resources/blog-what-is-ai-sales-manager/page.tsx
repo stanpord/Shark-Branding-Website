@@ -121,7 +121,7 @@ export default function WhatIsAiSalesManagerPage() {
 
           <div className="text-[17px] leading-[1.75] text-[#333] space-y-6 mb-16">
             <p>
-              Ask any service business owner in Tampa Bay how they manage leads and you get the same answer. Someone catches the call when they can. If they are busy, they get to it later. Maybe one follow-up. If the lead does not respond, it fades. The pipeline lives in someone&apos;s head.
+              Ask any service business owner in Tampa Bay how they manage leads and you get the same answer. Someone catches the call when they can. If they are busy, they get to it later. Maybe one follow-up. If the lead does not respond, it fades. The pipeline lives in someone&apos;s head. It is why the <Link href="/resources/blog-5-automations-wesley-chapel-businesses" className="text-[#18b5d8] hover:underline">right automations</Link> make such a dramatic difference for local service businesses.
             </p>
             <p>
               That is not a people problem. It is a systems problem. Your team is not lazy. They are doing the work. Sales management is just nobody&apos;s actual job.
@@ -134,7 +134,7 @@ export default function WhatIsAiSalesManagerPage() {
           <div className="text-[17px] leading-[1.75] text-[#333] space-y-6 mb-16">
             <h2 className="text-[26px] font-bold text-[#0a0a0a] mt-2 mb-4">What an AI Sales Manager actually does</h2>
             <p>
-              Every lead that comes in through the AI voice receptionist, the chat widget, or a web form hits the AI Sales Manager first. It sits between lead capture and your human team, and it makes decisions automatically.
+              Every lead that comes in through the <Link href="/resources/blog-what-is-ai-voice-receptionist" className="text-[#18b5d8] hover:underline">AI voice receptionist</Link>, the chat widget, or a web form hits the AI Sales Manager first. It sits between lead capture and your human team, and it makes decisions automatically.
             </p>
             <p>
               It scores each lead based on what the person actually said. Not just whether a form was filled out. Is this a job for this week or are they shopping for next year? Did they mention a budget? Did they say they own the property? Those signals drive the score, and the score drives what happens next.
@@ -151,7 +151,7 @@ export default function WhatIsAiSalesManagerPage() {
               Most leads are not ready to buy the day they contact you. They are comparing options, waiting on a spouse to weigh in, or just not in a rush. A human team forgets these people. The AI does not.
             </p>
             <p>
-              Unbooked leads enter a nurture sequence. The AI checks in at timed intervals with relevant messages, not generic blasts. When a nurtured lead re-engages, the full history of every prior interaction is already in your CRM. Your team gets a notification with context, not just a name and a phone number.
+              Unbooked leads enter a nurture sequence. The AI checks in at timed intervals with relevant messages, not generic blasts — using the same <Link href="/resources/blog-what-is-ai-sales-assistant-bant-sandler" className="text-[#18b5d8] hover:underline">BANT and Sandler qualification frameworks</Link> that warm leads before your closers get involved. When a nurtured lead re-engages, the full history of every prior interaction is already in your CRM. Your team gets a notification with context, not just a name and a phone number.
             </p>
           </div>
 
@@ -191,7 +191,7 @@ export default function WhatIsAiSalesManagerPage() {
               If you are getting more than 30 inbound leads per month and any of them are falling through, you need a system. A spreadsheet is not a system. A shared inbox where everyone assumes someone else responded is not a system.
             </p>
             <p>
-              If your follow-up speed is inconsistent, if leads go cold before your team gets to them, if you have no idea what your pipeline looks like right now without calling someone and asking, an AI Sales Manager solves all three of those problems at once.
+              If your follow-up speed is inconsistent, if leads go cold before your team gets to them, if you have no idea what your pipeline looks like right now without calling someone and asking, an AI Sales Manager solves all three of those problems at once. <Link href="/free-report" className="text-[#18b5d8] hover:underline">Our free AI visibility report</Link> can show you specifically where leads are going cold in your current setup.
             </p>
           </div>
 

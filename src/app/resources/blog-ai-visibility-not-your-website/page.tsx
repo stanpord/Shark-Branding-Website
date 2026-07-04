@@ -173,7 +173,7 @@ export default function BlogAiVisibilityNotYourWebsitePage() {
 
             <h2 className="text-[26px] font-bold text-[#0a0a0a] mt-12 mb-4">Where AI actually looks</h2>
             <p>
-              When someone asks ChatGPT &ldquo;who is the best HVAC company in Wesley Chapel,&rdquo; the AI doesn&rsquo;t load your website and read your homepage. It queries its training data and live search index for everything it knows about HVAC businesses in Wesley Chapel, pulling from Google Business Profile, review sites, citation directories, local news, social profiles, chamber listings, and structured data signals from across the web.
+              When someone asks ChatGPT &ldquo;who is the best HVAC company in Wesley Chapel,&rdquo; the AI doesn&rsquo;t load your website and read your homepage. It queries its training data and live search index for everything it knows about HVAC businesses in Wesley Chapel, pulling from Google Business Profile, review sites, citation directories, local news, social profiles, chamber listings, and structured data signals from across the web. This is why <Link href="/resources/blog-ai-map-consistent-business-listings" className="text-[#18b5d8] hover:underline">consistent business listings across every directory</Link> are the most direct lever most local businesses can pull.
             </p>
             <p>
               Your website factors in, particularly if it has good content and schema markup. But it&rsquo;s one input among many. And it&rsquo;s often not the deciding one.
@@ -196,10 +196,10 @@ export default function BlogAiVisibilityNotYourWebsitePage() {
           <div className="text-[17px] leading-[1.75] text-[#333] space-y-6 mb-16">
             <h2 className="text-[26px] font-bold text-[#0a0a0a] mt-4 mb-4">So what does require website access?</h2>
             <p>
-              Schema markup, the structured data code that tells AI systems what type of business you are, what services you offer, and how to contact you, is ideally placed in your website&rsquo;s HTML. If your SEO agency controls your site, this is where they can help.
+              Schema markup, the structured data code that tells AI systems what type of business you are, what services you offer, and how to contact you, ideally lives in your website&rsquo;s HTML. If your SEO agency controls your site, that is part of what our team coordinates with them as part of a full visibility engagement.
             </p>
             <p>
-              But schema can also be added via Google Tag Manager without touching your CMS. If your website is locked, that&rsquo;s the workaround, and it works.
+              Schema can also be implemented without touching your CMS at all, so a locked website is not a blocker for this work.
             </p>
             <p>
               Everything else, Google Business Profile, citations, reviews, social profiles, entity data, is managed completely outside your website. Your web person doesn&rsquo;t need to be involved, and you don&rsquo;t need their permission.
@@ -207,13 +207,13 @@ export default function BlogAiVisibilityNotYourWebsitePage() {
 
             <h2 className="text-[26px] font-bold text-[#0a0a0a] mt-12 mb-4">What this means for your business</h2>
             <p>
-              If you&rsquo;ve been waiting for your SEO agency to &ldquo;get to it&rdquo; or assuming that building a new website will fix your AI visibility, it won&rsquo;t. The most common AI visibility gaps we see in Tampa Bay businesses have nothing to do with their website.
+              If you&rsquo;ve been waiting for your SEO agency to &ldquo;get to it&rdquo; or assuming that building a new website will fix your AI visibility, it won&rsquo;t. The most common AI visibility gaps we see in Tampa Bay businesses have nothing to do with their website, and the broader trend this is part of is covered in our piece on <Link href="/resources/blog-end-of-local-seo-ai-visibility" className="text-[#18b5d8] hover:underline">what the end of local SEO means for your business</Link>.
             </p>
             <p>
               They have conflicting business information across directories. Their Google Business Profile is incomplete or has the wrong category. They have fewer than 10 reviews and no strategy for getting more. AI has never seen a consistent, credible picture of who they are.
             </p>
             <p>
-              Fix those signals, no website access required, and AI starts recommending you.
+              Fix those signals and AI starts recommending you. That is exactly the work our team does for local businesses in Tampa Bay. Start with <Link href="/free-report" className="text-[#18b5d8] hover:underline">our free AI visibility report</Link> to see where your business stands right now, or explore <Link href="/services" className="text-[#18b5d8] hover:underline">our AI visibility services</Link> to understand the full scope of what getting this right actually involves.
             </p>
           </div>
 

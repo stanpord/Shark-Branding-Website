@@ -28,7 +28,7 @@ export default function Page() {
    <p>Well, those days are officially numbered. Google just flipped the script on local service discovery with a feature called <strong>&ldquo;Have AI Check Prices,&rdquo;</strong> and if you aren&rsquo;t prepared, your business might become invisible overnight.</p>
 
    <h2>The New Reality: Google as the Buyer&rsquo;s Agent</h2>
-   <p>For years, Google was a search engine, a digital phone book. Today, Google is evolving into an <strong>automated buyer&rsquo;s agent</strong>. With the new &ldquo;Have AI Check Prices&rdquo; button appearing in local search results, the consumer doesn&rsquo;t even have to pick up the phone. They simply tell Google what they need, provide a few details, and hit a button. Google&rsquo;s AI then takes over the manual labor of shopping around.</p>
+   <p>For years, Google was a search engine, a digital phone book. Today, Google is evolving into an <strong>automated buyer&rsquo;s agent</strong>. With the new &ldquo;Have AI Check Prices&rdquo; button appearing in local search results, the consumer doesn&rsquo;t even have to pick up the phone. They simply tell Google what they need, provide a few details, and hit a button. Google&rsquo;s AI then takes over the manual labor of shopping around. This is part of the broader shift from traditional search into AI-mediated discovery that we break down in our post on <Link href="/resources/blog-ai-funnel-chatgpt-new-front-door" className="text-[#18b5d8] hover:underline">why ChatGPT is the new front door for your customers</Link>.</p>
 
    <div className="callout-box">
     <h4>What You Get With This Shift</h4>
@@ -57,7 +57,7 @@ export default function Page() {
 
    <h2>The Cost of Silence: The &ldquo;Unreachable&rdquo; Penalty</h2>
    <p>In the traditional marketing world, a missed call was just a missed opportunity. In the AI-driven world, a missed call is a <strong>brand-killer.</strong></p>
-   <p>When Google&rsquo;s AI calls you to verify a price, it is testing your business&rsquo;s &ldquo;health.&rdquo; Are you responsive? Is your information consistent? Early adopters of AI-mediated discovery have reported dramatic drops in inbound calls from customers who never made it past the AI shortlist, not because the service was inferior, but because the business wasn&rsquo;t set up to respond.<sup>1</sup></p>
+   <p>When Google&rsquo;s AI calls you to verify a price, it is testing your business&rsquo;s &ldquo;health.&rdquo; Are you responsive? Is your information consistent? Early adopters of AI-mediated discovery have reported dramatic drops in inbound calls from customers who never made it past the AI shortlist, not because the service was inferior, but because the business wasn&rsquo;t set up to respond.<sup>1</sup> Responsiveness is also why <Link href="/resources/blog-24-hour-rule-local-trust-ai" className="text-[#18b5d8] hover:underline">the 24-hour rule for review responses</Link> has become a trust signal that AI actively evaluates.</p>
 
    <h2>Responsiveness Is the New SEO</h2>
    <p>For a long time, SEO was about keywords and backlinks. The &ldquo;new SEO&rdquo; is <strong>Responsiveness-as-a-Service.</strong> To thrive in this environment, you need three things:</p>
@@ -83,13 +83,9 @@ export default function Page() {
     <li><strong>Social Signal Amplification:</strong> Using modern trust engines to prove to AI that you are the most reliable choice in your area.</li>
    </ul>
 
-   <h2>How to Audit Your Business for the AI Era</h2>
-   <ol>
-    <li><strong>Check Your NAP:</strong> Is it exactly the same everywhere? Even &ldquo;St.&rdquo; vs &ldquo;Street&rdquo; can confuse some AI models.</li>
-    <li><strong>Verify Your Google Business Profile:</strong> Ensure you have opted into all communication features.</li>
-    <li><strong>Evaluate Your Response Time:</strong> Call your own business at 7:00 PM. What happens?</li>
-    <li><strong>Simplify Your Pricing:</strong> Even if you can&rsquo;t give an exact quote, can you provide a &ldquo;starting at&rdquo; price? AI loves numbers.</li>
-   </ol>
+   <h2>What Businesses That Win This Look Like</h2>
+   <p>The businesses that consistently win AI-initiated inquiries share a recognizable profile: their data is clean and identical across every directory, their systems handle outreach around the clock, and their digital presence signals active management rather than dormancy. Building that profile requires a systematic audit of every touchpoint your business has across the web, followed by a coordinated effort to bring them all into alignment. Most business owners do not have the time or tools to do that comprehensively on their own, and a partial effort still results in being filtered out by AI.</p>
+   <p>This is the work we do with clients at Shark Branding Solutions. Through <Link href="/services" className="text-[#18b5d8] hover:underline">our AI visibility services</Link>, we audit, align, and actively manage the signals that determine whether you get the inquiry or whether you get the &ldquo;couldn&rsquo;t reach&rdquo; label. If you want to understand what your current profile looks like to the AI making those calls, <Link href="/free-report" className="text-[#18b5d8] hover:underline">our free AI visibility report</Link> is the fastest way to find out.</p>
 
    <Image
     src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1200&h=480&q=80"

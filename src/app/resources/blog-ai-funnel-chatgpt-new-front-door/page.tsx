@@ -30,7 +30,7 @@ export default function Page() {
    <p>Welcome to the <strong>AI Funnel</strong>. If you aren&rsquo;t in that top-three shortlist, you&rsquo;re effectively invisible.</p>
 
    <h2>The Great Shift: From Browsing to Asking</h2>
-   <p>Why is this happening so fast? Because consumers value their time more than your SEO strategy. Research shows that more than <strong>40% of consumers</strong> now use AI tools for product and service research, a figure that has roughly doubled year over year since 2023.<sup>1</sup> We&rsquo;ve moved from the &ldquo;Search Era&rdquo; to the &ldquo;Answer Era.&rdquo;</p>
+   <p>Why is this happening so fast? Because consumers value their time more than your SEO strategy. Research shows that more than <strong>40% of consumers</strong> now use AI tools for product and service research, a figure that has roughly doubled year over year since 2023.<sup>1</sup> We&rsquo;ve moved from the &ldquo;Search Era&rdquo; to the &ldquo;Answer Era.&rdquo; For a detailed look at what this means for local business visibility, see our post on <Link href="/resources/blog-end-of-local-seo-ai-visibility" className="text-[#18b5d8] hover:underline">what the end of local SEO means for your business</Link>.</p>
    <p>Think about your own habits. Would you rather click through five different websites to compare prices and reviews, or just ask an AI to find you a local agency with a 5-star reputation?</p>
    <p>The AI does the heavy lifting. It scans the web, synthesizes the data, and delivers a confident recommendation.</p>
 
@@ -62,7 +62,7 @@ export default function Page() {
 
    <h3>2. Reputation and Social Proof (The Trust Engine)</h3>
    <p>AI doesn&rsquo;t just read your &ldquo;About Us&rdquo; page. It reads your Yelp reviews, your Google Business Profile, and your mentions. It&rsquo;s looking for a consensus.</p>
-   <p>If the general vibe says you&rsquo;re &ldquo;okay,&rdquo; but your competitor is &ldquo;the gold standard,&rdquo; guess who gets the recommendation?</p>
+   <p>If the general vibe says you&rsquo;re &ldquo;okay,&rdquo; but your competitor is &ldquo;the gold standard,&rdquo; guess who gets the recommendation? Understanding how to shape that consensus, through the right kind of reviews and active response patterns, is exactly what we cover in our post on <Link href="/resources/blog-google-reviews-ai-recommendations" className="text-[#18b5d8] hover:underline">turning Google reviews into AI recommendations</Link>.</p>
 
    <Image
     src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&h=480&q=80"
@@ -92,13 +92,9 @@ export default function Page() {
     style={{ width: "100%", height: "auto" }}
    />
 
-   <h2>How to Take Action Today</h2>
-   <ol>
-    <li><strong>Get a Pulse Check:</strong> <Link href="/free-report">Get a free AI Audit</Link> to see where your business currently stands.</li>
-    <li><strong>Join a Workshop:</strong> We offer deep dives into the tactics that drive real ROI, from AI search visibility to reputation management. <Link href="/services">Explore our services</Link>.</li>
-    <li><strong>Consult the Experts:</strong> Ready to skip the line? <Link href="/contact">Book an AI Visibility Consulting session</Link> with our team.</li>
-   </ol>
-   <p>The world of marketing has changed. The old way was about being <em>seen</em>. The new way is about being <em>chosen</em>. Are you going to stay stuck in the &ldquo;Search&rdquo; era, or are you ready to dominate the AI Funnel?</p>
+   <h2>Where to Go From Here</h2>
+   <p>The AI Funnel isn&rsquo;t a trend you can monitor from the sidelines. Every month that passes without an optimized presence is a month your competitors are potentially locking in the AI recommendation you should be getting. The businesses that establish themselves early build a compounding authority that becomes very difficult to displace.</p>
+   <p>The world of marketing has changed. The old way was about being <em>seen</em>. The new way is about being <em>chosen</em>. <Link href="/free-report" className="text-[#18b5d8] hover:underline">Get our free AI visibility report</Link> to see exactly where your business stands in the AI discovery landscape today. Or, if you&rsquo;re ready to move, <Link href="/services" className="text-[#18b5d8] hover:underline">explore our AI visibility services</Link> and see how we put businesses on the map that actually matters.</p>
 
    <hr />
    <p style={{ fontSize: "0.8rem", color: "#999", lineHeight: "1.6" }}>

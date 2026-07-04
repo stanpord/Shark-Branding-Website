@@ -103,15 +103,10 @@ export default function Page() {
 
    <Image src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1200&h=480&q=80" alt="Business owner reviewing GEO results with an advisor after implementing structured data and entity optimization" width={1200} height={480} style={{ width: "100%", height: "auto" }} />
 
-   <h2>Your GEO Action Plan</h2>
-   <ol>
-    <li><strong>Audit Your Citations:</strong> Is your Name, Address, and Phone number identical across every directory, social profile, and listing platform? Inconsistencies signal low trust to AI.</li>
-    <li><strong>Claim and Complete Your Google Business Profile:</strong> Fill every field, add recent photos, post weekly updates, and respond to every review within 24 hours.</li>
-    <li><strong>Add LocalBusiness Schema:</strong> If your website doesn&rsquo;t have JSON-LD schema markup, AI cannot reliably identify you as a trusted entity. This is the single highest-impact technical fix.</li>
-    <li><strong>Rewrite Content as Answers:</strong> Every H2 on your service pages should open with a direct, self-contained answer to a question your customer would actually ask AI.</li>
-    <li><strong>Build Review Volume:</strong> AI uses review recency and volume as a trust signal. A consistent review strategy, asking every customer within 24 hours of service, is part of GEO, not just reputation management.</li>
-   </ol>
-   <p>The AI shift isn&rsquo;t coming, it&rsquo;s already here. Whether you need a full <Link href="/services">AI visibility strategy</Link> or want to start with a <Link href="/free-report">free audit</Link>, the businesses that act now will own their category before the competition catches up.</p>
+   <h2>What separates businesses that get recommended from those that don&rsquo;t</h2>
+   <p>The businesses that consistently appear in AI recommendations share one characteristic: their signals are complete, consistent, and actively maintained. That means structured data on their website, a fully built-out and active Google Business Profile, consistent business information across dozens of directories, and a review strategy that runs in the background year-round.</p>
+   <p>Getting any one of these right in isolation has limited impact. The model builds confidence in your business entity by triangulating information across sources. A complete GBP paired with inconsistent directory listings still creates doubt. Strong review volume paired with missing schema still leaves gaps. When all of these signals are aligned, the model has everything it needs to recommend you with confidence. Learn more about <Link href="/resources/blog-ai-map-consistent-business-listings">why consistent business listings are the secret to being found by AI</Link>.</p>
+   <p>The AI shift isn&rsquo;t coming, it&rsquo;s already here. Our <Link href="/free-report">free AI visibility report</Link> shows you exactly where your business stands across every GEO signal. If you&rsquo;re ready to close the gaps, our <Link href="/services">AI visibility services</Link> handle the implementation so you can focus on running your business.</p>
   </BlogShell>
  );
 }

@@ -42,7 +42,7 @@ export default function Page() {
 
    <h2>Why &ldquo;Trusted&rdquo; Is the Hardest Stage to Win</h2>
    <p>Trust can&rsquo;t be faked. It can&rsquo;t be bought with a bigger ad budget. Trust is built through <strong>consistent, visible proof</strong> that your business delivers on its promises. In the physical world, trust comes from referrals and personal recommendations. In the digital world, it comes from reviews, and more importantly, how you respond to them.</p>
-   <p>AI models have learned to read trust signals the same way a savvy customer would. When Gemini evaluates two competing HVAC companies, it&rsquo;s not just looking at who has more reviews. It&rsquo;s looking at who is actively engaged with their customers, who responds thoughtfully, and whose responses reinforce specific service details and locations.</p>
+   <p>AI models have learned to read trust signals the same way a savvy customer would. When Gemini evaluates two competing HVAC companies, it&rsquo;s not just looking at who has more reviews. It&rsquo;s looking at who is actively engaged with their customers, who responds thoughtfully, and whose responses reinforce specific service details and locations. For a breakdown of why response speed is now a measurable AI signal, see our post on <Link href="/resources/blog-24-hour-rule-local-trust-ai" className="text-[#18b5d8] hover:underline">the 24-hour rule for local trust</Link>.</p>
 
    <Image
     src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1200&h=480&q=80"
@@ -92,7 +92,7 @@ export default function Page() {
     <li>Every prospective customer who reads your profile (critical)</li>
     <li>AI models that use your responses to understand your business (game-changing)</li>
    </ul>
-   <p>When you respond with specifics, mentioning the service, the location, the outcome, you are essentially writing <strong>micro-SEO content</strong> that strengthens your local authority with every single review cycle.</p>
+   <p>When you respond with specifics, mentioning the service, the location, the outcome, you are essentially writing <strong>micro-SEO content</strong> that strengthens your local authority with every single review cycle. This is also why the quality and structure of your incoming reviews matters. See how to shape those signals in our post on <Link href="/resources/blog-google-reviews-ai-recommendations" className="text-[#18b5d8] hover:underline">turning Google reviews into AI recommendations</Link>.</p>
 
    <Image
     src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&h=480&q=80"
@@ -110,15 +110,10 @@ export default function Page() {
     <li>Your brand takes its reputation seriously enough to stay in the conversation.</li>
    </ul>
 
-   <h2>Your &ldquo;Trusted&rdquo; Action Plan</h2>
-   <ol>
-    <li><strong>Audit your last 90 days of reviews.</strong> How many are unanswered? That&rsquo;s your gap.</li>
-    <li><strong>Create a response cadence.</strong> Block 15 minutes daily or get a tool that flags new reviews the moment they land.</li>
-    <li><strong>Go AI-assisted.</strong> Stop writing from scratch. Use AI to draft, you to approve.</li>
-    <li><strong>Train your prompts.</strong> Give your AI the context it needs: your business name, location, key services, and brand tone.</li>
-    <li><strong>Turn responses into content.</strong> Reference specific services and service areas in every reply.</li>
-   </ol>
-   <p>The businesses that win the &ldquo;Trusted&rdquo; stage will dominate AI recommendations in their market. If you&rsquo;re ready to stop leaving your customers, and your AI signals, hanging, <Link href="/contact">book an AI Visibility Consultation</Link> and let&rsquo;s build your trust engine together.</p>
+   <h2>Why Getting &ldquo;Trusted&rdquo; Right Requires More Than a System</h2>
+   <p>Building a review response practice that satisfies both your customers and AI discovery algorithms is not just about setting a reminder to check reviews. It requires the right prompts, clear brand voice documentation, a Human-in-the-Loop workflow that scales, and the ongoing attention to ensure every response is doing its job. Getting one of those pieces wrong, or skipping it when things get busy, erodes the pattern AI relies on to categorize your business as trustworthy.</p>
+   <p>The businesses that win the &ldquo;Trusted&rdquo; stage are the ones that have turned this into an always-on system, not a sporadic task. At Shark Branding Solutions, we build and manage exactly that. Our approach has helped clients move from scattered, inconsistent review responses to a trust-building machine that compounds over time. <Link href="/case-studies" className="text-[#18b5d8] hover:underline">See what those results look like</Link> for businesses in competitive local markets where AI recommendations are already deciding who gets the call.</p>
+   <p>If you want to know where your trust signals stand right now, <Link href="/free-report" className="text-[#18b5d8] hover:underline">our free AI visibility report</Link> will show you the gaps. And if you&rsquo;re ready to stop leaving your customers and your AI signals hanging, <Link href="/services" className="text-[#18b5d8] hover:underline">explore what our team does</Link> to build the trust engine that puts you in the recommendation.</p>
   </BlogShell>
  );
 }

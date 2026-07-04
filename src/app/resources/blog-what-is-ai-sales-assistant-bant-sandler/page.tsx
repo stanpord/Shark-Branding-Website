@@ -173,7 +173,7 @@ export default function WhatIsAiSalesAssistantPage() {
 
             <h2 className="text-[26px] font-bold text-[#0a0a0a] mt-8 mb-4">What your human team actually does</h2>
             <p>
-              They close. That is it.
+              They close. That is it. You can see the full picture of how <Link href="/aiemployees" className="text-[#18b5d8] hover:underline">our AI employees</Link> work together across the entire sales pipeline.
             </p>
             <p>
               Every lead your closer gets has already been through intake, qualification, and at least one or two nurture touchpoints. They know what the prospect needs, what their budget is, whether they are the decision maker, and what their timeline looks like. The conversation your closer has is not an exploratory call. It is a closing call.
@@ -184,13 +184,13 @@ export default function WhatIsAiSalesAssistantPage() {
 
             <h2 className="text-[26px] font-bold text-[#0a0a0a] mt-8 mb-4">What this looks like for a service business in Tampa Bay</h2>
             <p>
-              A homeowner calls about a kitchen renovation. The AI voice receptionist takes the call, gets their contact info, and asks the basic intake questions. The lead hits the AI Sales Manager, which scores it and routes it. The AI Sales Assistant sends a follow-up that evening with two Sandler-style questions about what the project delay has cost them.
+              A homeowner calls about a kitchen renovation. The <Link href="/resources/blog-what-is-ai-voice-receptionist" className="text-[#18b5d8] hover:underline">AI voice receptionist</Link> takes the call, gets their contact info, and asks the basic intake questions. The lead hits the <Link href="/resources/blog-what-is-ai-sales-manager" className="text-[#18b5d8] hover:underline">AI Sales Manager</Link>, which scores it and routes it. The AI Sales Assistant sends a follow-up that evening with two Sandler-style questions about what the project delay has cost them.
             </p>
             <p>
               The prospect responds. The AI follows up again. By the time your estimator calls to book a site visit, the prospect has already described their timeline, confirmed they own the home, mentioned their budget range, and said they have been putting this off for two years.
             </p>
             <p>
-              Your estimator did not do any of that work. The AI did.
+              Your estimator did not do any of that work. The AI did. Want to see how this maps to your business? <Link href="/free-report" className="text-[#18b5d8] hover:underline">Our free AI visibility report</Link> shows you exactly where leads are slipping through right now.
             </p>
           </div>
 

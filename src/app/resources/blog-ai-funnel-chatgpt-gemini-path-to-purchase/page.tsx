@@ -43,7 +43,7 @@ export default function Page() {
     <li>Receive a curated short list of two to three recommendations with reasoning</li>
     <li>Call the first recommendation</li>
    </ol>
-   <p>The decision-making timeline just collapsed from days to minutes. And if your business isn&rsquo;t on that short list, the customer never even knew you existed.</p>
+   <p>The decision-making timeline just collapsed from days to minutes. And if your business isn&rsquo;t on that short list, the customer never even knew you existed. For a closer look at how this funnel operates in practice, see our post on <Link href="/resources/blog-ai-funnel-chatgpt-new-front-door" className="text-[#18b5d8] hover:underline">why ChatGPT is the new front door for your customers</Link>.</p>
 
    <h2>How ChatGPT Builds Its Recommendation List</h2>
    <p>ChatGPT doesn&rsquo;t just pull your website and call it a day. When a user asks for a local recommendation, ChatGPT is performing a multi-source analysis in real time:</p>
@@ -99,10 +99,10 @@ export default function Page() {
    <p>The business has different phone numbers, different address formats, or different business names across Google, Yelp, Facebook, and their website. AI can&rsquo;t confidently consolidate this into a single recommendation. When in doubt, AI routes around the fragmented entity toward something more consistent.</p>
 
    <h3>2. Review Stagnation</h3>
-   <p>The business has 80 reviews, but 75 of them are from three years ago. AI systems weight recency heavily. A competitor with 20 recent reviews often outperforms a business with 100 old ones. Freshness matters.</p>
+   <p>The business has 80 reviews, but 75 of them are from three years ago. AI systems weight recency heavily. A competitor with 20 recent reviews often outperforms a business with 100 old ones. Freshness matters. Understanding how to build a steady review signal, and how to respond to reviews in a way that reinforces AI trust, is covered in our post on <Link href="/resources/blog-24-hour-rule-local-trust-ai" className="text-[#18b5d8] hover:underline">the 24-hour rule for local trust</Link>.</p>
 
    <h3>3. Passive Profiles</h3>
-   <p>No recent Google Posts. No responses to reviews. No new photos in 18 months. The business exists in directories but shows no sign of life. AI interprets this as low engagement and low reliability.</p>
+   <p>No recent Google Posts. No responses to reviews. No new photos in 18 months. The business exists in directories but shows no sign of life. AI interprets this as low engagement and low reliability. The deeper story of what this means for local businesses, and why traditional local SEO no longer protects you, is laid out in our post on <Link href="/resources/blog-end-of-local-seo-ai-visibility" className="text-[#18b5d8] hover:underline">the end of local SEO and what replaces it</Link>.</p>
 
    <Image
     src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&h=480&q=80"
@@ -112,15 +112,10 @@ export default function Page() {
     style={{ width: "100%", height: "auto" }}
    />
 
-   <h2>How to Optimize for the New Path to Purchase</h2>
-   <ol>
-    <li><strong>Standardize everything.</strong> Your business name, address, and phone must be identical everywhere, including punctuation and abbreviations.</li>
-    <li><strong>Activate your Google Business Profile.</strong> Post weekly. Respond to every review within 24 hours. Upload new photos regularly.</li>
-    <li><strong>Collect specific reviews.</strong> Guide customers to mention the service, the city, and the result. That language feeds directly into AI recommendation algorithms.</li>
-    <li><strong>Add Schema markup to your website.</strong> This is the structured data layer that tells AI systems exactly what your business offers, where, and why you&rsquo;re trustworthy.</li>
-    <li><strong>Get cited by authoritative local sources.</strong> Chamber directories, local news mentions, and industry association listings all signal legitimacy to AI systems.</li>
-   </ol>
-   <p>The new path to purchase runs through ChatGPT and Gemini whether you&rsquo;re ready for it or not. Our <Link href="/services">AI Visibility Consulting</Link> service is designed to put your business on the map that matters, the one the AI uses to make its recommendations. Let&rsquo;s make sure you&rsquo;re on it.</p>
+   <h2>Winning the New Path to Purchase Requires More Than a Checklist</h2>
+   <p>Optimizing for the AI Funnel isn&rsquo;t a weekend project. It requires a coordinated strategy across your listings, your reviews, your website structure, and your content, all working together to tell a consistent story that AI can confidently surface. Getting one element right while others are fragmented still results in being passed over for a competitor whose entire digital presence speaks with one clear voice.</p>
+   <p>The clients we work with through <Link href="/services" className="text-[#18b5d8] hover:underline">our AI visibility services</Link> go from invisible in AI-generated recommendations to landing in the shortlist that pre-sold customers see. That shift doesn&rsquo;t happen from reading a how-to guide. It happens from a systematic approach applied by people who do this every day. You can see what that looks like in <Link href="/case-studies" className="text-[#18b5d8] hover:underline">our case studies</Link>.</p>
+   <p>The new path to purchase runs through ChatGPT and Gemini whether you&rsquo;re ready for it or not. Start by understanding exactly where your business stands today with <Link href="/free-report" className="text-[#18b5d8] hover:underline">our free AI visibility report</Link>, and we&rsquo;ll show you what&rsquo;s holding you back from the shortlist.</p>
 
    <hr />
    <p style={{ fontSize: "0.8rem", color: "#999", lineHeight: "1.6" }}>

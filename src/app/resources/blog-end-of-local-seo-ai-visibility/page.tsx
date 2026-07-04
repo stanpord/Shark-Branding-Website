@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import BlogShell from "@/components/BlogShell";
 
 export const metadata: Metadata = {
@@ -111,7 +112,7 @@ export default function Page() {
    <p>
     Studies on AI Overview click-through impact show that ranked pages are seeing an average
     64% drop in click-through rate when an AI Overview appears above them.<sup>2</sup> The
-    traffic is not going somewhere else. It is stopping at the AI answer.
+    traffic is not going somewhere else. It is stopping at the AI answer. This is also why the shift from getting found to getting chosen is reshaping how local businesses compete, a dynamic we explore in our post on <Link href="/resources/blog-ai-funnel-chatgpt-new-front-door" className="text-[#18b5d8] hover:underline">why ChatGPT is the new front door for your customers</Link>.
    </p>
 
    <h2>The Three Things AI Uses to Decide Who to Recommend</h2>
@@ -146,7 +147,7 @@ export default function Page() {
    <p>
     A business with 80 recent reviews, a complete Google profile, and mentions in three local
     publications looks very different to AI than a business with 12 old reviews and a basic
-    website. The gap in recommendations between these two businesses is not small.
+    website. The gap in recommendations between these two businesses is not small. For a deeper look at how review quality and response habits directly shape what AI recommends, see our post on <Link href="/resources/blog-google-reviews-ai-recommendations" className="text-[#18b5d8] hover:underline">turning Google reviews into AI recommendations</Link>.
    </p>
 
    <h3>3. Clarity</h3>
@@ -187,37 +188,29 @@ export default function Page() {
     now. It will not stay open indefinitely.
    </p>
 
-   <h2>What to Do Right Now</h2>
+   <h2>What Closing the Gap Actually Requires</h2>
 
    <p>
-    You do not have to overhaul everything at once. But you do need to start, because the
-    businesses your customers are comparing you to are already moving.
+    The businesses that are already winning AI recommendations in 2026 share something in common:
+    they did not get there by working through a checklist on their own. They treated AI visibility
+    the way smart businesses treated their Google ranking in 2010, as a technical discipline that
+    rewards expertise, consistency, and sustained attention. The signals AI uses, listing consistency
+    across dozens of sources, review quality and velocity, structured website data, response patterns,
+    authoritative citations, require a coordinated system, not a one-time fix.
    </p>
 
-   <h3>This week: Fix your Google Business Profile</h3>
-
    <p>
-    Verify it if you have not. Update your hours. Match your phone number to your website
-    exactly, down to the format. Add photos from the last six months. This is the single
-    highest-leverage thing you can do right now because GBP is one of the primary data sources
-    AI Overviews pull from for local recommendations.
+    Doing this piecemeal, or leaving gaps because you ran out of time on step three, still produces
+    a fragmented signal. And a fragmented signal is one AI routes around. This is why the businesses
+    we work with at Shark Branding Solutions do not just get a report. They get a team that builds
+    and maintains the full picture. <Link href="/case-studies" className="text-[#18b5d8] hover:underline">See what that looks like in practice</Link> for local businesses
+    that are now showing up in AI recommendations where they previously did not exist.
    </p>
 
-   <h3>This month: Run a review push</h3>
-
    <p>
-    Personal asks, not mass emails. Text your last 10 satisfied clients directly. Send them a
-    link. Recent reviews carry far more weight than reviews from two years ago, recency is a
-    trust signal. Three new reviews this month is worth more than 30 old reviews sitting stale.
-   </p>
-
-   <h3>This quarter: Audit your web presence</h3>
-
-   <p>
-    Search your business name and see what comes up. Find every place your address or phone
-    number appears. Fix anything that does not match. Then look at your website copy and ask
-    yourself: if an AI read this page, would it know exactly what you do, exactly where you
-    do it, and exactly who you serve? If the answer is no, that is your next project.
+    If you want to understand where your business stands before making any moves, <Link href="/free-report" className="text-[#18b5d8] hover:underline">our free AI visibility report</Link> gives
+    you a clear picture of the gaps AI is seeing right now. And if you are ready to close them, <Link href="/services" className="text-[#18b5d8] hover:underline">our AI visibility services</Link> are built specifically for local businesses that want to be the
+    obvious recommendation in their market.
    </p>
 
    <h2>Where Do You Stand Right Now?</h2>

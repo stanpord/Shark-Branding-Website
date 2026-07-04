@@ -148,7 +148,7 @@ export default function WhatIsAiCrmPage() {
 
             <h2 className="text-[26px] font-bold text-[#0a0a0a] mt-8 mb-4">What an AI CRM does differently</h2>
             <p>
-              An AI CRM captures data from the source instead of asking your team to enter it later. When the AI voice receptionist takes a call, the caller&apos;s name, number, reason for the call, and every qualifying detail from the conversation lands in the CRM automatically. No one has to type anything. No one has to remember.
+              An AI CRM captures data from the source instead of asking your team to enter it later. When the <Link href="/resources/blog-what-is-ai-voice-receptionist" className="text-[#18b5d8] hover:underline">AI voice receptionist</Link> takes a call, the caller&apos;s name, number, reason for the call, and every qualifying detail from the conversation lands in the CRM automatically. No one has to type anything. No one has to remember.
             </p>
             <p>
               Chat interactions, inbound texts, and follow-up emails sent by the AI work the same way. Every touchpoint builds the contact record without a person in the middle.
@@ -157,7 +157,7 @@ export default function WhatIsAiCrmPage() {
               Scoring is based on what the contact actually said, not just whether a form was filled out. A caller who mentions they need service this week and owns the property scores differently than someone comparing prices for next year. That difference drives who gets an immediate callback and who goes into a nurture sequence.
             </p>
             <p>
-              Follow-up does not wait for a reminder to appear on someone&apos;s calendar. It runs automatically based on lead score, timing, and where the contact is in the pipeline.
+              Follow-up does not wait for a reminder to appear on someone&apos;s calendar. It runs automatically based on lead score, timing, and where the contact is in the pipeline — driven by <Link href="/resources/blog-what-is-ai-sales-manager" className="text-[#18b5d8] hover:underline">the AI Sales Manager</Link> that sits between your leads and your team.
             </p>
           </div>
 
@@ -183,7 +183,7 @@ export default function WhatIsAiCrmPage() {
           <div className="text-[17px] leading-[1.75] text-[#333] space-y-6 mb-16">
             <h2 className="text-[26px] font-bold text-[#0a0a0a] mt-2 mb-4">No per-seat pricing</h2>
             <p>
-              The AI CRM included in the Full AI Suite does not charge per user. It does not matter whether you have two people or twelve people accessing it. The rate does not change.
+              The AI CRM included in the <Link href="/resources/blog-full-ai-suite-pricing" className="text-[#18b5d8] hover:underline">Full AI Suite</Link> does not charge per user. It does not matter whether you have two people or twelve people accessing it. The rate does not change.
             </p>
             <p>
               For a small or mid-sized service business, that matters. You should not have to choose between giving your whole team access to the CRM and keeping your software costs down. With a per-seat model, growth makes your tools more expensive. With a flat rate, growth just means more value from the same investment.
@@ -191,7 +191,7 @@ export default function WhatIsAiCrmPage() {
 
             <h2 className="text-[26px] font-bold text-[#0a0a0a] mt-8 mb-4">The real question</h2>
             <p>
-              Does your current system actually know what happened on the calls you got last week? Does it know which leads followed up and which ones went cold? Does it know who your best leads are right now, not at the end of the month when someone pulls a report?
+              Does your current system actually know what happened on the calls you got last week? Does it know which leads followed up and which ones went cold? Does it know who your best leads are right now, not at the end of the month when someone pulls a report? <Link href="/free-report" className="text-[#18b5d8] hover:underline">Our free AI visibility report</Link> answers those questions for your specific business.
             </p>
             <p>
               If the answer is no, the problem is not which CRM you picked. The problem is that your CRM depends on your team to work, and your team has other things to do.

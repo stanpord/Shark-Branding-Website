@@ -112,7 +112,7 @@ export default function BlogWhySwitchingPage() {
           </p>
 
           <p className="text-[17px] text-[#333] leading-relaxed mb-8">
-            An AI employee is not a chatbot. It is not a canned response system. It is a software system trained to perform a specific business role, chat receptionist, review manager, sales assistant, continuously and without human input. It understands context. It adapts its responses. It takes real actions: booking appointments, sending SMS messages, responding to reviews, updating CRM records.
+            An AI employee is not a chatbot. It is not a canned response system. It is a software system trained to perform a specific business role, chat receptionist, review manager, sales assistant, continuously and without human input. It understands context. It adapts its responses. It takes real actions: booking appointments, sending SMS messages, responding to reviews, updating CRM records. Our <Link href="/resources/blog-what-is-an-ai-employee" className="text-[#18b5d8] hover:underline">plain-English guide to AI employees</Link> breaks down exactly how they differ from the chatbots most businesses have already tried.
           </p>
 
           <p className="text-[17px] text-[#333] leading-relaxed mb-12">
@@ -156,7 +156,7 @@ export default function BlogWhySwitchingPage() {
             2. Google reviews are now a primary ranking signal, and most businesses are losing the race
           </h2>
           <p className="text-[17px] text-[#333] leading-relaxed mb-6">
-            Businesses with more than 50 Google reviews convert at 2.7 times the rate of businesses with fewer than 10. Review count and recency are primary signals in local search rankings and in the AI-generated responses that now appear at the top of Google for searches like &ldquo;best HVAC company Wesley Chapel&rdquo; or &ldquo;general contractor near me Tampa Bay.&rdquo;
+            Businesses with more than 50 Google reviews convert at 2.7 times the rate of businesses with fewer than 10. Review count and recency are primary signals in local search rankings and in the AI-generated responses that now appear at the top of Google for searches like &ldquo;best HVAC company Wesley Chapel&rdquo; or &ldquo;general contractor near me Tampa Bay.&rdquo; The specific mechanics of how Google reviews feed AI recommendations are covered in our <Link href="/resources/blog-google-reviews-ai-recommendations" className="text-[#18b5d8] hover:underline">guide to Google reviews and AI recommendations</Link>.
           </p>
           <p className="text-[17px] text-[#333] leading-relaxed mb-6">
             The problem is not that businesses don&rsquo;t want reviews. The problem is that asking for them manually is awkward, inconsistent, and easy to forget when the crew has already moved on to the next job. Most service businesses collect four to six reviews per year by accident, when a customer feels strongly enough to leave one without being asked.
@@ -176,7 +176,7 @@ export default function BlogWhySwitchingPage() {
             Most local businesses have someone, the owner, an office manager, a part-time admin, whose job partially involves following up on leads, calling back inquiries, and sending estimate reminders. This work is rarely tracked because it gets woven into everything else.
           </p>
           <p className="text-[17px] text-[#333] leading-relaxed mb-6">
-            When you total it up, the picture is clear. A human receptionist in Tampa Bay costs approximately $35,000 to $45,000 per year in salary, before benefits, training, and management overhead. They work 40 hours per week. They miss leads when they are on the phone, at lunch, or out sick. They leave for better offers.
+            When you total it up, the picture is clear. A human receptionist in Tampa Bay costs approximately $35,000 to $45,000 per year in salary, before benefits, training, and management overhead. They work 40 hours per week. They miss leads when they are on the phone, at lunch, or out sick. They leave for better offers. Our <Link href="/resources/blog-ai-receptionist-vs-human-receptionist" className="text-[#18b5d8] hover:underline">direct comparison of AI vs. human receptionists</Link> lays out every factor side by side.
           </p>
 
           <div className="border-l-4 border-[#18b5d8] pl-6 py-2 my-10">

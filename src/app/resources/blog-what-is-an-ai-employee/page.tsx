@@ -145,11 +145,11 @@ export default function WhatIsAnAiEmployeePage() {
             <h2 className="text-[26px] font-bold text-[#0a0a0a] mt-12 mb-4">Why local businesses in Wesley Chapel and Tampa Bay need them now</h2>
 
             <p>
-              The challenge for most local service businesses is simple: leads come in at unpredictable times, and response speed determines whether you win or lose the job. Research from the Harvard Business Review shows that responding to a lead within five minutes makes you 21 times more likely to close it. Most businesses respond in hours. Some never respond at all.
+              The challenge for most local service businesses is simple: leads come in at unpredictable times, and response speed determines whether you win or lose the job. Research from the Harvard Business Review shows that responding to a lead within five minutes makes you 21 times more likely to close it. Most businesses respond in hours. Some never respond at all. This response gap is one of the three forces driving the shift we cover in depth in our breakdown of <Link href="/resources/blog-why-tampa-bay-businesses-switching-ai-employees" className="text-[#18b5d8] hover:underline">why Tampa Bay businesses are switching to AI employees</Link>.
             </p>
 
             <p>
-              The same problem shows up in reviews. You know you should ask every customer to leave a review after a completed job. You don&rsquo;t, because it&rsquo;s awkward, you forget, or your team is already moving on to the next thing. Meanwhile, your competitor who does ask is building a 4.8-star profile while yours stalls at 4.2.
+              The same problem shows up in reviews. You know you should ask every customer to leave a review after a completed job. You don&rsquo;t, because it&rsquo;s awkward, you forget, or your team is already moving on to the next thing. Meanwhile, your competitor who does ask is building a 4.8-star profile while yours stalls at 4.2. Google reviews are now a primary AI recommendation signal, a dynamic we explain in our guide to <Link href="/resources/blog-google-reviews-ai-recommendations" className="text-[#18b5d8] hover:underline">how Google reviews drive AI recommendations</Link>.
             </p>
 
             <p>
@@ -217,7 +217,7 @@ export default function WhatIsAnAiEmployeePage() {
             </p>
 
             <p>
-              The easiest way to find out is to start with our free AI Audit. We run your business through a diagnostic, identify exactly where you&rsquo;re losing leads or time, and tell you which AI employee would have the biggest immediate impact, before you commit to anything.
+              The easiest way to find out is to start with <Link href="/free-report" className="text-[#18b5d8] hover:underline">our free AI Audit</Link>. We run your business through a diagnostic, identify exactly where you&rsquo;re losing leads or time, and tell you which AI employee would have the biggest immediate impact, before you commit to anything. You can also explore <Link href="/services" className="text-[#18b5d8] hover:underline">our full AI employee services</Link> to see the complete offering.
             </p>
 
           </div>

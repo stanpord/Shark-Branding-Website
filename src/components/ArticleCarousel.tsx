@@ -71,7 +71,7 @@ export default function ArticleCarousel({ posts }: { posts: Post[] }) {
               />
             </Link>
             <div className="p-5 flex flex-col flex-1">
-              <span className="text-[9px] font-bold uppercase tracking-[0.22em] text-[#18b5d8] mb-2">
+              <span className="text-[10px] text-[#18b5d8] mb-2">
                 {post.category}
               </span>
               <h3 className="text-[16px] leading-snug text-black mb-2 font-bold flex-1">
@@ -82,7 +82,7 @@ export default function ArticleCarousel({ posts }: { posts: Post[] }) {
               <p className="text-[13px] text-[#666] leading-relaxed mb-4 line-clamp-2">
                 {post.excerpt}
               </p>
-              <div className="text-[11px] text-[#aaa] uppercase tracking-[0.08em] font-semibold border-t border-black/10 pt-3 mt-auto flex justify-between">
+              <div className="text-[11px] text-[#6e6e73] uppercase tracking-[0.08em] font-semibold border-t border-black/10 pt-3 mt-auto flex justify-between">
                 <span>{post.date}</span>
                 <span>{post.readTime}</span>
               </div>

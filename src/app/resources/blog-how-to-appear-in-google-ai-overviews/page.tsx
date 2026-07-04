@@ -2,12 +2,12 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'How to Appear in Google AI Overviews | Shark AI Solutions',
-  description: 'How to get your local business recommended in Google AI Overviews. Covers structured data, review signals, citation consistency, and the local business signals that matter most.',
+  title: 'How Local Businesses Get Recommended in Google AI Overviews | Shark AI Solutions',
+  description: 'What drives Google AI Overview recommendations for local businesses. The signals that matter, why they matter, and what separates businesses that get recommended from those that don\'t.',
   alternates: { canonical: 'https://sharkbrandingsolutions.com/resources/blog-how-to-appear-in-google-ai-overviews' },
   openGraph: {
-    title: 'How to Appear in Google AI Overviews: A Guide for Local Businesses',
-    description: 'A technical guide for local service businesses on appearing in Google AI Overviews. Structured data, reviews, NAP consistency, and what actually drives AI citations.',
+    title: 'How Local Businesses Get Recommended in Google AI Overviews',
+    description: 'The local business signals that drive Google AI Overview recommendations, and why getting them right requires more than a checklist.',
     url: 'https://sharkbrandingsolutions.com/resources/blog-how-to-appear-in-google-ai-overviews',
     type: 'article',
   },
@@ -16,8 +16,8 @@ export const metadata: Metadata = {
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'BlogPosting',
-  headline: 'How to Appear in Google AI Overviews: A Guide for Local Businesses',
-  description: 'A technical guide explaining how local service businesses can get recommended in Google AI Overviews. Covers structured data, review signals, NAP consistency, and AI citation patterns.',
+  headline: 'How Local Businesses Get Recommended in Google AI Overviews',
+  description: 'What drives Google AI Overview recommendations for local businesses, the signals that matter, and what separates businesses that get recommended from those that don\'t.',
   url: 'https://sharkbrandingsolutions.com/resources/blog-how-to-appear-in-google-ai-overviews',
   datePublished: '2026-06-16',
   dateModified: '2026-06-16',
@@ -54,7 +54,7 @@ const faqs = [
   },
   {
     q: 'How long does it take to appear in Google AI Overviews?',
-    a: 'There is no fixed timeline, but most businesses that implement the core signals see movement within 30 to 90 days. Citation corrections propagate within weeks. Schema updates are processed within days of Googlebot recrawling your pages. Review volume builds over the first 60 to 90 days of a systematic review request program. The AI Overview surface updates continuously, it is not a one-time indexing event.',
+    a: 'There is no fixed timeline, but most businesses that have their core signals properly configured see movement within 30 to 90 days. Citation corrections propagate within weeks. Schema updates are processed within days of Googlebot recrawling your pages. Review volume builds over the first 60 to 90 days of a systematic review program. The AI Overview surface updates continuously, it is not a one-time indexing event.',
   },
   {
     q: 'Can a small local business appear in Google AI Overviews?',
@@ -97,16 +97,15 @@ export default function HowToAppearInGoogleAiOverviewsPage() {
               ← Resources
             </Link>
             <span className="text-[#e0e0e0]">/</span>
-            <span className="text-[13px] text-[#999]">AI Visibility</span>
+            <span className="text-[13px] text-[#6e6e73]">AI Visibility</span>
           </div>
-          <p className="text-[#18b5d8] text-[13px] font-semibold tracking-[0.2em] uppercase mb-5">Technical Guide · GEO</p>
           <h1 className="display-hero text-[#0a0a0a] mb-6" style={{ textWrap: 'balance' }}>
-            How to Appear in Google AI Overviews
+            How Local Businesses Get Recommended in Google AI Overviews
           </h1>
           <p className="lead-airy text-[#555] mb-8" style={{ textWrap: 'balance' }}>
-            A practical guide for local service businesses. What Google AI Overviews are, how they select content, and the specific signals that determine whether your business gets recommended.
+            AI Overviews now appear at the top of more than 60% of Google searches. For local businesses, that means the first thing a buyer sees is not a list of websites — it&apos;s a short list of recommended businesses. Here&apos;s what determines whether your business is on that list.
           </p>
-          <div className="flex items-center gap-3 text-[13px] text-[#999]">
+          <div className="flex items-center gap-3 text-[13px] text-[#6e6e73]">
             <span>By Josh Stanaland</span>
             <span>·</span>
             <span>June 16, 2026</span>
@@ -129,83 +128,74 @@ export default function HowToAppearInGoogleAiOverviewsPage() {
             </p>
 
             <p>
-              As of 2025, AI Overviews appear on more than 60% of Google searches. For local service queries specifically, where someone is looking for a business to hire, not just information to read, AI Overviews are appearing with increasing frequency and often replacing the traditional local pack as the first thing a buyer sees.
+              For local service businesses, this is the most significant shift in search in over a decade. Traditional SEO put you on a list of ten blue links. AI Overviews give buyers one to three business names. If you are not one of them, you are not in the conversation at all. Read more about <Link href="/resources/blog-end-of-local-seo-ai-visibility" className="text-[#18b5d8] hover:underline">what the end of traditional local SEO means for your business</Link>.
             </p>
 
             <h2 className="text-[26px] font-bold text-[#0a0a0a] mt-8 mb-4">How Google selects content for AI Overviews</h2>
 
             <p>
-              Google has not published a complete specification for what drives AI Overview inclusion, but the pattern is consistent across industries: AI Overviews favor content and businesses that are easy for the model to understand, verify, and attribute. That means three things in practice: your data is consistent, your website has machine-readable structure, and your reputation signals are active and recent.
+              Google has not published a complete specification for what drives AI Overview inclusion, but the pattern is consistent across industries: AI Overviews favor businesses that are easy for the model to understand, verify, and attribute. That means your data needs to be consistent, your website needs machine-readable structure, and your reputation signals need to be active and recent.
             </p>
 
             <p>
-              The model is doing something different from traditional search ranking. It is not just matching keywords to pages. It is building a structured understanding of what your business does, where it does it, what customers say about it, and whether that information is consistent across sources. A business that tells the same story on its website, its Google Business Profile, Yelp, and a dozen directories is far easier for the model to confidently recommend than one where the name, address, or service description varies across platforms.
+              The model is doing something different from traditional search ranking. It is not just matching keywords to pages. It is building a structured understanding of what your business does, where it does it, what customers say about it, and whether that information is consistent across sources. A business that tells the same story on its website, its Google Business Profile, Yelp, and dozens of directories is far easier for the model to confidently recommend than one where the name, address, or service description varies across platforms. This is the foundation of <Link href="/resources/blog-seo-old-school-geo-ai-shift" className="text-[#18b5d8] hover:underline">Generative Engine Optimization (GEO)</Link>.
             </p>
 
             <h2 className="text-[26px] font-bold text-[#0a0a0a] mt-8 mb-4">The five local business signals that matter most</h2>
 
-            <div className="space-y-8 mb-6">
+            <div className="space-y-6 mb-6">
 
-              <div className="bg-[#f5f5f7] rounded-[20px] p-7 border border-[#e8e8ed]">
-                <p className="text-[#18b5d8] text-[11px] font-bold tracking-[0.2em] uppercase mb-2">Signal 01</p>
+              <div className="bg-[#f5f5f7] rounded-[14px] p-7 border border-[#e8e8ed]">
                 <h3 className="text-[18px] font-bold text-[#0a0a0a] mb-3">Google Business Profile completeness and activity</h3>
                 <p className="text-[15px] text-[#555] leading-relaxed">
-                  Your Google Business Profile is the single most important data source for local AI Overviews. A complete, active GBP, with accurate categories, full service descriptions, updated hours, recent photos, and weekly posts, signals to Google that this business is real, active, and authoritative in its area. A dormant GBP with missing information is one of the most common reasons a well-ranked local business does not appear in AI Overview recommendations.
+                  Your Google Business Profile is the single most important data source for local AI Overviews. A complete, active GBP, with accurate categories, full service descriptions, updated hours, recent photos, and regular posts, signals to Google that this business is real, active, and authoritative in its area. A dormant GBP with missing information is one of the most common reasons a well-ranked local business does not appear in AI Overview recommendations.
                 </p>
               </div>
 
-              <div className="bg-[#f5f5f7] rounded-[20px] p-7 border border-[#e8e8ed]">
-                <p className="text-[#18b5d8] text-[11px] font-bold tracking-[0.2em] uppercase mb-2">Signal 02</p>
+              <div className="bg-[#f5f5f7] rounded-[14px] p-7 border border-[#e8e8ed]">
                 <h3 className="text-[18px] font-bold text-[#0a0a0a] mb-3">Review volume, recency, and response rate</h3>
                 <p className="text-[15px] text-[#555] leading-relaxed">
-                  Google&apos;s model reads reviews as trust signals. Volume matters, a business with 200 reviews is more confident to recommend than one with 12. Recency matters, a business getting reviews consistently signals ongoing activity. Response rate matters, responding to reviews, especially negative ones, shows engagement and professionalism. The language in reviews also influences which queries the AI associates your business with: a review that mentions &ldquo;same-day HVAC repair&rdquo; helps you appear for same-day queries.
+                  Google&apos;s model reads reviews as trust signals. Volume matters, a business with 200 reviews is more confident to recommend than one with 12. Recency matters, consistent new reviews signal ongoing activity. Response rate matters, engaging with reviews shows professionalism. The language in reviews also influences which queries the AI associates your business with. Learn more about <Link href="/resources/blog-google-reviews-ai-recommendations" className="text-[#18b5d8] hover:underline">how Google reviews become AI recommendations</Link>.
                 </p>
               </div>
 
-              <div className="bg-[#f5f5f7] rounded-[20px] p-7 border border-[#e8e8ed]">
-                <p className="text-[#18b5d8] text-[11px] font-bold tracking-[0.2em] uppercase mb-2">Signal 03</p>
+              <div className="bg-[#f5f5f7] rounded-[14px] p-7 border border-[#e8e8ed]">
                 <h3 className="text-[18px] font-bold text-[#0a0a0a] mb-3">NAP consistency across directories</h3>
                 <p className="text-[15px] text-[#555] leading-relaxed">
-                  NAP stands for Name, Address, and Phone number. When your business information is consistent across 50+ directories, Google, Yelp, Bing, Apple Maps, Facebook, industry-specific listings, the AI model can confidently attribute that entity to a real, verifiable location. When the name is slightly different on one platform, the address uses a different format on another, and the phone number is outdated on a third, the model has lower confidence and is less likely to surface your business. Citation consistency is unglamorous work with a significant impact.
+                  NAP stands for Name, Address, and Phone number. When your business information is consistent across 50 or more directories, Google, Yelp, Bing, Apple Maps, Facebook, and industry-specific listings, the AI model can confidently attribute that entity to a real, verifiable location. Inconsistencies across platforms lower the model&apos;s confidence and reduce your chances of appearing. See how <Link href="/resources/blog-ai-map-consistent-business-listings" className="text-[#18b5d8] hover:underline">consistent business listings become your map in the AI era</Link>.
                 </p>
               </div>
 
-              <div className="bg-[#f5f5f7] rounded-[20px] p-7 border border-[#e8e8ed]">
-                <p className="text-[#18b5d8] text-[11px] font-bold tracking-[0.2em] uppercase mb-2">Signal 04</p>
+              <div className="bg-[#f5f5f7] rounded-[14px] p-7 border border-[#e8e8ed]">
                 <h3 className="text-[18px] font-bold text-[#0a0a0a] mb-3">Structured data on your website</h3>
                 <p className="text-[15px] text-[#555] leading-relaxed">
-                  Structured data, specifically Schema.org markup, gives Google a direct machine-readable description of your business, services, location, and reputation. A <code className="bg-[#e8e8ed] px-1 py-0.5 rounded text-[13px]">LocalBusiness</code> schema with your name, address, phone, hours, and service area removes ambiguity. A <code className="bg-[#e8e8ed] px-1 py-0.5 rounded text-[13px]">FAQPage</code> schema helps the AI match your content to specific question-based queries. A <code className="bg-[#e8e8ed] px-1 py-0.5 rounded text-[13px]">Service</code> schema for each service type helps the model understand what you do and associate your business with the right queries. Without structured data, the model has to infer all of this from unstructured text, and it often gets it wrong or ignores it entirely.
+                  Structured data, specifically Schema.org markup, gives Google a direct machine-readable description of your business, services, location, and reputation. <code className="bg-[#e8e8ed] px-1 py-0.5 rounded text-[13px]">LocalBusiness</code> schema, <code className="bg-[#e8e8ed] px-1 py-0.5 rounded text-[13px]">FAQPage</code> schema, and <code className="bg-[#e8e8ed] px-1 py-0.5 rounded text-[13px]">Service</code> schema each remove a layer of ambiguity that would otherwise cause the model to guess, or ignore your business entirely. Without it, the model has to infer everything from unstructured text, and it often gets it wrong.
                 </p>
               </div>
 
-              <div className="bg-[#f5f5f7] rounded-[20px] p-7 border border-[#e8e8ed]">
-                <p className="text-[#18b5d8] text-[11px] font-bold tracking-[0.2em] uppercase mb-2">Signal 05</p>
+              <div className="bg-[#f5f5f7] rounded-[14px] p-7 border border-[#e8e8ed]">
                 <h3 className="text-[18px] font-bold text-[#0a0a0a] mb-3">Citability of your web content</h3>
                 <p className="text-[15px] text-[#555] leading-relaxed">
-                  AI Overviews cite specific passages from your content, not just your homepage. Passages that are 134 to 167 words long, self-contained, and directly answer a specific question are significantly more likely to be cited. That means writing content in the form of clear questions and answers, not marketing copy that buries the point. A page that opens with &ldquo;What is [your service]?&rdquo; and answers it in the first paragraph is a better AI citation target than a page that starts with &ldquo;We have been serving the community for 20 years.&rdquo;
+                  AI Overviews cite specific passages from your content, not just your homepage. Passages that are self-contained and directly answer a specific question are significantly more likely to be cited. That means writing content in the form of clear questions and answers, not marketing copy that buries the point. A page that opens with a direct answer to a common customer question is a far better AI citation target than one that starts with a decade of experience and a list of service areas.
                 </p>
               </div>
 
             </div>
 
-            <h2 className="text-[26px] font-bold text-[#0a0a0a] mt-4 mb-4">The implementation order that matters</h2>
+            <h2 className="text-[26px] font-bold text-[#0a0a0a] mt-4 mb-4">Why most businesses struggle to get this right</h2>
 
             <p>
-              Most businesses try to do everything at once and see slow results. The correct order is: fix your GBP first (it has the fastest impact on AI Overviews for local queries), then correct citation consistency across directories, then add structured data to your site, then build review volume, then optimize your content for citability.
+              The five signals above are interconnected. A complete GBP matters less if your citation data is inconsistent. Structured data on your website matters less if your GBP is dormant. Review volume matters less if the language in those reviews does not align with the queries you want to appear for. Getting these signals working together requires both technical implementation and ongoing management, not a one-time fix.
             </p>
 
             <p>
-              The reason for this order is that each layer reinforces the next. A complete GBP with consistent citations gives the model high confidence in your entity. Adding structured data on top of that gives it machine-readable detail about your services and location. Building review volume adds trust signal. Citable content gives it something to quote when a user asks a specific question your business can answer.
-            </p>
-
-            <p>
-              Skipping to content optimization before the foundational signals are in place is common and largely ineffective. The model needs to trust your entity before it will cite your content.
+              Most businesses that try to address this piecemeal see slow or no results. The model needs to trust your entity before it will cite your content. Building that trust layer by layer, in the right sequence, with active maintenance over time, is what <Link href="/services" className="text-[#18b5d8] hover:underline">our AI visibility work</Link> is designed to do. If you want to see where your business currently stands across all five signals, our <Link href="/free-report" className="text-[#18b5d8] hover:underline">free AI visibility report</Link> tests your business against 20 or more queries and identifies the gaps.
             </p>
 
             <h2 className="text-[26px] font-bold text-[#0a0a0a] mt-8 mb-4">A note on timeline</h2>
 
             <p>
-              AI Overviews are not a one-time ranking event. They update continuously as Google recrawls your content and as your GBP signals change. Citation corrections typically propagate in two to four weeks. Schema updates are processed within days after recrawl. Review volume effects accumulate over 60 to 90 days. Most businesses that implement all five signals see meaningful movement in AI Overview appearances within 30 to 60 days and significant improvement within 90.
+              AI Overviews are not a one-time ranking event. They update continuously as Google recrawls your content and as your GBP signals change. Most businesses with properly configured signals see meaningful movement in AI Overview appearances within 30 to 60 days and significant improvement within 90. The businesses that see the fastest results are the ones with a team actively managing their signals, not the ones who made changes once and waited.
             </p>
 
           </div>
@@ -215,7 +205,7 @@ export default function HowToAppearInGoogleAiOverviewsPage() {
             <h2 className="text-[22px] font-bold text-[#0a0a0a] mb-8">Frequently asked questions</h2>
             <div className="space-y-5">
               {faqs.map((f) => (
-                <details key={f.q} className="group bg-[#f5f5f7] rounded-[16px] border border-[#e8e8ed]">
+                <details key={f.q} className="group bg-[#f5f5f7] rounded-[14px] border border-[#e8e8ed]">
                   <summary className="flex items-center justify-between px-6 py-5 cursor-pointer list-none">
                     <span className="text-[15px] font-semibold text-[#0a0a0a] pr-4">{f.q}</span>
                     <span className="text-[#18b5d8] font-bold text-[18px] shrink-0 group-open:rotate-45 transition-transform duration-150">+</span>
@@ -228,35 +218,34 @@ export default function HowToAppearInGoogleAiOverviewsPage() {
 
           {/* Internal links */}
           <div className="mt-12 border-t border-[#e8e8ed] pt-10">
-            <p className="text-[13px] font-bold uppercase tracking-[0.15em] text-[#999] mb-4">Related reading</p>
+            <h2 className="text-[18px] font-bold text-[#1d1d1f] mb-5">Related reading</h2>
             <div className="space-y-3">
-              <Link href="/ai-visibility-consulting" className="flex items-center gap-3 group">
-                <span className="text-[#18b5d8] font-bold shrink-0">→</span>
-                <span className="text-[15px] text-[#333] group-hover:text-[#18b5d8] transition-colors">AI Visibility Consulting, our full six-part framework</span>
-              </Link>
               <Link href="/resources/blog-seo-old-school-geo-ai-shift" className="flex items-center gap-3 group">
                 <span className="text-[#18b5d8] font-bold shrink-0">→</span>
-                <span className="text-[15px] text-[#333] group-hover:text-[#18b5d8] transition-colors">SEO Is Old School, The GEO and AI Shift Is Here</span>
+                <span className="text-[15px] text-[#333] group-hover:text-[#18b5d8] transition-colors">SEO Is Old School: Why Your Business Needs GEO to Survive the AI Shift</span>
               </Link>
               <Link href="/resources/blog-google-reviews-ai-recommendations" className="flex items-center gap-3 group">
                 <span className="text-[#18b5d8] font-bold shrink-0">→</span>
                 <span className="text-[15px] text-[#333] group-hover:text-[#18b5d8] transition-colors">Google Reviews and AI Recommendations: What the Research Shows</span>
               </Link>
-              <Link href="/how-to-rank-on-chatgpt-for-local-businesses" className="flex items-center gap-3 group">
+              <Link href="/resources/blog-ai-map-consistent-business-listings" className="flex items-center gap-3 group">
                 <span className="text-[#18b5d8] font-bold shrink-0">→</span>
-                <span className="text-[15px] text-[#333] group-hover:text-[#18b5d8] transition-colors">How to Rank on ChatGPT for Local Businesses</span>
+                <span className="text-[15px] text-[#333] group-hover:text-[#18b5d8] transition-colors">The AI Map: Why Consistent Business Listings Are the Secret to Being Found</span>
+              </Link>
+              <Link href="/resources/blog-end-of-local-seo-ai-visibility" className="flex items-center gap-3 group">
+                <span className="text-[#18b5d8] font-bold shrink-0">→</span>
+                <span className="text-[15px] text-[#333] group-hover:text-[#18b5d8] transition-colors">What the End of Local SEO Means for Your Business</span>
               </Link>
             </div>
           </div>
 
           {/* CTA */}
-          <div className="mt-12 bg-[#0a0a0a] rounded-[20px] px-8 py-10 text-center">
-            <p className="text-[13px] font-semibold tracking-[0.2em] uppercase text-[#18b5d8] mb-4">Free AI Visibility Report</p>
+          <div className="mt-12 bg-[#0a0a0a] rounded-[14px] px-8 py-10 text-center">
             <h3 className="text-[24px] font-bold text-white mb-4" style={{ textWrap: 'balance' }}>
               Find out where your business stands in Google AI Overviews.
             </h3>
-            <p className="text-white/50 text-[15px] mb-8">
-              We test your business against 20+ queries across ChatGPT, Gemini, Perplexity, and Google AI Overviews. Delivered in 48 hours.
+            <p className="text-white/55 text-[15px] mb-8">
+              We test your business against 20+ queries across ChatGPT, Gemini, Perplexity, and Google AI Overviews. Your report is ready in 24 hours, then we walk through it with you.
             </p>
             <Link
               href="/free-report"

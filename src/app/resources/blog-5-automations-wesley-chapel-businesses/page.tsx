@@ -137,7 +137,7 @@ export default function FiveAutomationsPage() {
               Business automation gets talked about like it requires a big budget, a dedicated IT person, and six months of setup. It doesn&rsquo;t. The automations with the highest return on investment for Wesley Chapel small businesses are narrow, specific, and live within a week.
             </p>
             <p>
-              The key is knowing where to start. Here are the five that deliver the fastest, most measurable results for local service businesses.
+              The key is knowing where to start. Here are the five that deliver the fastest, most measurable results for local service businesses, all handled by the <Link href="/resources/blog-what-is-an-ai-employee" className="text-[#18b5d8] hover:underline">AI employees</Link> we deploy for clients in Wesley Chapel and Tampa Bay.
             </p>
           </div>
 
@@ -177,16 +177,16 @@ export default function FiveAutomationsPage() {
           <div className="mt-16 border-t border-[#e8e8ed] pt-12 text-[17px] leading-[1.75] text-[#333] space-y-6">
             <h2 className="text-[26px] font-bold text-[#0a0a0a]">Where to start if you&rsquo;re doing none of this today</h2>
             <p>
-              Pick one. The businesses that get the fastest results from automation are the ones that start narrow and specific, not the ones that try to automate everything at once.
+              The automation that delivers the fastest return is not the same for every business. For some, it&rsquo;s the missed call text-back recovering leads that were already walking out the door. For others, it&rsquo;s the after-hours chat receptionist capturing inquiries that were landing in a void. The right starting point depends on where your business is losing the most, and that takes a diagnostic, not a guess.
             </p>
             <p>
-              If your biggest problem is losing leads after hours, start with after-hours chat reception. If you know you&rsquo;re losing potential reviews every week, start with post-job review requests. If your follow-up is inconsistent, start with the lead follow-up sequence.
+              Our team identifies that through the AI Audit process, matching each business to the automation with the highest immediate impact before any work begins.
             </p>
             <p>
-              All five of these automations are available through our AI employee program. Each one is configured specifically for your business, your service area, and your voice, not a generic template dropped into your account.
+              All five of these automations are available through <Link href="/services" className="text-[#18b5d8] hover:underline">our AI employee program</Link>. Each one is configured specifically for your business, your service area, and your voice, not a generic template dropped into your account. Review velocity alone, when automated properly, can move a Wesley Chapel business from invisible to dominant in its local search category within 90 days, as we show in <Link href="/case-studies" className="text-[#18b5d8] hover:underline">our client results</Link>.
             </p>
             <p>
-              The free AI Audit identifies exactly which automation would have the biggest immediate impact for your specific business. It takes 48 hours and there&rsquo;s no commitment attached.
+              The <Link href="/free-report" className="text-[#18b5d8] hover:underline">free AI Audit</Link> identifies exactly which automation would have the biggest immediate impact for your specific business. It takes 48 hours and there&rsquo;s no commitment attached.
             </p>
           </div>
 

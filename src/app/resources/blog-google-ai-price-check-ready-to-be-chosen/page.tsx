@@ -55,7 +55,7 @@ export default function Page() {
    <p>Most local service businesses were built for a pre-AI world. Their systems were designed to handle inbound calls from humans, not automated AI inquiries that come in at 9 PM on a Tuesday. Here&rsquo;s where the gaps show up:</p>
 
    <h3>Office Hours Don&rsquo;t Match AI Hours</h3>
-   <p>AI doesn&rsquo;t take the weekend off. If Google&rsquo;s AI checks your availability on Saturday afternoon and you don&rsquo;t have an automated response system in place, you miss the window. By Monday morning, the customer has already booked your competitor.</p>
+   <p>AI doesn&rsquo;t take the weekend off. If Google&rsquo;s AI checks your availability on Saturday afternoon and you don&rsquo;t have an automated response system in place, you miss the window. By Monday morning, the customer has already booked your competitor. This same responsiveness gap is why <Link href="/resources/blog-24-hour-rule-local-trust-ai" className="text-[#18b5d8] hover:underline">the 24-hour rule for review responses</Link> has become an AI trust signal, not just a customer service best practice.</p>
 
    <h3>Pricing Pages Lack Clarity</h3>
    <p>AI looks for structured, scannable pricing information. If your website has a &ldquo;Call for a quote&rdquo; button instead of even a general pricing range, you give the AI nothing to work with. AI models prefer the competitor who at least provides a &ldquo;starting at $X&rdquo; figure over the one who provides zero data.</p>
@@ -84,7 +84,7 @@ export default function Page() {
    <p>You don&rsquo;t need a full price list. But a &ldquo;starting from&rdquo; price for your core services gives AI the data point it needs to include you in a comparison. Think of it as making it easy for the AI to advocate for you.</p>
 
    <h3>Review Velocity</h3>
-   <p>A steady flow of recent reviews, not just a historical pile from five years ago, shows AI that your business is active, trusted, and delivering results right now.</p>
+   <p>A steady flow of recent reviews, not just a historical pile from five years ago, shows AI that your business is active, trusted, and delivering results right now. The quality and structure of those reviews matters as much as the volume, a point we cover in depth in our post on <Link href="/resources/blog-google-reviews-ai-recommendations" className="text-[#18b5d8] hover:underline">turning Google reviews into AI recommendations</Link>.</p>
 
    <Image
     src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&h=480&q=80"
@@ -99,15 +99,10 @@ export default function Page() {
    <p>The businesses that win won&rsquo;t necessarily be the ones with the best service (though that matters). They&rsquo;ll be the ones that have made themselves the <strong>easiest, most reliable option for the AI to recommend.</strong> Clear data. Rapid response. Consistent reviews. Transparent pricing.</p>
    <p>This is exactly what our <Link href="/services">AI Visibility Toolkit</Link> was designed to deliver. We&rsquo;ve built the system, the strategy, and the execution framework for local businesses that want to be the obvious AI recommendation in their market.</p>
 
-   <h2>Your &ldquo;Ready to Be Chosen&rdquo; Action Plan</h2>
-   <ol>
-    <li><strong>Run a Google Business Profile audit today.</strong> Is every field complete? Are your hours current? Do you have recent photos?</li>
-    <li><strong>Add basic pricing language to your website and GBP.</strong> Even a general range removes AI uncertainty.</li>
-    <li><strong>Set up 24/7 response capability.</strong> A missed AI inquiry is a customer you&rsquo;ll never know you lost.</li>
-    <li><strong>Start a review velocity campaign.</strong> Reach out to your last 20 happy customers and ask for a specific, detailed review.</li>
-    <li><strong>Audit your NAP consistency.</strong> Check Google, Yelp, Facebook, Apple Maps, and Bing Places. Make sure every listing matches exactly.</li>
-   </ol>
-   <p>The AI is already calling. The only question is whether you&rsquo;re going to answer. <Link href="/free-report">Get your free visibility report</Link> today and see exactly where your business stands in the AI discovery landscape, before your competitor does.</p>
+   <h2>What Getting Ready Actually Requires</h2>
+   <p>Being chosen by AI-mediated discovery requires more than running through a checklist. The profiles that consistently land at the top of these AI-generated summaries have been built and maintained with intention: every data point consistent, every inquiry handled before a competitor picks up, every review responded to in a way that reinforces trust signals. Getting one of those pieces right while others are fragmented still results in being filtered out.</p>
+   <p>Most business owners do not have the time or the systems to maintain that standard on their own. That is the gap we close. At Shark Branding Solutions, we specialize in building the digital infrastructure that puts local businesses in position to be chosen by AI, not passed over. <Link href="/case-studies" className="text-[#18b5d8] hover:underline">See what we have done for businesses</Link> in competitive local markets where AI-mediated discovery is already deciding who gets the call.</p>
+   <p>The AI is already calling. The only question is whether you&rsquo;re going to answer. <Link href="/free-report" className="text-[#18b5d8] hover:underline">Get our free AI visibility report</Link> and see exactly where your business stands in the AI discovery landscape before your competitor does.</p>
 
    <hr />
    <p style={{ fontSize: "0.8rem", color: "#999", lineHeight: "1.6" }}>

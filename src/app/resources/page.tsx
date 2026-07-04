@@ -260,7 +260,6 @@ export default function ResourcesPage() {
                 <span className="text-[9px] font-bold uppercase tracking-[0.25em] border border-[#18b5d8] text-[#18b5d8] px-2 py-[3px]">
                   {lead.category}
                 </span>
-                <span className="text-[9px] font-bold uppercase tracking-[0.2em] text-[#18b5d8]">Lead Story</span>
               </div>
 
               <h2
@@ -287,7 +286,7 @@ export default function ResourcesPage() {
                 />
               </Link>
 
-              <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-[11px] text-[#888] uppercase tracking-[0.1em] font-semibold border-t border-black/15 pt-4">
+              <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-[11px] text-[#6e6e73] uppercase tracking-[0.1em] font-semibold border-t border-black/15 pt-4">
                 <span>By Shark AI Solutions</span>
                 <span className="text-black/30">&middot;</span>
                 <span>{lead.date}</span>
@@ -318,7 +317,7 @@ export default function ResourcesPage() {
                     </Link>
                   </h3>
                   <p className="text-[14px] text-[#555] leading-relaxed mb-3">{post.excerpt}</p>
-                  <div className="text-[11px] text-[#999] uppercase tracking-[0.08em] font-semibold">
+                  <div className="text-[11px] text-[#6e6e73] uppercase tracking-[0.08em] font-semibold">
                     {post.date} &nbsp;&middot;&nbsp; {post.readTime}
                   </div>
                 </div>
@@ -326,9 +325,6 @@ export default function ResourcesPage() {
 
               {/* Free report callout, styled like a newspaper ad */}
               <div className="mt-auto border-2 border-black p-5">
-                <div className="text-[9px] font-bold uppercase tracking-[0.3em] text-[#18b5d8] mb-2 border-b border-black/10 pb-2">
-                  Free for Tampa Bay Businesses
-                </div>
                 <h4
                   className="text-[18px] leading-snug text-black mb-3 mt-3"
                   style={{ fontFamily: "var(--font-playfair)", fontWeight: 700, fontStyle: "italic" }}
@@ -404,7 +400,7 @@ export default function ResourcesPage() {
               <p className="text-[15px] text-[#555] leading-relaxed mb-5">
                 Shark AI Solutions partners with the North Tampa Bay Chamber to help every local business get Found, Trusted, and Chosen by AI. NTBC members receive a free Business Visibility Report, no strings attached.
               </p>
-              <div className="text-[11px] text-[#999] uppercase tracking-[0.1em] font-semibold">
+              <div className="text-[11px] text-[#6e6e73] uppercase tracking-[0.1em] font-semibold">
                 By Shark AI Solutions &nbsp;&middot;&nbsp; April 15, 2026 &nbsp;&middot;&nbsp; 10 min read
               </div>
             </div>
@@ -416,9 +412,6 @@ export default function ResourcesPage() {
       <section className="bg-[#0a0a0a] py-20 px-6 border-t-2 border-[#18b5d8]">
         <div className="max-w-[680px] mx-auto text-center">
           <div className="border border-white/10 p-10 md:p-14">
-            <p className="text-[10px] font-bold uppercase tracking-[0.35em] text-[#18b5d8] mb-5">
-              Intelligence Direct to You
-            </p>
             <h2
               className="text-[36px] md:text-[44px] leading-[1.08] text-white mb-5"
               style={{ fontFamily: "var(--font-playfair)", fontWeight: 700, fontStyle: "italic" }}

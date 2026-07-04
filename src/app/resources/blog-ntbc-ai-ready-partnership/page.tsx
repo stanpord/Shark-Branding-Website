@@ -60,11 +60,11 @@ export default function Page() {
 
    <h3>1. Found: Being Visible to the Machines</h3>
    <p>Before a customer can choose you, the AI has to find you. Models like ChatGPT, Claude, and Gemini don&rsquo;t just &ldquo;guess.&rdquo; They crawl massive amounts of data to find businesses that appear consistent, verified, and active.</p>
-   <p>If your address is different on three different websites, the AI gets &ldquo;confused.&rdquo; And a confused AI will never recommend you. We ensure your business listings are locked down and consistent across the entire digital ecosystem. We make sure you are fed into the training data of these models so that when someone asks for a service you provide, your name is at the top of the list.</p>
+   <p>If your address is different on three different websites, the AI gets &ldquo;confused.&rdquo; And a confused AI will never recommend you. We go deep on exactly why this happens in our article on <Link href="/resources/blog-ai-map-consistent-business-listings" className="text-[#18b5d8] hover:underline">why consistent business listings are the secret to being found by ChatGPT and Gemini</Link>. We ensure your listings are locked down and consistent across the entire digital ecosystem, so that when someone asks for a service you provide, your name is at the top of the list.</p>
 
    <h3>2. Trusted: Building Authority Through Reputation</h3>
    <p>Visibility is only half the battle. Once the AI finds you, it looks for &ldquo;social proof.&rdquo; Does this business have good reviews? Are they responding to customers? Do they have authority in their niche?</p>
-   <p>We focus on reputation management that builds a &ldquo;trust engine.&rdquo; By managing your reviews and social signals, we tell the AI, and your potential customers, that you are a safe bet. In an AI-driven search environment, <strong>reputation is the new currency</strong>.</p>
+   <p>We focus on reputation management that builds a &ldquo;trust engine.&rdquo; By managing your reviews and social signals, we tell the AI, and your potential customers, that you are a safe bet. In an AI-driven search environment, <strong>reputation is the new currency</strong>. Our guide to <Link href="/resources/blog-24-hour-rule-local-trust-ai" className="text-[#18b5d8] hover:underline">the 24-hour rule for local trust in the AI era</Link> shows exactly how review response timing affects AI recommendations.</p>
 
    <Image
     src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1200&h=480&q=80"
@@ -119,7 +119,7 @@ export default function Page() {
    />
 
    <h2>Stop Playing Catch-Up</h2>
-   <p>The reality is that the gap between businesses that embrace AI and those that ignore it is widening every day. You don&rsquo;t want to be the business that realizes three years from now that nobody is finding you because you&rsquo;re invisible to the tools everyone is using.</p>
+   <p>The reality is that the gap between businesses that embrace AI and those that ignore it is widening every day. You don&rsquo;t want to be the business that realizes three years from now that nobody is finding you because you&rsquo;re invisible to the tools everyone is using. We cover what this shift means for local businesses in detail in our article on <Link href="/resources/blog-end-of-local-seo-ai-visibility" className="text-[#18b5d8] hover:underline">what the end of local SEO means for your business</Link>.</p>
    <p>North Tampa Bay is a thriving, innovative hub. We have the talent, the passion, and the services. Now, through this partnership between Shark AI Solutions and the NTBC, we have the technology to match.</p>
    <p>Are you ready to stop wondering where your next customer is coming from and start being the business that AI recommends?</p>
 

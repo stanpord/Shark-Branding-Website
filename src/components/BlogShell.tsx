@@ -112,7 +112,7 @@ export default function BlogShell({
       {/* Blog hero */}
       <section className="bg-[#07141a] pt-24 pb-16 px-6 text-center">
         <div className="max-w-[760px] mx-auto">
-          <span className="inline-block text-[#18b5d8] text-[13px] font-semibold tracking-[0.15em] uppercase mb-5">
+          <span className="inline-block text-[#18b5d8] text-[13px] mb-5">
             {category}
           </span>
           <h1 className="display-lg text-white mb-6" style={{ textWrap: "balance" }}>
@@ -132,7 +132,7 @@ export default function BlogShell({
             alt={heroAlt}
             width={1200}
             height={480}
-            className="w-full rounded-[18px] mb-12 object-cover"
+            className="w-full rounded-[14px] mb-12 object-cover"
             style={{ width: "100%", height: "auto", maxHeight: "480px" }}
           />
           <div className="article-prose">{children}</div>
@@ -175,7 +175,7 @@ export default function BlogShell({
       {relatedPosts && relatedPosts.length > 0 && (
         <section className="bg-[#f5f5f7] py-14 px-6">
           <div className="max-w-[720px] mx-auto">
-            <p className="text-[11px] font-semibold text-[#1d1d1f] uppercase tracking-[0.15em] mb-6">Related Articles</p>
+            <h2 className="text-[18px] font-bold text-[#1d1d1f] mb-6">More to Read</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {relatedPosts.map((p) => (
                 <Link
@@ -183,7 +183,7 @@ export default function BlogShell({
                   href={p.href}
                   className="block bg-white rounded-[14px] p-5 border border-[#e0e0e0] hover:border-[#18b5d8] motion-safe:transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2"
                 >
-                  <span className="text-[11px] font-semibold text-[#18b5d8] uppercase tracking-[0.12em] mb-2 block">{p.category}</span>
+                  <span className="text-[11px] text-[#18b5d8] mb-2 block">{p.category}</span>
                   <span className="text-[15px] font-semibold text-[#1d1d1f] leading-snug">{p.title}</span>
                 </Link>
               ))}
