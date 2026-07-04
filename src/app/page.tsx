@@ -70,8 +70,8 @@ const results = [
 
 const services = [
   { title: 'AI Business Consulting', body: 'Full-service AI visibility strategy for businesses ready to own their category.', href: '/services#ai-visibility' },
-  { title: 'AI Visibility Toolkit', body: 'The complete managed system: listings, reviews, content, and AI readiness in one place.', href: '/services#toolkit' },
-  { title: 'AI Employees', body: 'Automate lead follow-up, review requests, content, and social — 24/7, on autopilot.', href: '/aiemployees' },
+  { title: 'AI Visibility Toolkit', body: 'Listings, reviews, content, and AI readiness — managed monthly so you don\'t have to think about it.', href: '/services#toolkit' },
+  { title: 'AI Employees', body: 'Lead follow-up, review requests, content, and social — handled automatically while you\'re running your business.', href: '/aiemployees' },
   { title: 'Free AI Audit', body: 'See exactly where your business stands across AI platforms. Reviewed with you personally. No catch.', href: '/free-report' },
 ]
 
@@ -115,7 +115,7 @@ export default function Home() {
             className="lead-airy text-[#333333] max-w-[560px] mx-auto mb-8 sm:mb-12"
             style={{ textWrap: 'balance' }}
           >
-            ChatGPT, Google AI Overviews, Perplexity, and Gemini are the new front door for buyers — from local searches to enterprise category decisions. Most businesses aren't showing up. We fix that.
+            ChatGPT, Google AI Overviews, Perplexity, and Gemini are the new front door for buyers. They recommend one to three businesses. Not a list you scroll through — one to three. If you're not in that shortlist, most buyers never know you exist. We fix that.
           </p>
           <div data-animate="hero-cta" className="flex flex-wrap items-center justify-center gap-3 mb-6">
             <AuditModalTrigger
@@ -208,23 +208,23 @@ export default function Home() {
               {
                 label: 'Found',
                 labelClass: 'bg-[#18b5d8] text-white',
-                body: 'AI can locate, identify, and understand your business. Your name, address, services, and location are consistent across every platform it crawls.',
+                body: 'AI knows exactly who you are and where you operate. Your name, address, services, and service area tell the same story on every platform it reads.',
                 items: ['Listing accuracy across 50+ platforms', 'Structured data and schema markup', 'AI crawler access confirmed'],
               },
               {
                 label: 'Trusted',
                 labelClass: 'bg-[#0a0a0a] text-white',
-                body: 'AI sees active social proof that your business is credible. Reviews, responses, and reputation signals tell the algorithm you\'re worth recommending.',
+                body: 'AI sees a business people trust. Reviews, responses, and reputation signals give the model the confidence to put your name in front of a buyer.',
                 items: ['Review volume and recency', '24-hour response cadence', 'Reputation signals strengthened'],
               },
               {
                 label: 'Chosen',
                 labelClass: 'border border-[#18b5d8] text-[#18b5d8]',
-                body: 'Your content directly answers what customers are asking. AI can extract clear, specific answers about your services, location, and results.',
+                body: 'When a customer asks AI a specific question, your business has the answer. Not buried in marketing copy. Front and center.',
                 items: ['Answer-ready content structure', 'FAQ and entity definitions', 'Competitive gap analysis'],
               },
             ].map((c) => (
-              <div key={c.label} data-animate="framework-card" className="bg-[#f5f5f7] rounded-[20px] p-7">
+              <div key={c.label} data-animate="framework-card" className="bg-[#f5f5f7] rounded-[14px] p-7">
                 <span className={`inline-block text-[11px] font-bold tracking-[0.16em] uppercase px-3 py-1.5 rounded-full mb-5 ${c.labelClass}`}>
                   {c.label}
                 </span>
@@ -253,7 +253,7 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {steps.map((s) => (
-              <div key={s.n} data-animate="step-card" className="bg-[#111] rounded-[20px] p-7 border border-white/5">
+              <div key={s.n} data-animate="step-card" className="bg-[#111] rounded-[14px] p-7 border border-white/5">
                 <p className="text-[#18b5d8] text-[11px] tracking-[0.22em] uppercase mb-5">{s.n}</p>
                 <h3 className="text-[17px] font-bold text-white mb-3">{s.title}</h3>
                 <p className="text-[13px] text-white/50 leading-relaxed">{s.body}</p>
@@ -276,7 +276,7 @@ export default function Home() {
           </div>
 
           {/* Featured result */}
-          <div data-animate="result-card" className="bg-[#0a0a0a] rounded-[20px] p-8 sm:p-10 mb-4">
+          <div data-animate="result-card" className="bg-[#0a0a0a] rounded-[14px] p-8 sm:p-10 mb-4">
             <span className="inline-block bg-[#18b5d8]/15 text-[#18b5d8] text-[11px] font-bold tracking-[0.14em] uppercase px-3 py-1 rounded-full mb-5">
               Home Services
             </span>
@@ -291,7 +291,7 @@ export default function Home() {
           {/* Supporting results */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
             {results.map((r) => (
-              <div key={r.result} data-animate="result-card" className="bg-[#f5f5f7] rounded-[20px] p-7 flex flex-col gap-3">
+              <div key={r.result} data-animate="result-card" className="bg-[#f5f5f7] rounded-[14px] p-7 flex flex-col gap-3">
                 <span className="inline-block bg-[#18b5d8]/10 text-[#18b5d8] text-[11px] font-bold tracking-[0.14em] uppercase px-3 py-1 rounded-full self-start">{r.tag}</span>
                 <p className="text-[18px] font-bold text-[#0a0a0a]">{r.result}</p>
                 <p className="text-[13px] text-[#555] leading-relaxed">{r.detail}</p>
@@ -351,7 +351,7 @@ export default function Home() {
                 key={s.title}
                 href={s.href}
                 data-animate="service-card"
-                className="group bg-white rounded-[20px] p-7 border border-[#e8e8ed] hover:border-[#18b5d8] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2"
+                className="group bg-white rounded-[14px] p-7 border border-[#e8e8ed] hover:border-[#18b5d8] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2"
               >
                 <h3 className="text-[17px] font-bold text-[#0a0a0a] mb-2 group-hover:text-[#18b5d8] motion-safe:transition-colors duration-150">{s.title}</h3>
                 <p className="text-[14px] text-[#555] leading-relaxed">{s.body}</p>
@@ -393,7 +393,7 @@ export default function Home() {
             AI platforms are setting their recommendation lists now.
           </h2>
           <p data-animate="cta-sub" className="lead-airy text-white/50 mb-8 sm:mb-12" style={{ textWrap: 'pretty' }}>
-            Free AI Audit. Find out where you stand before your competitor does. Reviewed with you personally, no commitment required.
+            Find out where you stand before your competitor does. We run your business through every major AI platform and walk through what we find with you personally.
           </p>
           <div data-animate="cta-btn">
             <AuditModalTrigger
