@@ -63,9 +63,8 @@ export default function Page() {
 
    <h2>Using AI to Stay in the Conversation (Without Sounding Like a Robot)</h2>
    <p>The irony of the AI era is this: the businesses that use AI <em>wisely</em> will out-humanize the businesses that try to do everything manually. Here&rsquo;s why.</p>
-   <p>A manual responder, overwhelmed and stretched thin, writes the same generic reply: <em>&ldquo;Thank you for your review! We appreciate your support!&rdquo;</em> Meanwhile, an AI-assisted responder generates a unique, context-specific reply in seconds:</p>
-   <p><em>&ldquo;We&rsquo;re so glad your kitchen remodel came out exactly as you imagined, Maria! Our team in the Wesley Chapel area genuinely loves transforming spaces. Looking forward to the next project whenever you&rsquo;re ready.&rdquo;</em></p>
-   <p>One is a template. The other is a <strong>trust signal</strong>. One bores the AI. The other feeds it.</p>
+   <p>A manual responder, overwhelmed and stretched thin, produces generic responses that could apply to any business, any review, any customer. An AI-assisted responder produces context-specific replies that reference the actual service, the actual outcome, and the actual location — in seconds, at scale.</p>
+   <p>One pattern is a template. The other is a <strong>trust signal</strong>. AI can tell the difference, and so can any customer reading your profile before they call.</p>
 
    <Image
     src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&h=480&q=80"

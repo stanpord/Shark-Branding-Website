@@ -102,12 +102,7 @@ export default function Page() {
     <li>Moved from <strong>#4 to #1</strong> for <strong>&ldquo;Best Realtors in Wesley Chapel&rdquo;</strong></li>
     <li>Achieved that ranking strength within the <strong>1.25-mile Chamber radius</strong></li>
    </ul>
-   <p>So what drove the shift?</p>
-   <ul>
-    <li><strong>NAP standardization</strong> to eliminate conflicting business data</li>
-    <li>Connection to the <strong>North Tampa Bay Chamber as a local authority hub</strong> using a hub-and-spoke model</li>
-    <li>Full <strong>AI Visibility Toolkit deployment</strong> to strengthen discoverability, trust, and conversion signals</li>
-   </ul>
+   <p>The drivers were not advertising spend or a website redesign. They were the foundational elements that AI models use to build confidence in a business: data consistency across every directory, connection to recognized local authority sources, and a coordinated deployment of the signals that determine whether AI recommends you or routes around you.</p>
    <p>That&rsquo;s the difference between hoping you show up and building a system that helps AI confidently recommend you.</p>
 
    <Image

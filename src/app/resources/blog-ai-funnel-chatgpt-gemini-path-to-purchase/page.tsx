@@ -46,14 +46,7 @@ export default function Page() {
    <p>The decision-making timeline just collapsed from days to minutes. And if your business isn&rsquo;t on that short list, the customer never even knew you existed. For a closer look at how this funnel operates in practice, see our post on <Link href="/resources/blog-ai-funnel-chatgpt-new-front-door" className="text-[#18b5d8] hover:underline">why ChatGPT is the new front door for your customers</Link>.</p>
 
    <h2>How ChatGPT Builds Its Recommendation List</h2>
-   <p>ChatGPT doesn&rsquo;t just pull your website and call it a day. When a user asks for a local recommendation, ChatGPT is performing a multi-source analysis in real time:</p>
-   <ul>
-    <li><strong>Review aggregation:</strong> Google reviews, Yelp listings, and social proof signals</li>
-    <li><strong>Data consistency checks:</strong> Is your business name, address, and phone number identical everywhere it appears?</li>
-    <li><strong>Content relevance:</strong> Does your website and Google Business Profile use the specific language customers are searching for?</li>
-    <li><strong>Recency signals:</strong> When was your business profile last updated? Are reviews coming in regularly or did they stop two years ago?</li>
-   </ul>
-   <p>ChatGPT then synthesizes all of that into a confidence score. The businesses with the highest confidence scores get the recommendation. The rest get nothing.</p>
+   <p>ChatGPT does not just pull your website and call it a day. When a user asks for a local recommendation, the AI performs a multi-source analysis in real time — cross-referencing review platforms, business directories, social proof signals, data consistency across every place your business appears online, and how recently that data has been updated. All of that gets synthesized into a confidence score. The businesses with the highest confidence scores get the recommendation. The rest get nothing. Most businesses have no idea where their confidence score stands across AI platforms, or how many inconsistencies across their digital presence are quietly lowering it.</p>
 
    <Image
     src="https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=1200&h=480&q=80"
@@ -68,14 +61,8 @@ export default function Page() {
    <p>When someone uses Google AI Overviews or asks the AI assistant on their Android phone for a recommendation, Gemini pulls from all of this data simultaneously. A business with a neglected Google Business Profile, old photos, no recent posts, unanswered reviews, signals to Gemini that it isn&rsquo;t actively managed. And Gemini won&rsquo;t bet a customer&rsquo;s experience on a business that looks abandoned.</p>
 
    <div className="callout-box">
-    <h4>What Gemini Looks For in a Local Business</h4>
-    <ul>
-     <li>Verified and complete Google Business Profile</li>
-     <li>Recent reviews (within the last 30 days) with business responses</li>
-     <li>Consistent NAP data across all directories</li>
-     <li>Regular Google Business Posts and photo updates</li>
-     <li>Schema markup on the website that matches your profile data</li>
-    </ul>
+    <h4>How Gemini Evaluates a Local Business</h4>
+    <p>Gemini builds its confidence in a business by triangulating data across its entire Google footprint: the Business Profile, Maps data, review activity, and the recency of everything it finds. A business that looks active, consistent, and well-reviewed across all of those layers gets recommended. One that looks stagnant or fragmented gets passed over. The pattern we see consistently: businesses assume their Google presence is in good shape, then discover through an audit that it is not.</p>
    </div>
 
    <Image

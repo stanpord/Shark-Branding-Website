@@ -153,11 +153,7 @@ export default function Page() {
    <h3>3. Clarity</h3>
 
    <p>
-    AI needs to understand exactly what you do and who you serve. If your website says &ldquo;we
-    provide comprehensive solutions for residential and commercial clients,&rdquo; AI does not
-    know what to do with that. If your website says &ldquo;we install and repair HVAC systems
-    for homeowners in Wesley Chapel, Lutz, and Land O&rsquo; Lakes,&rdquo; AI knows exactly
-    when to recommend you.
+    AI needs to understand exactly what you do and who you serve. Vague positioning that once felt safe and broad — &ldquo;comprehensive solutions for residential and commercial clients&rdquo; — gives AI nothing specific enough to act on. The businesses getting recommended are the ones whose digital presence makes it unambiguous: exactly what service, exactly what location, exactly what type of customer. Getting that specificity right across your website, your profiles, and your content all at once is harder than it sounds.
    </p>
 
    <p>

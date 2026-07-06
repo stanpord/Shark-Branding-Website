@@ -94,7 +94,7 @@ export default function Page() {
    <p>In AI&rsquo;s framework, your business is an &ldquo;entity.&rdquo; The goal of GEO is to connect your entity to as many positive, consistent signals as possible: Google Business Profile, social media profiles, local directories, press mentions, and review platforms. The more signals point to the same entity with the same information, the more confidently AI recommends you.</p>
 
    <h3>3. Answer-Ready Content</h3>
-   <p>Stop writing for &ldquo;search volume&rdquo; and start writing for &ldquo;answers.&rdquo; AI extracts self-contained paragraphs, comparison tables, and FAQ sections that directly answer a specific question. Content that requires surrounding context to make sense gets skipped. Content that answers the question in the first sentence gets cited.</p>
+   <p>Most websites are written for browsing, not for citation. AI extracts self-contained content that directly answers a specific question — and skips anything that requires context from surrounding paragraphs to make sense. The gap between how most local businesses write their website content and what AI can actually extract and cite is larger than most business owners realize. It is a different problem than keyword optimization, and it requires a different approach.</p>
 
    <Image src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&h=480&q=80" alt="Analytics dashboard showing the performance gap between businesses optimized for traditional SEO versus GEO" width={1200} height={480} style={{ width: "100%", height: "auto" }} />
 

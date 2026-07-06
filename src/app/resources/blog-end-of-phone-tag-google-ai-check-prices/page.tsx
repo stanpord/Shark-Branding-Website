@@ -60,12 +60,7 @@ export default function Page() {
    <p>When Google&rsquo;s AI calls you to verify a price, it is testing your business&rsquo;s &ldquo;health.&rdquo; Are you responsive? Is your information consistent? Early adopters of AI-mediated discovery have reported dramatic drops in inbound calls from customers who never made it past the AI shortlist, not because the service was inferior, but because the business wasn&rsquo;t set up to respond.<sup>1</sup> Responsiveness is also why <Link href="/resources/blog-24-hour-rule-local-trust-ai" className="text-[#18b5d8] hover:underline">the 24-hour rule for review responses</Link> has become a trust signal that AI actively evaluates.</p>
 
    <h2>Responsiveness Is the New SEO</h2>
-   <p>For a long time, SEO was about keywords and backlinks. The &ldquo;new SEO&rdquo; is <strong>Responsiveness-as-a-Service.</strong> To thrive in this environment, you need three things:</p>
-   <ol>
-    <li><strong>Clear, Consistent Pricing:</strong> The more &ldquo;standardized&rdquo; your data is, the easier it is for AI to recommend you.</li>
-    <li><strong>Unified Listing Data:</strong> Your hours, services, and contact info must be identical across Google, Yelp, Facebook, and your own site.</li>
-    <li><strong>An AI-Ready Receptionist:</strong> You need a way to handle automated inquiries 24/7.</li>
-   </ol>
+   <p>For a long time, SEO was about keywords and backlinks. The &ldquo;new SEO&rdquo; is <strong>Responsiveness-as-a-Service.</strong> The businesses that win AI-initiated inquiries share a profile: their data is clean and verifiable, they respond to outreach at any hour, and their digital presence signals active management rather than dormancy. Building that profile requires more than good intentions — it requires infrastructure that runs whether your team is working or not. Most businesses discover they have more gaps in this profile than they expected when they run a proper audit.</p>
 
    <Image
     src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&h=480&q=80"

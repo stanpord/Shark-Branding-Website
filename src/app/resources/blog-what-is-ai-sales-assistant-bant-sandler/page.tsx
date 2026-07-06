@@ -68,10 +68,10 @@ const faqs = [
 ]
 
 const bantFramework = [
-  { letter: 'B', word: 'Budget', question: 'Do they have money allocated for this?', aiAction: 'Asks about budget range early in follow-up. Flags leads with budget as higher priority.', example: '"What kind of investment range are you working with for this project?"' },
-  { letter: 'A', word: 'Authority', question: 'Are they the decision maker?', aiAction: 'Identifies whether the contact can say yes, or needs to involve someone else.', example: '"Is this something you decide on directly, or does it involve your partner or team?"' },
-  { letter: 'N', word: 'Need', question: 'Do they actually need what you offer?', aiAction: 'Qualifies based on the specific problem they described in the initial call or form.', example: 'Pulled from the AI voice receptionist intake conversation automatically.' },
-  { letter: 'T', word: 'Timeline', question: 'When are they looking to move?', aiAction: 'Separates immediate opportunities from longer-term nurture candidates.', example: '"Are you looking to get started in the next few weeks, or is this more of a longer-term plan?"' },
+  { letter: 'B', word: 'Budget', question: 'Do they have money allocated for this?', aiAction: 'Surfaces budget signals early in follow-up, flagging leads with clear budget as higher priority for human follow-up.' },
+  { letter: 'A', word: 'Authority', question: 'Are they the decision maker?', aiAction: 'Identifies whether the contact can say yes, or needs to involve someone else before a real conversation makes sense.' },
+  { letter: 'N', word: 'Need', question: 'Do they actually need what you offer?', aiAction: 'Qualifies based on the specific problem described during intake, pulled from the AI voice receptionist conversation automatically.' },
+  { letter: 'T', word: 'Timeline', question: 'When are they looking to move?', aiAction: 'Separates immediate opportunities from longer-term nurture candidates so your team knows which conversations to prioritize today.' },
 ]
 
 export default function WhatIsAiSalesAssistantPage() {
@@ -138,17 +138,15 @@ export default function WhatIsAiSalesAssistantPage() {
           {/* BANT table */}
           <div className="mb-16">
             <div className="rounded-[20px] overflow-hidden border border-[#e8e8ed]">
-              <div className="grid grid-cols-4 bg-[#f5f5f7] border-b border-[#e8e8ed] px-6 py-4 gap-3">
+              <div className="grid grid-cols-3 bg-[#f5f5f7] border-b border-[#e8e8ed] px-6 py-4 gap-3">
                 <span className="text-[11px] font-bold uppercase tracking-[0.15em] text-[#18b5d8]">Letter</span>
                 <span className="text-[11px] font-bold uppercase tracking-[0.15em] text-[#999]">Stands For</span>
-                <span className="text-[11px] font-bold uppercase tracking-[0.15em] text-[#999]">What It Asks</span>
                 <span className="text-[11px] font-bold uppercase tracking-[0.15em] text-[#999]">How AI Surfaces It</span>
               </div>
               {bantFramework.map((row, i) => (
-                <div key={row.letter} className={`grid grid-cols-4 gap-3 px-6 py-5 border-b border-[#f0f0f0] last:border-0 ${i % 2 === 1 ? 'bg-[#fafafa]' : 'bg-white'}`}>
+                <div key={row.letter} className={`grid grid-cols-3 gap-3 px-6 py-5 border-b border-[#f0f0f0] last:border-0 ${i % 2 === 1 ? 'bg-[#fafafa]' : 'bg-white'}`}>
                   <div className="flex items-center justify-center w-10 h-10 rounded-full bg-[#18b5d8] text-white font-bold text-[16px] shrink-0">{row.letter}</div>
                   <p className="text-[14px] font-bold text-[#0a0a0a] self-center">{row.word}</p>
-                  <p className="text-[13px] text-[#555] leading-relaxed self-center">{row.question}</p>
                   <p className="text-[13px] text-[#555] leading-relaxed self-center">{row.aiAction}</p>
                 </div>
               ))}
@@ -168,7 +166,7 @@ export default function WhatIsAiSalesAssistantPage() {
               Why does this work? Because people convince themselves more readily than they are convinced by others. When a prospect describes the problem in their own words, they own it. By the time your closer gets on the phone, the prospect has already sold themselves on why the problem needs solving.
             </p>
             <p>
-              The AI Sales Assistant uses Sandler-style discovery in its follow-up sequences. Instead of sending &ldquo;Just checking in, are you still interested?&rdquo;, it asks questions like: &ldquo;What has this been costing you in time or missed revenue?&rdquo; or &ldquo;What happens if this does not get fixed before summer?&rdquo; The answers warm the lead and give your closer a roadmap before they ever pick up the phone.
+              The AI Sales Assistant uses Sandler-style discovery in its follow-up sequences — asking the prospect to articulate their own pain rather than pushing a pitch. By the time your closer gets on the phone, the prospect has already described what the problem is costing them, confirmed their urgency, and expressed why they need a solution. Your closer walks into a warm conversation, not a cold one.
             </p>
 
             <h2 className="text-[26px] font-bold text-[#0a0a0a] mt-8 mb-4">What your human team actually does</h2>

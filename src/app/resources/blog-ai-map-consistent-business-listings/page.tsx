@@ -58,12 +58,7 @@ export default function Page() {
    <p>Industry research shows that across major listing platforms, a significant share of local business data contains at least one inaccuracy, wrong hours, outdated phone numbers, mismatched addresses.<sup>1</sup> Think of it like this: If you ask three friends for the location of a new restaurant and they all give you different street names, are you going to go? Probably not. AI works the same way. Consistency creates <strong>trust</strong> in the eyes of the algorithm.</p>
 
    <h3>What AI Looks For in Your Listings</h3>
-   <ul>
-    <li><strong>NAP Consistency:</strong> Name, Address, and Phone number must be identical everywhere. Not &ldquo;St.&rdquo; in one place and &ldquo;Street&rdquo; in another.</li>
-    <li><strong>Operating Hours:</strong> This is a huge trust signal. If your hours are inconsistent, AI won&rsquo;t risk sending a customer to a closed door.</li>
-    <li><strong>Category Accuracy:</strong> Are you a &ldquo;Lawyer,&rdquo; an &ldquo;Attorney,&rdquo; or a &ldquo;Legal Service&rdquo;? Pick one and stick to it.</li>
-    <li><strong>Structured Data:</strong> This is the hidden code (Schema markup) that tells AI exactly what your business does.</li>
-   </ul>
+   <p>AI cross-references your business name, address, phone number, hours, and category across dozens of sources to build a single confident picture of who you are. The gap between what AI finds and what you think you have out there is almost always larger than expected. Most businesses have accumulated inconsistencies across old directory listings, outdated category selections, and name variations they never thought to standardize — each one quietly suppressing AI recommendations without any visible warning sign.</p>
    <p>Want to see how you currently stack up? You can grab a <Link href="/free-report">free AI Audit</Link> that shows exactly how the AI sees your business right now.</p>
 
    <Image

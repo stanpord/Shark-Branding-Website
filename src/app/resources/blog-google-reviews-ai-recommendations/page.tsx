@@ -45,9 +45,9 @@ export default function Page() {
    <p>When you respond quickly, you send a strong message: your business is paying attention. You&rsquo;re active. You&rsquo;re credible. A fast response helps in two big ways:</p>
    <ol>
     <li><strong>It shows freshness and activity:</strong> AI trusts businesses that look current and engaged.</li>
-    <li><strong>It adds context:</strong> Your response can reinforce your services, city, and customer outcome in plain language.</li>
+    <li><strong>It adds context:</strong> Your response can reinforce the specific service, the location, and the customer outcome — giving AI concrete data it can use to match your business to future queries.</li>
    </ol>
-   <p>So instead of replying with &ldquo;Thanks for the review,&rdquo; try something stronger: <em>&ldquo;Thanks for trusting us with your emergency AC repair in Miami. We&rsquo;re glad we could get your system running again so quickly.&rdquo;</em> Short. Clear. Helpful. AI can read that. Customers can too.</p>
+   <p>The gap between a response that strengthens your AI signals and one that does nothing is not about length or formality. It is about specificity. Generic acknowledgments tell AI very little. Responses that reflect the actual service performed and the actual result tell AI almost everything it needs to match your business to similar future queries.</p>
 
    <h2>What Makes a Review AI-Readable</h2>
    <p>Not all reviews carry equal weight with AI. The difference between a review that actively feeds an AI recommendation and one that barely registers comes down to specificity: the specific service performed, the specific location served, and the specific result the customer experienced. Vague praise tells AI very little about when and where to recommend your business. Detailed, context-rich feedback tells it almost everything it needs.</p>
@@ -82,13 +82,7 @@ export default function Page() {
 
    <h2>Is Your Business Ready for AI Visibility?</h2>
    <p>The rules have changed. First, you optimized for people. Then you optimized for search engines. Now you need to optimize for the AI systems guiding people toward a decision.</p>
-   <p>Ask yourself:</p>
-   <ul>
-    <li>Can AI clearly tell what services you offer?</li>
-    <li>Can it connect you to the right city or service area?</li>
-    <li>Can it see real customer outcomes in your reviews?</li>
-    <li>Are you responding in <strong>under 24 hours</strong> and reinforcing trust signals?</li>
-   </ul>
+   <p>The question worth asking honestly: if an AI pulled all the publicly available information about your business right now, would it find a clear, consistent picture of what you do, where you do it, and what results customers experience? Most businesses discover through an actual audit that the answer is no — and that the gap between what they think their AI visibility looks like and what it actually looks like is significant.</p>
    <p>Shark Branding Solutions is an AI Visibility agency that acts as the bridge between your business and the AI systems shaping discovery. We help small to mid-sized businesses become <strong>AI-ready</strong> by turning reviews, business data, and response habits into signals that AI can understand, trust, and recommend. If you want to know where your review signals stand today, <Link href="/free-report" className="text-[#18b5d8] hover:underline">our free AI visibility report</Link> gives you the full picture. And if you&rsquo;re ready to build a review profile that actually works for you in AI-driven search, <Link href="/services" className="text-[#18b5d8] hover:underline">see what our team does</Link> for businesses like yours.</p>
 
    <hr />

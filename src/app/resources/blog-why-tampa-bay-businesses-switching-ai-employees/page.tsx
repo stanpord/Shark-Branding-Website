@@ -156,16 +156,16 @@ export default function BlogWhySwitchingPage() {
             2. Google reviews are now a primary ranking signal, and most businesses are losing the race
           </h2>
           <p className="text-[17px] text-[#333] leading-relaxed mb-6">
-            Businesses with more than 50 Google reviews convert at 2.7 times the rate of businesses with fewer than 10. Review count and recency are primary signals in local search rankings and in the AI-generated responses that now appear at the top of Google for searches like &ldquo;best HVAC company Wesley Chapel&rdquo; or &ldquo;general contractor near me Tampa Bay.&rdquo; The specific mechanics of how Google reviews feed AI recommendations are covered in our <Link href="/resources/blog-google-reviews-ai-recommendations" className="text-[#18b5d8] hover:underline">guide to Google reviews and AI recommendations</Link>.
+            Review count and recency are primary signals in local search rankings and in the AI-generated responses that now appear at the top of Google for searches like &ldquo;best HVAC company Wesley Chapel&rdquo; or &ldquo;general contractor near me Tampa Bay.&rdquo; The businesses that dominate those AI recommendations have a consistent review velocity that compounds over time — and a significant gap between themselves and the competitors who are still collecting reviews by accident. The specific mechanics of how Google reviews feed AI recommendations are covered in our <Link href="/resources/blog-google-reviews-ai-recommendations" className="text-[#18b5d8] hover:underline">guide to Google reviews and AI recommendations</Link>.
           </p>
           <p className="text-[17px] text-[#333] leading-relaxed mb-6">
             The problem is not that businesses don&rsquo;t want reviews. The problem is that asking for them manually is awkward, inconsistent, and easy to forget when the crew has already moved on to the next job. Most service businesses collect four to six reviews per year by accident, when a customer feels strongly enough to leave one without being asked.
           </p>
           <p className="text-[17px] text-[#333] leading-relaxed mb-6">
-            An AI Reputation Specialist changes the math entirely. Within two hours of every completed job, a personalized SMS goes out to the customer with a direct link to your Google page. If there is no response in 48 hours, a second message goes out. Every review that comes in, five stars or one, gets a brand-voice response within two hours.
+            An AI Reputation Specialist changes the math entirely. Review requests go out automatically after completed jobs, in your brand voice, while the experience is still fresh. Every review that comes in gets a response — five stars or one — without anyone on your team having to manage the queue.
           </p>
           <p className="text-[17px] text-[#333] leading-relaxed mb-12">
-            A service business completing 15 jobs per week, with a 35 percent review response rate, adds 5 to 6 new reviews per week. In three months, a business that started with 20 reviews has 80 or more, moving from invisible to dominant in their local search category.
+            The compounding effect is what most business owners underestimate. A consistent review velocity, maintained over months, builds a gap between you and competitors that is very difficult to close without the same infrastructure. Most businesses that do this correctly go from invisible to dominant in their local search category within a quarter — not because the process is complicated, but because they are the only ones doing it at all.
           </p>
 
           {/* Reason 3 */}

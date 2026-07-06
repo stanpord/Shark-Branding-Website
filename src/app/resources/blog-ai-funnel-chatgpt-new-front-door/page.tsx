@@ -73,16 +73,10 @@ export default function Page() {
    />
 
    <h3>3. Conversational Content</h3>
-   <p>Stop writing for robots and start writing for humans, because that&rsquo;s how AI learns. Use natural language. Answer the specific, &ldquo;long-tail&rdquo; questions your customers are actually asking.</p>
+   <p>AI learns from content written the way customers actually talk, not the way marketing copy is written. The gap between content AI can extract and cite versus content AI skips entirely is not about length or keyword density. It is about whether the content directly answers a real question, with enough specificity that AI can surface it confidently. Most business websites were not written with this in mind. That is a different problem than traditional SEO, and it requires a different approach.</p>
 
    <h2>Is Your &ldquo;Front Door&rdquo; Locked?</h2>
-   <p>Right now, a potential customer is asking ChatGPT for a recommendation in your industry.</p>
-   <ul>
-    <li>Is the AI mentioning your name?</li>
-    <li>Is it citing your recent successes?</li>
-    <li>Or is it handing your leads over to your biggest competitor on a silver platter?</li>
-   </ul>
-   <p>The AI Funnel is already here. It&rsquo;s not a &ldquo;future&rdquo; trend; it&rsquo;s the current reality for hundreds of millions of active users. If you aren&rsquo;t optimizing for AI, you&rsquo;re basically closing your front door and hoping people still know how to use a phone book.</p>
+   <p>Right now, a potential customer is asking ChatGPT for a recommendation in your industry. The AI is giving them two or three names. The businesses on that list were not there by accident. They built a data profile — across their listings, their reviews, their content, and their structured data — that gave AI enough confidence to recommend them. The businesses not on that list are losing leads they never even knew were available. The AI Funnel is already here, and the window to establish your position in it is narrowing every month.</p>
 
    <Image
     src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&h=480&q=80"

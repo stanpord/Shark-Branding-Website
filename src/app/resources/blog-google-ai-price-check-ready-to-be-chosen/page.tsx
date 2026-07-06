@@ -72,19 +72,19 @@ export default function Page() {
    />
 
    <h2>What &ldquo;Ready to Be Chosen&rdquo; Actually Looks Like</h2>
-   <p>Being chosen by AI-mediated discovery isn&rsquo;t about having the flashiest website or the biggest ad budget. It&rsquo;s about building a digital presence that AI can read, trust, and confidently recommend. Here&rsquo;s the checklist:</p>
+   <p>Being chosen by AI-mediated discovery is not about having the flashiest website or the biggest ad budget. It is about building a digital presence that AI can read, trust, and confidently recommend. The businesses that consistently land at the top of AI-generated shortlists have four things working together:</p>
 
    <h3>Data Completeness</h3>
-   <p>Every field in your Google Business Profile should be filled in: hours (including holiday hours), services list, service areas, Q&amp;A, photos, and business description. Incomplete profiles send an uncertainty signal to AI models.</p>
+   <p>AI builds its recommendation confidence from the completeness and accuracy of your business data across every touchpoint it indexes. Incomplete or inconsistent profiles send an uncertainty signal that AI routes around. Most businesses have more gaps in their profile data than they realize — and those gaps compound across platforms.</p>
 
    <h3>Response Infrastructure</h3>
-   <p>You need a system that handles AI-initiated outreach 24/7. This can be a well-configured booking tool, a chatbot on your website, or an automated pricing response via your GBP messaging feature. The specific tool matters less than having <em>something</em> that responds before your competitor does.</p>
+   <p>AI-initiated outreach does not wait for business hours. Without a system that responds at any hour, you are invisible the moment an AI reaches out to verify your availability. The specific tool matters less than having infrastructure that is actually running when the inquiry arrives.</p>
 
-   <h3>Pricing Transparency</h3>
-   <p>You don&rsquo;t need a full price list. But a &ldquo;starting from&rdquo; price for your core services gives AI the data point it needs to include you in a comparison. Think of it as making it easy for the AI to advocate for you.</p>
+   <h3>Pricing Clarity</h3>
+   <p>AI needs enough pricing data to include you in a comparison. Businesses that give AI nothing to work with get left out of the summary — not because their service is worse, but because the AI cannot make a comparison without a data point. The bar here is lower than most people think, but crossing it requires a deliberate choice.</p>
 
    <h3>Review Velocity</h3>
-   <p>A steady flow of recent reviews, not just a historical pile from five years ago, shows AI that your business is active, trusted, and delivering results right now. The quality and structure of those reviews matters as much as the volume, a point we cover in depth in our post on <Link href="/resources/blog-google-reviews-ai-recommendations" className="text-[#18b5d8] hover:underline">turning Google reviews into AI recommendations</Link>.</p>
+   <p>A steady flow of recent reviews signals to AI that your business is active, trusted, and delivering results right now — not just historically. The quality and structure of those reviews matters as much as the count, a point we cover in depth in our post on <Link href="/resources/blog-google-reviews-ai-recommendations" className="text-[#18b5d8] hover:underline">turning Google reviews into AI recommendations</Link>.</p>
 
    <Image
     src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&h=480&q=80"
