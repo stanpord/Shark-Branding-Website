@@ -1,7 +1,9 @@
 User-agent: *
 Allow: /
+Disallow: /api/
+Disallow: /_next/
 
-# AI search crawlers — allow all for citation eligibility
+# AI search crawlers — explicitly allowed for citation eligibility
 User-agent: GPTBot
 Allow: /
 
@@ -17,9 +19,6 @@ Allow: /
 User-agent: ClaudeBot
 Allow: /
 
-User-agent: anthropic-ai
-Allow: /
-
 User-agent: Google-Extended
 Allow: /
 
@@ -28,5 +27,18 @@ Allow: /
 
 User-agent: Googlebot
 Allow: /
+
+# AI training crawlers — blocked (search crawlers above are separately allowed)
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: cohere-ai
+Disallow: /
 
 Sitemap: https://sharkbrandingsolutions.com/sitemap.xml
