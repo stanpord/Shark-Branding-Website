@@ -118,8 +118,8 @@ const pricingObjections = [
     a: "No. There's no dashboard to log into, no software to learn, no algorithm to game. This is hands-on consulting backed by a proven framework. Done For You and Enterprise mean our team does the work. Self-Guided means you execute the same framework with clear instructions at every step.",
   },
   {
-    q: "What if I'm not technical?",
-    a: "You don't need to be. The Done For You and Enterprise plans require nothing from you except a 30-minute onboarding call. Even the Self-Guided Toolkit is built for business owners, not developers — every phase has plain-English instructions and templates.",
+    q: "How does this integrate with our existing stack?",
+    a: "Enterprise onboarding includes a technical discovery call where we map your existing tools, CRM, and reporting workflows. For Done For You, there's nothing to integrate — we work directly with your GBP, citation platforms, and content layer. No new software required on your end.",
   },
   {
     q: "How is this different from our current agency?",

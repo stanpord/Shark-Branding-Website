@@ -11,7 +11,7 @@ const structuredData = {
       legalName: "Shark Branding Solutions LLC",
       url: "https://sharkbrandingsolutions.com",
       logo: "https://sharkbrandingsolutions.com/logo.webp",
-      description: "AI employees and AI visibility consulting for Tampa Bay local businesses. Automate lead follow-up, review management, and appointment booking, and get found on ChatGPT, Google AI, and Gemini.",
+      description: "Shark AI Solutions helps regional and multi-location businesses get found and recommended by ChatGPT, Google AI Overviews, Perplexity, and Gemini. AI visibility and automation at scale.",
       foundingDate: "2022",
       address: {
         "@type": "PostalAddress",
@@ -234,7 +234,7 @@ export default function AboutPage() {
               Before founding Shark AI Solutions, Michelle observed a consistent pattern: talented, hardworking business owners were losing customers not because of their product or service, but because they couldn&rsquo;t be found. As AI search platforms changed how buyers discover businesses, the gap between visible and invisible grew wider, and she built a firm to close it.
             </p>
             <p className="body-copy text-white/60 leading-relaxed">
-              Based in Wesley Chapel, Michelle works directly with clients across Lutz, Land O&rsquo; Lakes, St. Petersburg, and the wider Tampa Bay area, bringing enterprise-level AI strategy to local businesses that deserve to compete.
+              Based in Wesley Chapel, Michelle works with regional and multi-location businesses across the country, bringing enterprise-level AI visibility strategy to organizations ready to own their market.
             </p>
           </div>
         </div>

@@ -130,7 +130,7 @@ export default function Home() {
             </Link>
           </div>
           <p className="text-[13px] text-[#999] tracking-wide">
-            Wesley Chapel · Lutz · Land O' Lakes · St. Petersburg · Tampa
+            Serving regional and multi-location businesses nationwide
           </p>
         </div>
       </section>
@@ -369,7 +369,7 @@ export default function Home() {
               Your business runs 24/7. Your team shouldn't have to.
             </h2>
             <p className="text-[16px] text-[#555] mt-5 max-w-[520px] mx-auto">
-              AI employees handle lead follow-up, review management, content, and bookings — automatically, while you focus on the work that actually requires you.
+              AI employees handle lead follow-up, review management, content, and bookings — automatically, so your team stays focused on high-value work and pipeline growth.
             </p>
           </div>
 
