@@ -146,9 +146,6 @@ export default function AuditModal() {
             <h2 className="text-[22px] font-bold text-[#0a0a0a] leading-tight mb-1">
               See where your business stands.
             </h2>
-            <p className="text-[14px] text-[#6e6e73] mb-2">
-              Takes 60 seconds. Reviewed with you personally. No commitment.
-            </p>
           </div>
 
           <div ref={containerRef} className="px-4 pb-8" />
