@@ -1,8 +1,8 @@
 # Shark AI Solutions
 
-> AI Visibility and AI Employees for local businesses in Tampa Bay, Florida. We help businesses get recommended by ChatGPT, Google AI Overviews, Gemini, and Perplexity — without paid advertising.
+> AI Visibility and AI Employees for regional and multi-location businesses. We help businesses get recommended by ChatGPT, Google AI Overviews, Gemini, and Perplexity — without paid advertising.
 
-Shark AI Solutions (formerly Shark Branding Solutions) is an AI consulting firm based in Wesley Chapel, FL. We are not a marketing agency. We specialize in Generative Engine Optimization (GEO), AI employee deployment, and citation-authority building for local service businesses. Our mission: every great business deserves to be found by the right people, at the right moment, on every platform.
+Shark AI Solutions (formerly Shark Branding Solutions) is an AI consulting firm based in Wesley Chapel, FL, serving businesses nationally. We are not a marketing agency. We specialize in Generative Engine Optimization (GEO), AI employee deployment, and citation-authority building for service businesses and multi-location brands. Our mission: every great business deserves to be found by the right people, at the right moment, on every platform.
 
 ## Services
 
@@ -54,7 +54,7 @@ Josh designed the proprietary backend systems powering the firm's AI employee au
 
 ### Tiffany Fancher — Chief Operating Officer
 
-Tiffany leads operations for Shark AI Solutions.
+Tiffany Fancher is the Chief Operating Officer of Shark AI Solutions, responsible for internal operations, client delivery systems, and team coordination. She oversees the firm's operational infrastructure across both AI visibility and AI employee service lines.
 
 ## Partnerships
 
@@ -84,17 +84,43 @@ Tiffany leads operations for Shark AI Solutions.
 
 ## Resources
 
-- [Resources Hub](https://sharkbrandingsolutions.com/resources): Original articles on AI search, GEO vs. SEO, buyer discovery, the AI funnel, review strategy, and local AI visibility.
-- GEO vs SEO — Why AI visibility is different from search rankings: https://sharkbrandingsolutions.com/resources/blog-seo-old-school-geo-ai-shift
-- The AI Funnel — Why ChatGPT is the new front door: https://sharkbrandingsolutions.com/resources/blog-ai-funnel-chatgpt-new-front-door
-- How consistent business listings drive AI recommendations: https://sharkbrandingsolutions.com/resources/blog-ai-map-consistent-business-listings
-- Google Reviews as AI visibility signals: https://sharkbrandingsolutions.com/resources/blog-google-reviews-ai-recommendations
-- The 24-hour rule for local trust and AI: https://sharkbrandingsolutions.com/resources/blog-24-hour-rule-local-trust-ai
-- What is an AI employee: https://sharkbrandingsolutions.com/resources/blog-what-is-an-ai-employee
-- AI receptionist vs. human receptionist: https://sharkbrandingsolutions.com/resources/blog-ai-receptionist-vs-human-receptionist
-- How to appear in Google AI Overviews: https://sharkbrandingsolutions.com/resources/blog-how-to-appear-in-google-ai-overviews
-- Why AI visibility is not about your website: https://sharkbrandingsolutions.com/resources/blog-ai-visibility-not-your-website
-- End of local SEO — AI visibility takes over: https://sharkbrandingsolutions.com/resources/blog-end-of-local-seo-ai-visibility
+[Resources Hub](https://sharkbrandingsolutions.com/resources): Original articles on AI search, GEO vs. SEO, buyer discovery, the AI funnel, review strategy, and AI visibility for businesses.
+
+### AI Visibility & GEO
+- [Why Your Business Needs GEO for the AI Search Shift](https://sharkbrandingsolutions.com/resources/blog-seo-old-school-geo-ai-shift)
+- [How Local Businesses Get Recommended in Google AI Overviews](https://sharkbrandingsolutions.com/resources/blog-how-to-appear-in-google-ai-overviews)
+- [Most of Your AI Visibility Has Nothing to Do With Your Website](https://sharkbrandingsolutions.com/resources/blog-ai-visibility-not-your-website)
+- [The End of Local SEO: What It Means for Your Business](https://sharkbrandingsolutions.com/resources/blog-end-of-local-seo-ai-visibility)
+- [AIO, GEO, and AEO for Businesses](https://sharkbrandingsolutions.com/resources/blog-aio-aeo-geo-seo-wesley-chapel)
+- [Consistent Listings: The Secret to Being Found by AI](https://sharkbrandingsolutions.com/resources/blog-ai-map-consistent-business-listings)
+
+### AI Funnel & Buyer Discovery
+- [ChatGPT Is the New Front Door for Your Customers](https://sharkbrandingsolutions.com/resources/blog-ai-funnel-chatgpt-new-front-door)
+- [ChatGPT & Gemini: How AI Reshapes the Path to Purchase](https://sharkbrandingsolutions.com/resources/blog-ai-funnel-chatgpt-gemini-path-to-purchase)
+- [The End of Phone Tag: Google AI Now Checks Prices](https://sharkbrandingsolutions.com/resources/blog-end-of-phone-tag-google-ai-check-prices)
+- [Google AI Price Check: Is Your Business Ready?](https://sharkbrandingsolutions.com/resources/blog-google-ai-price-check-ready-to-be-chosen)
+
+### Reviews & Trust Signals
+- [Turning Google Reviews Into AI Recommendations](https://sharkbrandingsolutions.com/resources/blog-google-reviews-ai-recommendations)
+- [The 24-Hour Rule: AI Review Responses for Local Trust](https://sharkbrandingsolutions.com/resources/blog-24-hour-rule-local-trust-ai)
+- [AI Review Responses: Mastering Found, Trusted, Chosen](https://sharkbrandingsolutions.com/resources/blog-trusted-ai-review-responses)
+
+### AI Employees
+- [AI Employees Explained: What They Do](https://sharkbrandingsolutions.com/resources/blog-what-is-an-ai-employee)
+- [AI Receptionist vs. Human Receptionist](https://sharkbrandingsolutions.com/resources/blog-ai-receptionist-vs-human-receptionist)
+- [What Is an AI Voice Receptionist?](https://sharkbrandingsolutions.com/resources/blog-what-is-ai-voice-receptionist)
+- [AI Answering Service vs. Live Answering Service](https://sharkbrandingsolutions.com/resources/blog-ai-answering-service-vs-live-answering-service)
+- [What Is an AI CRM (And How Is It Different From HubSpot)?](https://sharkbrandingsolutions.com/resources/blog-what-is-ai-crm-vs-hubspot)
+- [What Is an AI Sales Assistant?](https://sharkbrandingsolutions.com/resources/blog-what-is-ai-sales-assistant-bant-sandler)
+- [What Is an AI Sales Manager?](https://sharkbrandingsolutions.com/resources/blog-what-is-ai-sales-manager)
+- [Why Businesses Are Switching to AI Employees in 2026](https://sharkbrandingsolutions.com/resources/blog-why-tampa-bay-businesses-switching-ai-employees)
+
+### Automation & Operations
+- [5 Things Businesses Should Automate First (2026)](https://sharkbrandingsolutions.com/resources/blog-5-automations-wesley-chapel-businesses)
+
+### Pricing & Partnership
+- [How Much Does the Full AI Suite Cost?](https://sharkbrandingsolutions.com/resources/blog-full-ai-suite-pricing)
+- [Shark AI Solutions & North Tampa Bay Chamber Partnership](https://sharkbrandingsolutions.com/resources/blog-ntbc-ai-ready-partnership)
 
 ## Contact
 
@@ -102,4 +128,5 @@ Tiffany leads operations for Shark AI Solutions.
 - Phone: (727) 513-3955
 - Email: info@sharkbrandingsolutions.com
 - Location: 27251 Wesley Chapel Blvd., Suite B14 #805, Wesley Chapel, FL 33544
-- Service area: Wesley Chapel, Lutz, Land O' Lakes, St. Petersburg, Tampa
+- Headquarters: Wesley Chapel, FL
+- Service area: National (headquartered in Wesley Chapel, FL)
