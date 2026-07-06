@@ -143,53 +143,57 @@ export default function HowToAppearInGoogleAiOverviewsPage() {
 
             <h2 className="text-[26px] font-bold text-[#0a0a0a] mt-8 mb-4">The five local business signals that matter most</h2>
 
+            <p className="mb-6">
+              Through auditing hundreds of local businesses, we&apos;ve identified five categories of signals that consistently separate businesses appearing in AI Overviews from those that don&apos;t. Knowing these signals exist is the easy part. What&apos;s harder is understanding how they interact, how they&apos;re measured, and why fixing one without the others rarely moves the needle.
+            </p>
+
             <div className="space-y-6 mb-6">
 
               <div className="bg-[#f5f5f7] rounded-[14px] p-7 border border-[#e8e8ed]">
                 <h3 className="text-[18px] font-bold text-[#0a0a0a] mb-3">Google Business Profile completeness and activity</h3>
                 <p className="text-[15px] text-[#555] leading-relaxed">
-                  Your Google Business Profile is the single most important data source for local AI Overviews. A complete, active GBP, with accurate categories, full service descriptions, updated hours, recent photos, and regular posts, signals to Google that this business is real, active, and authoritative in its area. A dormant GBP with missing information is one of the most common reasons a well-ranked local business does not appear in AI Overview recommendations.
+                  Your Google Business Profile is the single most important local data source for AI Overviews. The model uses it to verify that your business is real, active, and authoritative in its category. Most GBPs we audit have gaps that aren&apos;t visible to the owner but are immediately apparent to the AI, and those gaps are often the first reason a well-ranked business doesn&apos;t appear in recommendations.
                 </p>
               </div>
 
               <div className="bg-[#f5f5f7] rounded-[14px] p-7 border border-[#e8e8ed]">
                 <h3 className="text-[18px] font-bold text-[#0a0a0a] mb-3">Review volume, recency, and response rate</h3>
                 <p className="text-[15px] text-[#555] leading-relaxed">
-                  Google&apos;s model reads reviews as trust signals. Volume matters, a business with 200 reviews is more confident to recommend than one with 12. Recency matters, consistent new reviews signal ongoing activity. Response rate matters, engaging with reviews shows professionalism. The language in reviews also influences which queries the AI associates your business with. Learn more about <Link href="/resources/blog-google-reviews-ai-recommendations" className="text-[#18b5d8] hover:underline">how Google reviews become AI recommendations</Link>.
+                  Google&apos;s model uses reviews as layered trust signals, and it reads more dimensions of your review profile than most businesses realize. It&apos;s not just about the number of stars. The way reviews accumulate over time, the language customers use, and how the business responds all factor into which queries the AI associates your business with. Learn more about <Link href="/resources/blog-google-reviews-ai-recommendations" className="text-[#18b5d8] hover:underline">how Google reviews become AI recommendations</Link>.
                 </p>
               </div>
 
               <div className="bg-[#f5f5f7] rounded-[14px] p-7 border border-[#e8e8ed]">
-                <h3 className="text-[18px] font-bold text-[#0a0a0a] mb-3">NAP consistency across directories</h3>
+                <h3 className="text-[18px] font-bold text-[#0a0a0a] mb-3">Citation consistency across directories</h3>
                 <p className="text-[15px] text-[#555] leading-relaxed">
-                  NAP stands for Name, Address, and Phone number. When your business information is consistent across 50 or more directories, Google, Yelp, Bing, Apple Maps, Facebook, and industry-specific listings, the AI model can confidently attribute that entity to a real, verifiable location. Inconsistencies across platforms lower the model&apos;s confidence and reduce your chances of appearing. See how <Link href="/resources/blog-ai-map-consistent-business-listings" className="text-[#18b5d8] hover:underline">consistent business listings become your map in the AI era</Link>.
+                  AI models cross-reference dozens of data sources to build confidence that your business entity is real and correctly understood. When information varies across platforms, even subtle differences, the model&apos;s confidence drops. Most businesses have more inconsistencies across the web than they know about, and those inconsistencies compound over time. See how <Link href="/resources/blog-ai-map-consistent-business-listings" className="text-[#18b5d8] hover:underline">consistent business listings become your map in the AI era</Link>.
                 </p>
               </div>
 
               <div className="bg-[#f5f5f7] rounded-[14px] p-7 border border-[#e8e8ed]">
                 <h3 className="text-[18px] font-bold text-[#0a0a0a] mb-3">Structured data on your website</h3>
                 <p className="text-[15px] text-[#555] leading-relaxed">
-                  Structured data, specifically Schema.org markup, gives Google a direct machine-readable description of your business, services, location, and reputation. <code className="bg-[#e8e8ed] px-1 py-0.5 rounded text-[13px]">LocalBusiness</code> schema, <code className="bg-[#e8e8ed] px-1 py-0.5 rounded text-[13px]">FAQPage</code> schema, and <code className="bg-[#e8e8ed] px-1 py-0.5 rounded text-[13px]">Service</code> schema each remove a layer of ambiguity that would otherwise cause the model to guess, or ignore your business entirely. Without it, the model has to infer everything from unstructured text, and it often gets it wrong.
+                  Your website communicates to humans through copy and design. It communicates to AI through structured data. Without machine-readable markup, the model has to infer what your business does, where it operates, and who it serves from unstructured text. It often infers incorrectly, or not at all. Structured data removes that ambiguity, but only when it&apos;s implemented correctly and kept current.
                 </p>
               </div>
 
               <div className="bg-[#f5f5f7] rounded-[14px] p-7 border border-[#e8e8ed]">
                 <h3 className="text-[18px] font-bold text-[#0a0a0a] mb-3">Citability of your web content</h3>
                 <p className="text-[15px] text-[#555] leading-relaxed">
-                  AI Overviews cite specific passages from your content, not just your homepage. Passages that are self-contained and directly answer a specific question are significantly more likely to be cited. That means writing content in the form of clear questions and answers, not marketing copy that buries the point. A page that opens with a direct answer to a common customer question is a far better AI citation target than one that starts with a decade of experience and a list of service areas.
+                  AI Overviews don&apos;t cite homepages. They cite specific passages that the model can extract and attribute with confidence. Most business websites aren&apos;t written to be citable, they&apos;re written to convert a human reader. Those are different problems with different solutions, and confusing the two is one of the most common reasons content-heavy sites still don&apos;t appear in AI recommendations.
                 </p>
               </div>
 
             </div>
 
-            <h2 className="text-[26px] font-bold text-[#0a0a0a] mt-4 mb-4">Why most businesses struggle to get this right</h2>
+            <h2 className="text-[26px] font-bold text-[#0a0a0a] mt-4 mb-4">Why getting this right is harder than it looks</h2>
 
             <p>
-              The five signals above are interconnected. A complete GBP matters less if your citation data is inconsistent. Structured data on your website matters less if your GBP is dormant. Review volume matters less if the language in those reviews does not align with the queries you want to appear for. Getting these signals working together requires both technical implementation and ongoing management, not a one-time fix.
+              The five signals above don&apos;t operate independently. Each one affects how the model interprets the others. A strong GBP matters less if your citation data is inconsistent. Structured data matters less if the model can&apos;t trust your entity. Review signals matter less if they don&apos;t align with the queries you need to appear for. The model has to trust your business before it will recommend it, and that trust is built across all five dimensions simultaneously.
             </p>
 
             <p>
-              Most businesses that try to address this piecemeal see slow or no results. The model needs to trust your entity before it will cite your content. Building that trust layer by layer, in the right sequence, with active maintenance over time, is what <Link href="/services" className="text-[#18b5d8] hover:underline">our AI visibility work</Link> is designed to do. If you want to see where your business currently stands across all five signals, our <Link href="/free-report" className="text-[#18b5d8] hover:underline">free AI visibility report</Link> tests your business against 20 or more queries and identifies the gaps.
+              Businesses that address these signals one at a time, or hand them off to tools that handle each in isolation, rarely see meaningful results. What moves the needle is a coordinated system maintained over time, not a one-time configuration. If you want to know exactly where your business stands across all five signals today, our <Link href="/free-report" className="text-[#18b5d8] hover:underline">free AI visibility audit</Link> shows you what the model sees, where the gaps are, and what it would take to close them.
             </p>
 
             <h2 className="text-[26px] font-bold text-[#0a0a0a] mt-8 mb-4">A note on timeline</h2>
