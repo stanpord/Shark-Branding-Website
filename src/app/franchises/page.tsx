@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 
+const BOOK_CALL_URL = "https://bookmenow.info/book/jstanaland/30-minutes";
+
 export const metadata: Metadata = {
   title: "Franchise Marketing Solutions | Shark AI Solutions",
   description:
@@ -229,12 +231,14 @@ export default function FranchisesPage() {
               Optimize your franchise's local digital marketing effortlessly with our advanced franchise marketing platform. Curated solutions, streamlined vendor relationships, and data-driven insights ensure comprehensive improvement across your entire network.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link
-                href="/contact"
+              <a
+                href={BOOK_CALL_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center bg-[#18b5d8] hover:bg-[#14a2c2] text-white font-bold text-[15px] px-8 py-4 rounded-full transition-colors duration-150"
               >
-                Get a demo
-              </Link>
+                Book a demo call
+              </a>
               <Link
                 href="/case-studies"
                 className="inline-flex items-center justify-center bg-white/10 hover:bg-white/20 text-white font-semibold text-[15px] px-8 py-4 rounded-full transition-colors duration-150"
@@ -390,15 +394,17 @@ export default function FranchisesPage() {
             <p className="text-[16px] text-[#6e6e73] leading-relaxed mb-6">
               Review alerts, campaign updates, and performance summaries push directly to your phone. Respond to a review, approve a post, or check a location's metrics in seconds.
             </p>
-            <Link
-              href="/contact"
+            <a
+              href={BOOK_CALL_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-1 text-[#18b5d8] font-semibold text-[15px] hover:underline"
             >
               See the mobile experience
               <svg viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4">
                 <path fillRule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clipRule="evenodd" />
               </svg>
-            </Link>
+            </a>
           </div>
           <div className="flex-1 min-w-0 w-full lg:max-w-[460px]">
             <div className="relative rounded-[20px] overflow-hidden shadow-lg">
@@ -543,12 +549,22 @@ export default function FranchisesPage() {
           <p className="text-[#8d9aab] text-[17px] leading-relaxed max-w-[500px] mx-auto mb-10">
             A 30-minute call is enough to map out a deployment plan for your network size, franchise model, and current marketing stack.
           </p>
-          <Link
-            href="/contact"
-            className="inline-flex items-center justify-center bg-[#18b5d8] hover:bg-[#14a2c2] text-white font-bold text-[16px] px-10 py-5 rounded-full transition-colors duration-150"
-          >
-            Get a demo
-          </Link>
+          <div className="flex flex-wrap items-center justify-center gap-4">
+            <a
+              href={BOOK_CALL_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center bg-[#18b5d8] hover:bg-[#14a2c2] text-white font-bold text-[16px] px-10 py-5 rounded-full transition-colors duration-150"
+            >
+              Book a demo call
+            </a>
+            <Link
+              href="/plans"
+              className="inline-flex items-center justify-center bg-white/10 hover:bg-white/20 text-white font-semibold text-[16px] px-8 py-5 rounded-full transition-colors duration-150"
+            >
+              See Enterprise pricing
+            </Link>
+          </div>
         </div>
       </section>
 

@@ -277,14 +277,22 @@ export default function PlansPage() {
                   across every market you operate. No managing vendors, no wondering if it&rsquo;s working.
                 </p>
               </div>
-              <a
-                href={BOOK_CALL_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-press block text-center bg-[#18b5d8] text-white text-[16px] font-semibold rounded-full px-6 py-4 hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 focus-visible:ring-offset-[#07141a] [touch-action:manipulation]"
-              >
-                Book a Scope Call
-              </a>
+              <div>
+                <a
+                  href={BOOK_CALL_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-press block text-center bg-[#18b5d8] text-white text-[16px] font-semibold rounded-full px-6 py-4 hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 focus-visible:ring-offset-[#07141a] [touch-action:manipulation]"
+                >
+                  Book a Scope Call
+                </a>
+                <p className="text-center text-[12px] text-white/40 mt-3">
+                  Franchise or multi-location brand?{" "}
+                  <Link href="/franchises" className="text-[#18b5d8] hover:underline">
+                    See the franchise platform →
+                  </Link>
+                </p>
+              </div>
             </div>
 
             <div className="border-t lg:border-t-0 lg:border-l border-white/10 pt-8 lg:pt-0 lg:pl-10">

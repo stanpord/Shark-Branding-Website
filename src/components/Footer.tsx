@@ -6,6 +6,7 @@ const services = [
   { href: "/services#toolkit", label: "AI Visibility Toolkit" },
   { href: "/aiemployees", label: "AI Employees" },
   { href: "/automation", label: "AI Automation" },
+  { href: "/franchises", label: "Franchises & Multi-Location" },
   { href: "/ai-assessment", label: "AI Assessment" },
   { href: "/aiemployees/roi-calculator", label: "ROI Calculator" },
   { href: "/services#workshops", label: "Workshops & Training" },

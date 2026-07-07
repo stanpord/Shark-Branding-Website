@@ -7,6 +7,7 @@ import { useState, useRef } from "react";
 const servicesDropdown = [
   { href: "/services", label: "AI Visibility", desc: "ChatGPT, Google AI, Gemini citations" },
   { href: "/automation", label: "AI Automation", desc: "Workflows that replace manual tasks" },
+  { href: "/franchises", label: "Franchises & Multi-Location", desc: "AI marketing across every location" },
   { href: "/ai-assessment", label: "AI Assessment", desc: "See where you stand in 48 hours" },
 ];
 
