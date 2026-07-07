@@ -278,23 +278,38 @@ export default function AiEmployeesDeep() {
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
               {[
                 {
-                  icon: '⚡',
+                  icon: (
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+                    </svg>
+                  ),
                   title: 'Ready within the week',
                   desc: 'Every AI employee is configured for your business, your voice, and your workflows. Most go live within 5 to 7 business days, no IT team required.',
                 },
                 {
-                  icon: '🔗',
+                  icon: (
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+                      <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+                    </svg>
+                  ),
                   title: 'Works on every channel',
                   desc: 'Phone, chat, SMS, email. Your AI employees meet customers wherever they reach out, with a consistent, professional experience every time.',
                 },
                 {
-                  icon: '🧠',
+                  icon: (
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <rect x="4" y="4" width="16" height="16" rx="2" />
+                      <rect x="9" y="9" width="6" height="6" />
+                      <path d="M9 1v3M15 1v3M9 20v3M15 20v3M1 9h3M1 15h3M20 9h3M20 15h3" />
+                    </svg>
+                  ),
                   title: 'Trained on your data',
                   desc: 'Your services, your pricing, your offer. Each AI employee is trained on your specific business data so it speaks in your voice, not a generic script.',
                 },
               ].map(cap => (
                 <div key={cap.title} className="bg-white rounded-[20px] border border-[#e5e5ea] p-7">
-                  <div className="text-[30px] mb-4">{cap.icon}</div>
+                  <div className="w-11 h-11 rounded-full bg-[#18b5d8]/10 flex items-center justify-center text-[#18b5d8] mb-4">{cap.icon}</div>
                   <h3 className="text-[17px] font-bold text-[#1d1d1f] mb-2">{cap.title}</h3>
                   <p className="text-[#6e6e73] text-[14px] leading-relaxed">{cap.desc}</p>
                 </div>
@@ -523,7 +538,11 @@ export default function AiEmployeesDeep() {
               <div className="bg-white rounded-[20px] p-6 border border-[#e5e5ea] shadow-sm demo-card ai-float">
                 {/* Incoming call UI */}
                 <div className="flex items-center gap-3 mb-5 pb-4 border-b border-[#f0f0f0]">
-                  <div className="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center text-green-600 text-[18px]">📞</div>
+                  <div className="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center text-green-600">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                    </svg>
+                  </div>
                   <div className="flex-1">
                     <p className="text-[#1d1d1f] font-bold text-[14px]">Inbound Call</p>
                     <p className="text-[#86868b] text-[12px]">(813) 555-0142 · Tampa, FL</p>
@@ -615,7 +634,11 @@ export default function AiEmployeesDeep() {
             <FadeUp delay={0}>
               <div className="bg-white rounded-[20px] p-6 border border-[#e5e5ea] shadow-sm demo-card">
                 <div className="flex items-center gap-2 mb-5">
-                  <div className="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center text-[20px]">✅</div>
+                  <div className="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center text-green-600">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                  </div>
                   <div>
                     <p className="text-[#1d1d1f] font-bold text-[14px]">Appointment Confirmed</p>
                     <p className="text-[#86868b] text-[12px]">Booked via Voice, no human needed</p>
@@ -885,12 +908,35 @@ export default function AiEmployeesDeep() {
               <div className="bg-white rounded-[20px] p-6 border border-[#e5e5ea] shadow-sm demo-card">
                 <p className="text-[#1d1d1f] font-bold text-[13px] mb-4">CRM Activity Log</p>
                 {[
-                  { icon: '📞', label: 'Call with Marcus T.', detail: 'Discussed budget · 12 min', time: 'Just now', auto: true },
-                  { icon: '📧', label: 'Follow-up email sent', detail: 'Proposal + pricing deck', time: '2h ago', auto: true },
-                  { icon: '📅', label: 'Meeting notes saved', detail: 'Demo call, ready to close', time: 'Yesterday', auto: true },
+                  {
+                    icon: (
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                      </svg>
+                    ),
+                    label: 'Call with Marcus T.', detail: 'Discussed budget · 12 min', time: 'Just now', auto: true,
+                  },
+                  {
+                    icon: (
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                        <rect x="2" y="4" width="20" height="16" rx="2" />
+                        <path d="m22 7-10 6L2 7" />
+                      </svg>
+                    ),
+                    label: 'Follow-up email sent', detail: 'Proposal + pricing deck', time: '2h ago', auto: true,
+                  },
+                  {
+                    icon: (
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                        <rect x="3" y="4" width="18" height="18" rx="2" />
+                        <path d="M16 2v4M8 2v4M3 10h18" />
+                      </svg>
+                    ),
+                    label: 'Meeting notes saved', detail: 'Demo call, ready to close', time: 'Yesterday', auto: true,
+                  },
                 ].map((row, i) => (
                   <div key={i} className="flex items-center gap-3 py-3 border-b border-[#f0f0f0] last:border-0">
-                    <div className="w-9 h-9 rounded-xl bg-[#f5f5f7] flex items-center justify-center text-[16px] shrink-0">{row.icon}</div>
+                    <div className="w-9 h-9 rounded-xl bg-[#f5f5f7] flex items-center justify-center text-[#6e6e73] shrink-0">{row.icon}</div>
                     <div className="flex-1 min-w-0">
                       <p className="text-[#1d1d1f] font-semibold text-[12px] truncate">{row.label}</p>
                       <p className="text-[#86868b] text-[11px] truncate">{row.detail}</p>
@@ -992,7 +1038,13 @@ export default function AiEmployeesDeep() {
                   </div>
                 ))}
                 <div className="mt-5 bg-white rounded-[12px] border border-[#e5e5ea] px-4 py-3 flex items-center gap-3">
-                  <span className="text-[20px]">🎯</span>
+                  <span className="w-8 h-8 rounded-full bg-[#18b5d8]/10 flex items-center justify-center text-[#18b5d8] shrink-0">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <circle cx="12" cy="12" r="10" />
+                      <circle cx="12" cy="12" r="6" />
+                      <circle cx="12" cy="12" r="2" />
+                    </svg>
+                  </span>
                   <div>
                     <p className="text-[12px] font-bold text-[#1d1d1f]">High-priority lead</p>
                     <p className="text-[11px] text-[#86868b]">Follow up within 24 hours</p>
@@ -1068,7 +1120,12 @@ export default function AiEmployeesDeep() {
             <FadeUp delay={0}>
               <div className="bg-[#f5f5f7] rounded-[20px] p-6 border border-[#e5e5ea] demo-card">
                 <div className="flex items-center gap-3 mb-5">
-                  <div className="w-9 h-9 rounded-full bg-emerald-100 flex items-center justify-center text-[18px]">🏋️</div>
+                  <div className="w-9 h-9 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-600">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <path d="M9 11l3 3L22 4" />
+                      <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
+                    </svg>
+                  </div>
                   <div>
                     <p className="text-[#1d1d1f] font-bold text-[13px]">Coaching Notes, Tyler R.</p>
                     <p className="text-[#86868b] text-[11px]">3 insights from today's call</p>
@@ -1079,24 +1136,24 @@ export default function AiEmployeesDeep() {
                     {
                       type: 'Missed opportunity',
                       note: 'Marcus said "still comparing", next time, ask who he\'s comparing and address it directly before sending a proposal.',
-                      icon: '⚠️',
                       color: 'border-orange-200 bg-orange-50',
+                      labelColor: 'text-orange-600',
                     },
                     {
                       type: 'Strong move',
                       note: 'You confirmed the decision-maker early. That saved 20 minutes of back-and-forth. Keep doing this.',
-                      icon: '✅',
                       color: 'border-emerald-200 bg-emerald-50',
+                      labelColor: 'text-emerald-600',
                     },
                     {
                       type: 'Prep for next call',
                       note: 'He mentioned the Q3 deadline twice. Lead with urgency, his install window closes in 6 weeks.',
-                      icon: '🎯',
                       color: 'border-[#18b5d8]/30 bg-[#18b5d8]/5',
+                      labelColor: 'text-[#18b5d8]',
                     },
                   ].map(c => (
                     <div key={c.type} className={`rounded-[12px] border p-3.5 ${c.color}`}>
-                      <p className="text-[10px] font-bold uppercase tracking-wide text-[#86868b] mb-1">{c.icon} {c.type}</p>
+                      <p className={`text-[10px] font-bold uppercase tracking-wide mb-1 ${c.labelColor}`}>{c.type}</p>
                       <p className="text-[12px] text-[#1d1d1f] leading-relaxed">{c.note}</p>
                     </div>
                   ))}
