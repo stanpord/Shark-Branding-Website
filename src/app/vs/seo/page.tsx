@@ -521,7 +521,7 @@ export default function VsSeoPage() {
             {[
               { label: "Why traditional SEO isn't enough anymore", href: "/resources/blog-seo-old-school-geo-ai-shift" },
               { label: "Most of your AI visibility isn't on your website", href: "/resources/blog-ai-visibility-not-your-website" },
-              { label: "AI Visibility vs. Traditional Marketing Agency", href: "/vs/marketing-agency" },
+              { label: "AI Employees vs. Salesforce AI Agents", href: "/vs/salesforce" },
             ].map((link) => (
               <Link
                 key={link.href}

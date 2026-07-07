@@ -5,6 +5,9 @@ const services = [
   { href: "/services#ai-visibility", label: "AI Business Consulting" },
   { href: "/services#toolkit", label: "AI Visibility Toolkit" },
   { href: "/aiemployees", label: "AI Employees" },
+  { href: "/automation", label: "AI Automation" },
+  { href: "/ai-assessment", label: "AI Assessment" },
+  { href: "/aiemployees/roi-calculator", label: "ROI Calculator" },
   { href: "/services#workshops", label: "Workshops & Training" },
   { href: "/free-report", label: "Free AI Audit" },
 ];
@@ -12,16 +15,20 @@ const services = [
 const company = [
   { href: "/about", label: "About Us" },
   { href: "/about#team", label: "Executive Team" },
+  { href: "/case-studies", label: "Case Studies" },
   { href: "/media", label: "Media & Press" },
-  { href: "/plans", label: "Pricing" },
+  { href: "/plans", label: "Pricing & Plans" },
+  { href: "/chamber", label: "Chamber Partnership" },
   { href: "/contact", label: "Contact" },
 ];
 
 const resources = [
+  { href: "/how-to-rank-on-chatgpt-for-local-businesses", label: "How to Rank on ChatGPT" },
   { href: "/resources/blog-seo-old-school-geo-ai-shift", label: "GEO vs. SEO" },
   { href: "/resources/blog-ai-funnel-chatgpt-new-front-door", label: "The AI Funnel" },
   { href: "/resources/blog-google-reviews-ai-recommendations", label: "Reviews & AI" },
-  { href: "/resources/blog-24-hour-rule-local-trust-ai", label: "The 24-Hour Rule" },
+  { href: "/vs/seo", label: "Shark vs. Traditional SEO" },
+  { href: "/vs/salesforce", label: "Shark vs. Salesforce" },
   { href: "/resources", label: "All Articles" },
 ];
 

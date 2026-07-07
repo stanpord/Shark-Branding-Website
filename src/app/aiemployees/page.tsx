@@ -2,13 +2,13 @@ import type { Metadata } from 'next'
 import AiEmployeesDeep from './AiEmployeesDeep'
 
 export const metadata: Metadata = {
-  title: 'AI Employees for Tampa Bay Businesses | Shark AI Solutions',
-  description: 'Five AI employees for Tampa Bay businesses: Chat Receptionist, Voice Receptionist, Reputation Specialist, AI CRM, and AI Sales Coach. Live within one week.',
+  title: 'AI Employees for Service Businesses | Shark AI Solutions',
+  description: 'Five AI employees for service businesses: Chat Receptionist, Voice Receptionist, Reputation Specialist, AI CRM, and AI Sales Coach. Live within one week.',
   alternates: { canonical: 'https://sharkbrandingsolutions.com/aiemployees' },
   robots: { index: true, follow: true },
   openGraph: {
-    title: 'AI Employees for Tampa Bay Businesses | Shark AI Solutions',
-    description: 'Five AI employees built for local Tampa Bay businesses. Chat, voice, reviews, CRM, and sales coaching, live within a week.',
+    title: 'AI Employees for Service Businesses | Shark AI Solutions',
+    description: 'Five AI employees built for service businesses. Chat, voice, reviews, CRM, and sales coaching, live within a week.',
     url: 'https://sharkbrandingsolutions.com/aiemployees',
     type: 'website',
     images: [{ url: 'https://sharkbrandingsolutions.com/logo.webp', width: 1200, height: 630, alt: 'AI Employees | Shark AI Solutions' }],
@@ -21,18 +21,11 @@ const structuredData = {
     {
       '@type': 'Service',
       '@id': 'https://sharkbrandingsolutions.com/aiemployees#service',
-      name: 'AI Employees for Tampa Bay Businesses',
-      description: 'AI employees that handle lead qualification, automated follow-up, review management, appointment booking, and sales coaching, 24/7, without adding headcount. Built and deployed for Wesley Chapel, Tampa Bay, Lutz, and Land O\'Lakes businesses.',
+      name: 'AI Employees for Service Businesses',
+      description: 'AI employees that handle lead qualification, automated follow-up, review management, appointment booking, and sales coaching, 24/7, without adding headcount. Built and deployed for service businesses nationwide.',
       url: 'https://sharkbrandingsolutions.com/aiemployees',
       provider: { '@id': 'https://sharkbrandingsolutions.com/#organization' },
-      areaServed: [
-        { '@type': 'City', name: 'Wesley Chapel' },
-        { '@type': 'City', name: 'Tampa' },
-        { '@type': 'City', name: 'Lutz' },
-        { '@type': 'City', name: 'Land O Lakes' },
-        { '@type': 'City', name: 'New Tampa' },
-        { '@type': 'City', name: 'Zephyrhills' },
-      ],
+      areaServed: { '@type': 'Country', name: 'United States' },
       serviceType: 'AI Business Automation',
     },
     {
@@ -56,8 +49,8 @@ const structuredData = {
         },
         {
           '@type': 'Question',
-          name: 'Which businesses in Wesley Chapel and Tampa Bay benefit most from AI employees?',
-          acceptedAnswer: { '@type': 'Answer', text: 'Any local service business that handles leads, bookings, reviews, or customer communication, including home services, HVAC, real estate, healthcare, legal, contractors, and professional services across Wesley Chapel, Tampa, Lutz, and Land O\'Lakes.' },
+          name: 'Which businesses benefit most from AI employees?',
+          acceptedAnswer: { '@type': 'Answer', text: 'Any service business that handles leads, bookings, reviews, or customer communication, including home services, HVAC, real estate, healthcare, legal, contractors, and professional services, whether you operate one location or many.' },
         },
         {
           '@type': 'Question',

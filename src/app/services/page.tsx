@@ -624,9 +624,6 @@ export default function ServicesPage() {
         <div className="max-w-[720px] mx-auto">
           <p className="text-[13px] text-[#7a7a7a] mb-5">Weighing your options?</p>
           <div className="flex flex-wrap items-center justify-center gap-6">
-            <Link href="/vs/marketing-agency" className="text-[14px] font-semibold text-[#1d1d1f] hover:text-[#18b5d8] motion-safe:transition-colors duration-150">
-              AI Visibility vs. Traditional Marketing Agency →
-            </Link>
             <Link href="/vs/salesforce" className="text-[14px] font-semibold text-[#1d1d1f] hover:text-[#18b5d8] motion-safe:transition-colors duration-150">
               AI Employees vs. Salesforce AI Agents →
             </Link>

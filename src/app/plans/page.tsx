@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+const ENTERPRISE_CALL_URL = "https://bookmenow.info/book/jstanaland/30-minutes";
+
 const plansSchema = {
   "@context": "https://schema.org",
   "@graph": [
@@ -8,7 +10,7 @@ const plansSchema = {
       "@type": "WebPage",
       "@id": "https://sharkbrandingsolutions.com/plans",
       url: "https://sharkbrandingsolutions.com/plans",
-      name: "Enterprise AI Visibility Plans | Shark Branding Solutions",
+      name: "Enterprise AI Visibility Plans | Shark AI Solutions",
       isPartOf: { "@id": "https://sharkbrandingsolutions.com/#website" },
       about: { "@id": "https://sharkbrandingsolutions.com/#organization" },
     },
@@ -69,7 +71,7 @@ const plansSchema = {
 };
 
 export const metadata: Metadata = {
-  title: "Enterprise AI Visibility Plans | Shark Branding Solutions",
+  title: "Enterprise AI Visibility Plans | Shark AI Solutions",
   description:
     "AI visibility management for multi-location brands and enterprise organizations. Dedicated account lead, custom scope, and managed execution across every market you serve.",
 };
@@ -209,12 +211,14 @@ export default function PlansPage() {
               ongoing management challenge — not a one-time fix. We handle it.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Link
-                href="/contact"
+              <a
+                href={ENTERPRISE_CALL_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="btn-press inline-block bg-[#18b5d8] text-white text-[16px] font-semibold rounded-full px-8 py-4 hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 focus-visible:ring-offset-[#07141a] [touch-action:manipulation]"
               >
-                Talk to Enterprise
-              </Link>
+                Book an Enterprise Scope Call
+              </a>
               <a
                 href="#plans"
                 className="btn-press inline-block text-white text-[16px] font-semibold border border-white/20 rounded-full px-8 py-4 hover:border-white/50 motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#07141a] [touch-action:manipulation]"
@@ -273,12 +277,14 @@ export default function PlansPage() {
                   across every market you operate. No managing vendors, no wondering if it&rsquo;s working.
                 </p>
               </div>
-              <Link
-                href="/contact"
+              <a
+                href={ENTERPRISE_CALL_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="btn-press block text-center bg-[#18b5d8] text-white text-[16px] font-semibold rounded-full px-6 py-4 hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 focus-visible:ring-offset-[#07141a] [touch-action:manipulation]"
               >
-                Request a Scope Call
-              </Link>
+                Book a Scope Call
+              </a>
             </div>
 
             <div className="border-t lg:border-t-0 lg:border-l border-white/10 pt-8 lg:pt-0 lg:pl-10">
@@ -452,9 +458,14 @@ export default function PlansPage() {
               <div className="grid grid-cols-4 bg-white/5">
                 <div className="px-5 py-4" />
                 <div className="px-4 py-4 text-center bg-[#18b5d8]/10">
-                  <Link href="/contact" className="text-[13px] font-semibold text-[#18b5d8] hover:text-[#1ec8ee] motion-safe:transition-colors">
-                    Request scope →
-                  </Link>
+                  <a
+                    href={ENTERPRISE_CALL_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[13px] font-semibold text-[#18b5d8] hover:text-[#1ec8ee] motion-safe:transition-colors"
+                  >
+                    Book a call →
+                  </a>
                 </div>
                 <div className="px-4 py-4 text-center">
                   <a
@@ -605,24 +616,28 @@ export default function PlansPage() {
             >
               Get My Free Visibility Audit
             </Link>
-            <Link
-              href="/contact"
+            <a
+              href={ENTERPRISE_CALL_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn-press inline-block text-white text-[17px] border border-white/20 rounded-full px-[28px] py-[14px] hover:border-white/50 motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0a0a] [touch-action:manipulation]"
             >
-              Talk to Enterprise
-            </Link>
+              Book an Enterprise Call
+            </a>
           </div>
         </div>
       </section>
 
       {/* ── Sticky mobile bar ─────────────────────────────────────── */}
       <div className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-[#18b5d8] px-4 py-3.5 shadow-[0_-4px_24px_rgba(0,0,0,0.2)]">
-        <Link
-          href="/contact"
+        <a
+          href={ENTERPRISE_CALL_URL}
+          target="_blank"
+          rel="noopener noreferrer"
           className="block text-center text-white text-[15px] font-semibold [touch-action:manipulation]"
         >
-          Talk to Enterprise →
-        </Link>
+          Book an Enterprise Call →
+        </a>
       </div>
     </>
   );

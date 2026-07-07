@@ -10,7 +10,7 @@ Shark AI Solutions (formerly Shark Branding Solutions) is an AI consulting firm 
 - [AI Employees](https://sharkbrandingsolutions.com/aiemployees): Five AI-powered employees for local businesses — Chat Receptionist (Gemma), Voice Receptionist, Reputation Specialist, AI CRM (Sales Assistant), and AI Sales Coach. Automates lead follow-up, review requests, appointment booking, and customer communication 24/7. Most clients are live within 5–7 business days.
 - [AI Visibility Toolkit](https://sharkbrandingsolutions.com/plans): Managed system covering citation consistency across 50+ directories, schema implementation, GBP optimization, review signals, and ongoing monitoring. Self-guided plan at $997/month. Done-for-you plan at $2,000/month.
 - [Automation](https://sharkbrandingsolutions.com/automation): Lead follow-up sequences, review generation, and appointment booking automations built on GoHighLevel.
-- [Free AI Visibility Report](https://sharkbrandingsolutions.com/free-report): Free 48-hour audit showing how your business appears across search, maps, reviews, and AI platforms. No commitment required. Available to Tampa Bay businesses.
+- [Free AI Visibility Report](https://sharkbrandingsolutions.com/free-report): Free 48-hour audit showing how your business appears across search, maps, reviews, and AI platforms. No commitment required. Available to businesses nationwide.
 
 ## AI Employees — Detail
 
@@ -77,10 +77,8 @@ Tiffany Fancher is the Chief Operating Officer of Shark AI Solutions, responsibl
 
 ## Comparison Pages
 
-- [AI Visibility Consulting vs. Traditional Marketing Agency](https://sharkbrandingsolutions.com/vs/marketing-agency)
 - [AI Employees vs. Salesforce AI Agents](https://sharkbrandingsolutions.com/vs/salesforce)
 - [AI Visibility Consulting vs. Traditional SEO](https://sharkbrandingsolutions.com/vs/seo)
-- [AI Employees vs. Zapier Automations](https://sharkbrandingsolutions.com/vs/zapier)
 
 ## Resources
 

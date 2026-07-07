@@ -3,9 +3,9 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Case Studies: Tampa Bay AI Results | Shark AI Solutions",
+  title: "Case Studies: Documented AI Visibility Results | Shark AI Solutions",
   description:
-    "HVAC, real estate, smart vending, and chamber of commerce, four Tampa Bay businesses that went from invisible to #1 in AI search in under 30 days.",
+    "HVAC, real estate, smart vending, and chamber of commerce, four documented businesses that went from invisible to #1 in AI search in under 30 days.",
 };
 
 export default function CaseStudiesPage() {
@@ -27,7 +27,7 @@ export default function CaseStudiesPage() {
             className="text-[#6e6e73] text-[19px] leading-relaxed max-w-[540px] mx-auto mb-12"
             style={{ textWrap: "balance" } as React.CSSProperties}
           >
-            Every number on this page is documented from a real Tampa Bay business. No projections, no estimates.
+            Every number on this page is documented from a real client engagement. No projections, no estimates.
           </p>
 
           {/* Aggregate stats */}

@@ -51,10 +51,8 @@ const sections = [
   {
     title: "Comparisons",
     links: [
-      { label: "Shark vs. Traditional Marketing Agency", href: "/vs/marketing-agency" },
       { label: "Shark vs. Salesforce", href: "/vs/salesforce" },
       { label: "Shark vs. SEO", href: "/vs/seo" },
-      { label: "AI Automation vs. Zapier vs. HubSpot", href: "/vs/zapier" },
     ],
   },
   {

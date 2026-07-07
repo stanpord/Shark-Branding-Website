@@ -41,7 +41,7 @@ const contactSchema = {
 };
 
 export const metadata: Metadata = {
-  title: "Contact Shark AI Solutions | Tampa Bay AI Consulting",
+  title: "Contact Shark AI Solutions | AI Visibility & AI Employees",
   description:
     "Get in touch with Shark AI Solutions. Start with a free AI visibility report or book a call, we respond within one business day.",
   alternates: {

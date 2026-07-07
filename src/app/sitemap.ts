@@ -21,10 +21,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/how-to-rank-on-chatgpt-for-local-businesses`, lastModified: "2026-06-12", changeFrequency: "monthly", priority: 0.8 },
 
     // ── Competitor comparison pages ──
-    { url: `${BASE}/vs/marketing-agency`, lastModified: "2026-06-01", changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE}/vs/salesforce`, lastModified: "2026-06-01", changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE}/vs/seo`, lastModified: "2026-06-13", changeFrequency: "monthly", priority: 0.8 },
-    { url: `${BASE}/vs/zapier`, lastModified: "2026-06-01", changeFrequency: "monthly", priority: 0.8 },
 
     // ── AI Employees sub-pages ──
     { url: `${BASE}/aiemployees/home-services`, lastModified: "2026-05-01", changeFrequency: "monthly", priority: 0.8 },

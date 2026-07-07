@@ -45,17 +45,11 @@ const freeReportSchema = {
         "@type": "Offer",
         price: "0",
         priceCurrency: "USD",
-        description: "Complimentary AI visibility audit for Tampa Bay businesses.",
+        description: "Complimentary AI visibility audit for businesses nationwide.",
         availability: "https://schema.org/InStock",
         seller: { "@id": "https://sharkbrandingsolutions.com/#organization" },
       },
-      areaServed: [
-        { "@type": "City", name: "Wesley Chapel" },
-        { "@type": "City", name: "Tampa" },
-        { "@type": "City", name: "Lutz" },
-        { "@type": "City", name: "Land O Lakes" },
-        { "@type": "City", name: "St. Petersburg" },
-      ],
+      areaServed: { "@type": "Country", name: "United States" },
       serviceType: "AI Visibility Audit",
       knowsAbout: ["AI Visibility", "GEO", "Local SEO", "ChatGPT search", "Google AI Overviews", "Perplexity"],
     },
@@ -63,7 +57,7 @@ const freeReportSchema = {
 };
 
 export const metadata: Metadata = {
-  title: "Free AI Visibility Audit for Tampa Bay | Shark AI Solutions",
+  title: "Free AI Visibility Audit | Shark AI Solutions",
   description:
     "See exactly how your business appears across search, maps, reviews, and AI platforms. We walk through every finding with you in a free 1-hour session.",
 };
@@ -91,7 +85,7 @@ export default function FreeReportPage() {
             {[
               { v: "Free", l: "No credit card" },
               { v: "Action", l: "Plan included" },
-              { v: "Local", l: "Tampa Bay focused" },
+              { v: "1:1", l: "Personal walkthrough" },
             ].map((s) => (
               <div key={s.l} className="flex-1 py-5 px-4 text-center">
                 <p className="text-[clamp(1.4rem,3vw,2rem)] font-bold text-[#18b5d8] leading-none mb-1">{s.v}</p>
