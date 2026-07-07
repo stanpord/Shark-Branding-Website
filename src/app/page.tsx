@@ -12,10 +12,10 @@ export const metadata: Metadata = {
 }
 
 const pressLogos = [
-  { name: 'INC.', src: '/press-logos/inc.webp', width: 80, height: 30, href: 'https://www.inc.com/', imgClass: 'invert' },
-  { name: 'WFLA News Channel 8', src: '/press-logos/wfla.png', width: 110, height: 55, href: 'https://www.wfla.com' },
-  { name: 'Tampa Bay Times', src: '/press-logos/tampabay-times.png', width: 220, height: 80, href: 'https://www.tampabay.com', imgClass: 'min-w-[170px]' },
-  { name: 'TechNewsWorld', src: '/press-logos/technewsworld.png', width: 130, height: 42, href: 'https://www.technewsworld.com/story/study-finds-most-restaurants-missing-from-ai-recommendations-180396.html' },
+  { name: 'INC.', src: '/press-logos/inc.webp', width: 80, height: 30, href: '/media', external: false, imgClass: 'invert' },
+  { name: 'WFLA News Channel 8', src: '/press-logos/wfla.png', width: 110, height: 55, href: '/media', external: false },
+  { name: 'Tampa Bay Times', src: '/press-logos/tampabay-times.png', width: 220, height: 80, href: '/media', external: false, imgClass: 'min-w-[170px]' },
+  { name: 'TechNewsWorld', src: '/press-logos/technewsworld.png', width: 130, height: 42, href: 'https://www.technewsworld.com/story/study-finds-most-restaurants-missing-from-ai-recommendations-180396.html', external: true },
 ]
 
 const homepageFAQ = {
@@ -144,8 +144,7 @@ export default function Home() {
               <a
                 key={logo.name}
                 href={logo.href}
-                target="_blank"
-                rel="noopener noreferrer"
+                {...(logo.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
                 aria-label={logo.name}
                 className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 rounded"
               >

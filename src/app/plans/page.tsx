@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
-const ENTERPRISE_CALL_URL = "https://bookmenow.info/book/jstanaland/30-minutes";
+const BOOK_CALL_URL = "https://bookmenow.info/book/jstanaland/30-minutes";
 
 const plansSchema = {
   "@context": "https://schema.org",
@@ -212,7 +212,7 @@ export default function PlansPage() {
             </p>
             <div className="flex flex-wrap gap-4">
               <a
-                href={ENTERPRISE_CALL_URL}
+                href={BOOK_CALL_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-press inline-block bg-[#18b5d8] text-white text-[16px] font-semibold rounded-full px-8 py-4 hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 focus-visible:ring-offset-[#07141a] [touch-action:manipulation]"
@@ -278,7 +278,7 @@ export default function PlansPage() {
                 </p>
               </div>
               <a
-                href={ENTERPRISE_CALL_URL}
+                href={BOOK_CALL_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-press block text-center bg-[#18b5d8] text-white text-[16px] font-semibold rounded-full px-6 py-4 hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 focus-visible:ring-offset-[#07141a] [touch-action:manipulation]"
@@ -323,13 +323,24 @@ export default function PlansPage() {
                 ))}
               </ul>
               <a
-                href="https://connect.intuit.com/portal/app/CommerceNetwork/view/scs-v1-98497518b305454980c1a55eb30bffaf128ceb77a8aa42078ac6afb0ba6ccde3439958261aab46f0866337d1362d6ea7?locale=EN_US&cta=saveandcopylink"
+                href={BOOK_CALL_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-press block text-center bg-white text-[#0a0a0a] text-[15px] font-semibold rounded-full px-6 py-3.5 hover:bg-[#18b5d8] hover:text-white motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 focus-visible:ring-offset-[#07141a] [touch-action:manipulation]"
               >
-                Start Done For You, $2,000/mo
+                Book a Strategy Call
               </a>
+              <p className="text-center text-[12px] text-white/40 mt-3">
+                Ready now?{" "}
+                <a
+                  href="https://connect.intuit.com/portal/app/CommerceNetwork/view/scs-v1-98497518b305454980c1a55eb30bffaf128ceb77a8aa42078ac6afb0ba6ccde3439958261aab46f0866337d1362d6ea7?locale=EN_US"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#18b5d8] hover:underline"
+                >
+                  Start instantly, $2,000/mo →
+                </a>
+              </p>
             </div>
 
             {/* Self-Guided Toolkit */}
@@ -355,22 +366,31 @@ export default function PlansPage() {
                 ))}
               </ul>
               <a
-                href="https://connect.intuit.com/portal/app/CommerceNetwork/view/scs-v1-86b5809a824f464dba5ad90dded570a445f76b19f0384d9dbe734b750f7256989d1db28afa4647bd929885d1678f5099?locale=EN_US&cta=saveandcopylink"
+                href={BOOK_CALL_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-press block text-center bg-white/10 text-white text-[15px] font-semibold rounded-full px-6 py-3.5 hover:bg-white hover:text-[#0a0a0a] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 focus-visible:ring-offset-[#07141a] [touch-action:manipulation]"
               >
-                Start 12-Month Plan, $997/mo
+                Book a Strategy Call
               </a>
               <p className="text-center text-[12px] text-white/40 mt-3">
-                Shorter commitment?{" "}
+                Ready now?{" "}
                 <a
-                  href="https://connect.intuit.com/portal/app/CommerceNetwork/view/scs-v1-9454fee56f394fdfb63ff800cf994d5794634439ed8b4ae7813be49ad385ec7f0bd37ee6cfe54dfd877a039d2862d07c?locale=EN_US&cta=saveandcopylink"
+                  href="https://connect.intuit.com/portal/app/CommerceNetwork/view/scs-v1-86b5809a824f464dba5ad90dded570a445f76b19f0384d9dbe734b750f7256989d1db28afa4647bd929885d1678f5099?locale=EN_US"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[#18b5d8] hover:underline"
                 >
-                  3-month plan at $1,297/mo →
+                  Start 12-month, $997/mo →
+                </a>
+                {" "}·{" "}
+                <a
+                  href="https://connect.intuit.com/portal/app/CommerceNetwork/view/scs-v1-9454fee56f394fdfb63ff800cf994d5794634439ed8b4ae7813be49ad385ec7f0bd37ee6cfe54dfd877a039d2862d07c?locale=EN_US"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#18b5d8] hover:underline"
+                >
+                  3-month, $1,297/mo →
                 </a>
               </p>
             </div>
@@ -459,7 +479,7 @@ export default function PlansPage() {
                 <div className="px-5 py-4" />
                 <div className="px-4 py-4 text-center bg-[#18b5d8]/10">
                   <a
-                    href={ENTERPRISE_CALL_URL}
+                    href={BOOK_CALL_URL}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-[13px] font-semibold text-[#18b5d8] hover:text-[#1ec8ee] motion-safe:transition-colors"
@@ -469,7 +489,7 @@ export default function PlansPage() {
                 </div>
                 <div className="px-4 py-4 text-center">
                   <a
-                    href="https://connect.intuit.com/portal/app/CommerceNetwork/view/scs-v1-98497518b305454980c1a55eb30bffaf128ceb77a8aa42078ac6afb0ba6ccde3439958261aab46f0866337d1362d6ea7?locale=EN_US&cta=saveandcopylink"
+                    href="https://connect.intuit.com/portal/app/CommerceNetwork/view/scs-v1-98497518b305454980c1a55eb30bffaf128ceb77a8aa42078ac6afb0ba6ccde3439958261aab46f0866337d1362d6ea7?locale=EN_US"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-[13px] font-semibold text-white hover:text-[#18b5d8] motion-safe:transition-colors"
@@ -479,7 +499,7 @@ export default function PlansPage() {
                 </div>
                 <div className="px-4 py-4 text-center">
                   <a
-                    href="https://connect.intuit.com/portal/app/CommerceNetwork/view/scs-v1-86b5809a824f464dba5ad90dded570a445f76b19f0384d9dbe734b750f7256989d1db28afa4647bd929885d1678f5099?locale=EN_US&cta=saveandcopylink"
+                    href="https://connect.intuit.com/portal/app/CommerceNetwork/view/scs-v1-86b5809a824f464dba5ad90dded570a445f76b19f0384d9dbe734b750f7256989d1db28afa4647bd929885d1678f5099?locale=EN_US"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-[13px] font-semibold text-white/55 hover:text-white motion-safe:transition-colors"
@@ -617,7 +637,7 @@ export default function PlansPage() {
               Get My Free Visibility Audit
             </Link>
             <a
-              href={ENTERPRISE_CALL_URL}
+              href={BOOK_CALL_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="btn-press inline-block text-white text-[17px] border border-white/20 rounded-full px-[28px] py-[14px] hover:border-white/50 motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0a0a] [touch-action:manipulation]"
@@ -631,7 +651,7 @@ export default function PlansPage() {
       {/* ── Sticky mobile bar ─────────────────────────────────────── */}
       <div className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-[#18b5d8] px-4 py-3.5 shadow-[0_-4px_24px_rgba(0,0,0,0.2)]">
         <a
-          href={ENTERPRISE_CALL_URL}
+          href={BOOK_CALL_URL}
           target="_blank"
           rel="noopener noreferrer"
           className="block text-center text-white text-[15px] font-semibold [touch-action:manipulation]"

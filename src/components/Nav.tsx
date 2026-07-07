@@ -78,10 +78,13 @@ export default function Nav() {
 
   return (
     <header className="fixed top-0 inset-x-0 z-50" style={{ paddingTop: "env(safe-area-inset-top)" }}>
-      {/* Rebrand bar */}
-      <div className="bg-[#18b5d8] text-white text-center text-[12px] font-medium py-2 px-4 leading-[18px]">
-        Shark Branding Solutions is now&nbsp;<strong className="font-bold">Shark AI Solutions</strong>&nbsp;— same team, bigger mission.
-      </div>
+      {/* Offer bar */}
+      <Link
+        href="/free-report"
+        className="block bg-[#18b5d8] text-white text-center text-[12px] font-medium py-2 px-4 leading-[18px] hover:bg-[#1ec8ee] motion-safe:transition-colors"
+      >
+        <strong className="font-bold">Free AI Visibility Audit:</strong>&nbsp;see how ChatGPT ranks your business. Results in 48 hours&nbsp;→
+      </Link>
 
       <div className="bg-white/95 backdrop-blur-sm border-b border-[#e0e0e0]">
         <nav className="w-full h-20 max-w-[1440px] mx-auto px-6 flex items-center justify-between">
