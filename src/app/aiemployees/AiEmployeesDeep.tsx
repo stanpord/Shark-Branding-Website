@@ -1,6 +1,9 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
+import ShowcaseCarousel from '@/components/ShowcaseCarousel'
+
+const BOOK_CALL_URL = 'https://bookmenow.info/book/jstanaland/30-minutes'
 
 /* ── Scroll-reveal hook ─────────────────────────────────────────────── */
 function useInView(threshold = 0.12) {
@@ -189,25 +192,28 @@ export default function AiEmployeesDeep() {
       `}</style>
 
       {/* ── PAGE HERO ──────────────────────────────────────────────── */}
-      <section className="bg-[#f5f5f7] pt-20 sm:pt-24 pb-10 sm:pb-16 px-6 border-b border-[#e5e5ea]">
+      <section className="bg-[#0a0a0a] pt-20 sm:pt-24 pb-12 px-6 overflow-hidden">
         <div className="max-w-3xl mx-auto text-center">
           <FadeUp>
             <span className="inline-block px-3 py-1 rounded-full bg-[#18b5d8]/10 text-[#18b5d8] text-[11px] font-bold uppercase tracking-widest mb-5">Five AI employees. One team.</span>
-            <h1 className="text-[48px] sm:text-[58px] font-extrabold text-[#1d1d1f] leading-tight tracking-tight mb-4">
+            <h1 className="text-[48px] sm:text-[58px] font-extrabold text-white leading-tight tracking-tight mb-4">
               Your AI workforce,<br className="hidden sm:block" /> ready to grow your business.
             </h1>
-            <p className="text-[#6e6e73] text-[18px] leading-relaxed max-w-xl mx-auto mb-8">
+            <p className="text-white/50 text-[18px] leading-relaxed max-w-xl mx-auto mb-8">
               Five AI employees that automate lead capture, follow-up, reviews, CRM, and sales coaching — using your business data, starting within the week.
             </p>
-            <div className="flex flex-col sm:flex-row gap-3 justify-center">
-              <a href="/contact" className="inline-block bg-[#18b5d8] text-white font-bold text-[14px] px-7 py-3.5 rounded-full hover:bg-[#14a0c0] transition-colors">
+            <div className="flex flex-col sm:flex-row gap-3 justify-center mb-4">
+              <a href={BOOK_CALL_URL} target="_blank" rel="noopener noreferrer" className="inline-block bg-[#18b5d8] text-white font-bold text-[14px] px-7 py-3.5 rounded-full hover:bg-[#14a0c0] transition-colors">
                 Book a free strategy call
               </a>
-              <a href="#suite" className="inline-block bg-white border border-[#e5e5ea] text-[#1d1d1f] font-bold text-[14px] px-7 py-3.5 rounded-full hover:border-[#18b5d8] hover:text-[#18b5d8] transition-colors">
+              <a href="#suite" className="inline-block bg-white/10 border border-white/15 text-white font-bold text-[14px] px-7 py-3.5 rounded-full hover:border-[#18b5d8] hover:text-[#18b5d8] transition-colors">
                 See pricing
               </a>
             </div>
           </FadeUp>
+        </div>
+        <div className="mt-6">
+          <ShowcaseCarousel />
         </div>
       </section>
 
