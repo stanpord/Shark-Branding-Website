@@ -540,13 +540,15 @@ export default function AiEmployeesDeep() {
 
           <FadeUp className="flex justify-center mb-16">
             <video
-              src="/ai-voice-receptionist.mp4"
               autoPlay
               muted
               loop
               playsInline
               className="w-full max-w-2xl rounded-[20px] shadow-md"
-            />
+            >
+              <source src="/ai-voice-receptionist.webm" type="video/webm" />
+              <source src="/ai-voice-receptionist.mp4" type="video/mp4" />
+            </video>
           </FadeUp>
 
           {/* Feature 01, Answers every call */}
