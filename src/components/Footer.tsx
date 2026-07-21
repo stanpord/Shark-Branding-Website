@@ -6,11 +6,14 @@ const services = [
   { href: "/services#toolkit", label: "AI Visibility Toolkit" },
   { href: "/aiemployees", label: "AI Employees" },
   { href: "/automation", label: "AI Automation" },
+  { href: "/websites", label: "Website Design & Development" },
+  { href: "/local-seo", label: "Local SEO" },
+  { href: "/integrations", label: "Integrations" },
   { href: "/franchises", label: "Franchises & Multi-Location" },
   { href: "/ai-assessment", label: "AI Assessment" },
   { href: "/aiemployees/roi-calculator", label: "ROI Calculator" },
   { href: "/services#workshops", label: "Workshops & Training" },
-  { href: "/free-report", label: "Free AI Audit" },
+  { href: "/ai-audit", label: "Free AI Audit" },
 ];
 
 const company = [
@@ -109,7 +112,7 @@ export default function Footer() {
             <p className="text-[22px] font-bold text-white leading-snug">See how your business appears to AI, free.</p>
           </div>
           <Link
-            href="/free-report"
+            href="/ai-audit"
             className="shrink-0 bg-[#18b5d8] text-white text-[13px] font-bold uppercase tracking-[0.08em] px-7 py-3.5 rounded-full hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 [touch-action:manipulation]"
           >
             Get My Free AI Audit
@@ -217,6 +220,25 @@ export default function Footer() {
 
         </div>
 
+        {/* ── AI platform strip ── */}
+        <div className="border-t border-white/10 pt-8 pb-8 text-center">
+          <p className="text-[12px] text-white/40 mb-4 tracking-wide">Find us on AI platforms</p>
+          <div className="flex flex-wrap items-center justify-center gap-3">
+            <a href="https://chatgpt.com/?q=Who+is+Shark+AI+Solutions+in+Wesley+Chapel+FL" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-[12px] font-semibold text-white/50 bg-white/5 border border-white/10 rounded-full px-4 py-2 hover:border-[#18b5d8] hover:text-[#18b5d8] motion-safe:transition-colors duration-150">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22.28 9.82a5.98 5.98 0 00-.52-4.91 6.05 6.05 0 00-6.51-2.9 5.98 5.98 0 00-5-2.21 6.05 6.05 0 00-5.78 4.19 5.98 5.98 0 00-3.98 2.9 6.05 6.05 0 00.74 7.1 5.98 5.98 0 00.51 4.91 6.05 6.05 0 006.51 2.9 5.98 5.98 0 005 2.21 6.05 6.05 0 005.78-4.19 5.98 5.98 0 003.99-2.9 6.05 6.05 0 00-.74-7.1zm-8.28 11.6a4.48 4.48 0 01-2.88-1.04l.14-.08 4.78-2.76a.78.78 0 00.39-.68V9.7l2.02 1.17a.07.07 0 01.04.05v5.58a4.5 4.5 0 01-4.49 4.92zm-9.66-4.13a4.47 4.47 0 01-.53-3.01l.14.08 4.78 2.76a.77.77 0 00.78 0l5.84-3.37v2.33a.08.08 0 01-.03.06L9.74 19.95a4.5 4.5 0 01-5.4-2.66zM2.36 7.87a4.48 4.48 0 012.37-1.97v5.73a.77.77 0 00.39.68l5.81 3.35-2.02 1.17a.08.08 0 01-.07 0L4.01 14.04A4.5 4.5 0 012.36 7.87zm16.6 3.85l-5.84-3.37 2.02-1.17a.07.07 0 01.07 0l4.83 2.79a4.5 4.5 0 01-.68 8.11V12.4a.78.78 0 00-.4-.68zm2.01-3.02l-.14-.08-4.77-2.76a.78.78 0 00-.79 0L9.41 9.23V6.9a.07.07 0 01.03-.06l4.83-2.79a4.5 4.5 0 016.7 4.65zm-11.66 3.17l-2.02-1.17a.07.07 0 01-.04-.05V6.07a4.5 4.5 0 017.38-3.45l-.14.08-4.78 2.76a.78.78 0 00-.39.68l-.01 6.73zm1.1-2.36l2.6-1.5 2.6 1.5v3l-2.6 1.5-2.6-1.5v-3z"/></svg>
+              Ask ChatGPT
+            </a>
+            <a href="https://www.perplexity.ai/search?q=Shark+AI+Solutions+Wesley+Chapel+Florida" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-[12px] font-semibold text-white/50 bg-white/5 border border-white/10 rounded-full px-4 py-2 hover:border-[#18b5d8] hover:text-[#18b5d8] motion-safe:transition-colors duration-150">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 9.249h-5.985l4.236-4.834-1.502-1.316-4.749 5.418V2h-2v6.517l-4.749-5.418-1.502 1.316 4.236 4.834H2v2h3.337L2 14.685l1.502 1.316L9 10.249v11.75h2v-7h2v7h2V10.249l5.498 5.752L22 14.685 18.663 11.249H22v-2z"/></svg>
+              Ask Perplexity
+            </a>
+            <a href="https://gemini.google.com/app?q=Shark+AI+Solutions+Wesley+Chapel" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-[12px] font-semibold text-white/50 bg-white/5 border border-white/10 rounded-full px-4 py-2 hover:border-[#18b5d8] hover:text-[#18b5d8] motion-safe:transition-colors duration-150">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C10.77 7.72 8.28 10.22 2 12c6.28 1.51 8.77 4.28 10 10 1.23-5.72 3.72-8.49 10-10C15.72 10.22 13.23 7.72 12 2z"/></svg>
+              Ask Gemini
+            </a>
+          </div>
+        </div>
+
         {/* ── Bottom bar ── */}
         <div className="border-t border-white/10 pt-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
           <p className="text-[12px] text-white/55">
@@ -232,6 +254,9 @@ export default function Footer() {
             <Link href="/sitemap-html" className="text-[12px] text-white/55 hover:text-[#18b5d8] motion-safe:transition-colors">
               Sitemap
             </Link>
+            <a href="/llms.txt" className="text-[12px] text-white/55 hover:text-[#18b5d8] motion-safe:transition-colors">
+              llms.txt
+            </a>
             <p className="text-[12px] text-white/55">
               Serving{" "}
               <Link href="/wesley-chapel" className="hover:text-[#18b5d8] motion-safe:transition-colors">Wesley Chapel</Link>

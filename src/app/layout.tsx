@@ -235,6 +235,11 @@ export default function RootLayout({
         <AuditModal />
         <Analytics />
         <Script
+          src="https://analytics.ahrefs.com/analytics.js"
+          data-key="vNvDwenzhopR1QPePhiHOQ"
+          strategy="afterInteractive"
+        />
+        <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-N8D9SY4FH3"
           strategy="afterInteractive"
         />

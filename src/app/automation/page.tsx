@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Business Automation for Tampa Bay | Shark AI Solutions',
-  description: 'AI-powered automation for Wesley Chapel and Tampa Bay. Automate lead follow-up, review requests, appointment booking, and after-hours chat. Live in one week.',
+  description: 'AI-powered automation for Wesley Chapel and Tampa Bay. Lead follow-up, review requests, appointment booking, and after-hours chat. Live in one week.',
   alternates: { canonical: 'https://sharkbrandingsolutions.com/automation' },
   openGraph: {
     title: 'Business Automation for Tampa Bay | Shark AI Solutions',
@@ -113,7 +113,7 @@ export default function AutomationPage() {
           </p>
           <div className="flex flex-wrap items-center justify-center gap-3">
             <Link
-              href="/free-report"
+              href="/ai-audit"
               className="btn-press inline-block bg-[#18b5d8] text-white text-[15px] font-semibold rounded-full px-7 py-3.5 hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 [touch-action:manipulation]"
             >
               Get My Free AI Audit
@@ -174,7 +174,7 @@ export default function AutomationPage() {
                   <p className="text-[12px] text-[#999]">{u.statLabel}</p>
                 </div>
                 <Link href={u.href} className="text-[13px] font-semibold text-[#18b5d8] hover:underline">
-                  Learn more →
+                  See {u.title} →
                 </Link>
               </div>
             ))}
@@ -260,7 +260,7 @@ export default function AutomationPage() {
             Delivered in 48 hours. No commitment. No sales pitch.
           </p>
           <Link
-            href="/free-report"
+            href="/ai-audit"
             className="btn-press inline-block bg-[#18b5d8] text-white text-[17px] font-semibold rounded-full px-[32px] py-[15px] hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0a0a] [touch-action:manipulation]"
           >
             Get My Free AI Audit

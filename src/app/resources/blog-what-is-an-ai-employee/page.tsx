@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'AI Employees Explained: What They Do | Shark AI Solutions',
-  description: 'An AI employee is a software agent trained to do a specific job in your business automatically, lead follow-up, review management, booking, content. Here\'s how they work.',
+  description: 'An AI employee is a software agent trained to do a specific job automatically: lead follow-up, review management, booking, content. Here\'s how they work.',
   alternates: { canonical: 'https://sharkbrandingsolutions.com/resources/blog-what-is-an-ai-employee' },
   openGraph: {
     title: 'What Is an AI Employee? A Plain-English Guide for Local Businesses',
@@ -217,7 +217,7 @@ export default function WhatIsAnAiEmployeePage() {
             </p>
 
             <p>
-              The easiest way to find out is to start with <Link href="/free-report" className="text-[#18b5d8] hover:underline">our free AI Audit</Link>. We run your business through a diagnostic, identify exactly where you&rsquo;re losing leads or time, and tell you which AI employee would have the biggest immediate impact, before you commit to anything. You can also explore <Link href="/services" className="text-[#18b5d8] hover:underline">our full AI employee services</Link> to see the complete offering.
+              The easiest way to find out is to start with <Link href="/ai-audit" className="text-[#18b5d8] hover:underline">our free AI Audit</Link>. We run your business through a diagnostic, identify exactly where you&rsquo;re losing leads or time, and tell you which AI employee would have the biggest immediate impact, before you commit to anything. You can also explore <Link href="/aiemployees" className="text-[#18b5d8] hover:underline">the full AI employee team</Link> to see the complete offering.
             </p>
 
           </div>
@@ -267,7 +267,7 @@ export default function WhatIsAnAiEmployeePage() {
               Delivered in 48 hours. No commitment. No sales pitch.
             </p>
             <Link
-              href="/free-report"
+              href="/ai-audit"
               className="inline-block bg-[#18b5d8] text-white text-[15px] font-semibold rounded-full px-8 py-4 hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150"
             >
               Get My Free AI Audit

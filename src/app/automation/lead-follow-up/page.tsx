@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Lead Follow-Up Automation | Shark AI Solutions',
-  description: 'Automated lead follow-up for Wesley Chapel and Tampa Bay businesses. Every lead gets an immediate multi-touch response across email, SMS, and phone. Live in one week.',
+  description: 'Automated lead follow-up for Wesley Chapel and Tampa Bay. Every lead gets an immediate multi-touch response across email, SMS, and phone.',
   alternates: { canonical: 'https://sharkbrandingsolutions.com/automation/lead-follow-up' },
   openGraph: {
     title: 'Lead Follow-Up Automation | Shark AI Solutions',
@@ -88,7 +88,7 @@ export default function LeadFollowUpPage() {
           </p>
           <div className="flex flex-wrap items-center justify-center gap-3">
             <Link
-              href="/free-report"
+              href="/ai-audit"
               className="btn-press inline-block bg-[#18b5d8] text-white text-[15px] font-semibold rounded-full px-7 py-3.5 hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 [touch-action:manipulation]"
             >
               Get My Free AI Audit
@@ -223,7 +223,7 @@ export default function LeadFollowUpPage() {
             Delivered in 48 hours. No commitment. We show you exactly which leads are falling through the cracks before you invest in anything.
           </p>
           <Link
-            href="/free-report"
+            href="/ai-audit"
             className="btn-press inline-block bg-[#18b5d8] text-white text-[17px] font-semibold rounded-full px-[32px] py-[15px] hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0a0a] [touch-action:manipulation]"
           >
             Get My Free AI Audit

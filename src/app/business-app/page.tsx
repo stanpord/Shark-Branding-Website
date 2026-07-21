@@ -3,16 +3,16 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Client Dashboard | Shark Branding Solutions",
+  title: "Client Dashboard | Shark AI Solutions",
   description:
-    "Your complete AI marketing dashboard. See reviews, rankings, campaigns, listings, and reports — all in one place, branded to your business.",
+    "Your complete AI marketing dashboard. See reviews, rankings, campaigns, listings, and reports, all in one place, branded to your business.",
   alternates: {
     canonical: "https://sharkbrandingsolutions.com/business-app",
   },
   openGraph: {
-    title: "Client Dashboard | Shark Branding Solutions",
+    title: "Client Dashboard | Shark AI Solutions",
     description:
-      "One dashboard for everything — reputation, listings, campaigns, reporting, and AI tools. Built for local businesses that want to see real results.",
+      "One dashboard for everything, reputation, listings, campaigns, reporting, and AI tools. Built for local businesses that want to see real results.",
     url: "https://sharkbrandingsolutions.com/business-app",
   },
 };
@@ -26,7 +26,7 @@ const tabs = [
     img: CDN + "2025/05/download-75-491x.webp",
     alt: "Business app overview dashboard showing key marketing metrics at a glance",
     w: 491, h: 427,
-    desc: "See every marketing metric that matters — reviews, rankings, campaigns, traffic, and leads — all in a single view updated in real time.",
+    desc: "See every marketing metric that matters, reviews, rankings, campaigns, traffic, and leads, all in a single view updated in real time.",
   },
   {
     label: "Reputation",
@@ -62,7 +62,7 @@ const tabs = [
 const features = [
   {
     id: "reputation",
-    h2: "Reputation Management — all your reviews, one place",
+    h2: "Reputation Management, all your reviews, one place",
     body: "Your star rating is one of the first things customers see. Our dashboard pulls in reviews from Google, Facebook, Yelp, and dozens of industry-specific sites so you never miss a new review.\n\nAI-generated response suggestions let you reply to every review in seconds. Set up auto-responses for common review types, and get alerts the moment a negative review comes in so you can get ahead of it.",
     cta: { label: "Learn about reputation management", href: "/services" },
     img: CDN + "2025/09/Reputation-Management-Pro-img-491x.webp",
@@ -73,7 +73,7 @@ const features = [
   {
     id: "engagement",
     h2: "Customer engagement that keeps people coming back",
-    body: "Every interaction a customer has with your business is tracked in your dashboard. Messages, calls, emails, review replies — all visible in one place so nothing falls through the cracks.\n\nYour AI employees handle the front line: responding to inquiries, following up with leads, requesting reviews, and re-engaging past customers automatically. You see every conversation and can jump in at any time.",
+    body: "Every interaction a customer has with your business is tracked in your dashboard. Messages, calls, emails, review replies, all visible in one place so nothing falls through the cracks.\n\nYour AI employees handle the front line: responding to inquiries, following up with leads, requesting reviews, and re-engaging past customers automatically. You see every conversation and can jump in at any time.",
     cta: { label: "Discover AI Employees", href: "/aiemployees" },
     img: CDN + "2025/09/Customer-engagement-491x.webp",
     alt: "Customer engagement interface showing unified inbox, conversation history, and AI response tools",
@@ -83,7 +83,7 @@ const features = [
   {
     id: "reporting",
     h2: "Automated reporting that proves your ROI",
-    body: "At the end of every month, a full performance report hits your inbox automatically. Rankings, review growth, campaign performance, website traffic, listing accuracy — everything in one professional document.\n\nNo more chasing your agency for updates. Your dashboard shows real-time data 24/7, and monthly reports summarize what moved and why. You always know exactly what your marketing is doing.",
+    body: "At the end of every month, a full performance report hits your inbox automatically. Rankings, review growth, campaign performance, website traffic, listing accuracy, everything in one professional document.\n\nNo more chasing your agency for updates. Your dashboard shows real-time data 24/7, and monthly reports summarize what moved and why. You always know exactly what your marketing is doing.",
     cta: { label: "See reporting features", href: "/contact" },
     img: CDN + "2025/09/Automated-Reporting-img-491x.webp",
     alt: "Automated marketing reporting dashboard showing monthly performance summaries and trend charts",
@@ -93,7 +93,7 @@ const features = [
   {
     id: "marketplace",
     h2: "Add more tools as your business grows",
-    body: "As your marketing needs evolve, your dashboard grows with you. Add advanced reputation tools, social media scheduling, digital advertising management, or additional AI employees — all from the same platform.\n\nNo new logins, no vendor switching, no data migration. Every product you add connects to your existing dashboard and reporting so everything stays in one place.",
+    body: "As your marketing needs evolve, your dashboard grows with you. Add advanced reputation tools, social media scheduling, digital advertising management, or additional AI employees, all from the same platform.\n\nNo new logins, no vendor switching, no data migration. Every product you add connects to your existing dashboard and reporting so everything stays in one place.",
     cta: { label: "View all services", href: "/services" },
     img: CDN + "2025/09/Marketplace-of-3rd-party-product-491x.webp",
     alt: "Product marketplace showing available marketing tools and services that can be added to the dashboard",
@@ -224,7 +224,7 @@ export default function BusinessAppPage() {
             ))}
           </div>
 
-          {/* Showcase grid — all 5 visible as cards */}
+          {/* Showcase grid, all 5 visible as cards */}
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {tabs.map((t) => (
               <div key={t.label} className="bg-white rounded-[20px] border border-[#e5e5ea] overflow-hidden shadow-sm flex flex-col">
@@ -248,7 +248,7 @@ export default function BusinessAppPage() {
         </div>
       </section>
 
-      {/* ── WHAT'S INSIDE — tool grid ── */}
+      {/* ── WHAT'S INSIDE, tool grid ── */}
       <section className="py-20 px-6 border-b border-[#e5e5ea]">
         <div className="max-w-[1200px] mx-auto">
           <div className="text-center mb-14">
@@ -256,7 +256,7 @@ export default function BusinessAppPage() {
               Everything connected in one dashboard
             </h2>
             <p className="text-[17px] text-[#6e6e73] max-w-[520px] mx-auto">
-              Every marketing tool and channel you use with Shark Branding Solutions flows into your dashboard automatically. No spreadsheets. No report requests. Just data.
+              Every marketing tool and channel you use with Shark AI Solutions flows into your dashboard automatically. No spreadsheets. No report requests. Just data.
             </p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -340,7 +340,7 @@ export default function BusinessAppPage() {
               More of what you'll see inside
             </h2>
             <p className="text-[17px] text-[#6e6e73] max-w-[480px] mx-auto">
-              Campaign results, lead data, advertising performance, and monthly summaries — all inside your branded dashboard.
+              Campaign results, lead data, advertising performance, and monthly summaries, all inside your branded dashboard.
             </p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">

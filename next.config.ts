@@ -1,8 +1,24 @@
 import type { NextConfig } from "next";
 
+const securityHeaders = [
+  { key: 'X-Content-Type-Options', value: 'nosniff' },
+  { key: 'X-Frame-Options', value: 'SAMEORIGIN' },
+  { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
+  { key: 'Permissions-Policy', value: 'camera=(), microphone=(), geolocation=()' },
+  { key: 'X-DNS-Prefetch-Control', value: 'on' },
+];
+
 const nextConfig: NextConfig = {
   turbopack: {
     root: __dirname,
+  },
+  async headers() {
+    return [
+      {
+        source: '/(.*)',
+        headers: securityHeaders,
+      },
+    ];
   },
   images: {
     remotePatterns: [
@@ -100,6 +116,12 @@ const nextConfig: NextConfig = {
       { source: "/wesley-chapel-marketing-consultant", destination: "/wesley-chapel", permanent: true },
       { source: "/blog-hvac-invisible-to-number-2-local-search", destination: "/aiemployees/hvac", permanent: true },
       { source: "/what-is-geo-generative-engine-optimization", destination: "/ai-visibility-consulting", permanent: true },
+      // July 2026 GSC additions
+      { source: "/north-tampa-bay-chamber-ai-visibility-toolkit.html", destination: "/case-studies", permanent: true },
+      { source: "/contact.html", destination: "/contact", permanent: true },
+      { source: "/ai-vs-seo-what-changed-and-what-hasnt", destination: "/ai-visibility-consulting", permanent: true },
+      { source: "/marketing", destination: "/aiemployees", permanent: true },
+      { source: "/faq", destination: "/about", permanent: true },
     ];
   },
 };

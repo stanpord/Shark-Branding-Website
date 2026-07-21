@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'What Is an AI CRM (And How Is It Different From Traditional CRMs)? | Shark AI Solutions',
-  description: 'An AI CRM does not just store contact data. It captures every call, text, and chat automatically, scores leads in real time, and follows up without anyone on your team touching it.',
+  title: 'What Is an AI CRM vs. a Traditional CRM? | Shark AI Solutions',
+  description: 'An AI CRM captures every call, text, and chat automatically, scores leads in real time, and runs follow-up without anyone on your team touching it.',
   alternates: { canonical: 'https://sharkbrandingsolutions.com/resources/blog-what-is-ai-crm-vs-hubspot' },
   openGraph: {
     title: 'What Is an AI CRM? How It Differs From Traditional CRMs',
@@ -157,7 +157,7 @@ export default function WhatIsAiCrmPage() {
               Scoring is based on what the contact actually said, not just whether a form was filled out. A caller who mentions they need service this week and owns the property scores differently than someone comparing prices for next year. That difference drives who gets an immediate callback and who goes into a nurture sequence.
             </p>
             <p>
-              Follow-up does not wait for a reminder to appear on someone&apos;s calendar. It runs automatically based on lead score, timing, and where the contact is in the pipeline — driven by <Link href="/resources/blog-what-is-ai-sales-manager" className="text-[#18b5d8] hover:underline">the AI Sales Manager</Link> that sits between your leads and your team.
+              Follow-up does not wait for a reminder to appear on someone&apos;s calendar. It runs automatically based on lead score, timing, and where the contact is in the pipeline, driven by <Link href="/resources/blog-what-is-ai-sales-manager" className="text-[#18b5d8] hover:underline">the AI Sales Manager</Link> that sits between your leads and your team.
             </p>
           </div>
 
@@ -244,7 +244,7 @@ export default function WhatIsAiCrmPage() {
               Find out what your business is missing right now.
             </h3>
             <p className="text-white/50 text-[15px] mb-8">Delivered in 48 hours. Specific to your business. No commitment.</p>
-            <Link href="/free-report" className="inline-block bg-[#18b5d8] text-white text-[15px] font-semibold rounded-full px-8 py-4 hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150">
+            <Link href="/ai-audit" className="inline-block bg-[#18b5d8] text-white text-[15px] font-semibold rounded-full px-8 py-4 hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150">
               Get My Free AI Audit
             </Link>
           </div>

@@ -3,14 +3,14 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Integrations | Shark Branding Solutions",
+  title: "Integrations | Shark AI Solutions",
   description:
-    "Connect the tools you already use. Shark Branding Solutions integrates with your CRM, scheduling software, social platforms, and business management tools to keep everything in sync.",
+    "Connect the tools you already use. Shark AI Solutions integrates with your CRM, scheduling software, social platforms, and business management tools to keep everything in sync.",
   alternates: {
     canonical: "https://sharkbrandingsolutions.com/integrations",
   },
   openGraph: {
-    title: "Integrations | Shark Branding Solutions",
+    title: "Integrations | Shark AI Solutions",
     description:
       "Connect your CRM, scheduling software, social platforms, and business tools to our AI platform. 50+ integrations available.",
     url: "https://sharkbrandingsolutions.com/integrations",
@@ -224,7 +224,7 @@ export default function IntegrationsPage() {
         </div>
       </section>
 
-      {/* INTEGRATION GRID — grouped by category */}
+      {/* INTEGRATION GRID, grouped by category */}
       <section className="py-16 px-6">
         <div className="max-w-[1200px] mx-auto space-y-16">
           {(categories.filter(c => c !== "All") as Exclude<Category, "All">[]).map((cat) => {

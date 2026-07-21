@@ -67,7 +67,7 @@ export default function CaseStudiesPage() {
 
 
       {/* ══════════════════════════════════════════
-          CASE 01 — HVAC
+          CASE 01, HVAC
       ══════════════════════════════════════════ */}
       <article id="hvac">
 
@@ -207,7 +207,7 @@ export default function CaseStudiesPage() {
             </blockquote>
 
             <div className="flex flex-wrap items-center gap-4">
-              <Link href="/free-report" className="inline-block bg-[#18b5d8] text-white text-[15px] font-semibold rounded-full px-7 py-3.5 hover:bg-[#14a0c0] motion-safe:transition-colors">Get My Free AI Audit</Link>
+              <Link href="/ai-audit" className="inline-block bg-[#18b5d8] text-white text-[15px] font-semibold rounded-full px-7 py-3.5 hover:bg-[#14a0c0] motion-safe:transition-colors">Get My Free AI Audit</Link>
               <Link href="/contact" className="text-[15px] font-semibold text-[#18b5d8] hover:underline">Talk to us first &rarr;</Link>
             </div>
           </div>
@@ -216,7 +216,7 @@ export default function CaseStudiesPage() {
 
 
       {/* ══════════════════════════════════════════
-          CASE 02 — Real Estate
+          CASE 02, Real Estate
       ══════════════════════════════════════════ */}
       <article id="emorys-rock-realty">
 
@@ -300,7 +300,7 @@ export default function CaseStudiesPage() {
             </blockquote>
 
             <div className="flex flex-wrap items-center gap-4">
-              <Link href="/free-report" className="inline-block bg-[#18b5d8] text-white text-[15px] font-semibold rounded-full px-7 py-3.5 hover:bg-[#14a0c0] motion-safe:transition-colors">Get My Free AI Audit</Link>
+              <Link href="/ai-audit" className="inline-block bg-[#18b5d8] text-white text-[15px] font-semibold rounded-full px-7 py-3.5 hover:bg-[#14a0c0] motion-safe:transition-colors">Get My Free AI Audit</Link>
               <Link href="/contact" className="text-[15px] font-semibold text-[#18b5d8] hover:underline">Talk to us first &rarr;</Link>
             </div>
           </div>
@@ -318,7 +318,7 @@ export default function CaseStudiesPage() {
             Most businesses in your market haven&rsquo;t done this yet. That window closes fast.
           </h3>
           <p className="text-white/80 text-[17px] mb-8">Find out where you stand before your competitor does.</p>
-          <Link href="/free-report" className="inline-block bg-white text-[#1d1d1f] text-[16px] font-bold rounded-full px-8 py-4 hover:bg-[#f0f0f0] motion-safe:transition-colors">
+          <Link href="/ai-audit" className="inline-block bg-white text-[#1d1d1f] text-[16px] font-bold rounded-full px-8 py-4 hover:bg-[#f0f0f0] motion-safe:transition-colors">
             Get My Free AI Audit
           </Link>
         </div>
@@ -326,7 +326,7 @@ export default function CaseStudiesPage() {
 
 
       {/* ══════════════════════════════════════════
-          CASE 03 — Diamond Dogs Smart Vending
+          CASE 03, Diamond Dogs Smart Vending
       ══════════════════════════════════════════ */}
       <article id="diamond-dogs">
 
@@ -409,7 +409,7 @@ export default function CaseStudiesPage() {
             </blockquote>
 
             <div className="flex flex-wrap items-center gap-4">
-              <Link href="/free-report" className="inline-block bg-[#18b5d8] text-white text-[15px] font-semibold rounded-full px-7 py-3.5 hover:bg-[#14a0c0] motion-safe:transition-colors">Get My Free AI Audit</Link>
+              <Link href="/ai-audit" className="inline-block bg-[#18b5d8] text-white text-[15px] font-semibold rounded-full px-7 py-3.5 hover:bg-[#14a0c0] motion-safe:transition-colors">Get My Free AI Audit</Link>
               <Link href="/contact" className="text-[15px] font-semibold text-[#18b5d8] hover:underline">Talk to us first &rarr;</Link>
             </div>
           </div>
@@ -418,7 +418,7 @@ export default function CaseStudiesPage() {
 
 
       {/* ══════════════════════════════════════════
-          CASE 04 — North Tampa Bay Chamber
+          CASE 04, North Tampa Bay Chamber
       ══════════════════════════════════════════ */}
       <article id="north-tampa-bay-chamber">
 
@@ -509,7 +509,7 @@ export default function CaseStudiesPage() {
             </blockquote>
 
             <div className="flex flex-wrap items-center gap-4">
-              <Link href="/free-report" className="inline-block bg-[#18b5d8] text-white text-[15px] font-semibold rounded-full px-7 py-3.5 hover:bg-[#14a0c0] motion-safe:transition-colors">Get My Free AI Audit</Link>
+              <Link href="/ai-audit" className="inline-block bg-[#18b5d8] text-white text-[15px] font-semibold rounded-full px-7 py-3.5 hover:bg-[#14a0c0] motion-safe:transition-colors">Get My Free AI Audit</Link>
               <Link href="/contact" className="text-[15px] font-semibold text-[#18b5d8] hover:underline">Talk to us first &rarr;</Link>
             </div>
           </div>
@@ -528,7 +528,7 @@ export default function CaseStudiesPage() {
               More results from businesses running our AI employees.
             </h3>
             <p className="text-[16px] text-[#6e6e73] max-w-[600px] leading-relaxed">
-              These results come from businesses using the same AI employees we configure for our clients — Gemma, Reputation Specialist, AI CRM, and custom-built roles across home services, real estate, healthcare, and more.
+              These results come from businesses using the same AI employees we configure for our clients, Gemma, Reputation Specialist, AI CRM, and custom-built roles across home services, real estate, healthcare, and more.
             </p>
           </div>
 
@@ -658,7 +658,7 @@ export default function CaseStudiesPage() {
           </p>
           <p className="text-[14px] text-white/30 mb-12">Free. No sales pressure. Delivered in 48 hours.</p>
           <div className="flex flex-wrap items-center justify-center gap-4">
-            <Link href="/free-report" className="inline-block bg-[#18b5d8] text-white text-[17px] font-semibold rounded-full px-8 py-4 hover:bg-[#14a0c0] motion-safe:transition-colors">
+            <Link href="/ai-audit" className="inline-block bg-[#18b5d8] text-white text-[17px] font-semibold rounded-full px-8 py-4 hover:bg-[#14a0c0] motion-safe:transition-colors">
               Get My Free AI Audit
             </Link>
             <Link href="/contact" className="inline-block text-white text-[17px] border border-white/20 rounded-full px-7 py-4 hover:border-white/50 motion-safe:transition-colors">

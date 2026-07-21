@@ -32,7 +32,7 @@ const faqSchema = {
       name: "What is a good Salesforce AI agents alternative for small business?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "For small and mid-size businesses, the Shark AI Solutions Full AI Suite is a practical Salesforce Agentforce alternative. It includes AI Voice Receptionist, AI Chat, AI CRM, AI Sales Manager, and Reputation AI for a flat $5,000/month with a one-time $2,000 setup fee and no annual contract, compared to Salesforce's $93k–$140k+ year-one cost for a comparable configuration.",
+        text: "For small and mid-size businesses, the Shark AI Solutions Full AI Suite is a practical Salesforce Agentforce alternative. It includes AI Voice Receptionist, AI Chat, AI CRM, AI Sales Manager, and Reputation AI for one flat monthly rate with no annual contract, compared to Salesforce's $93k–$140k+ year-one cost for a comparable configuration.",
       },
     },
     {
@@ -40,7 +40,7 @@ const faqSchema = {
       name: "How does Salesforce Agentforce compare to the Full AI Suite?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Salesforce Agentforce is enterprise software that requires a dedicated admin, a $15k–$75k implementation partner, and charges $2 per AI conversation. The Full AI Suite is designed for small business teams: no internal admin needed, a one-time $2,000 setup fee, no per-conversation billing, and includes AI voice, chat, CRM, sales follow-up, and reputation management for a flat $5,000/month.",
+        text: "Salesforce Agentforce is enterprise software that requires a dedicated admin, a $15k–$75k implementation partner, and charges $2 per AI conversation. The Full AI Suite is designed for small business teams: no internal admin needed, simple one-time setup, no per-conversation billing, and includes AI voice, chat, CRM, sales follow-up, and reputation management for one flat monthly rate.",
       },
     },
     {
@@ -56,7 +56,15 @@ const faqSchema = {
       name: "How long does it take to set up the Full AI Suite?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Most clients are live within a week. The one-time $2,000 setup fee covers full configuration and onboarding. Salesforce deployments typically take 3 to 6 months with a systems integrator costing $15,000–$75,000+.",
+        text: "Most clients are live within a week. One-time setup covers full configuration and onboarding. Salesforce deployments typically take 3 to 6 months with a systems integrator costing $15,000–$75,000+.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Why is the Full AI Suite setup fee less than the monthly rate?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Because you are not paying for a software implementation, you are hiring a team. Setup is onboarding: configuring the AI employees for your services, your area, and your process. The monthly is their payroll: six AI employees working 24/7, plus the Shark AI Solutions team managing and improving them every month. Salesforce inverts this, charging $15,000 to $75,000 up front for implementation before the software does any work. The Full AI Suite puts the cost where the work is, which is why clients are month-to-month with no annual contract.",
       },
     },
   ],
@@ -216,9 +224,9 @@ export default function SalesforceVsPage() {
           <div className="vs-verdict-cell sbs">
             <div className="vs-verdict-label">Shark AI Solutions</div>
             <div className="vs-verdict-name sbs">Full AI Suite</div>
-            <div className="vs-verdict-price sbs">$5,000<span style={{ fontSize: 14, fontWeight: 400, color: 'var(--ink-3)' }}>/mo</span></div>
-            <div className="vs-verdict-sub">All five AI employees, no seat pricing</div>
-            <div className="vs-verdict-setup sbs">$2,000 setup, month-to-month</div>
+            <div className="vs-verdict-price sbs">Flat rate<span style={{ fontSize: 14, fontWeight: 400, color: 'var(--ink-3)' }}>/mo</span></div>
+            <div className="vs-verdict-sub">All five AI employees, no seat pricing, custom quoted</div>
+            <div className="vs-verdict-setup sbs">Month-to-month, custom quoted</div>
           </div>
         </div>
 
@@ -339,7 +347,7 @@ export default function SalesforceVsPage() {
               <tr>
                 <td className="col-feature">Implementation / setup cost</td>
                 <td className="col-sf"><span className="vs-x">✗</span><span className="vs-note">SI partner engagement typically $15,000–$75,000+.</span><span className="vs-tag red">$15k–$75k+ one-time</span></td>
-                <td className="col-sbs"><span className="vs-check">✓</span><span className="vs-tag green">$2,000 one-time</span></td>
+                <td className="col-sbs"><span className="vs-check">✓</span><span className="vs-tag green">One-time setup fee</span></td>
               </tr>
               <tr>
                 <td className="col-feature">Time to go live</td>
@@ -405,10 +413,10 @@ export default function SalesforceVsPage() {
               <div className="vs-cost-line"><div className="vs-cost-line-label">All conversations, unlimited seats<small>No per-conversation billing</small></div><div className="vs-cost-line-value blue">Included</div></div>
               <div className="vs-cost-line"><div className="vs-cost-line-label">Reputation AI<small>Review monitoring, AI responses, listing sync</small></div><div className="vs-cost-line-value blue">Included</div></div>
               <div className="vs-cost-line"><div className="vs-cost-line-label">Shark AI Solutions account support and optimization</div><div className="vs-cost-line-value blue">Included</div></div>
-              <div className="vs-cost-line" style={{ borderTop: '2px solid var(--hairline)' }}><div className="vs-cost-line-label"><strong>Monthly Recurring</strong></div><div className="vs-cost-line-value green"><strong>$5,000/mo</strong></div></div>
-              <div className="vs-cost-line"><div className="vs-cost-line-label">Implementation / setup (one-time)</div><div className="vs-cost-line-value blue">$2,000</div></div>
+              <div className="vs-cost-line" style={{ borderTop: '2px solid var(--hairline)' }}><div className="vs-cost-line-label"><strong>Monthly Recurring</strong></div><div className="vs-cost-line-value green"><strong>Flat rate</strong></div></div>
+              <div className="vs-cost-line"><div className="vs-cost-line-label">Implementation / setup (one-time)</div><div className="vs-cost-line-value blue">One-time fee</div></div>
               <div className="vs-cost-line"><div className="vs-cost-line-label">Internal admin cost required</div><div className="vs-cost-line-value green">$0</div></div>
-              <div className="vs-cost-total sbs"><div className="vs-cost-total-label">Year 1 Total</div><div className="vs-cost-total-value sbs">$62,000</div></div>
+              <div className="vs-cost-total sbs"><div className="vs-cost-total-label">Year 1 Total</div><div className="vs-cost-total-value sbs">Custom quote</div></div>
             </div>
           </div>
 
@@ -417,7 +425,7 @@ export default function SalesforceVsPage() {
             <div className="vs-bl-left">
               <h2>The <span>honest</span> takeaway.</h2>
               <p>Salesforce is enterprise software built for companies with dedicated admins and six-figure implementation budgets. For most small businesses, it is overkill at every level.</p>
-              <p>The Full AI Suite includes AI Voice, AI Chat, AI CRM, AI Sales Manager, AI Sales Assistant, and Reputation AI for a flat $5,000/month with a one-time $2,000 setup fee. You are operational within days, not months, and you are not locked into an annual contract.</p>
+              <p>The Full AI Suite includes AI Voice, AI Chat, AI CRM, AI Sales Manager, AI Sales Assistant, and Reputation AI for one flat monthly rate, custom quoted for your business. You are operational within days, not months, and you are not locked into an annual contract.</p>
             </div>
             <div className="vs-bl-right">
               <div className="vs-bl-point">
@@ -444,11 +452,11 @@ export default function SalesforceVsPage() {
             <h2>Common questions about Salesforce AI agents alternatives</h2>
             <div className="vs-faq-item">
               <h3>What is a good Salesforce AI agents alternative for small business?</h3>
-              <p>For small and mid-size businesses, the Shark AI Solutions Full AI Suite is a practical Salesforce Agentforce alternative. It includes AI Voice Receptionist, AI Chat, AI CRM, AI Sales Manager, and Reputation AI for a flat $5,000/month with a one-time $2,000 setup fee and no annual contract, compared to Salesforce&apos;s $93k to $140k+ year-one cost for a comparable configuration.</p>
+              <p>For small and mid-size businesses, the Shark AI Solutions Full AI Suite is a practical Salesforce Agentforce alternative. It includes AI Voice Receptionist, AI Chat, AI CRM, AI Sales Manager, and Reputation AI for one flat monthly rate with no annual contract, compared to Salesforce&apos;s $93k to $140k+ year-one cost for a comparable configuration.</p>
             </div>
             <div className="vs-faq-item">
               <h3>How does Salesforce Agentforce compare to the Full AI Suite?</h3>
-              <p>Salesforce Agentforce is enterprise software that requires a dedicated admin, a $15k to $75k implementation partner, and charges $2 per AI conversation. The Full AI Suite is designed for small business teams: no internal admin needed, a one-time $2,000 setup fee, no per-conversation billing, and includes AI voice, chat, CRM, sales follow-up, and reputation management for a flat $5,000/month.</p>
+              <p>Salesforce Agentforce is enterprise software that requires a dedicated admin, a $15k to $75k implementation partner, and charges $2 per AI conversation. The Full AI Suite is designed for small business teams: no internal admin needed, simple one-time setup, no per-conversation billing, and includes AI voice, chat, CRM, sales follow-up, and reputation management for one flat monthly rate.</p>
             </div>
             <div className="vs-faq-item">
               <h3>Does Salesforce have a built-in AI voice receptionist?</h3>
@@ -456,7 +464,11 @@ export default function SalesforceVsPage() {
             </div>
             <div className="vs-faq-item">
               <h3>How long does it take to set up the Full AI Suite?</h3>
-              <p>Most clients are live within a week. The one-time $2,000 setup fee covers full configuration and onboarding. Salesforce deployments typically take 3 to 6 months with a systems integrator costing $15,000 to $75,000+. There is no lengthy configuration requirement and no annual contract.</p>
+              <p>Most clients are live within a week. One-time setup covers full configuration and onboarding. Salesforce deployments typically take 3 to 6 months with a systems integrator costing $15,000 to $75,000+. There is no lengthy configuration requirement and no annual contract.</p>
+            </div>
+            <div className="vs-faq-item">
+              <h3>Why is the Full AI Suite setup fee less than the monthly rate?</h3>
+              <p>Because you are not paying for a software implementation, you are hiring a team. Setup is onboarding: configuring the AI employees for your services, your area, and your process. The monthly is their payroll: six AI employees working 24/7, plus our team managing and improving them every month. Salesforce inverts this, charging $15,000 to $75,000 up front for implementation before the software does any work. We put the cost where the work is, which is why clients are month-to-month with no annual contract.</p>
             </div>
           </div>
 
@@ -464,7 +476,7 @@ export default function SalesforceVsPage() {
           <div className="vs-cta">
             <h2>See the Full AI Suite in action.</h2>
             <p>Book a free 30-minute audit. We&apos;ll show you exactly what the suite would do for your business and what to expect in the first 90 days.</p>
-            <a href="/free-report">Book My Free AI Audit</a>
+            <a href="/ai-audit">Book My Free AI Audit</a>
           </div>
 
         </div>

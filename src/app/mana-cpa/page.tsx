@@ -62,7 +62,7 @@ export default function ManaCpaPage() {
           borderBottom: "1px solid rgba(255,255,255,0.07)",
         }}
       >
-        {/* Left — headline */}
+        {/* Left, headline */}
         <div
           style={{
             padding: "80px 64px",
@@ -130,7 +130,7 @@ export default function ManaCpaPage() {
           </a>
         </div>
 
-        {/* Right — tagline + stats */}
+        {/* Right, tagline + stats */}
         <div
           style={{
             padding: "80px 64px",
@@ -162,7 +162,7 @@ export default function ManaCpaPage() {
             >
               Whether you&rsquo;re an individual navigating personal taxes, a
               small business owner seeking sustainable growth, or a corporation
-              managing complex operations — our team guides you with precision,
+              managing complex operations, our team guides you with precision,
               integrity, and genuine insight.
             </p>
           </div>
@@ -511,7 +511,7 @@ export default function ManaCpaPage() {
           minHeight: "420px",
         }}
       >
-        {/* Left — commitment */}
+        {/* Left, commitment */}
         <div
           style={{
             background: CRIMSON,
@@ -587,7 +587,7 @@ export default function ManaCpaPage() {
           </div>
         </div>
 
-        {/* Right — testimonials */}
+        {/* Right, testimonials */}
         <div
           style={{
             background: CREAM,
@@ -622,7 +622,7 @@ export default function ManaCpaPage() {
               },
               {
                 quote:
-                  "Exceptional, professional, and knowledgeable tax advice for my small business and personal filing — for years.",
+                  "Exceptional, professional, and knowledgeable tax advice for my small business and personal filing, for years.",
                 name: "Ryan Leh",
               },
               {

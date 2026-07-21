@@ -3,14 +3,14 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Website Design & Development | Shark Branding Solutions",
+  title: "Website Design & Development | Shark AI Solutions",
   description:
     "Custom websites built to attract, convert, and retain customers. Fast, mobile-optimized, SEO-ready sites designed to grow your business from day one.",
   alternates: {
     canonical: "https://sharkbrandingsolutions.com/websites",
   },
   openGraph: {
-    title: "Website Design & Development | Shark Branding Solutions",
+    title: "Website Design & Development | Shark AI Solutions",
     description:
       "Custom websites built to attract, convert, and retain customers. Fast, mobile-optimized, and SEO-ready.",
     url: "https://sharkbrandingsolutions.com/websites",
@@ -49,7 +49,7 @@ const features = [
     body: "Every ad you run, every review you earn, every social post you publish, it all drives people back to your website. If that site is slow, confusing, or outdated, you're losing customers before they ever contact you.\n\nWe build websites designed to convert, not just look good. Fast, mobile-first, and optimized for local search from the first line of code.",
     cta: { label: "See our process", href: "/contact" },
     img: CDN + "2025/08/Foundation-for-growth-502x.webp",
-    alt: "Foundation for business growth — website as the core of digital marketing",
+    alt: "Foundation for business growth, website as the core of digital marketing",
     imgLeft: false,
     width: 502,
     height: 366,
@@ -177,7 +177,7 @@ export default function WebsitesPage() {
         </div>
       </section>
 
-      {/* ATTRACT CONVERT ENGAGE — full-width feature */}
+      {/* ATTRACT CONVERT ENGAGE, full-width feature */}
       <section className="py-20 px-6 bg-[#f5f5f7] border-b border-[#e5e5ea]">
         <div className="max-w-[1200px] mx-auto flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
           <div className="flex-1 min-w-0">
@@ -213,7 +213,7 @@ export default function WebsitesPage() {
         </div>
       </section>
 
-      {/* WHY US — 4-up grid */}
+      {/* WHY US, 4-up grid */}
       <section className="py-20 px-6 border-b border-[#e5e5ea]">
         <div className="max-w-[1200px] mx-auto">
           <h2 className="text-[28px] sm:text-[36px] font-extrabold text-[#1d1d1f] text-center tracking-tight mb-4">

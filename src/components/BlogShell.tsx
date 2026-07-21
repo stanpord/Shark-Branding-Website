@@ -161,7 +161,7 @@ export default function BlogShell({
             <div>
               <p className="text-[14px] font-semibold text-[#1d1d1f]">Michelle Stanaland</p>
               <p className="text-[13px] text-[#6e6e73]">
-                Founder &amp; CEO, Shark Branding Solutions &middot;{" "}
+                Founder &amp; CEO, Shark AI Solutions &middot;{" "}
                 <Link href="/about" className="text-[#18b5d8] hover:underline">
                   Top 15 Tampa Bay Marketing Experts
                 </Link>
@@ -205,7 +205,7 @@ export default function BlogShell({
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
             <Link
-              href="/free-report"
+              href="/ai-audit"
               className="btn-press inline-block bg-black text-white text-[17px] font-semibold rounded-full px-[22px] py-[11px] hover:bg-white hover:text-black motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:ring-offset-[#18b5d8] [touch-action:manipulation]"
             >
               Get My Free AI Audit

@@ -300,7 +300,7 @@ export default function AiVsHumanReceptionistPage() {
               Delivered in 48 hours. Specific to your business. No commitment.
             </p>
             <Link
-              href="/free-report"
+              href="/ai-audit"
               className="inline-block bg-[#18b5d8] text-white text-[15px] font-semibold rounded-full px-8 py-4 hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150"
             >
               Get My Free AI Audit

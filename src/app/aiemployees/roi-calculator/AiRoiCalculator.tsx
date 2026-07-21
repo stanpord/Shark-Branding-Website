@@ -458,7 +458,7 @@ export default function AiRoiCalculator() {
           </div>
         </div>
 
-        {/* Results panel — sticky on desktop */}
+        {/* Results panel, sticky on desktop */}
         <div className="lg:sticky lg:top-6">
           <ResultsPanel roi={roi} />
         </div>

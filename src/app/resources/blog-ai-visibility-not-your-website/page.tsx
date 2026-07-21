@@ -213,7 +213,7 @@ export default function BlogAiVisibilityNotYourWebsitePage() {
               They have conflicting business information across directories. Their Google Business Profile is incomplete or has the wrong category. They have fewer than 10 reviews and no strategy for getting more. AI has never seen a consistent, credible picture of who they are.
             </p>
             <p>
-              Fix those signals and AI starts recommending you. That is exactly the work our team does for local businesses in Tampa Bay. Start with <Link href="/free-report" className="text-[#18b5d8] hover:underline">our free AI visibility report</Link> to see where your business stands right now, or explore <Link href="/services" className="text-[#18b5d8] hover:underline">our AI visibility services</Link> to understand the full scope of what getting this right actually involves.
+              Fix those signals and AI starts recommending you. That is exactly the work our team does for local businesses in Tampa Bay. Start with <Link href="/free-report" className="text-[#18b5d8] hover:underline">our free AI visibility report</Link> to see where your business stands right now, or explore <Link href="/ai-visibility-consulting" className="text-[#18b5d8] hover:underline">our AI visibility consulting</Link> to understand the full scope of what getting this right actually involves.
             </p>
           </div>
 
@@ -279,7 +279,7 @@ export default function BlogAiVisibilityNotYourWebsitePage() {
               Delivered in 48 hours. Specific to your business. No commitment.
             </p>
             <Link
-              href="/free-report"
+              href="/ai-audit"
               className="inline-block bg-[#18b5d8] text-white text-[15px] font-semibold rounded-full px-8 py-4 hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150"
             >
               Get My Free AI Audit

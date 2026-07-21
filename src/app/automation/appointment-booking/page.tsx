@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Appointment Booking Automation | Shark AI Solutions',
-  description: 'AI appointment booking for Wesley Chapel and Tampa Bay. 24/7 lead qualification and calendar booking without phone tag or scheduling delays. Live in one week.',
+  description: 'AI appointment booking for Wesley Chapel and Tampa Bay. 24/7 lead qualification and direct calendar booking. No phone tag, no scheduling delays.',
   alternates: { canonical: 'https://sharkbrandingsolutions.com/automation/appointment-booking' },
   openGraph: {
     title: 'Appointment Booking Automation | Shark AI Solutions',
@@ -79,7 +79,7 @@ export default function AppointmentBookingPage() {
           </p>
           <div className="flex flex-wrap items-center justify-center gap-3">
             <Link
-              href="/free-report"
+              href="/ai-audit"
               className="btn-press inline-block bg-[#18b5d8] text-white text-[15px] font-semibold rounded-full px-7 py-3.5 hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 [touch-action:manipulation]"
             >
               Get My Free AI Audit
@@ -215,7 +215,7 @@ export default function AppointmentBookingPage() {
             Free AI Audit delivered in 48 hours. We identify exactly how many leads your current booking process is losing before you invest in anything.
           </p>
           <Link
-            href="/free-report"
+            href="/ai-audit"
             className="btn-press inline-block bg-[#18b5d8] text-white text-[17px] font-semibold rounded-full px-[32px] py-[15px] hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0a0a] [touch-action:manipulation]"
           >
             Get My Free AI Audit

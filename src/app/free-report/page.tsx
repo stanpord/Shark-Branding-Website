@@ -21,7 +21,7 @@ const freeReportSchema = {
           name: "How long does the Free AI Audit take?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Getting started takes 60 seconds — just your business name, location, and email. Your top visibility findings are delivered to your inbox within 48 hours. From there, you book a Google Meet with the Shark AI Solutions team to go through everything together, prioritize what matters most, and build your action plan. The call is free and takes about one hour.",
+            text: "Getting started takes 60 seconds, just your business name, location, and email. Your top visibility findings are delivered to your inbox within 48 hours. From there, you book a Google Meet with the Shark AI Solutions team to go through everything together, prioritize what matters most, and build your action plan. The call is free and takes about one hour.",
           },
         },
       ],

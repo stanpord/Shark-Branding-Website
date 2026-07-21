@@ -51,7 +51,7 @@ export default function ExitIntentPopup() {
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     dismiss();
-    router.push("/free-report");
+    router.push("/ai-audit");
   }
 
   if (!visible) return null;

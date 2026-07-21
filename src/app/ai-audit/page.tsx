@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import AuditForm from './AuditForm'
 
 export const metadata: Metadata = {
-  title: 'Free AI Visibility Audit | Shark Branding Solutions',
+  title: 'Free AI Visibility Audit | Shark AI Solutions',
   description:
     'Find out if ChatGPT, Gemini, and Google AI are recommending your competitors instead of you. Run a free AI visibility audit in 60 seconds.',
   alternates: {

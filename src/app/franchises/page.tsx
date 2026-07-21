@@ -129,7 +129,7 @@ const features = [
   },
   {
     id: "performance",
-    h2: "Track top-performing locations — and support the ones that need it",
+    h2: "Track top-performing locations, and support the ones that need it",
     body: "See which locations are winning and why. Our multi-location performance dashboard surfaces the highest-performing locations alongside those falling behind, so franchisors can replicate what's working and intervene where needed.\n\nCustom reporting by location, region, or the whole network gives you the visibility to make decisions faster, with data you can actually trust.",
     cta: { label: "Discover multi-location reporting", href: "/contact" },
     img: CDN + "2025/05/top-performance-551x.webp",
@@ -174,24 +174,6 @@ const features = [
     width: 560,
     height: 418,
     cdn: false,
-  },
-];
-
-/* ── Case studies ── */
-const caseStudies = [
-  {
-    category: "Franchise",
-    img: "https://www.vendasta.com/wp-content/uploads/2023/12/Fred-Astaire-Franchise-case-study-featured-400x284.webp",
-    alt: "Dance studio franchise locations marketing platform",
-    title: "National dance studio franchise unifies marketing across all locations with one platform",
-    href: "/case-studies",
-  },
-  {
-    category: "MSP / IT Services",
-    img: "https://www.vendasta.com/wp-content/uploads/2025/02/IP-Consulting-Case-Study-featured-image-560x420-1.png",
-    alt: "Managed service provider unlocks marketing funds",
-    title: "MSP helps franchise clients unlock $750K in co-op marketing funds",
-    href: "/case-studies",
   },
 ];
 
@@ -264,7 +246,7 @@ export default function FranchisesPage() {
       </section>
 
       {/* ══════════════════════════════════════
-          LOCATIONS DASHBOARD — full-width
+          LOCATIONS DASHBOARD, full-width
       ══════════════════════════════════════ */}
       <section className="py-20 px-6 bg-[#f5f5f7] border-b border-[#e5e5ea]">
         <div className="max-w-[1200px] mx-auto">
@@ -290,7 +272,7 @@ export default function FranchisesPage() {
       </section>
 
       {/* ══════════════════════════════════════
-          MULTI-LOCATION CAPABILITIES — 4 blurbs
+          MULTI-LOCATION CAPABILITIES, 4 blurbs
       ══════════════════════════════════════ */}
       <section className="py-20 px-6 border-b border-[#e5e5ea]">
         <div className="max-w-[1200px] mx-auto">
@@ -318,7 +300,7 @@ export default function FranchisesPage() {
       </section>
 
       {/* ══════════════════════════════════════
-          WHY SECTION — 4 blurbs
+          WHY SECTION, 4 blurbs
       ══════════════════════════════════════ */}
       <section className="py-20 px-6 border-b border-[#e5e5ea] bg-[#f5f5f7]">
         <div className="max-w-[1200px] mx-auto">
@@ -345,7 +327,7 @@ export default function FranchisesPage() {
       </section>
 
       {/* ══════════════════════════════════════
-          BENEFIT CARDS — 2x2
+          BENEFIT CARDS, 2x2
       ══════════════════════════════════════ */}
       <section className="py-20 px-6 border-b border-[#e5e5ea]">
         <div className="max-w-[1200px] mx-auto">
@@ -463,44 +445,6 @@ export default function FranchisesPage() {
             </div>
           </div>
         ))}
-      </section>
-
-      {/* ══════════════════════════════════════
-          CASE STUDIES
-      ══════════════════════════════════════ */}
-      <section className="py-20 px-6 bg-[#f5f5f7] border-b border-[#e5e5ea]">
-        <div className="max-w-[1200px] mx-auto">
-          <h2 className="text-[28px] sm:text-[36px] font-extrabold text-[#1d1d1f] tracking-tight text-center mb-14">
-            Franchise success stories
-          </h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {caseStudies.map((cs) => (
-              <Link
-                key={cs.title}
-                href={cs.href}
-                className="bg-white rounded-[20px] border border-[#e5e5ea] overflow-hidden shadow-sm group hover:shadow-md transition-shadow duration-200"
-              >
-                <div className="relative aspect-[400/284]">
-                  <Image
-                    src={cs.img}
-                    alt={cs.alt}
-                    fill
-                    className="object-cover group-hover:scale-[1.02] transition-transform duration-300"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  />
-                </div>
-                <div className="p-6">
-                  <span className="text-[11px] font-bold tracking-[2px] uppercase text-[#18b5d8]">
-                    {cs.category}
-                  </span>
-                  <h3 className="text-[16px] font-bold text-[#1d1d1f] mt-2 leading-snug group-hover:text-[#18b5d8] transition-colors duration-150">
-                    {cs.title}
-                  </h3>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </div>
       </section>
 
       {/* ══════════════════════════════════════

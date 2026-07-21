@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'What Is an AI Sales Manager? | Shark AI Solutions',
-  description: 'An AI Sales Manager routes leads, runs follow-up sequences, scores pipeline, and surfaces what needs attention, automatically. Here is what it actually does and when your business needs one.',
+  description: 'An AI Sales Manager routes leads, runs follow-up sequences, scores pipeline, and surfaces what needs attention. Here is what it does and when your business needs one.',
   alternates: { canonical: 'https://sharkbrandingsolutions.com/resources/blog-what-is-ai-sales-manager' },
   openGraph: {
     title: 'What Is an AI Sales Manager? What It Does All Day',
@@ -151,7 +151,7 @@ export default function WhatIsAiSalesManagerPage() {
               Most leads are not ready to buy the day they contact you. They are comparing options, waiting on a spouse to weigh in, or just not in a rush. A human team forgets these people. The AI does not.
             </p>
             <p>
-              Unbooked leads enter a nurture sequence. The AI checks in at timed intervals with relevant messages, not generic blasts — using the same <Link href="/resources/blog-what-is-ai-sales-assistant-bant-sandler" className="text-[#18b5d8] hover:underline">BANT and Sandler qualification frameworks</Link> that warm leads before your closers get involved. When a nurtured lead re-engages, the full history of every prior interaction is already in your CRM. Your team gets a notification with context, not just a name and a phone number.
+              Unbooked leads enter a nurture sequence. The AI checks in at timed intervals with relevant messages, not generic blasts, using the same <Link href="/resources/blog-what-is-ai-sales-assistant-bant-sandler" className="text-[#18b5d8] hover:underline">BANT and Sandler qualification frameworks</Link> that warm leads before your closers get involved. When a nurtured lead re-engages, the full history of every prior interaction is already in your CRM. Your team gets a notification with context, not just a name and a phone number.
             </p>
           </div>
 
@@ -241,7 +241,7 @@ export default function WhatIsAiSalesManagerPage() {
               Find out how many leads your business is losing right now.
             </h3>
             <p className="text-white/50 text-[15px] mb-8">Delivered in 48 hours. Specific to your business. No commitment.</p>
-            <Link href="/free-report" className="inline-block bg-[#18b5d8] text-white text-[15px] font-semibold rounded-full px-8 py-4 hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150">
+            <Link href="/ai-audit" className="inline-block bg-[#18b5d8] text-white text-[15px] font-semibold rounded-full px-8 py-4 hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150">
               Get My Free AI Audit
             </Link>
           </div>

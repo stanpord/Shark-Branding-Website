@@ -166,10 +166,10 @@ const services = [
       "Search and map listing analysis",
       "Review and trust signal audit",
       "AI platform appearance check",
-      "Actionable priority list delivered in 48 hours",
+      "Actionable priority list with instant results",
       "100% free, forever, no catch",
     ],
-    cta: "Get My Free AI Audit", href: "/free-report",
+    cta: "Get My Free AI Audit", href: "/ai-audit",
   },
 ];
 
@@ -216,7 +216,7 @@ export default function ServicesPage() {
           </div>
           <div data-animate="hero-cta">
             <Link
-              href="/free-report"
+              href="/ai-audit"
               className="btn-press inline-block bg-[#18b5d8] text-white text-[15px] font-semibold rounded-full px-7 py-3.5 hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 [touch-action:manipulation]"
             >
               Get My Free AI Audit
@@ -646,7 +646,7 @@ export default function ServicesPage() {
           </p>
           <div data-animate="cta-btn">
             <Link
-              href="/free-report"
+              href="/ai-audit"
               className="btn-press inline-block bg-[#18b5d8] text-white text-[17px] font-semibold rounded-full px-[32px] py-[15px] hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0a0a] [touch-action:manipulation]"
             >
               Get My Free AI Audit

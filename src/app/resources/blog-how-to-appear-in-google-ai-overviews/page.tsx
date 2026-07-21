@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'How Local Businesses Get Recommended in Google AI Overviews | Shark AI Solutions',
+  title: 'How to Get Recommended in Google AI Overviews | Shark AI Solutions',
   description: 'What drives Google AI Overview recommendations for local businesses. The signals that matter, why they matter, and what separates businesses that get recommended from those that don\'t.',
   alternates: { canonical: 'https://sharkbrandingsolutions.com/resources/blog-how-to-appear-in-google-ai-overviews' },
   openGraph: {
@@ -103,7 +103,7 @@ export default function HowToAppearInGoogleAiOverviewsPage() {
             How Local Businesses Get Recommended in Google AI Overviews
           </h1>
           <p className="lead-airy text-[#555] mb-8" style={{ textWrap: 'balance' }}>
-            AI Overviews now appear at the top of more than 60% of Google searches. For local businesses, that means the first thing a buyer sees is not a list of websites — it&apos;s a short list of recommended businesses. Here&apos;s what determines whether your business is on that list.
+            AI Overviews now appear at the top of more than 60% of Google searches. For local businesses, that means the first thing a buyer sees is not a list of websites, it&apos;s a short list of recommended businesses. Here&apos;s what determines whether your business is on that list.
           </p>
           <div className="flex items-center gap-3 text-[13px] text-[#6e6e73]">
             <span>By Josh Stanaland</span>
@@ -193,7 +193,7 @@ export default function HowToAppearInGoogleAiOverviewsPage() {
             </p>
 
             <p>
-              Businesses that address these signals one at a time, or hand them off to tools that handle each in isolation, rarely see meaningful results. What moves the needle is a coordinated system maintained over time, not a one-time configuration. If you want to know exactly where your business stands across all five signals today, our <Link href="/free-report" className="text-[#18b5d8] hover:underline">free AI visibility audit</Link> shows you what the model sees, where the gaps are, and what it would take to close them.
+              Businesses that address these signals one at a time, or hand them off to tools that handle each in isolation, rarely see meaningful results. What moves the needle is a coordinated system maintained over time, not a one-time configuration. If you want to know exactly where your business stands across all five signals today, our <Link href="/ai-audit" className="text-[#18b5d8] hover:underline">free AI visibility audit</Link> shows you what the model sees, where the gaps are, and what it would take to close them.
             </p>
 
             <h2 className="text-[26px] font-bold text-[#0a0a0a] mt-8 mb-4">A note on timeline</h2>
@@ -252,7 +252,7 @@ export default function HowToAppearInGoogleAiOverviewsPage() {
               We test your business against 20+ queries across ChatGPT, Gemini, Perplexity, and Google AI Overviews. Your report is ready in 24 hours, then we walk through it with you.
             </p>
             <Link
-              href="/free-report"
+              href="/ai-audit"
               className="inline-block bg-[#18b5d8] text-white text-[15px] font-semibold rounded-full px-8 py-4 hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150"
             >
               Get My Free AI Audit

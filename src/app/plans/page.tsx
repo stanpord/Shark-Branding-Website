@@ -62,7 +62,7 @@ const plansSchema = {
           name: "Are there contracts or long-term commitments?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Enterprise engagements are scoped on a custom basis — terms depend on the scope, markets, and deliverables. Done For You has no required annual contract. The Self-Guided Toolkit requires a 12-month or 3-month minimum commitment.",
+            text: "Enterprise engagements are scoped on a custom basis, terms depend on the scope, markets, and deliverables. Done For You has no required annual contract. The Self-Guided Toolkit requires a 12-month or 3-month minimum commitment.",
           },
         },
       ],
@@ -94,14 +94,15 @@ const doneForYouFeatures = [
 ];
 
 const selfGuidedFeatures = [
-  "Full AI Visibility Toolkit — the same framework our managed clients run on",
+  "Full AI Visibility Toolkit, the same framework our managed clients run on",
+  "1 Google Business Profile optimization included",
   "Step-by-step action plan: listings, reviews, AI signals, local content",
   "Clear priority sequence so your team always knows what to do next",
   "Templates and implementation guides for each phase",
 ];
 
 const comparisonFeatures = [
-  { label: "AI Visibility Audit",           enterprise: true,  dfy: true,  toolkit: true  },
+  { label: "Managed AI visibility audit",   enterprise: true,  dfy: true,  toolkit: false },
   { label: "Proven framework + templates",  enterprise: true,  dfy: true,  toolkit: true  },
   { label: "Our team executes everything",  enterprise: true,  dfy: true,  toolkit: false },
   { label: "Monthly GBP optimization",      enterprise: true,  dfy: true,  toolkit: false },
@@ -121,18 +122,18 @@ const pricingObjections = [
   },
   {
     q: "How does this integrate with our existing stack?",
-    a: "Enterprise onboarding includes a technical discovery call where we map your existing tools, CRM, and reporting workflows. For Done For You, there's nothing to integrate — we work directly with your GBP, citation platforms, and content layer. No new software required on your end.",
+    a: "Enterprise onboarding includes a technical discovery call where we map your existing tools, CRM, and reporting workflows. For Done For You, there's nothing to integrate, we work directly with your GBP, citation platforms, and content layer. No new software required on your end.",
   },
   {
     q: "How is this different from our current agency?",
-    a: "Most agencies focus on ads, social posts, and traffic metrics. We focus on AI visibility signals — the data ChatGPT, Gemini, and Google AI Overviews use to decide which businesses to recommend. It's a different layer. Most of our clients run us alongside their existing agency.",
+    a: "Most agencies focus on ads, social posts, and traffic metrics. We focus on AI visibility signals, the data ChatGPT, Gemini, and Google AI Overviews use to decide which businesses to recommend. It's a different layer. Most of our clients run us alongside their existing agency.",
   },
 ];
 
 const objections = [
   {
     q: "We've paid for SEO before and it didn't work. How is this different?",
-    a: "Traditional SEO targets search engine algorithms. This targets AI search engines — the systems behind ChatGPT, Gemini, and Google AI Overviews that now drive a growing share of local and regional discovery. The signals are different, the work is different, and the timeline is faster. Our HVAC client saw position movement in 30 days, not six months.",
+    a: "Traditional SEO targets search engine algorithms. This targets AI search engines, the systems behind ChatGPT, Gemini, and Google AI Overviews that now drive a growing share of local and regional discovery. The signals are different, the work is different, and the timeline is faster. Our HVAC client saw position movement in 30 days, not six months.",
   },
   {
     q: "What actually happens after we sign?",
@@ -140,18 +141,18 @@ const objections = [
   },
   {
     q: "How long until we see results?",
-    a: "Visibility signals typically begin moving within 30–60 days. Significant position changes — like the HVAC results below — can happen faster with consistent execution. Enterprise clients operating across multiple markets typically see initial movement in their highest-priority markets first.",
+    a: "Visibility signals typically begin moving within 30–60 days. Significant position changes, like the HVAC results below, can happen faster with consistent execution. Enterprise clients operating across multiple markets typically see initial movement in their highest-priority markets first.",
   },
   {
     q: "What does the engagement look like month to month?",
-    a: "Enterprise clients get monthly execution reports, quarterly business reviews with their account lead, and ongoing communication through a dedicated channel. You know exactly what was done, what moved, and what's targeted next — every month, without having to ask.",
+    a: "Enterprise clients get monthly execution reports, quarterly business reviews with their account lead, and ongoing communication through a dedicated channel. You know exactly what was done, what moved, and what's targeted next, every month, without having to ask.",
   },
 ];
 
 const faqs = [
   {
     q: "Which plan is right for a multi-location brand?",
-    a: "Enterprise. The individual-location plans (Done For You and Self-Guided) are designed for single-market businesses. Enterprise engagements are custom-scoped to cover your specific number of locations, markets, and reporting requirements. Start with a scoping call — no commitment required.",
+    a: "Enterprise. The individual-location plans (Done For You and Self-Guided) are designed for single-market businesses. Enterprise engagements are custom-scoped to cover your specific number of locations, markets, and reporting requirements. Start with a scoping call, no commitment required.",
   },
   {
     q: "What does multi-location management actually include?",
@@ -208,7 +209,7 @@ export default function PlansPage() {
             <p className="text-[19px] leading-[1.65] text-white/60 max-w-[560px] mb-10" style={{ textWrap: "pretty" }}>
               ChatGPT, Google AI Overviews, and Gemini each surface one to three businesses per query.
               For multi-location brands, maintaining that position across every market you serve is an
-              ongoing management challenge — not a one-time fix. We handle it.
+              ongoing management challenge, not a one-time fix. We handle it.
             </p>
             <div className="flex flex-wrap gap-4">
               <a
@@ -244,6 +245,58 @@ export default function PlansPage() {
         </div>
       </section>
 
+      {/* ── Audit Entry Strip ─────────────────────────────────────── */}
+      <section className="bg-[#07141a] border-t border-white/5 py-14 px-6">
+        <div className="max-w-[1080px] mx-auto">
+          <p className="text-[12px] font-semibold tracking-[0.18em] uppercase text-[#18b5d8] mb-7 text-center">
+            Start here, before committing to any plan
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="border border-white/10 rounded-[14px] p-7 flex flex-col gap-4">
+              <div className="flex items-center justify-between">
+                <span className="text-[12px] font-bold text-[#18b5d8] uppercase tracking-[0.1em]">Free</span>
+                <span className="text-[12px] text-white/35">Instant · Automated</span>
+              </div>
+              <h3 className="text-[18px] font-semibold text-white leading-snug">
+                Free AI Visibility Audit
+              </h3>
+              <p className="text-[13px] text-white/55 leading-relaxed">
+                See exactly how your business appears across ChatGPT, Gemini, and Google AI Overviews.
+                Runs in 60 seconds. No commitment.
+              </p>
+              <Link
+                href="/ai-audit"
+                className="mt-auto btn-press inline-block text-center bg-[#18b5d8] text-white text-[14px] font-semibold rounded-full px-6 py-3 hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 focus-visible:ring-offset-[#07141a] [touch-action:manipulation]"
+              >
+                Run My Free Audit →
+              </Link>
+            </div>
+            <div className="border border-white/10 rounded-[14px] p-7 flex flex-col gap-4">
+              <div className="flex items-center justify-between">
+                <span className="text-[20px] font-semibold text-white">$199</span>
+                <span className="text-[12px] text-white/35">48 hours · Human-curated</span>
+              </div>
+              <h3 className="text-[18px] font-semibold text-white leading-snug">
+                Comprehensive AI Visibility Report
+              </h3>
+              <p className="text-[13px] text-white/55 leading-relaxed">
+                Full audit with a written strategy roadmap: where you stand, what&rsquo;s costing you
+                leads, and the exact steps to fix it, prioritized for your market and competitors.
+              </p>
+              <Link
+                href="/free-report"
+                className="mt-auto btn-press inline-block text-center border border-white/20 text-white text-[14px] font-semibold rounded-full px-6 py-3 hover:border-[#18b5d8] hover:text-[#18b5d8] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 focus-visible:ring-offset-[#07141a] [touch-action:manipulation]"
+              >
+                Get the $199 Report →
+              </Link>
+              <p className="text-[11px] text-white/30 text-center">
+                North Tampa Bay Chamber members: free with member code
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ── Pricing ───────────────────────────────────────────────── */}
       <section id="plans" className="bg-[#0a0a0a] py-24 px-6">
         <div className="max-w-[1080px] mx-auto">
@@ -255,7 +308,7 @@ export default function PlansPage() {
             Self-Guided are designed for individual locations.
           </p>
 
-          {/* ── Enterprise — full-width featured block ── */}
+          {/* ── Enterprise, full-width featured block ── */}
           <div className="bg-[#07141a] border border-[#18b5d8]/30 rounded-[14px] p-10 mb-5 grid grid-cols-1 lg:grid-cols-2 gap-10">
             <div className="flex flex-col justify-between">
               <div>
@@ -270,7 +323,7 @@ export default function PlansPage() {
                     <span className="text-[44px] font-semibold text-white leading-none">$4,000</span>
                     <span className="text-[15px] text-white/50">/mo, starting</span>
                   </div>
-                  <p className="text-[13px] text-white/50">Custom scope — pricing scales with number of locations and markets.</p>
+                  <p className="text-[13px] text-white/50">Custom scope, pricing scales with number of locations and markets.</p>
                 </div>
                 <p className="text-[15px] text-white/65 leading-relaxed mb-8" style={{ textWrap: "pretty" }}>
                   Dedicated resources, executive-level reporting, and a team that owns AI visibility
@@ -308,7 +361,7 @@ export default function PlansPage() {
             </div>
           </div>
 
-          {/* ── Supporting plans — 2-col ── */}
+          {/* ── Supporting plans, 2-col ── */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-10">
 
             {/* Done For You */}
@@ -355,10 +408,10 @@ export default function PlansPage() {
             <div className="bg-[#07141a] rounded-[14px] p-8 border border-white/8 flex flex-col">
               <p className="text-[13px] font-medium text-white/45 mb-1.5">For teams with internal bandwidth</p>
               <h2 className="text-[22px] font-semibold text-white mb-5 leading-snug">
-                Self-Guided Toolkit
+                AI Visibility Toolkit
               </h2>
               <div className="mb-1 flex items-baseline gap-2.5">
-                <span className="text-[40px] font-semibold text-white leading-none">$997</span>
+                <span className="text-[40px] font-semibold text-white leading-none">$999</span>
                 <span className="text-[14px] text-white/45">/mo</span>
                 <span className="text-[11px] font-bold text-[#18b5d8] bg-[#18b5d8]/10 rounded-full px-3 py-1 whitespace-nowrap">
                   Save $3,600/yr
@@ -389,7 +442,7 @@ export default function PlansPage() {
                   rel="noopener noreferrer"
                   className="text-[#18b5d8] hover:underline"
                 >
-                  Start 12-month, $997/mo →
+                  Start 12-month, $999/mo →
                 </a>
                 {" "}·{" "}
                 <a
@@ -422,8 +475,8 @@ export default function PlansPage() {
 
           <p className="text-center text-[14px] text-white/40 mt-6">
             Not sure where to start?{" "}
-            <Link href="/free-report" className="text-[#18b5d8] font-semibold hover:underline">
-              Get a free Visibility Audit →
+            <Link href="/ai-audit" className="text-[#18b5d8] font-semibold hover:underline">
+              Run a free AI Audit →
             </Link>{" "}
             It shows exactly where you stand before you commit to anything.
           </p>
@@ -456,7 +509,7 @@ export default function PlansPage() {
                 {[
                   { label: "Enterprise",    sub: "From $4,000/mo", highlight: true  },
                   { label: "Done For You",  sub: "$2,000/mo",      highlight: false },
-                  { label: "Toolkit",       sub: "$997/mo",        highlight: false },
+                  { label: "Toolkit",       sub: "$999/mo",        highlight: false },
                 ].map((col) => (
                   <div key={col.label} className={`px-5 py-4 text-center ${col.highlight ? "bg-[#18b5d8]/10" : ""}`}>
                     <p className={`text-[13px] font-semibold ${col.highlight ? "text-[#18b5d8]" : "text-white"}`}>{col.label}</p>
@@ -594,7 +647,7 @@ export default function PlansPage() {
           <div className="mt-10 flex flex-wrap gap-4 text-[14px] justify-center">
             <Link href="/services" className="text-[#18b5d8] font-semibold hover:underline">What We Do →</Link>
             <Link href="/case-studies" className="text-[#18b5d8] font-semibold hover:underline">See Client Results →</Link>
-            <Link href="/free-report" className="text-[#18b5d8] font-semibold hover:underline">Get a Free Visibility Audit →</Link>
+            <Link href="/ai-audit" className="text-[#18b5d8] font-semibold hover:underline">Run a Free AI Audit →</Link>
           </div>
         </div>
       </section>
@@ -633,16 +686,16 @@ export default function PlansPage() {
             Ready to scope your enterprise engagement?
           </h2>
           <p className="lead-airy text-white/55 mb-12" style={{ textWrap: "balance" }}>
-            Start with a free Visibility Audit to see exactly where you stand across Google, ChatGPT,
+            Start with a free AI Audit to see exactly where you stand across Google, ChatGPT,
             Gemini, and local listings. Then we scope what an enterprise engagement looks like for
             your organization.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
             <Link
-              href="/free-report"
+              href="/ai-audit"
               className="btn-press inline-block bg-[#18b5d8] text-white text-[17px] font-semibold rounded-full px-[32px] py-[15px] hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0a0a] [touch-action:manipulation]"
             >
-              Get My Free Visibility Audit
+              Run My Free AI Audit
             </Link>
             <a
               href={BOOK_CALL_URL}

@@ -3,11 +3,11 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'How Much Does the Full AI Suite Cost? | Shark AI Solutions',
-  description: 'The Full AI Suite from Shark AI Solutions is $2,000 setup and $5,000 per month, month-to-month. Here is exactly what is included and how it compares to building the same stack yourself.',
+  description: 'The Full AI Suite from Shark AI Solutions is one flat monthly rate, custom quoted for your business, month-to-month. Here is exactly what is included and how it compares to building the same stack yourself.',
   alternates: { canonical: 'https://sharkbrandingsolutions.com/resources/blog-full-ai-suite-pricing' },
   openGraph: {
     title: 'How Much Does the Full AI Suite Cost? Transparent Pricing Breakdown',
-    description: '$2,000 setup. $5,000/mo. Month-to-month. Here is everything included and how it compares to the alternatives.',
+    description: 'One flat monthly rate. One-time setup. Month-to-month. Here is everything included and how it compares to the alternatives.',
     url: 'https://sharkbrandingsolutions.com/resources/blog-full-ai-suite-pricing',
     type: 'article',
   },
@@ -17,7 +17,7 @@ const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'BlogPosting',
   headline: 'How Much Does the Full AI Suite Cost? Transparent Pricing Breakdown',
-  description: 'A transparent breakdown of Full AI Suite pricing from Shark AI Solutions: $2,000 setup, $5,000/mo month-to-month. What is included, what competitors charge for the same stack, and how the math works for a small service business.',
+  description: 'A transparent breakdown of Full AI Suite pricing from Shark AI Solutions: one flat monthly rate, custom quoted, month-to-month. What is included, what competitors charge for the same stack, and how the math works for a small service business.',
   url: 'https://sharkbrandingsolutions.com/resources/blog-full-ai-suite-pricing',
   datePublished: '2026-07-03',
   dateModified: '2026-07-03',
@@ -47,19 +47,23 @@ const breadcrumbData = {
 const faqs = [
   {
     q: 'How much does the Full AI Suite cost?',
-    a: 'The Full AI Suite from Shark AI Solutions is $2,000 setup and $5,000 per month. There are no per-call charges, no per-user fees, and no annual contract requirement. You go month-to-month from day one.',
+    a: 'The Full AI Suite from Shark AI Solutions is one flat monthly rate plus a one-time setup fee, custom quoted based on your business and scope. There are no per-call charges, no per-seat or per-user fees, and no annual contract requirement. You go month-to-month from day one.',
   },
   {
-    q: 'What is included in the $5,000 per month?',
+    q: 'What is included in the monthly rate?',
     a: 'The Full AI Suite includes an AI Voice Receptionist (answers every inbound call 24/7), an AI Chat Widget (handles website inquiries), an AI CRM (captures and logs every interaction automatically), an AI Sales Manager (routes leads, runs follow-up sequences, and reports on pipeline health), an AI Sales Assistant (qualifies leads using BANT or Sandler frameworks), and Reputation AI (monitors and responds to reviews). Configuration, ongoing optimization, and support are also included. You are not buying software licenses. You are buying a working system.',
   },
   {
-    q: 'Why is there a $2,000 setup fee?',
+    q: 'Why is the setup fee less than the monthly rate?',
+    a: 'Because we do not sell implementations, we hire out a team. Setup is onboarding: one to two weeks configuring your AI employees for your business. The monthly rate is their payroll: six AI employees working 24/7, plus our team managing, optimizing, and improving them every month. Enterprise vendors charge $15,000 or more up front for implementation and then disappear. We put the cost where the work is, which means we only win if you stay. That is also why there is no annual contract. The money is in the monthly, so we have to re-earn the relationship every 30 days.',
+  },
+  {
+    q: 'Why is there a setup fee?',
     a: 'Setup covers the work of configuring each AI employee for your specific business. The voice receptionist is trained on your services, your service area, your pricing, and your qualifying questions. The CRM is integrated with your calendar and communication channels. The follow-up sequences are written and tested. The chat widget is designed and deployed to your site. This takes real time from real people. The setup fee covers that work so you start with a system that actually works, not a generic template you have to figure out yourself.',
   },
   {
     q: 'What does this cost compared to building it yourself?',
-    a: 'Building the same stack with separate vendors, at 100 calls per month and 200 chat interactions, typically runs $3,500 to $4,500 per month across four or more platforms. Most of those platforms require annual contracts. None of them are configured for your business out of the box, and none of them include the support and optimization that comes with the Full AI Suite. Year-one cost for the DIY approach is typically $50,000 to $60,000 when you include annual contracts and setup costs across vendors. Year-one for the Full AI Suite is $62,000, with month-to-month flexibility and full management included.',
+    a: 'Building the same stack with separate vendors, at 100 calls per month and 200 chat interactions, typically runs $3,500 to $4,500 per month across four or more platforms. Most of those platforms require annual contracts. None of them are configured for your business out of the box, and none of them include the support and optimization that comes with the Full AI Suite. Year-one cost for the DIY approach is typically $50,000 to $60,000 when you include annual contracts and setup costs across vendors. The Full AI Suite delivers the same stack fully managed, with month-to-month flexibility, for one flat rate quoted to your scope.',
   },
   {
     q: 'Is there a contract or can I cancel anytime?',
@@ -102,7 +106,7 @@ export default function FullAiSuitePricingPage() {
             How Much Does the Full AI Suite Cost?
           </h1>
           <p className="lead-airy text-[#555] mb-8" style={{ textWrap: 'balance' }}>
-            The answer is $2,000 setup and $5,000 per month, month-to-month. Here is exactly what that gets you, what the alternatives cost, and how to think about the ROI.
+            The answer is one flat monthly rate plus a one-time setup fee, quoted to your business, month-to-month. Here is exactly what that gets you, what the alternatives cost, and how to think about the ROI.
           </p>
           <div className="flex items-center gap-3 text-[13px] text-[#999]">
             <span>By Michelle Stanaland</span>
@@ -123,16 +127,16 @@ export default function FullAiSuitePricingPage() {
             <p className="text-[13px] font-semibold tracking-[0.2em] uppercase text-[#18b5d8] mb-4">Full AI Suite Pricing</p>
             <div className="flex items-center justify-center gap-8 flex-wrap">
               <div>
-                <p className="text-[42px] font-bold text-[#0a0a0a] leading-none">$2,000</p>
-                <p className="text-[14px] text-[#777] mt-1">One-time setup</p>
+                <p className="text-[36px] font-bold text-[#0a0a0a] leading-none">One-time</p>
+                <p className="text-[14px] text-[#777] mt-1">Setup fee</p>
               </div>
               <div className="text-[32px] text-[#ccc] font-light">+</div>
               <div>
-                <p className="text-[42px] font-bold text-[#18b5d8] leading-none">$5,000</p>
-                <p className="text-[14px] text-[#777] mt-1">Per month</p>
+                <p className="text-[36px] font-bold text-[#18b5d8] leading-none">Flat monthly rate</p>
+                <p className="text-[14px] text-[#777] mt-1">Custom quoted to your scope</p>
               </div>
             </div>
-            <p className="text-[13px] text-[#999] mt-6">Month-to-month. No annual contract. No per-call or per-user fees.</p>
+            <p className="text-[13px] text-[#999] mt-6">Month-to-month. No annual contract. No per-call, per-user, or per-seat charging.</p>
           </div>
 
           <div className="text-[17px] leading-[1.75] text-[#333] space-y-6 mb-16">
@@ -140,7 +144,7 @@ export default function FullAiSuitePricingPage() {
               We get this question constantly, and we get why. AI sales and automation tools have a reputation for hiding the real number behind per-call pricing, per-user fees, or a base rate that only includes a fraction of what you actually need.
             </p>
             <p>
-              So let us be direct. The Full AI Suite is $2,000 to set up and $5,000 per month. That number does not go up because you get more calls. It does not go up because you hire another person. It does not change because you need support or a configuration update.
+              So let us be direct. The Full AI Suite is a one-time setup fee and one flat monthly rate, quoted to your business on a strategy call. That number does not go up because you get more calls. It does not go up because you hire another person. It does not change because you need support or a configuration update.
             </p>
             <p>
               More calls, more team members, more growth. The price stays the same.
@@ -183,7 +187,7 @@ export default function FullAiSuitePricingPage() {
               The <Link href="/resources/blog-what-is-ai-voice-receptionist" className="text-[#18b5d8] hover:underline">AI voice receptionist</Link> answers every call. The <Link href="/resources/blog-what-is-ai-sales-manager" className="text-[#18b5d8] hover:underline">AI Sales Manager</Link> follows up with every lead. The <Link href="/resources/blog-what-is-ai-sales-assistant-bant-sandler" className="text-[#18b5d8] hover:underline">AI Sales Assistant</Link> warms every prospect before your closer gets involved. None of those things require anyone on your team to be awake.
             </p>
             <p>
-              The question is not whether $5,000 per month is expensive. It is whether you are currently leaving more than $5,000 per month on the table because your phones are not answered, your follow-up is inconsistent, and your pipeline is running out of someone&apos;s memory.
+              The question is not whether the suite is expensive. It is whether you are currently leaving more revenue on the table every month than it costs, because your phones are not answered, your follow-up is inconsistent, and your pipeline is running out of someone&apos;s memory.
             </p>
             <p>
               For most businesses that call us, the answer is yes. <Link href="/free-report" className="text-[#18b5d8] hover:underline">Our free AI visibility report</Link> makes that calculation specific to your business within 48 hours.
@@ -239,8 +243,8 @@ export default function FullAiSuitePricingPage() {
             <h3 className="text-[24px] font-bold text-white mb-4" style={{ textWrap: 'balance' }}>
               See what your business is missing before you spend a dollar.
             </h3>
-            <p className="text-white/50 text-[15px] mb-8">Delivered in 48 hours. Specific to your business. No commitment.</p>
-            <Link href="/free-report" className="inline-block bg-[#18b5d8] text-white text-[15px] font-semibold rounded-full px-8 py-4 hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150">
+            <p className="text-white/50 text-[15px] mb-8">Specific to your business. No commitment.</p>
+            <Link href="/ai-audit" className="inline-block bg-[#18b5d8] text-white text-[15px] font-semibold rounded-full px-8 py-4 hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150">
               Get My Free AI Audit
             </Link>
           </div>

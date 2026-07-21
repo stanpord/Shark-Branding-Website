@@ -125,7 +125,7 @@ export default function AuditForm() {
       setResult(data)
       setState('done')
     } catch {
-      setErrorMsg('Network error — please check your connection and try again.')
+      setErrorMsg('Network error, please check your connection and try again.')
       setState('error')
     }
   }

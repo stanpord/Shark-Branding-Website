@@ -54,7 +54,7 @@ const automations = [
     n: '01',
     title: 'Missed call text-back',
     why: 'The average Wesley Chapel service business loses a substantial portion of inbound calls to voicemail. Most of those callers move on to a competitor before you call back.',
-    what: 'The automation responds instantly when a call goes unanswered, reaching out before the caller has moved on to a competitor. The message, timing, and tone are all configured for your specific business — not pulled from a generic template that sounds like every other local service company.',
+    what: 'The automation responds instantly when a call goes unanswered, reaching out before the caller has moved on to a competitor. The message, timing, and tone are all configured for your specific business, not pulled from a generic template that sounds like every other local service company.',
     impact: 'Highest immediate ROI of any automation. A single recovered job per week more than pays for a full AI employee package.',
     employee: 'Gemma (AI Chat Receptionist)',
   },
@@ -62,7 +62,7 @@ const automations = [
     n: '02',
     title: 'Post-job review requests',
     why: 'Most service businesses in Wesley Chapel have far fewer Google reviews than the category leaders in their market. The gap is not because customers are unwilling to leave them. It is because no one asks consistently, and when they do ask, they often ask the wrong way.',
-    what: 'The automation sends a personalized review request while the customer experience is still fresh. Getting the timing, the message, and the follow-up cadence right is harder than it looks — most businesses that try to manage this manually either ask too late, ask too often, or send a message that reads like a template and gets ignored.',
+    what: 'The automation sends a personalized review request while the customer experience is still fresh. Getting the timing, the message, and the follow-up cadence right is harder than it looks, most businesses that try to manage this manually either ask too late, ask too often, or send a message that reads like a template and gets ignored.',
     impact: 'Businesses that automate this correctly see their review count compound over time, eventually building a gap between themselves and competitors that is very difficult to close without the same system in place.',
     employee: 'Reputation Specialist',
   },
@@ -70,15 +70,15 @@ const automations = [
     n: '03',
     title: 'Lead follow-up sequences',
     why: 'Research from the Harvard Business Review found that the odds of qualifying a lead decrease by 400 percent if you wait longer than five minutes to respond. Most small businesses respond in hours, or not at all.',
-    what: 'Every new lead triggers an automated multi-touch sequence across email and SMS. Getting the cadence right — what to say, when to say it, and how many times to follow up before stopping — is where most DIY attempts break down. The wrong sequence feels like spam. The right one feels like attentive customer service.',
-    impact: 'Clients running this consistently recover meaningful revenue from leads that were already in their pipeline — they just were not being followed up before someone else got there first.',
+    what: 'Every new lead triggers an automated multi-touch sequence across email and SMS. Getting the cadence right, what to say, when to say it, and how many times to follow up before stopping, is where most DIY attempts break down. The wrong sequence feels like spam. The right one feels like attentive customer service.',
+    impact: 'Clients running this consistently recover meaningful revenue from leads that were already in their pipeline, they just were not being followed up before someone else got there first.',
     employee: 'AI CRM (Sales Assistant)',
   },
   {
     n: '04',
     title: 'Appointment reminders and confirmations',
-    why: 'No-show rates for service appointments are a consistent drain on local service businesses in the Tampa Bay area. Most no-shows are not intentional — they happen because the customer forgot, and nobody reminded them in time.',
-    what: 'Automated reminders go out before every appointment, with timing and content configured for your specific service type. The goal is reducing no-shows without creating friction — something most generic reminder tools fail to balance correctly.',
+    why: 'No-show rates for service appointments are a consistent drain on local service businesses in the Tampa Bay area. Most no-shows are not intentional, they happen because the customer forgot, and nobody reminded them in time.',
+    what: 'Automated reminders go out before every appointment, with timing and content configured for your specific service type. The goal is reducing no-shows without creating friction, something most generic reminder tools fail to balance correctly.',
     impact: 'Businesses that implement this correctly see no-show rates fall significantly, recovering billable time and revenue that was simply being forfeited each week.',
     employee: 'AI CRM (Sales Assistant)',
   },
@@ -86,7 +86,7 @@ const automations = [
     n: '05',
     title: 'After-hours chat reception',
     why: 'In Wesley Chapel and the surrounding Pasco County area, a significant share of home service leads come in between 8 PM and midnight, after work hours, when homeowners have time to research. Most businesses have nothing running during those hours.',
-    what: 'An AI chat receptionist handles every after-hours visitor without a human in the loop — qualifying, capturing contact information, and routing based on what they need. What makes this work is the configuration: which questions to ask, how to handle different types of visitors, and how to hand off to your team seamlessly in the morning.',
+    what: 'An AI chat receptionist handles every after-hours visitor without a human in the loop, qualifying, capturing contact information, and routing based on what they need. What makes this work is the configuration: which questions to ask, how to handle different types of visitors, and how to hand off to your team seamlessly in the morning.',
     impact: 'Clients routinely find qualified after-hours leads waiting each morning that would previously have bounced with no contact.',
     employee: 'Gemma (AI Chat Receptionist)',
   },
@@ -183,10 +183,10 @@ export default function FiveAutomationsPage() {
               Our team identifies that through the AI Audit process, matching each business to the automation with the highest immediate impact before any work begins.
             </p>
             <p>
-              All five of these automations are available through <Link href="/services" className="text-[#18b5d8] hover:underline">our AI employee program</Link>. Each one is configured specifically for your business, your service area, and your voice, not a generic template dropped into your account. Review velocity alone, when automated properly, can move a Wesley Chapel business from invisible to dominant in its local search category within 90 days, as we show in <Link href="/case-studies" className="text-[#18b5d8] hover:underline">our client results</Link>.
+              All five of these automations are available through <Link href="/ai-visibility-consulting" className="text-[#18b5d8] hover:underline">our AI employee program</Link>. Each one is configured specifically for your business, your service area, and your voice, not a generic template dropped into your account. Review velocity alone, when automated properly, can move a Wesley Chapel business from invisible to dominant in its local search category within 90 days, as we show in <Link href="/case-studies" className="text-[#18b5d8] hover:underline">our client results</Link>.
             </p>
             <p>
-              The <Link href="/free-report" className="text-[#18b5d8] hover:underline">free AI Audit</Link> identifies exactly which automation would have the biggest immediate impact for your specific business. It takes 48 hours and there&rsquo;s no commitment attached.
+              The <Link href="/ai-assessment" className="text-[#18b5d8] hover:underline">free AI Assessment</Link> identifies exactly which automation would have the biggest immediate impact for your specific business.
             </p>
           </div>
 
@@ -223,7 +223,7 @@ export default function FiveAutomationsPage() {
               Delivered in 48 hours. Specific to your business. No commitment.
             </p>
             <Link
-              href="/free-report"
+              href="/ai-audit"
               className="inline-block bg-[#18b5d8] text-white text-[15px] font-semibold rounded-full px-8 py-4 hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150"
             >
               Get My Free AI Audit

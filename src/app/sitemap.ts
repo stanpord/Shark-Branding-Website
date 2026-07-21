@@ -10,12 +10,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/ai-visibility-consulting`, lastModified: "2026-06-12", changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE}/aiemployees`, lastModified: "2026-05-01", changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE}/automation`, lastModified: "2026-05-01", changeFrequency: "monthly", priority: 0.9 },
+    { url: `${BASE}/websites`, lastModified: "2026-07-11", changeFrequency: "monthly", priority: 0.8 },
+    { url: `${BASE}/local-seo`, lastModified: "2026-07-11", changeFrequency: "monthly", priority: 0.8 },
+    { url: `${BASE}/integrations`, lastModified: "2026-07-11", changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE}/free-report`, lastModified: "2026-05-01", changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE}/plans`, lastModified: "2026-05-01", changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE}/operations`, lastModified: "2026-05-01", changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE}/case-studies`, lastModified: "2026-05-01", changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE}/ai-assessment`, lastModified: "2026-05-01", changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE}/chamber`, lastModified: "2026-05-01", changeFrequency: "monthly", priority: 0.7 },
+
+    { url: `${BASE}/franchises`, lastModified: "2026-07-01", changeFrequency: "monthly", priority: 0.8 },
 
     // ── How-to / landing ──
     { url: `${BASE}/how-to-rank-on-chatgpt-for-local-businesses`, lastModified: "2026-06-12", changeFrequency: "monthly", priority: 0.8 },
@@ -44,7 +49,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // ── Resources hub ──
     { url: `${BASE}/resources`, lastModified: "2026-06-24", changeFrequency: "weekly", priority: 0.8 },
 
-    // ── Blog posts — AI Visibility ──
+    // ── Blog posts, AI Visibility ──
     { url: `${BASE}/resources/blog-ai-visibility-not-your-website`, lastModified: "2026-06-13", changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE}/resources/blog-how-to-appear-in-google-ai-overviews`, lastModified: "2026-06-13", changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE}/resources/blog-end-of-local-seo-ai-visibility`, lastModified: "2026-05-01", changeFrequency: "monthly", priority: 0.7 },
@@ -60,12 +65,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/resources/blog-google-ai-price-check-ready-to-be-chosen`, lastModified: "2026-04-05", changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE}/resources/blog-ntbc-ai-ready-partnership`, lastModified: "2026-04-15", changeFrequency: "monthly", priority: 0.7 },
 
-    // ── Blog posts — AI Employees ──
+    // ── Blog posts, AI Employees ──
     { url: `${BASE}/resources/blog-what-is-an-ai-employee`, lastModified: "2026-05-01", changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE}/resources/blog-why-tampa-bay-businesses-switching-ai-employees`, lastModified: "2026-05-01", changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE}/resources/blog-ai-receptionist-vs-human-receptionist`, lastModified: "2026-05-01", changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE}/resources/blog-ai-answering-service-vs-live-answering-service`, lastModified: "2026-05-01", changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE}/resources/blog-5-automations-wesley-chapel-businesses`, lastModified: "2026-05-01", changeFrequency: "monthly", priority: 0.7 },
+    { url: `${BASE}/resources/blog-what-is-ai-voice-receptionist`, lastModified: "2026-05-01", changeFrequency: "monthly", priority: 0.7 },
+    { url: `${BASE}/resources/blog-what-is-ai-crm-vs-hubspot`, lastModified: "2026-05-01", changeFrequency: "monthly", priority: 0.7 },
+    { url: `${BASE}/resources/blog-what-is-ai-sales-manager`, lastModified: "2026-05-01", changeFrequency: "monthly", priority: 0.7 },
+    { url: `${BASE}/resources/blog-what-is-ai-sales-assistant-bant-sandler`, lastModified: "2026-05-01", changeFrequency: "monthly", priority: 0.7 },
+    { url: `${BASE}/resources/ai-customer-acquisition-statistics-2026`, lastModified: "2026-06-01", changeFrequency: "monthly", priority: 0.7 },
 
     // ── Company pages ──
     { url: `${BASE}/about`, lastModified: "2026-05-01", changeFrequency: "monthly", priority: 0.7 },

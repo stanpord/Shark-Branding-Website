@@ -200,7 +200,7 @@ export default function AiEmployeesDeep() {
               Your AI workforce,<br className="hidden sm:block" /> ready to grow your business.
             </h1>
             <p className="text-white/50 text-[18px] leading-relaxed max-w-xl mx-auto mb-8">
-              Five AI employees that automate lead capture, follow-up, reviews, CRM, and sales coaching — using your business data, starting within the week.
+              Five AI employees that automate lead capture, follow-up, reviews, CRM, and sales coaching, using your business data, starting within the week.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center mb-4">
               <a href={BOOK_CALL_URL} target="_blank" rel="noopener noreferrer" className="inline-block bg-[#18b5d8] text-white font-bold text-[14px] px-7 py-3.5 rounded-full hover:bg-[#14a0c0] transition-colors">
@@ -530,12 +530,23 @@ export default function AiEmployeesDeep() {
       <section id="voice" className="bg-[#f5f5f7] py-16 sm:py-28 px-6">
         <div className="max-w-5xl mx-auto">
 
-          <FadeUp className="mb-16">
+          <FadeUp className="mb-10">
             <span className="inline-block px-3 py-1 rounded-full bg-purple-100 text-purple-700 text-[11px] font-bold uppercase tracking-wide mb-4">Call Handler</span>
             <h2 className="text-[40px] sm:text-[48px] font-extrabold text-[#1d1d1f] leading-tight tracking-tight mb-4">Voice Receptionist</h2>
             <p className="text-[#6e6e73] text-[18px] leading-relaxed max-w-2xl">
               Every inbound call gets answered in your voice, instantly. No hold music. No missed calls. No voicemail purgatory. Callers get answers, get qualified, and get booked without a human on the line.
             </p>
+          </FadeUp>
+
+          <FadeUp className="flex justify-center mb-16">
+            <video
+              src="/ai-voice-receptionist.mp4"
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="w-full max-w-2xl rounded-[20px] shadow-md"
+            />
           </FadeUp>
 
           {/* Feature 01, Answers every call */}
@@ -1321,8 +1332,8 @@ export default function AiEmployeesDeep() {
             <div className="bg-[#18b5d8] rounded-[20px] p-8 text-center relative overflow-hidden">
               <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(circle at 70% 50%, white 0%, transparent 60%)' }} />
               <p className="text-white/80 text-[13px] font-semibold uppercase tracking-widest mb-2 relative">Full AI Suite</p>
-              <p className="text-white text-[58px] font-extrabold leading-none mb-1 relative">$5,000</p>
-              <p className="text-white/80 text-[15px] mb-6 relative">per month · starting price</p>
+              <p className="text-white text-[46px] font-extrabold leading-none mb-1 relative">Custom Pricing</p>
+              <p className="text-white/80 text-[15px] mb-6 relative">scoped to your business · no per-seat charging · quoted on your strategy call</p>
               <div className="grid grid-cols-3 gap-3 max-w-sm mx-auto mb-8 relative">
                 {[
                   { label: 'Setup time', val: '< 1 week' },
@@ -1366,12 +1377,16 @@ export default function AiEmployeesDeep() {
             <div className="space-y-3">
               {[
                 {
-                  q: 'Is $5,000/mo the right investment for a small business?',
-                  a: 'If your average job or contract is worth $2,000 or more, you need to close three additional jobs per month to cover this entirely. Most clients close that in week two. The real question is what it costs to keep missing leads, losing reviews, and working with uncoached reps.',
+                  q: 'Is the Full AI Suite the right investment for a small business?',
+                  a: 'If your average job or contract is worth $2,000 or more, a handful of additional closed jobs per month typically covers the investment entirely. Most clients get there in week two. The real question is what it costs to keep missing leads, losing reviews, and working with uncoached reps.',
                 },
                 {
                   q: 'How long does setup take?',
                   a: 'Most clients are fully live within 5 to 7 business days. We handle all the setup, training, and integration. You review and approve, we launch.',
+                },
+                {
+                  q: 'Why is the setup fee less than the monthly rate?',
+                  a: 'Because you are not paying for a software implementation, you are hiring a team. Setup is onboarding: configuring your AI employees for your services, your area, and your process. The monthly is their payroll: six AI employees working 24/7, plus our team managing and improving them every month. Enterprise vendors charge big implementation fees up front and then disappear. We put the cost where the work is, which means we only win if you stay. That is also why you are month-to-month.',
                 },
                 {
                   q: 'What if I only want one or two AI employees?',

@@ -362,7 +362,7 @@ export default function Showcase() {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
             <a
-              href="/free-report"
+              href="/ai-audit"
               className="bg-[#18b5d8] text-white text-[16px] font-bold rounded-full px-9 py-4 hover:bg-[#1297b8] transition-colors duration-150 inline-block shadow-[0_4px_20px_rgba(24,181,216,0.35)]"
             >
               Book My Free AI Audit
@@ -447,7 +447,7 @@ export default function Showcase() {
                 ))}
               </div>
               <a
-                href="/free-report"
+                href="/ai-audit"
                 className="mt-auto inline-flex items-center gap-2 text-[#18b5d8] font-bold text-[14px] hover:gap-3 transition-all duration-150"
               >
                 Get my AI visibility audit <span>&#8594;</span>
@@ -610,7 +610,7 @@ export default function Showcase() {
               <p className="text-[#6e6e73] text-[13px] leading-relaxed">SEO-optimized, geo-targeted content that builds authority in your local market and earns you citations across AI-powered search platforms. No writing required from you.</p>
             </div>
             <a
-              href="/free-report"
+              href="/ai-audit"
               className="shrink-0 bg-[#18b5d8] text-white text-[13px] font-bold rounded-full px-6 py-2.5 hover:bg-[#1297b8] transition-colors duration-150 whitespace-nowrap"
             >
               Get my free audit

@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Review Generation Automation | Shark AI Solutions',
-  description: 'Automated review requests for Wesley Chapel and Tampa Bay. Post-job SMS requests, smart follow-up, and brand-voice responses to every review. Live in one week.',
+  description: 'Automated review requests for Wesley Chapel and Tampa Bay. Post-job SMS, smart follow-up, and brand-voice responses to every review.',
   alternates: { canonical: 'https://sharkbrandingsolutions.com/automation/review-generation' },
   openGraph: {
     title: 'Review Generation Automation | Shark AI Solutions',
@@ -79,7 +79,7 @@ export default function ReviewGenerationPage() {
           </p>
           <div className="flex flex-wrap items-center justify-center gap-3">
             <Link
-              href="/free-report"
+              href="/ai-audit"
               className="btn-press inline-block bg-[#18b5d8] text-white text-[15px] font-semibold rounded-full px-7 py-3.5 hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 [touch-action:manipulation]"
             >
               Get My Free AI Audit
@@ -199,7 +199,7 @@ export default function ReviewGenerationPage() {
             Free AI Audit delivered in 48 hours. We show you exactly how many reviews you are leaving on the table before you commit to anything.
           </p>
           <Link
-            href="/free-report"
+            href="/ai-audit"
             className="btn-press inline-block bg-[#18b5d8] text-white text-[17px] font-semibold rounded-full px-[32px] py-[15px] hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0a0a] [touch-action:manipulation]"
           >
             Get My Free AI Audit

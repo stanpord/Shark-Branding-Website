@@ -112,7 +112,7 @@ export default function OperationsPage() {
                 href="/contact"
                 className="btn-press inline-block bg-[#18b5d8] text-white text-[15px] font-semibold rounded-full px-7 py-3.5 hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 [touch-action:manipulation]"
               >
-                Learn More
+                Book a strategy call
               </Link>
             </div>
           </div>
@@ -142,7 +142,7 @@ export default function OperationsPage() {
               {
                 label: "CFO Agent",
                 eyebrow: "Finance",
-                description: "Connects to QuickBooks daily. Pulls AR aging, cash position, P&L, and cash flow — then emails a structured briefing with recommended actions every morning at 9 AM.",
+                description: "Connects to QuickBooks daily. Pulls AR aging, cash position, P&L, and cash flow, then emails a structured briefing with recommended actions every morning at 9 AM.",
                 metrics: ["Daily cash & AR briefing", "Weekly MRR snapshot", "Monthly P&L deep dive"],
               },
               {

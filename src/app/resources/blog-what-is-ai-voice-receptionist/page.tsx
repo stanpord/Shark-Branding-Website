@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'What Is an AI Voice Receptionist? | Shark AI Solutions',
-  description: 'An AI voice receptionist answers every inbound call 24/7, qualifies callers, and books appointments automatically. Here is how it works and how it compares to a traditional answering service.',
+  description: 'An AI voice receptionist answers every inbound call 24/7, qualifies callers, and books appointments automatically. How it works and how it compares to answering services.',
   alternates: { canonical: 'https://sharkbrandingsolutions.com/resources/blog-what-is-ai-voice-receptionist' },
   openGraph: {
     title: 'What Is an AI Voice Receptionist (And Is It Better Than an Answering Service)?',
@@ -247,7 +247,7 @@ export default function WhatIsAiVoiceReceptionistPage() {
               Find out how many calls your business is missing right now.
             </h3>
             <p className="text-white/50 text-[15px] mb-8">Delivered in 48 hours. Specific to your business. No commitment.</p>
-            <Link href="/free-report" className="inline-block bg-[#18b5d8] text-white text-[15px] font-semibold rounded-full px-8 py-4 hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150">
+            <Link href="/ai-audit" className="inline-block bg-[#18b5d8] text-white text-[15px] font-semibold rounded-full px-8 py-4 hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150">
               Get My Free AI Audit
             </Link>
           </div>

@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import BlogShell from "@/components/BlogShell";
@@ -14,9 +14,31 @@ export const metadata: Metadata = {
 
 export default function Page() {
  return (
-  <BlogShellurl="https://sharkbrandingsolutions.com/resources/blog-ai-funnel-chatgpt-gemini-path-to-purchase"
-   
-   relatedPosts={[{ href: "/resources/blog-ai-funnel-chatgpt-new-front-door", title: "ChatGPT Is the New Front Door for Your Customers", category: "AI Funnel" }, { href: "/resources/blog-seo-old-school-geo-ai-shift", title: "Why Your Business Needs GEO for the AI Search Shift", category: "GEO" }, { href: "/resources/blog-ai-map-consistent-business-listings", title: "Consistent Listings: The Secret to Being Found by AI", category: "Listings" }]}
+  <BlogShell
+   url="https://sharkbrandingsolutions.com/resources/blog-ai-funnel-chatgpt-gemini-path-to-purchase"
+   relatedPosts={[
+    { href: "/resources/blog-ai-funnel-chatgpt-new-front-door", title: "ChatGPT Is the New Front Door for Your Customers", category: "AI Funnel" },
+    { href: "/resources/blog-seo-old-school-geo-ai-shift", title: "Why Your Business Needs GEO for the AI Search Shift", category: "GEO" },
+    { href: "/resources/blog-ai-map-consistent-business-listings", title: "Consistent Listings: The Secret to Being Found by AI", category: "Listings" },
+   ]}
+   faqs={[
+    {
+     q: "How does ChatGPT recommend local businesses?",
+     a: "ChatGPT performs a multi-source analysis when a user asks for a local recommendation. It cross-references review platforms, business directories, citation consistency across every place your business appears online, and how recently your data has been updated. All of that gets synthesized into a confidence assessment. Businesses with consistent, credible, recent data get recommended. Businesses with fragmented or stale profiles get passed over, and they never know it happened.",
+    },
+    {
+     q: "How does Gemini recommend local businesses differently from ChatGPT?",
+     a: "Gemini has a unique advantage: it lives inside Google. That means it has direct access to your Google Business Profile, Maps data, local post history, and review activity in real time. When someone uses Google AI Overviews or the AI assistant on Android, Gemini triangulates all of this simultaneously. A neglected Google Business Profile, old photos, no recent posts, unanswered reviews, signals to Gemini that a business is not actively managed. Gemini routes around those businesses toward ones that look current and engaged.",
+    },
+    {
+     q: "What is the AI path to purchase?",
+     a: "The AI path to purchase is the modern version of the buyer journey, where customers go directly to ChatGPT, Gemini, or Perplexity with a service question and receive a short recommendation, typically two or three businesses, instead of a page of links to evaluate. The decision-making timeline has collapsed from days to minutes. The businesses on that shortlist get pre-sold customers. The ones not on it never enter the buyer's consideration set.",
+    },
+    {
+     q: "Why is AI visibility more important than traditional SEO for local businesses?",
+     a: "Traditional SEO gets you onto a Google results page with nine other options. AI visibility gets you onto a two or three business shortlist that a buyer receives as a recommendation they trust. An AI-recommended business arrives with the customer already pre-disposed to choose them. A business that only ranks on Google still has to compete, and increasingly, buyers are not even starting on Google for local service queries.",
+    },
+   ]}
    category="AI Visibility"
    title="The AI Funnel: How ChatGPT and Gemini Are Reshaping the Path to Purchase"
    date="April 9, 2026"
@@ -24,9 +46,18 @@ export default function Page() {
    heroImage="https://cdn.marblism.com/8f2m0RQROII.webp"
    heroAlt="How ChatGPT and Gemini are reshaping the local business path to purchase"
   >
-   <p>The path to purchase used to be predictable. A customer had a problem, typed it into Google, got a list of options, and started comparing. Today? That path looks completely different, and the businesses that understand the new route are the ones winning.</p>
-   <p>ChatGPT reached 100 million users faster than any consumer application in history.<sup>1</sup> Gemini is now embedded directly into Google Search, Android, and the workspace tools millions of professionals use every single day.<sup>2</sup> Together, these AI systems have fundamentally restructured how people make buying decisions, especially for local services.</p>
-   <p>Welcome to the <strong>new path to purchase</strong>. It runs straight through the AI Funnel, and if your business isn&rsquo;t optimized to appear in it, you&rsquo;re invisible during the most critical moment of your customer&rsquo;s decision.</p>
+   <p>
+    The path to purchase used to take days. A customer had a problem, typed it into Google,
+    worked through a list of options, and compared. Now that same buyer asks ChatGPT or Gemini
+    a question and gets two or three names back in seconds. They call the first one.
+   </p>
+   <p>
+    Gemini is now embedded directly into Google Search, Android, and the workspace tools millions
+    of professionals use every day.<sup>1</sup> Together, these AI systems have restructured how
+    people make buying decisions for local services, and the businesses that understand the new
+    route are pulling ahead, quietly, while their competitors keep optimizing for a path buyers
+    have already left.
+   </p>
 
    <h2>The Old Path vs. the New Path</h2>
    <p>In the old model, a customer followed a relatively slow journey:</p>
@@ -37,16 +68,37 @@ export default function Page() {
     <li>Call two or three companies</li>
     <li>Make a decision over several days</li>
    </ol>
-   <p>Today&rsquo;s AI-assisted path compresses that entire process into a single conversation:</p>
+   <p>The AI-assisted path compresses that entire process into a single conversation:</p>
    <ol>
     <li>Ask ChatGPT or Gemini: <em>&ldquo;Who&rsquo;s the best roofing company in Tampa with fast turnaround and strong reviews?&rdquo;</em></li>
-    <li>Receive a curated short list of two to three recommendations with reasoning</li>
+    <li>Receive a short list of two to three recommendations with reasoning</li>
     <li>Call the first recommendation</li>
    </ol>
-   <p>The decision-making timeline just collapsed from days to minutes. And if your business isn&rsquo;t on that short list, the customer never even knew you existed. For a closer look at how this funnel operates in practice, see our post on <Link href="/resources/blog-ai-funnel-chatgpt-new-front-door" className="text-[#18b5d8] hover:underline">why ChatGPT is the new front door for your customers</Link>.</p>
+   <p>
+    Days to minutes. If your business is not on that short list, the customer never knew you
+    existed. For a closer look at how this funnel operates in practice, see our post on{" "}
+    <Link href="/resources/blog-ai-funnel-chatgpt-new-front-door" className="text-[#18b5d8] hover:underline">
+     why ChatGPT is the new front door for your customers
+    </Link>.
+   </p>
 
    <h2>How ChatGPT Builds Its Recommendation List</h2>
-   <p>ChatGPT does not just pull your website and call it a day. When a user asks for a local recommendation, the AI performs a multi-source analysis in real time — cross-referencing review platforms, business directories, social proof signals, data consistency across every place your business appears online, and how recently that data has been updated. All of that gets synthesized into a confidence score. The businesses with the highest confidence scores get the recommendation. The rest get nothing. Most businesses have no idea where their confidence score stands across AI platforms, or how many inconsistencies across their digital presence are quietly lowering it.</p>
+   <p>
+    ChatGPT does not just pull your website and call it a day. When a user asks for a local
+    recommendation, the AI performs a multi-source analysis, cross-referencing review
+    platforms, business directories, and citation consistency across every place your business
+    appears online.
+   </p>
+   <p>
+    Recency matters. How recently your data has been updated is a signal. How recently customers
+    left reviews is a signal. Whether you have responded to those reviews is a signal. All of
+    it gets synthesized into a confidence assessment, and the businesses with the strongest
+    signal get recommended.
+   </p>
+   <p>
+    Most businesses have no idea where their confidence score stands across AI platforms, or
+    how many inconsistencies across their digital presence are quietly suppressing it.
+   </p>
 
    <Image
     src="https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=1200&h=480&q=80"
@@ -56,9 +108,19 @@ export default function Page() {
     style={{ width: "100%", height: "auto" }}
    />
 
-   <h2>How Gemini Is Different (and Why It Matters Even More)</h2>
-   <p>Gemini has a unique advantage over every other AI model: it lives inside Google. That means it has direct access to your Google Business Profile, your Maps data, your local post history, and your review activity in real time.</p>
-   <p>When someone uses Google AI Overviews or asks the AI assistant on their Android phone for a recommendation, Gemini pulls from all of this data simultaneously. A business with a neglected Google Business Profile, old photos, no recent posts, unanswered reviews, signals to Gemini that it isn&rsquo;t actively managed. And Gemini won&rsquo;t bet a customer&rsquo;s experience on a business that looks abandoned.</p>
+   <h2>How Gemini Is Different, and Why It Matters More</h2>
+   <p>
+    Gemini has a unique advantage over every other AI model: it lives inside Google. That means
+    direct access to your Google Business Profile, your Maps data, your local post history, and
+    your review activity in real time.
+   </p>
+   <p>
+    When someone uses Google AI Overviews or asks the AI assistant on their Android phone for
+    a recommendation, Gemini pulls from all of this simultaneously. A business with a neglected
+    Google Business Profile, old photos, no recent posts, unanswered reviews, signals to
+    Gemini that it is not actively managed. Gemini will not bet a customer&rsquo;s experience
+    on a business that looks abandoned.
+   </p>
 
    <div className="callout-box">
     <h4>How Gemini Evaluates a Local Business</h4>
@@ -73,23 +135,52 @@ export default function Page() {
     style={{ width: "100%", height: "auto" }}
    />
 
-   <h2>The Reshaping of the &ldquo;Consideration Stage&rdquo;</h2>
-   <p>Traditional marketing theory talks about the &ldquo;consideration stage&rdquo; as the period when a customer compares options. AI has essentially <em>outsourced</em> that stage. The AI does the comparison for the customer. This has enormous implications:</p>
-   <p><strong>If your business is recommended by AI, the customer arrives pre-sold.</strong> They&rsquo;ve already been told you&rsquo;re the best option. Your job is just to confirm it.</p>
-   <p><strong>If your business is <em>not</em> recommended by AI, you don&rsquo;t get a chance to compete.</strong> You&rsquo;re not in the consideration set. You&rsquo;re not on the list. You don&rsquo;t exist for that customer, in that moment.</p>
-   <p>This is why optimizing for AI recommendations isn&rsquo;t just an &ldquo;advanced&rdquo; marketing tactic anymore. For local businesses, it&rsquo;s the foundation.</p>
+   <h2>AI Has Outsourced the Consideration Stage</h2>
+   <p>
+    Traditional marketing talks about the &ldquo;consideration stage&rdquo; as the period when
+    a customer compares options. AI has outsourced that stage entirely. The AI does the
+    comparison for the customer and delivers a recommendation.
+   </p>
+   <p>
+    If your business is recommended, the customer arrives pre-sold. They have already been told
+    you are the best option. Your job is to confirm it. If your business is not recommended,
+    you are not in the consideration set, you are not on the list, you do not get a chance to
+    compete. For local businesses, this means AI visibility is no longer an advanced tactic.
+    It is the foundation.
+   </p>
 
    <h2>Where Most Local Businesses Are Losing the AI Funnel</h2>
    <p>After auditing dozens of local businesses, the gaps fall into three predictable categories:</p>
 
    <h3>1. Data Fragmentation</h3>
-   <p>The business has different phone numbers, different address formats, or different business names across Google, Yelp, Facebook, and their website. AI can&rsquo;t confidently consolidate this into a single recommendation. When in doubt, AI routes around the fragmented entity toward something more consistent.</p>
+   <p>
+    Different phone numbers, different address formats, or different business names across
+    Google, Yelp, Facebook, and the website. AI cannot confidently consolidate a fragmented
+    entity into a single recommendation. When in doubt, it routes around toward something more
+    consistent.
+   </p>
 
    <h3>2. Review Stagnation</h3>
-   <p>The business has 80 reviews, but 75 of them are from three years ago. AI systems weight recency heavily. A competitor with 20 recent reviews often outperforms a business with 100 old ones. Freshness matters. Understanding how to build a steady review signal, and how to respond to reviews in a way that reinforces AI trust, is covered in our post on <Link href="/resources/blog-24-hour-rule-local-trust-ai" className="text-[#18b5d8] hover:underline">the 24-hour rule for local trust</Link>.</p>
+   <p>
+    80 reviews, but 75 of them are from three years ago. AI weights recency heavily. A
+    competitor with 20 recent reviews often outperforms a business with 100 old ones. Building
+    a steady review signal, and responding to reviews in a way that reinforces AI trust, is
+    covered in our post on{" "}
+    <Link href="/resources/blog-24-hour-rule-local-trust-ai" className="text-[#18b5d8] hover:underline">
+     the 24-hour rule for local trust
+    </Link>.
+   </p>
 
    <h3>3. Passive Profiles</h3>
-   <p>No recent Google Posts. No responses to reviews. No new photos in 18 months. The business exists in directories but shows no sign of life. AI interprets this as low engagement and low reliability. The deeper story of what this means for local businesses, and why traditional local SEO no longer protects you, is laid out in our post on <Link href="/resources/blog-end-of-local-seo-ai-visibility" className="text-[#18b5d8] hover:underline">the end of local SEO and what replaces it</Link>.</p>
+   <p>
+    No recent Google Posts. No responses to reviews. No new photos in 18 months. The business
+    exists in directories but shows no sign of life. AI reads this as low engagement and low
+    reliability. The deeper story of what this means, and why traditional local SEO no longer
+    protects you from it, is laid out in our post on{" "}
+    <Link href="/resources/blog-end-of-local-seo-ai-visibility" className="text-[#18b5d8] hover:underline">
+     the end of local SEO and what replaces it
+    </Link>.
+   </p>
 
    <Image
     src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&h=480&q=80"
@@ -99,15 +190,39 @@ export default function Page() {
     style={{ width: "100%", height: "auto" }}
    />
 
-   <h2>Winning the New Path to Purchase Requires More Than a Checklist</h2>
-   <p>Optimizing for the AI Funnel isn&rsquo;t a weekend project. It requires a coordinated strategy across your listings, your reviews, your website structure, and your content, all working together to tell a consistent story that AI can confidently surface. Getting one element right while others are fragmented still results in being passed over for a competitor whose entire digital presence speaks with one clear voice.</p>
-   <p>The clients we work with through <Link href="/services" className="text-[#18b5d8] hover:underline">our AI visibility services</Link> go from invisible in AI-generated recommendations to landing in the shortlist that pre-sold customers see. That shift doesn&rsquo;t happen from reading a how-to guide. It happens from a systematic approach applied by people who do this every day. You can see what that looks like in <Link href="/case-studies" className="text-[#18b5d8] hover:underline">our case studies</Link>.</p>
-   <p>The new path to purchase runs through ChatGPT and Gemini whether you&rsquo;re ready for it or not. Start by understanding exactly where your business stands today with <Link href="/free-report" className="text-[#18b5d8] hover:underline">our free AI visibility report</Link>, and we&rsquo;ll show you what&rsquo;s holding you back from the shortlist.</p>
+   <h2>Winning the New Path to Purchase</h2>
+   <p>
+    Optimizing for AI recommendations is not a weekend project. It requires coordinated work
+    across listings, reviews, website structure, and content, all working together to tell a
+    consistent story that AI can surface with confidence. Getting one element right while others
+    are fragmented still results in being passed over for a competitor whose entire digital
+    presence speaks with one clear voice.
+   </p>
+   <p>
+    The clients we work with through{" "}
+    <Link href="/ai-visibility-consulting" className="text-[#18b5d8] hover:underline">
+     our AI visibility consulting
+    </Link>{" "}
+    go from invisible in AI-generated recommendations to landing in the shortlist that
+    pre-sold customers see. You can see what that looks like in{" "}
+    <Link href="/case-studies" className="text-[#18b5d8] hover:underline">
+     our case studies
+    </Link>.
+   </p>
+   <p>
+    Start by understanding where your business stands today with{" "}
+    <Link href="/free-report" className="text-[#18b5d8] hover:underline">
+     our free AI visibility report
+    </Link>{" "}
+   , we will show you exactly what is holding you back from the shortlist.
+   </p>
 
    <hr />
    <p style={{ fontSize: "0.8rem", color: "#999", lineHeight: "1.6" }}>
-    <sup>1</sup> Reuters, &ldquo;ChatGPT sets record fastest-growing user base&rdquo; (Feb 2023), see <a href="https://www.reuters.com/technology/chatgpt-sets-record-fastest-growing-user-base-analyst-note-2023-02-01/" target="_blank" rel="noopener noreferrer">reuters.com</a><br />
-    <sup>2</sup> Google, &ldquo;Gemini in Google Search and Android&rdquo; (2025), see <a href="https://blog.google/products/gemini/made-by-google-2025-gemini/" target="_blank" rel="noopener noreferrer">blog.google</a>
+    <sup>1</sup> Google, &ldquo;Gemini in Google Search and Android&rdquo; (2025),{" "}
+    <a href="https://blog.google/products/gemini/made-by-google-2025-gemini/" target="_blank" rel="noopener noreferrer">
+     blog.google
+    </a>
    </p>
   </BlogShell>
  );

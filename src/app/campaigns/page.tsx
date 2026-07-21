@@ -3,14 +3,14 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "AI Email & SMS Campaigns | Shark Branding Solutions",
+  title: "AI Email & SMS Campaigns | Shark AI Solutions",
   description:
     "AI-powered email and SMS marketing campaigns that nurture leads, re-engage past customers, and drive repeat business, all running automatically in the background.",
   alternates: {
     canonical: "https://sharkbrandingsolutions.com/campaigns",
   },
   openGraph: {
-    title: "AI Email & SMS Campaigns | Shark Branding Solutions",
+    title: "AI Email & SMS Campaigns | Shark AI Solutions",
     description:
       "Automated email and SMS campaigns that keep your business top of mind and drive repeat business without extra work.",
     url: "https://sharkbrandingsolutions.com/campaigns",
@@ -195,7 +195,7 @@ export default function CampaignsPage() {
         </div>
       </section>
 
-      {/* CHANNELS — 4 cards */}
+      {/* CHANNELS, 4 cards */}
       <section className="py-20 px-6 border-b border-[#e5e5ea]">
         <div className="max-w-[1200px] mx-auto">
           <h2 className="text-[28px] sm:text-[36px] font-extrabold text-[#1d1d1f] tracking-tight text-center mb-4">

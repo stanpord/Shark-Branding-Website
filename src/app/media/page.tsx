@@ -41,7 +41,7 @@ const editorial = [
   {
     outlet: "INC.",
     outletTag: "Expert Quote",
-    headline: "We Stress-Tested a Startup Idea With AI. Here's What Claude and ChatGPT Got Right — and Wrong.",
+    headline: "We Stress-Tested a Startup Idea With AI. Here's What Claude and ChatGPT Got Right, and Wrong.",
     excerpt:
       "Michelle Stanaland of Shark AI Solutions is quoted in INC. magazine on how AI tools like Claude and ChatGPT can help founders stress-test business ideas, and where human judgment still matters most.",
     href: "https://www.inc.com/diana-bocco/ai-claude-chatgpt-stress-test-startup-idea/91363659",
@@ -274,7 +274,7 @@ export default function MediaPage() {
             Ready to get your business found by AI?
           </h2>
           <Link
-            href="/free-report"
+            href="/ai-audit"
             className="inline-flex items-center gap-2 bg-[#0a0a0a] text-white text-[15px] font-semibold rounded-full px-7 py-4 hover:bg-[#18b5d8] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2"
           >
             Get My Free AI Audit

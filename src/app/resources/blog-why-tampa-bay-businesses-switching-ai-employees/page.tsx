@@ -156,16 +156,16 @@ export default function BlogWhySwitchingPage() {
             2. Google reviews are now a primary ranking signal, and most businesses are losing the race
           </h2>
           <p className="text-[17px] text-[#333] leading-relaxed mb-6">
-            Review count and recency are primary signals in local search rankings and in the AI-generated responses that now appear at the top of Google for searches like &ldquo;best HVAC company Wesley Chapel&rdquo; or &ldquo;general contractor near me Tampa Bay.&rdquo; The businesses that dominate those AI recommendations have a consistent review velocity that compounds over time — and a significant gap between themselves and the competitors who are still collecting reviews by accident. The specific mechanics of how Google reviews feed AI recommendations are covered in our <Link href="/resources/blog-google-reviews-ai-recommendations" className="text-[#18b5d8] hover:underline">guide to Google reviews and AI recommendations</Link>.
+            Review count and recency are primary signals in local search rankings and in the AI-generated responses that now appear at the top of Google for searches like &ldquo;best HVAC company Wesley Chapel&rdquo; or &ldquo;general contractor near me Tampa Bay.&rdquo; The businesses that dominate those AI recommendations have a consistent review velocity that compounds over time, and a significant gap between themselves and the competitors who are still collecting reviews by accident. The specific mechanics of how Google reviews feed AI recommendations are covered in our <Link href="/resources/blog-google-reviews-ai-recommendations" className="text-[#18b5d8] hover:underline">guide to Google reviews and AI recommendations</Link>.
           </p>
           <p className="text-[17px] text-[#333] leading-relaxed mb-6">
             The problem is not that businesses don&rsquo;t want reviews. The problem is that asking for them manually is awkward, inconsistent, and easy to forget when the crew has already moved on to the next job. Most service businesses collect four to six reviews per year by accident, when a customer feels strongly enough to leave one without being asked.
           </p>
           <p className="text-[17px] text-[#333] leading-relaxed mb-6">
-            An AI Reputation Specialist changes the math entirely. Review requests go out automatically after completed jobs, in your brand voice, while the experience is still fresh. Every review that comes in gets a response — five stars or one — without anyone on your team having to manage the queue.
+            An AI Reputation Specialist changes the math entirely. Review requests go out automatically after completed jobs, in your brand voice, while the experience is still fresh. Every review that comes in gets a response, five stars or one, without anyone on your team having to manage the queue.
           </p>
           <p className="text-[17px] text-[#333] leading-relaxed mb-12">
-            The compounding effect is what most business owners underestimate. A consistent review velocity, maintained over months, builds a gap between you and competitors that is very difficult to close without the same infrastructure. Most businesses that do this correctly go from invisible to dominant in their local search category within a quarter — not because the process is complicated, but because they are the only ones doing it at all.
+            The compounding effect is what most business owners underestimate. A consistent review velocity, maintained over months, builds a gap between you and competitors that is very difficult to close without the same infrastructure. Most businesses that do this correctly go from invisible to dominant in their local search category within a quarter, not because the process is complicated, but because they are the only ones doing it at all.
           </p>
 
           {/* Reason 3 */}
@@ -267,7 +267,7 @@ export default function BlogWhySwitchingPage() {
             Free AI Audit delivered in 48 hours. We identify exactly which AI employee has the biggest impact on your business before you commit to anything.
           </p>
           <Link
-            href="/free-report"
+            href="/ai-audit"
             className="btn-press inline-block bg-[#18b5d8] text-white text-[17px] font-semibold rounded-full px-[32px] py-[15px] hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0a0a] [touch-action:manipulation]"
           >
             Get My Free AI Audit

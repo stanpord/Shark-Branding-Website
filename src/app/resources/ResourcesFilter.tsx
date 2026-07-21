@@ -182,7 +182,7 @@ export default function ResourcesFilter({ posts }: { posts: Post[] }) {
                       We audit your visibility across AI search, maps, and reviews, and show you exactly what needs fixing.
                     </p>
                     <Link
-                      href="/free-report"
+                      href="/ai-audit"
                       className="inline-block text-[11px] font-bold uppercase tracking-[0.15em] bg-black text-white px-5 py-2.5 hover:bg-[#18b5d8] transition-colors"
                     >
                       Get My Free AI Audit &rarr;

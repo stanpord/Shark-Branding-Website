@@ -7,6 +7,7 @@ import { useState, useRef } from "react";
 const servicesDropdown = [
   { href: "/services", label: "AI Visibility", desc: "ChatGPT, Google AI, Gemini citations" },
   { href: "/automation", label: "AI Automation", desc: "Workflows that replace manual tasks" },
+  { href: "/websites", label: "Website Design", desc: "Conversion-focused sites built from scratch" },
   { href: "/franchises", label: "Franchises & Multi-Location", desc: "AI marketing across every location" },
   { href: "/ai-assessment", label: "AI Assessment", desc: "See where you stand in 48 hours" },
 ];
@@ -81,10 +82,10 @@ export default function Nav() {
     <header className="fixed top-0 inset-x-0 z-50" style={{ paddingTop: "env(safe-area-inset-top)" }}>
       {/* Offer bar */}
       <Link
-        href="/free-report"
+        href="/ai-audit"
         className="block bg-[#18b5d8] text-white text-center text-[12px] font-medium py-2 px-4 leading-[18px] hover:bg-[#1ec8ee] motion-safe:transition-colors"
       >
-        <strong className="font-bold">Free AI Visibility Audit:</strong>&nbsp;see how ChatGPT ranks your business. Results in 48 hours&nbsp;→
+        <strong className="font-bold">Free AI Visibility Audit:</strong>&nbsp;see how ChatGPT ranks your business. Instant results&nbsp;→
       </Link>
 
       <div className="bg-white/95 backdrop-blur-sm border-b border-[#e0e0e0]">
@@ -98,9 +99,9 @@ export default function Nav() {
             <Image
               src="/logo.webp"
               alt="Shark AI Solutions"
-              width={240}
-              height={86}
-              className="h-20 w-auto object-contain"
+              width={320}
+              height={115}
+              className="h-[100px] -my-[10px] w-auto object-contain"
               priority
               onError={() => {}}
             />
@@ -223,7 +224,7 @@ export default function Nav() {
           {/* Desktop CTA */}
           <div className="hidden lg:flex items-center">
             <Link
-              href="/free-report"
+              href="/ai-audit"
               className="btn-press bg-[#18b5d8] text-white text-[13px] font-semibold rounded-full px-5 py-2 hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 [touch-action:manipulation]"
             >
               Get Free AI Audit
@@ -268,7 +269,7 @@ export default function Nav() {
               Services
               <Chevron isOpen={mobileServicesOpen} />
             </button>
-            <div className={`overflow-hidden transition-all duration-200 ease-out ${mobileServicesOpen ? "max-h-[240px] pb-3" : "max-h-0"}`}>
+            <div className={`overflow-hidden transition-all duration-200 ease-out ${mobileServicesOpen ? "max-h-[360px] pb-3" : "max-h-0"}`}>
               <div className="flex flex-col gap-0.5 pl-1">
                 {servicesDropdown.map((item) => (
                   <Link
@@ -360,7 +361,7 @@ export default function Nav() {
           {/* Mobile CTA */}
           <div className="pt-5 pb-4">
             <Link
-              href="/free-report"
+              href="/ai-audit"
               onClick={closeAll}
               className="btn-press block w-full text-center bg-[#18b5d8] text-white text-[15px] font-semibold rounded-full px-5 py-3.5 hover:bg-[#1ec8ee] motion-safe:transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 [touch-action:manipulation]"
             >

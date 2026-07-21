@@ -3,16 +3,16 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Local SEO Services | Shark Branding Solutions",
+  title: "Local SEO Services | Shark AI Solutions",
   description:
     "Dominate local search with AI-powered local SEO. From listing management to geolocation rank tracking, we help your business get found by the right customers at the right time.",
   alternates: {
     canonical: "https://sharkbrandingsolutions.com/local-seo",
   },
   openGraph: {
-    title: "Local SEO Services | Shark Branding Solutions",
+    title: "Local SEO Services | Shark AI Solutions",
     description:
-      "Dominate local search with AI-powered local SEO. Listing management, NAP citations, rank tracking, and reporting — all in one place.",
+      "Dominate local search with AI-powered local SEO. Listing management, NAP citations, rank tracking, and reporting, all in one place.",
     url: "https://sharkbrandingsolutions.com/local-seo",
   },
 };
@@ -203,7 +203,7 @@ export default function LocalSeoPage() {
         ))}
       </section>
 
-      {/* MAP SCREENSHOTS — side by side */}
+      {/* MAP SCREENSHOTS, side by side */}
       <section className="py-20 px-6 bg-[#f5f5f7] border-b border-[#e5e5ea]">
         <div className="max-w-[1200px] mx-auto">
           <div className="text-center mb-12">

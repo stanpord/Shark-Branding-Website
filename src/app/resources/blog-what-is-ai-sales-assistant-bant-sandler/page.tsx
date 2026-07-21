@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'What Is an AI Sales Assistant? BANT, Sandler, and Your Team | Shark AI Solutions',
-  description: 'An AI Sales Assistant qualifies leads using proven frameworks like BANT and Sandler automatically. Here is what that means for your team and why it matters for service businesses in Tampa Bay.',
+  title: 'What Is an AI Sales Assistant? BANT & Sandler | Shark AI Solutions',
+  description: 'An AI Sales Assistant qualifies leads using BANT and Sandler frameworks automatically. What it means for your team and why it matters for service businesses.',
   alternates: { canonical: 'https://sharkbrandingsolutions.com/resources/blog-what-is-ai-sales-assistant-bant-sandler' },
   openGraph: {
     title: 'What Is an AI Sales Assistant? BANT, Sandler, and What It Means for Your Team',
@@ -166,7 +166,7 @@ export default function WhatIsAiSalesAssistantPage() {
               Why does this work? Because people convince themselves more readily than they are convinced by others. When a prospect describes the problem in their own words, they own it. By the time your closer gets on the phone, the prospect has already sold themselves on why the problem needs solving.
             </p>
             <p>
-              The AI Sales Assistant uses Sandler-style discovery in its follow-up sequences — asking the prospect to articulate their own pain rather than pushing a pitch. By the time your closer gets on the phone, the prospect has already described what the problem is costing them, confirmed their urgency, and expressed why they need a solution. Your closer walks into a warm conversation, not a cold one.
+              The AI Sales Assistant uses Sandler-style discovery in its follow-up sequences, asking the prospect to articulate their own pain rather than pushing a pitch. By the time your closer gets on the phone, the prospect has already described what the problem is costing them, confirmed their urgency, and expressed why they need a solution. Your closer walks into a warm conversation, not a cold one.
             </p>
 
             <h2 className="text-[26px] font-bold text-[#0a0a0a] mt-8 mb-4">What your human team actually does</h2>
@@ -238,7 +238,7 @@ export default function WhatIsAiSalesAssistantPage() {
               Find out how many qualified leads your business is losing right now.
             </h3>
             <p className="text-white/50 text-[15px] mb-8">Delivered in 48 hours. Specific to your business. No commitment.</p>
-            <Link href="/free-report" className="inline-block bg-[#18b5d8] text-white text-[15px] font-semibold rounded-full px-8 py-4 hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150">
+            <Link href="/ai-audit" className="inline-block bg-[#18b5d8] text-white text-[15px] font-semibold rounded-full px-8 py-4 hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150">
               Get My Free AI Audit
             </Link>
           </div>

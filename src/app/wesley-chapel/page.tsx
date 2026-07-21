@@ -99,7 +99,7 @@ export default function WesleyChapelPage() {
           </p>
           <div className="flex flex-wrap items-center justify-center gap-3">
             <Link
-              href="/free-report"
+              href="/ai-audit"
               className="btn-press inline-block bg-[#18b5d8] text-white text-[15px] font-semibold rounded-full px-7 py-3.5 hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 [touch-action:manipulation]"
             >
               Get My Free AI Audit
@@ -114,13 +114,35 @@ export default function WesleyChapelPage() {
         </div>
       </section>
 
+      {/* What is AI visibility */}
+      <section className="bg-[#f5f5f7] px-6 py-20 border-t border-[#e8e8ed]">
+        <div className="max-w-[720px] mx-auto">
+          <p className="text-[#18b5d8] text-[13px] font-semibold tracking-[0.2em] uppercase mb-6">AI Visibility Consulting</p>
+          <h2 className="display-lg text-[#0a0a0a] mb-6" style={{ textWrap: 'balance' }}>
+            What is AI visibility consulting for Wesley Chapel businesses?
+          </h2>
+          <p className="text-[16px] text-[#444] leading-relaxed mb-5">
+            AI visibility consulting is the discipline of making sure your business gets recommended by ChatGPT, Google AI Overviews, Gemini, and Perplexity when local buyers ask those platforms for a service like yours. It is not SEO, and it is not advertising. It is a separate set of signals that AI models use when they decide who to put in front of a buyer.
+          </p>
+          <p className="text-[16px] text-[#444] leading-relaxed mb-5">
+            Those signals include citation consistency across directories, the completeness and activity level of your Google Business Profile, the volume and specificity of your reviews, structured schema data on your website, and the depth of authoritative content that establishes your business as the credible choice in your category and location.
+          </p>
+          <p className="text-[16px] text-[#444] leading-relaxed mb-8">
+            For Wesley Chapel businesses, this matters more than it does in most markets. The area has grown faster than most of Florida, which means the competitive set for AI recommendations in categories like HVAC, law, real estate, home services, and healthcare has grown with it. A business that was easy to find two years ago may now be invisible to a buyer who went straight to ChatGPT.{' '}
+            <Link href="/ai-visibility-consulting" className="text-[#18b5d8] hover:underline font-medium">
+              Learn how our AI visibility consulting works.
+            </Link>
+          </p>
+        </div>
+      </section>
+
       {/* Local context */}
       <section className="bg-[#0a0a0a] px-6 py-20">
         <div className="max-w-[980px] mx-auto">
           <div className="max-w-[640px] mx-auto text-center mb-14">
             <p className="text-[#18b5d8] text-[13px] font-semibold tracking-[0.2em] uppercase mb-5">The Wesley Chapel Problem</p>
             <h2 className="display-lg text-white mb-5" style={{ textWrap: 'balance' }}>
-              Wesley Chapel is one of the fastest-growing markets in Florida. The competition for AI recommendations is growing just as fast.
+              Wesley Chapel is growing fast. The competition for AI recommendations is growing with it.
             </h2>
             <p className="text-[16px] text-white/60 leading-relaxed">
               Buyers in Wesley Chapel, Lutz, and Land O&rsquo; Lakes are increasingly using ChatGPT and Google AI to find local service providers before they ever visit a website. If AI doesn&rsquo;t recognize your business as credible and relevant, you lose that customer before the search even begins.
@@ -147,7 +169,7 @@ export default function WesleyChapelPage() {
               Found. Trusted. Chosen.
             </h2>
             <p className="text-[16px] text-[#555] mt-5 max-w-[520px] mx-auto">
-              Every Wesley Chapel business we work with goes through the same proven three-step framework.
+              Every Wesley Chapel business we work with goes through the same three-step process.
             </p>
           </div>
 
@@ -156,7 +178,7 @@ export default function WesleyChapelPage() {
               {
                 step: '01',
                 title: 'AI Audit',
-                body: 'We run your Wesley Chapel business through ChatGPT, Gemini, Perplexity, Google AI Overviews, and Copilot to find exactly where you\'re invisible, inconsistent, or outranked by local competitors.',
+                body: 'We run your Wesley Chapel business through ChatGPT, Gemini, Perplexity, Google AI Overviews, and Copilot to find exactly where you\'re invisible, inconsistent, or outranked. You get a clear picture of the gap before any work begins.',
               },
               {
                 step: '02',
@@ -263,6 +285,41 @@ export default function WesleyChapelPage() {
         </div>
       </section>
 
+      {/* FAQ */}
+      <section className="bg-[#f5f5f7] px-6 py-20 border-t border-[#e8e8ed]">
+        <div className="max-w-[720px] mx-auto">
+          <p className="text-[#18b5d8] text-[13px] font-semibold tracking-[0.2em] uppercase mb-6">Common Questions</p>
+          <h2 className="display-lg text-[#0a0a0a] mb-10" style={{ textWrap: 'balance' }}>
+            AI visibility in Wesley Chapel, answered.
+          </h2>
+          <div className="space-y-8">
+            {[
+              {
+                q: 'What is AI visibility consulting in Wesley Chapel?',
+                a: 'AI visibility consulting helps Wesley Chapel businesses get recommended by ChatGPT, Google AI Overviews, Perplexity, and Gemini when local buyers search for services. We audit your AI presence, fix citation and schema issues, and build the trust signals that AI models use to recommend your business over local competitors.',
+              },
+              {
+                q: 'How long does it take to see AI visibility results in Wesley Chapel?',
+                a: 'Most Wesley Chapel businesses see measurable movement in AI recommendations within 30 days. Citation corrections propagate within days to a few weeks. A local realtor we worked with moved from unranked to the top AI result for Wesley Chapel in under 30 days after we corrected their citations, schema, and trust signals.',
+              },
+              {
+                q: 'Does Shark AI Solutions serve businesses outside of Wesley Chapel?',
+                a: "Yes. We are headquartered in Wesley Chapel and serve businesses across all of Tampa Bay, including Lutz, Land O' Lakes, Zephyrhills, New Tampa, and the broader Pasco and Hillsborough County region. Virtual consulting is available for businesses outside Tampa Bay.",
+              },
+              {
+                q: 'How do I get started with AI visibility for my Wesley Chapel business?',
+                a: 'Start with a free AI Audit. We run your business through ChatGPT, Gemini, Perplexity, Google AI Overviews, and Copilot to identify exactly where you are invisible or inconsistent. The audit is delivered within 48 hours with no commitment required.',
+              },
+            ].map((faq) => (
+              <div key={faq.q} className="border-b border-[#e0e0e0] pb-8 last:border-none last:pb-0">
+                <h3 className="text-[17px] font-bold text-[#0a0a0a] mb-3">{faq.q}</h3>
+                <p className="text-[15px] text-[#555] leading-relaxed">{faq.a}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="bg-[#0a0a0a] py-28 px-6 text-center">
         <div className="max-w-[560px] mx-auto">
@@ -274,7 +331,7 @@ export default function WesleyChapelPage() {
             Delivered in 48 hours. No commitment. No sales pitch.
           </p>
           <Link
-            href="/free-report"
+            href="/ai-audit"
             className="btn-press inline-block bg-[#18b5d8] text-white text-[17px] font-semibold rounded-full px-[32px] py-[15px] hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0a0a] [touch-action:manipulation]"
           >
             Get My Free AI Audit

@@ -469,7 +469,7 @@ export default function Showcase() {
             Book a free 30-minute audit. We will show you exactly where AI employees fit in your business and what to expect in the first 90 days.
           </p>
           <a
-            href="/free-report"
+            href="/ai-audit"
             className="btn-press bg-[#18b5d8] text-white text-[15px] font-bold rounded-full px-8 py-3.5 hover:bg-[#1ec8ee] transition-colors duration-150 inline-block"
           >
             Book My Free AI Audit
