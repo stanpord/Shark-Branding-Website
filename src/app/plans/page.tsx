@@ -298,7 +298,7 @@ export default function PlansPage() {
       </section>
 
       {/* ── Pricing ───────────────────────────────────────────────── */}
-      <section id="plans" className="bg-[#0a0a0a] py-24 px-6">
+      <section id="plans" className="bg-[#07141a] py-24 px-6">
         <div className="max-w-[1080px] mx-auto">
           <h2 className="text-[28px] font-semibold text-white mb-3" style={{ letterSpacing: "-0.01em" }}>
             Choose your plan
@@ -484,7 +484,7 @@ export default function PlansPage() {
       </section>
 
       {/* ── 3 quick objections ────────────────────────────────────── */}
-      <section className="bg-[#111111] py-16 px-6 border-t border-white/5">
+      <section className="bg-[#07141a] py-16 px-6 border-t border-white/5">
         <div className="max-w-[1080px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
           {pricingObjections.map((o) => (
             <div key={o.q} className="bg-[#07141a] rounded-[14px] px-6 py-7 border border-white/8">
@@ -496,7 +496,7 @@ export default function PlansPage() {
       </section>
 
       {/* ── Comparison table ──────────────────────────────────────── */}
-      <section className="bg-[#0a0a0a] py-20 px-6 border-t border-white/5">
+      <section className="bg-[#07141a] py-20 px-6 border-t border-white/5">
         <div className="max-w-[900px] mx-auto">
           <h2 className="text-[28px] font-semibold text-white mb-10" style={{ letterSpacing: "-0.01em", textWrap: "balance" }}>
             What&rsquo;s included in each plan
@@ -680,7 +680,7 @@ export default function PlansPage() {
       </section>
 
       {/* ── Final CTA ─────────────────────────────────────────────── */}
-      <section className="bg-[#0a0a0a] py-28 px-6 text-center pb-36 md:pb-28">
+      <section className="bg-[#07141a] py-28 px-6 text-center pb-36 md:pb-28">
         <div className="max-w-[600px] mx-auto">
           <h2 className="display-lg text-white mb-6" style={{ textWrap: "balance" }}>
             Ready to scope your enterprise engagement?
