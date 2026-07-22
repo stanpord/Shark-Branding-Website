@@ -200,13 +200,13 @@ export default function PlansPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(plansSchema) }} />
 
       {/* ── Hero ──────────────────────────────────────────────────── */}
-      <section className="bg-[#07141a] min-h-[90vh] flex flex-col justify-center px-6 pt-24 pb-20">
+      <section className="bg-white min-h-[90vh] flex flex-col justify-center px-6 pt-24 pb-20">
         <div className="max-w-[1100px] mx-auto w-full grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-16 items-center">
           <div>
-            <h1 className="display-hero text-white mb-7" style={{ textWrap: "balance", letterSpacing: "-0.02em" }}>
+            <h1 className="display-hero text-[#0a0a0a] mb-7" style={{ textWrap: "balance", letterSpacing: "-0.02em" }}>
               AI visibility, managed at scale.
             </h1>
-            <p className="text-[19px] leading-[1.65] text-white/60 max-w-[560px] mb-10" style={{ textWrap: "pretty" }}>
+            <p className="text-[19px] leading-[1.65] text-[#555555] max-w-[560px] mb-10" style={{ textWrap: "pretty" }}>
               ChatGPT, Google AI Overviews, and Gemini each surface one to three businesses per query.
               For multi-location brands, maintaining that position across every market you serve is an
               ongoing management challenge, not a one-time fix. We handle it.
@@ -216,13 +216,13 @@ export default function PlansPage() {
                 href={BOOK_CALL_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-press inline-block bg-[#18b5d8] text-white text-[16px] font-semibold rounded-full px-8 py-4 hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 focus-visible:ring-offset-[#07141a] [touch-action:manipulation]"
+                className="btn-press inline-block bg-[#18b5d8] text-white text-[16px] font-semibold rounded-full px-8 py-4 hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 focus-visible:ring-offset-white [touch-action:manipulation]"
               >
                 Book an Enterprise Scope Call
               </a>
               <a
                 href="#plans"
-                className="btn-press inline-block text-white text-[16px] font-semibold border border-white/20 rounded-full px-8 py-4 hover:border-white/50 motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#07141a] [touch-action:manipulation]"
+                className="btn-press inline-block text-[#1d1d1f] text-[16px] font-semibold border border-[#d2d2d7] rounded-full px-8 py-4 hover:border-[#0a0a0a] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 focus-visible:ring-offset-white [touch-action:manipulation]"
               >
                 See all plans ↓
               </a>
@@ -230,15 +230,15 @@ export default function PlansPage() {
           </div>
 
           {/* Proof strip */}
-          <div className="border border-white/10 rounded-[14px] p-8 space-y-7">
+          <div className="border border-[#e8e8ed] rounded-[14px] p-8 space-y-7">
             {[
               { stat: "#32 → #2",  label: "HVAC client, 30 days, no paid ads" },
               { stat: "$1M+",       label: "Multi-state retail client, single weekend" },
               { stat: "5–7 days",  label: "Typical time to first results live" },
             ].map((item) => (
-              <div key={item.stat} className="border-b border-white/8 pb-7 last:border-0 last:pb-0">
-                <p className="text-[34px] font-semibold text-white leading-none mb-2">{item.stat}</p>
-                <p className="text-[13px] text-white/55 leading-snug">{item.label}</p>
+              <div key={item.stat} className="border-b border-[#e8e8ed] pb-7 last:border-0 last:pb-0">
+                <p className="text-[34px] font-semibold text-[#0a0a0a] leading-none mb-2">{item.stat}</p>
+                <p className="text-[13px] text-[#7a7a7a] leading-snug">{item.label}</p>
               </div>
             ))}
           </div>
@@ -246,50 +246,50 @@ export default function PlansPage() {
       </section>
 
       {/* ── Audit Entry Strip ─────────────────────────────────────── */}
-      <section className="bg-[#07141a] border-t border-white/5 py-14 px-6">
+      <section className="bg-[#f5f5f7] border-t border-[#e8e8ed] py-14 px-6">
         <div className="max-w-[1080px] mx-auto">
           <p className="text-[12px] font-semibold tracking-[0.18em] uppercase text-[#18b5d8] mb-7 text-center">
             Start here, before committing to any plan
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="border border-white/10 rounded-[14px] p-7 flex flex-col gap-4">
+            <div className="border border-[#e0e0e0] bg-white rounded-[14px] p-7 flex flex-col gap-4">
               <div className="flex items-center justify-between">
                 <span className="text-[12px] font-bold text-[#18b5d8] uppercase tracking-[0.1em]">Free</span>
-                <span className="text-[12px] text-white/35">Instant · Automated</span>
+                <span className="text-[12px] text-[#888888]">Instant · Automated</span>
               </div>
-              <h3 className="text-[18px] font-semibold text-white leading-snug">
+              <h3 className="text-[18px] font-semibold text-[#0a0a0a] leading-snug">
                 Free AI Visibility Audit
               </h3>
-              <p className="text-[13px] text-white/55 leading-relaxed">
+              <p className="text-[13px] text-[#555555] leading-relaxed">
                 See exactly how your business appears across ChatGPT, Gemini, and Google AI Overviews.
                 Runs in 60 seconds. No commitment.
               </p>
               <Link
                 href="/ai-audit"
-                className="mt-auto btn-press inline-block text-center bg-[#18b5d8] text-white text-[14px] font-semibold rounded-full px-6 py-3 hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 focus-visible:ring-offset-[#07141a] [touch-action:manipulation]"
+                className="mt-auto btn-press inline-block text-center bg-[#18b5d8] text-white text-[14px] font-semibold rounded-full px-6 py-3 hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 focus-visible:ring-offset-white [touch-action:manipulation]"
               >
                 Run My Free Audit →
               </Link>
             </div>
-            <div className="border border-white/10 rounded-[14px] p-7 flex flex-col gap-4">
+            <div className="border border-[#e0e0e0] bg-white rounded-[14px] p-7 flex flex-col gap-4">
               <div className="flex items-center justify-between">
-                <span className="text-[20px] font-semibold text-white">$199</span>
-                <span className="text-[12px] text-white/35">48 hours · Human-curated</span>
+                <span className="text-[20px] font-semibold text-[#0a0a0a]">$199</span>
+                <span className="text-[12px] text-[#888888]">48 hours · Human-curated</span>
               </div>
-              <h3 className="text-[18px] font-semibold text-white leading-snug">
+              <h3 className="text-[18px] font-semibold text-[#0a0a0a] leading-snug">
                 Comprehensive AI Visibility Report
               </h3>
-              <p className="text-[13px] text-white/55 leading-relaxed">
+              <p className="text-[13px] text-[#555555] leading-relaxed">
                 Full audit with a written strategy roadmap: where you stand, what&rsquo;s costing you
                 leads, and the exact steps to fix it, prioritized for your market and competitors.
               </p>
               <Link
                 href="/free-report"
-                className="mt-auto btn-press inline-block text-center border border-white/20 text-white text-[14px] font-semibold rounded-full px-6 py-3 hover:border-[#18b5d8] hover:text-[#18b5d8] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 focus-visible:ring-offset-[#07141a] [touch-action:manipulation]"
+                className="mt-auto btn-press inline-block text-center border border-[#d2d2d7] text-[#1d1d1f] text-[14px] font-semibold rounded-full px-6 py-3 hover:border-[#18b5d8] hover:text-[#18b5d8] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 focus-visible:ring-offset-white [touch-action:manipulation]"
               >
                 Get the $199 Report →
               </Link>
-              <p className="text-[11px] text-white/30 text-center">
+              <p className="text-[11px] text-[#aaaaaa] text-center">
                 North Tampa Bay Chamber members: free with member code
               </p>
             </div>
