@@ -10,6 +10,7 @@ const servicesDropdown = [
   { href: "/websites", label: "Website Design", desc: "Conversion-focused sites built from scratch" },
   { href: "/franchises", label: "Franchises & Multi-Location", desc: "AI marketing across every location" },
   { href: "/ai-assessment", label: "AI Assessment", desc: "See where you stand in 48 hours" },
+  { href: "/executive-advising", label: "Executive Advising", desc: "Strategic advisory for leadership teams" },
 ];
 
 const aiEmployeesDropdown = [

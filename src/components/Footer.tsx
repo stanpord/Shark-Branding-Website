@@ -14,6 +14,7 @@ const services = [
   { href: "/aiemployees/roi-calculator", label: "ROI Calculator" },
   { href: "/services#workshops", label: "Workshops & Training" },
   { href: "/ai-audit", label: "Free AI Audit" },
+  { href: "/executive-advising", label: "Executive Advising" },
 ];
 
 const company = [
