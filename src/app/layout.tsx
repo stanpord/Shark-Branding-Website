@@ -17,15 +17,18 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Shark AI Solutions: AI Employees & AI Visibility for Tampa Bay",
+  title: "AI Visibility Agency | Tampa Bay, FL | Shark AI Solutions",
   description:
-    "AI employees and AI visibility for Tampa Bay local businesses. Automate leads, follow-up, reviews, and content, and get found on ChatGPT, Google AI, and Gemini.",
+    "Shark AI Solutions is Tampa Bay's AI visibility and GEO agency. We get your business recommended by ChatGPT, Google AI Overviews, Gemini, and Perplexity. Serving Tampa, Wesley Chapel, and the greater Tampa Bay area.",
   keywords: [
-    "AI business consulting",
     "AI visibility",
+    "GEO agency Tampa",
+    "AI SEO Tampa Bay",
+    "generative engine optimization",
     "ChatGPT SEO",
     "AI search optimization",
-    "Tampa Bay marketing",
+    "Tampa Bay AI agency",
+    "AI business consulting Tampa",
   ],
   icons: {
     icon: [
@@ -36,30 +39,30 @@ export const metadata: Metadata = {
     apple: { url: "/icon.png", sizes: "180x180" },
   },
   alternates: {
-    canonical: "https://sharkbrandingsolutions.com",
+    canonical: "https://shark-ai-solutions.com",
   },
   openGraph: {
-    title: "Shark AI Solutions",
+    title: "AI Visibility Agency | Tampa Bay, FL | Shark AI Solutions",
     description:
-      "AI employees and AI visibility for Tampa Bay local businesses. Get found on ChatGPT, Google AI, and Gemini.",
+      "Shark AI Solutions is Tampa Bay's AI visibility and GEO agency. Get your business recommended by ChatGPT, Google AI Overviews, Gemini, and Perplexity.",
     type: "website",
-    url: "https://sharkbrandingsolutions.com",
+    url: "https://shark-ai-solutions.com",
     siteName: "Shark AI Solutions",
     locale: "en_US",
     images: [
       {
-        url: "https://sharkbrandingsolutions.com/logo.webp",
+        url: "https://shark-ai-solutions.com/logo.webp",
         width: 1200,
         height: 630,
-        alt: "Shark AI Solutions: AI Employees & AI Visibility for Tampa Bay",
+        alt: "Shark AI Solutions: AI Visibility & GEO Agency | Tampa Bay, FL",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Shark AI Solutions",
-    description: "Get Found. Get Trusted. Get Chosen. AI solutions for forward-thinking businesses.",
-    images: ["https://sharkbrandingsolutions.com/logo.webp"],
+    title: "AI Visibility Agency | Tampa Bay, FL | Shark AI Solutions",
+    description: "Tampa Bay's AI visibility and GEO agency. Get found on ChatGPT, Google AI Overviews, Gemini, and Perplexity.",
+    images: ["https://shark-ai-solutions.com/logo.webp"],
   },
 };
 
