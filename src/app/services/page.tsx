@@ -401,6 +401,40 @@ export default function ServicesPage() {
         </section>
       ))}
 
+      {/* ── AI Visibility Specializations ── */}
+      <section className="bg-[#07141a] px-6 py-12 sm:py-20 border-t border-white/5">
+        <div className="max-w-[980px] mx-auto">
+          <div className="mb-8 sm:mb-12">
+            <h2 className="display-lg text-white mb-4" style={{ textWrap: "balance" }}>
+              Explore our AI visibility specializations.
+            </h2>
+            <p className="text-[16px] text-white/55 max-w-[540px]">
+              Each approach targets a different layer of how AI models find, understand, and recommend your business.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+            {[
+              { href: "/generative-engine-optimization", label: "Generative Engine Optimization", desc: "Train AI models to cite your business when buyers ask questions in your category." },
+              { href: "/aeo-consulting", label: "AEO Consulting", desc: "Structure your content so it becomes the answer AI platforms extract and deliver." },
+              { href: "/ai-search-optimization", label: "AI Search Optimization", desc: "Build coverage across all three AI index families: Google, Bing, and independent crawlers." },
+              { href: "/get-found-on-chatgpt", label: "Get Found on ChatGPT", desc: "Optimize your Bing index presence, reviews, and structured data so ChatGPT recommends you." },
+              { href: "/llms-txt-optimization", label: "llms.txt Optimization", desc: "Give AI crawlers a clean, structured summary of your business before they parse a single page." },
+              { href: "/entity-optimization", label: "Entity Optimization", desc: "Build a consistent, authoritative identity across every directory and citation source AI models trust." },
+            ].map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="group flex flex-col gap-3 bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 hover:border-[#18b5d8]/40 motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8]"
+              >
+                <p className="text-[15px] font-semibold text-white group-hover:text-[#18b5d8] motion-safe:transition-colors duration-150">{item.label}</p>
+                <p className="text-[13px] text-white/50 leading-relaxed">{item.desc}</p>
+                <p className="text-[13px] font-semibold text-[#18b5d8] mt-auto">Learn more →</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ── 30 Days comparison ── */}
       <section data-scene="services-compare" className="bg-[#f5f5f7] px-6 py-12 sm:py-20 border-t border-[#e8e8ed]">
         <div className="max-w-[980px] mx-auto">
