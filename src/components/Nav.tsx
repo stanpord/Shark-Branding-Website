@@ -13,6 +13,16 @@ const servicesDropdown = [
   { href: "/executive-advising", label: "Executive Advising", desc: "Strategic advisory for leadership teams" },
 ];
 
+const aiVisibilityDropdown = [
+  { href: "/ai-visibility-consulting", label: "AI Visibility Overview", bold: true },
+  { href: "/generative-engine-optimization", label: "Generative Engine Optimization" },
+  { href: "/aeo-consulting", label: "AEO Consulting" },
+  { href: "/ai-search-optimization", label: "AI Search Optimization" },
+  { href: "/get-found-on-chatgpt", label: "Get Found on ChatGPT" },
+  { href: "/llms-txt-optimization", label: "llms.txt Optimization" },
+  { href: "/entity-optimization", label: "Entity Optimization" },
+];
+
 const aiEmployeesDropdown = [
   { href: "/aiemployees", label: "Meet the AI Team", bold: true },
   { href: "/resources/blog-what-is-ai-voice-receptionist", label: "What Is an AI Voice Receptionist?" },
@@ -35,7 +45,7 @@ const flatLinks = [
   { href: "/contact", label: "Contact" },
 ];
 
-type DropdownKey = "services" | "aiEmployees" | "resources" | null;
+type DropdownKey = "services" | "aiVisibility" | "aiEmployees" | "resources" | null;
 
 function Chevron({ isOpen }: { isOpen: boolean }) {
   return (
@@ -59,6 +69,7 @@ export default function Nav() {
   const [open, setOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<DropdownKey>(null);
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
+  const [mobileAiVisibilityOpen, setMobileAiVisibilityOpen] = useState(false);
   const [mobileAiOpen, setMobileAiOpen] = useState(false);
   const [mobileResourcesOpen, setMobileResourcesOpen] = useState(false);
   const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -75,6 +86,7 @@ export default function Nav() {
   function closeAll() {
     setOpen(false);
     setMobileServicesOpen(false);
+    setMobileAiVisibilityOpen(false);
     setMobileAiOpen(false);
     setMobileResourcesOpen(false);
   }
@@ -135,6 +147,37 @@ export default function Nav() {
                             {item.label}
                           </span>
                           <span className="text-[12px] text-[#6e6e73]">{item.desc}</span>
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </li>
+
+            {/* AI Visibility dropdown */}
+            <li className="relative" onMouseEnter={() => handleEnter("aiVisibility")} onMouseLeave={handleLeave}>
+              <Link href="/ai-visibility-consulting" className={linkBase}>
+                AI Visibility
+                <Chevron isOpen={activeDropdown === "aiVisibility"} />
+              </Link>
+              {activeDropdown === "aiVisibility" && (
+                <div
+                  className={`${dropdownPanel} left-1/2 -translate-x-1/2 w-[272px]`}
+                  onMouseEnter={() => handleEnter("aiVisibility")}
+                  onMouseLeave={handleLeave}
+                >
+                  <ul className="space-y-0.5">
+                    {aiVisibilityDropdown.map((item) => (
+                      <li key={item.href}>
+                        <Link
+                          href={item.href}
+                          onClick={() => setActiveDropdown(null)}
+                          className={`block px-3 py-2 rounded-xl text-[13px] leading-snug hover:bg-[#f5f5f7] hover:text-[#18b5d8] transition-colors ${
+                            item.bold ? "font-semibold text-[#1d1d1f]" : "text-[#444]"
+                          }`}
+                        >
+                          {item.label}
                         </Link>
                       </li>
                     ))}
@@ -281,6 +324,33 @@ export default function Nav() {
                   >
                     <span className="text-[14px] font-semibold text-[#1d1d1f]">{item.label}</span>
                     <span className="text-[12px] text-[#6e6e73]">{item.desc}</span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* AI Visibility accordion */}
+          <div className="border-b border-[#f5f5f7]">
+            <button
+              onClick={() => setMobileAiVisibilityOpen(!mobileAiVisibilityOpen)}
+              className="min-h-[48px] flex items-center justify-between w-full text-[15px] font-medium text-[#1d1d1f] hover:text-[#18b5d8] transition-colors"
+            >
+              AI Visibility
+              <Chevron isOpen={mobileAiVisibilityOpen} />
+            </button>
+            <div className={`overflow-hidden transition-all duration-200 ease-out ${mobileAiVisibilityOpen ? "max-h-[420px] pb-3" : "max-h-0"}`}>
+              <div className="flex flex-col gap-0.5 pl-1">
+                {aiVisibilityDropdown.map((item) => (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    onClick={closeAll}
+                    className={`block py-2 px-3 rounded-xl text-[14px] leading-snug hover:bg-[#f5f5f7] hover:text-[#18b5d8] transition-colors ${
+                      item.bold ? "font-semibold text-[#1d1d1f]" : "text-[#444]"
+                    }`}
+                  >
+                    {item.label}
                   </Link>
                 ))}
               </div>
