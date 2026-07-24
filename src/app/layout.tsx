@@ -219,6 +219,11 @@ export default function RootLayout({
       <head>
         <meta name="theme-color" content="#ffffff" />
         <script
+          dangerouslySetInnerHTML={{
+            __html: `if(typeof $localize==='undefined'){globalThis.$localize=function(p){var r=p[0];for(var i=1;i<p.length;i++)r+=arguments[i]+p[i];return r;};globalThis.$localize.TRANSLATIONS={};globalThis.$localize.LOCALE_ID='en-US';}`,
+          }}
+        />
+        <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
