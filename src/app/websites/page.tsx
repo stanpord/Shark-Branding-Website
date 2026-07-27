@@ -3,16 +3,16 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Website Design & Development | Shark AI Solutions",
+  title: "AI-Optimized Website Design & Development | Shark AI Solutions",
   description:
-    "Custom websites built to attract, convert, and retain customers. Fast, mobile-optimized, SEO-ready sites designed to grow your business from day one.",
+    "Websites built to rank in Google and AI search engines like ChatGPT and Perplexity. Custom-designed, fast, and structured for the era of AI-powered discovery.",
   alternates: {
     canonical: "https://sharkbrandingsolutions.com/websites",
   },
   openGraph: {
-    title: "Website Design & Development | Shark AI Solutions",
+    title: "AI-Optimized Website Design & Development | Shark AI Solutions",
     description:
-      "Custom websites built to attract, convert, and retain customers. Fast, mobile-optimized, and SEO-ready.",
+      "Websites built to rank in Google and AI search. Custom-designed, fast, and structured for AI-powered discovery.",
     url: "https://sharkbrandingsolutions.com/websites",
   },
 };
@@ -22,56 +22,56 @@ const CDN = "https://cdn-bjmjf.nitrocdn.com/gsSJVsHgkwexdOuGJbPveYehDehaVtlN/ass
 const whyItems = [
   {
     img: CDN + "2025/08/website_creation.webp",
-    title: "Built from scratch for your brand",
-    body: "No templates recycled from other clients. Every site is designed around your brand, your market, and your goals.",
+    title: "Built for AI search from day one",
+    body: "Every page is structured with the schema, content depth, and entity signals that Google, ChatGPT, and Perplexity use to surface authoritative answers.",
   },
   {
     img: CDN + "2025/08/format_shapes.webp",
-    title: "Designed to convert visitors into leads",
-    body: "Clear calls-to-action, fast load times, and mobile-first layouts that guide visitors from discovery to contact.",
+    title: "Designed to convert AI-referred visitors",
+    body: "AI search sends high-intent traffic. We build sites with clear CTAs, fast load times, and layouts that turn those visitors into leads.",
   },
   {
     img: CDN + "2025/08/support_agent.webp",
-    title: "Ongoing support and updates included",
-    body: "Your website isn't a one-time project. We maintain, update, and optimize it over time so it keeps performing.",
+    title: "Ongoing AI optimization included",
+    body: "AI search signals evolve constantly. We monitor, update, and re-optimize your site so it stays visible as the landscape shifts.",
   },
   {
     img: CDN + "2025/08/web.webp",
-    title: "SEO-ready from the first page",
-    body: "Structured data, fast Core Web Vitals, clean URLs, and local SEO signals baked in from the start.",
+    title: "Ranked in Google and AI models",
+    body: "Structured data, fast Core Web Vitals, semantic content, and entity optimization built in from the first line of code.",
   },
 ];
 
 const features = [
   {
     id: "foundation",
-    h2: "Your website is the foundation of everything",
-    body: "Every ad you run, every review you earn, every social post you publish, it all drives people back to your website. If that site is slow, confusing, or outdated, you're losing customers before they ever contact you.\n\nWe build websites designed to convert, not just look good. Fast, mobile-first, and optimized for local search from the first line of code.",
+    h2: "Your website is the foundation of AI visibility",
+    body: "Every ad you run, every review you earn, every social post you publish, it all drives people back here. If the site is slow, thin on content, or missing the structure AI looks for, you're invisible to the buyers who matter most.\n\nWe build sites with the technical depth and content signals that earn recommendations. Fast. Mobile-first. Structured for the way search actually works today.",
     cta: { label: "See our process", href: "/contact" },
     img: CDN + "2025/08/Foundation-for-growth-502x.webp",
-    alt: "Foundation for business growth, website as the core of digital marketing",
+    alt: "Website as the foundation of AI visibility and digital marketing strategy",
     imgLeft: false,
     width: 502,
     height: 366,
   },
   {
-    id: "custom",
-    h2: "Deliver a custom website experience your customers expect",
-    body: "Your website is often the first impression a potential customer gets of your business. We design sites that match your brand, speak to your audience, and make it easy for visitors to take the next step.\n\nFrom the homepage layout to the contact form, every element is built with conversion in mind. Clear messaging, intuitive navigation, and calls-to-action that actually get clicked.",
+    id: "depth",
+    h2: "AI search rewards depth. We build for it.",
+    body: "ChatGPT doesn't cite websites at random. It pulls from pages with real authority: comprehensive content, structured data, consistent entity signals, fast load times, and strong local presence.\n\nEvery page we build is designed to check those boxes. Your site becomes a source AI trusts and recommends by name.",
     cta: { label: "Book a strategy call", href: "/contact" },
     img: CDN + "2025/08/Deliver-custom-website-experience-502x.webp",
-    alt: "Custom website experience design showing brand-aligned layout and UX",
+    alt: "Website content depth and AI search optimization strategy",
     imgLeft: true,
     width: 502,
     height: 384,
   },
   {
     id: "experts",
-    h2: "The difference is our team of experts",
-    body: "Anyone can build a website. Very few can build one that ranks in Google, loads in under 2 seconds, converts visitors into leads, and integrates with your AI marketing tools.\n\nOur team combines web design, local SEO, AI, and conversion optimization into a single coherent strategy. You get a website that doesn't just exist, it works.",
+    h2: "Web design and AI expertise in the same team",
+    body: "Most agencies build good-looking websites. Most AI firms don't touch web design. We do both, which changes everything.\n\nYou get a site that's fast, visually sharp, and optimized for AI recommendations, without coordinating two vendors and hoping they agree on a strategy.",
     cta: { label: "Meet our team", href: "/about" },
     img: CDN + "2025/08/Difference-is-our-experts-502x.webp",
-    alt: "Expert team delivering website strategy, design, and ongoing optimization",
+    alt: "Expert team combining web design and AI search optimization",
     imgLeft: false,
     width: 502,
     height: 364,
@@ -82,32 +82,32 @@ const services = [
   {
     img: CDN + "2025/04/web-design.webp",
     title: "Custom web design",
-    body: "Fully custom designs aligned to your brand identity, target market, and conversion goals.",
+    body: "Fully custom layouts built around your brand and your customers. No recycled templates, no designs borrowed from other clients.",
   },
   {
     img: CDN + "2025/04/Listing-management-1.png",
-    title: "Local SEO integration",
-    body: "Structured data, local schema, fast load speeds, and on-page optimization built into every site.",
+    title: "AI search optimization",
+    body: "Schema markup, entity signals, content depth, and structured data that gets your site cited in ChatGPT, Perplexity, and Google AI Overviews.",
   },
   {
     img: CDN + "2025/03/Email-and-SMS-Marketing-Icon.png",
     title: "Lead capture & follow-up",
-    body: "Forms, chat widgets, and AI-powered follow-up sequences that turn website visitors into paying customers.",
+    body: "Forms, chat, and AI-powered follow-up that convert visitors into booked appointments, whether they found you on Google or an AI answer engine.",
   },
   {
     img: CDN + "2025/04/Social-media-content.png",
-    title: "Content & copywriting",
-    body: "Professionally written copy that speaks to your customers and tells search engines exactly what you do.",
+    title: "Content for AI visibility",
+    body: "Copy written to rank in traditional search and earn citations in AI responses, by name, by category, and by location.",
   },
   {
     img: CDN + "2025/04/Digital-advertising.png",
     title: "Ad landing pages",
-    body: "Dedicated landing pages for Google Ads and social campaigns built to maximize conversion rates.",
+    body: "High-converting pages for paid campaigns, built to the same technical standard as the rest of your site. Not an afterthought.",
   },
   {
     img: CDN + "2025/08/switch_access_shortcut_add.webp",
-    title: "Ongoing maintenance",
-    body: "Security updates, speed optimization, content edits, and performance reporting on a monthly basis.",
+    title: "Ongoing optimization",
+    body: "Monthly performance reviews, content updates, schema maintenance, and AI citation monitoring. We don't ship and disappear.",
   },
 ];
 
@@ -138,13 +138,13 @@ export default function WebsitesPage() {
         <div className="max-w-[1200px] mx-auto flex flex-col lg:flex-row items-center gap-12 lg:gap-16 pt-8">
           <div className="flex-1 min-w-0">
             <span className="inline-block text-[#18b5d8] text-[13px] font-bold tracking-[2px] uppercase mb-5">
-              Website Design & Development
+              AI-Optimized Website Design
             </span>
-            <h1 className="text-[38px] sm:text-[50px] lg:text-[56px] font-extrabold text-white leading-[1.08] tracking-tight mb-6" style={{ textWrap: "balance" }}>
-              A website that actually works for your business
+            <h1 className="text-[38px] sm:text-[50px] lg:text-[56px] font-extrabold text-white leading-[1.08] tracking-[-0.02em] mb-6" style={{ textWrap: "balance" }}>
+              Built to rank where buyers are looking now
             </h1>
             <p className="text-[#8d9aab] text-[18px] leading-relaxed mb-8 max-w-[520px]">
-              Custom-designed, mobile-first, and built to convert. We create websites that attract the right customers, communicate your value clearly, and turn visitors into leads.
+              Google is one answer engine. ChatGPT, Perplexity, and Google AI Overviews are three more. We build websites structured to earn citations in all of them and convert whoever lands.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
@@ -163,10 +163,10 @@ export default function WebsitesPage() {
           </div>
 
           <div className="flex-1 min-w-0 w-full lg:max-w-[560px]">
-            <div className="relative rounded-[20px] overflow-hidden shadow-2xl">
+            <div className="relative rounded-[16px] overflow-hidden shadow-2xl">
               <Image
                 src={CDN + "2025/08/Vendasta-website-services-567x.webp"}
-                alt="Website design and development services dashboard showing site performance and design tools"
+                alt="AI-optimized website design and development services dashboard"
                 width={567}
                 height={528}
                 className="w-full h-auto"
@@ -177,18 +177,23 @@ export default function WebsitesPage() {
         </div>
       </section>
 
-      {/* ATTRACT CONVERT ENGAGE, full-width feature */}
+      {/* AI SEARCH SECTION */}
       <section className="py-20 px-6 bg-[#f5f5f7] border-b border-[#e5e5ea]">
         <div className="max-w-[1200px] mx-auto flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
           <div className="flex-1 min-w-0">
-            <h2 className="text-[28px] sm:text-[38px] font-extrabold text-[#1d1d1f] tracking-tight mb-5 leading-tight" style={{ textWrap: "balance" }}>
-              Attract, convert, and engage, all from one website
+            <h2 className="text-[28px] sm:text-[38px] font-extrabold text-[#1d1d1f] tracking-[-0.02em] mb-5 leading-tight" style={{ textWrap: "balance" }}>
+              Built for AI search. Designed to convert.
             </h2>
             <p className="text-[17px] text-[#6e6e73] leading-relaxed mb-6">
-              Your website doesn't just need to look good. It needs to rank in local search, load fast on mobile, communicate your value instantly, and make it easy for customers to contact you. We build sites that do all of it.
+              Most websites weren't built for this. They load fine, look fine, and get found by nobody because AI search doesn't know they exist. We fix that at the structural level.
             </p>
             <ul className="space-y-3">
-              {["Ranks in Google and AI search results", "Loads in under 2 seconds on mobile", "Turns visitors into leads with clear CTAs", "Integrates with your CRM and AI marketing tools"].map((item) => (
+              {[
+                "Cited by ChatGPT, Perplexity, and Google AI Overviews",
+                "Loads in under 2 seconds on any device",
+                "Converts AI-referred traffic into booked leads",
+                "Integrated with your CRM and AI follow-up tools",
+              ].map((item) => (
                 <li key={item} className="flex items-start gap-3 text-[15px] text-[#1d1d1f] font-medium">
                   <svg className="w-5 h-5 text-[#18b5d8] mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" />
@@ -199,13 +204,12 @@ export default function WebsitesPage() {
             </ul>
           </div>
           <div className="flex-1 min-w-0 w-full">
-            <div className="relative rounded-[20px] overflow-hidden shadow-lg">
+            <div className="relative rounded-[16px] overflow-hidden shadow-lg" style={{ aspectRatio: "4/3" }}>
               <Image
-                src={CDN + "2025/05/Attract-convert-engage-386x.webp"}
-                alt="Attract, convert, and engage website strategy showing multi-channel digital presence"
-                width={386}
-                height={386}
-                className="w-full h-auto"
+                src="https://images.pexels.com/photos/285814/pexels-photo-285814.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                alt="Professional workspace with MacBook and monitors showing a modern website"
+                fill
+                className="object-cover object-center"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>
@@ -216,11 +220,11 @@ export default function WebsitesPage() {
       {/* WHY US, 4-up grid */}
       <section className="py-20 px-6 border-b border-[#e5e5ea]">
         <div className="max-w-[1200px] mx-auto">
-          <h2 className="text-[28px] sm:text-[36px] font-extrabold text-[#1d1d1f] text-center tracking-tight mb-4">
+          <h2 className="text-[28px] sm:text-[36px] font-extrabold text-[#1d1d1f] text-center tracking-[-0.02em] mb-4">
             Why businesses choose us for their website
           </h2>
           <p className="text-[17px] text-[#6e6e73] text-center max-w-[520px] mx-auto mb-14">
-            We build more than websites. We build the digital foundation your entire marketing strategy runs on.
+            We build more than websites. We build the digital foundation your entire AI visibility strategy runs on.
           </p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {whyItems.map((item) => (
@@ -251,7 +255,7 @@ export default function WebsitesPage() {
             className={`max-w-[1200px] mx-auto px-6 py-16 flex flex-col ${f.imgLeft ? "lg:flex-row-reverse" : "lg:flex-row"} gap-12 lg:gap-20 items-center ${idx < features.length - 1 ? "border-b border-[#e5e5ea]" : ""}`}
           >
             <div className="flex-1 min-w-0">
-              <h2 className="text-[26px] sm:text-[34px] font-extrabold text-[#1d1d1f] tracking-tight mb-5 leading-tight" style={{ textWrap: "balance" }}>
+              <h2 className="text-[26px] sm:text-[34px] font-extrabold text-[#1d1d1f] tracking-[-0.02em] mb-5 leading-tight" style={{ textWrap: "balance" }}>
                 {f.h2}
               </h2>
               {f.body.split("\n\n").map((para, i) => (
@@ -268,7 +272,7 @@ export default function WebsitesPage() {
               </Link>
             </div>
             <div className="flex-1 min-w-0 w-full">
-              <div className="relative rounded-[20px] overflow-hidden shadow-lg">
+              <div className="relative rounded-[16px] overflow-hidden shadow-lg">
                 <Image
                   src={f.img}
                   alt={f.alt}
@@ -286,15 +290,15 @@ export default function WebsitesPage() {
       {/* SERVICES GRID */}
       <section className="py-20 px-6 bg-[#f5f5f7] border-b border-[#e5e5ea]">
         <div className="max-w-[1200px] mx-auto">
-          <h2 className="text-[28px] sm:text-[36px] font-extrabold text-[#1d1d1f] tracking-tight text-center mb-4">
+          <h2 className="text-[28px] sm:text-[36px] font-extrabold text-[#1d1d1f] tracking-[-0.02em] text-center mb-4">
             Everything your website project includes
           </h2>
           <p className="text-[17px] text-[#6e6e73] text-center max-w-[500px] mx-auto mb-14">
-            No hidden fees, no add-ons required. Every engagement includes the full stack of what a high-performing website needs.
+            No hidden fees, no add-ons required. Every engagement includes the full stack of what a high-performing, AI-visible website needs.
           </p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((s) => (
-              <div key={s.title} className="bg-white rounded-[20px] border border-[#e5e5ea] p-7 flex flex-col gap-4 shadow-sm">
+              <div key={s.title} className="bg-white rounded-[12px] border border-[#e5e5ea] p-7 flex flex-col gap-4">
                 <div className="w-12 h-12 rounded-[10px] bg-[#e8f7fb] flex items-center justify-center">
                   <Image
                     src={s.img}
@@ -315,14 +319,14 @@ export default function WebsitesPage() {
       {/* TESTIMONIALS */}
       <section className="py-20 px-6 border-b border-[#e5e5ea]">
         <div className="max-w-[1200px] mx-auto">
-          <h2 className="text-[28px] sm:text-[36px] font-extrabold text-[#1d1d1f] tracking-tight text-center mb-14">
+          <h2 className="text-[28px] sm:text-[36px] font-extrabold text-[#1d1d1f] tracking-[-0.02em] text-center mb-14">
             What our clients say
           </h2>
           <div className="grid sm:grid-cols-3 gap-6">
             {testimonials.map((t) => (
               <div
                 key={t.name}
-                className="bg-[#f5f5f7] rounded-[20px] border border-[#e5e5ea] p-8 flex flex-col gap-5"
+                className="bg-[#f5f5f7] rounded-[12px] border border-[#e5e5ea] p-8 flex flex-col gap-5"
               >
                 <svg viewBox="0 0 32 24" className="w-8 h-6 text-[#18b5d8] flex-shrink-0" fill="currentColor">
                   <path d="M0 24V14.4C0 6.4 4.8 1.6 14.4 0l1.6 2.4C10.4 3.6 7.6 6 6.4 9.6H12V24H0zm20 0V14.4C20 6.4 24.8 1.6 34.4 0L36 2.4C30.4 3.6 27.6 6 26.4 9.6H32V24H20z" />
@@ -346,13 +350,13 @@ export default function WebsitesPage() {
         />
         <div className="max-w-[760px] mx-auto text-center relative">
           <h2
-            className="text-[32px] sm:text-[46px] font-extrabold text-white leading-[1.1] tracking-tight mb-5"
+            className="text-[32px] sm:text-[46px] font-extrabold text-white leading-[1.1] tracking-[-0.02em] mb-5"
             style={{ textWrap: "balance" }}
           >
-            Ready to build a website that actually performs?
+            AI search is being carved up right now. First-movers win.
           </h2>
           <p className="text-[#8d9aab] text-[17px] leading-relaxed max-w-[500px] mx-auto mb-10">
-            Let's talk about your business, your goals, and what a high-performing website would look like for your specific market and customers.
+            The businesses that get structured into AI recommendations over the next 12 months will hold those positions for years. We build websites that compete on that timeline.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

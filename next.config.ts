@@ -26,6 +26,7 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "cdn.marblism.com" },
       { protocol: "https", hostname: "www.vendasta.com" },
       { protocol: "https", hostname: "cdn-bjmjf.nitrocdn.com" },
+      { protocol: "https", hostname: "images.pexels.com" },
     ],
   },
   async redirects() {
