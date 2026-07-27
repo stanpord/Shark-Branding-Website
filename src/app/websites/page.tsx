@@ -358,18 +358,12 @@ export default function WebsitesPage() {
           <p className="text-[#8d9aab] text-[17px] leading-relaxed max-w-[500px] mx-auto mb-10">
             The businesses that get structured into AI recommendations over the next 12 months will hold those positions for years. We build websites that compete on that timeline.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex justify-center">
             <Link
               href="/contact"
               className="inline-flex items-center justify-center bg-[#18b5d8] hover:bg-[#14a2c2] text-white font-bold text-[16px] px-10 py-5 rounded-full transition-colors duration-150"
             >
               Start your project
-            </Link>
-            <Link
-              href="/plans"
-              className="inline-flex items-center justify-center bg-white/10 hover:bg-white/20 text-white font-semibold text-[16px] px-10 py-5 rounded-full transition-colors duration-150"
-            >
-              View pricing
             </Link>
           </div>
         </div>
