@@ -363,7 +363,7 @@ export default function WebsitesPage() {
               href="/contact"
               className="inline-flex items-center justify-center bg-[#18b5d8] hover:bg-[#14a2c2] text-white font-bold text-[16px] px-10 py-5 rounded-full transition-colors duration-150"
             >
-              Start your project
+              Get a custom quote
             </Link>
           </div>
         </div>
