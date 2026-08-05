@@ -3,9 +3,11 @@ import Anthropic from '@anthropic-ai/sdk'
 
 export const maxDuration = 60
 
-const anthropic = new Anthropic()
-
 export async function POST(req: NextRequest) {
+  if (!process.env.ANTHROPIC_API_KEY) {
+    return NextResponse.json({ error: 'Audit service is not configured yet. Please contact us directly.' }, { status: 503 })
+  }
+  const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY })
   const { businessName, websiteUrl, city, industry } = await req.json()
 
   if (!websiteUrl || typeof websiteUrl !== 'string') {
