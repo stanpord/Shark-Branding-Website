@@ -8,14 +8,14 @@ export const metadata: Metadata = {
  description:
   "Shark AI Solutions joins the North Tampa Bay Chamber to help local businesses get found by AI. Learn the Found, Trusted, Chosen framework.",
  alternates: {
-  canonical: "https://sharkbrandingsolutions.com/resources/blog-ntbc-ai-ready-partnership",
+  canonical: "https://shark-ai-solutions.com/resources/blog-ntbc-ai-ready-partnership",
  },
 };
 
 export default function Page() {
  return (
   <BlogShell
-   url="https://sharkbrandingsolutions.com/resources/blog-ntbc-ai-ready-partnership"
+   url="https://shark-ai-solutions.com/resources/blog-ntbc-ai-ready-partnership"
    relatedPosts={[
     { href: "/resources/blog-ai-funnel-chatgpt-new-front-door", title: "ChatGPT Is the New Front Door for Your Customers", category: "AI Funnel" },
     { href: "/resources/blog-seo-old-school-geo-ai-shift", title: "Why Your Business Needs GEO for the AI Search Shift", category: "GEO" },

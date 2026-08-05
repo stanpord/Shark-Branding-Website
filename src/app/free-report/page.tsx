@@ -6,7 +6,7 @@ const freeReportSchema = {
   "@graph": [
     {
       "@type": "FAQPage",
-      "@id": "https://sharkbrandingsolutions.com/free-report#faq",
+      "@id": "https://shark-ai-solutions.com/free-report#faq",
       mainEntity: [
         {
           "@type": "Question",
@@ -28,26 +28,26 @@ const freeReportSchema = {
     },
     {
       "@type": "WebPage",
-      "@id": "https://sharkbrandingsolutions.com/free-report",
-      url: "https://sharkbrandingsolutions.com/free-report",
+      "@id": "https://shark-ai-solutions.com/free-report",
+      url: "https://shark-ai-solutions.com/free-report",
       name: "Free AI Visibility Audit | Shark AI Solutions",
       description: "See exactly how your business appears across search, maps, reviews, and AI platforms. Delivered within 48 hours.",
-      isPartOf: { "@id": "https://sharkbrandingsolutions.com/#website" },
+      isPartOf: { "@id": "https://shark-ai-solutions.com/#website" },
     },
     {
       "@type": "Service",
-      "@id": "https://sharkbrandingsolutions.com/free-report#service",
+      "@id": "https://shark-ai-solutions.com/free-report#service",
       name: "Free AI Visibility Audit",
       description: "A comprehensive audit showing how your business appears across Google, ChatGPT, Gemini, Perplexity, and local search. Delivered within 48 hours and reviewed personally with your team.",
-      provider: { "@id": "https://sharkbrandingsolutions.com/#organization" },
-      url: "https://sharkbrandingsolutions.com/free-report",
+      provider: { "@id": "https://shark-ai-solutions.com/#organization" },
+      url: "https://shark-ai-solutions.com/free-report",
       offers: {
         "@type": "Offer",
         price: "0",
         priceCurrency: "USD",
         description: "Complimentary AI visibility audit for businesses nationwide.",
         availability: "https://schema.org/InStock",
-        seller: { "@id": "https://sharkbrandingsolutions.com/#organization" },
+        seller: { "@id": "https://shark-ai-solutions.com/#organization" },
       },
       areaServed: { "@type": "Country", name: "United States" },
       serviceType: "AI Visibility Audit",
@@ -62,6 +62,15 @@ export const metadata: Metadata = {
     "See exactly how your business appears across search, maps, reviews, and AI platforms. We walk through every finding with you in a free 1-hour session.",
 };
 
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://shark-ai-solutions.com' },
+    { '@type': 'ListItem', position: 2, name: 'Free AI Visibility Audit', item: 'https://shark-ai-solutions.com/free-report' },
+  ],
+}
 export default function FreeReportPage() {
   return (
     <>

@@ -4,11 +4,11 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'AI Customer Acquisition Statistics 2026 | Shark AI Solutions',
   description: '91% of SMBs using AI report revenue gains. 83% zero-click rate when AI Overviews appear. The sourced statistics behind the AI customer acquisition shift.',
-  alternates: { canonical: 'https://sharkbrandingsolutions.com/resources/ai-customer-acquisition-statistics-2026' },
+  alternates: { canonical: 'https://shark-ai-solutions.com/resources/ai-customer-acquisition-statistics-2026' },
   openGraph: {
     title: 'AI Customer Acquisition Statistics You Need to Know in 2026',
     description: 'The numbers behind the AI customer acquisition shift, market size, lead generation, AI search, ROI, and small business adoption. Sourced from Salesforce, BCG, Gartner, HubSpot, and 10+ more.',
-    url: 'https://sharkbrandingsolutions.com/resources/ai-customer-acquisition-statistics-2026',
+    url: 'https://shark-ai-solutions.com/resources/ai-customer-acquisition-statistics-2026',
     type: 'article',
   },
 }
@@ -18,22 +18,22 @@ const structuredData = {
   '@type': 'BlogPosting',
   headline: 'AI Customer Acquisition Statistics You Need to Know in 2026',
   description: 'Sourced statistics on AI customer acquisition: market size, lead generation ROI, AI search behavior, small business adoption, and 2027–2030 projections. 14+ primary sources.',
-  url: 'https://sharkbrandingsolutions.com/resources/ai-customer-acquisition-statistics-2026',
+  url: 'https://shark-ai-solutions.com/resources/ai-customer-acquisition-statistics-2026',
   datePublished: '2026-06-14',
   dateModified: '2026-06-14',
   author: {
     '@type': 'Person',
-    '@id': 'https://sharkbrandingsolutions.com/about#michelle',
+    '@id': 'https://shark-ai-solutions.com/about#michelle',
     name: 'Michelle Stanaland',
-    url: 'https://sharkbrandingsolutions.com/about#michelle',
+    url: 'https://shark-ai-solutions.com/about#michelle',
     jobTitle: 'Managing Partner and Founder, Shark AI Solutions',
   },
   publisher: {
-    '@id': 'https://sharkbrandingsolutions.com/#organization',
+    '@id': 'https://shark-ai-solutions.com/#organization',
   },
   mainEntityOfPage: {
     '@type': 'WebPage',
-    '@id': 'https://sharkbrandingsolutions.com/resources/ai-customer-acquisition-statistics-2026',
+    '@id': 'https://shark-ai-solutions.com/resources/ai-customer-acquisition-statistics-2026',
   },
   keywords: ['AI customer acquisition', 'AI marketing statistics 2026', 'AI lead generation', 'Google AI Overviews statistics', 'small business AI adoption', 'AI visibility'],
   articleSection: 'Research & Data',

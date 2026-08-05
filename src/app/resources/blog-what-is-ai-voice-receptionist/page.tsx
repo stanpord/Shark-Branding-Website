@@ -4,11 +4,11 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'What Is an AI Voice Receptionist? | Shark AI Solutions',
   description: 'An AI voice receptionist answers every inbound call 24/7, qualifies callers, and books appointments automatically. How it works and how it compares to answering services.',
-  alternates: { canonical: 'https://sharkbrandingsolutions.com/resources/blog-what-is-ai-voice-receptionist' },
+  alternates: { canonical: 'https://shark-ai-solutions.com/resources/blog-what-is-ai-voice-receptionist' },
   openGraph: {
     title: 'What Is an AI Voice Receptionist (And Is It Better Than an Answering Service)?',
     description: 'AI voice receptionists answer every call, qualify every caller, and book appointments automatically. No per-call billing, no scripts that go stale, no missed leads.',
-    url: 'https://sharkbrandingsolutions.com/resources/blog-what-is-ai-voice-receptionist',
+    url: 'https://shark-ai-solutions.com/resources/blog-what-is-ai-voice-receptionist',
     type: 'article',
   },
 }
@@ -18,18 +18,18 @@ const structuredData = {
   '@type': 'BlogPosting',
   headline: 'What Is an AI Voice Receptionist (And Is It Better Than an Answering Service)?',
   description: 'A plain-English explanation of what an AI voice receptionist does, how it compares to a traditional answering service, and when it makes sense for small service businesses in Tampa Bay.',
-  url: 'https://sharkbrandingsolutions.com/resources/blog-what-is-ai-voice-receptionist',
+  url: 'https://shark-ai-solutions.com/resources/blog-what-is-ai-voice-receptionist',
   datePublished: '2026-06-29',
   dateModified: '2026-06-29',
   author: {
     '@type': 'Person',
-    '@id': 'https://sharkbrandingsolutions.com/about#michelle',
+    '@id': 'https://shark-ai-solutions.com/about#michelle',
     name: 'Michelle Stanaland',
-    url: 'https://sharkbrandingsolutions.com/about#michelle',
+    url: 'https://shark-ai-solutions.com/about#michelle',
     jobTitle: 'Managing Partner and Founder, Shark AI Solutions',
   },
-  publisher: { '@id': 'https://sharkbrandingsolutions.com/#organization' },
-  mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://sharkbrandingsolutions.com/resources/blog-what-is-ai-voice-receptionist' },
+  publisher: { '@id': 'https://shark-ai-solutions.com/#organization' },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://shark-ai-solutions.com/resources/blog-what-is-ai-voice-receptionist' },
   keywords: ['AI voice receptionist', 'AI answering service', 'AI phone receptionist', 'automated receptionist Tampa Bay', 'AI call answering small business'],
   articleSection: 'AI Employees',
 }
@@ -38,9 +38,9 @@ const breadcrumbData = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://sharkbrandingsolutions.com' },
-    { '@type': 'ListItem', position: 2, name: 'Resources', item: 'https://sharkbrandingsolutions.com/resources' },
-    { '@type': 'ListItem', position: 3, name: 'What Is an AI Voice Receptionist?', item: 'https://sharkbrandingsolutions.com/resources/blog-what-is-ai-voice-receptionist' },
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://shark-ai-solutions.com' },
+    { '@type': 'ListItem', position: 2, name: 'Resources', item: 'https://shark-ai-solutions.com/resources' },
+    { '@type': 'ListItem', position: 3, name: 'What Is an AI Voice Receptionist?', item: 'https://shark-ai-solutions.com/resources/blog-what-is-ai-voice-receptionist' },
   ],
 }
 

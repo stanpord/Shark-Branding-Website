@@ -4,13 +4,13 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'Appointment Booking Automation | Shark AI Solutions',
   description: 'AI appointment booking for Wesley Chapel and Tampa Bay. 24/7 lead qualification and direct calendar booking. No phone tag, no scheduling delays.',
-  alternates: { canonical: 'https://sharkbrandingsolutions.com/automation/appointment-booking' },
+  alternates: { canonical: 'https://shark-ai-solutions.com/automation/appointment-booking' },
   openGraph: {
     title: 'Appointment Booking Automation | Shark AI Solutions',
     description: 'Stop losing leads to phone tag and scheduling delays. AI chat books qualified appointments to your calendar 24/7 without any effort from your team.',
-    url: 'https://sharkbrandingsolutions.com/automation/appointment-booking',
+    url: 'https://shark-ai-solutions.com/automation/appointment-booking',
     type: 'website',
-    images: [{ url: 'https://sharkbrandingsolutions.com/logo.webp', width: 1200, height: 630, alt: 'Appointment Booking Automation | Shark AI Solutions' }],
+    images: [{ url: 'https://shark-ai-solutions.com/logo.webp', width: 1200, height: 630, alt: 'Appointment Booking Automation | Shark AI Solutions' }],
   },
 }
 
@@ -19,11 +19,11 @@ const structuredData = {
   '@graph': [
     {
       '@type': 'Service',
-      '@id': 'https://sharkbrandingsolutions.com/automation/appointment-booking#service',
+      '@id': 'https://shark-ai-solutions.com/automation/appointment-booking#service',
       name: 'Appointment Booking Automation',
       description: 'AI-powered appointment booking for local businesses in Wesley Chapel and Tampa Bay. 24/7 lead qualification and direct calendar booking through an AI chat receptionist, with automated reminders that reduce no-shows by 60 to 75 percent.',
-      url: 'https://sharkbrandingsolutions.com/automation/appointment-booking',
-      provider: { '@id': 'https://sharkbrandingsolutions.com/#organization' },
+      url: 'https://shark-ai-solutions.com/automation/appointment-booking',
+      provider: { '@id': 'https://shark-ai-solutions.com/#organization' },
       areaServed: [
         { '@type': 'City', name: 'Wesley Chapel' },
         { '@type': 'City', name: 'Tampa' },
@@ -55,12 +55,26 @@ const structuredData = {
   ],
 }
 
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://shark-ai-solutions.com' },
+    { '@type': 'ListItem', position: 2, name: 'Automation', item: 'https://shark-ai-solutions.com/automation' },
+    { '@type': 'ListItem', position: 3, name: 'Appointment Booking Automation', item: 'https://shark-ai-solutions.com/automation/appointment-booking' },
+  ],
+}
 export default function AppointmentBookingPage() {
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }}
       />
 
       {/* Hero */}

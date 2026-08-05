@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "AI CFO Advisor | Shark AI Solutions",
   description:
     "Get CFO-level financial clarity on your marketing investments. Know your CAC, understand your ROI, and make confident budget decisions without hiring a full-time CFO.",
-  alternates: { canonical: "https://sharkbrandingsolutions.com/cfo-advisor" },
+  alternates: { canonical: "https://shark-ai-solutions.com/cfo-advisor" },
 };
 
 const advisorQuestions = [

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
  description:
   "Traditional SEO puts you on a list. GEO makes you the recommendation. Learn the three pillars of GEO and why local businesses must act now.",
  alternates: {
-  canonical: "https://sharkbrandingsolutions.com/resources/blog-seo-old-school-geo-ai-shift",
+  canonical: "https://shark-ai-solutions.com/resources/blog-seo-old-school-geo-ai-shift",
  },
 };
 
@@ -23,7 +23,7 @@ const faqs = [
 export default function Page() {
  return (
   <BlogShell
-   url="https://sharkbrandingsolutions.com/resources/blog-seo-old-school-geo-ai-shift"
+   url="https://shark-ai-solutions.com/resources/blog-seo-old-school-geo-ai-shift"
    faqs={faqs}
    relatedPosts={[{ href: "/resources/blog-ai-funnel-chatgpt-new-front-door", title: "ChatGPT Is the New Front Door for Your Customers", category: "AI Funnel" }, { href: "/resources/blog-ai-map-consistent-business-listings", title: "Consistent Listings: The Secret to Being Found by AI", category: "Listings" }, { href: "/resources/blog-ntbc-ai-ready-partnership", title: "Shark AI Solutions Partners with North Tampa Bay Chamber", category: "Partnership" }]}
    category="GEO"

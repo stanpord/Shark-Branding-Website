@@ -46,6 +46,32 @@ const bots = [
   },
 ];
 
+
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  '@id': 'https://shark-ai-solutions.com/operations#service',
+  name: 'AI Business Operations',
+  description: 'AI-powered operations systems for Tampa Bay businesses. Automate workflows, streamline communication, and scale without adding headcount.',
+  url: 'https://shark-ai-solutions.com/operations',
+  provider: { '@id': 'https://shark-ai-solutions.com/#organization' },
+  serviceType: 'AI Business Operations',
+  areaServed: [
+    { '@type': 'City', name: 'Wesley Chapel' },
+    { '@type': 'City', name: 'Tampa' },
+    { '@type': 'City', name: 'Lutz' },
+    { '@type': 'City', name: 'Land O Lakes' },
+  ],
+}
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://shark-ai-solutions.com' },
+    { '@type': 'ListItem', position: 2, name: 'AI Business Operations', item: 'https://shark-ai-solutions.com/operations' },
+  ],
+}
 export default function OperationsPage() {
   return (
     <>

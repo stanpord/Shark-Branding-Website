@@ -7,13 +7,13 @@ export const metadata: Metadata = {
   description:
     "Dominate local search with AI-powered local SEO. From listing management to geolocation rank tracking, we help your business get found by the right customers at the right time.",
   alternates: {
-    canonical: "https://sharkbrandingsolutions.com/local-seo",
+    canonical: "https://shark-ai-solutions.com/local-seo",
   },
   openGraph: {
     title: "Local SEO Services | Shark AI Solutions",
     description:
       "Dominate local search with AI-powered local SEO. Listing management, NAP citations, rank tracking, and reporting, all in one place.",
-    url: "https://sharkbrandingsolutions.com/local-seo",
+    url: "https://shark-ai-solutions.com/local-seo",
   },
 };
 
@@ -101,9 +101,37 @@ const testimonials = [
   },
 ];
 
+
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  '@id': 'https://shark-ai-solutions.com/local-seo#service',
+  name: 'Local SEO Services',
+  description: 'AI-powered local SEO for Tampa Bay businesses. Listing management, NAP citations, geolocation rank tracking, and reporting in one place.',
+  url: 'https://shark-ai-solutions.com/local-seo',
+  provider: { '@id': 'https://shark-ai-solutions.com/#organization' },
+  serviceType: 'Local SEO',
+  areaServed: [
+    { '@type': 'City', name: 'Wesley Chapel' },
+    { '@type': 'City', name: 'Tampa' },
+    { '@type': 'City', name: 'Lutz' },
+    { '@type': 'City', name: 'Land O Lakes' },
+  ],
+}
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://shark-ai-solutions.com' },
+    { '@type': 'ListItem', position: 2, name: 'Local SEO Services', item: 'https://shark-ai-solutions.com/local-seo' },
+  ],
+}
 export default function LocalSeoPage() {
   return (
     <div className="bg-white">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       {/* HERO */}
       <section className="bg-[#07141a] py-20 px-6 overflow-hidden">

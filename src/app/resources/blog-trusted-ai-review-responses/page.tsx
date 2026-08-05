@@ -8,14 +8,14 @@ export const metadata: Metadata = {
  description:
   "Getting found is only half the battle. If your trust signals are weak, AI won't recommend you. Here's how to master the Trusted stage.",
  alternates: {
-  canonical: "https://sharkbrandingsolutions.com/resources/blog-trusted-ai-review-responses",
+  canonical: "https://shark-ai-solutions.com/resources/blog-trusted-ai-review-responses",
  },
 };
 
 export default function Page() {
  return (
   <BlogShell
-   url="https://sharkbrandingsolutions.com/resources/blog-trusted-ai-review-responses"
+   url="https://shark-ai-solutions.com/resources/blog-trusted-ai-review-responses"
    relatedPosts={[
     { href: "/resources/blog-24-hour-rule-local-trust-ai", title: "The 24-Hour Rule: AI Review Responses for Local Trust", category: "Strategy" },
     { href: "/resources/blog-google-reviews-ai-recommendations", title: "Turning Google Reviews Into AI Recommendations", category: "Strategy" },

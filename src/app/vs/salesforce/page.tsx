@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     "ai sales assistant Tampa Bay",
   ],
   alternates: {
-    canonical: "https://sharkbrandingsolutions.com/vs/salesforce",
+    canonical: "https://shark-ai-solutions.com/vs/salesforce",
   },
   openGraph: {
     title: "Salesforce AI Agents Alternatives for Small Business",
@@ -70,6 +70,15 @@ const faqSchema = {
   ],
 };
 
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://shark-ai-solutions.com' },
+    { '@type': 'ListItem', position: 2, name: 'AI Employees vs. Salesforce AI Agents', item: 'https://shark-ai-solutions.com/vs/salesforce' },
+  ],
+}
 export default function SalesforceVsPage() {
   return (
     <>

@@ -22,6 +22,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: "/",
       },
     ],
-    sitemap: "https://sharkbrandingsolutions.com/sitemap.xml",
+    sitemap: "https://shark-ai-solutions.com/sitemap.xml",
   };
 }

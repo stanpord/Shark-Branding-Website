@@ -8,14 +8,14 @@ export const metadata: Metadata = {
  description:
   "Responding to reviews within 24 hours is the edge most businesses miss. Learn how AI-assisted responses build local trust and boost your SEO.",
  alternates: {
-  canonical: "https://sharkbrandingsolutions.com/resources/blog-24-hour-rule-local-trust-ai",
+  canonical: "https://shark-ai-solutions.com/resources/blog-24-hour-rule-local-trust-ai",
  },
 };
 
 export default function Page() {
  return (
   <BlogShell
-   url="https://sharkbrandingsolutions.com/resources/blog-24-hour-rule-local-trust-ai"
+   url="https://shark-ai-solutions.com/resources/blog-24-hour-rule-local-trust-ai"
    relatedPosts={[
     { href: "/resources/blog-google-reviews-ai-recommendations", title: "Turning Google Reviews Into AI Recommendations", category: "Strategy" },
     { href: "/resources/blog-trusted-ai-review-responses", title: "AI Review Responses: Mastering Found, Trusted, Chosen", category: "Strategy" },

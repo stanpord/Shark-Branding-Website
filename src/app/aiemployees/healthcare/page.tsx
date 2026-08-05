@@ -4,13 +4,13 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'AI Employees for Healthcare Practices | Shark AI Solutions',
   description: 'AI employees for medical practices and clinics in Wesley Chapel and Tampa Bay. Patient follow-up, appointment reminders, review requests, and 24/7 booking. Live in one week.',
-  alternates: { canonical: 'https://sharkbrandingsolutions.com/aiemployees/healthcare' },
+  alternates: { canonical: 'https://shark-ai-solutions.com/aiemployees/healthcare' },
   openGraph: {
     title: 'AI Employees for Healthcare Practices | Shark AI Solutions',
     description: 'Stop losing patients to slow response times and manual scheduling. AI employees handle inbound inquiries, appointment reminders, and reviews 24/7.',
-    url: 'https://sharkbrandingsolutions.com/aiemployees/healthcare',
+    url: 'https://shark-ai-solutions.com/aiemployees/healthcare',
     type: 'website',
-    images: [{ url: 'https://sharkbrandingsolutions.com/logo.webp', width: 1200, height: 630, alt: 'AI Employees for Healthcare | Shark AI Solutions' }],
+    images: [{ url: 'https://shark-ai-solutions.com/logo.webp', width: 1200, height: 630, alt: 'AI Employees for Healthcare | Shark AI Solutions' }],
   },
 }
 
@@ -19,11 +19,11 @@ const structuredData = {
   '@graph': [
     {
       '@type': 'Service',
-      '@id': 'https://sharkbrandingsolutions.com/aiemployees/healthcare#service',
+      '@id': 'https://shark-ai-solutions.com/aiemployees/healthcare#service',
       name: 'AI Employees for Healthcare Practices',
       description: 'AI employees configured for medical practices, dental offices, chiropractic clinics, and specialty providers in Wesley Chapel and Tampa Bay. Includes 24/7 patient inquiry handling, automated appointment reminders, post-visit review requests, and new patient follow-up.',
-      url: 'https://sharkbrandingsolutions.com/aiemployees/healthcare',
-      provider: { '@id': 'https://sharkbrandingsolutions.com/#organization' },
+      url: 'https://shark-ai-solutions.com/aiemployees/healthcare',
+      provider: { '@id': 'https://shark-ai-solutions.com/#organization' },
       areaServed: [
         { '@type': 'City', name: 'Wesley Chapel' },
         { '@type': 'City', name: 'Tampa' },
@@ -99,12 +99,26 @@ const practiceTypes = [
   'Pediatrics', 'OB/GYN', 'Orthopedics', 'Med Spas',
 ]
 
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://shark-ai-solutions.com' },
+    { '@type': 'ListItem', position: 2, name: 'AI Employees', item: 'https://shark-ai-solutions.com/aiemployees' },
+    { '@type': 'ListItem', position: 3, name: 'AI Employees for Healthcare Practices', item: 'https://shark-ai-solutions.com/aiemployees/healthcare' },
+  ],
+}
 export default function HealthcarePage() {
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }}
       />
 
       {/* Hero */}

@@ -60,21 +60,21 @@ export default function BlogShell({
       ...(url ? { url, mainEntityOfPage: { "@type": "WebPage", "@id": url } } : {}),
       author: {
         "@type": "Person",
-        "@id": "https://sharkbrandingsolutions.com/about#michelle",
+        "@id": "https://shark-ai-solutions.com/about#michelle",
         name: "Michelle Stanaland",
-        url: "https://sharkbrandingsolutions.com/about#michelle",
+        url: "https://shark-ai-solutions.com/about#michelle",
         jobTitle: "Managing Partner and Founder, Shark AI Solutions",
       },
       publisher: {
         "@type": "Organization",
-        "@id": "https://sharkbrandingsolutions.com/#organization",
+        "@id": "https://shark-ai-solutions.com/#organization",
         name: "Shark AI Solutions",
         logo: {
           "@type": "ImageObject",
-          url: "https://sharkbrandingsolutions.com/logo.webp",
+          url: "https://shark-ai-solutions.com/logo.webp",
         },
       },
-      isPartOf: { "@id": "https://sharkbrandingsolutions.com/#website" },
+      isPartOf: { "@id": "https://shark-ai-solutions.com/#website" },
       articleSection: category,
     },
   ];
@@ -83,8 +83,8 @@ export default function BlogShell({
     schemaGraph.push({
       "@type": "BreadcrumbList",
       itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: "https://sharkbrandingsolutions.com" },
-        { "@type": "ListItem", position: 2, name: "Resources", item: "https://sharkbrandingsolutions.com/resources" },
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://shark-ai-solutions.com" },
+        { "@type": "ListItem", position: 2, name: "Resources", item: "https://shark-ai-solutions.com/resources" },
         { "@type": "ListItem", position: 3, name: title, item: url },
       ],
     });

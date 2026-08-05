@@ -4,7 +4,7 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'AI Visibility in Wesley Chapel, FL | Shark AI Solutions',
   description: 'Shark AI Solutions helps Wesley Chapel businesses get found by ChatGPT, Google AI Overviews, Perplexity, and Gemini. Free AI Audit in 48 hours.',
-  alternates: { canonical: 'https://sharkbrandingsolutions.com/wesley-chapel' },
+  alternates: { canonical: 'https://shark-ai-solutions.com/wesley-chapel' },
 }
 
 const structuredData = {
@@ -12,7 +12,7 @@ const structuredData = {
   '@type': 'ProfessionalService',
   name: 'Shark AI Solutions',
   description: 'AI visibility consulting for Wesley Chapel businesses. We help local companies get found and recommended by ChatGPT, Google AI Overviews, Perplexity, and Gemini.',
-  url: 'https://sharkbrandingsolutions.com/wesley-chapel',
+  url: 'https://shark-ai-solutions.com/wesley-chapel',
   telephone: '+17275133955',
   email: 'info@sharkbrandingsolutions.com',
   address: {
@@ -71,12 +71,25 @@ const results = [
   { stat: '3', detail: 'AI platforms, ChatGPT, Gemini, Perplexity, monitored for every client.' },
 ]
 
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://shark-ai-solutions.com' },
+    { '@type': 'ListItem', position: 2, name: 'AI Visibility in Wesley Chapel, FL', item: 'https://shark-ai-solutions.com/wesley-chapel' },
+  ],
+}
 export default function WesleyChapelPage() {
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }}
       />
       <script
         type="application/ld+json"

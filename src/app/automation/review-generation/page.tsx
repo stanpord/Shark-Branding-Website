@@ -4,13 +4,13 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'Review Generation Automation | Shark AI Solutions',
   description: 'Automated review requests for Wesley Chapel and Tampa Bay. Post-job SMS, smart follow-up, and brand-voice responses to every review.',
-  alternates: { canonical: 'https://sharkbrandingsolutions.com/automation/review-generation' },
+  alternates: { canonical: 'https://shark-ai-solutions.com/automation/review-generation' },
   openGraph: {
     title: 'Review Generation Automation | Shark AI Solutions',
     description: 'Stop leaving review opportunities uncollected after every completed job. Automated review requests and responses configured for your business.',
-    url: 'https://sharkbrandingsolutions.com/automation/review-generation',
+    url: 'https://shark-ai-solutions.com/automation/review-generation',
     type: 'website',
-    images: [{ url: 'https://sharkbrandingsolutions.com/logo.webp', width: 1200, height: 630, alt: 'Review Generation Automation | Shark AI Solutions' }],
+    images: [{ url: 'https://shark-ai-solutions.com/logo.webp', width: 1200, height: 630, alt: 'Review Generation Automation | Shark AI Solutions' }],
   },
 }
 
@@ -19,11 +19,11 @@ const structuredData = {
   '@graph': [
     {
       '@type': 'Service',
-      '@id': 'https://sharkbrandingsolutions.com/automation/review-generation#service',
+      '@id': 'https://shark-ai-solutions.com/automation/review-generation#service',
       name: 'Review Generation Automation',
       description: 'Automated review request sequences for local businesses in Wesley Chapel and Tampa Bay. Post-job SMS requests with smart follow-up timing and automated brand-voice responses to every incoming review.',
-      url: 'https://sharkbrandingsolutions.com/automation/review-generation',
-      provider: { '@id': 'https://sharkbrandingsolutions.com/#organization' },
+      url: 'https://shark-ai-solutions.com/automation/review-generation',
+      provider: { '@id': 'https://shark-ai-solutions.com/#organization' },
       areaServed: [
         { '@type': 'City', name: 'Wesley Chapel' },
         { '@type': 'City', name: 'Tampa' },
@@ -55,12 +55,26 @@ const structuredData = {
   ],
 }
 
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://shark-ai-solutions.com' },
+    { '@type': 'ListItem', position: 2, name: 'Automation', item: 'https://shark-ai-solutions.com/automation' },
+    { '@type': 'ListItem', position: 3, name: 'Review Generation Automation', item: 'https://shark-ai-solutions.com/automation/review-generation' },
+  ],
+}
 export default function ReviewGenerationPage() {
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }}
       />
 
       {/* Hero */}

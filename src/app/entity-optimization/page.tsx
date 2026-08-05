@@ -32,7 +32,7 @@ const structuredData = {
   description:
     "We build, audit, and optimize business entities so that AI models have a consistent, authoritative understanding of your brand, services, service area, and expertise. Serves Tampa Bay and national clients.",
   url: "https://shark-ai-solutions.com/entity-optimization",
-  provider: { "@id": "https://sharkbrandingsolutions.com/#organization" },
+  provider: { "@id": "https://shark-ai-solutions.com/#organization" },
   areaServed: [
     { "@type": "City", name: "Tampa" },
     { "@type": "City", name: "Wesley Chapel" },

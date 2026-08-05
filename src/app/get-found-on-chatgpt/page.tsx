@@ -32,7 +32,7 @@ const structuredData = {
   description:
     "We help Tampa Bay local businesses appear in ChatGPT recommendations. Our process covers Bing index optimization, entity consistency, review signals, and structured data so ChatGPT recommends your business when local buyers ask.",
   url: "https://shark-ai-solutions.com/get-found-on-chatgpt",
-  provider: { "@id": "https://sharkbrandingsolutions.com/#organization" },
+  provider: { "@id": "https://shark-ai-solutions.com/#organization" },
   areaServed: [
     { "@type": "City", name: "Tampa" },
     { "@type": "City", name: "Wesley Chapel" },

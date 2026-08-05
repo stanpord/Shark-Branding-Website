@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     'Find out if ChatGPT, Gemini, and Google AI are recommending your competitors instead of you. Run a free AI visibility audit in 60 seconds.',
   alternates: {
-    canonical: 'https://sharkbrandingsolutions.com/ai-audit',
+    canonical: 'https://shark-ai-solutions.com/ai-audit',
   },
 }
 

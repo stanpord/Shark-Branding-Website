@@ -4,11 +4,11 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'How Much Does the Full AI Suite Cost? | Shark AI Solutions',
   description: 'The Full AI Suite from Shark AI Solutions is one flat monthly rate, custom quoted for your business, month-to-month. Here is exactly what is included and how it compares to building the same stack yourself.',
-  alternates: { canonical: 'https://sharkbrandingsolutions.com/resources/blog-full-ai-suite-pricing' },
+  alternates: { canonical: 'https://shark-ai-solutions.com/resources/blog-full-ai-suite-pricing' },
   openGraph: {
     title: 'How Much Does the Full AI Suite Cost? Transparent Pricing Breakdown',
     description: 'One flat monthly rate. One-time setup. Month-to-month. Here is everything included and how it compares to the alternatives.',
-    url: 'https://sharkbrandingsolutions.com/resources/blog-full-ai-suite-pricing',
+    url: 'https://shark-ai-solutions.com/resources/blog-full-ai-suite-pricing',
     type: 'article',
   },
 }
@@ -18,18 +18,18 @@ const structuredData = {
   '@type': 'BlogPosting',
   headline: 'How Much Does the Full AI Suite Cost? Transparent Pricing Breakdown',
   description: 'A transparent breakdown of Full AI Suite pricing from Shark AI Solutions: one flat monthly rate, custom quoted, month-to-month. What is included, what competitors charge for the same stack, and how the math works for a small service business.',
-  url: 'https://sharkbrandingsolutions.com/resources/blog-full-ai-suite-pricing',
+  url: 'https://shark-ai-solutions.com/resources/blog-full-ai-suite-pricing',
   datePublished: '2026-07-03',
   dateModified: '2026-07-03',
   author: {
     '@type': 'Person',
-    '@id': 'https://sharkbrandingsolutions.com/about#michelle',
+    '@id': 'https://shark-ai-solutions.com/about#michelle',
     name: 'Michelle Stanaland',
-    url: 'https://sharkbrandingsolutions.com/about#michelle',
+    url: 'https://shark-ai-solutions.com/about#michelle',
     jobTitle: 'Managing Partner and Founder, Shark AI Solutions',
   },
-  publisher: { '@id': 'https://sharkbrandingsolutions.com/#organization' },
-  mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://sharkbrandingsolutions.com/resources/blog-full-ai-suite-pricing' },
+  publisher: { '@id': 'https://shark-ai-solutions.com/#organization' },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://shark-ai-solutions.com/resources/blog-full-ai-suite-pricing' },
   keywords: ['Full AI Suite cost', 'AI suite pricing', 'AI receptionist cost', 'AI CRM pricing', 'AI sales assistant cost Tampa Bay'],
   articleSection: 'AI Employees',
 }
@@ -38,9 +38,9 @@ const breadcrumbData = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://sharkbrandingsolutions.com' },
-    { '@type': 'ListItem', position: 2, name: 'Resources', item: 'https://sharkbrandingsolutions.com/resources' },
-    { '@type': 'ListItem', position: 3, name: 'How Much Does the Full AI Suite Cost?', item: 'https://sharkbrandingsolutions.com/resources/blog-full-ai-suite-pricing' },
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://shark-ai-solutions.com' },
+    { '@type': 'ListItem', position: 2, name: 'Resources', item: 'https://shark-ai-solutions.com/resources' },
+    { '@type': 'ListItem', position: 3, name: 'How Much Does the Full AI Suite Cost?', item: 'https://shark-ai-solutions.com/resources/blog-full-ai-suite-pricing' },
   ],
 }
 

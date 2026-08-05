@@ -8,14 +8,14 @@ export const metadata: Metadata = {
  description:
   "Google's AI now checks prices for customers. If you don't answer, you're listed as unreachable. Here's how to stay in the game.",
  alternates: {
-  canonical: "https://sharkbrandingsolutions.com/resources/blog-end-of-phone-tag-google-ai-check-prices",
+  canonical: "https://shark-ai-solutions.com/resources/blog-end-of-phone-tag-google-ai-check-prices",
  },
 };
 
 export default function Page() {
  return (
   <BlogShell
-   url="https://sharkbrandingsolutions.com/resources/blog-end-of-phone-tag-google-ai-check-prices"
+   url="https://shark-ai-solutions.com/resources/blog-end-of-phone-tag-google-ai-check-prices"
    relatedPosts={[
     { href: "/resources/blog-google-ai-price-check-ready-to-be-chosen", title: "Google AI Price Check: Is Your Business Ready?", category: "Google AI" },
     { href: "/resources/blog-ai-funnel-chatgpt-new-front-door", title: "ChatGPT Is the New Front Door for Your Customers", category: "AI Funnel" },

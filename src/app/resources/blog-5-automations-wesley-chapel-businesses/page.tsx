@@ -4,11 +4,11 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: '5 Things Wesley Chapel Businesses Should Automate (2026)',
   description: 'The five highest-ROI automations for Wesley Chapel small businesses: missed call follow-up, review requests, lead follow-up, appointment reminders, and after-hours chat. Start here.',
-  alternates: { canonical: 'https://sharkbrandingsolutions.com/resources/blog-5-automations-wesley-chapel-businesses' },
+  alternates: { canonical: 'https://shark-ai-solutions.com/resources/blog-5-automations-wesley-chapel-businesses' },
   openGraph: {
     title: '5 Tasks Wesley Chapel Business Owners Should Automate First',
     description: 'Most local businesses automate the wrong things first. Here are the five that move the needle fastest for Wesley Chapel service businesses.',
-    url: 'https://sharkbrandingsolutions.com/resources/blog-5-automations-wesley-chapel-businesses',
+    url: 'https://shark-ai-solutions.com/resources/blog-5-automations-wesley-chapel-businesses',
     type: 'article',
   },
 }
@@ -18,22 +18,22 @@ const structuredData = {
   '@type': 'BlogPosting',
   headline: '5 Tasks Wesley Chapel Business Owners Should Automate First',
   description: 'The five highest-ROI automations for Wesley Chapel small businesses: missed call text-back, review requests, lead follow-up sequences, appointment reminders, and after-hours chat reception.',
-  url: 'https://sharkbrandingsolutions.com/resources/blog-5-automations-wesley-chapel-businesses',
+  url: 'https://shark-ai-solutions.com/resources/blog-5-automations-wesley-chapel-businesses',
   datePublished: '2026-06-07',
   dateModified: '2026-06-07',
   author: {
     '@type': 'Person',
-    '@id': 'https://sharkbrandingsolutions.com/about#michelle',
+    '@id': 'https://shark-ai-solutions.com/about#michelle',
     name: 'Michelle Stanaland',
-    url: 'https://sharkbrandingsolutions.com/about#michelle',
+    url: 'https://shark-ai-solutions.com/about#michelle',
     jobTitle: 'Managing Partner and Founder, Shark AI Solutions',
   },
   publisher: {
-    '@id': 'https://sharkbrandingsolutions.com/#organization',
+    '@id': 'https://shark-ai-solutions.com/#organization',
   },
   mainEntityOfPage: {
     '@type': 'WebPage',
-    '@id': 'https://sharkbrandingsolutions.com/resources/blog-5-automations-wesley-chapel-businesses',
+    '@id': 'https://shark-ai-solutions.com/resources/blog-5-automations-wesley-chapel-businesses',
   },
   keywords: ['business automation Wesley Chapel', 'AI automation Tampa Bay', 'automate small business', 'AI employees Wesley Chapel', 'lead follow-up automation'],
   articleSection: 'AI Employees',
@@ -42,9 +42,9 @@ const breadcrumbData = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://sharkbrandingsolutions.com' },
-    { '@type': 'ListItem', position: 2, name: 'Resources', item: 'https://sharkbrandingsolutions.com/resources' },
-    { '@type': 'ListItem', position: 3, name: structuredData.headline, item: 'https://sharkbrandingsolutions.com/resources/blog-5-automations-wesley-chapel-businesses' },
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://shark-ai-solutions.com' },
+    { '@type': 'ListItem', position: 2, name: 'Resources', item: 'https://shark-ai-solutions.com/resources' },
+    { '@type': 'ListItem', position: 3, name: structuredData.headline, item: 'https://shark-ai-solutions.com/resources/blog-5-automations-wesley-chapel-businesses' },
   ],
 }
 

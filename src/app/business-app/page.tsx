@@ -7,13 +7,13 @@ export const metadata: Metadata = {
   description:
     "Your complete AI marketing dashboard. See reviews, rankings, campaigns, listings, and reports, all in one place, branded to your business.",
   alternates: {
-    canonical: "https://sharkbrandingsolutions.com/business-app",
+    canonical: "https://shark-ai-solutions.com/business-app",
   },
   openGraph: {
     title: "Client Dashboard | Shark AI Solutions",
     description:
       "One dashboard for everything, reputation, listings, campaigns, reporting, and AI tools. Built for local businesses that want to see real results.",
-    url: "https://sharkbrandingsolutions.com/business-app",
+    url: "https://shark-ai-solutions.com/business-app",
   },
 };
 

@@ -32,7 +32,7 @@ const structuredData = {
   description:
     "Answer Engine Optimization (AEO) consulting for local businesses in Tampa Bay, FL. We structure your content so AI answer engines extract it as the direct response to buyer queries, increasing citation frequency across ChatGPT, Google AI Overviews, Perplexity, and Gemini.",
   url: "https://shark-ai-solutions.com/aeo-consulting",
-  provider: { "@id": "https://sharkbrandingsolutions.com/#organization" },
+  provider: { "@id": "https://shark-ai-solutions.com/#organization" },
   areaServed: [
     { "@type": "City", name: "Tampa" },
     { "@type": "City", name: "Wesley Chapel" },

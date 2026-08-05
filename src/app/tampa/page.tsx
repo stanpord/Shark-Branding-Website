@@ -4,7 +4,7 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'AI Visibility in Tampa, FL | Shark AI Solutions',
   description: 'Shark AI Solutions helps Tampa businesses get recommended by ChatGPT, Google AI Overviews, Perplexity, and Gemini. Free AI Audit delivered in 48 hours.',
-  alternates: { canonical: 'https://sharkbrandingsolutions.com/tampa' },
+  alternates: { canonical: 'https://shark-ai-solutions.com/tampa' },
 }
 
 const structuredData = {
@@ -12,7 +12,7 @@ const structuredData = {
   '@type': 'ProfessionalService',
   name: 'Shark AI Solutions',
   description: 'AI visibility consulting for Tampa businesses. We help local companies get found and recommended by ChatGPT, Google AI Overviews, Perplexity, and Gemini.',
-  url: 'https://sharkbrandingsolutions.com/tampa',
+  url: 'https://shark-ai-solutions.com/tampa',
   telephone: '+17275133955',
   email: 'info@sharkbrandingsolutions.com',
   address: {
@@ -32,12 +32,25 @@ const results = [
   { stat: '3', detail: 'AI platforms, ChatGPT, Gemini, Perplexity, monitored for every client.' },
 ]
 
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://shark-ai-solutions.com' },
+    { '@type': 'ListItem', position: 2, name: 'AI Visibility in Tampa, FL', item: 'https://shark-ai-solutions.com/tampa' },
+  ],
+}
 export default function TampaPage() {
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }}
       />
 
       {/* Hero */}

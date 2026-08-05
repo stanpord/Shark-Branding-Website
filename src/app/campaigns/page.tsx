@@ -7,13 +7,13 @@ export const metadata: Metadata = {
   description:
     "AI-powered email and SMS marketing campaigns that nurture leads, re-engage past customers, and drive repeat business, all running automatically in the background.",
   alternates: {
-    canonical: "https://sharkbrandingsolutions.com/campaigns",
+    canonical: "https://shark-ai-solutions.com/campaigns",
   },
   openGraph: {
     title: "AI Email & SMS Campaigns | Shark AI Solutions",
     description:
       "Automated email and SMS campaigns that keep your business top of mind and drive repeat business without extra work.",
-    url: "https://sharkbrandingsolutions.com/campaigns",
+    url: "https://shark-ai-solutions.com/campaigns",
   },
 };
 

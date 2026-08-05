@@ -4,11 +4,11 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'What Is an AI CRM vs. a Traditional CRM? | Shark AI Solutions',
   description: 'An AI CRM captures every call, text, and chat automatically, scores leads in real time, and runs follow-up without anyone on your team touching it.',
-  alternates: { canonical: 'https://sharkbrandingsolutions.com/resources/blog-what-is-ai-crm-vs-hubspot' },
+  alternates: { canonical: 'https://shark-ai-solutions.com/resources/blog-what-is-ai-crm-vs-hubspot' },
   openGraph: {
     title: 'What Is an AI CRM? How It Differs From Traditional CRMs',
     description: 'Traditional CRMs store data your team enters. An AI CRM captures every interaction automatically and acts on what it finds. Here is what that difference actually looks like.',
-    url: 'https://sharkbrandingsolutions.com/resources/blog-what-is-ai-crm-vs-hubspot',
+    url: 'https://shark-ai-solutions.com/resources/blog-what-is-ai-crm-vs-hubspot',
     type: 'article',
   },
 }
@@ -18,18 +18,18 @@ const structuredData = {
   '@type': 'BlogPosting',
   headline: 'What Is an AI CRM (And How Is It Different From Traditional CRMs)?',
   description: 'A plain-English breakdown of what an AI CRM actually does, how it compares to traditional CRM platforms, and why the difference matters for small and mid-sized service businesses.',
-  url: 'https://sharkbrandingsolutions.com/resources/blog-what-is-ai-crm-vs-hubspot',
+  url: 'https://shark-ai-solutions.com/resources/blog-what-is-ai-crm-vs-hubspot',
   datePublished: '2026-06-30',
   dateModified: '2026-06-30',
   author: {
     '@type': 'Person',
-    '@id': 'https://sharkbrandingsolutions.com/about#michelle',
+    '@id': 'https://shark-ai-solutions.com/about#michelle',
     name: 'Michelle Stanaland',
-    url: 'https://sharkbrandingsolutions.com/about#michelle',
+    url: 'https://shark-ai-solutions.com/about#michelle',
     jobTitle: 'Managing Partner and Founder, Shark AI Solutions',
   },
-  publisher: { '@id': 'https://sharkbrandingsolutions.com/#organization' },
-  mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://sharkbrandingsolutions.com/resources/blog-what-is-ai-crm-vs-hubspot' },
+  publisher: { '@id': 'https://shark-ai-solutions.com/#organization' },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://shark-ai-solutions.com/resources/blog-what-is-ai-crm-vs-hubspot' },
   keywords: ['AI CRM', 'AI CRM vs traditional CRM', 'AI customer relationship management', 'automated CRM Tampa Bay', 'AI CRM small business'],
   articleSection: 'AI Employees',
 }
@@ -38,9 +38,9 @@ const breadcrumbData = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://sharkbrandingsolutions.com' },
-    { '@type': 'ListItem', position: 2, name: 'Resources', item: 'https://sharkbrandingsolutions.com/resources' },
-    { '@type': 'ListItem', position: 3, name: 'What Is an AI CRM?', item: 'https://sharkbrandingsolutions.com/resources/blog-what-is-ai-crm-vs-hubspot' },
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://shark-ai-solutions.com' },
+    { '@type': 'ListItem', position: 2, name: 'Resources', item: 'https://shark-ai-solutions.com/resources' },
+    { '@type': 'ListItem', position: 3, name: 'What Is an AI CRM?', item: 'https://shark-ai-solutions.com/resources/blog-what-is-ai-crm-vs-hubspot' },
   ],
 }
 

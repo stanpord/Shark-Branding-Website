@@ -8,14 +8,14 @@ export const metadata: Metadata = {
  description:
   "AI Overviews now appear on over 60% of Google searches. Local SEO as you knew it is ending. Here's what changed, why it matters, and the three things you need to do right now.",
  alternates: {
-  canonical: "https://sharkbrandingsolutions.com/resources/blog-end-of-local-seo-ai-visibility",
+  canonical: "https://shark-ai-solutions.com/resources/blog-end-of-local-seo-ai-visibility",
  },
 };
 
 export default function Page() {
  return (
   <BlogShell
-   url="https://sharkbrandingsolutions.com/resources/blog-end-of-local-seo-ai-visibility"
+   url="https://shark-ai-solutions.com/resources/blog-end-of-local-seo-ai-visibility"
    relatedPosts={[
     {
      href: "/resources/blog-seo-old-school-geo-ai-shift",

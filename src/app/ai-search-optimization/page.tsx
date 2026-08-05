@@ -32,7 +32,7 @@ const structuredData = {
   description:
     "AI search optimization services for local businesses in Tampa Bay, FL. We optimize your business presence across all AI-powered search platforms including ChatGPT, Google AI Overviews, Gemini, Perplexity, and Microsoft Copilot.",
   url: "https://shark-ai-solutions.com/ai-search-optimization",
-  provider: { "@id": "https://sharkbrandingsolutions.com/#organization" },
+  provider: { "@id": "https://shark-ai-solutions.com/#organization" },
   areaServed: [
     { "@type": "City", name: "Tampa" },
     { "@type": "City", name: "Wesley Chapel" },

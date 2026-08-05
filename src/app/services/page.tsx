@@ -7,14 +7,14 @@ const servicesSchema = {
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://sharkbrandingsolutions.com/services",
-      url: "https://sharkbrandingsolutions.com/services",
+      "@id": "https://shark-ai-solutions.com/services",
+      url: "https://shark-ai-solutions.com/services",
       name: "AI Business Services | Shark AI Solutions",
-      isPartOf: { "@id": "https://sharkbrandingsolutions.com/#website" },
+      isPartOf: { "@id": "https://shark-ai-solutions.com/#website" },
     },
     {
       "@type": "FAQPage",
-      "@id": "https://sharkbrandingsolutions.com/services#faq",
+      "@id": "https://shark-ai-solutions.com/services#faq",
       mainEntity: [
         {
           "@type": "Question",
@@ -60,7 +60,7 @@ const servicesSchema = {
     },
     {
       "@type": "ItemList",
-      "@id": "https://sharkbrandingsolutions.com/services#list",
+      "@id": "https://shark-ai-solutions.com/services#list",
       name: "AI Business Services",
       itemListElement: [
         {
@@ -70,8 +70,8 @@ const servicesSchema = {
             "@type": "Service",
             name: "AI Business Consulting",
             description: "We optimize your business to appear when ChatGPT, Perplexity, Google AI Overviews, and other AI discovery platforms answer questions your customers are asking.",
-            url: "https://sharkbrandingsolutions.com/services#ai-visibility",
-            provider: { "@id": "https://sharkbrandingsolutions.com/#organization" },
+            url: "https://shark-ai-solutions.com/services#ai-visibility",
+            provider: { "@id": "https://shark-ai-solutions.com/#organization" },
           },
         },
         {
@@ -81,8 +81,8 @@ const servicesSchema = {
             "@type": "Service",
             name: "AI Visibility Toolkit",
             description: "A structured framework that audits your AI presence, builds the authority signals that get you cited, and tracks your mentions across every major AI platform.",
-            url: "https://sharkbrandingsolutions.com/services#toolkit",
-            provider: { "@id": "https://sharkbrandingsolutions.com/#organization" },
+            url: "https://shark-ai-solutions.com/services#toolkit",
+            provider: { "@id": "https://shark-ai-solutions.com/#organization" },
           },
         },
         {
@@ -92,8 +92,8 @@ const servicesSchema = {
             "@type": "Service",
             name: "AI Employees",
             description: "Five AI employees, chat receptionist, voice receptionist, reputation specialist, CRM, and sales coach, deployed live within one week.",
-            url: "https://sharkbrandingsolutions.com/aiemployees",
-            provider: { "@id": "https://sharkbrandingsolutions.com/#organization" },
+            url: "https://shark-ai-solutions.com/aiemployees",
+            provider: { "@id": "https://shark-ai-solutions.com/#organization" },
           },
         },
         {
@@ -103,8 +103,8 @@ const servicesSchema = {
             "@type": "Service",
             name: "Workshops and Training",
             description: "Live regional AI hackathons and training sessions for Tampa Bay business owners and their teams.",
-            url: "https://sharkbrandingsolutions.com/services#workshops",
-            provider: { "@id": "https://sharkbrandingsolutions.com/#organization" },
+            url: "https://shark-ai-solutions.com/services#workshops",
+            provider: { "@id": "https://shark-ai-solutions.com/#organization" },
           },
         },
       ],
@@ -173,11 +173,24 @@ const services = [
   },
 ];
 
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://shark-ai-solutions.com' },
+    { '@type': 'ListItem', position: 2, name: 'AI Visibility Services & AI Employees', item: 'https://shark-ai-solutions.com/services' },
+  ],
+}
 export default function ServicesPage() {
   return (
     <>
       <ServicesAnimations />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesSchema) }} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }}
+      />
 
       {/* ── Hero ── */}
       <section

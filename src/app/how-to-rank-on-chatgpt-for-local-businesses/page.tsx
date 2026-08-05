@@ -7,22 +7,22 @@ export const metadata: Metadata = {
   description:
     "A practical guide for local business owners on getting recommended by ChatGPT, Gemini, and Google AI Overviews. Fix your citations, schema, and trust signals.",
   alternates: {
-    canonical: "https://sharkbrandingsolutions.com/how-to-rank-on-chatgpt-for-local-businesses",
+    canonical: "https://shark-ai-solutions.com/how-to-rank-on-chatgpt-for-local-businesses",
   },
   openGraph: {
     title: "How to Rank on ChatGPT for Local Businesses (2026 Guide)",
     description:
       "A practical guide for local business owners on getting recommended by ChatGPT, Gemini, and Google AI Overviews.",
-    url: "https://sharkbrandingsolutions.com/how-to-rank-on-chatgpt-for-local-businesses",
+    url: "https://shark-ai-solutions.com/how-to-rank-on-chatgpt-for-local-businesses",
     type: "article",
-    images: [{ url: "https://sharkbrandingsolutions.com/logo.webp", width: 1200, height: 630, alt: "How to Rank on ChatGPT for Local Businesses" }],
+    images: [{ url: "https://shark-ai-solutions.com/logo.webp", width: 1200, height: 630, alt: "How to Rank on ChatGPT for Local Businesses" }],
   },
 };
 
 export default function Page() {
   return (
     <BlogShell
-      url="https://sharkbrandingsolutions.com/how-to-rank-on-chatgpt-for-local-businesses"
+      url="https://shark-ai-solutions.com/how-to-rank-on-chatgpt-for-local-businesses"
       category="AI Visibility"
       title="How to Rank on ChatGPT for Local Businesses: A Practical 2026 Guide"
       date="June 12, 2026"

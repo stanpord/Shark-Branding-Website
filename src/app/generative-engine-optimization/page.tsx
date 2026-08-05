@@ -32,7 +32,7 @@ const structuredData = {
   description:
     "Generative Engine Optimization (GEO) services for businesses in Tampa Bay, FL. We optimize your content, entity signals, and citation authority so AI generative engines like ChatGPT, Gemini, Perplexity, and Google AI Overviews cite your business in their responses.",
   url: "https://shark-ai-solutions.com/generative-engine-optimization",
-  provider: { "@id": "https://sharkbrandingsolutions.com/#organization" },
+  provider: { "@id": "https://shark-ai-solutions.com/#organization" },
   areaServed: [
     { "@type": "City", name: "Tampa" },
     { "@type": "City", name: "Wesley Chapel" },

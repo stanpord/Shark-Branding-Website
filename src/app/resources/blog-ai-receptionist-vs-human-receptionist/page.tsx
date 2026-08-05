@@ -4,11 +4,11 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'AI Receptionist vs. Human Receptionist | Shark AI Solutions',
   description: 'Comparing AI and human receptionists for Tampa Bay service businesses. Cost, availability, response speed, and which one makes sense for your business.',
-  alternates: { canonical: 'https://sharkbrandingsolutions.com/resources/blog-ai-receptionist-vs-human-receptionist' },
+  alternates: { canonical: 'https://shark-ai-solutions.com/resources/blog-ai-receptionist-vs-human-receptionist' },
   openGraph: {
     title: 'AI Receptionist vs. Human Receptionist: What Tampa Bay Businesses Need to Know',
     description: 'An honest comparison of AI and human receptionists for local service businesses in Tampa Bay. When each makes sense, and when you need both.',
-    url: 'https://sharkbrandingsolutions.com/resources/blog-ai-receptionist-vs-human-receptionist',
+    url: 'https://shark-ai-solutions.com/resources/blog-ai-receptionist-vs-human-receptionist',
     type: 'article',
   },
 }
@@ -18,22 +18,22 @@ const structuredData = {
   '@type': 'BlogPosting',
   headline: 'AI Receptionist vs. Human Receptionist: What Tampa Bay Businesses Need to Know',
   description: 'An honest comparison of AI and human receptionists for service businesses in Wesley Chapel and Tampa Bay. Covers cost, availability, response speed, lead qualification, and which scenarios each handles best.',
-  url: 'https://sharkbrandingsolutions.com/resources/blog-ai-receptionist-vs-human-receptionist',
+  url: 'https://shark-ai-solutions.com/resources/blog-ai-receptionist-vs-human-receptionist',
   datePublished: '2026-06-07',
   dateModified: '2026-06-07',
   author: {
     '@type': 'Person',
-    '@id': 'https://sharkbrandingsolutions.com/about#michelle',
+    '@id': 'https://shark-ai-solutions.com/about#michelle',
     name: 'Michelle Stanaland',
-    url: 'https://sharkbrandingsolutions.com/about#michelle',
+    url: 'https://shark-ai-solutions.com/about#michelle',
     jobTitle: 'Managing Partner and Founder, Shark AI Solutions',
   },
   publisher: {
-    '@id': 'https://sharkbrandingsolutions.com/#organization',
+    '@id': 'https://shark-ai-solutions.com/#organization',
   },
   mainEntityOfPage: {
     '@type': 'WebPage',
-    '@id': 'https://sharkbrandingsolutions.com/resources/blog-ai-receptionist-vs-human-receptionist',
+    '@id': 'https://shark-ai-solutions.com/resources/blog-ai-receptionist-vs-human-receptionist',
   },
   keywords: ['AI receptionist', 'AI employees Wesley Chapel', 'business automation Tampa Bay', 'Gemma AI receptionist', 'virtual receptionist'],
   articleSection: 'AI Employees',
@@ -42,9 +42,9 @@ const breadcrumbData = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://sharkbrandingsolutions.com' },
-    { '@type': 'ListItem', position: 2, name: 'Resources', item: 'https://sharkbrandingsolutions.com/resources' },
-    { '@type': 'ListItem', position: 3, name: structuredData.headline, item: 'https://sharkbrandingsolutions.com/resources/blog-ai-receptionist-vs-human-receptionist' },
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://shark-ai-solutions.com' },
+    { '@type': 'ListItem', position: 2, name: 'Resources', item: 'https://shark-ai-solutions.com/resources' },
+    { '@type': 'ListItem', position: 3, name: structuredData.headline, item: 'https://shark-ai-solutions.com/resources/blog-ai-receptionist-vs-human-receptionist' },
   ],
 }
 

@@ -9,13 +9,13 @@ export const metadata: Metadata = {
   description:
     "Scale AI-powered marketing across every franchise location without losing brand control. One platform, unified visibility, measurable results at every level.",
   alternates: {
-    canonical: "https://sharkbrandingsolutions.com/franchises",
+    canonical: "https://shark-ai-solutions.com/franchises",
   },
   openGraph: {
     title: "Franchise Marketing Solutions | Shark AI Solutions",
     description:
       "Scale AI-powered marketing across every franchise location without losing brand control.",
-    url: "https://sharkbrandingsolutions.com/franchises",
+    url: "https://shark-ai-solutions.com/franchises",
   },
 };
 
@@ -196,9 +196,37 @@ const testimonials = [
   },
 ];
 
+
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  '@id': 'https://shark-ai-solutions.com/franchises#service',
+  name: 'Franchise Marketing Solutions',
+  description: 'Scale AI-powered marketing across every franchise location. One platform, unified visibility, and measurable results at every location level.',
+  url: 'https://shark-ai-solutions.com/franchises',
+  provider: { '@id': 'https://shark-ai-solutions.com/#organization' },
+  serviceType: 'Franchise Marketing',
+  areaServed: [
+    { '@type': 'City', name: 'Wesley Chapel' },
+    { '@type': 'City', name: 'Tampa' },
+    { '@type': 'City', name: 'Lutz' },
+    { '@type': 'City', name: 'Land O Lakes' },
+  ],
+}
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://shark-ai-solutions.com' },
+    { '@type': 'ListItem', position: 2, name: 'Franchise Marketing Solutions', item: 'https://shark-ai-solutions.com/franchises' },
+  ],
+}
 export default function FranchisesPage() {
   return (
     <div className="bg-white">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       {/* ══════════════════════════════════════
           HERO

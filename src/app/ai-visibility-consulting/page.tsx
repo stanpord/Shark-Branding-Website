@@ -7,15 +7,15 @@ export const metadata: Metadata = {
   description:
     "AI visibility consulting for Tampa Bay businesses. Get recommended by ChatGPT, Gemini, and Google AI Overviews in 30 days. Free AI audit delivered in 48 hours.",
   alternates: {
-    canonical: "https://sharkbrandingsolutions.com/ai-visibility-consulting",
+    canonical: "https://shark-ai-solutions.com/ai-visibility-consulting",
   },
   openGraph: {
     title: "AI Visibility Consulting in Tampa Bay | Shark AI Solutions",
     description:
       "AI visibility consulting for Tampa Bay businesses. Get recommended by ChatGPT, Gemini, and Google AI Overviews. Free AI audit in 48 hours.",
-    url: "https://sharkbrandingsolutions.com/ai-visibility-consulting",
+    url: "https://shark-ai-solutions.com/ai-visibility-consulting",
     type: "website",
-    images: [{ url: "https://sharkbrandingsolutions.com/logo.webp", width: 1200, height: 630, alt: "AI Visibility Consulting | Shark AI Solutions" }],
+    images: [{ url: "https://shark-ai-solutions.com/logo.webp", width: 1200, height: 630, alt: "AI Visibility Consulting | Shark AI Solutions" }],
   },
 };
 
@@ -23,8 +23,8 @@ const breadcrumbData = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://sharkbrandingsolutions.com" },
-    { "@type": "ListItem", position: 2, name: "AI Visibility Consulting", item: "https://sharkbrandingsolutions.com/ai-visibility-consulting" },
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://shark-ai-solutions.com" },
+    { "@type": "ListItem", position: 2, name: "AI Visibility Consulting", item: "https://shark-ai-solutions.com/ai-visibility-consulting" },
   ],
 };
 
@@ -34,8 +34,8 @@ const structuredData = {
   name: "AI Visibility Consulting",
   description:
     "AI visibility consulting for local businesses in Tampa Bay. Shark AI Solutions helps businesses get recommended by ChatGPT, Google AI Overviews, Perplexity, and Gemini through citation optimization, schema markup, review management, and authoritative content.",
-  url: "https://sharkbrandingsolutions.com/ai-visibility-consulting",
-  provider: { "@id": "https://sharkbrandingsolutions.com/#organization" },
+  url: "https://shark-ai-solutions.com/ai-visibility-consulting",
+  provider: { "@id": "https://shark-ai-solutions.com/#organization" },
   areaServed: [
     { "@type": "City", name: "Tampa" },
     { "@type": "City", name: "Wesley Chapel" },
@@ -48,6 +48,18 @@ const structuredData = {
     priceCurrency: "USD",
     description: "AI Visibility Foundation, starting at $997/mo",
   },
+};
+
+const webPageData = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://shark-ai-solutions.com/ai-visibility-consulting",
+  url: "https://shark-ai-solutions.com/ai-visibility-consulting",
+  name: "AI Visibility Consulting in Tampa Bay | Shark AI Solutions",
+  datePublished: "2026-06-12",
+  dateModified: "2026-08-05",
+  isPartOf: { "@id": "https://shark-ai-solutions.com/#website" },
+  author: { "@id": "https://shark-ai-solutions.com/#organization" },
 };
 
 const faqStructuredData = {
@@ -164,6 +176,10 @@ export default function AiVisibilityConsultingPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqStructuredData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageData) }}
       />
 
       <AiVisibilityAnimations />

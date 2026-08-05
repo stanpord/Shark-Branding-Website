@@ -8,14 +8,14 @@ export const metadata: Metadata = {
  description:
   "ChatGPT and Gemini have collapsed the customer decision timeline. Learn why AI optimization is now essential for your business to stay visible.",
  alternates: {
-  canonical: "https://sharkbrandingsolutions.com/resources/blog-ai-funnel-chatgpt-gemini-path-to-purchase",
+  canonical: "https://shark-ai-solutions.com/resources/blog-ai-funnel-chatgpt-gemini-path-to-purchase",
  },
 };
 
 export default function Page() {
  return (
   <BlogShell
-   url="https://sharkbrandingsolutions.com/resources/blog-ai-funnel-chatgpt-gemini-path-to-purchase"
+   url="https://shark-ai-solutions.com/resources/blog-ai-funnel-chatgpt-gemini-path-to-purchase"
    relatedPosts={[
     { href: "/resources/blog-ai-funnel-chatgpt-new-front-door", title: "ChatGPT Is the New Front Door for Your Customers", category: "AI Funnel" },
     { href: "/resources/blog-seo-old-school-geo-ai-shift", title: "Why Your Business Needs GEO for the AI Search Shift", category: "GEO" },

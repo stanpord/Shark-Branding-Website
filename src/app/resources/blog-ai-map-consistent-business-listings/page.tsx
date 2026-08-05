@@ -8,14 +8,14 @@ export const metadata: Metadata = {
  description:
   "Inconsistent business data makes AI models skip you. Learn how to fix your digital footprint and become the top result in ChatGPT and Gemini.",
  alternates: {
-  canonical: "https://sharkbrandingsolutions.com/resources/blog-ai-map-consistent-business-listings",
+  canonical: "https://shark-ai-solutions.com/resources/blog-ai-map-consistent-business-listings",
  },
 };
 
 export default function Page() {
  return (
   <BlogShell
-   url="https://sharkbrandingsolutions.com/resources/blog-ai-map-consistent-business-listings"
+   url="https://shark-ai-solutions.com/resources/blog-ai-map-consistent-business-listings"
    relatedPosts={[
     { href: "/resources/blog-ai-funnel-chatgpt-new-front-door", title: "ChatGPT Is the New Front Door for Your Customers", category: "AI Funnel" },
     { href: "/resources/blog-seo-old-school-geo-ai-shift", title: "Why Your Business Needs GEO for the AI Search Shift", category: "GEO" },

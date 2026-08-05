@@ -4,13 +4,13 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'Lead Follow-Up Automation | Shark AI Solutions',
   description: 'Automated lead follow-up for Wesley Chapel and Tampa Bay. Every lead gets an immediate multi-touch response across email, SMS, and phone.',
-  alternates: { canonical: 'https://sharkbrandingsolutions.com/automation/lead-follow-up' },
+  alternates: { canonical: 'https://shark-ai-solutions.com/automation/lead-follow-up' },
   openGraph: {
     title: 'Lead Follow-Up Automation | Shark AI Solutions',
     description: 'Stop losing leads to slow response times. Automated multi-touch follow-up across email, SMS, and phone, configured for your business and live in one week.',
-    url: 'https://sharkbrandingsolutions.com/automation/lead-follow-up',
+    url: 'https://shark-ai-solutions.com/automation/lead-follow-up',
     type: 'website',
-    images: [{ url: 'https://sharkbrandingsolutions.com/logo.webp', width: 1200, height: 630, alt: 'Lead Follow-Up Automation | Shark AI Solutions' }],
+    images: [{ url: 'https://shark-ai-solutions.com/logo.webp', width: 1200, height: 630, alt: 'Lead Follow-Up Automation | Shark AI Solutions' }],
   },
 }
 
@@ -19,11 +19,11 @@ const structuredData = {
   '@graph': [
     {
       '@type': 'Service',
-      '@id': 'https://sharkbrandingsolutions.com/automation/lead-follow-up#service',
+      '@id': 'https://shark-ai-solutions.com/automation/lead-follow-up#service',
       name: 'Lead Follow-Up Automation',
       description: 'Automated multi-touch lead follow-up sequences for local businesses in Wesley Chapel and Tampa Bay. Every new lead receives an immediate response and a structured sequence across email, SMS, and phone that stops automatically when they respond or book.',
-      url: 'https://sharkbrandingsolutions.com/automation/lead-follow-up',
-      provider: { '@id': 'https://sharkbrandingsolutions.com/#organization' },
+      url: 'https://shark-ai-solutions.com/automation/lead-follow-up',
+      provider: { '@id': 'https://shark-ai-solutions.com/#organization' },
       areaServed: [
         { '@type': 'City', name: 'Wesley Chapel' },
         { '@type': 'City', name: 'Tampa' },
@@ -64,12 +64,26 @@ const steps = [
   { time: 'Day 10', channel: 'Email', label: 'Final touch', body: 'A closing email that assumes they may have moved in a different direction but leaves the door open for future conversations.' },
 ]
 
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://shark-ai-solutions.com' },
+    { '@type': 'ListItem', position: 2, name: 'Automation', item: 'https://shark-ai-solutions.com/automation' },
+    { '@type': 'ListItem', position: 3, name: 'Lead Follow-Up Automation', item: 'https://shark-ai-solutions.com/automation/lead-follow-up' },
+  ],
+}
 export default function LeadFollowUpPage() {
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }}
       />
 
       {/* Hero */}

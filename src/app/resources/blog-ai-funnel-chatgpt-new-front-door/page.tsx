@@ -8,14 +8,14 @@ export const metadata: Metadata = {
  description:
   "AI gives customers three choices, not 100. Learn how the AI Funnel works and what it takes to land in the top-three shortlist for your industry.",
  alternates: {
-  canonical: "https://sharkbrandingsolutions.com/resources/blog-ai-funnel-chatgpt-new-front-door",
+  canonical: "https://shark-ai-solutions.com/resources/blog-ai-funnel-chatgpt-new-front-door",
  },
 };
 
 export default function Page() {
  return (
   <BlogShell
-   url="https://sharkbrandingsolutions.com/resources/blog-ai-funnel-chatgpt-new-front-door"
+   url="https://shark-ai-solutions.com/resources/blog-ai-funnel-chatgpt-new-front-door"
    relatedPosts={[
     { href: "/resources/blog-ai-funnel-chatgpt-gemini-path-to-purchase", title: "ChatGPT & Gemini: How AI Reshapes the Path to Purchase", category: "AI Funnel" },
     { href: "/resources/blog-seo-old-school-geo-ai-shift", title: "Why Your Business Needs GEO for the AI Search Shift", category: "GEO" },

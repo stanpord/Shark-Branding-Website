@@ -4,11 +4,11 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'AI Employees Explained: What They Do | Shark AI Solutions',
   description: 'An AI employee is a software agent trained to do a specific job automatically: lead follow-up, review management, booking, content. Here\'s how they work.',
-  alternates: { canonical: 'https://sharkbrandingsolutions.com/resources/blog-what-is-an-ai-employee' },
+  alternates: { canonical: 'https://shark-ai-solutions.com/resources/blog-what-is-an-ai-employee' },
   openGraph: {
     title: 'What Is an AI Employee? A Plain-English Guide for Local Businesses',
     description: 'AI employees handle lead follow-up, review responses, appointment booking, and content, automatically. Here\'s what they actually are and how they work.',
-    url: 'https://sharkbrandingsolutions.com/resources/blog-what-is-an-ai-employee',
+    url: 'https://shark-ai-solutions.com/resources/blog-what-is-an-ai-employee',
     type: 'article',
   },
 }
@@ -18,22 +18,22 @@ const structuredData = {
   '@type': 'BlogPosting',
   headline: 'What Is an AI Employee? A Plain-English Guide for Local Businesses',
   description: 'An AI employee is a software agent trained to perform a specific business function automatically. This guide explains what AI employees are, how they differ from chatbots, and which tasks they handle best for local businesses in Wesley Chapel and Tampa Bay.',
-  url: 'https://sharkbrandingsolutions.com/resources/blog-what-is-an-ai-employee',
+  url: 'https://shark-ai-solutions.com/resources/blog-what-is-an-ai-employee',
   datePublished: '2026-06-07',
   dateModified: '2026-06-07',
   author: {
     '@type': 'Person',
-    '@id': 'https://sharkbrandingsolutions.com/about#michelle',
+    '@id': 'https://shark-ai-solutions.com/about#michelle',
     name: 'Michelle Stanaland',
-    url: 'https://sharkbrandingsolutions.com/about#michelle',
+    url: 'https://shark-ai-solutions.com/about#michelle',
     jobTitle: 'Managing Partner and Founder, Shark AI Solutions',
   },
   publisher: {
-    '@id': 'https://sharkbrandingsolutions.com/#organization',
+    '@id': 'https://shark-ai-solutions.com/#organization',
   },
   mainEntityOfPage: {
     '@type': 'WebPage',
-    '@id': 'https://sharkbrandingsolutions.com/resources/blog-what-is-an-ai-employee',
+    '@id': 'https://shark-ai-solutions.com/resources/blog-what-is-an-ai-employee',
   },
   keywords: ['AI employee', 'AI automation', 'AI employees Wesley Chapel', 'business automation Tampa Bay', 'AI chatbot vs AI employee'],
   articleSection: 'AI Employees',
@@ -42,9 +42,9 @@ const breadcrumbData = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://sharkbrandingsolutions.com' },
-    { '@type': 'ListItem', position: 2, name: 'Resources', item: 'https://sharkbrandingsolutions.com/resources' },
-    { '@type': 'ListItem', position: 3, name: structuredData.headline, item: 'https://sharkbrandingsolutions.com/resources/blog-what-is-an-ai-employee' },
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://shark-ai-solutions.com' },
+    { '@type': 'ListItem', position: 2, name: 'Resources', item: 'https://shark-ai-solutions.com/resources' },
+    { '@type': 'ListItem', position: 3, name: structuredData.headline, item: 'https://shark-ai-solutions.com/resources/blog-what-is-an-ai-employee' },
   ],
 }
 

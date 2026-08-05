@@ -4,11 +4,11 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'What Is an AI Sales Assistant? BANT & Sandler | Shark AI Solutions',
   description: 'An AI Sales Assistant qualifies leads using BANT and Sandler frameworks automatically. What it means for your team and why it matters for service businesses.',
-  alternates: { canonical: 'https://sharkbrandingsolutions.com/resources/blog-what-is-ai-sales-assistant-bant-sandler' },
+  alternates: { canonical: 'https://shark-ai-solutions.com/resources/blog-what-is-ai-sales-assistant-bant-sandler' },
   openGraph: {
     title: 'What Is an AI Sales Assistant? BANT, Sandler, and What It Means for Your Team',
     description: 'BANT and Sandler are proven sales qualification frameworks. An AI Sales Assistant runs them automatically on every inbound lead so your closers only talk to people who are ready.',
-    url: 'https://sharkbrandingsolutions.com/resources/blog-what-is-ai-sales-assistant-bant-sandler',
+    url: 'https://shark-ai-solutions.com/resources/blog-what-is-ai-sales-assistant-bant-sandler',
     type: 'article',
   },
 }
@@ -18,18 +18,18 @@ const structuredData = {
   '@type': 'BlogPosting',
   headline: 'What Is an AI Sales Assistant? BANT, Sandler, and What It Means for Your Team',
   description: 'A plain-English explanation of what an AI Sales Assistant does, what BANT and Sandler qualification frameworks mean in practice, and how it changes what your human closers spend their time on.',
-  url: 'https://sharkbrandingsolutions.com/resources/blog-what-is-ai-sales-assistant-bant-sandler',
+  url: 'https://shark-ai-solutions.com/resources/blog-what-is-ai-sales-assistant-bant-sandler',
   datePublished: '2026-07-02',
   dateModified: '2026-07-02',
   author: {
     '@type': 'Person',
-    '@id': 'https://sharkbrandingsolutions.com/about#michelle',
+    '@id': 'https://shark-ai-solutions.com/about#michelle',
     name: 'Michelle Stanaland',
-    url: 'https://sharkbrandingsolutions.com/about#michelle',
+    url: 'https://shark-ai-solutions.com/about#michelle',
     jobTitle: 'Managing Partner and Founder, Shark AI Solutions',
   },
-  publisher: { '@id': 'https://sharkbrandingsolutions.com/#organization' },
-  mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://sharkbrandingsolutions.com/resources/blog-what-is-ai-sales-assistant-bant-sandler' },
+  publisher: { '@id': 'https://shark-ai-solutions.com/#organization' },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://shark-ai-solutions.com/resources/blog-what-is-ai-sales-assistant-bant-sandler' },
   keywords: ['AI sales assistant', 'BANT qualification AI', 'Sandler sales AI', 'AI lead qualification', 'AI sales automation Tampa Bay'],
   articleSection: 'AI Employees',
 }
@@ -38,9 +38,9 @@ const breadcrumbData = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://sharkbrandingsolutions.com' },
-    { '@type': 'ListItem', position: 2, name: 'Resources', item: 'https://sharkbrandingsolutions.com/resources' },
-    { '@type': 'ListItem', position: 3, name: 'What Is an AI Sales Assistant?', item: 'https://sharkbrandingsolutions.com/resources/blog-what-is-ai-sales-assistant-bant-sandler' },
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://shark-ai-solutions.com' },
+    { '@type': 'ListItem', position: 2, name: 'Resources', item: 'https://shark-ai-solutions.com/resources' },
+    { '@type': 'ListItem', position: 3, name: 'What Is an AI Sales Assistant?', item: 'https://shark-ai-solutions.com/resources/blog-what-is-ai-sales-assistant-bant-sandler' },
   ],
 }
 

@@ -4,11 +4,11 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'AI Answering vs. Live Answering Service | Shark AI Solutions',
   description: 'AI vs. live answering services for local service businesses in 2026. Cost, availability, lead capture, appointment booking, and which one makes sense.',
-  alternates: { canonical: 'https://sharkbrandingsolutions.com/resources/blog-ai-answering-service-vs-live-answering-service' },
+  alternates: { canonical: 'https://shark-ai-solutions.com/resources/blog-ai-answering-service-vs-live-answering-service' },
   openGraph: {
     title: 'AI Answering Service vs. Live Answering Service: What Local Businesses Need to Know',
     description: 'A direct comparison of AI and live answering services for local service businesses. Availability, cost, lead capture, and when each makes sense.',
-    url: 'https://sharkbrandingsolutions.com/resources/blog-ai-answering-service-vs-live-answering-service',
+    url: 'https://shark-ai-solutions.com/resources/blog-ai-answering-service-vs-live-answering-service',
     type: 'article',
   },
 }
@@ -18,20 +18,20 @@ const structuredData = {
   '@type': 'BlogPosting',
   headline: 'AI Answering Service vs. Live Answering Service: What Local Businesses Need to Know',
   description: 'A direct comparison of AI answering services and live answering services for local service businesses. Covers cost, availability, lead qualification, appointment booking, and CRM integration.',
-  url: 'https://sharkbrandingsolutions.com/resources/blog-ai-answering-service-vs-live-answering-service',
+  url: 'https://shark-ai-solutions.com/resources/blog-ai-answering-service-vs-live-answering-service',
   datePublished: '2026-06-16',
   dateModified: '2026-06-16',
   author: {
     '@type': 'Person',
-    '@id': 'https://sharkbrandingsolutions.com/about#michelle',
+    '@id': 'https://shark-ai-solutions.com/about#michelle',
     name: 'Michelle Stanaland',
-    url: 'https://sharkbrandingsolutions.com/about#michelle',
+    url: 'https://shark-ai-solutions.com/about#michelle',
     jobTitle: 'Managing Partner and Founder, Shark AI Solutions',
   },
-  publisher: { '@id': 'https://sharkbrandingsolutions.com/#organization' },
+  publisher: { '@id': 'https://shark-ai-solutions.com/#organization' },
   mainEntityOfPage: {
     '@type': 'WebPage',
-    '@id': 'https://sharkbrandingsolutions.com/resources/blog-ai-answering-service-vs-live-answering-service',
+    '@id': 'https://shark-ai-solutions.com/resources/blog-ai-answering-service-vs-live-answering-service',
   },
   keywords: ['AI answering service', 'live answering service', 'AI receptionist', 'small business automation', 'Tampa Bay', 'Wesley Chapel'],
   articleSection: 'AI Employees',
@@ -40,9 +40,9 @@ const breadcrumbData = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://sharkbrandingsolutions.com' },
-    { '@type': 'ListItem', position: 2, name: 'Resources', item: 'https://sharkbrandingsolutions.com/resources' },
-    { '@type': 'ListItem', position: 3, name: structuredData.headline, item: 'https://sharkbrandingsolutions.com/resources/blog-ai-answering-service-vs-live-answering-service' },
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://shark-ai-solutions.com' },
+    { '@type': 'ListItem', position: 2, name: 'Resources', item: 'https://shark-ai-solutions.com/resources' },
+    { '@type': 'ListItem', position: 3, name: structuredData.headline, item: 'https://shark-ai-solutions.com/resources/blog-ai-answering-service-vs-live-answering-service' },
   ],
 }
 

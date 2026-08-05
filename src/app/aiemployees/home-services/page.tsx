@@ -4,13 +4,13 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'AI Employees for Home Services | Shark AI Solutions',
   description: 'AI employees for home service businesses in Wesley Chapel and Tampa Bay. Lead follow-up, review requests, 24/7 chat booking, and content, live in one week.',
-  alternates: { canonical: 'https://sharkbrandingsolutions.com/aiemployees/home-services' },
+  alternates: { canonical: 'https://shark-ai-solutions.com/aiemployees/home-services' },
   openGraph: {
     title: 'AI Employees for Home Services | Shark AI Solutions',
     description: 'Stop losing home service leads to slow response times. AI employees handle inbound chat, follow-up, reviews, and booking 24/7.',
-    url: 'https://sharkbrandingsolutions.com/aiemployees/home-services',
+    url: 'https://shark-ai-solutions.com/aiemployees/home-services',
     type: 'website',
-    images: [{ url: 'https://sharkbrandingsolutions.com/logo.webp', width: 1200, height: 630, alt: 'AI Employees for Home Services | Shark AI Solutions' }],
+    images: [{ url: 'https://shark-ai-solutions.com/logo.webp', width: 1200, height: 630, alt: 'AI Employees for Home Services | Shark AI Solutions' }],
   },
 }
 
@@ -19,11 +19,11 @@ const structuredData = {
   '@graph': [
     {
       '@type': 'Service',
-      '@id': 'https://sharkbrandingsolutions.com/aiemployees/home-services#service',
+      '@id': 'https://shark-ai-solutions.com/aiemployees/home-services#service',
       name: 'AI Employees for Home Service Businesses',
       description: 'AI employees configured for home service companies in Wesley Chapel and Tampa Bay. Includes 24/7 lead capture, automated multi-touch follow-up, post-job review requests, and content publishing.',
-      url: 'https://sharkbrandingsolutions.com/aiemployees/home-services',
-      provider: { '@id': 'https://sharkbrandingsolutions.com/#organization' },
+      url: 'https://shark-ai-solutions.com/aiemployees/home-services',
+      provider: { '@id': 'https://shark-ai-solutions.com/#organization' },
       areaServed: [
         { '@type': 'City', name: 'Wesley Chapel' },
         { '@type': 'City', name: 'Tampa' },
@@ -91,12 +91,26 @@ const results = [
   { stat: '60–75%', detail: 'Reduction in no-show rates after implementing appointment reminder automation.', tag: 'Appointments' },
 ]
 
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://shark-ai-solutions.com' },
+    { '@type': 'ListItem', position: 2, name: 'AI Employees', item: 'https://shark-ai-solutions.com/aiemployees' },
+    { '@type': 'ListItem', position: 3, name: 'AI Employees for Home Services', item: 'https://shark-ai-solutions.com/aiemployees/home-services' },
+  ],
+}
 export default function HomeServicesPage() {
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }}
       />
 
       {/* Hero */}

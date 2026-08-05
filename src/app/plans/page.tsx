@@ -8,20 +8,20 @@ const plansSchema = {
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://sharkbrandingsolutions.com/plans",
-      url: "https://sharkbrandingsolutions.com/plans",
+      "@id": "https://shark-ai-solutions.com/plans",
+      url: "https://shark-ai-solutions.com/plans",
       name: "Enterprise AI Visibility Plans | Shark AI Solutions",
-      isPartOf: { "@id": "https://sharkbrandingsolutions.com/#website" },
-      about: { "@id": "https://sharkbrandingsolutions.com/#organization" },
+      isPartOf: { "@id": "https://shark-ai-solutions.com/#website" },
+      about: { "@id": "https://shark-ai-solutions.com/#organization" },
     },
     {
       "@type": "Service",
-      "@id": "https://sharkbrandingsolutions.com/plans#enterprise",
+      "@id": "https://shark-ai-solutions.com/plans#enterprise",
       name: "Enterprise AI Visibility",
       description:
         "Dedicated AI visibility management for multi-location brands and enterprise organizations. Dedicated account lead, custom SLAs, multi-market execution, white-glove onboarding, and executive reporting.",
-      provider: { "@id": "https://sharkbrandingsolutions.com/#organization" },
-      url: "https://sharkbrandingsolutions.com/plans",
+      provider: { "@id": "https://shark-ai-solutions.com/#organization" },
+      url: "https://shark-ai-solutions.com/plans",
       offers: {
         "@type": "Offer",
         price: "4000",
@@ -33,13 +33,13 @@ const plansSchema = {
           unitText: "MONTH",
         },
         description: "Starting at $4,000/month. Custom scope, dedicated resources.",
-        seller: { "@id": "https://sharkbrandingsolutions.com/#organization" },
+        seller: { "@id": "https://shark-ai-solutions.com/#organization" },
       },
       areaServed: { "@type": "Country", name: "United States" },
     },
     {
       "@type": "FAQPage",
-      "@id": "https://sharkbrandingsolutions.com/plans#faq",
+      "@id": "https://shark-ai-solutions.com/plans#faq",
       mainEntity: [
         {
           "@type": "Question",
@@ -194,6 +194,15 @@ function TableCheck({ yes }: { yes: boolean }) {
   );
 }
 
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://shark-ai-solutions.com' },
+    { '@type': 'ListItem', position: 2, name: 'Enterprise AI Visibility Plans', item: 'https://shark-ai-solutions.com/plans' },
+  ],
+}
 export default function PlansPage() {
   return (
     <>

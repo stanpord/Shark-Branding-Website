@@ -32,7 +32,7 @@ const structuredData = {
   description:
     "We write, structure, and optimize llms.txt files for businesses that want AI models to accurately understand their brand, services, service area, and expertise. Serves Tampa Bay and national clients.",
   url: "https://shark-ai-solutions.com/llms-txt-optimization",
-  provider: { "@id": "https://sharkbrandingsolutions.com/#organization" },
+  provider: { "@id": "https://shark-ai-solutions.com/#organization" },
   areaServed: [
     { "@type": "City", name: "Tampa" },
     { "@type": "City", name: "Wesley Chapel" },

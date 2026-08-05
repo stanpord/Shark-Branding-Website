@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Press Coverage & Media | Shark AI Solutions",
   description:
     "Press coverage, broadcast features, and media appearances from Shark AI Solutions. Featured on WFLA News Channel 8, Tampa Bay Times, iHeart Radio, Spotify, AIthority, Bay News 9, St. Pete Catalyst, and 173 total outlets.",
-  alternates: { canonical: "https://sharkbrandingsolutions.com/media" },
+  alternates: { canonical: "https://shark-ai-solutions.com/media" },
 };
 
 const featuredLogos = [

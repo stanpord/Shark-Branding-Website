@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "AI CMO Advisor | Shark AI Solutions",
   description:
     "Get CMO-level marketing strategy for your business without the CMO salary. Our AI advisor helps you prioritize channels, sharpen positioning, and drive more qualified leads.",
-  alternates: { canonical: "https://sharkbrandingsolutions.com/cmo-advisor" },
+  alternates: { canonical: "https://shark-ai-solutions.com/cmo-advisor" },
 };
 
 const advisorQuestions = [

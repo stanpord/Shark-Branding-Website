@@ -7,18 +7,18 @@ const pageSchema = {
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://sharkbrandingsolutions.com/executive-advising",
-      url: "https://sharkbrandingsolutions.com/executive-advising",
+      "@id": "https://shark-ai-solutions.com/executive-advising",
+      url: "https://shark-ai-solutions.com/executive-advising",
       name: "Executive Advising Services | Shark AI Solutions",
-      isPartOf: { "@id": "https://sharkbrandingsolutions.com/#website" },
+      isPartOf: { "@id": "https://shark-ai-solutions.com/#website" },
     },
     {
       "@type": "Service",
       name: "Executive Advising Services",
       description:
         "Executive-level advisory services focused on modernization, digital governance, AI-driven messaging systems, crisis structure, workflow clarity, and operational efficiency. Non-political and strictly operational.",
-      url: "https://sharkbrandingsolutions.com/executive-advising",
-      provider: { "@id": "https://sharkbrandingsolutions.com/#organization" },
+      url: "https://shark-ai-solutions.com/executive-advising",
+      provider: { "@id": "https://shark-ai-solutions.com/#organization" },
       areaServed: "Tampa Bay, FL",
       audience: {
         "@type": "Audience",

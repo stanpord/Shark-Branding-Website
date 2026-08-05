@@ -4,13 +4,13 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'AI Employees for Law Firms | Shark AI Solutions',
   description: 'AI employees for law firms in Wesley Chapel and Tampa Bay. Lead follow-up, client intake, review requests, and 24/7 chat response. Live in one week.',
-  alternates: { canonical: 'https://sharkbrandingsolutions.com/aiemployees/legal' },
+  alternates: { canonical: 'https://shark-ai-solutions.com/aiemployees/legal' },
   openGraph: {
     title: 'AI Employees for Law Firms | Shark AI Solutions',
     description: 'Stop losing prospective clients to slow intake response. AI employees handle inbound inquiries, follow-up, and reviews 24/7 for law firms in Tampa Bay.',
-    url: 'https://sharkbrandingsolutions.com/aiemployees/legal',
+    url: 'https://shark-ai-solutions.com/aiemployees/legal',
     type: 'website',
-    images: [{ url: 'https://sharkbrandingsolutions.com/logo.webp', width: 1200, height: 630, alt: 'AI Employees for Law Firms | Shark AI Solutions' }],
+    images: [{ url: 'https://shark-ai-solutions.com/logo.webp', width: 1200, height: 630, alt: 'AI Employees for Law Firms | Shark AI Solutions' }],
   },
 }
 
@@ -19,11 +19,11 @@ const structuredData = {
   '@graph': [
     {
       '@type': 'Service',
-      '@id': 'https://sharkbrandingsolutions.com/aiemployees/legal#service',
+      '@id': 'https://shark-ai-solutions.com/aiemployees/legal#service',
       name: 'AI Employees for Law Firms',
       description: 'AI employees configured for law firms and attorneys in Wesley Chapel and Tampa Bay. Includes 24/7 prospective client inquiry handling, automated intake follow-up, post-engagement review requests, and multi-touch contact sequences for unresponsive leads.',
-      url: 'https://sharkbrandingsolutions.com/aiemployees/legal',
-      provider: { '@id': 'https://sharkbrandingsolutions.com/#organization' },
+      url: 'https://shark-ai-solutions.com/aiemployees/legal',
+      provider: { '@id': 'https://shark-ai-solutions.com/#organization' },
       areaServed: [
         { '@type': 'City', name: 'Wesley Chapel' },
         { '@type': 'City', name: 'Tampa' },
@@ -99,12 +99,26 @@ const practiceAreas = [
   'Bankruptcy', 'Civil Litigation', 'Elder Law', 'Workers Compensation',
 ]
 
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://shark-ai-solutions.com' },
+    { '@type': 'ListItem', position: 2, name: 'AI Employees', item: 'https://shark-ai-solutions.com/aiemployees' },
+    { '@type': 'ListItem', position: 3, name: 'AI Employees for Law Firms', item: 'https://shark-ai-solutions.com/aiemployees/legal' },
+  ],
+}
 export default function LegalPage() {
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }}
       />
 
       {/* Hero */}

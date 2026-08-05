@@ -4,11 +4,11 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'How to Get Recommended in Google AI Overviews | Shark AI Solutions',
   description: 'What drives Google AI Overview recommendations for local businesses. The signals that matter, why they matter, and what separates businesses that get recommended from those that don\'t.',
-  alternates: { canonical: 'https://sharkbrandingsolutions.com/resources/blog-how-to-appear-in-google-ai-overviews' },
+  alternates: { canonical: 'https://shark-ai-solutions.com/resources/blog-how-to-appear-in-google-ai-overviews' },
   openGraph: {
     title: 'How Local Businesses Get Recommended in Google AI Overviews',
     description: 'The local business signals that drive Google AI Overview recommendations, and why getting them right requires more than a checklist.',
-    url: 'https://sharkbrandingsolutions.com/resources/blog-how-to-appear-in-google-ai-overviews',
+    url: 'https://shark-ai-solutions.com/resources/blog-how-to-appear-in-google-ai-overviews',
     type: 'article',
   },
 }
@@ -18,20 +18,20 @@ const structuredData = {
   '@type': 'BlogPosting',
   headline: 'How Local Businesses Get Recommended in Google AI Overviews',
   description: 'What drives Google AI Overview recommendations for local businesses, the signals that matter, and what separates businesses that get recommended from those that don\'t.',
-  url: 'https://sharkbrandingsolutions.com/resources/blog-how-to-appear-in-google-ai-overviews',
+  url: 'https://shark-ai-solutions.com/resources/blog-how-to-appear-in-google-ai-overviews',
   datePublished: '2026-06-16',
   dateModified: '2026-06-16',
   author: {
     '@type': 'Person',
-    '@id': 'https://sharkbrandingsolutions.com/about#josh',
+    '@id': 'https://shark-ai-solutions.com/about#josh',
     name: 'Josh Stanaland',
-    url: 'https://sharkbrandingsolutions.com/about#josh',
+    url: 'https://shark-ai-solutions.com/about#josh',
     jobTitle: 'Partner and CTO, Shark AI Solutions',
   },
-  publisher: { '@id': 'https://sharkbrandingsolutions.com/#organization' },
+  publisher: { '@id': 'https://shark-ai-solutions.com/#organization' },
   mainEntityOfPage: {
     '@type': 'WebPage',
-    '@id': 'https://sharkbrandingsolutions.com/resources/blog-how-to-appear-in-google-ai-overviews',
+    '@id': 'https://shark-ai-solutions.com/resources/blog-how-to-appear-in-google-ai-overviews',
   },
   keywords: ['Google AI Overviews', 'AI search optimization', 'GEO', 'local business AI visibility', 'structured data', 'schema markup'],
   articleSection: 'AI Visibility',
@@ -40,9 +40,9 @@ const breadcrumbData = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://sharkbrandingsolutions.com' },
-    { '@type': 'ListItem', position: 2, name: 'Resources', item: 'https://sharkbrandingsolutions.com/resources' },
-    { '@type': 'ListItem', position: 3, name: structuredData.headline, item: 'https://sharkbrandingsolutions.com/resources/blog-how-to-appear-in-google-ai-overviews' },
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://shark-ai-solutions.com' },
+    { '@type': 'ListItem', position: 2, name: 'Resources', item: 'https://shark-ai-solutions.com/resources' },
+    { '@type': 'ListItem', position: 3, name: structuredData.headline, item: 'https://shark-ai-solutions.com/resources/blog-how-to-appear-in-google-ai-overviews' },
   ],
 }
 

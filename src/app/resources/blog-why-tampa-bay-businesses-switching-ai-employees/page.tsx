@@ -4,11 +4,11 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'AI Employees in 2026: Why Tampa Bay Businesses Are Switching',
   description: 'The three reasons local service businesses in Wesley Chapel and Tampa Bay are replacing manual follow-up, review requests, and receptionist tasks with AI employees, and what the results look like.',
-  alternates: { canonical: 'https://sharkbrandingsolutions.com/resources/blog-why-tampa-bay-businesses-switching-ai-employees' },
+  alternates: { canonical: 'https://shark-ai-solutions.com/resources/blog-why-tampa-bay-businesses-switching-ai-employees' },
   openGraph: {
     title: 'Why Tampa Bay Businesses Are Switching to AI Employees in 2026',
     description: 'Local service businesses in Wesley Chapel and Tampa Bay are replacing manual follow-up and receptionist tasks with AI employees. Here is what is driving the shift.',
-    url: 'https://sharkbrandingsolutions.com/resources/blog-why-tampa-bay-businesses-switching-ai-employees',
+    url: 'https://shark-ai-solutions.com/resources/blog-why-tampa-bay-businesses-switching-ai-employees',
     type: 'article',
   },
 }
@@ -18,14 +18,14 @@ const structuredData = {
   '@graph': [
     {
       '@type': 'BlogPosting',
-      '@id': 'https://sharkbrandingsolutions.com/resources/blog-why-tampa-bay-businesses-switching-ai-employees#post',
+      '@id': 'https://shark-ai-solutions.com/resources/blog-why-tampa-bay-businesses-switching-ai-employees#post',
       headline: 'Why Tampa Bay Businesses Are Switching to AI Employees in 2026',
       description: 'The three reasons local service businesses in Wesley Chapel and Tampa Bay are replacing manual follow-up, review requests, and receptionist tasks with AI employees.',
-      url: 'https://sharkbrandingsolutions.com/resources/blog-why-tampa-bay-businesses-switching-ai-employees',
+      url: 'https://shark-ai-solutions.com/resources/blog-why-tampa-bay-businesses-switching-ai-employees',
       datePublished: '2026-06-07',
       dateModified: '2026-06-07',
-      author: { '@type': 'Organization', name: 'Shark AI Solutions', url: 'https://sharkbrandingsolutions.com' },
-      publisher: { '@id': 'https://sharkbrandingsolutions.com/#organization' },
+      author: { '@type': 'Organization', name: 'Shark AI Solutions', url: 'https://shark-ai-solutions.com' },
+      publisher: { '@id': 'https://shark-ai-solutions.com/#organization' },
       inLanguage: 'en-US',
       about: [
         { '@type': 'Thing', name: 'AI Employees' },
@@ -60,9 +60,9 @@ const breadcrumbData = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://sharkbrandingsolutions.com' },
-    { '@type': 'ListItem', position: 2, name: 'Resources', item: 'https://sharkbrandingsolutions.com/resources' },
-    { '@type': 'ListItem', position: 3, name: 'Why Tampa Bay Businesses Are Switching to AI Employees in 2026', item: 'https://sharkbrandingsolutions.com/resources/blog-why-tampa-bay-businesses-switching-ai-employees' },
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://shark-ai-solutions.com' },
+    { '@type': 'ListItem', position: 2, name: 'Resources', item: 'https://shark-ai-solutions.com/resources' },
+    { '@type': 'ListItem', position: 3, name: 'Why Tampa Bay Businesses Are Switching to AI Employees in 2026', item: 'https://shark-ai-solutions.com/resources/blog-why-tampa-bay-businesses-switching-ai-employees' },
   ],
 }
 

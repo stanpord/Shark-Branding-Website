@@ -4,11 +4,11 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'What Is an AI Sales Manager? | Shark AI Solutions',
   description: 'An AI Sales Manager routes leads, runs follow-up sequences, scores pipeline, and surfaces what needs attention. Here is what it does and when your business needs one.',
-  alternates: { canonical: 'https://sharkbrandingsolutions.com/resources/blog-what-is-ai-sales-manager' },
+  alternates: { canonical: 'https://shark-ai-solutions.com/resources/blog-what-is-ai-sales-manager' },
   openGraph: {
     title: 'What Is an AI Sales Manager? What It Does All Day',
     description: 'An AI Sales Manager is the layer between lead capture and your human closers. It routes, scores, follows up, and reports without anyone managing it.',
-    url: 'https://sharkbrandingsolutions.com/resources/blog-what-is-ai-sales-manager',
+    url: 'https://shark-ai-solutions.com/resources/blog-what-is-ai-sales-manager',
     type: 'article',
   },
 }
@@ -18,18 +18,18 @@ const structuredData = {
   '@type': 'BlogPosting',
   headline: 'What Is an AI Sales Manager? What It Does All Day',
   description: 'A plain-English explanation of what an AI Sales Manager does, how it works alongside your human team, and when a service business in Tampa Bay actually needs one.',
-  url: 'https://sharkbrandingsolutions.com/resources/blog-what-is-ai-sales-manager',
+  url: 'https://shark-ai-solutions.com/resources/blog-what-is-ai-sales-manager',
   datePublished: '2026-07-01',
   dateModified: '2026-07-01',
   author: {
     '@type': 'Person',
-    '@id': 'https://sharkbrandingsolutions.com/about#michelle',
+    '@id': 'https://shark-ai-solutions.com/about#michelle',
     name: 'Michelle Stanaland',
-    url: 'https://sharkbrandingsolutions.com/about#michelle',
+    url: 'https://shark-ai-solutions.com/about#michelle',
     jobTitle: 'Managing Partner and Founder, Shark AI Solutions',
   },
-  publisher: { '@id': 'https://sharkbrandingsolutions.com/#organization' },
-  mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://sharkbrandingsolutions.com/resources/blog-what-is-ai-sales-manager' },
+  publisher: { '@id': 'https://shark-ai-solutions.com/#organization' },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://shark-ai-solutions.com/resources/blog-what-is-ai-sales-manager' },
   keywords: ['AI sales manager', 'AI sales automation', 'AI lead routing', 'automated sales pipeline', 'AI sales Tampa Bay'],
   articleSection: 'AI Employees',
 }
@@ -38,9 +38,9 @@ const breadcrumbData = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://sharkbrandingsolutions.com' },
-    { '@type': 'ListItem', position: 2, name: 'Resources', item: 'https://sharkbrandingsolutions.com/resources' },
-    { '@type': 'ListItem', position: 3, name: 'What Is an AI Sales Manager?', item: 'https://sharkbrandingsolutions.com/resources/blog-what-is-ai-sales-manager' },
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://shark-ai-solutions.com' },
+    { '@type': 'ListItem', position: 2, name: 'Resources', item: 'https://shark-ai-solutions.com/resources' },
+    { '@type': 'ListItem', position: 3, name: 'What Is an AI Sales Manager?', item: 'https://shark-ai-solutions.com/resources/blog-what-is-ai-sales-manager' },
   ],
 }
 

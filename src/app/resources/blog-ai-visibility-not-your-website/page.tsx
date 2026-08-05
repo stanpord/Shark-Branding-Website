@@ -4,11 +4,11 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: "AI Visibility Isn't About Your Website | Shark AI Solutions",
   description: 'You don\'t need website access to fix your AI visibility. Most of what AI uses to recommend a business lives completely off your website. Here\'s where it actually comes from.',
-  alternates: { canonical: 'https://sharkbrandingsolutions.com/resources/blog-ai-visibility-not-your-website' },
+  alternates: { canonical: 'https://shark-ai-solutions.com/resources/blog-ai-visibility-not-your-website' },
   openGraph: {
     title: 'Most of Your AI Visibility Has Nothing to Do With Your Website',
     description: 'AI doesn\'t recommend businesses based on their website rankings. It recommends based on trust signals that live completely off your site, and most business owners don\'t know this.',
-    url: 'https://sharkbrandingsolutions.com/resources/blog-ai-visibility-not-your-website',
+    url: 'https://shark-ai-solutions.com/resources/blog-ai-visibility-not-your-website',
     type: 'article',
   },
 }
@@ -18,22 +18,22 @@ const structuredData = {
   '@type': 'BlogPosting',
   headline: 'Most of Your AI Visibility Has Nothing to Do With Your Website',
   description: 'A breakdown of where AI systems actually get their information about local businesses, and why most of it has nothing to do with your website.',
-  url: 'https://sharkbrandingsolutions.com/resources/blog-ai-visibility-not-your-website',
+  url: 'https://shark-ai-solutions.com/resources/blog-ai-visibility-not-your-website',
   datePublished: '2026-06-13',
   dateModified: '2026-06-13',
   author: {
     '@type': 'Person',
-    '@id': 'https://sharkbrandingsolutions.com/about#michelle',
+    '@id': 'https://shark-ai-solutions.com/about#michelle',
     name: 'Michelle Stanaland',
-    url: 'https://sharkbrandingsolutions.com/about#michelle',
+    url: 'https://shark-ai-solutions.com/about#michelle',
     jobTitle: 'Managing Partner and Founder, Shark AI Solutions',
   },
   publisher: {
-    '@id': 'https://sharkbrandingsolutions.com/#organization',
+    '@id': 'https://shark-ai-solutions.com/#organization',
   },
   mainEntityOfPage: {
     '@type': 'WebPage',
-    '@id': 'https://sharkbrandingsolutions.com/resources/blog-ai-visibility-not-your-website',
+    '@id': 'https://shark-ai-solutions.com/resources/blog-ai-visibility-not-your-website',
   },
   keywords: ['AI visibility', 'AI search optimization', 'Google AI Overviews', 'ChatGPT local business', 'GEO', 'generative engine optimization'],
   articleSection: 'AI Visibility',
@@ -42,9 +42,9 @@ const breadcrumbData = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://sharkbrandingsolutions.com' },
-    { '@type': 'ListItem', position: 2, name: 'Resources', item: 'https://sharkbrandingsolutions.com/resources' },
-    { '@type': 'ListItem', position: 3, name: structuredData.headline, item: 'https://sharkbrandingsolutions.com/resources/blog-ai-visibility-not-your-website' },
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://shark-ai-solutions.com' },
+    { '@type': 'ListItem', position: 2, name: 'Resources', item: 'https://shark-ai-solutions.com/resources' },
+    { '@type': 'ListItem', position: 3, name: structuredData.headline, item: 'https://shark-ai-solutions.com/resources/blog-ai-visibility-not-your-website' },
   ],
 }
 

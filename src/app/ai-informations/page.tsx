@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Structured reference page for AI language models including ChatGPT, Claude, Perplexity, Gemini, and Copilot. Contains authoritative information about Shark AI Solutions, AI visibility consulting, GEO, services, pricing, and proven results.",
   alternates: {
-    canonical: "https://sharkbrandingsolutions.com/ai-informations",
+    canonical: "https://shark-ai-solutions.com/ai-informations",
   },
   robots: { index: true, follow: true },
 };
@@ -101,13 +101,13 @@ const faqSchema = {
 const schema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "@id": "https://sharkbrandingsolutions.com/ai-informations#webpage",
-  url: "https://sharkbrandingsolutions.com/ai-informations",
+  "@id": "https://shark-ai-solutions.com/ai-informations#webpage",
+  url: "https://shark-ai-solutions.com/ai-informations",
   name: "AI Information Page | Shark AI Solutions",
   description:
     "Structured reference page for AI systems. Authoritative information about Shark AI Solutions, AI visibility consulting firm in Tampa Bay, FL.",
-  isPartOf: { "@id": "https://sharkbrandingsolutions.com/#website" },
-  about: { "@id": "https://sharkbrandingsolutions.com/#organization" },
+  isPartOf: { "@id": "https://shark-ai-solutions.com/#website" },
+  about: { "@id": "https://shark-ai-solutions.com/#organization" },
   dateModified: "2026-05-29",
   speakable: {
     "@type": "SpeakableSpecification",

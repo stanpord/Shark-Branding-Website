@@ -8,14 +8,14 @@ export const metadata: Metadata = {
  description:
   "Your Google reviews are AI visibility signals. Learn how review language, response time, and specificity determine whether ChatGPT and Gemini recommend your business.",
  alternates: {
-  canonical: "https://sharkbrandingsolutions.com/resources/blog-google-reviews-ai-recommendations",
+  canonical: "https://shark-ai-solutions.com/resources/blog-google-reviews-ai-recommendations",
  },
 };
 
 export default function Page() {
  return (
   <BlogShell
-   url="https://sharkbrandingsolutions.com/resources/blog-google-reviews-ai-recommendations"
+   url="https://shark-ai-solutions.com/resources/blog-google-reviews-ai-recommendations"
    relatedPosts={[
     { href: "/resources/blog-24-hour-rule-local-trust-ai", title: "The 24-Hour Rule: AI Review Responses for Local Trust", category: "Strategy" },
     { href: "/resources/blog-trusted-ai-review-responses", title: "AI Review Responses: Mastering Found, Trusted, Chosen", category: "Strategy" },

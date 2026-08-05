@@ -6,14 +6,14 @@ export const metadata: Metadata = {
   description:
     "You already pay for SEO. Here's what it doesn't cover, and why your business is still invisible on ChatGPT, Google AI Overviews, and Gemini.",
   alternates: {
-    canonical: "https://sharkbrandingsolutions.com/vs/seo",
+    canonical: "https://shark-ai-solutions.com/vs/seo",
   },
   openGraph: {
     title: "AI Visibility vs. Traditional SEO",
     description:
       "SEO optimizes your website for Google's algorithm. AI visibility optimizes your entire business presence for what AI systems use to recommend you. They're not the same thing.",
     type: "article",
-    images: [{ url: "https://sharkbrandingsolutions.com/logo.webp", width: 1200, height: 630, alt: "AI Visibility vs SEO | Shark AI Solutions" }],
+    images: [{ url: "https://shark-ai-solutions.com/logo.webp", width: 1200, height: 630, alt: "AI Visibility vs SEO | Shark AI Solutions" }],
   },
 };
 
@@ -25,19 +25,19 @@ const structuredData = {
     "A detailed comparison of AI visibility consulting vs traditional SEO for local businesses. SEO and AI visibility solve different problems, here's what each one covers.",
   author: {
     "@type": "Person",
-    "@id": "https://sharkbrandingsolutions.com/about#michelle",
+    "@id": "https://shark-ai-solutions.com/about#michelle",
     name: "Michelle Stanaland",
-    url: "https://sharkbrandingsolutions.com/about#michelle",
+    url: "https://shark-ai-solutions.com/about#michelle",
     jobTitle: "Managing Partner and Founder",
   },
   publisher: {
     "@type": "Organization",
-    "@id": "https://sharkbrandingsolutions.com/#organization",
+    "@id": "https://shark-ai-solutions.com/#organization",
     name: "Shark AI Solutions",
-    url: "https://sharkbrandingsolutions.com",
+    url: "https://shark-ai-solutions.com",
     logo: {
       "@type": "ImageObject",
-      url: "https://sharkbrandingsolutions.com/logo.webp",
+      url: "https://shark-ai-solutions.com/logo.webp",
     },
   },
   datePublished: "2026-06-13",
@@ -199,12 +199,25 @@ function CheckMark() {
   );
 }
 
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://shark-ai-solutions.com' },
+    { '@type': 'ListItem', position: 2, name: 'AI Visibility vs. SEO', item: 'https://shark-ai-solutions.com/vs/seo' },
+  ],
+}
 export default function VsSeoPage() {
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }}
       />
       <script
         type="application/ld+json"

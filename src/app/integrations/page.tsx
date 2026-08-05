@@ -7,13 +7,13 @@ export const metadata: Metadata = {
   description:
     "Connect the tools you already use. Shark AI Solutions integrates with your CRM, scheduling software, social platforms, and business management tools to keep everything in sync.",
   alternates: {
-    canonical: "https://sharkbrandingsolutions.com/integrations",
+    canonical: "https://shark-ai-solutions.com/integrations",
   },
   openGraph: {
     title: "Integrations | Shark AI Solutions",
     description:
       "Connect your CRM, scheduling software, social platforms, and business tools to our AI platform. 50+ integrations available.",
-    url: "https://sharkbrandingsolutions.com/integrations",
+    url: "https://shark-ai-solutions.com/integrations",
   },
 };
 

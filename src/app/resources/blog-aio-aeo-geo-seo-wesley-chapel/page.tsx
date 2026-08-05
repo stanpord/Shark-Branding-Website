@@ -8,14 +8,14 @@ export const metadata: Metadata = {
  description:
   "AI Overviews now appear on more than half of all Google searches. Here is what AIO, GEO, and AEO actually mean for Wesley Chapel businesses, and how to get found, trusted, and chosen.",
  alternates: {
-  canonical: "https://sharkbrandingsolutions.com/resources/blog-aio-aeo-geo-seo-wesley-chapel",
+  canonical: "https://shark-ai-solutions.com/resources/blog-aio-aeo-geo-seo-wesley-chapel",
  },
 };
 
 export default function Page() {
  return (
   <BlogShell
-   url="https://sharkbrandingsolutions.com/resources/blog-aio-aeo-geo-seo-wesley-chapel"
+   url="https://shark-ai-solutions.com/resources/blog-aio-aeo-geo-seo-wesley-chapel"
    relatedPosts={[
     { href: "/resources/blog-seo-old-school-geo-ai-shift", title: "Why Your Business Needs GEO for the AI Search Shift", category: "GEO" },
     { href: "/resources/blog-ai-funnel-chatgpt-new-front-door", title: "ChatGPT Is the New Front Door for Your Customers", category: "AI Visibility" },

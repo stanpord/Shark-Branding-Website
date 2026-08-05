@@ -6,18 +6,18 @@ const contactSchema = {
   "@graph": [
     {
       "@type": "ContactPage",
-      "@id": "https://sharkbrandingsolutions.com/contact",
-      url: "https://sharkbrandingsolutions.com/contact",
+      "@id": "https://shark-ai-solutions.com/contact",
+      url: "https://shark-ai-solutions.com/contact",
       name: "Contact Shark AI Solutions",
       description: "Get in touch with Shark AI Solutions. Start with a free AI visibility audit or book a strategy call. We respond within one business day.",
-      isPartOf: { "@id": "https://sharkbrandingsolutions.com/#website" },
-      about: { "@id": "https://sharkbrandingsolutions.com/#organization" },
+      isPartOf: { "@id": "https://shark-ai-solutions.com/#website" },
+      about: { "@id": "https://shark-ai-solutions.com/#organization" },
     },
     {
       "@type": "LocalBusiness",
-      "@id": "https://sharkbrandingsolutions.com/#organization",
+      "@id": "https://shark-ai-solutions.com/#organization",
       name: "Shark AI Solutions",
-      url: "https://sharkbrandingsolutions.com",
+      url: "https://shark-ai-solutions.com",
       telephone: "+17275133955",
       email: "info@sharkbrandingsolutions.com",
       address: {
@@ -45,10 +45,19 @@ export const metadata: Metadata = {
   description:
     "Get in touch with Shark AI Solutions. Start with a free AI visibility report or book a call, we respond within one business day.",
   alternates: {
-    canonical: "https://sharkbrandingsolutions.com/contact",
+    canonical: "https://shark-ai-solutions.com/contact",
   },
 };
 
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://shark-ai-solutions.com' },
+    { '@type': 'ListItem', position: 2, name: 'Contact Shark AI Solutions', item: 'https://shark-ai-solutions.com/contact' },
+  ],
+}
 export default function ContactPage() {
   return (
     <>

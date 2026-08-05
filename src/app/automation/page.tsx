@@ -4,13 +4,13 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'Business Automation for Tampa Bay | Shark AI Solutions',
   description: 'AI-powered automation for Wesley Chapel and Tampa Bay. Lead follow-up, review requests, appointment booking, and after-hours chat. Live in one week.',
-  alternates: { canonical: 'https://sharkbrandingsolutions.com/automation' },
+  alternates: { canonical: 'https://shark-ai-solutions.com/automation' },
   openGraph: {
     title: 'Business Automation for Tampa Bay | Shark AI Solutions',
     description: 'Stop losing leads, reviews, and revenue to manual processes. AI automation built for local service businesses in Wesley Chapel and Tampa Bay.',
-    url: 'https://sharkbrandingsolutions.com/automation',
+    url: 'https://shark-ai-solutions.com/automation',
     type: 'website',
-    images: [{ url: 'https://sharkbrandingsolutions.com/logo.webp', width: 1200, height: 630, alt: 'Business Automation | Shark AI Solutions' }],
+    images: [{ url: 'https://shark-ai-solutions.com/logo.webp', width: 1200, height: 630, alt: 'Business Automation | Shark AI Solutions' }],
   },
 }
 
@@ -19,11 +19,11 @@ const structuredData = {
   '@graph': [
     {
       '@type': 'Service',
-      '@id': 'https://sharkbrandingsolutions.com/automation#service',
+      '@id': 'https://shark-ai-solutions.com/automation#service',
       name: 'Business Automation for Wesley Chapel & Tampa Bay',
       description: 'AI-powered automation services for local businesses in Wesley Chapel, Tampa Bay, Lutz, and Land O\'Lakes. Automate lead follow-up, review management, appointment booking, and after-hours customer communication.',
-      url: 'https://sharkbrandingsolutions.com/automation',
-      provider: { '@id': 'https://sharkbrandingsolutions.com/#organization' },
+      url: 'https://shark-ai-solutions.com/automation',
+      provider: { '@id': 'https://shark-ai-solutions.com/#organization' },
       areaServed: [
         { '@type': 'City', name: 'Wesley Chapel' },
         { '@type': 'City', name: 'Tampa' },
@@ -89,12 +89,42 @@ const useCases = [
   },
 ]
 
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://shark-ai-solutions.com' },
+    { '@type': 'ListItem', position: 2, name: 'Business Automation', item: 'https://shark-ai-solutions.com/automation' },
+  ],
+}
+
+const webPageData = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  '@id': 'https://shark-ai-solutions.com/automation',
+  url: 'https://shark-ai-solutions.com/automation',
+  name: 'Business Automation for Tampa Bay | Shark AI Solutions',
+  datePublished: '2026-05-01',
+  dateModified: '2026-08-05',
+  isPartOf: { '@id': 'https://shark-ai-solutions.com/#website' },
+  author: { '@id': 'https://shark-ai-solutions.com/#organization' },
+}
+
 export default function AutomationPage() {
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageData) }}
       />
 
       {/* Hero */}
