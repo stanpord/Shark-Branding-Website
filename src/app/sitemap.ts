@@ -12,7 +12,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/automation`, lastModified: "2026-05-01", changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE}/websites`, lastModified: "2026-07-11", changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE}/local-seo`, lastModified: "2026-07-11", changeFrequency: "monthly", priority: 0.8 },
-    { url: `${BASE}/integrations`, lastModified: "2026-07-11", changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE}/free-report`, lastModified: "2026-05-01", changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE}/plans`, lastModified: "2026-05-01", changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE}/operations`, lastModified: "2026-05-01", changeFrequency: "monthly", priority: 0.8 },

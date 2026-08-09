@@ -344,6 +344,87 @@ export default function WebsitesPage() {
         </div>
       </section>
 
+      {/* MANAGED HOSTING */}
+      <section className="py-20 px-6 bg-[#07141a]">
+        <div className="max-w-[1200px] mx-auto">
+          <div className="text-center mb-14">
+            <span className="inline-block text-[#18b5d8] text-[12px] font-bold tracking-[2px] uppercase mb-4">Managed WordPress Hosting</span>
+            <h2 className="text-[28px] sm:text-[38px] font-extrabold text-white tracking-[-0.02em] mb-5 leading-tight" style={{ textWrap: "balance" }}>
+              Enterprise hosting built for multi-location businesses
+            </h2>
+            <p className="text-[#8d9aab] text-[17px] max-w-[560px] mx-auto leading-relaxed">
+              We don't just build your website. We host it on infrastructure designed for businesses with multiple locations that need speed, security, and scale.
+            </p>
+          </div>
+
+          <div className="grid sm:grid-cols-3 gap-6 mb-14">
+            {[
+              {
+                img: "/websites/multisite-network.webp",
+                title: "Multisite network",
+                body: "Manage every location from one dashboard. One login, one update process, full site-to-site isolation. Scale from two locations to two hundred without new infrastructure.",
+              },
+              {
+                img: "/websites/security-built-in.webp",
+                title: "Security built in",
+                body: "Web application firewall, DDoS protection, brute-force defense, and free SSL on every site. Enterprise-grade security without a dedicated IT team.",
+              },
+              {
+                img: "/websites/uptime-guarantee.webp",
+                title: "99.99% uptime",
+                body: "Free CDN, 30-day backup history, staging environments, per-site isolation, and SFTP access. Your sites stay fast and online while you focus on running the business.",
+              },
+            ].map((card) => (
+              <div key={card.title} className="rounded-2xl overflow-hidden bg-white/[0.04] border border-white/[0.08] flex flex-col">
+                <div className="relative w-full" style={{ aspectRatio: "16/9" }}>
+                  <Image
+                    src={card.img}
+                    alt={card.title}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 640px) 100vw, 33vw"
+                  />
+                </div>
+                <div className="p-6 flex flex-col gap-2 flex-1">
+                  <h3 className="text-[17px] font-extrabold text-white leading-snug">{card.title}</h3>
+                  <p className="text-[14px] text-[#8d9aab] leading-relaxed">{card.body}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="bg-white/[0.03] border border-white/[0.07] rounded-2xl p-8">
+            <p className="text-[12px] font-bold tracking-[2px] uppercase text-[#18b5d8] mb-6">Everything included</p>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-3">
+              {[
+                "Multisite Network",
+                "Easy one-click setup",
+                "Free SSL Certificate",
+                "Role-Based Access",
+                "Custom Domains",
+                "30-day backup history",
+                "Staging Environment",
+                "Free CDN",
+                "Enhanced WordPress dashboard",
+                "Per-site isolation",
+                "Access to SFTP",
+                "Web application firewall (WAF)",
+                "DDoS protection",
+                "Brute-force defense",
+                "Centralized Plugin & Theme Management",
+              ].map((feat) => (
+                <div key={feat} className="flex items-center gap-3">
+                  <svg className="w-4 h-4 text-[#18b5d8] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" />
+                  </svg>
+                  <span className="text-[14px] text-[#c5cdd7]">{feat}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* TESTIMONIALS */}
       <section className="py-20 px-6 border-b border-[#e5e5ea]">
         <div className="max-w-[1200px] mx-auto">

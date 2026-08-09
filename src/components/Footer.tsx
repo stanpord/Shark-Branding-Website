@@ -8,7 +8,6 @@ const services = [
   { href: "/automation", label: "AI Automation" },
   { href: "/websites", label: "Website Design & Development" },
   { href: "/local-seo", label: "Local SEO" },
-  { href: "/integrations", label: "Integrations" },
   { href: "/franchises", label: "Franchises & Multi-Location" },
   { href: "/ai-assessment", label: "AI Assessment" },
   { href: "/aiemployees/roi-calculator", label: "ROI Calculator" },

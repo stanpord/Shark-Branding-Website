@@ -17,7 +17,6 @@ const sections = [
       { label: "Free AI Visibility Report", href: "/free-report" },
       { label: "Website Design & Development", href: "/websites" },
       { label: "Local SEO", href: "/local-seo" },
-      { label: "Integrations", href: "/integrations" },
       { label: "Case Studies", href: "/case-studies" },
       { label: "Franchises & Multi-Location", href: "/franchises" },
       { label: "Operations", href: "/operations" },
