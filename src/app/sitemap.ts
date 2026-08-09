@@ -10,7 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/ai-visibility-consulting`, lastModified: "2026-08-05", changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE}/aiemployees`, lastModified: "2026-05-01", changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE}/automation`, lastModified: "2026-05-01", changeFrequency: "monthly", priority: 0.9 },
-    { url: `${BASE}/websites`, lastModified: "2026-07-11", changeFrequency: "monthly", priority: 0.8 },
+    { url: `${BASE}/websites`, lastModified: "2026-08-09", changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE}/local-seo`, lastModified: "2026-07-11", changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE}/free-report`, lastModified: "2026-05-01", changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE}/plans`, lastModified: "2026-05-01", changeFrequency: "monthly", priority: 0.8 },
