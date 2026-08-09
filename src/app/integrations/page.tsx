@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   },
 };
 
-const CDN = "https://cdn-bjmjf.nitrocdn.com/gsSJVsHgkwexdOuGJbPveYehDehaVtlN/assets/images/optimized/rev-9db17f0/www.vendasta.com/wp-content/uploads/";
+const CDN = "https://www.vendasta.com/wp-content/uploads/";
 
 type Category = "All" | "Auto Shop" | "CRM & Sales" | "Home Services" | "Pet Care" | "Social" | "Analytics" | "Payments" | "Medical";
 

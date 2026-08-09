@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   },
 };
 
-const CDN = "https://cdn-bjmjf.nitrocdn.com/gsSJVsHgkwexdOuGJbPveYehDehaVtlN/assets/images/optimized/rev-9db17f0/www.vendasta.com/wp-content/uploads/";
+const CDN = "https://www.vendasta.com/wp-content/uploads/";
 
 const features = [
   {
@@ -186,6 +186,52 @@ export default function LocalSeoPage() {
               <p className="text-[15px] text-[#6e6e73] leading-snug">{s.label}</p>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* SNAPSHOT REPORT PREVIEW */}
+      <section className="py-20 px-6 bg-white border-b border-[#e5e5ea]">
+        <div className="max-w-[1200px] mx-auto flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+          <div className="flex-1 min-w-0 lg:max-w-[480px]">
+            <span className="inline-block text-[#18b5d8] text-[12px] font-bold tracking-[2px] uppercase mb-4">
+              Free Snapshot Report
+            </span>
+            <h2 className="text-[26px] sm:text-[34px] font-extrabold text-[#1d1d1f] tracking-tight mb-5 leading-tight" style={{ textWrap: "balance" }}>
+              See exactly how your business scores across every local SEO category
+            </h2>
+            <p className="text-[16px] text-[#6e6e73] leading-relaxed mb-4">
+              Your Snapshot Report grades your business on Reviews, Listings, Social, Website, and SEO, then compares you directly against your industry average and category leaders.
+            </p>
+            <p className="text-[16px] text-[#6e6e73] leading-relaxed mb-8">
+              Most businesses are surprised by what they find. The report is ready in 48 hours with no sales pitch attached.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-3">
+              <Link
+                href="/free-report"
+                className="inline-flex items-center justify-center bg-[#18b5d8] hover:bg-[#14a2c2] text-white font-bold text-[15px] px-8 py-4 rounded-full transition-colors duration-150"
+              >
+                Get my free Snapshot Report
+              </Link>
+              <Link
+                href="/contact"
+                className="inline-flex items-center justify-center bg-[#f5f5f7] hover:bg-[#e8e8ed] text-[#1d1d1f] font-semibold text-[15px] px-8 py-4 rounded-full transition-colors duration-150"
+              >
+                Book a strategy call
+              </Link>
+            </div>
+          </div>
+          <div className="flex-1 min-w-0 w-full">
+            <div className="relative rounded-[20px] overflow-hidden shadow-2xl border border-[#e5e5ea]">
+              <Image
+                src="/snapshot-report.png"
+                alt="Shark AI Solutions Snapshot Report showing 76% overall score with A grades in Reviews, Listings, Social, and Website"
+                width={1360}
+                height={1040}
+                className="w-full h-auto"
+                unoptimized
+              />
+            </div>
+          </div>
         </div>
       </section>
 

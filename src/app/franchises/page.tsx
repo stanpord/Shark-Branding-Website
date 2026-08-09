@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
 };
 
-const CDN = "https://cdn-bjmjf.nitrocdn.com/gsSJVsHgkwexdOuGJbPveYehDehaVtlN/assets/images/optimized/rev-9db17f0/www.vendasta.com/wp-content/uploads/";
+const CDN = "https://www.vendasta.com/wp-content/uploads/";
 
 /* ── Why blurbs ── */
 const whyBlurbs = [
