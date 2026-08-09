@@ -5,9 +5,10 @@ import Image from "next/image";
 import { useState, useRef } from "react";
 
 const servicesDropdown = [
-  { href: "/services", label: "AI Visibility", desc: "ChatGPT, Google AI, Gemini citations" },
+  { href: "/services", label: "AI Visibility", desc: "ChatGPT, Claude, Gemini, Google AI citations" },
+  { href: "/local-seo", label: "Local SEO", desc: "Listings, citations, and AI knowledge graphs" },
   { href: "/automation", label: "AI Automation", desc: "Workflows that replace manual tasks" },
-  { href: "/websites", label: "Website Design", desc: "Conversion-focused sites built from scratch" },
+  { href: "/websites", label: "Website Design", desc: "Built for AI optimization, SEO, AEO, and GEO" },
   { href: "/franchises", label: "Franchises & Multi-Location", desc: "AI marketing across every location" },
   { href: "/ai-assessment", label: "AI Assessment", desc: "See where you stand in 48 hours" },
   { href: "/executive-advising", label: "Executive Advising", desc: "Strategic advisory for leadership teams" },

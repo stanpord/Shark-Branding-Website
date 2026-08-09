@@ -5,48 +5,92 @@ import Script from 'next/script'
 import EmployeeCarousel from '@/components/EmployeeCarousel'
 import HomepageAnimations from '@/components/HomepageAnimations'
 
-/* ── CSS Mockup: AI Recommendation Panel ── */
+/* ── CSS Mockup: Multi-platform AI Recommendation Panel ── */
 function AiRecommendMockup() {
+  const panels = [
+    {
+      platform: 'ChatGPT',
+      dot: '#10a37f',
+      url: 'chatgpt.com',
+      query: '"best AI visibility agency Wesley Chapel FL"',
+      items: [
+        { n: 1, name: 'Shark AI Solutions', sub: 'shark-ai-solutions.com · Wesley Chapel, FL', highlight: true },
+        { n: 2, name: 'Digital Marketing Agency', highlight: false },
+        { n: 3, name: 'SEO Firm Tampa', highlight: false },
+      ],
+    },
+    {
+      platform: 'Claude',
+      dot: '#d97341',
+      url: 'claude.ai',
+      query: '"best AI visibility agency near me Tampa Bay"',
+      items: [
+        { n: 1, name: 'Shark AI Solutions', sub: 'AI Visibility + Automation · shark-ai-solutions.com', highlight: true },
+        { n: 2, name: 'Regional Agency B', highlight: false },
+        { n: 3, name: 'National Vendor C', highlight: false },
+      ],
+    },
+    {
+      platform: 'Gemini',
+      dot: '#7c3aed',
+      url: 'gemini.google.com',
+      query: '"AI marketing agency Wesley Chapel near me"',
+      items: [
+        { n: 1, name: 'Shark AI Solutions', sub: 'Recommended · shark-ai-solutions.com', highlight: true },
+        { n: 2, name: 'Competitor D', highlight: false },
+        { n: 3, name: 'Competitor E', highlight: false },
+      ],
+    },
+    {
+      platform: 'Google AI Overview',
+      dot: '#4285f4',
+      url: 'google.com',
+      query: '"AI company that ranks businesses on ChatGPT"',
+      items: [
+        { n: 1, name: 'Shark AI Solutions', sub: 'Cited source · shark-ai-solutions.com', highlight: true },
+        { n: 2, name: 'Competitor F', highlight: false },
+      ],
+    },
+  ]
+
   return (
-    <div className="rounded-3xl bg-[#0a1a22] border border-white/10 p-6 sm:p-8 overflow-hidden">
-      <div className="flex items-center gap-2 mb-5">
-        <div className="w-3 h-3 rounded-full bg-white/[0.08]" />
-        <div className="w-3 h-3 rounded-full bg-white/[0.08]" />
-        <div className="w-3 h-3 rounded-full bg-white/[0.08]" />
-        <div className="flex-1 ml-2 bg-white/[0.04] rounded-full px-4 py-1.5 text-[11px] text-white/25 font-mono">
-          chatgpt.com
-        </div>
-      </div>
-      <div className="bg-white/[0.04] rounded-xl px-4 py-3 mb-5 border border-white/[0.06]">
-        <p className="text-[11px] text-white/30 mb-1.5 font-mono uppercase tracking-wider">User</p>
-        <p className="text-[14px] text-white/75 leading-relaxed">"Best jewelry store near me?"</p>
-      </div>
-      <div className="space-y-2.5">
-        <p className="text-[11px] text-white/25 font-mono uppercase tracking-wider mb-3">ChatGPT</p>
-        {[
-          { rank: 1, name: 'Your Business', highlight: true },
-          { rank: 2, name: 'Competitor A', highlight: false },
-          { rank: 3, name: 'Competitor B', highlight: false },
-        ].map((r) => (
-          <div
-            key={r.rank}
-            className={`flex items-center gap-3 rounded-xl px-4 py-3.5 transition-colors ${
-              r.highlight
-                ? 'bg-[#18b5d8]/10 border border-[#18b5d8]/25'
-                : 'bg-white/[0.03] border border-white/[0.05]'
-            }`}
-          >
-            <span className={`text-[13px] font-bold w-5 shrink-0 ${r.highlight ? 'text-[#18b5d8]' : 'text-white/20'}`}>{r.rank}</span>
-            <span className={`text-[14px] flex-1 ${r.highlight ? 'text-white font-semibold' : 'text-white/35'}`}>{r.name}</span>
-            {r.highlight && (
-              <span className="text-[#18b5d8] text-[10px] font-bold bg-[#18b5d8]/10 px-2.5 py-1 rounded-full">
-                #1
-              </span>
-            )}
+    <div className="rounded-3xl bg-[#0a1a22] border border-white/10 p-4 sm:p-5 overflow-hidden space-y-3">
+      {panels.map((p) => (
+        <div key={p.platform} className="rounded-2xl bg-white/[0.03] border border-white/[0.06] overflow-hidden">
+          <div className="flex items-center gap-2 px-3 py-2 border-b border-white/[0.04]">
+            <div className="w-1.5 h-1.5 rounded-full shrink-0" style={{ backgroundColor: p.dot }} />
+            <span className="text-[10px] font-mono text-white/20 flex-1 truncate">{p.url}</span>
+            <span className="text-[9px] font-bold uppercase tracking-wider shrink-0" style={{ color: p.dot }}>{p.platform}</span>
           </div>
-        ))}
-      </div>
-      <p className="text-[11px] text-white/20 mt-6 text-center">After Shark AI visibility work · Franchise Jewelry · Multi-location</p>
+          <div className="px-3 py-1.5 border-b border-white/[0.04]">
+            <p className="text-[10px] text-white/35 font-mono truncate">{p.query}</p>
+          </div>
+          <div className="px-2.5 py-2 space-y-1">
+            {p.items.map((item) => (
+              <div
+                key={item.n}
+                className={`flex items-center gap-2 rounded-lg px-2.5 py-1.5 ${
+                  item.highlight
+                    ? 'bg-[#18b5d8]/10 border border-[#18b5d8]/20'
+                    : 'opacity-20'
+                }`}
+              >
+                <span className={`text-[10px] font-bold w-3 shrink-0 ${item.highlight ? 'text-[#18b5d8]' : 'text-white/30'}`}>{item.n}</span>
+                <div className="flex-1 min-w-0">
+                  <p className={`text-[11px] leading-none ${item.highlight ? 'text-white font-semibold' : 'text-white/30'}`}>{item.name}</p>
+                  {item.highlight && item.sub && (
+                    <p className="text-[9px] text-white/25 mt-0.5 truncate">{item.sub}</p>
+                  )}
+                </div>
+                {item.highlight && (
+                  <span className="text-[8px] font-bold bg-[#18b5d8]/15 text-[#18b5d8] px-1.5 py-0.5 rounded-full shrink-0">#1</span>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+      <p className="text-[10px] text-white/15 text-center pt-0.5">Shark AI Solutions · Live AI platform rankings</p>
     </div>
   )
 }
@@ -106,6 +150,87 @@ function MetricsDashboardMockup() {
     </div>
   )
 }
+
+
+/* ── CSS Mockup: HVAC AI Ranking Before/After ── */
+function HvacAiMockup() {
+  return (
+    <div className="h-full flex flex-col gap-4 p-5 sm:p-7">
+      <div>
+        <p className="text-[9px] font-bold tracking-[0.2em] uppercase text-[#18b5d8]/50 mb-0.5">Case Study · HVAC · Wesley Chapel, FL</p>
+        <p className="text-[13px] font-semibold text-white/60">ChatGPT AI ranking · 30 days · no paid ads</p>
+      </div>
+
+      <div className="grid grid-cols-2 gap-3 flex-1 min-h-0">
+        {/* BEFORE */}
+        <div className="rounded-xl bg-white/[0.03] border border-white/[0.06] flex flex-col overflow-hidden">
+          <div className="px-3 py-2 border-b border-white/[0.05] flex items-center gap-1.5">
+            <div className="w-1.5 h-1.5 rounded-full bg-red-400/50" />
+            <span className="text-[9px] font-bold uppercase tracking-wider text-red-400/50">Before</span>
+          </div>
+          <div className="px-3 py-1.5 border-b border-white/[0.04]">
+            <p className="text-[9px] text-white/25 font-mono truncate">"same day AC repair Wesley Chapel"</p>
+          </div>
+          <div className="px-2.5 py-2 space-y-1 flex-1">
+            {['Competitor 1', 'Competitor 2', 'Competitor 3'].map((name, i) => (
+              <div key={name} className="flex items-center gap-1.5 rounded-md px-2 py-1 bg-white/[0.03]">
+                <span className="text-[8px] text-white/20 w-2.5 shrink-0">{i + 1}</span>
+                <span className="text-[9px] text-white/25 truncate">{name}</span>
+              </div>
+            ))}
+            <div className="flex items-center gap-1.5 px-2 py-1">
+              <span className="text-[8px] text-white/15">·····</span>
+            </div>
+            <div className="flex items-center gap-1.5 rounded-md px-2 py-1 opacity-25">
+              <span className="text-[8px] text-red-400 w-2.5 shrink-0">32</span>
+              <span className="text-[9px] text-white/40 truncate">Our client</span>
+            </div>
+          </div>
+        </div>
+
+        {/* AFTER */}
+        <div className="rounded-xl bg-white/[0.04] border border-[#18b5d8]/20 flex flex-col overflow-hidden">
+          <div className="px-3 py-2 border-b border-[#18b5d8]/10 flex items-center gap-1.5">
+            <div className="w-1.5 h-1.5 rounded-full bg-[#18b5d8]" />
+            <span className="text-[9px] font-bold uppercase tracking-wider text-[#18b5d8]">After · Day 30</span>
+          </div>
+          <div className="px-3 py-1.5 border-b border-white/[0.04]">
+            <p className="text-[9px] text-white/25 font-mono truncate">"same day AC repair Wesley Chapel"</p>
+          </div>
+          <div className="px-2.5 py-2 space-y-1 flex-1">
+            <div className="flex items-center gap-1.5 rounded-md px-2 py-1 bg-white/[0.03] opacity-35">
+              <span className="text-[8px] text-white/30 w-2.5 shrink-0">1</span>
+              <span className="text-[9px] text-white/30 truncate">Competitor 1</span>
+            </div>
+            <div className="flex items-center gap-1.5 rounded-md px-2 py-1.5 bg-[#18b5d8]/10 border border-[#18b5d8]/25">
+              <span className="text-[8px] text-[#18b5d8] font-bold w-2.5 shrink-0">2</span>
+              <span className="text-[9px] text-white font-semibold flex-1 truncate">Our Client</span>
+              <span className="text-[7px] font-bold bg-[#18b5d8]/15 text-[#18b5d8] px-1.5 py-0.5 rounded-full shrink-0">#2</span>
+            </div>
+            <div className="flex items-center gap-1.5 rounded-md px-2 py-1 bg-white/[0.03] opacity-35">
+              <span className="text-[8px] text-white/30 w-2.5 shrink-0">3</span>
+              <span className="text-[9px] text-white/30 truncate">Competitor 2</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="grid grid-cols-3 gap-2">
+        {[
+          { v: '#32→#2', label: 'Same Day AC Repair' },
+          { v: '#31→#2', label: 'Air Conditioning' },
+          { v: '30 days', label: 'No paid ads' },
+        ].map((s) => (
+          <div key={s.label} className="bg-white/[0.04] rounded-xl p-2.5 text-center">
+            <p className="text-[12px] font-bold text-[#18b5d8] leading-none mb-1">{s.v}</p>
+            <p className="text-[8px] text-white/30 leading-tight">{s.label}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  )
+}
+
 
 export const metadata: Metadata = {
   title: 'AI Visibility + Automation | Shark AI Solutions',
@@ -173,7 +298,7 @@ const services = [
   { title: 'AI Business Consulting', body: 'Full-service AI visibility strategy for businesses ready to own their category.', href: '/services#ai-visibility' },
   { title: 'AI Visibility Toolkit', body: 'Listings, reviews, content, and AI readiness, managed monthly so you don\'t have to think about it.', href: '/services#toolkit' },
   { title: 'AI Employees', body: 'Lead follow-up, review requests, content, and social, handled automatically while you\'re running your business.', href: '/aiemployees' },
-  { title: 'Website Design & Development', body: 'Conversion-focused websites built from scratch for your brand, designed to rank and turn visitors into leads.', href: '/websites' },
+  { title: 'Website Design & Development', body: 'Built for AI optimization, SEO, AEO, and GEO. Structured from day one to rank in search and get recommended by AI.', href: '/websites' },
   { title: 'Free AI Audit', body: 'Run an instant scan and see exactly where your business stands across AI platforms. No catch.', href: '/ai-audit' },
 ]
 
@@ -384,15 +509,9 @@ export default function Home() {
         <div className="max-w-[1100px] mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
 
-            {/* Left: HVAC ranking table */}
-            <div className="order-last lg:order-first relative rounded-3xl overflow-hidden shadow-xl bg-[#f0f2f5]" style={{ aspectRatio: '3/2' }}>
-              <Image
-                src="/hvac-ranking-table-2.png"
-                alt="HVAC client ranking results: same day AC repair #32 to #2, air conditioning service #31 to #2"
-                fill
-                className="object-cover object-left-top"
-                sizes="(max-width: 1024px) 100vw, 50vw"
-              />
+            {/* Left: HVAC AI ranking before/after mockup */}
+            <div className="order-last lg:order-first rounded-3xl overflow-hidden shadow-xl bg-[#0d1b2a]" style={{ aspectRatio: '3/2' }}>
+              <HvacAiMockup />
             </div>
 
             {/* Right: steps */}
