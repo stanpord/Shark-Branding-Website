@@ -17,63 +17,61 @@ export const metadata: Metadata = {
   },
 };
 
-const CDN = "https://www.vendasta.com/wp-content/uploads/";
-
 const features = [
   {
     id: "platform",
     h2: "An all-in-one local SEO platform built for results",
     body: "Stop juggling tools. Our local SEO platform brings together listing management, citation building, rank tracking, and performance reporting in one clean dashboard, so your team can focus on execution instead of coordination.\n\nEvery tool is connected. Every update is reflected in real time across the directories, data aggregators, and AI knowledge graphs that drive local search rankings.",
     cta: { label: "Explore our platform", href: "/services" },
-    img: CDN + "2025/08/all-in-one-local-seo-platform-492x.webp",
-    alt: "All-in-one local SEO platform dashboard",
+    img: "/local-seo/platform-metrics.webp",
+    alt: "All-in-one local SEO platform dashboard showing visibility metrics",
     imgLeft: false,
-    width: 492,
-    height: 348,
+    width: 980,
+    height: 700,
   },
   {
     id: "nap",
     h2: "Boost online visibility with NAP citations",
     body: "Consistent Name, Address, and Phone data across every directory is the foundation of local search. Our platform automatically syncs your business information to hundreds of directories and data aggregators, eliminating conflicting listings that confuse search engines and customers alike.\n\nWhen your NAP data is airtight, you rank higher, earn more trust, and show up in more local results, including AI-powered answers in ChatGPT, Gemini, and Google SGE.",
     cta: { label: "Learn about listing management", href: "/services" },
-    img: CDN + "2025/08/boost-online-visibility-with-nap-citations-492x.webp",
+    img: "/local-seo/nap-citations.webp",
     alt: "NAP citation consistency dashboard showing listing accuracy across directories",
     imgLeft: true,
-    width: 492,
-    height: 380,
+    width: 980,
+    height: 700,
   },
   {
     id: "listings",
     h2: "Effortless listing management across every directory",
     body: "Update once, publish everywhere. Whether you're changing your hours, adding a new location, or refreshing your photos, our listing management tool pushes your changes to all major directories instantly.\n\nNo more manually logging into Google Business Profile, Yelp, Apple Maps, Bing, and dozens of others. One source of truth. Every directory stays current.",
     cta: { label: "See how it works", href: "/contact" },
-    img: CDN + "2025/08/effortless-listing-management-492x.webp",
-    alt: "Effortless listing management showing multi-directory publishing",
+    img: "/local-seo/listing-management.webp",
+    alt: "Listing management showing multi-directory publishing across 500+ directories",
     imgLeft: false,
-    width: 492,
-    height: 377,
+    width: 980,
+    height: 700,
   },
   {
     id: "rank",
     h2: "In-depth geolocation rank tracking",
     body: "See exactly where you rank across your service area with hyperlocal rank tracking. Our grid-based geolocation reports show your Google Maps position at dozens of points around your business, so you can see where you're winning and where there's room to grow.\n\nTrack keyword rankings by location, monitor movement over time, and benchmark against competitors, all in a report your clients or team can actually understand.",
     cta: { label: "Try rank tracking", href: "/free-report" },
-    img: CDN + "2025/08/indepth-geolocation-rank-492x.webp",
-    alt: "Geolocation rank tracking grid showing local map search positions",
+    img: "/local-seo/rank-tracking.webp",
+    alt: "Geolocation rank tracking grid showing local map search positions across service area",
     imgLeft: true,
-    width: 492,
-    height: 366,
+    width: 980,
+    height: 700,
   },
   {
     id: "reporting",
     h2: "Seamless local SEO reporting",
     body: "Prove your value with automated, white-label reports that show clients exactly what's moving and why. Track impressions, clicks, keyword rankings, listing accuracy, and review growth all in one place.\n\nReports are scheduled automatically and delivered to inboxes, so no one has to chase down performance data at the end of the month.",
     cta: { label: "See reporting features", href: "/contact" },
-    img: CDN + "2025/08/seamless-local-seo-reporting-492x.webp",
-    alt: "Local SEO reporting dashboard showing keyword rankings and performance",
+    img: "/local-seo/seamless-reporting.webp",
+    alt: "Local SEO reporting dashboard showing keyword rankings and performance over time",
     imgLeft: false,
-    width: 492,
-    height: 441,
+    width: 980,
+    height: 700,
   },
 ];
 
@@ -163,12 +161,12 @@ export default function LocalSeoPage() {
           </div>
 
           <div className="flex-1 min-w-0 w-full lg:max-w-[560px]">
-            <div className="relative rounded-[20px] overflow-hidden shadow-2xl">
+            <div className="relative rounded-[20px] overflow-hidden shadow-2xl border border-white/10">
               <Image
-                src={CDN + "2025/06/local-SEO-AI-Banner-image-582x.webp"}
-                alt="Local SEO AI platform dashboard showing search visibility and ranking improvements"
-                width={582}
-                height={541}
+                src="/local-seo/snapshot-report.png"
+                alt="Shark AI Solutions local SEO Snapshot Report showing business scores across Reviews, Listings, Social, Website, and SEO"
+                width={1360}
+                height={1040}
                 className="w-full h-auto"
                 priority
               />
@@ -223,7 +221,7 @@ export default function LocalSeoPage() {
           <div className="flex-1 min-w-0 w-full">
             <div className="relative rounded-[20px] overflow-hidden shadow-2xl border border-[#e5e5ea]">
               <Image
-                src="/snapshot-report.png"
+                src="/local-seo/snapshot-report.png"
                 alt="Shark AI Solutions Snapshot Report showing 76% overall score with A grades in Reviews, Listings, Social, and Website"
                 width={1360}
                 height={1040}
@@ -291,20 +289,20 @@ export default function LocalSeoPage() {
           <div className="grid sm:grid-cols-2 gap-8 max-w-[880px] mx-auto">
             <div className="rounded-[20px] overflow-hidden shadow-lg bg-white">
               <Image
-                src={CDN + "2025/08/mobile-Your-current-rank-tracker-Local-SEO-map-image.webp"}
+                src="/local-seo/rank-tracking.webp"
                 alt="Local SEO rank tracker showing Google Maps position grid for current rankings"
-                width={626}
-                height={626}
+                width={980}
+                height={700}
                 className="w-full h-auto"
                 sizes="(max-width: 640px) 100vw, 50vw"
               />
             </div>
             <div className="rounded-[20px] overflow-hidden shadow-lg bg-white">
               <Image
-                src={CDN + "2025/08/mobile-Vendastaa__s-White-label-Local-SEO-software-local-SEO-map-image-e1754080179655-645x551.webp"}
-                alt="White-label local SEO map image showing geolocation ranking across a service area"
-                width={645}
-                height={551}
+                src="/local-seo/platform-metrics.webp"
+                alt="Local SEO platform metrics showing performance across all visibility categories"
+                width={980}
+                height={700}
                 className="w-full h-auto"
                 sizes="(max-width: 640px) 100vw, 50vw"
               />
