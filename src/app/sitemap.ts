@@ -20,6 +20,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/chamber`, lastModified: "2026-05-01", changeFrequency: "monthly", priority: 0.7 },
 
     { url: `${BASE}/franchises`, lastModified: "2026-07-01", changeFrequency: "monthly", priority: 0.8 },
+    { url: `${BASE}/faq`, lastModified: "2026-08-10", changeFrequency: "monthly", priority: 0.8 },
 
     // ── How-to / landing ──
     { url: `${BASE}/how-to-rank-on-chatgpt-for-local-businesses`, lastModified: "2026-06-12", changeFrequency: "monthly", priority: 0.8 },

@@ -122,7 +122,6 @@ const nextConfig: NextConfig = {
       { source: "/contact.html", destination: "/contact", permanent: true },
       { source: "/ai-vs-seo-what-changed-and-what-hasnt", destination: "/ai-visibility-consulting", permanent: true },
       { source: "/marketing", destination: "/aiemployees", permanent: true },
-      { source: "/faq", destination: "/about", permanent: true },
     ];
   },
 };
