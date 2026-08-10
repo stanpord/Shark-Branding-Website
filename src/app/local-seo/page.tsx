@@ -23,8 +23,8 @@ const features = [
     h2: "An all-in-one local SEO platform built for results",
     body: "Stop juggling tools. Our local SEO platform brings together listing management, citation building, rank tracking, and performance reporting in one clean dashboard, so your team can focus on execution instead of coordination.\n\nEvery tool is connected. Every update is reflected in real time across the directories, data aggregators, and AI knowledge graphs that drive local search rankings.",
     cta: { label: "Explore our platform", href: "/services" },
-    img: "/local-seo/platform-metrics.webp",
-    alt: "All-in-one local SEO platform dashboard showing visibility metrics",
+    img: "https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=980",
+    alt: "Marketing team collaborating around laptops reviewing local SEO platform analytics and performance data",
     imgLeft: false,
     width: 980,
     height: 700,
@@ -56,8 +56,8 @@ const features = [
     h2: "In-depth geolocation rank tracking",
     body: "See exactly where you rank across your service area with hyperlocal rank tracking. Our grid-based geolocation reports show your Google Maps position at dozens of points around your business, so you can see where you're winning and where there's room to grow.\n\nTrack keyword rankings by location, monitor movement over time, and benchmark against competitors, all in a report your clients or team can actually understand.",
     cta: { label: "Try rank tracking", href: "/free-report" },
-    img: "/local-seo/rank-tracking.webp",
-    alt: "Geolocation rank tracking grid showing local map search positions across service area",
+    img: "https://images.pexels.com/photos/4386321/pexels-photo-4386321.jpeg?auto=compress&cs=tinysrgb&w=980",
+    alt: "Analyst reviewing geolocation rank tracking data and local search performance metrics on computer screen",
     imgLeft: true,
     width: 980,
     height: 700,
@@ -163,10 +163,10 @@ export default function LocalSeoPage() {
           <div className="flex-1 min-w-0 w-full lg:max-w-[560px]">
             <div className="relative rounded-[20px] overflow-hidden shadow-2xl border border-white/10">
               <Image
-                src="/local-seo/snapshot-report.png"
-                alt="Shark AI Solutions local SEO Snapshot Report showing business scores across Reviews, Listings, Social, Website, and SEO"
-                width={1360}
-                height={1040}
+                src="https://images.pexels.com/photos/6476587/pexels-photo-6476587.jpeg?auto=compress&cs=tinysrgb&w=900"
+                alt="Local business owner checking Google Maps rankings and local search visibility on smartphone"
+                width={900}
+                height={600}
                 className="w-full h-auto"
                 priority
               />
