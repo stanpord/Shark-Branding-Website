@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import AiVisibilityAnimations from "@/components/AiVisibilityAnimations";
+import dynamic from "next/dynamic";
+const AiVisibilityAnimations = dynamic(() => import("@/components/AiVisibilityAnimations"), { ssr: false });
 
 export const metadata: Metadata = {
   title: "AI Visibility Consulting in Tampa Bay | Shark AI Solutions",

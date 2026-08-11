@@ -3,7 +3,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Script from 'next/script'
 import EmployeeCarousel from '@/components/EmployeeCarousel'
-import HomepageAnimations from '@/components/HomepageAnimations'
+import dynamic from 'next/dynamic'
+const HomepageAnimations = dynamic(() => import('@/components/HomepageAnimations'), { ssr: false })
 
 /* ── CSS Mockup: Multi-platform AI Recommendation Panel ── */
 function AiRecommendMockup() {
@@ -398,7 +399,7 @@ export default function Home() {
                   width={logo.width}
                   height={logo.height}
                   className={`object-contain max-h-16 w-auto opacity-50 grayscale hover:opacity-80 hover:grayscale-0 motion-safe:transition-all duration-200${logo.imgClass ? ` ${logo.imgClass}` : ''}`}
-                  unoptimized
+
                 />
               </a>
             ))}
