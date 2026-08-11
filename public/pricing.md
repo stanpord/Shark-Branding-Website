@@ -1,6 +1,6 @@
-# Pricing — Shark Branding Solutions
+# Pricing — Shark AI Solutions
 
-AI Business Consulting for Tampa Bay businesses. Updated: 2026-05-17.
+AI Business Consulting for Tampa Bay businesses. Updated: 2026-08-11.
 
 ---
 
@@ -9,7 +9,7 @@ AI Business Consulting for Tampa Bay businesses. Updated: 2026-05-17.
 - Price: Free — no credit card required
 - What's included: Full audit of your business across search, maps, reviews, and AI platforms (ChatGPT, Perplexity, Google AI Overviews). We walk you through every finding together on a quick call.
 - Commitment: None
-- How to get it: https://sharkbrandingsolutions.com/free-report
+- How to get it: https://shark-ai-solutions.com/free-report
 
 ---
 
@@ -46,7 +46,7 @@ AI Business Consulting for Tampa Bay businesses. Updated: 2026-05-17.
 
 - Price: Custom — contact for quote
 - Scope: Strategy, build, and deployment. Full AI audit, custom implementation, ongoing monitoring.
-- How to get started: https://sharkbrandingsolutions.com/contact
+- How to get started: https://shark-ai-solutions.com/contact
 
 ---
 
@@ -54,7 +54,7 @@ AI Business Consulting for Tampa Bay businesses. Updated: 2026-05-17.
 
 - Chamber 12-Month Program: $397/month (vs. $497 standard — save $1,200/year)
 - Chamber 3-Month Starter: $497/month (vs. $597 standard)
-- Available at: https://sharkbrandingsolutions.com/chamber
+- Available at: https://shark-ai-solutions.com/chamber
 
 ---
 
@@ -62,4 +62,4 @@ AI Business Consulting for Tampa Bay businesses. Updated: 2026-05-17.
 
 - Phone: (727) 513-3955
 - Email: info@sharkbrandingsolutions.com
-- Website: https://sharkbrandingsolutions.com
+- Website: https://shark-ai-solutions.com

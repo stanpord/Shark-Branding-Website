@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'AI Visibility in Wesley Chapel, FL | Shark AI Solutions',
-  description: 'Shark AI Solutions helps Wesley Chapel businesses get found by ChatGPT, Google AI Overviews, Perplexity, and Gemini. Free AI Audit in 48 hours.',
+  title: 'Be Seen on ChatGPT in Wesley Chapel, FL | Shark AI Solutions',
+  description: 'Shark AI Solutions helps Wesley Chapel businesses be seen on ChatGPT, Google AI Overviews, Perplexity, and Gemini. Free AI Audit delivered in 48 hours.',
   alternates: { canonical: 'https://shark-ai-solutions.com/wesley-chapel' },
 }
 
@@ -11,7 +11,7 @@ const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'ProfessionalService',
   name: 'Shark AI Solutions',
-  description: 'AI visibility consulting for Wesley Chapel businesses. We help local companies get found and recommended by ChatGPT, Google AI Overviews, Perplexity, and Gemini.',
+  description: 'Shark AI Solutions helps Wesley Chapel businesses be seen on ChatGPT, Google AI Overviews, Perplexity, and Gemini. We provide GEO, AEO, entity optimization, and AI visibility consulting from our Wesley Chapel, FL office.',
   url: 'https://shark-ai-solutions.com/wesley-chapel',
   telephone: '+17275133955',
   email: 'info@sharkbrandingsolutions.com',
@@ -56,10 +56,10 @@ const faqSchema = {
     },
     {
       '@type': 'Question',
-      name: 'How do I get started with AI visibility for my Wesley Chapel business?',
+      name: 'How do I get my Wesley Chapel business seen on ChatGPT?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'The first step is a free AI Audit. We run your Wesley Chapel business through ChatGPT, Gemini, Perplexity, Google AI Overviews, and Copilot to identify where you are invisible or inconsistent. The audit is delivered within 48 hours and comes with no commitment. Contact Shark AI Solutions at (727) 513-3955 or info@sharkbrandingsolutions.com.',
+        text: 'To be seen on ChatGPT in Wesley Chapel, your business needs strong Bing index coverage (ChatGPT uses Bing for live search), consistent NAP data across directories, high review volume on Google and Yelp, LocalBusiness schema on your website, and presence in the citation sources ChatGPT trusts most. Shark AI Solutions handles all of this through our AI Audit and visibility fix process. Start with a free audit delivered within 48 hours. Contact us at (727) 513-3955 or info@sharkbrandingsolutions.com.',
       },
     },
   ],
@@ -108,7 +108,7 @@ export default function WesleyChapelPage() {
             <span className="text-[#18b5d8]">for Wesley Chapel Businesses</span>
           </h1>
           <p className="lead-airy text-[#333333] max-w-[520px] mx-auto mb-12" style={{ textWrap: 'balance' }}>
-            When a Wesley Chapel customer asks ChatGPT, Google AI Overviews, or Perplexity for a local business recommendation, does your name come up? We make sure it does.
+            When a Wesley Chapel customer asks ChatGPT, Google AI Overviews, or Perplexity for a local business recommendation, does your name come up? We help Wesley Chapel businesses be seen on ChatGPT and every major AI platform.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-3">
             <Link
@@ -320,8 +320,8 @@ export default function WesleyChapelPage() {
                 a: "Yes. We are headquartered in Wesley Chapel and serve businesses across all of Tampa Bay, including Lutz, Land O' Lakes, Zephyrhills, New Tampa, and the broader Pasco and Hillsborough County region. Virtual consulting is available for businesses outside Tampa Bay.",
               },
               {
-                q: 'How do I get started with AI visibility for my Wesley Chapel business?',
-                a: 'Start with a free AI Audit. We run your business through ChatGPT, Gemini, Perplexity, Google AI Overviews, and Copilot to identify exactly where you are invisible or inconsistent. The audit is delivered within 48 hours with no commitment required.',
+                q: 'How do I get my Wesley Chapel business seen on ChatGPT?',
+                a: 'To be seen on ChatGPT in Wesley Chapel, your business needs strong Bing index coverage (ChatGPT uses Bing for live search), consistent NAP data across directories, high review volume on Google and Yelp, LocalBusiness schema on your website, and presence in the citation sources ChatGPT trusts most. We handle all of this through our AI Audit and visibility fix process. Start with a free audit delivered in 48 hours.',
               },
             ].map((faq) => (
               <div key={faq.q} className="border-b border-[#e0e0e0] pb-8 last:border-none last:pb-0">
