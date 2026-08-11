@@ -4,7 +4,7 @@ import Link from 'next/link'
 import Script from 'next/script'
 import EmployeeCarousel from '@/components/EmployeeCarousel'
 import dynamic from 'next/dynamic'
-const HomepageAnimations = dynamic(() => import('@/components/HomepageAnimations'), { ssr: false })
+const HomepageAnimations = dynamic(() => import('@/components/HomepageAnimations'))
 
 /* ── CSS Mockup: Multi-platform AI Recommendation Panel ── */
 function AiRecommendMockup() {

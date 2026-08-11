@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import dynamic from "next/dynamic";
-const ServicesAnimations = dynamic(() => import("@/components/ServicesAnimations"), { ssr: false });
+const ServicesAnimations = dynamic(() => import("@/components/ServicesAnimations"));
 
 const servicesSchema = {
   "@context": "https://schema.org",
