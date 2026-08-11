@@ -1,24 +1,8 @@
 'use client'
 
 import { useEffect } from 'react'
-
-declare global {
-  interface Window {
-    gsap: any
-    ScrollTrigger: any
-  }
-}
-
-function loadScript(src: string): Promise<void> {
-  return new Promise((resolve, reject) => {
-    if (document.querySelector(`script[src="${src}"]`)) { resolve(); return }
-    const s = document.createElement('script')
-    s.src = src
-    s.onload = () => resolve()
-    s.onerror = reject
-    document.head.appendChild(s)
-  })
-}
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 function splitWords(el: HTMLElement): HTMLElement[] {
   const text = el.textContent || ''
@@ -37,31 +21,23 @@ export default function ServicesAnimations() {
       initMobile(); return
     }
 
-    let cleanupFns: (() => void)[] = []
+    gsap.registerPlugin(ScrollTrigger)
 
-    const init = async () => {
-      await loadScript('https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js')
-      await loadScript('https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js')
+    const cleanupFns: (() => void)[] = [
+      initHero(gsap, ScrollTrigger),
+      initShift(gsap, ScrollTrigger),
+      initFilters(gsap, ScrollTrigger),
+      initServiceSections(gsap, ScrollTrigger),
+      initComparisons(gsap, ScrollTrigger),
+      initFAQ(gsap, ScrollTrigger),
+      initCTA(gsap, ScrollTrigger),
+    ]
 
-      const { gsap, ScrollTrigger } = window
-      gsap.registerPlugin(ScrollTrigger)
-
-      cleanupFns.push(initHero(gsap, ScrollTrigger))
-      cleanupFns.push(initShift(gsap, ScrollTrigger))
-      cleanupFns.push(initFilters(gsap, ScrollTrigger))
-      cleanupFns.push(initServiceSections(gsap, ScrollTrigger))
-      cleanupFns.push(initComparisons(gsap, ScrollTrigger))
-      cleanupFns.push(initFAQ(gsap, ScrollTrigger))
-      cleanupFns.push(initCTA(gsap, ScrollTrigger))
-
-      ScrollTrigger.refresh()
-    }
-
-    init().catch(console.error)
+    ScrollTrigger.refresh()
 
     return () => {
       cleanupFns.forEach(fn => fn?.())
-      if (window.ScrollTrigger) window.ScrollTrigger.getAll().forEach((st: any) => st.kill())
+      ScrollTrigger.getAll().forEach((st: any) => st.kill())
     }
   }, [])
 

@@ -1,19 +1,8 @@
 'use client'
 
 import { useEffect } from 'react'
-
-declare global {
-  interface Window { gsap: any; ScrollTrigger: any }
-}
-
-function loadScript(src: string): Promise<void> {
-  return new Promise((resolve, reject) => {
-    if (document.querySelector(`script[src="${src}"]`)) { resolve(); return }
-    const s = document.createElement('script')
-    s.src = src; s.onload = () => resolve(); s.onerror = reject
-    document.head.appendChild(s)
-  })
-}
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 function splitWords(el: HTMLElement): HTMLElement[] {
   const text = el.textContent || ''
@@ -32,10 +21,7 @@ export default function AiVisibilityAnimations() {
       initMobile(); return
     }
 
-    const init = async () => {
-      await loadScript('https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js')
-      await loadScript('https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js')
-      const { gsap, ScrollTrigger } = window
+    const init = () => {
       gsap.registerPlugin(ScrollTrigger)
 
       // ── Hero ──────────────────────────────────────────────────────────
@@ -136,10 +122,10 @@ export default function AiVisibilityAnimations() {
       ScrollTrigger.refresh()
     }
 
-    init().catch(console.error)
+    init()
 
     return () => {
-      if (window.ScrollTrigger) window.ScrollTrigger.getAll().forEach((st: any) => st.kill())
+      ScrollTrigger.getAll().forEach((st: any) => st.kill())
     }
   }, [])
 
