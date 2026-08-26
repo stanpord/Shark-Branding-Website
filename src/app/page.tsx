@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Script from 'next/script'
 import dynamic from 'next/dynamic'
+import { BOOK_M_30, REVIEW_SDK } from '@/lib/ep'
 const HomepageAnimations = dynamic(() => import('@/components/HomepageAnimations'))
 
 /* ── CSS Mockup: Multi-platform AI Recommendation Panel ── */
@@ -308,7 +309,7 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(homepageFAQ) }}
       />
-      <Script src="https://cdn.apigateway.co/review-widget-client..prod/sdk.js" strategy="lazyOnload" />
+      <Script src={REVIEW_SDK} strategy="lazyOnload" />
       <HomepageAnimations />
 
       {/* ── HERO ── */}
@@ -352,7 +353,7 @@ export default function Home() {
               Get My Free AI Audit
             </Link>
             <a
-              href="https://bookmenow.info/book/mstanaland/30-minutes"
+              href={BOOK_M_30}
               target="_blank"
               rel="noopener noreferrer"
               className="text-[15px] font-semibold text-[#555] hover:text-[#18b5d8] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:rounded focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2"

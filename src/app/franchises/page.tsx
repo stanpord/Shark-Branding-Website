@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 
-const BOOK_CALL_URL = "https://bookmenow.info/book/jstanaland/30-minutes";
+import { BOOK_J_30 } from "@/lib/ep";
+const BOOK_CALL_URL = BOOK_J_30;
 
 export const metadata: Metadata = {
   title: "Franchise Marketing Solutions | Shark AI Solutions",

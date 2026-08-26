@@ -1,15 +1,22 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
+import Image from 'next/image'
+import Link from 'next/link'
 import ShowcaseCarousel from '@/components/ShowcaseCarousel'
+import { BOOK_J_30 } from '@/lib/ep'
 
-const BOOK_CALL_URL = 'https://bookmenow.info/book/jstanaland/30-minutes'
+const BOOK_CALL_URL = BOOK_J_30
 
 /* ── Scroll-reveal hook ─────────────────────────────────────────────── */
 function useInView(threshold = 0.12) {
   const ref = useRef<HTMLDivElement>(null)
   const [inView, setInView] = useState(false)
   useEffect(() => {
+    if (typeof IntersectionObserver === 'undefined') {
+      setInView(true)
+      return
+    }
     const observer = new IntersectionObserver(
       ([entry]) => { if (entry.isIntersecting) { setInView(true); observer.disconnect() } },
       { threshold }
@@ -140,56 +147,6 @@ export default function AiEmployeesDeep() {
   return (
     <div className="bg-white">
 
-      {/* Global animation keyframes */}
-      <style>{`
-        @keyframes ai-float {
-          0%, 100% { transform: translateY(0px); }
-          50% { transform: translateY(-8px); }
-        }
-        @keyframes ai-blink {
-          0%, 100% { opacity: 1; }
-          50% { opacity: 0; }
-        }
-        @keyframes ai-pulse-dot {
-          0%, 100% { opacity: 1; transform: scale(1); }
-          50% { opacity: 0.4; transform: scale(0.85); }
-        }
-        @keyframes ai-shimmer {
-          0% { background-position: -400px 0; }
-          100% { background-position: 400px 0; }
-        }
-        @keyframes ai-typing {
-          0%, 60%, 100% { opacity: 0.3; transform: translateY(0); }
-          30% { opacity: 1; transform: translateY(-4px); }
-        }
-        @keyframes ai-bar-fill {
-          from { width: 0%; }
-        }
-        @keyframes ai-fade-slide {
-          from { opacity: 0; transform: translateX(-6px); }
-          to   { opacity: 1; transform: translateX(0); }
-        }
-        .ai-float { animation: ai-float 7s ease-in-out infinite; }
-        .ai-blink { animation: ai-blink 1.1s step-end infinite; }
-        .ai-pulse-dot { animation: ai-pulse-dot 2s ease-in-out infinite; }
-        .ai-typing-dot { animation: ai-typing 1.4s ease-in-out infinite; }
-        .ai-typing-dot:nth-child(2) { animation-delay: 0.2s; }
-        .ai-typing-dot:nth-child(3) { animation-delay: 0.4s; }
-        .demo-card {
-          transition: box-shadow 0.3s ease, transform 0.3s ease;
-        }
-        .demo-card:hover {
-          box-shadow: 0 12px 40px rgba(24,181,216,0.12);
-          transform: translateY(-3px);
-        }
-        @media (prefers-reduced-motion: reduce) {
-          *, *::before, *::after {
-            animation-duration: 0.01ms !important;
-            animation-iteration-count: 1 !important;
-            transition-duration: 0.01ms !important;
-          }
-        }
-      `}</style>
 
       {/* ── PAGE HERO ──────────────────────────────────────────────── */}
       <section className="bg-[#0a0a0a] pt-20 sm:pt-24 pb-12 px-6 overflow-hidden">
@@ -331,10 +288,10 @@ export default function AiEmployeesDeep() {
           <FadeUp>
             <p className="text-[11px] font-bold tracking-[1.5px] uppercase text-[#18b5d8] mb-4">How It Works</p>
             <h2 className="text-[28px] sm:text-[34px] font-extrabold text-[#1d1d1f] leading-tight tracking-tight mb-5" style={{ textWrap: 'balance' }}>
-              How does a Shark Branding AI employee work?
+              How does a Shark AI Solutions AI employee work?
             </h2>
             <p className="text-[#444] text-[17px] leading-relaxed mb-10">
-              A Shark Branding AI employee is a software agent configured to perform a single, specific business function automatically, without human supervision. Each one is trained on your business data: your services, your voice, your pricing, and your workflows. When a lead contacts you, the AI employee greets them, qualifies them using your criteria, and either books an appointment, sends a follow-up sequence, or escalates to a human, depending on what the situation requires. Unlike a chatbot that needs constant prompting, an AI employee has a defined job, a fixed data source, and a built-in escalation path. Every interaction is logged and every transcript is saved. Your team sees only the conversations that need a human. Most AI employees go live within five to seven business days. They run continuously, answering calls, responding to reviews, and following up on leads, whether your office is open or not.
+              A Shark AI Solutions AI employee is a software agent configured to perform a single, specific business function automatically, without human supervision. Each one is trained on your business data: your services, your voice, your pricing, and your workflows. When a lead contacts you, the AI employee greets them, qualifies them using your criteria, and either books an appointment, sends a follow-up sequence, or escalates to a human, depending on what the situation requires. Unlike a chatbot that needs constant prompting, an AI employee has a defined job, a fixed data source, and a built-in escalation path. Every interaction is logged and every transcript is saved. Your team sees only the conversations that need a human. Most AI employees go live within five to seven business days. They run continuously, answering calls, responding to reviews, and following up on leads, whether your office is open or not.
             </p>
           </FadeUp>
           <FadeUp delay={100}>
@@ -357,7 +314,8 @@ export default function AiEmployeesDeep() {
 
       {/* ── STICKY ANCHOR NAV ──────────────────────────────────────── */}
       <div className="sticky top-0 z-40 bg-white/90 backdrop-blur border-b border-[#e5e5ea]">
-        <div className="max-w-5xl mx-auto px-6 overflow-x-auto">
+        <div className="max-w-5xl mx-auto px-6 relative">
+          <div className="overflow-x-auto [mask-image:linear-gradient(to_right,transparent_0,black_16px,black_calc(100%-40px),transparent_100%)] sm:[mask-image:none]">
           <nav className="flex gap-0 min-w-max">
             {NAV_ITEMS.map(item => (
               <a
@@ -377,6 +335,7 @@ export default function AiEmployeesDeep() {
               </a>
             ))}
           </nav>
+          </div>
         </div>
       </div>
 
@@ -397,7 +356,7 @@ export default function AiEmployeesDeep() {
           {/* Feature 01 */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-6">
             <FadeUp delay={0}>
-              <div className="bg-[#f5f5f7] rounded-[20px] p-6 border border-[#e5e5ea] demo-card ai-float">
+              <div className="bg-[#f5f5f7] rounded-[20px] p-6 border border-[#e5e5ea] demo-card">
                 <div className="flex items-center gap-2 mb-4">
                   <div className="w-7 h-7 rounded-full bg-[#18b5d8] flex items-center justify-center text-white text-[11px] font-bold">G</div>
                   <p className="text-[12px] font-semibold text-[#1d1d1f]">Gemma · Online</p>
@@ -437,7 +396,7 @@ export default function AiEmployeesDeep() {
               </div>
             </FadeUp>
             <FadeUp delay={120}>
-              <p className="text-[11px] font-bold tracking-[1.5px] uppercase text-[#86868b] mb-3">Feature 01</p>
+              <p className="text-[11px] font-bold tracking-[1.5px] uppercase text-[#86868b] mb-3">Instant qualification</p>
               <h3 className="text-[26px] font-bold text-[#1d1d1f] leading-tight tracking-tight mb-4">Respond to every visitor the moment they land.</h3>
               <p className="text-[#6e6e73] text-[16px] leading-relaxed mb-5">
                 Most leads decide in seconds whether to reach out. Gemma greets every visitor instantly, asks qualifying questions, and captures contact info before they bounce.
@@ -453,7 +412,7 @@ export default function AiEmployeesDeep() {
           {/* Feature 02 */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-6">
             <FadeUp delay={0} className="order-2 lg:order-1">
-              <p className="text-[11px] font-bold tracking-[1.5px] uppercase text-[#86868b] mb-3">Feature 02</p>
+              <p className="text-[11px] font-bold tracking-[1.5px] uppercase text-[#86868b] mb-3">Calendar booking</p>
               <h3 className="text-[26px] font-bold text-[#1d1d1f] leading-tight tracking-tight mb-4">Book appointments without back-and-forth.</h3>
               <p className="text-[#6e6e73] text-[16px] leading-relaxed mb-5">
                 Gemma connects to your calendar and lets qualified leads pick a time. No phone tag. No scheduling delay. No dropped balls.
@@ -509,7 +468,7 @@ export default function AiEmployeesDeep() {
               </div>
             </FadeUp>
             <FadeUp delay={120}>
-              <p className="text-[11px] font-bold tracking-[1.5px] uppercase text-[#86868b] mb-3">Feature 03</p>
+              <p className="text-[11px] font-bold tracking-[1.5px] uppercase text-[#86868b] mb-3">Overnight capture</p>
               <h3 className="text-[26px] font-bold text-[#1d1d1f] leading-tight tracking-tight mb-4">Never miss a lead, not even at 2 AM.</h3>
               <p className="text-[#6e6e73] text-[16px] leading-relaxed mb-5">
                 Most leads contact you outside business hours. Gemma never clocks out. She captures, qualifies, and books overnight, so your morning starts with a full calendar.
@@ -544,17 +503,19 @@ export default function AiEmployeesDeep() {
               muted
               loop
               playsInline
+              poster="/ai-voice-receptionist-poster.webp"
               className="w-full max-w-2xl rounded-[20px] shadow-md"
             >
               <source src="/ai-voice-receptionist.webm" type="video/webm" />
               <source src="/ai-voice-receptionist.mp4" type="video/mp4" />
+              <p>Your browser does not support this video.</p>
             </video>
           </FadeUp>
 
           {/* Feature 01, Answers every call */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-6">
             <FadeUp delay={0}>
-              <div className="bg-white rounded-[20px] p-6 border border-[#e5e5ea] shadow-sm demo-card ai-float">
+              <div className="bg-white rounded-[20px] p-6 border border-[#e5e5ea] shadow-sm demo-card">
                 {/* Incoming call UI */}
                 <div className="flex items-center gap-3 mb-5 pb-4 border-b border-[#f0f0f0]">
                   <div className="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center text-green-600">
@@ -599,7 +560,7 @@ export default function AiEmployeesDeep() {
               </div>
             </FadeUp>
             <FadeUp delay={120}>
-              <p className="text-[11px] font-bold tracking-[1.5px] uppercase text-[#86868b] mb-3">Feature 01</p>
+              <p className="text-[11px] font-bold tracking-[1.5px] uppercase text-[#86868b] mb-3">Always-on answer</p>
               <h3 className="text-[26px] font-bold text-[#1d1d1f] leading-tight tracking-tight mb-4">Every call answered. Every time.</h3>
               <p className="text-[#6e6e73] text-[16px] leading-relaxed mb-5">
                 Your Voice Receptionist answers in your business name, in your tone, the moment the phone rings. No hold music. No "press 1 for service." A real conversation from the first second.
@@ -615,7 +576,7 @@ export default function AiEmployeesDeep() {
           {/* Feature 02, FAQ handling */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-6">
             <FadeUp delay={0} className="order-2 lg:order-1">
-              <p className="text-[11px] font-bold tracking-[1.5px] uppercase text-[#86868b] mb-3">Feature 02</p>
+              <p className="text-[11px] font-bold tracking-[1.5px] uppercase text-[#86868b] mb-3">FAQ automation</p>
               <h3 className="text-[26px] font-bold text-[#1d1d1f] leading-tight tracking-tight mb-4">Handles your most common calls without you.</h3>
               <p className="text-[#6e6e73] text-[16px] leading-relaxed mb-5">
                 Hours, pricing, service area, availability, your Voice Receptionist knows the answers. It handles the calls your team answers 10 times a day so they can focus on the work that actually moves revenue.
@@ -690,7 +651,7 @@ export default function AiEmployeesDeep() {
               </div>
             </FadeUp>
             <FadeUp delay={120}>
-              <p className="text-[11px] font-bold tracking-[1.5px] uppercase text-[#86868b] mb-3">Feature 03</p>
+              <p className="text-[11px] font-bold tracking-[1.5px] uppercase text-[#86868b] mb-3">Hands-free booking</p>
               <h3 className="text-[26px] font-bold text-[#1d1d1f] leading-tight tracking-tight mb-4">Callers hang up with a confirmed appointment.</h3>
               <p className="text-[#6e6e73] text-[16px] leading-relaxed mb-5">
                 After qualifying a caller, your Voice Receptionist pulls up your calendar, offers available slots, confirms the booking, and texts a confirmation, end to end, no human involved.
@@ -720,9 +681,12 @@ export default function AiEmployeesDeep() {
           </FadeUp>
 
           <FadeUp className="flex justify-center mb-20">
-            <img
+            <Image
               src="/Reputation-Management-specialist-hero-img.webp"
               alt="AI Reputation Specialist, automated review response and sentiment analysis"
+              width={896}
+              height={504}
+              sizes="(max-width: 768px) 100vw, 896px"
               className="w-full max-w-2xl rounded-[20px] shadow-md"
             />
           </FadeUp>
@@ -755,7 +719,7 @@ export default function AiEmployeesDeep() {
               </div>
             </FadeUp>
             <FadeUp delay={120}>
-              <p className="text-[11px] font-bold tracking-[1.5px] uppercase text-[#86868b] mb-3">Feature 01</p>
+              <p className="text-[11px] font-bold tracking-[1.5px] uppercase text-[#86868b] mb-3">Automated replies</p>
               <h3 className="text-[26px] font-bold text-[#1d1d1f] leading-tight tracking-tight mb-4">Reputation-safe responses, on autopilot.</h3>
               <p className="text-[#6e6e73] text-[16px] leading-relaxed mb-5">
                 Your AI crafts personalized replies for every review, matching your voice for 5-star praise and handling negative feedback with care and professionalism.
@@ -771,7 +735,7 @@ export default function AiEmployeesDeep() {
           {/* Feature 02 */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-6">
             <FadeUp delay={0} className="order-2 lg:order-1">
-              <p className="text-[11px] font-bold tracking-[1.5px] uppercase text-[#86868b] mb-3">Feature 02</p>
+              <p className="text-[11px] font-bold tracking-[1.5px] uppercase text-[#86868b] mb-3">Response rules</p>
               <h3 className="text-[26px] font-bold text-[#1d1d1f] leading-tight tracking-tight mb-4">Your rules. Your standards.</h3>
               <p className="text-[#6e6e73] text-[16px] leading-relaxed mb-5">
                 Configure star-rating thresholds, response timing, platform preferences, and tone guidelines, so every reply reflects exactly how you want to show up.
@@ -836,7 +800,7 @@ export default function AiEmployeesDeep() {
               </div>
             </FadeUp>
             <FadeUp delay={120}>
-              <p className="text-[11px] font-bold tracking-[1.5px] uppercase text-[#86868b] mb-3">Feature 03</p>
+              <p className="text-[11px] font-bold tracking-[1.5px] uppercase text-[#86868b] mb-3">Sentiment insights</p>
               <h3 className="text-[26px] font-bold text-[#1d1d1f] leading-tight tracking-tight mb-4">Ask your reviews anything.</h3>
               <p className="text-[#6e6e73] text-[16px] leading-relaxed mb-5">
                 Chat directly with your review data to surface sentiment shifts, keyword trends, and actionable recommendations, in plain English, in seconds.
@@ -866,9 +830,12 @@ export default function AiEmployeesDeep() {
           </FadeUp>
 
           <FadeUp className="flex justify-center mb-20">
-            <img
+            <Image
               src="/AI-Sales-Assistant-hero-img.webp"
               alt="AI CRM, automated lead follow-up and pipeline management"
+              width={896}
+              height={504}
+              sizes="(max-width: 768px) 100vw, 896px"
               className="w-full max-w-2xl rounded-[20px] shadow-md"
             />
           </FadeUp>
@@ -876,7 +843,7 @@ export default function AiEmployeesDeep() {
           {/* Feature 01 */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-6">
             <FadeUp delay={0}>
-              <div className="bg-white rounded-[20px] p-6 border border-[#e5e5ea] shadow-sm demo-card ai-float">
+              <div className="bg-white rounded-[20px] p-6 border border-[#e5e5ea] shadow-sm demo-card">
                 <p className="text-[11px] font-bold tracking-[1.5px] uppercase text-[#86868b] mb-4">Follow-Up Sequence, Lead: Dave M.</p>
                 {[
                   { day: 'Day 1',  channel: 'Email', msg: "Thanks for reaching out, here's your quote", sent: true },
@@ -898,7 +865,7 @@ export default function AiEmployeesDeep() {
               </div>
             </FadeUp>
             <FadeUp delay={120}>
-              <p className="text-[11px] font-bold tracking-[1.5px] uppercase text-[#86868b] mb-3">Feature 01</p>
+              <p className="text-[11px] font-bold tracking-[1.5px] uppercase text-[#86868b] mb-3">Multi-touch sequences</p>
               <h3 className="text-[26px] font-bold text-[#1d1d1f] leading-tight tracking-tight mb-4">Multi-touch follow-up that actually converts.</h3>
               <p className="text-[#6e6e73] text-[16px] leading-relaxed mb-5">
                 Most leads need 5 to 8 touchpoints before they buy. Your AI runs the full sequence, email, SMS, and outbound calls, so your team only talks to people who are ready.
@@ -914,7 +881,7 @@ export default function AiEmployeesDeep() {
           {/* Feature 02 */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-6">
             <FadeUp delay={0} className="order-2 lg:order-1">
-              <p className="text-[11px] font-bold tracking-[1.5px] uppercase text-[#86868b] mb-3">Feature 02</p>
+              <p className="text-[11px] font-bold tracking-[1.5px] uppercase text-[#86868b] mb-3">Zero-admin logging</p>
               <h3 className="text-[26px] font-bold text-[#1d1d1f] leading-tight tracking-tight mb-4">Automate CRM updates so you focus on selling.</h3>
               <p className="text-[#6e6e73] text-[16px] leading-relaxed mb-5">
                 Every call, email, and meeting gets logged automatically. No more manual data entry, your pipeline stays accurate without your team touching it.
@@ -1000,7 +967,7 @@ export default function AiEmployeesDeep() {
               </div>
             </FadeUp>
             <FadeUp delay={120}>
-              <p className="text-[11px] font-bold tracking-[1.5px] uppercase text-[#86868b] mb-3">Feature 03</p>
+              <p className="text-[11px] font-bold tracking-[1.5px] uppercase text-[#86868b] mb-3">Lead enrichment</p>
               <h3 className="text-[26px] font-bold text-[#1d1d1f] leading-tight tracking-tight mb-4">Walk into every call fully prepared.</h3>
               <p className="text-[#6e6e73] text-[16px] leading-relaxed mb-5">
                 Your AI automatically finds company size, revenue, ownership, and review data before your first call. No research, no manual lookup, no surprises.
@@ -1032,7 +999,7 @@ export default function AiEmployeesDeep() {
           {/* Feature 01, BANT scorecard */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-6">
             <FadeUp delay={0}>
-              <div className="bg-[#f5f5f7] rounded-[20px] p-6 border border-[#e5e5ea] demo-card ai-float">
+              <div className="bg-[#f5f5f7] rounded-[20px] p-6 border border-[#e5e5ea] demo-card">
                 <div className="flex items-center justify-between mb-5">
                   <p className="text-[11px] font-bold tracking-[1.5px] uppercase text-[#86868b]">BANT Scorecard</p>
                   <span className="text-[12px] font-extrabold text-emerald-600 bg-emerald-100 px-3 py-1 rounded-full">87 / 100</span>
@@ -1051,7 +1018,7 @@ export default function AiEmployeesDeep() {
                     <div className="h-2 bg-[#e5e5ea] rounded-full overflow-hidden">
                       <div
                         className={`h-full ${item.color} rounded-full`}
-                        style={{ width: `${item.score}%`, transition: 'width 1.2s ease' }}
+                        style={{ transform: `scaleX(${item.score / 100})`, transformOrigin: 'left', transition: 'transform 1.2s ease' }}
                       />
                     </div>
                   </div>
@@ -1072,7 +1039,7 @@ export default function AiEmployeesDeep() {
               </div>
             </FadeUp>
             <FadeUp delay={120}>
-              <p className="text-[11px] font-bold tracking-[1.5px] uppercase text-[#86868b] mb-3">Feature 01</p>
+              <p className="text-[11px] font-bold tracking-[1.5px] uppercase text-[#86868b] mb-3">BANT scoring</p>
               <h3 className="text-[26px] font-bold text-[#1d1d1f] leading-tight tracking-tight mb-4">Every call scored the moment it ends.</h3>
               <p className="text-[#6e6e73] text-[16px] leading-relaxed mb-5">
                 Your AI listens to the call, scores every BANT factor, and flags your hottest leads before your rep has finished hanging up. No gut instinct required.
@@ -1088,7 +1055,7 @@ export default function AiEmployeesDeep() {
           {/* Feature 02, Transcript + CRM auto-fill */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-6">
             <FadeUp delay={0} className="order-2 lg:order-1">
-              <p className="text-[11px] font-bold tracking-[1.5px] uppercase text-[#86868b] mb-3">Feature 02</p>
+              <p className="text-[11px] font-bold tracking-[1.5px] uppercase text-[#86868b] mb-3">Zero-admin transcripts</p>
               <h3 className="text-[26px] font-bold text-[#1d1d1f] leading-tight tracking-tight mb-4">Full transcript. CRM filled. Zero admin.</h3>
               <p className="text-[#6e6e73] text-[16px] leading-relaxed mb-5">
                 Every word of every call is transcribed, tagged, and pushed into your CRM fields. Your reps spend zero time writing notes after calls, that time goes back into selling.
@@ -1180,7 +1147,7 @@ export default function AiEmployeesDeep() {
               </div>
             </FadeUp>
             <FadeUp delay={120}>
-              <p className="text-[11px] font-bold tracking-[1.5px] uppercase text-[#86868b] mb-3">Feature 03</p>
+              <p className="text-[11px] font-bold tracking-[1.5px] uppercase text-[#86868b] mb-3">Per-call coaching</p>
               <h3 className="text-[26px] font-bold text-[#1d1d1f] leading-tight tracking-tight mb-4">Reps get better without a manager listening to every call.</h3>
               <p className="text-[#6e6e73] text-[16px] leading-relaxed mb-5">
                 After every call, your AI delivers specific, actionable coaching notes, what went well, what to fix, and exactly how to approach the next conversation. Your team gets better by default.
@@ -1210,7 +1177,8 @@ export default function AiEmployeesDeep() {
             </p>
           </FadeUp>
           <FadeUp delay={80}>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <p className="text-[11px] font-bold tracking-[1.5px] uppercase text-[#6e6e73] mb-3">Before the job</p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
               {[
                 {
                   step: '01',
@@ -1244,6 +1212,18 @@ export default function AiEmployeesDeep() {
                   accent: 'text-emerald-700',
                   bg: 'bg-emerald-50 border-emerald-200',
                 },
+              ].map(item => (
+                <div key={item.step} className={`rounded-[16px] border p-5 ${item.bg}`}>
+                  <p className={`text-[11px] font-extrabold tracking-[2px] uppercase mb-2 ${item.accent}`}>{item.step} · {item.stage}</p>
+                  <p className="text-[#1d1d1f] font-bold text-[14px] mb-1.5">{item.who}</p>
+                  <p className="text-[#6e6e73] text-[12px] leading-relaxed">{item.desc}</p>
+                </div>
+              ))}
+            </div>
+            <div className="border-t border-[#e5e5ea] mb-6" />
+            <p className="text-[11px] font-bold tracking-[1.5px] uppercase text-[#6e6e73] mb-3">After the job</p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              {[
                 {
                   step: '05',
                   stage: 'Serve',
@@ -1307,6 +1287,23 @@ export default function AiEmployeesDeep() {
           </FadeUp>
 
           {/* Value stack */}
+          {/* ROI framing — shown before price card to justify investment */}
+          <FadeUp className="mb-8">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10">
+              {[
+                { stat: '94%', label: 'of calls resolved without a human', sub: 'Voice Receptionist avg' },
+                { stat: '3×', label: 'more follow-up touchpoints vs manual', sub: 'AI CRM sequences' },
+                { stat: '< 7 days', label: 'to go live', sub: 'Full suite deployment' },
+              ].map(item => (
+                <div key={item.stat} className="bg-white/5 border border-white/10 rounded-[16px] p-6 text-center">
+                  <p className="text-[#18b5d8] text-[36px] font-extrabold leading-none mb-2">{item.stat}</p>
+                  <p className="text-white text-[13px] font-semibold mb-1">{item.label}</p>
+                  <p className="text-[#8a9ba8] text-[11px]">{item.sub}</p>
+                </div>
+              ))}
+            </div>
+          </FadeUp>
+
           <FadeUp className="mb-12">
             <div className="bg-white/5 border border-white/10 rounded-[20px] p-6 sm:p-8 mb-6">
               <p className="text-[12px] font-bold tracking-[1.5px] uppercase text-[#18b5d8] mb-6">What's included in the Full Suite</p>
@@ -1335,7 +1332,8 @@ export default function AiEmployeesDeep() {
               <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(circle at 70% 50%, white 0%, transparent 60%)' }} />
               <p className="text-white/80 text-[13px] font-semibold uppercase tracking-widest mb-2 relative">Full AI Suite</p>
               <p className="text-white text-[46px] font-extrabold leading-none mb-1 relative">Custom Pricing</p>
-              <p className="text-white/80 text-[15px] mb-6 relative">scoped to your business · no per-seat charging · quoted on your strategy call</p>
+              <p className="text-white/60 text-[13px] mb-1 relative">Most clients invest $1,000–$2,500/month depending on team size and active channels.</p>
+              <p className="text-white/80 text-[15px] mb-6 relative">Scoped to your business · no per-seat charging · quoted on your strategy call.</p>
               <div className="grid grid-cols-3 gap-3 max-w-sm mx-auto mb-8 relative">
                 {[
                   { label: 'Setup time', val: '< 1 week' },
@@ -1348,29 +1346,12 @@ export default function AiEmployeesDeep() {
                   </div>
                 ))}
               </div>
-              <a
+              <Link
                 href="/contact"
                 className="inline-block bg-white text-[#18b5d8] font-extrabold text-[15px] px-10 py-4 rounded-full hover:bg-[#f0fbfd] transition-colors relative"
               >
                 Book a strategy call
-              </a>
-            </div>
-          </FadeUp>
-
-          {/* ROI framing */}
-          <FadeUp>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10">
-              {[
-                { stat: '94%', label: 'of calls resolved without a human', sub: 'Voice Receptionist avg' },
-                { stat: '3×', label: 'more follow-up touchpoints vs manual', sub: 'AI CRM sequences' },
-                { stat: '< 7 days', label: 'to go live', sub: 'Full suite deployment' },
-              ].map(item => (
-                <div key={item.stat} className="bg-white/5 border border-white/10 rounded-[16px] p-6 text-center">
-                  <p className="text-[#18b5d8] text-[36px] font-extrabold leading-none mb-2">{item.stat}</p>
-                  <p className="text-white text-[13px] font-semibold mb-1">{item.label}</p>
-                  <p className="text-[#8a9ba8] text-[11px]">{item.sub}</p>
-                </div>
-              ))}
+              </Link>
             </div>
           </FadeUp>
 
@@ -1395,10 +1376,10 @@ export default function AiEmployeesDeep() {
                   a: 'Individual AI employees are available. Reach out and we\'ll build a custom package based on where you have the biggest gap. Most clients start with Gemma or the Voice Receptionist and expand from there.',
                 },
               ].map((item, i) => (
-                <details key={i} className="group bg-white/5 border border-white/10 rounded-[16px] px-6 py-5 cursor-pointer">
-                  <summary className="text-white font-semibold text-[15px] list-none flex items-center justify-between gap-4">
+                <details key={i} className="group bg-white/5 border border-white/10 rounded-[16px] px-6 py-5 cursor-pointer hover:bg-white/[0.08] transition-colors">
+                  <summary className="text-white/90 font-semibold text-[15px] list-none flex items-center justify-between gap-4 cursor-pointer group-hover:text-white transition-colors">
                     {item.q}
-                    <span className="text-[#18b5d8] text-[20px] font-light shrink-0 group-open:rotate-45 transition-transform">+</span>
+                    <span aria-hidden="true" className="text-[#18b5d8] text-[20px] font-light shrink-0 group-open:rotate-45 transition-transform">+</span>
                   </summary>
                   <p className="text-[#8a9ba8] text-[14px] leading-relaxed mt-4">{item.a}</p>
                 </details>
@@ -1522,9 +1503,9 @@ export default function AiEmployeesDeep() {
               <div className="mt-8 bg-white rounded-[16px] border border-[#e5e5ea] p-5">
                 <p className="text-[#1d1d1f] font-bold text-[14px] mb-2">Interested in a custom AI employee?</p>
                 <p className="text-[#6e6e73] text-[13px] leading-relaxed mb-4">Tell us what you're trying to automate. No commitment required.</p>
-                <a href="/contact" className="inline-block bg-[#18b5d8] text-white font-bold text-[13px] px-6 py-3 rounded-full hover:bg-[#14a0c0] transition-colors">
+                <Link href="/contact" className="inline-block bg-[#18b5d8] text-white font-bold text-[13px] px-6 py-3 rounded-full hover:bg-[#14a0c0] transition-colors">
                   Talk to us about a custom build
-                </a>
+                </Link>
               </div>
             </FadeUp>
           </div>
@@ -1557,14 +1538,14 @@ export default function AiEmployeesDeep() {
                 { href: '/aiemployees/healthcare',     label: 'Healthcare',    desc: 'Patient intake + appointment reminders' },
                 { href: '/aiemployees/legal',          label: 'Legal',         desc: 'Lead intake + consultation booking' },
               ].map(ind => (
-                <a
+                <Link
                   key={ind.href}
                   href={ind.href}
                   className="bg-[#f5f5f7] rounded-[16px] p-5 border border-[#e5e5ea] hover:border-[#18b5d8] hover:bg-white motion-safe:transition-colors duration-150 group"
                 >
                   <p className="text-[#1d1d1f] font-bold text-[15px] mb-1 group-hover:text-[#18b5d8] motion-safe:transition-colors">{ind.label}</p>
                   <p className="text-[#86868b] text-[13px]">{ind.desc}</p>
-                </a>
+                </Link>
               ))}
             </div>
           </FadeUp>
@@ -1584,12 +1565,12 @@ export default function AiEmployeesDeep() {
             <p className="text-[#8a9ba8] text-[17px] leading-relaxed mb-8">
               Book a free strategy call. We'll map out which AI employees will have the biggest impact on your business, and show you exactly what they'll do.
             </p>
-            <a
+            <Link
               href="/contact"
               className="inline-block bg-[#18b5d8] text-white font-extrabold text-[16px] px-10 py-4 rounded-full hover:bg-[#14a0c0] transition-colors"
             >
               Book my free strategy call
-            </a>
+            </Link>
             <p className="text-[#8a9ba8] text-[13px] mt-4">No contracts. Live within 7 days.</p>
           </FadeUp>
         </div>

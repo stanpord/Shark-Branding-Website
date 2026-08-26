@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import AuditModalTrigger from "@/components/AuditModalTrigger";
+import { BOOK_M_AUDIT } from "@/lib/ep";
 
 const freeReportSchema = {
   "@context": "https://schema.org",
@@ -170,7 +171,7 @@ export default function FreeReportPage() {
               Once your findings land in your inbox, book a Google Meet with us. We go through everything together, prioritize what matters most, and build your action plan on the call. Your team can run with it, or we can help.
             </p>
             <a
-              href="https://bookmenow.info/book/mstanaland/ai-visibility-report-review"
+              href={BOOK_M_AUDIT}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-[#18b5d8] text-white text-[15px] font-semibold rounded-full px-8 py-4 hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150"

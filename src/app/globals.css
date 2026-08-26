@@ -259,6 +259,43 @@ body {
 
 /* ── Clip-path preset handled via GSAP fromTo — no CSS preset needed ── */
 
+/* ── AI employee page keyframes ── */
+@keyframes ai-float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+@keyframes ai-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+@keyframes ai-pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.85); }
+}
+@keyframes ai-shimmer {
+  0% { background-position: -400px 0; }
+  100% { background-position: 400px 0; }
+}
+@keyframes ai-typing {
+  0%, 60%, 100% { opacity: 0.3; transform: translateY(0); }
+  30% { opacity: 1; transform: translateY(-4px); }
+}
+@keyframes ai-fade-slide {
+  from { opacity: 0; transform: translateX(-6px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+.ai-float { animation: ai-float 7s ease-in-out infinite; }
+.ai-blink { animation: ai-blink 1.1s step-end infinite; }
+.ai-pulse-dot { animation: ai-pulse-dot 2s ease-in-out infinite; }
+.ai-typing-dot { animation: ai-typing 1.4s ease-in-out infinite; }
+.ai-typing-dot:nth-child(2) { animation-delay: 0.2s; }
+.ai-typing-dot:nth-child(3) { animation-delay: 0.4s; }
+.demo-card { transition: box-shadow 0.3s ease, transform 0.3s ease; }
+.demo-card:hover {
+  box-shadow: 0 12px 40px rgba(24,181,216,0.12);
+  transform: translateY(-3px);
+}
+
 /* ── Keyframes ── */
 @keyframes float-dot {
   0%, 100% { transform: translateY(0px); }

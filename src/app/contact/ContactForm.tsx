@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { FORM_WIDGET } from "@/lib/ep";
 
 export default function ContactForm() {
   const formContainerRef = useRef<HTMLDivElement>(null);
@@ -12,7 +13,7 @@ export default function ContactForm() {
 
     const script = document.createElement("script");
     script.id = "__custom_form_widget";
-    script.src = "https://www.cdnstyles.com/static/custom_form_widget/v1/custom_form.widget.js";
+    script.src = FORM_WIDGET;
     script.setAttribute(
       "data",
       "eyJiYWNrZ3JvdW5kQ29sb3IiOiIjZmZmZmZmIiwiYmFzZVVSTCI6Imh0dHBzOi8vZm9ybXMtcHJvZC5hcGlnYXRld2F5LmNvIiwiYm9yZGVyQ29sb3IiOiIjZThlOGVkIiwiYm9yZGVyUmFkaXVzIjoiMTJweCIsImJvcmRlclN0eWxlIjoic29saWQiLCJib3JkZXJXaWR0aCI6IjFweCIsImZvcm1JZCI6IkZvcm1Db25maWdJRC05MGVmYzRmYy0yMDhhLTQyNTAtOTgyYS04NGYxYmVkMzM1ZTIiLCJwYWRkaW5nIjoiMjhweCIsInByaW1hcnlDb2xvciI6IiMxOEI1RDgiLCJwcmltYXJ5Rm9udENvbG9yIjoiIzFkMWQxZiIsIndpZHRoIjoiMTAwJSJ9"

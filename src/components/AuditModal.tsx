@@ -2,8 +2,8 @@
 
 import { useEffect, useRef, useState, useCallback } from "react";
 
-const BOOKING_URL =
-  "https://bookmenow.info/book/ai-report-visibility-review/Ai-Visitbility-Report-Review";
+import { BOOK_AUDIT_REVIEW, FORM_WIDGET } from "@/lib/ep";
+const BOOKING_URL = BOOK_AUDIT_REVIEW;
 
 export default function AuditModal() {
   const [open, setOpen] = useState(false);
@@ -36,7 +36,7 @@ export default function AuditModal() {
     const script = document.createElement("script");
     script.async = true;
     script.setAttribute("data-crm-form-widget", "");
-    script.src = "https://www.cdnstyles.com/static/custom_form_widget/v1/custom_form.widget.js";
+    script.src = FORM_WIDGET;
     script.setAttribute(
       "data",
       "eyJiYWNrZ3JvdW5kQ29sb3IiOiIjZmZmZmZmIiwiYmFzZVVSTCI6Imh0dHBzOi8vZm9ybXMtcHJvZC5hcGlnYXRld2F5LmNvIiwiYm9yZGVyQ29sb3IiOiIjZThlOGVkIiwiYm9yZGVyUmFkaXVzIjoiMTJweCIsImJvcmRlclN0eWxlIjoic29saWQiLCJib3JkZXJXaWR0aCI6IjFweCIsImZvcm1JZCI6IkZvcm1Db25maWdJRC0wZjJkODQ0Ni1lNDk0LTQyZTgtYmEwZC0zM2I4ZTM2OWQyNDkiLCJwYWRkaW5nIjoiMjBweCIsInByaW1hcnlDb2xvciI6IiMxOEI1RDgiLCJwcmltYXJ5Rm9udENvbG9yIjoiIzFkMWQxZiIsIndpZHRoIjoiMTAwJSJ9"
@@ -44,7 +44,6 @@ export default function AuditModal() {
     containerRef.current.appendChild(script);
     setLoaded(true);
 
-    // Watch for success state from the Vendasta widget
     const observer = new MutationObserver(() => {
       const container = containerRef.current;
       if (!container) return;

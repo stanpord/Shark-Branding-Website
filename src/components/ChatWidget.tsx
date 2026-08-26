@@ -2,6 +2,7 @@
 
 import Script from "next/script";
 import { useState, useEffect } from "react";
+import { CHAT_SDK } from "@/lib/ep";
 
 const WIDGET_ID = "b9dd1fd7-88ec-11f0-91f4-3228900e0384";
 
@@ -45,7 +46,7 @@ export default function ChatWidget() {
       `}</style>
 
       <Script
-        src="https://cdn.apigateway.co/webchat-client..prod/sdk.js"
+        src={CHAT_SDK}
         data-widget-id={WIDGET_ID}
         strategy="afterInteractive"
         onLoad={handleLoad}

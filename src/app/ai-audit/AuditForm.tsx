@@ -1,8 +1,9 @@
 'use client'
 
 import { useState } from 'react'
+import { BOOK_J_30 } from '@/lib/ep'
 
-const BOOKING_URL = 'https://bookmenow.info/book/jstanaland/30-minutes'
+const BOOKING_URL = BOOK_J_30
 
 const INDUSTRIES = [
   'HVAC / Air Conditioning',

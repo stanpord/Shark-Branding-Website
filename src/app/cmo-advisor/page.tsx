@@ -71,7 +71,8 @@ const advisorCapabilities = [
   },
 ];
 
-const BOOK_CALL_URL = "https://bookmenow.info/book/jstanaland/30-minutes";
+import { BOOK_J_30 } from "@/lib/ep";
+const BOOK_CALL_URL = BOOK_J_30;
 
 export default function CmoAdvisorPage() {
   return (
