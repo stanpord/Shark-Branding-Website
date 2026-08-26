@@ -352,14 +352,12 @@ export default function Home() {
             >
               Get My Free AI Audit
             </Link>
-            <a
-              href={BOOK_M_30}
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/book"
               className="text-[15px] font-semibold text-[#555] hover:text-[#18b5d8] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:rounded focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2"
             >
               Book a Call →
-            </a>
+            </Link>
           </div>
           <p className="text-[13px] text-[#aaa] tracking-wide">
             Serving regional and multi-location businesses nationwide

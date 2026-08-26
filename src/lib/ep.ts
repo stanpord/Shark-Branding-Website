@@ -9,3 +9,4 @@ export const BOOK_J_30       = d("aHR0cHM6Ly9ib29rbWVub3cuaW5mby9ib29rL2pzdGFuYW
 export const BOOK_M_AUDIT    = d("aHR0cHM6Ly9ib29rbWVub3cuaW5mby9ib29rL21zdGFuYWxhbmQvYWktdmlzaWJpbGl0eS1yZXBvcnQtcmV2aWV3");
 export const BOOK_AUDIT_REVIEW = d("aHR0cHM6Ly9ib29rbWVub3cuaW5mby9ib29rL2FpLXJlcG9ydC12aXNpYmlsaXR5LXJldmlldy9BaS1WaXNpdGJpbGl0eS1SZXBvcnQtUmV2aWV3");
 export const BOOK_INLINE_WIDGET = d("aHR0cHM6Ly9ib29rbWVub3cuaW5mby9ib29rL01DQUwtZjY1MjJiYzAtMmU4OS00MDA3LWFmZDYtZWViMTQxYTI0YzRjL01ULTE0M2QwYjQxLWEyZjctNDM5Ni05MDQxLTJiYjlhNDg4NTEyNw==");
+export const BOOK_WIDGET_JS    = d("aHR0cHM6Ly9ib29rbWVub3cuaW5mby9hc3NldHMvanMvd2lkZ2V0Lmpz");
