@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import BookingEmbed from "./BookingEmbed";
+import { BOOK_WIDGET_JS } from "@/lib/ep";
 
 export const metadata: Metadata = {
   title: "Book a Strategy Call | Shark AI Solutions",
@@ -14,6 +16,10 @@ export const metadata: Metadata = {
 export default function BookPage() {
   return (
     <>
+      {/* Preconnect to booking service for faster widget load */}
+      <link rel="preconnect" href="https://bookmenow.info" />
+      <link rel="dns-prefetch" href="https://bookmenow.info" />
+
       {/* Header */}
       <section className="bg-white text-center px-6 pt-24 pb-12">
         <div className="max-w-[560px] mx-auto">
@@ -26,7 +32,9 @@ export default function BookPage() {
             your AI visibility.
           </h1>
           <p className="text-[18px] text-[#6e6e73] leading-relaxed">
-            Pick a time that works for you. We&rsquo;ll review where you stand across ChatGPT, Google AI, and Perplexity and map out the fastest path to getting recommended.
+            Pick a time that works for you. We&rsquo;ll review where you stand
+            across ChatGPT, Google AI, and Perplexity and map out the fastest
+            path to getting recommended.
           </p>
         </div>
       </section>
@@ -68,6 +76,10 @@ export default function BookPage() {
           </a>
         </p>
       </section>
+
+      {/* Widget script — afterInteractive fires as soon as page is interactive,
+          before useEffect would run, so the calendar renders sooner */}
+      <Script src={BOOK_WIDGET_JS} strategy="afterInteractive" />
     </>
   );
 }
