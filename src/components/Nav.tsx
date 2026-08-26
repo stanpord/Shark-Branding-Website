@@ -274,6 +274,12 @@ export default function Nav() {
               (727) 513-3955
             </a>
             <Link
+              href="/book"
+              className="text-[13px] font-medium text-[#6e6e73] hover:text-[#18b5d8] motion-safe:transition-colors duration-150 whitespace-nowrap"
+            >
+              Book a Call
+            </Link>
+            <Link
               href="/ai-audit"
               className="btn-press bg-[#18b5d8] text-white text-[13px] font-semibold rounded-full px-5 py-2 hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 [touch-action:manipulation]"
             >
