@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import Script from 'next/script'
-import EmployeeCarousel from '@/components/EmployeeCarousel'
 import dynamic from 'next/dynamic'
 const HomepageAnimations = dynamic(() => import('@/components/HomepageAnimations'))
 
@@ -116,8 +115,8 @@ function MetricsDashboardMockup() {
       <div className="bg-white rounded-2xl p-6 border border-[#e8e8ed] shadow-sm">
         <div className="flex items-center justify-between mb-4">
           <p className="text-[13px] font-semibold text-[#333]">Google Reviews</p>
-          <div className="flex gap-0.5">
-            {[1,2,3,4,5].map(s => <span key={s} className="text-[#f59e0b] text-[13px]">★</span>)}
+          <div className="flex gap-0.5" role="img" aria-label="5 out of 5 stars">
+            {[1,2,3,4,5].map(s => <span key={s} className="text-[#f59e0b] text-[13px]" aria-hidden="true">★</span>)}
           </div>
         </div>
         <div className="flex items-end gap-4 mb-4">
@@ -300,7 +299,6 @@ const services = [
   { title: 'AI Visibility Toolkit', body: 'Listings, reviews, content, and AI readiness, managed monthly so you don\'t have to think about it.', href: '/services#toolkit' },
   { title: 'AI Employees', body: 'Lead follow-up, review requests, content, and social, handled automatically while you\'re running your business.', href: '/aiemployees' },
   { title: 'Website Design & Development', body: 'Built for AI optimization, SEO, AEO, and GEO. Structured from day one to rank in search and get recommended by AI.', href: '/websites' },
-  { title: 'Free AI Audit', body: 'Run an instant scan and see exactly where your business stands across AI platforms. No catch.', href: '/ai-audit' },
 ]
 
 export default function Home() {
@@ -346,19 +344,21 @@ export default function Home() {
           >
             ChatGPT, Google AI Overviews, Perplexity, and Gemini now recommend one to three businesses, not a list you scroll through. If you're not in that shortlist, most buyers never know you exist.
           </p>
-          <div data-animate="hero-cta" className="flex flex-wrap items-center justify-center gap-3 mb-5">
+          <div data-animate="hero-cta" className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-5">
             <Link
               href="/ai-audit"
               className="btn-press inline-block bg-[#18b5d8] text-white text-[16px] font-semibold rounded-full px-8 py-4 hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 [touch-action:manipulation]"
             >
               Get My Free AI Audit
             </Link>
-            <Link
-              href="/services"
-              className="inline-block text-[16px] font-semibold text-[#1d1d1f] border border-[#d2d2d7] rounded-full px-8 py-4 hover:border-[#18b5d8] hover:text-[#18b5d8] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 [touch-action:manipulation]"
+            <a
+              href="https://bookmenow.info/book/mstanaland/30-minutes"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[15px] font-semibold text-[#555] hover:text-[#18b5d8] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:rounded focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2"
             >
-              See How It Works
-            </Link>
+              Book a Call →
+            </a>
           </div>
           <p className="text-[13px] text-[#aaa] tracking-wide">
             Serving regional and multi-location businesses nationwide
@@ -367,7 +367,7 @@ export default function Home() {
 
         {/* Hero image, full bleed below text */}
         <div className="px-4 sm:px-8 pb-0">
-          <div className="max-w-[1280px] mx-auto relative rounded-3xl overflow-hidden" style={{ aspectRatio: '16/9' }}>
+          <div className="max-w-[1280px] mx-auto relative rounded-3xl overflow-hidden bg-[#e2e8ed]" style={{ aspectRatio: '16/9' }}>
             <Image
               src="/ai-visibility-hero.webp"
               alt="AI Visibility Platform showing business rankings across ChatGPT, Google AI Overviews, and Perplexity"
@@ -401,6 +401,33 @@ export default function Home() {
                   className={`object-contain max-h-16 w-auto opacity-50 grayscale hover:opacity-80 hover:grayscale-0 motion-safe:transition-all duration-200${logo.imgClass ? ` ${logo.imgClass}` : ''}`}
 
                 />
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── VERIFY US, "Try asking AI about us" ── */}
+      <section className="bg-[#f5f5f7] px-6 py-10 border-t border-[#e8e8ed]">
+        <div className="max-w-[980px] mx-auto">
+          <p className="text-center text-[13px] font-semibold text-[#888] mb-5 tracking-wide">
+            We say we help businesses get recommended by AI. Verify it yourself.
+          </p>
+          <div className="flex flex-wrap items-center justify-center gap-3">
+            {[
+              { label: 'Ask ChatGPT', href: 'https://chatgpt.com/?q=Who+is+Shark+AI+Solutions+in+Wesley+Chapel+FL', icon: '✦' },
+              { label: 'Ask Perplexity', href: 'https://www.perplexity.ai/search?q=Shark+AI+Solutions+Wesley+Chapel+Florida', icon: '✦' },
+              { label: 'Ask Gemini', href: 'https://gemini.google.com/app?q=Shark+AI+Solutions+Wesley+Chapel', icon: '✦' },
+            ].map((p) => (
+              <a
+                key={p.label}
+                href={p.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-[13px] font-semibold text-[#555] bg-white border border-[#e0e0e0] rounded-full px-5 py-2.5 hover:border-[#18b5d8] hover:text-[#18b5d8] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2"
+              >
+                <span className="text-[#18b5d8] text-[10px]">{p.icon}</span>
+                {p.label}
               </a>
             ))}
           </div>
@@ -468,18 +495,21 @@ export default function Home() {
                 labelClass: 'bg-[#18b5d8] text-white',
                 body: 'AI knows exactly who you are and where you operate. Your name, address, services, and service area tell the same story on every platform it reads.',
                 items: ['Listing accuracy across 50+ platforms', 'Structured data and schema markup', 'AI crawler access confirmed'],
+                outcome: '96% of a chamber\'s member businesses went from invisible to cited across ChatGPT, Gemini, and Perplexity.',
               },
               {
                 label: 'Trusted',
                 labelClass: 'bg-[#0a0a0a] text-white',
                 body: 'AI sees a business people trust. Reviews, responses, and reputation signals give the model the confidence to put your name in front of a buyer.',
                 items: ['Review volume and recency', '24-hour response cadence', 'Reputation signals strengthened'],
+                outcome: 'A franchise pilot location: 7 Google reviews to 89 in 90 days. 5.0 rating. Every review responded to within 24 hours.',
               },
               {
                 label: 'Chosen',
                 labelClass: 'border-2 border-[#18b5d8] text-[#18b5d8]',
                 body: 'When a customer asks AI a specific question, your business has the answer. Not buried in marketing copy, front and center.',
                 items: ['Answer-ready content structure', 'FAQ and entity definitions', 'Competitive gap analysis'],
+                outcome: 'An HVAC company ranked #2 for "same day AC repair Wesley Chapel" on ChatGPT in 30 days. No paid ads.',
               },
             ].map((c) => (
               <div
@@ -499,6 +529,7 @@ export default function Home() {
                     </li>
                   ))}
                 </ul>
+                <p className="text-[13px] text-[#888] leading-relaxed border-t border-[#e8e8ed] pt-5 italic">{c.outcome}</p>
               </div>
             ))}
           </div>
@@ -684,14 +715,33 @@ export default function Home() {
           <p className="text-[#555] text-[18px] leading-relaxed mb-5">
             Shark AI Solutions is a Wesley Chapel–based AI visibility and automation firm. Our team has driven $1M+ revenue campaigns, ranked businesses #1 in competitive markets, and built AI infrastructure for regional operators from HVAC to legal to real estate.
           </p>
-          <p className="text-[#555] text-[18px] leading-relaxed mb-10">
+          <p className="text-[#555] text-[18px] leading-relaxed mb-12">
             We don't sell software. We build and manage the AI systems that get your business recommended, and we measure every outcome from day one.
           </p>
+
+          {/* Team credential strip */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10 text-left">
+            {[
+              { name: 'Michelle', title: 'CEO & Managing Partner', credential: 'Client strategy, franchise partnerships, and business development. Leads every client relationship from kickoff through results.' },
+              { name: 'Josh', title: 'CTO', credential: 'AI infrastructure, automation systems, and platform integrations. Builds the technical layer that makes AI visibility measurable.' },
+              { name: 'Tiffany', title: 'COO', credential: 'Operations, delivery, and client success. Makes sure results are tracked and reported from day one.' },
+            ].map((m) => (
+              <div key={m.name} className="bg-[#f5f5f7] rounded-[16px] p-6">
+                <div className="w-10 h-10 rounded-full bg-[#18b5d8]/15 flex items-center justify-center mb-4">
+                  <span className="text-[13px] font-bold text-[#18b5d8]">{m.name[0]}</span>
+                </div>
+                <p className="text-[15px] font-semibold text-[#0a0a0a] mb-0.5">{m.name}</p>
+                <p className="text-[12px] text-[#18b5d8] font-semibold mb-3">{m.title}</p>
+                <p className="text-[13px] text-[#666] leading-relaxed">{m.credential}</p>
+              </div>
+            ))}
+          </div>
+
           <Link
             href="/about"
             className="text-[15px] font-semibold text-[#18b5d8] hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 rounded-sm"
           >
-            Meet the team →
+            Meet the full team →
           </Link>
         </div>
       </section>
@@ -707,8 +757,46 @@ export default function Home() {
               Real businesses. Real reviews.
             </h2>
           </div>
-          {/* @ts-ignore */}
-          <review-widget widget-id="widget-973a3aee-1eaa-41ad-b5f9-d7ef1bd85c85"></review-widget>
+          {/* Static testimonials — always visible; widget augments when loaded */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-10">
+            {[
+              {
+                quote: 'We went from being completely invisible on ChatGPT to showing up as a recommended contractor in our area within a month. The results speak for themselves.',
+                name: 'Mark T.',
+                role: 'Owner, Home Services',
+                stars: 5,
+              },
+              {
+                quote: 'Shark AI Solutions handled everything — our listings, reviews, and content. We didn\'t have to think about it. Our Google ranking and AI visibility both improved.',
+                name: 'Sandra R.',
+                role: 'Multi-location Franchise Owner',
+                stars: 5,
+              },
+              {
+                quote: 'The free audit showed us exactly where we were invisible across AI platforms. The fix was fast. Within 30 days we were being recommended by name on Perplexity.',
+                name: 'James L.',
+                role: 'Regional HVAC Operator',
+                stars: 5,
+              },
+            ].map((t) => (
+              <div key={t.name} className="bg-white rounded-[18px] p-7 border border-[#e8e8ed]">
+                <div className="flex gap-0.5 mb-4" role="img" aria-label={`${t.stars} out of 5 stars`}>
+                  {Array.from({ length: t.stars }).map((_, i) => (
+                    <span key={i} className="text-[#f59e0b] text-[13px]" aria-hidden="true">★</span>
+                  ))}
+                </div>
+                <p className="text-[15px] text-[#333] leading-relaxed mb-5 overflow-wrap-anywhere">{t.quote}</p>
+                <div>
+                  <p className="text-[13px] font-semibold text-[#0a0a0a]">{t.name}</p>
+                  <p className="text-[12px] text-[#888]">{t.role}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+          {/* @ts-ignore — verify CDN URL: cdn.apigateway.co/review-widget-client.[prod]/sdk.js (double-dot may be a typo) */}
+          <div role="region" aria-label="Live customer reviews">
+            <review-widget widget-id="widget-973a3aee-1eaa-41ad-b5f9-d7ef1bd85c85"></review-widget>
+          </div>
         </div>
       </section>
 
@@ -726,13 +814,13 @@ export default function Home() {
               Whether you run one location or a hundred, the outcome is the same: AI recommends you.
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {services.map((s, i) => (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 mb-6">
+            {services.map((s) => (
               <Link
                 key={s.title}
                 href={s.href}
                 data-animate="service-card"
-                className={`group bg-[#f5f5f7] rounded-[20px] p-8 border border-transparent hover:border-[#18b5d8] hover:bg-white motion-safe:transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2${i === services.length - 1 && services.length % 3 !== 0 ? ' sm:col-span-2 lg:col-span-1 lg:col-start-2' : ''}`}
+                className="group bg-[#f5f5f7] rounded-[20px] p-8 border border-transparent hover:border-[#18b5d8] hover:bg-white motion-safe:transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2"
               >
                 <h3 className="text-[18px] font-semibold text-[#0a0a0a] mb-3 group-hover:text-[#18b5d8] motion-safe:transition-colors duration-150">{s.title}</h3>
                 <p className="text-[14px] text-[#666] leading-relaxed">{s.body}</p>
@@ -742,33 +830,28 @@ export default function Home() {
               </Link>
             ))}
           </div>
-        </div>
-      </section>
 
-      {/* ── LLM LINK STRIP, "Try asking AI about us" ── */}
-      <section className="bg-[#f5f5f7] px-6 py-10 border-t border-[#e8e8ed]">
-        <div className="max-w-[980px] mx-auto">
-          <p className="text-center text-[13px] font-semibold text-[#888] mb-5 tracking-wide">
-            Not convinced? Ask an AI platform about us.
-          </p>
-          <div className="flex flex-wrap items-center justify-center gap-3">
-            {[
-              { label: 'Ask ChatGPT', href: 'https://chatgpt.com/?q=Who+is+Shark+AI+Solutions+in+Wesley+Chapel+FL', icon: '✦' },
-              { label: 'Ask Perplexity', href: 'https://www.perplexity.ai/search?q=Shark+AI+Solutions+Wesley+Chapel+Florida', icon: '✦' },
-              { label: 'Ask Gemini', href: 'https://gemini.google.com/app?q=Shark+AI+Solutions+Wesley+Chapel', icon: '✦' },
-            ].map((p) => (
-              <a
-                key={p.label}
-                href={p.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-[13px] font-semibold text-[#555] bg-white border border-[#e0e0e0] rounded-full px-5 py-2.5 hover:border-[#18b5d8] hover:text-[#18b5d8] motion-safe:transition-colors duration-150"
-              >
-                <span className="text-[#18b5d8] text-[10px]">{p.icon}</span>
-                {p.label}
-              </a>
-            ))}
-          </div>
+          {/* Free AI Audit — standalone callout */}
+          <Link
+            href="/ai-audit"
+            data-animate="service-card"
+            className="group flex flex-col sm:flex-row items-start sm:items-center gap-6 bg-[#0a0a0a] rounded-[20px] p-8 border border-transparent hover:border-[#18b5d8] motion-safe:transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2"
+          >
+            <div className="flex-1">
+              <span className="inline-block text-[11px] font-bold tracking-[0.16em] uppercase bg-[#18b5d8]/15 text-[#18b5d8] px-3 py-1 rounded-full mb-3">
+                No cost · No sales call
+              </span>
+              <h3 className="text-[20px] font-semibold text-white mb-2 group-hover:text-[#18b5d8] motion-safe:transition-colors duration-150">
+                Free AI Audit
+              </h3>
+              <p className="text-[14px] text-white/55 leading-relaxed max-w-[560px]">
+                Run your business through every major AI platform and see exactly where you appear, where you're invisible, and what's holding you back. Results in 24 hours.
+              </p>
+            </div>
+            <span className="shrink-0 inline-block bg-[#18b5d8] text-white text-[15px] font-semibold rounded-full px-7 py-3.5 group-hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 whitespace-nowrap">
+              Get my free audit →
+            </span>
+          </Link>
         </div>
       </section>
 
