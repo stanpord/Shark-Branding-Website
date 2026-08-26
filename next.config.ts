@@ -115,6 +115,7 @@ const nextConfig: NextConfig = {
       { source: "/land-o-lakes-marketing-consultant", destination: "/wesley-chapel", permanent: true },
       { source: "/how-to-rank-on-chatgpt", destination: "/how-to-rank-on-chatgpt-for-local-businesses", permanent: true },
       { source: "/enterprise", destination: "/franchises", permanent: false },
+      { source: "/plans", destination: "/contact", permanent: true },
       { source: "/wesley-chapel-marketing-consultant", destination: "/wesley-chapel", permanent: true },
       { source: "/blog-hvac-invisible-to-number-2-local-search", destination: "/aiemployees/hvac", permanent: true },
       { source: "/what-is-geo-generative-engine-optimization", destination: "/ai-visibility-consulting", permanent: true },

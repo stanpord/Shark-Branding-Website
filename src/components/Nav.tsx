@@ -42,7 +42,6 @@ const resourcesDropdown = [
 
 const flatLinks = [
   { href: "/case-studies", label: "Case Studies" },
-  { href: "/plans", label: "Plans" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -267,7 +266,13 @@ export default function Nav() {
           </ul>
 
           {/* Desktop CTA */}
-          <div className="hidden lg:flex items-center">
+          <div className="hidden lg:flex items-center gap-4">
+            <a
+              href="tel:+17275133955"
+              className="text-[13px] font-medium text-[#6e6e73] hover:text-[#18b5d8] motion-safe:transition-colors duration-150 whitespace-nowrap"
+            >
+              (727) 513-3955
+            </a>
             <Link
               href="/ai-audit"
               className="btn-press bg-[#18b5d8] text-white text-[13px] font-semibold rounded-full px-5 py-2 hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 [touch-action:manipulation]"
