@@ -12,7 +12,7 @@ export default function AuditModal() {
   const containerRef = useRef<HTMLDivElement>(null);
 
   const openModal = useCallback(() => { setOpen(true); setSubmitted(false); }, []);
-  const closeModal = useCallback(() => setOpen(false), []);
+  const closeModal = useCallback(() => { setOpen(false); setLoaded(false); }, []);
 
   useEffect(() => {
     window.addEventListener("open-audit-modal", openModal);
