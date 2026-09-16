@@ -230,6 +230,7 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
+        <script dangerouslySetInnerHTML={{ __html: `(function(){var params=new URLSearchParams(window.location.search);if(params.get('auto')==='1'){window.addEventListener('load',function(){setTimeout(function(){var btn=Array.from(document.querySelectorAll('button, a')).find(function(el){return el.textContent.trim()==='Get My Free AI Audit';});if(btn)btn.click();},300);});}})();` }} />
       </head>
       <body className="min-h-full flex flex-col antialiased">
         <a
