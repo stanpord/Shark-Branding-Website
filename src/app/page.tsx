@@ -854,6 +854,44 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ── SEE HOW AI RANKS US ── */}
+      <section className="bg-[#f5f5f7] px-6 py-16 sm:py-20 border-t border-[#e8e8ed]">
+        <div className="max-w-[780px] mx-auto text-center">
+          <p className="text-[11px] font-bold tracking-[0.22em] uppercase text-[#aaa] mb-3">
+            Verify It Yourself
+          </p>
+          <h2
+            className="text-[#0a0a0a] mb-4 font-semibold tracking-tight"
+            style={{ fontSize: 'clamp(1.5rem, 2.5vw, 2rem)', textWrap: 'balance' } as React.CSSProperties}
+          >
+            See how we show up across AI platforms
+          </h2>
+          <p className="text-[#555] text-[16px] leading-relaxed mb-10 max-w-[480px] mx-auto">
+            We help businesses get recommended by AI. Click any platform to check for yourself.
+          </p>
+          <div className="flex flex-wrap items-center justify-center gap-3">
+            {[
+              { label: 'ChatGPT', href: 'https://chatgpt.com/?q=Who+is+Shark+AI+Solutions+in+Wesley+Chapel+FL', dot: '#10a37f' },
+              { label: 'Perplexity', href: 'https://www.perplexity.ai/search?q=Shark+AI+Solutions+Wesley+Chapel+Florida', dot: '#20808D' },
+              { label: 'Gemini', href: 'https://gemini.google.com/app?q=Shark+AI+Solutions+Wesley+Chapel', dot: '#7c3aed' },
+              { label: 'Google AI Overview', href: 'https://www.google.com/search?q=Shark+AI+Solutions+Wesley+Chapel+FL', dot: '#4285f4' },
+            ].map((p) => (
+              <a
+                key={p.label}
+                href={p.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2.5 text-[14px] font-semibold text-[#333] bg-white border border-[#e0e0e0] rounded-full px-6 py-3 hover:border-[#18b5d8] hover:text-[#18b5d8] shadow-sm motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2"
+              >
+                <span className="w-2 h-2 rounded-full shrink-0" style={{ backgroundColor: p.dot }} />
+                {p.label}
+                <span className="text-[#ccc] text-[12px]">↗</span>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ── CTA ── */}
       <section data-scene="cta" className="bg-[#0a0a0a] py-28 sm:py-44 px-6 text-center border-t border-white/5">
         <div className="max-w-[600px] mx-auto relative z-10">
