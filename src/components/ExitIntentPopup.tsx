@@ -1,15 +1,12 @@
 "use client";
 
 import { useEffect, useState, useRef } from "react";
-import { useRouter } from "next/navigation";
-
 export default function ExitIntentPopup() {
   const [visible, setVisible] = useState(false);
   const [businessName, setBusinessName] = useState("");
   const [email, setEmail] = useState("");
   const enabled = useRef(false);
   const triggered = useRef(false);
-  const router = useRouter();
 
   useEffect(() => {
     if (sessionStorage.getItem("exit_popup_dismissed")) return;
@@ -51,7 +48,7 @@ export default function ExitIntentPopup() {
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     dismiss();
-    router.push("/ai-audit");
+    window.dispatchEvent(new CustomEvent("open-audit-modal"));
   }
 
   if (!visible) return null;

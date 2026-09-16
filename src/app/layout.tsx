@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import ChatWidget from "@/components/ChatWidget";
 import ExitIntentPopup from "@/components/ExitIntentPopup";
 import AuditModal from "@/components/AuditModal";
+import AuditLinkInterceptor from "@/components/AuditLinkInterceptor";
 import { Analytics } from "@vercel/analytics/next";
 import Script from "next/script";
 
@@ -243,6 +244,7 @@ export default function RootLayout({
         <ChatWidget />
         <ExitIntentPopup />
         <AuditModal />
+        <AuditLinkInterceptor />
         <Analytics />
         <Script
           src="https://analytics.ahrefs.com/analytics.js"
