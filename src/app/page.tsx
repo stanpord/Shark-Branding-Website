@@ -1,10 +1,10 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
-import Script from 'next/script'
 import dynamic from 'next/dynamic'
-import { BOOK_M_30, REVIEW_SDK } from '@/lib/ep'
+import { BOOK_M_30 } from '@/lib/ep'
 const HomepageAnimations = dynamic(() => import('@/components/HomepageAnimations'))
+const LazyReviewWidget = dynamic(() => import('@/components/LazyReviewWidget'))
 
 /* ── CSS Mockup: Multi-platform AI Recommendation Panel ── */
 function AiRecommendMockup() {
@@ -309,7 +309,6 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(homepageFAQ) }}
       />
-      <Script src={REVIEW_SDK} strategy="lazyOnload" />
       <HomepageAnimations />
 
       {/* ── HERO ── */}
@@ -792,10 +791,7 @@ export default function Home() {
               </div>
             ))}
           </div>
-          {/* @ts-ignore — verify CDN URL: cdn.apigateway.co/review-widget-client.[prod]/sdk.js (double-dot may be a typo) */}
-          <div role="region" aria-label="Live customer reviews">
-            <review-widget widget-id="widget-973a3aee-1eaa-41ad-b5f9-d7ef1bd85c85"></review-widget>
-          </div>
+          <LazyReviewWidget widgetId="widget-973a3aee-1eaa-41ad-b5f9-d7ef1bd85c85" />
         </div>
       </section>
 
