@@ -4,7 +4,7 @@ import Script from "next/script";
 import { useState, useEffect } from "react";
 import { CHAT_SDK } from "@/lib/ep";
 
-const WIDGET_ID = "b9dd1fd7-88ec-11f0-91f4-3228900e0384";
+const WIDGET_ID = "8ee4a57a-2a34-11f1-a54e-268b4f3b96a8";
 
 export default function ChatWidget() {
   const [ready, setReady] = useState(false);
