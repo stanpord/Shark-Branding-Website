@@ -13,6 +13,7 @@ export const metadata: Metadata = {
   title: "MANA CPA Services | Delaware & Florida",
   description:
     "A CPA firm that partners with you for your success. Individual, small business, and corporate accounting and tax services in Delaware and Florida.",
+  robots: { index: false, follow: false },
 };
 
 const NAV = "#0c1829";
