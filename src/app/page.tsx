@@ -371,7 +371,6 @@ export default function Home() {
               alt="AI Visibility Platform showing business rankings across ChatGPT, Google AI Overviews, and Perplexity"
               fill
               className="object-cover object-center"
-              priority
               sizes="(max-width: 1280px) 100vw, 1280px"
             />
           </div>

@@ -353,6 +353,8 @@ function initMobile() {
   }, { threshold: 0.1 })
 
   document.querySelectorAll('[data-animate]').forEach(el => {
+    // Leave already-visible content alone: hiding it delays LCP on mobile
+    if (el.getBoundingClientRect().top < window.innerHeight) return
     ;(el as HTMLElement).style.opacity = '0'
     ;(el as HTMLElement).style.transform = 'translateY(20px)'
     ;(el as HTMLElement).style.transition = 'opacity 0.5s ease, transform 0.5s ease'
