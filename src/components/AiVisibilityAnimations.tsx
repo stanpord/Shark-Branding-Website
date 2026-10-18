@@ -1,8 +1,6 @@
 'use client'
 
 import { useEffect } from 'react'
-import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 function splitWords(el: HTMLElement): HTMLElement[] {
   const text = el.textContent || ''
@@ -21,7 +19,7 @@ export default function AiVisibilityAnimations() {
       initMobile(); return
     }
 
-    const init = () => {
+    const init = (gsap: any, ScrollTrigger: any) => {
       gsap.registerPlugin(ScrollTrigger)
 
       // ── Hero ──────────────────────────────────────────────────────────
@@ -122,10 +120,18 @@ export default function AiVisibilityAnimations() {
       ScrollTrigger.refresh()
     }
 
-    init()
+    // Desktop only: load GSAP on demand so phones never download it
+    let cancelled = false
+    let cleanup = () => {}
+    Promise.all([import('gsap'), import('gsap/ScrollTrigger')]).then(([{ default: gsap }, { ScrollTrigger }]) => {
+      if (cancelled) return
+      init(gsap, ScrollTrigger)
+      cleanup = () => ScrollTrigger.getAll().forEach((st: any) => st.kill())
+    })
 
     return () => {
-      ScrollTrigger.getAll().forEach((st: any) => st.kill())
+      cancelled = true
+      cleanup()
     }
   }, [])
 

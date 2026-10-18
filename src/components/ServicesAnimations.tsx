@@ -1,8 +1,6 @@
 'use client'
 
 import { useEffect } from 'react'
-import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 function splitWords(el: HTMLElement): HTMLElement[] {
   const text = el.textContent || ''
@@ -21,23 +19,34 @@ export default function ServicesAnimations() {
       initMobile(); return
     }
 
-    gsap.registerPlugin(ScrollTrigger)
+    // Desktop only: load GSAP on demand so phones never download it
+    let cancelled = false
+    let cleanup = () => {}
+    Promise.all([import('gsap'), import('gsap/ScrollTrigger')]).then(([{ default: gsap }, { ScrollTrigger }]) => {
+      if (cancelled) return
+      gsap.registerPlugin(ScrollTrigger)
 
-    const cleanupFns: (() => void)[] = [
-      initHero(gsap, ScrollTrigger),
-      initShift(gsap, ScrollTrigger),
-      initFilters(gsap, ScrollTrigger),
-      initServiceSections(gsap, ScrollTrigger),
-      initComparisons(gsap, ScrollTrigger),
-      initFAQ(gsap, ScrollTrigger),
-      initCTA(gsap, ScrollTrigger),
-    ]
+      const cleanupFns: (() => void)[] = [
+        initHero(gsap, ScrollTrigger),
+        initShift(gsap, ScrollTrigger),
+        initFilters(gsap, ScrollTrigger),
+        initServiceSections(gsap, ScrollTrigger),
+        initComparisons(gsap, ScrollTrigger),
+        initFAQ(gsap, ScrollTrigger),
+        initCTA(gsap, ScrollTrigger),
+      ]
 
-    ScrollTrigger.refresh()
+      ScrollTrigger.refresh()
+
+      cleanup = () => {
+        cleanupFns.forEach(fn => fn?.())
+        ScrollTrigger.getAll().forEach((st: any) => st.kill())
+      }
+    })
 
     return () => {
-      cleanupFns.forEach(fn => fn?.())
-      ScrollTrigger.getAll().forEach((st: any) => st.kill())
+      cancelled = true
+      cleanup()
     }
   }, [])
 
