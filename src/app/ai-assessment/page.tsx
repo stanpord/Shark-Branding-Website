@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import BookingWidget from "./BookingWidget";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://shark-ai-solutions.com/ai-assessment" },
   title: "Free 15-Minute AI Assessment | Shark AI Solutions",
   description:
     "Book your complimentary 15-minute AI assessment. Find out which AI employee or automation could start working in your business today.",

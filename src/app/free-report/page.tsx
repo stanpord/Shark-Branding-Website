@@ -58,6 +58,7 @@ const freeReportSchema = {
 };
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://shark-ai-solutions.com/free-report" },
   title: "Free AI Visibility Audit | Shark AI Solutions",
   description:
     "See exactly how your business appears across search, maps, reviews, and AI platforms. We walk through every finding with you in a free 1-hour session.",

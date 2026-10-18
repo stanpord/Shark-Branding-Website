@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://shark-ai-solutions.com/operations" },
   title: "AI Operations Employees | Shark AI Solutions",
   description:
     "AI-powered operations employees for Tampa Bay businesses. AI CRM, sales coach employees, and custom automation that runs your back office around the clock.",

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://shark-ai-solutions.com/privacy" },
   title: "Privacy Policy | Shark AI Solutions",
   description: "Privacy Policy for Shark AI Solutions. Learn how we collect, use, and protect your personal information.",
 };

@@ -114,6 +114,7 @@ const servicesSchema = {
 };
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://shark-ai-solutions.com/services" },
   title: "AI Visibility Services & AI Employees | Shark AI Solutions",
   description:
     "AI visibility consulting, AI employees, and automation for Tampa Bay local businesses. Get found on ChatGPT and Google AI, automate leads and reviews, and grow without adding headcount.",

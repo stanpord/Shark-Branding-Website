@@ -13,6 +13,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://shark-ai-solutions.com/resources" },
   title: "AI Visibility Resources & Blog | Shark AI Solutions",
   description:
     "Guides, insights, and practical advice on AI visibility, local SEO, and marketing for Tampa Bay businesses.",

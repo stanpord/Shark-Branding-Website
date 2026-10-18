@@ -13,14 +13,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/websites`, lastModified: "2026-08-09", changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE}/local-seo`, lastModified: "2026-08-10", changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE}/free-report`, lastModified: "2026-05-01", changeFrequency: "monthly", priority: 0.9 },
-    { url: `${BASE}/plans`, lastModified: "2026-05-01", changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE}/operations`, lastModified: "2026-05-01", changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE}/case-studies`, lastModified: "2026-05-01", changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE}/ai-assessment`, lastModified: "2026-05-01", changeFrequency: "monthly", priority: 0.7 },
-    { url: `${BASE}/chamber`, lastModified: "2026-05-01", changeFrequency: "monthly", priority: 0.7 },
 
     { url: `${BASE}/franchises`, lastModified: "2026-07-01", changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE}/faq`, lastModified: "2026-08-10", changeFrequency: "monthly", priority: 0.8 },
+
+    // ── AI visibility service pages ──
+    { url: `${BASE}/aeo-consulting`, lastModified: "2026-08-05", changeFrequency: "monthly", priority: 0.8 },
+    { url: `${BASE}/ai-search-optimization`, lastModified: "2026-08-05", changeFrequency: "monthly", priority: 0.8 },
+    { url: `${BASE}/entity-optimization`, lastModified: "2026-08-05", changeFrequency: "monthly", priority: 0.8 },
+    { url: `${BASE}/get-found-on-chatgpt`, lastModified: "2026-08-05", changeFrequency: "monthly", priority: 0.8 },
+    { url: `${BASE}/llms-txt-optimization`, lastModified: "2026-08-05", changeFrequency: "monthly", priority: 0.7 },
+    { url: `${BASE}/ai-informations`, lastModified: "2026-08-05", changeFrequency: "monthly", priority: 0.6 },
+    { url: `${BASE}/campaigns`, lastModified: "2026-08-09", changeFrequency: "monthly", priority: 0.7 },
+    { url: `${BASE}/cfo-advisor`, lastModified: "2026-08-26", changeFrequency: "monthly", priority: 0.7 },
+    { url: `${BASE}/cmo-advisor`, lastModified: "2026-08-26", changeFrequency: "monthly", priority: 0.7 },
 
     // ── How-to / landing ──
     { url: `${BASE}/how-to-rank-on-chatgpt-for-local-businesses`, lastModified: "2026-06-12", changeFrequency: "monthly", priority: 0.8 },
@@ -76,6 +85,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/resources/blog-what-is-ai-sales-manager`, lastModified: "2026-05-01", changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE}/resources/blog-what-is-ai-sales-assistant-bant-sandler`, lastModified: "2026-05-01", changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE}/resources/ai-customer-acquisition-statistics-2026`, lastModified: "2026-06-01", changeFrequency: "monthly", priority: 0.7 },
+    { url: `${BASE}/resources/blog-ai-search-optimization-win-citations`, lastModified: "2026-10-05", changeFrequency: "monthly", priority: 0.7 },
+    { url: `${BASE}/resources/blog-generative-engine-optimization-2026`, lastModified: "2026-10-05", changeFrequency: "monthly", priority: 0.7 },
+    { url: `${BASE}/resources/blog-full-ai-suite-pricing`, lastModified: "2026-08-05", changeFrequency: "monthly", priority: 0.7 },
 
     // ── Company pages ──
     { url: `${BASE}/about`, lastModified: "2026-05-01", changeFrequency: "monthly", priority: 0.7 },

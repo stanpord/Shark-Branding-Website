@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://shark-ai-solutions.com/case-studies" },
   title: "Case Studies: Documented AI Visibility Results | Shark AI Solutions",
   description:
     "HVAC, real estate, smart vending, and chamber of commerce, four documented businesses that went from invisible to #1 in AI search in under 30 days.",

@@ -115,6 +115,7 @@ const structuredData = {
 };
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://shark-ai-solutions.com/about" },
   title: "About Shark AI Solutions | AI Consulting in Tampa Bay",
   description:
     "Meet the team behind Shark AI Solutions. Michelle Stanaland, Managing Partner and Founder, and the leadership driving AI strategy for Tampa Bay businesses.",

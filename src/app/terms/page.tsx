@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://shark-ai-solutions.com/terms" },
   title: "Terms of Service | Shark AI Solutions",
   description: "Terms of Service for Shark AI Solutions. Review the terms governing use of our website and SMS messaging program.",
 };

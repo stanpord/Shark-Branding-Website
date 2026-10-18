@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://shark-ai-solutions.com/chamber" },
   title: "AI Visibility for Chamber Members | Shark AI Solutions",
   description: "Exclusive AI visibility offer for North Tampa Bay Chamber members.",
   robots: { index: false, follow: false },
