@@ -22,7 +22,7 @@ export default function CaseStudiesPage() {
           >
             Real clients.<br />
             <span className="text-[#18b5d8]">Real rankings.</span><br />
-            30 days.
+            Documented.
           </h1>
           <p
             className="text-[#6e6e73] text-[19px] leading-relaxed max-w-[540px] mx-auto mb-12"
@@ -32,15 +32,14 @@ export default function CaseStudiesPage() {
           </p>
 
           {/* Aggregate stats */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-12 max-w-[640px] mx-auto">
+          <div className="grid grid-cols-3 gap-4 mb-12 max-w-[520px] mx-auto">
             {[
-              { v: "4",   label: "Industries" },
-              { v: "30d", label: "Time to results" },
-              { v: "11",  label: "#1 Maps rankings" },
-              { v: "3",   label: "AI platforms" },
+              { v: "4",      label: "Industries" },
+              { v: "30–90d", label: "Time to results" },
+              { v: "3",      label: "AI platforms" },
             ].map((s) => (
-              <div key={s.label} className="bg-white rounded-xl border border-[#e5e5ea] px-4 py-5 text-center">
-                <p className="text-[32px] font-extrabold text-[#18b5d8] leading-none mb-1">{s.v}</p>
+              <div key={s.label} className="bg-white rounded-xl border border-[#e5e5ea] px-2 sm:px-4 py-5 text-center">
+                <p className="text-[22px] sm:text-[32px] font-extrabold text-[#18b5d8] leading-none mb-1 whitespace-nowrap">{s.v}</p>
                 <p className="text-[11px] text-[#6e6e73] uppercase tracking-[0.08em] font-semibold">{s.label}</p>
               </div>
             ))}
