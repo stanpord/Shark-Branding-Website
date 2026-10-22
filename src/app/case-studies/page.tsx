@@ -204,7 +204,7 @@ export default function CaseStudiesPage() {
               className="text-[36px] sm:text-[44px] font-extrabold text-white leading-tight tracking-[-0.02em]"
               style={{ textWrap: "balance" } as React.CSSProperties}
             >
-              Daily Google impressions <span className="text-[#18b5d8]">doubled</span> in 3 months.
+              Daily AI impressions <span className="text-[#18b5d8]">doubled</span> in 3 months.
             </h2>
           </div>
         </div>
@@ -212,8 +212,8 @@ export default function CaseStudiesPage() {
         <div className="bg-[#f5f5f7] border-b border-[#e5e5ea] px-6 py-12">
           <div className="max-w-[1000px] mx-auto grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-[#e5e5ea]">
             {[
-              { v: "2×",    label: "Daily impressions", sub: "about 11 a day to 23 a day" },
-              { v: "2.14K", label: "Google impressions", sub: "last 3 months, up from 697" },
+              { v: "2×",    label: "Daily AI impressions", sub: "about 11 a day to 23 a day" },
+              { v: "2.14K", label: "AI impressions", sub: "last 3 months, up from 697" },
               { v: "8",     label: "Keywords up",        sub: "190 ranks gained combined" },
             ].map((s) => (
               <div key={s.label} className="py-6 sm:py-0 sm:px-6 text-center sm:first:pl-0 sm:last:pr-0">
@@ -232,13 +232,13 @@ export default function CaseStudiesPage() {
               <div>
                 <p className="text-[14px] font-bold text-[#1d1d1f] mb-3">The Problem</p>
                 <p className="text-[#6e6e73] text-[17px] leading-relaxed">
-                  This physician practice wasn&rsquo;t showing up much in AI search. Patients increasingly ask ChatGPT, Gemini, and Google&rsquo;s AI who to see, and AI can only recommend a practice it can find and trust. Before we started, the practice averaged about 11 Google search impressions a day.
+                  This physician practice wasn&rsquo;t showing up much in AI search. Patients increasingly ask ChatGPT, Gemini, and Google&rsquo;s AI who to see, and AI can only recommend a practice it can find and trust. Before we started, the practice averaged about 11 AI impressions a day.
                 </p>
               </div>
               <div>
                 <p className="text-[14px] font-bold text-[#1d1d1f] mb-3">What We Did</p>
                 <p className="text-[#6e6e73] text-[17px] leading-relaxed">
-                  Over three months, we made targeted fixes to the practice&rsquo;s website and worked through the same AI visibility process we use for every client, closing the gaps that kept search engines and AI from understanding and trusting the practice. By the end, the practice was averaging about 23 Google search impressions a day, more than double where it started, and 8 tracked keywords had climbed a combined 190 ranks.
+                  Over three months, we made targeted fixes to the practice&rsquo;s website and worked through the same AI visibility process we use for every client, closing the gaps that kept search engines and AI from understanding and trusting the practice. By the end, the practice was averaging about 23 AI impressions a day, more than double where it started, and 8 tracked keywords had climbed a combined 190 ranks.
                 </p>
               </div>
             </div>
@@ -246,11 +246,11 @@ export default function CaseStudiesPage() {
             {/* Screenshot */}
             <div className="bg-[#07141a] rounded-[14px] overflow-hidden border border-[#18b5d8]/15 mb-14">
               <div className="px-6 pt-5 pb-3">
-                <p className="text-[11px] font-bold text-[#18b5d8]/60 uppercase tracking-[0.18em]">Google Search Console, Total Impressions, Last 3 Months vs Previous</p>
+                <p className="text-[11px] font-bold text-[#18b5d8]/60 uppercase tracking-[0.18em]">AI Impressions, Last 3 Months vs Previous</p>
               </div>
               <Image
                 src="/case-studies/physician/search-impressions.png"
-                alt="Google Search Console chart showing 2.14K impressions in the last 3 months compared with 697 in the previous period"
+                alt="Chart showing 2.14K AI impressions in the last 3 months compared with 697 in the previous period"
                 width={1377}
                 height={577}
                 className="w-full h-auto bg-white"
