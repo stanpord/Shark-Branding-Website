@@ -424,13 +424,13 @@ export default function VsSeoPage() {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="bg-[#07141a] rounded-[20px] p-8 border border-white/8">
-              <p className="text-[11px] font-bold tracking-[0.18em] uppercase text-white/30 mb-5">Tampa Bay HVAC Company</p>
+              <p className="text-[11px] font-bold tracking-[0.18em] uppercase text-white/30 mb-5">Wesley Chapel Water Damage &amp; Mold Company · Google Maps</p>
               <div className="space-y-2 mb-6">
                 {[
-                  ["Same day AC repair", "#32", "#2"],
-                  ["Air conditioning service near me", "#31", "#2"],
-                  ["HVAC near me", "#27", "#2"],
-                  ["Emergency AC repair", "#21", "#3"],
+                  ["Mold remediation Wesley Chapel", "#9", "#1"],
+                  ["Water damage cleanup", "#25", "#1"],
+                  ["Water damage restoration companies", "NR", "#1"],
+                  ["Water restoration company", "#35", "#5"],
                 ].map(([kw, before, after]) => (
                   <div key={kw} className="flex items-center justify-between text-[13px]">
                     <span className="text-white/50">{kw}</span>
@@ -444,7 +444,7 @@ export default function VsSeoPage() {
                   </div>
                 ))}
               </div>
-              <p className="text-[12px] text-white/30">30 days · No paid ads · Done For You plan</p>
+              <p className="text-[12px] text-white/30">30 days · No paid ads · No website changes</p>
               <Link
                 href="/case-studies"
                 className="inline-flex items-center gap-1.5 mt-4 text-[13px] font-semibold text-[#18b5d8] hover:underline"

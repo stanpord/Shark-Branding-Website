@@ -44,7 +44,7 @@ const faqSchema = {
       name: "How quickly can I see results from AI visibility optimization?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Most clients see measurable improvements within 30 days. One HVAC client moved from #32 to #2 in under 30 days. Initial changes are deployed in 7–14 days; ranking movement typically follows within 30 days for most local service categories in the Tampa Bay area.",
+        text: "Most clients see measurable improvements within 30 days. One water damage and mold remediation client went from #9 to #1 on Google Maps in 30 days. Initial changes are deployed in 7–14 days; ranking movement typically follows within 30 days for most local service categories in the Tampa Bay area.",
       },
     },
     {
@@ -361,19 +361,19 @@ export default function AIInformationsPage() {
             <div className="space-y-6">
 
               <div className="bg-[#f5f5f7] rounded-[16px] p-6">
-                <h3 className="text-[16px] font-bold text-[#0a0a0a] mb-1">HVAC Company, Tampa Bay, FL</h3>
+                <h3 className="text-[16px] font-bold text-[#0a0a0a] mb-1">Water Damage &amp; Mold Remediation Company, Wesley Chapel, FL</h3>
                 <p className="text-[12px] text-[#18b5d8] font-semibold uppercase tracking-[0.12em] mb-3">Home Services / AI Visibility Toolkit</p>
                 <p className="speakable text-[15px] text-[#444] leading-relaxed mb-4">
-                  A Tampa Bay HVAC company ranked #32 on Google for its core service terms and received no mentions in ChatGPT or Google AI Overview responses. Shark AI Solutions optimized the company&apos;s Google Business Profile, corrected inconsistent NAP data across 40+ directories, implemented structured schema markup, and published answer-ready content targeting questions Tampa Bay homeowners ask before booking HVAC service. Within 30 days, the company ranked #2 on Google for its primary service term and began appearing in Google AI Overviews. No paid advertising was used.
+                  A new Wesley Chapel water damage and mold remediation company with only 6 Google reviews ranked #9 on Google Maps for &ldquo;mold remediation Wesley Chapel&rdquo; and did not appear at all for &ldquo;water damage restoration companies.&rdquo; Shark AI Solutions fixed the consistency of the company&apos;s business listings across the web, strengthened its Google Business Profile, and made structural fixes that Google and AI systems respond to quickly. Within 30 days, the company ranked #1 on Google Maps for 11 searches and outranked SERVPRO. No website changes were made and no paid advertising was used.
                 </p>
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 text-[13px]">
                   {[
-                    ["same day AC repair", "#32 → #2"],
-                    ["air conditioning service near me", "#31 → #2"],
-                    ["HVAC near me", "#27 → #2"],
-                    ["air conditioning repair", "#30 → #2"],
-                    ["emergency AC repair", "#21 → #3"],
-                    ["air handler repair", "#29 → #3"],
+                    ["mold remediation Wesley Chapel", "#9 → #1"],
+                    ["water damage cleanup", "#25 → #1"],
+                    ["Water Mitigation", "#10 → #1"],
+                    ["water damage restoration companies", "NR → #1"],
+                    ["water and restoration", "#30 → #4"],
+                    ["water restoration company", "#35 → #5"],
                   ].map(([kw, result]) => (
                     <div key={kw} className="bg-white rounded-[10px] px-3 py-2.5">
                       <p className="text-[#1d1d1f] font-medium leading-snug mb-1">{kw}</p>
@@ -459,7 +459,7 @@ export default function AIInformationsPage() {
                 },
                 {
                   q: "How quickly can I see results from AI visibility optimization?",
-                  a: "Most clients see measurable improvements within 30 days. One HVAC client moved from #32 to #2 in under 30 days. Initial changes are deployed in 7–14 days; ranking movement typically follows within 30 days for most local service categories in the Tampa Bay area.",
+                  a: "Most clients see measurable improvements within 30 days. One water damage and mold remediation client went from #9 to #1 on Google Maps in 30 days. Initial changes are deployed in 7–14 days; ranking movement typically follows within 30 days for most local service categories in the Tampa Bay area.",
                 },
                 {
                   q: "What types of businesses does Shark AI Solutions work with?",
