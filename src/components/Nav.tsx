@@ -98,7 +98,7 @@ export default function Nav() {
         href="/ai-audit"
         className="block bg-[#18b5d8] text-white text-center text-[12px] font-medium py-2 px-4 leading-[18px] hover:bg-[#1ec8ee] motion-safe:transition-colors"
       >
-        <strong className="font-bold">Free AI Visibility Audit:</strong>&nbsp;see how ChatGPT ranks your business. Instant results&nbsp;→
+        <strong className="font-bold">Free AI Visibility Audit:</strong>&nbsp;see how ChatGPT ranks your business. Ready in 48 hours&nbsp;→
       </Link>
 
       <div className="bg-white/95 backdrop-blur-sm border-b border-[#e0e0e0]">

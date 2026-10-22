@@ -168,7 +168,7 @@ const services = [
       "Search and map listing analysis",
       "Review and trust signal audit",
       "AI platform appearance check",
-      "Actionable priority list with instant results",
+      "Actionable priority list, ready in 48 hours",
       "100% free, forever, no catch",
     ],
     cta: "Get My Free AI Audit", href: "/ai-audit",
