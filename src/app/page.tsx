@@ -358,6 +358,9 @@ export default function Home() {
               Book a Call →
             </Link>
           </div>
+          <p className="text-[14px] text-[#555] mb-2">
+            <span className="font-semibold text-[#0a0a0a]">#9 → #1 on Google Maps in 30 days.</span> Wesley Chapel restoration company, no ads.
+          </p>
           <p className="text-[13px] text-[#aaa] tracking-wide">
             Serving regional and multi-location businesses nationwide
           </p>
@@ -611,7 +614,13 @@ export default function Home() {
                 ))}
               </div>
 
-              <div className="mt-8">
+              <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-4">
+                <Link
+                  href="/ai-audit"
+                  className="btn-press inline-block bg-[#18b5d8] text-white text-[15px] font-semibold rounded-full px-7 py-3.5 hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2"
+                >
+                  See where you stand
+                </Link>
                 <Link
                   href="/case-studies"
                   className="text-[14px] font-semibold text-[#18b5d8] hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 rounded-sm"
@@ -833,13 +842,13 @@ export default function Home() {
           >
             <div className="flex-1">
               <span className="inline-block text-[11px] font-bold tracking-[0.16em] uppercase bg-[#18b5d8]/15 text-[#18b5d8] px-3 py-1 rounded-full mb-3">
-                No cost · No sales call
+                No cost · No pressure
               </span>
               <h3 className="text-[20px] font-semibold text-white mb-2 group-hover:text-[#18b5d8] motion-safe:transition-colors duration-150">
                 Free AI Audit
               </h3>
               <p className="text-[14px] text-white/55 leading-relaxed max-w-[560px]">
-                Run your business through every major AI platform and see exactly where you appear, where you're invisible, and what's holding you back. Results in 24 hours.
+                Run your business through every major AI platform and see exactly where you appear, where you're invisible, and what's holding you back. Ready in 48 hours.
               </p>
             </div>
             <span className="shrink-0 inline-block bg-[#18b5d8] text-white text-[15px] font-semibold rounded-full px-7 py-3.5 group-hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 whitespace-nowrap">
@@ -898,7 +907,7 @@ export default function Home() {
             AI platforms are setting their recommendation lists now.
           </h2>
           <p data-animate="cta-sub" className="text-white/50 text-[18px] leading-relaxed mb-12 max-w-[480px] mx-auto">
-            Find out where you stand before your competitor does. We run your business through every major AI platform and walk through what we find with you personally.
+            Find out where you stand before your competitor does. We run your business through every major AI platform and send you the findings in 48 hours. Want to go through them together? Book an optional walkthrough.
           </p>
           <div data-animate="cta-btn">
             <Link

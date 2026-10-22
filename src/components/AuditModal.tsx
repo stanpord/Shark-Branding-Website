@@ -5,14 +5,39 @@ import { useEffect, useRef, useState, useCallback } from "react";
 import { BOOK_AUDIT_REVIEW, FORM_WIDGET } from "@/lib/ep";
 const BOOKING_URL = BOOK_AUDIT_REVIEW;
 
+// Funnel events for GA4 (gtag is loaded in layout.tsx). No-op if blocked.
+function track(event: string, params: Record<string, string>) {
+  const w = window as unknown as { gtag?: (...args: unknown[]) => void };
+  w.gtag?.("event", event, params);
+}
+
+const SUCCESS_WORDS = ["thank you", "submitted", "success", "received"];
+
 export default function AuditModal() {
   const [open, setOpen] = useState(false);
   const [loaded, setLoaded] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
+  const sourceRef = useRef("other");
+  const submitTrackedRef = useRef(false);
 
-  const openModal = useCallback(() => { setOpen(true); setSubmitted(false); }, []);
+  const openModal = useCallback((e: Event) => {
+    const detail = (e as CustomEvent<{ source?: string }>).detail;
+    // ?auto=1 links (e.g. the networking QR code) open the modal without a click source.
+    const auto = new URLSearchParams(window.location.search).get("auto") === "1";
+    sourceRef.current = detail?.source || (auto ? "auto_link" : "other");
+    submitTrackedRef.current = false;
+    setOpen(true);
+    setSubmitted(false);
+    track("audit_open", { source: sourceRef.current, page_path: window.location.pathname });
+  }, []);
   const closeModal = useCallback(() => { setOpen(false); setLoaded(false); }, []);
+
+  useEffect(() => {
+    if (!submitted || submitTrackedRef.current) return;
+    submitTrackedRef.current = true;
+    track("audit_submit", { source: sourceRef.current, page_path: window.location.pathname });
+  }, [submitted]);
 
   useEffect(() => {
     window.addEventListener("open-audit-modal", openModal);
@@ -44,16 +69,29 @@ export default function AuditModal() {
     containerRef.current.appendChild(script);
     setLoaded(true);
 
+    // The CRM widget renders the form (and its thank-you message) inside an open
+    // shadow root, which container.innerText can't see, so watch the shadow root too.
+    const shadowObserver = new MutationObserver(() => {
+      const host = containerRef.current?.querySelector(".crm-form-host");
+      const formEl = host?.shadowRoot?.querySelector("form");
+      const text = (host?.shadowRoot?.textContent || "").toLowerCase();
+      // Success copy replaces the form, so require the form to be gone or hidden.
+      if ((!formEl || formEl.getClientRects().length === 0) && SUCCESS_WORDS.some((w) => text.includes(w))) {
+        setSubmitted(true);
+        shadowObserver.disconnect();
+      }
+    });
+    let watchedRoot: ShadowRoot | null = null;
     const observer = new MutationObserver(() => {
       const container = containerRef.current;
       if (!container) return;
+      const root = container.querySelector(".crm-form-host")?.shadowRoot ?? null;
+      if (root && root !== watchedRoot) {
+        watchedRoot = root;
+        shadowObserver.observe(root, { childList: true, subtree: true, characterData: true, attributes: true });
+      }
       const text = container.innerText.toLowerCase();
-      if (
-        text.includes("thank you") ||
-        text.includes("submitted") ||
-        text.includes("success") ||
-        text.includes("received")
-      ) {
+      if (SUCCESS_WORDS.some((w) => text.includes(w))) {
         setSubmitted(true);
         observer.disconnect();
       }
@@ -61,7 +99,8 @@ export default function AuditModal() {
     observer.observe(containerRef.current, { childList: true, subtree: true, characterData: true });
 
     const onMessage = (e: MessageEvent) => {
-      if (typeof e.data === "string" && (e.data.includes("form_submitted") || e.data.includes("success"))) {
+      // Only the explicit form event: a bare "success" also comes from other widgets (chat).
+      if (typeof e.data === "string" && e.data.includes("form_submitted")) {
         setSubmitted(true);
       }
       if (typeof e.data === "object" && e.data?.type === "form_submitted") {
@@ -72,6 +111,7 @@ export default function AuditModal() {
 
     return () => {
       observer.disconnect();
+      shadowObserver.disconnect();
       window.removeEventListener("message", onMessage);
     };
   }, [open, loaded]);
@@ -115,6 +155,7 @@ export default function AuditModal() {
             href={BOOKING_URL}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => track("audit_book_walkthrough", { source: sourceRef.current })}
             className="inline-block w-full bg-[#18b5d8] hover:bg-[#1ec8ee] text-white font-semibold text-[17px] py-4 px-8 rounded-[12px] motion-safe:transition-colors mb-4"
           >
             Schedule my results walkthrough

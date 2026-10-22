@@ -8,7 +8,13 @@ export default function AuditLinkInterceptor() {
       if (!anchor) return;
       e.preventDefault();
       e.stopPropagation();
-      window.dispatchEvent(new CustomEvent("open-audit-modal"));
+      // Where the click came from, for funnel analytics: explicit data-audit-source,
+      // else the homepage section (data-scene), else nav/footer.
+      const source =
+        (anchor as HTMLElement).dataset.auditSource ||
+        (anchor.closest("[data-scene]") as HTMLElement | null)?.dataset.scene ||
+        (anchor.closest("footer") ? "footer" : anchor.closest("nav, header") ? "nav" : "other");
+      window.dispatchEvent(new CustomEvent("open-audit-modal", { detail: { source } }));
     }
     document.addEventListener("click", handleClick, true);
     return () => document.removeEventListener("click", handleClick, true);

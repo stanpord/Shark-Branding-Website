@@ -48,7 +48,7 @@ export default function ExitIntentPopup() {
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     dismiss();
-    window.dispatchEvent(new CustomEvent("open-audit-modal"));
+    window.dispatchEvent(new CustomEvent("open-audit-modal", { detail: { source: "exit_intent" } }));
   }
 
   if (!visible) return null;
