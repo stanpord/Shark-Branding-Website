@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://shark-ai-solutions.com/case-studies" },
   title: "Case Studies: Documented AI Visibility Results | Shark AI Solutions",
   description:
-    "Water damage restoration, real estate, smart vending, and chamber of commerce, four documented businesses that went from invisible to #1 in under 30 days.",
+    "Water damage restoration, healthcare, smart vending, and chamber of commerce, four documented businesses and the results they saw after working with Shark AI Solutions.",
 };
 
 export default function CaseStudiesPage() {
@@ -50,7 +50,7 @@ export default function CaseStudiesPage() {
           <div className="flex flex-wrap items-center justify-center gap-2">
             {[
               { label: "Restoration",   href: "#water-restoration" },
-              { label: "Real Estate",   href: "#emorys-rock-realty" },
+              { label: "Physician",     href: "#physician" },
               { label: "Smart Vending", href: "#diamond-dogs" },
               { label: "Chamber",       href: "#north-tampa-bay-chamber" },
             ].map((c) => (
@@ -182,14 +182,14 @@ export default function CaseStudiesPage() {
 
 
       {/* ══════════════════════════════════════════
-          CASE 02, Real Estate
+          CASE 02, Physician
       ══════════════════════════════════════════ */}
-      <article id="emorys-rock-realty">
+      <article id="physician">
 
         <div className="relative h-[380px] sm:h-[480px] overflow-hidden">
           <Image
-            src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=1400&h=560&q=90"
-            alt="Modern home exterior representing real estate in Wesley Chapel FL"
+            src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1400&h=560&q=90"
+            alt="Physician typing on a laptop with a stethoscope on the desk"
             fill
             className="object-cover"
             sizes="100vw"
@@ -198,13 +198,13 @@ export default function CaseStudiesPage() {
           <div className="absolute bottom-0 left-0 right-0 px-6 pb-12 max-w-[1000px] mx-auto">
             <div className="flex flex-wrap items-center gap-3 mb-3">
               <span className="text-white/30 text-[12px] font-mono tabular-nums">02 —</span>
-              <span className="text-[12px] text-white/55">Real Estate · Wesley Chapel, FL</span>
+              <span className="text-[12px] text-white/55">Healthcare · Physician Practice</span>
             </div>
             <h2
               className="text-[36px] sm:text-[44px] font-extrabold text-white leading-tight tracking-[-0.02em]"
               style={{ textWrap: "balance" } as React.CSSProperties}
             >
-              <span className="text-[#18b5d8]">#1 realtor</span> in a market of 2,000+ agents.
+              Daily Google impressions <span className="text-[#18b5d8]">doubled</span> in 3 months.
             </h2>
           </div>
         </div>
@@ -212,9 +212,9 @@ export default function CaseStudiesPage() {
         <div className="bg-[#f5f5f7] border-b border-[#e5e5ea] px-6 py-12">
           <div className="max-w-[1000px] mx-auto grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-[#e5e5ea]">
             {[
-              { v: "+20%",   label: "AI recommendations", sub: "within 30 days" },
-              { v: "#4→#1",  label: "Local ranking",      sub: '"Best Realtors Wesley Chapel"' },
-              { v: "2,000+", label: "Agents outranked",   sub: "Wesley Chapel market" },
+              { v: "2×",    label: "Daily impressions", sub: "about 11 a day to 23 a day" },
+              { v: "2.14K", label: "Google impressions", sub: "last 3 months, up from 697" },
+              { v: "90d",   label: "Engagement length",  sub: "Google Search Console data" },
             ].map((s) => (
               <div key={s.label} className="py-6 sm:py-0 sm:px-6 text-center sm:first:pl-0 sm:last:pr-0">
                 <p className="text-[36px] sm:text-[44px] font-extrabold text-[#18b5d8] leading-none mb-2">{s.v}</p>
@@ -232,38 +232,30 @@ export default function CaseStudiesPage() {
               <div>
                 <p className="text-[14px] font-bold text-[#1d1d1f] mb-3">The Problem</p>
                 <p className="text-[#6e6e73] text-[17px] leading-relaxed">
-                  Not consistently showing up in AI-driven results. Inconsistent business data across platforms created weak trust signals for search and AI, causing buyers and sellers to land on competitors instead.
+                  This physician practice wasn&rsquo;t showing up much in AI search. Patients increasingly ask ChatGPT, Gemini, and Google&rsquo;s AI who to see, and AI can only recommend a practice it can find and trust. Before we started, the practice averaged about 11 Google search impressions a day.
                 </p>
               </div>
               <div>
                 <p className="text-[14px] font-bold text-[#1d1d1f] mb-3">What We Did</p>
                 <p className="text-[#6e6e73] text-[17px] leading-relaxed">
-                  We built stronger, more consistent digital presence, aligned entity signals, strengthened local authority, and positioned Emory&rsquo;s Rock Realty to be the agent AI recommends when buyers, sellers, and investors ask who to work with.
+                  Over three months, we made targeted fixes to the practice&rsquo;s website and worked through the same AI visibility process we use for every client, closing the gaps that kept search engines and AI from understanding and trusting the practice. By the end, the practice was averaging about 23 Google search impressions a day, more than double where it started.
                 </p>
               </div>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-14">
-              {[
-                { stat: "$20–$100+", label: "per click",        body: "Real estate keywords cost $20–$100+ per click. Paid visibility is expensive and temporary." },
-                { stat: "Organic",   label: "AI positioning",   body: "AI Visibility means organic positioning, showing up without paying for every click." },
-                { stat: "2,000+",    label: "agents outranked", body: "In a market this large, being chosen matters more than being seen." },
-              ].map((c) => (
-                <div key={c.stat} className="bg-[#f5f5f7] rounded-xl px-6 py-6 text-center border border-[#e5e5ea]">
-                  <p className="text-[28px] font-extrabold text-[#18b5d8] leading-none mb-1">{c.stat}</p>
-                  <p className="text-[11px] font-bold uppercase tracking-[0.12em] text-[#6e6e73] mb-3">{c.label}</p>
-                  <p className="text-[14px] text-[#6e6e73] leading-relaxed">{c.body}</p>
-                </div>
-              ))}
+            {/* Screenshot */}
+            <div className="bg-[#07141a] rounded-[14px] overflow-hidden border border-[#18b5d8]/15 mb-14">
+              <div className="px-6 pt-5 pb-3">
+                <p className="text-[11px] font-bold text-[#18b5d8]/60 uppercase tracking-[0.18em]">Google Search Console, Total Impressions, Last 3 Months vs Previous</p>
+              </div>
+              <Image
+                src="/case-studies/physician/search-impressions.png"
+                alt="Google Search Console chart showing 2.14K impressions in the last 3 months compared with 697 in the previous period"
+                width={1377}
+                height={577}
+                className="w-full h-auto bg-white"
+              />
             </div>
-
-            <blockquote className="relative pl-10 py-2 mb-12">
-              <span className="absolute top-[-12px] left-0 text-[80px] leading-none text-[#18b5d8] opacity-20 font-serif select-none" aria-hidden="true">&ldquo;</span>
-              <p className="text-[20px] text-[#1d1d1f] leading-relaxed italic mb-3">
-                &ldquo;In a market this competitive, a 20% increase in AI recommendations isn&rsquo;t incremental. It&rsquo;s a competitive advantage.&rdquo;
-              </p>
-              <p className="text-[13px] font-semibold text-[#6e6e73] uppercase tracking-[0.08em]">Emory&rsquo;s Rock Realty, Wesley Chapel FL</p>
-            </blockquote>
 
             <div className="flex flex-wrap items-center gap-4">
               <Link href="/ai-audit" className="inline-block bg-[#18b5d8] text-white text-[15px] font-semibold rounded-full px-7 py-3.5 hover:bg-[#14a0c0] motion-safe:transition-colors">Get My Free AI Audit</Link>
@@ -598,7 +590,7 @@ export default function CaseStudiesPage() {
             {[
               { heading: "AI search is here now",         body: "Over 60% of Google searches now surface an AI-generated answer before any website link (Google I/O, 2025). If your business isn't optimized for that answer, you're invisible at the moment of decision." },
               { heading: "Most competitors aren't ready", body: "The vast majority of local businesses haven't touched AI visibility at all. Right now, showing up in AI answers is a genuine competitive advantage, not table stakes." },
-              { heading: "Results come in days",          body: "Every case on this page saw measurable movement in under 30 days. This isn't a six-month project. It's a systematic fix with a fast feedback loop." },
+              { heading: "Results come in days",          body: "Most cases on this page saw measurable movement within 30 days. This isn't a six-month project. It's a systematic fix with a fast feedback loop." },
             ].map((c) => (
               <div key={c.heading} className="bg-white rounded-[14px] px-7 py-7 border border-[#e5e5ea]">
                 <p className="text-[17px] font-bold text-[#1d1d1f] mb-3">{c.heading}</p>
