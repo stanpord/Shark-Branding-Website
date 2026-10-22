@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://shark-ai-solutions.com/case-studies" },
   title: "Case Studies: Documented AI Visibility Results | Shark AI Solutions",
   description:
-    "HVAC, real estate, smart vending, and chamber of commerce, four documented businesses that went from invisible to #1 in AI search in under 30 days.",
+    "Water damage restoration, real estate, smart vending, and chamber of commerce, four documented businesses that went from invisible to #1 in under 30 days.",
 };
 
 export default function CaseStudiesPage() {
@@ -36,7 +36,7 @@ export default function CaseStudiesPage() {
             {[
               { v: "4",   label: "Industries" },
               { v: "30d", label: "Time to results" },
-              { v: "6+",  label: "Keywords top 3" },
+              { v: "11",  label: "#1 Maps rankings" },
               { v: "3",   label: "AI platforms" },
             ].map((s) => (
               <div key={s.label} className="bg-white rounded-xl border border-[#e5e5ea] px-4 py-5 text-center">
@@ -49,7 +49,7 @@ export default function CaseStudiesPage() {
           {/* Jump links */}
           <div className="flex flex-wrap items-center justify-center gap-2">
             {[
-              { label: "HVAC",          href: "#hvac" },
+              { label: "Restoration",   href: "#water-restoration" },
               { label: "Real Estate",   href: "#emorys-rock-realty" },
               { label: "Smart Vending", href: "#diamond-dogs" },
               { label: "Chamber",       href: "#north-tampa-bay-chamber" },
@@ -68,15 +68,15 @@ export default function CaseStudiesPage() {
 
 
       {/* ══════════════════════════════════════════
-          CASE 01, HVAC
+          CASE 01, Water Damage & Mold Restoration
       ══════════════════════════════════════════ */}
-      <article id="hvac">
+      <article id="water-restoration">
 
         {/* Photo hero */}
         <div className="relative h-[380px] sm:h-[480px] overflow-hidden">
           <Image
-            src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1400&h=560&q=90"
-            alt="Outdoor air conditioning units on the exterior of a home"
+            src="https://images.unsplash.com/photo-1495774539583-885e02cca8c2?auto=format&fit=crop&w=1400&h=560&q=90"
+            alt="Water from a leak splashing into a bucket"
             fill
             className="object-cover"
             sizes="100vw"
@@ -85,13 +85,13 @@ export default function CaseStudiesPage() {
           <div className="absolute bottom-0 left-0 right-0 px-6 pb-12 max-w-[1000px] mx-auto">
             <div className="flex flex-wrap items-center gap-3 mb-3">
               <span className="text-white/30 text-[12px] font-mono tabular-nums">01 —</span>
-              <span className="text-[12px] text-white/55">Home Services / HVAC · Tampa Bay, FL</span>
+              <span className="text-[12px] text-white/55">Water Damage &amp; Mold Remediation · Wesley Chapel, FL</span>
             </div>
             <h2
               className="text-[36px] sm:text-[44px] font-extrabold text-white leading-tight tracking-[-0.02em]"
               style={{ textWrap: "balance" } as React.CSSProperties}
             >
-              Page 3 to <span className="text-[#18b5d8]">#2 on Google</span> in 30 days.
+              <span className="text-[#18b5d8]">#1 on Google Maps</span> for 11 searches after 30 days.
             </h2>
           </div>
         </div>
@@ -100,9 +100,9 @@ export default function CaseStudiesPage() {
         <div className="bg-[#f5f5f7] border-b border-[#e5e5ea] px-6 py-12">
           <div className="max-w-[1000px] mx-auto grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-[#e5e5ea]">
             {[
-              { v: "#32→#2", label: "Best keyword jump",  sub: '"same day AC repair"' },
-              { v: "6",      label: "Keywords in top 3",  sub: "all high-intent local" },
-              { v: "30d",    label: "Time to results",    sub: "page 3 to top local" },
+              { v: "#25→#1", label: "Best keyword jump",  sub: '"water damage cleanup" on Maps' },
+              { v: "11",     label: "Keywords at #1",     sub: "on Google Maps" },
+              { v: "30d",    label: "Time to results",    sub: "no website changes, no paid ads" },
             ].map((s) => (
               <div key={s.label} className="py-6 sm:py-0 sm:px-6 text-center sm:first:pl-0 sm:last:pr-0">
                 <p className="text-[36px] sm:text-[44px] font-extrabold text-[#18b5d8] leading-none mb-2">{s.v}</p>
@@ -121,13 +121,13 @@ export default function CaseStudiesPage() {
               <div>
                 <p className="text-[14px] font-bold text-[#1d1d1f] mb-3">The Problem</p>
                 <p className="text-[#6e6e73] text-[17px] leading-relaxed">
-                  This HVAC company was doing excellent work but wasn&rsquo;t showing up where it mattered. When homeowners searched for urgent help, "same day AC repair," "emergency AC repair," "HVAC near me", every call went to whoever ranked at the top. They were invisible right when buyers needed them most.
+                  This water damage and mold remediation company ranked 9th on Google Maps for &ldquo;mold remediation Wesley Chapel&rdquo; and 25th for &ldquo;water damage cleanup.&rdquo; For &ldquo;water damage restoration companies,&rdquo; they didn&rsquo;t show up at all. As a new company with only 6 Google reviews, they were up against established national franchises like SERVPRO. When someone finds mold or has water pouring through a ceiling, they call one of the first two or three companies they see. This company wasn&rsquo;t one of them.
                 </p>
               </div>
               <div>
                 <p className="text-[14px] font-bold text-[#1d1d1f] mb-3">What We Did</p>
                 <p className="text-[#6e6e73] text-[17px] leading-relaxed">
-                  Using the AI Visibility Toolkit, we addressed search readiness, authority signals, and accurate business data across every platform. We cleaned up location and service data so AI systems connected the right business to the right searches, across Google, Maps, voice search, and AI-assisted discovery.
+                  Nothing changed on their website, and no paid ads ran. We fixed the consistency of their business listings across the web, strengthened their Google Business Profile, and made a handful of structural fixes that Google and AI systems respond to quickly. Most of the gaps had nothing to do with the website, yet they were directly affecting how search engines and AI understood and trusted the business.
                 </p>
               </div>
             </div>
@@ -138,7 +138,7 @@ export default function CaseStudiesPage() {
                 <span className="inline-block bg-[#1d1d1f] text-white text-[10px] font-bold tracking-[0.12em] uppercase px-3 py-1.5 rounded-full mb-6">Before</span>
                 <p className="text-[20px] font-bold text-[#1d1d1f] mb-5">Hard to find. Easy to skip.</p>
                 <ul className="space-y-3">
-                  {["Not ranking for high-intent keywords","Low visibility in local search","Inconsistent online presence","Minimal inbound calls or engagement"].map((item) => (
+                  {[`#9 on Maps for "mold remediation Wesley Chapel"`,`#25 on Maps for "water damage cleanup"`,`Not ranked for "water damage restoration companies"`,"Inconsistent business listings across the web"].map((item) => (
                     <li key={item} className="flex items-start gap-3 text-[15px] text-[#6e6e73] leading-relaxed">
                       <span className="text-red-400 font-bold shrink-0 mt-0.5">✕</span>{item}
                     </li>
@@ -147,9 +147,9 @@ export default function CaseStudiesPage() {
               </div>
               <div className="bg-[#07141a] rounded-[14px] p-8 border border-[#18b5d8]/20">
                 <span className="inline-block bg-[#18b5d8] text-white text-[10px] font-bold tracking-[0.12em] uppercase px-3 py-1.5 rounded-full mb-6">After 30 Days</span>
-                <p className="text-[20px] font-bold text-white mb-5">Top 3 rankings. More calls. Real growth.</p>
+                <p className="text-[20px] font-bold text-white mb-5">#1 on Maps for 11 searches.</p>
                 <ul className="space-y-3">
-                  {[`Multiple keywords moved into Top 3 "Money Zone"`,"High-intent searches captured","Significant increase in calls & engagement","Dominating local visibility in key service areas"].map((item) => (
+                  {[`#1 on Maps for "mold remediation Wesley Chapel"`,`#1 on Maps for "water damage cleanup" and "Water Mitigation"`,`#1 on Maps for "24/7 emergency restoration Wesley Chapel"`,"Outranked SERVPRO as a new company with only 6 Google reviews",`"restoration company" climbed from #18 to #4 on Google`].map((item) => (
                     <li key={item} className="flex items-start gap-3 text-[15px] text-white/70 leading-relaxed">
                       <span className="text-[#18b5d8] font-bold shrink-0 mt-0.5">✓</span>{item}
                     </li>
@@ -158,54 +158,19 @@ export default function CaseStudiesPage() {
               </div>
             </div>
 
-            {/* Screenshots */}
-            <div className="bg-[#07141a] rounded-[14px] overflow-hidden border border-[#18b5d8]/15 mb-4">
-              <div className="px-6 pt-5 pb-3">
-                <p className="text-[11px] font-bold text-[#18b5d8]/60 uppercase tracking-[0.18em]">Google Maps Local Ranking, HVAC Emergency Repair</p>
-              </div>
-              <Image
-                src="/case-studies/hvac/maps-ranking.png"
-                alt="Google Maps local ranking grid showing #1 and #2 positions across the service area for HVAC Emergency Repair"
-                width={1400}
-                height={500}
-                className="w-full h-auto"
-              />
-            </div>
-
-            <div className="bg-[#07141a] rounded-[14px] overflow-hidden border border-[#18b5d8]/15 mb-4">
-              <div className="px-6 pt-5 pb-3">
-                <p className="text-[11px] font-bold text-[#18b5d8]/60 uppercase tracking-[0.18em]">Keyword Rankings, All tracked keywords moved to #1</p>
-              </div>
-              <Image
-                src="/case-studies/hvac/keyword-rankings.png"
-                alt="Keyword ranking table showing all HVAC keywords ranked #1 with significant position improvements"
-                width={1400}
-                height={420}
-                className="w-full h-auto"
-              />
-            </div>
-
+            {/* Screenshot */}
             <div className="bg-[#07141a] rounded-[14px] overflow-hidden border border-[#18b5d8]/15 mb-14">
               <div className="px-6 pt-5 pb-3">
-                <p className="text-[11px] font-bold text-[#18b5d8]/60 uppercase tracking-[0.18em]">Marketing Dashboard, Impressions, Engagement &amp; Leads</p>
+                <p className="text-[11px] font-bold text-[#18b5d8]/60 uppercase tracking-[0.18em]">Google Maps Keyword Rankings, Day 30</p>
               </div>
               <Image
-                src="/case-studies/hvac/vendasta-dashboard.png"
-                alt="Marketing analytics dashboard showing 4,455 impressions, 188 engagement, and 228 leads"
-                width={1400}
-                height={560}
-                className="w-full h-auto"
+                src="/case-studies/restoration/keyword-rankings.png"
+                alt="Google Maps keyword ranking table showing 11 water damage, mold remediation, and restoration keywords ranked #1 after 30 days"
+                width={560}
+                height={761}
+                className="w-full max-w-[560px] h-auto mx-auto"
               />
             </div>
-
-            {/* Pull quote */}
-            <blockquote className="relative pl-10 py-2 mb-12">
-              <span className="absolute top-[-12px] left-0 text-[80px] leading-none text-[#18b5d8] opacity-20 font-serif select-none" aria-hidden="true">&ldquo;</span>
-              <p className="text-[20px] text-[#1d1d1f] leading-relaxed italic mb-3">
-                &ldquo;We went from getting beat out by competitors every day to being the first name that shows up. The phone didn&rsquo;t stop ringing after that.&rdquo;
-              </p>
-              <p className="text-[13px] font-semibold text-[#6e6e73] uppercase tracking-[0.08em]">HVAC Company Owner, Tampa Bay FL</p>
-            </blockquote>
 
             <div className="flex flex-wrap items-center gap-4">
               <Link href="/ai-audit" className="inline-block bg-[#18b5d8] text-white text-[15px] font-semibold rounded-full px-7 py-3.5 hover:bg-[#14a0c0] motion-safe:transition-colors">Get My Free AI Audit</Link>

@@ -153,13 +153,13 @@ function MetricsDashboardMockup() {
 }
 
 
-/* ── CSS Mockup: HVAC AI Ranking Before/After ── */
-function HvacAiMockup() {
+/* ── CSS Mockup: Restoration Maps Ranking Before/After ── */
+function RestorationRankMockup() {
   return (
     <div className="h-full flex flex-col gap-4 p-5 sm:p-7">
       <div>
-        <p className="text-[9px] font-bold tracking-[0.2em] uppercase text-[#18b5d8]/50 mb-0.5">Case Study · HVAC · Wesley Chapel, FL</p>
-        <p className="text-[13px] font-semibold text-white/60">ChatGPT AI ranking · 30 days · no paid ads</p>
+        <p className="text-[9px] font-bold tracking-[0.2em] uppercase text-[#18b5d8]/50 mb-0.5">Case Study · Water Damage &amp; Mold · Wesley Chapel, FL</p>
+        <p className="text-[13px] font-semibold text-white/60">Google Maps ranking · 30 days · no paid ads</p>
       </div>
 
       <div className="grid grid-cols-2 gap-3 flex-1 min-h-0">
@@ -170,7 +170,7 @@ function HvacAiMockup() {
             <span className="text-[9px] font-bold uppercase tracking-wider text-red-400/50">Before</span>
           </div>
           <div className="px-3 py-1.5 border-b border-white/[0.04]">
-            <p className="text-[9px] text-white/25 font-mono truncate">"same day AC repair Wesley Chapel"</p>
+            <p className="text-[9px] text-white/25 font-mono truncate">"mold remediation Wesley Chapel"</p>
           </div>
           <div className="px-2.5 py-2 space-y-1 flex-1">
             {['Competitor 1', 'Competitor 2', 'Competitor 3'].map((name, i) => (
@@ -183,7 +183,7 @@ function HvacAiMockup() {
               <span className="text-[8px] text-white/15">·····</span>
             </div>
             <div className="flex items-center gap-1.5 rounded-md px-2 py-1 opacity-25">
-              <span className="text-[8px] text-red-400 w-2.5 shrink-0">32</span>
+              <span className="text-[8px] text-red-400 w-2.5 shrink-0">9</span>
               <span className="text-[9px] text-white/40 truncate">Our client</span>
             </div>
           </div>
@@ -196,17 +196,17 @@ function HvacAiMockup() {
             <span className="text-[9px] font-bold uppercase tracking-wider text-[#18b5d8]">After · Day 30</span>
           </div>
           <div className="px-3 py-1.5 border-b border-white/[0.04]">
-            <p className="text-[9px] text-white/25 font-mono truncate">"same day AC repair Wesley Chapel"</p>
+            <p className="text-[9px] text-white/25 font-mono truncate">"mold remediation Wesley Chapel"</p>
           </div>
           <div className="px-2.5 py-2 space-y-1 flex-1">
-            <div className="flex items-center gap-1.5 rounded-md px-2 py-1 bg-white/[0.03] opacity-35">
-              <span className="text-[8px] text-white/30 w-2.5 shrink-0">1</span>
-              <span className="text-[9px] text-white/30 truncate">Competitor 1</span>
-            </div>
             <div className="flex items-center gap-1.5 rounded-md px-2 py-1.5 bg-[#18b5d8]/10 border border-[#18b5d8]/25">
-              <span className="text-[8px] text-[#18b5d8] font-bold w-2.5 shrink-0">2</span>
+              <span className="text-[8px] text-[#18b5d8] font-bold w-2.5 shrink-0">1</span>
               <span className="text-[9px] text-white font-semibold flex-1 truncate">Our Client</span>
-              <span className="text-[7px] font-bold bg-[#18b5d8]/15 text-[#18b5d8] px-1.5 py-0.5 rounded-full shrink-0">#2</span>
+              <span className="text-[7px] font-bold bg-[#18b5d8]/15 text-[#18b5d8] px-1.5 py-0.5 rounded-full shrink-0">#1</span>
+            </div>
+            <div className="flex items-center gap-1.5 rounded-md px-2 py-1 bg-white/[0.03] opacity-35">
+              <span className="text-[8px] text-white/30 w-2.5 shrink-0">2</span>
+              <span className="text-[9px] text-white/30 truncate">Competitor 1</span>
             </div>
             <div className="flex items-center gap-1.5 rounded-md px-2 py-1 bg-white/[0.03] opacity-35">
               <span className="text-[8px] text-white/30 w-2.5 shrink-0">3</span>
@@ -218,9 +218,9 @@ function HvacAiMockup() {
 
       <div className="grid grid-cols-3 gap-2">
         {[
-          { v: '#32→#2', label: 'Same Day AC Repair' },
-          { v: '#31→#2', label: 'Air Conditioning' },
-          { v: '30 days', label: 'No paid ads' },
+          { v: '#9→#1', label: 'Mold Remediation' },
+          { v: '#25→#1', label: 'Water Damage Cleanup' },
+          { v: '11', label: 'Keywords at #1' },
         ].map((s) => (
           <div key={s.label} className="bg-white/[0.04] rounded-xl p-2.5 text-center">
             <p className="text-[12px] font-bold text-[#18b5d8] leading-none mb-1">{s.v}</p>
@@ -262,7 +262,7 @@ const homepageFAQ = {
       name: 'How fast do businesses see results from AI visibility work?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Most Shark AI Solutions clients see measurable movement in AI visibility within 30 days. One HVAC client moved from position #32 to #2 across four high-intent keywords in 30 days without paid ads. Results vary based on how many visibility gaps exist at the start and how quickly corrected signals propagate across platforms.',
+        text: 'Most Shark AI Solutions clients see measurable movement in AI visibility within 30 days. One Wesley Chapel water damage and mold remediation client ranked #1 on Google Maps for 11 searches after 30 days, with no website changes and no paid ads. Results vary based on how many visibility gaps exist at the start and how quickly corrected signals propagate across platforms.',
       },
     },
     {
@@ -506,7 +506,7 @@ export default function Home() {
                 labelClass: 'border-2 border-[#18b5d8] text-[#18b5d8]',
                 body: 'When a customer asks AI a specific question, your business has the answer. Not buried in marketing copy, front and center.',
                 items: ['Answer-ready content structure', 'FAQ and entity definitions', 'Competitive gap analysis'],
-                outcome: 'An HVAC company ranked #2 for "same day AC repair Wesley Chapel" on ChatGPT in 30 days. No paid ads.',
+                outcome: 'A mold remediation company went from #9 to #1 on Google Maps for "mold remediation Wesley Chapel" in 30 days. No paid ads.',
               },
             ].map((c) => (
               <div
@@ -538,9 +538,9 @@ export default function Home() {
         <div className="max-w-[1100px] mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
 
-            {/* Left: HVAC AI ranking before/after mockup */}
+            {/* Left: restoration Maps ranking before/after mockup */}
             <div className="order-last lg:order-first rounded-3xl overflow-hidden shadow-xl bg-[#0d1b2a]" style={{ aspectRatio: '3/2' }}>
-              <HvacAiMockup />
+              <RestorationRankMockup />
             </div>
 
             {/* Right: steps */}

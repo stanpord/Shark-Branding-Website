@@ -41,7 +41,7 @@ Generative Engine Optimization (GEO) is the practice of optimizing a business's 
 ## Documented Client Results
 
 - [Case Studies](https://shark-ai-solutions.com/case-studies): Four documented Tampa Bay businesses, all results achieved within 30 days with zero paid advertising.
-- HVAC company: moved from position #32 to #2 for "same day AC repair" and 5 additional high-intent keywords into top 3.
+- Water damage and mold remediation company (Wesley Chapel, FL): ranked #1 on Google Maps for 11 searches after 30 days, including "mold remediation Wesley Chapel" (#9 to #1) and "water damage cleanup" (#25 to #1). No website changes, no paid ads. Outranked SERVPRO as a new company with only 6 Google reviews.
 - Real estate brokerage (Wesley Chapel, FL): ranked #4 to #1 in a market of 2,000+ competing agents. AI-driven recommendations increased 20% within 30 days.
 - Smart vending company: moved from completely invisible to #1 AI-recommended smart vending company in the area. Named and recommended by ChatGPT, Gemini, and Perplexity.
 - North Tampa Bay Chamber of Commerce: 96% of members were not being recommended by AI. After optimization, Chamber recognized as trusted local source with 10x more AI citations.
