@@ -214,7 +214,7 @@ export default function CaseStudiesPage() {
             {[
               { v: "2×",    label: "Daily impressions", sub: "about 11 a day to 23 a day" },
               { v: "2.14K", label: "Google impressions", sub: "last 3 months, up from 697" },
-              { v: "90d",   label: "Engagement length",  sub: "Google Search Console data" },
+              { v: "8",     label: "Keywords up",        sub: "190 ranks gained combined" },
             ].map((s) => (
               <div key={s.label} className="py-6 sm:py-0 sm:px-6 text-center sm:first:pl-0 sm:last:pr-0">
                 <p className="text-[36px] sm:text-[44px] font-extrabold text-[#18b5d8] leading-none mb-2">{s.v}</p>
@@ -238,7 +238,7 @@ export default function CaseStudiesPage() {
               <div>
                 <p className="text-[14px] font-bold text-[#1d1d1f] mb-3">What We Did</p>
                 <p className="text-[#6e6e73] text-[17px] leading-relaxed">
-                  Over three months, we made targeted fixes to the practice&rsquo;s website and worked through the same AI visibility process we use for every client, closing the gaps that kept search engines and AI from understanding and trusting the practice. By the end, the practice was averaging about 23 Google search impressions a day, more than double where it started.
+                  Over three months, we made targeted fixes to the practice&rsquo;s website and worked through the same AI visibility process we use for every client, closing the gaps that kept search engines and AI from understanding and trusting the practice. By the end, the practice was averaging about 23 Google search impressions a day, more than double where it started, and 8 tracked keywords had climbed a combined 190 ranks.
                 </p>
               </div>
             </div>

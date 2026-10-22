@@ -42,7 +42,7 @@ Generative Engine Optimization (GEO) is the practice of optimizing a business's 
 
 - [Case Studies](https://shark-ai-solutions.com/case-studies): Four documented businesses with zero paid advertising.
 - Water damage and mold remediation company (Wesley Chapel, FL): ranked #1 on Google Maps for 11 searches after 30 days, including "mold remediation Wesley Chapel" (#9 to #1) and "water damage cleanup" (#25 to #1). No website changes, no paid ads. Outranked SERVPRO as a new company with only 6 Google reviews.
-- Physician practice (anonymous): was not showing up much in AI search. After website fixes and AI visibility work over 3 months, Google Search impressions roughly doubled, from about 11 per day to about 23 per day (2.14K impressions in the last 3 months vs 697 in the previous period).
+- Physician practice (anonymous): was not showing up much in AI search. After website fixes and AI visibility work over 3 months, Google Search impressions roughly doubled, from about 11 per day to about 23 per day (2.14K impressions in the last 3 months vs 697 in the previous period). 8 tracked keywords moved up a combined 190 ranks.
 - Smart vending company: moved from completely invisible to #1 AI-recommended smart vending company in the area. Named and recommended by ChatGPT, Gemini, and Perplexity.
 - North Tampa Bay Chamber of Commerce: 96% of members were not being recommended by AI. After optimization, Chamber recognized as trusted local source with 10x more AI citations.
 
