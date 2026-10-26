@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import dynamic from 'next/dynamic'
 import { BOOK_M_30 } from '@/lib/ep'
+import ScanCard from '@/components/ScanCard'
 const HomepageAnimations = dynamic(() => import('@/components/HomepageAnimations'))
 const LazyReviewWidget = dynamic(() => import('@/components/LazyReviewWidget'))
 
@@ -322,61 +323,53 @@ export default function Home() {
         <div className="hero-dot hero-dot-4" aria-hidden="true" />
         <div className="hero-dot hero-dot-5" aria-hidden="true" />
 
-        {/* Text block */}
-        <div className="max-w-[800px] mx-auto px-6 pt-28 sm:pt-36 pb-14 sm:pb-20 text-center relative z-10">
-          <p
-            data-animate="hero-label"
-            className="text-[#18b5d8] text-[13px] font-semibold tracking-[0.22em] uppercase mb-6 sm:mb-8"
-          >
-            AI Visibility + Automation
-          </p>
-          <h1
-            data-animate="hero-title"
-            className="text-[#0a0a0a] mb-7 sm:mb-8 font-semibold tracking-tight leading-[1.04]"
-            style={{ fontSize: 'clamp(2.4rem, 5.5vw, 4.25rem)', textWrap: 'balance' } as React.CSSProperties}
-          >
-            When customers ask AI,<br className="hidden sm:block" /> does it recommend you?
-          </h1>
-          <p
-            data-animate="hero-sub"
-            className="text-[#555] max-w-[560px] mx-auto mb-10 sm:mb-12 leading-relaxed"
-            style={{ fontSize: 'clamp(1rem, 1.5vw, 1.25rem)' }}
-          >
-            ChatGPT, Google AI Overviews, Perplexity, and Gemini now recommend one to three businesses, not a list you scroll through. If you're not in that shortlist, most buyers never know you exist.
-          </p>
-          <div data-animate="hero-cta" className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-5">
-            <Link
-              href="/ai-audit"
-              className="btn-press inline-block bg-[#18b5d8] text-white text-[16px] font-semibold rounded-full px-8 py-4 hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 [touch-action:manipulation]"
+        {/* Split hero: copy left, business scan right */}
+        <div className="max-w-[1200px] mx-auto px-4 sm:px-8 pt-28 sm:pt-36 pb-16 sm:pb-24 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center relative z-10">
+          <div>
+            <p
+              data-animate="hero-label"
+              className="text-[#18b5d8] text-[13px] font-semibold tracking-[0.22em] uppercase mb-6"
             >
-              Get My Free AI Audit
-            </Link>
-            <Link
-              href="/book"
-              className="text-[15px] font-semibold text-[#555] hover:text-[#18b5d8] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:rounded focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2"
+              AI Visibility + Automation
+            </p>
+            <h1
+              data-animate="hero-title"
+              className="text-[#0a0a0a] mb-6 font-semibold tracking-tight leading-[1.04]"
+              style={{ fontSize: 'clamp(2.4rem, 4.4vw, 3.9rem)', textWrap: 'balance' } as React.CSSProperties}
             >
-              Book a Call →
-            </Link>
+              When customers ask AI, does it recommend you?
+            </h1>
+            <p
+              data-animate="hero-sub"
+              className="text-[#555] max-w-[520px] mb-7 leading-relaxed"
+              style={{ fontSize: 'clamp(1rem, 1.4vw, 1.125rem)' }}
+            >
+              AI recommends the businesses it can verify: consistent listings, strong reviews, and a website it can read. <span className="font-semibold text-[#0a0a0a]">Scan your business free</span> and get a report on what it sees.
+            </p>
+            <div data-animate="hero-cta" className="flex flex-wrap items-center gap-x-5 gap-y-2 mb-6 text-[15px]">
+              <span className="text-[#555]">Want the full picture?</span>
+              <Link
+                href="/ai-audit"
+                className="font-semibold text-[#0a0a0a] hover:text-[#18b5d8] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:rounded focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2"
+              >
+                Get My Free AI Audit →
+              </Link>
+              <Link
+                href="/book"
+                className="font-semibold text-[#555] hover:text-[#18b5d8] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:rounded focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2"
+              >
+                Book a Call
+              </Link>
+            </div>
+            <p className="text-[14px] text-[#555] mb-2">
+              <span className="font-semibold text-[#0a0a0a]">#9 → #1 on Google Maps in 30 days.</span> Wesley Chapel restoration company, no ads.
+            </p>
+            <p className="text-[13px] text-[#aaa] tracking-wide">
+              Serving regional and multi-location businesses nationwide
+            </p>
           </div>
-          <p className="text-[14px] text-[#555] mb-2">
-            <span className="font-semibold text-[#0a0a0a]">#9 → #1 on Google Maps in 30 days.</span> Wesley Chapel restoration company, no ads.
-          </p>
-          <p className="text-[13px] text-[#aaa] tracking-wide">
-            Serving regional and multi-location businesses nationwide
-          </p>
-        </div>
 
-        {/* Hero image, full bleed below text */}
-        <div className="px-4 sm:px-8 pb-0">
-          <div className="max-w-[1280px] mx-auto relative rounded-3xl overflow-hidden bg-[#e2e8ed]" style={{ aspectRatio: '16/9' }}>
-            <Image
-              src="/ai-visibility-hero.webp"
-              alt="AI Visibility Platform showing business rankings across ChatGPT, Google AI Overviews, and Perplexity"
-              fill
-              className="object-cover object-center"
-              sizes="(max-width: 1280px) 100vw, 1280px"
-            />
-          </div>
+          <ScanCard />
         </div>
       </section>
 
