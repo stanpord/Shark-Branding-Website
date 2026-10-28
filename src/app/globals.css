@@ -257,32 +257,6 @@ body {
 .hero-dot-4 { width: 3px;  height: 3px;  background: #18b5d8; opacity: 0.4; top: 75%; right: 15%; --dur: 8s;  --delay: -1.5s;}
 .hero-dot-5 { width: 8px;  height: 8px;  background: #18b5d8; opacity: 0.25; top: 15%; right: 25%; --dur: 13s; --delay: -3s; }
 
-/* ── Hero scan card (Vendasta Snapshot widget) ── */
-.scan-card { box-shadow: 0 30px 70px -24px rgba(7,20,26,.22), 0 2px 6px rgba(7,20,26,.04); }
-.scan-head { background: linear-gradient(135deg, #07141a 0%, #0d2029 60%, #0f3a47 100%); }
-.scan-beam {
-  position: absolute; top: 0; bottom: 0; width: 120px; left: -140px;
-  background: linear-gradient(90deg, transparent, rgba(30,200,238,.22), transparent);
-  pointer-events: none;
-  animation: scan-sweep 2.4s ease-in-out infinite;
-}
-@keyframes scan-sweep { to { left: 110%; } }
-.scan-chk { display: flex; align-items: center; gap: 8px; font-size: 13px; color: rgba(255,255,255,.55); transition: color .4s; }
-.scan-chk i {
-  flex: none; width: 18px; height: 18px; border-radius: 50%;
-  border: 1.5px solid rgba(255,255,255,.25);
-  display: grid; place-items: center; font-style: normal; font-size: 11px; color: transparent;
-  transition: background .3s, border-color .3s, color .3s;
-}
-.scan-chk.on { color: #fff; }
-.scan-chk.on i { background: #18b5d8; border-color: #18b5d8; color: #07141a; }
-.scan-card .__ssw_snapshot_widget, .scan-card .__ssw_snapshot_widget * { font-family: inherit !important; }
-@media (prefers-reduced-motion: reduce) {
-  .scan-beam { animation: none; }
-  .scan-chk { color: #fff; }
-  .scan-chk i { background: #18b5d8; border-color: #18b5d8; color: #07141a; }
-}
-
 /* ── Clip-path preset handled via GSAP fromTo — no CSS preset needed ── */
 
 /* ── AI employee page keyframes ── */

@@ -26,10 +26,7 @@ export default function SnapshotWidget() {
         .__ssw_submit_button {
           background-color: #18b5d8 !important;
           border-color: #18b5d8 !important;
-          border-radius: 999px !important;
-          font-weight: 600 !important;
         }
-        .__ssw_snapshot_widget { box-shadow: none !important; }
       `}</style>
       <div ref={ref} />
     </>
