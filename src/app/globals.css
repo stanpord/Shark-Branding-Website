@@ -313,3 +313,70 @@ body {
     animation: none !important;
   }
 }
+
+/* ── Homepage hero: copy left, laptop + phone on a gray stage panel right (no load animation) ── */
+.sbs-hero { position: relative; }
+.sbs-hero-in { max-width: 1200px; margin: 0 auto; padding: 112px 32px 120px; display: grid; grid-template-columns: 1fr 1.05fr; gap: 48px; align-items: center; }
+.sbs-devices { position: relative; min-width: 0; background: #f5f5f7; border-radius: 32px; padding: 40px 150px 30px 30px; }
+.sbs-devices figure { margin: 0; }
+.sbs-devices figcaption { margin-top: 18px; display: flex; align-items: center; gap: 10px; font-size: 14px; font-weight: 600; color: #0a0a0a; }
+.sbs-devices figcaption span { flex: none; width: 24px; height: 24px; border-radius: 50%; display: grid; place-items: center; background: #18b5d8; color: #fff; font-size: 12px; }
+
+.sbs-laptop { position: relative; }
+.sbs-screen { position: relative; min-height: 300px; border: 12px solid #1c1c1e; border-bottom-width: 16px; border-radius: 18px 18px 6px 6px; background: #fff; padding: 22px 22px 18px;
+  box-shadow: 0 0 0 1px #3a3a3c, 0 30px 60px -30px rgba(0,0,0,.45); overflow: hidden; display: flex; flex-direction: column; gap: 12px; }
+.sbs-win-dots { position: absolute; top: 9px; left: 12px; display: flex; gap: 4px; }
+.sbs-win-dots i { width: 5px; height: 5px; border-radius: 50%; background: #c7c7cc; }
+.sbs-search { flex: none; display: flex; align-items: center; gap: 12px; height: 46px; padding: 0 20px; border-radius: 999px; background: #fff; box-shadow: 0 1px 6px rgba(32,33,36,.18); font-size: 16px; color: #202124; }
+.sbs-tabs { display: flex; align-items: center; gap: 16px; font-size: 13px; color: #3c4043; white-space: nowrap; overflow: hidden; }
+.sbs-tabs .sbs-ai { padding: 6px 12px; border-radius: 999px; background: #e8f0fe; color: #1a56db; font-weight: 500; }
+.sbs-result { display: flex; align-items: stretch; border-radius: 14px; background: #fff; box-shadow: 0 2px 10px rgba(32,33,36,.12); overflow: hidden; }
+.sbs-result img { width: 34%; height: auto; aspect-ratio: 192 / 104; object-fit: cover; display: block; border-radius: 12px; margin: 8px; }
+.sbs-rec { flex: 1; display: flex; flex-direction: column; justify-content: center; gap: 2px; padding: 10px 16px; margin: 8px 8px 8px 0; border-radius: 12px; background: linear-gradient(90deg, #eaf2fe, #f5f9ff); }
+.sbs-rec b { font-size: clamp(13px, 1.5vw, 18px); font-weight: 700; color: #1a56db; line-height: 1.2; }
+.sbs-rec i { width: 32px; height: 3px; border-radius: 2px; background: #9fc0f6; margin-top: 8px; }
+.sbs-skel { display: flex; align-items: center; gap: 12px; padding: 8px 10px; border-radius: 12px; background: #fafafa; }
+.sbs-skel .sq { flex: none; width: 34px; height: 34px; border-radius: 8px; background: #e5e5ea; }
+.sbs-skel .ln { flex: 1; display: grid; gap: 7px; }
+.sbs-skel .ln i { height: 7px; border-radius: 4px; background: #e5e5ea; }
+.sbs-skel .ln i + i { width: 70%; }
+.sbs-deck { position: relative; height: 14px; margin: 0 -7%; border-radius: 0 0 14px 14px; background: linear-gradient(180deg, #d9d9de, #b8b8be 60%, #9a9aa1); }
+.sbs-deck::before { content: ""; position: absolute; left: 50%; top: 0; width: 16%; height: 5px; transform: translateX(-50%); border-radius: 0 0 6px 6px; background: #a6a6ad; }
+
+.sbs-phone { position: absolute; right: 28px; bottom: 30px; width: 170px; }
+.sbs-phone figcaption { align-items: flex-start; }
+.sbs-handset { position: relative; aspect-ratio: 9 / 19; border-radius: 36px; padding: 12px; background: linear-gradient(145deg, #e9e9ee, #a9a9b0 45%, #d4d4da); box-shadow: 0 30px 60px -24px rgba(0,0,0,.5); }
+.sbs-handset::before { content: ""; position: absolute; inset: 9px; border-radius: 28px; background: #fff; box-shadow: inset 0 0 0 2px #1c1c1e; }
+.sbs-island { position: absolute; z-index: 2; top: 20px; left: 50%; transform: translateX(-50%); width: 72px; height: 20px; border-radius: 12px; background: #1c1c1e; }
+.sbs-status { position: relative; z-index: 2; display: flex; justify-content: space-between; padding: 10px 16px 0; font-size: 11px; font-weight: 600; color: #1d1d1f; }
+.sbs-status .sig { display: flex; align-items: flex-end; gap: 2px; }
+.sbs-status .sig i { width: 3px; background: #1d1d1f; border-radius: 1px; }
+.sbs-status .sig i:nth-child(1) { height: 5px; }
+.sbs-status .sig i:nth-child(2) { height: 7px; }
+.sbs-status .sig i:nth-child(3) { height: 9px; }
+.sbs-msgs { position: relative; z-index: 2; display: flex; flex-direction: column; gap: 8px; padding: 26px 10px 0; }
+.sbs-m { align-self: flex-end; max-width: 92%; font-size: 11.5px; line-height: 1.35; padding: 8px 10px; border-radius: 14px; border-bottom-right-radius: 4px; background: #1a73e8; color: #fff; }
+.sbs-ai-app { display: flex; align-items: center; gap: 6px; font-size: 11px; font-weight: 600; color: #1d1d1f; }
+.sbs-ai-dot { width: 18px; height: 18px; border-radius: 50%; display: grid; place-items: center; background: #1d1d1f; color: #fff; font-size: 9px; }
+.sbs-answer { font-size: 11.5px; line-height: 1.45; color: #1d1d1f; }
+.sbs-answer b { color: #1a56db; }
+.sbs-answer sup { font-size: 8px; font-weight: 700; color: #1a56db; margin-left: 1px; }
+.sbs-cites { margin-top: 8px; display: flex; flex-wrap: wrap; gap: 5px; }
+.sbs-cite { display: inline-flex; align-items: center; gap: 4px; padding: 3px 7px 3px 3px; border-radius: 999px; background: #f2f2f7; font-size: 9.5px; color: #3c3c43; }
+.sbs-cite i { width: 13px; height: 13px; border-radius: 50%; display: grid; place-items: center; background: #1a56db; color: #fff; font-style: normal; font-size: 8px; font-weight: 700; }
+.sbs-src { display: flex; align-items: center; gap: 8px; padding: 6px; border-radius: 12px; background: #fff; box-shadow: 0 1px 4px rgba(0,0,0,.12); }
+.sbs-src img { width: 52px; height: 38px; object-fit: cover; border-radius: 8px; display: block; }
+.sbs-src p { display: flex; flex-direction: column; font-size: 10.5px; line-height: 1.3; }
+.sbs-src b { color: #1d1d1f; }
+.sbs-src small { font-size: 9.5px; color: #86868b; }
+
+@media (max-width: 960px) {
+  .sbs-hero-in { grid-template-columns: minmax(0, 1fr); gap: 48px; padding: 72px 16px 80px; }
+}
+@media (max-width: 520px) {
+  .sbs-devices { padding: 24px 16px; }
+  .sbs-devices .sbs-phone { position: static; width: 170px; margin: 28px auto 0; }
+  .sbs-screen { min-height: 0; padding: 18px 12px 12px; border-width: 8px; border-bottom-width: 12px; }
+  .sbs-search { height: 38px; font-size: 13px; padding: 0 14px; }
+  .sbs-tabs { gap: 10px; font-size: 11px; }
+}

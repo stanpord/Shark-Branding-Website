@@ -312,70 +312,84 @@ export default function Home() {
       <HomepageAnimations />
 
       {/* ── HERO ── */}
-      <section
-        data-scene="hero"
-        className="bg-white overflow-hidden"
-      >
-        <div className="hero-dot hero-dot-1" aria-hidden="true" />
-        <div className="hero-dot hero-dot-2" aria-hidden="true" />
-        <div className="hero-dot hero-dot-3" aria-hidden="true" />
-        <div className="hero-dot hero-dot-4" aria-hidden="true" />
-        <div className="hero-dot hero-dot-5" aria-hidden="true" />
-
-        {/* Text block */}
-        <div className="max-w-[800px] mx-auto px-6 pt-28 sm:pt-36 pb-14 sm:pb-20 text-center relative z-10">
-          <p
-            data-animate="hero-label"
-            className="text-[#18b5d8] text-[13px] font-semibold tracking-[0.22em] uppercase mb-6 sm:mb-8"
-          >
-            AI Visibility + Automation
-          </p>
-          <h1
-            data-animate="hero-title"
-            className="text-[#0a0a0a] mb-7 sm:mb-8 font-semibold tracking-tight leading-[1.04]"
-            style={{ fontSize: 'clamp(2.4rem, 5.5vw, 4.25rem)', textWrap: 'balance' } as React.CSSProperties}
-          >
-            When customers ask AI,<br className="hidden sm:block" /> does it recommend you?
-          </h1>
-          <p
-            data-animate="hero-sub"
-            className="text-[#555] max-w-[560px] mx-auto mb-10 sm:mb-12 leading-relaxed"
-            style={{ fontSize: 'clamp(1rem, 1.5vw, 1.25rem)' }}
-          >
-            ChatGPT, Google AI Overviews, Perplexity, and Gemini now recommend one to three businesses, not a list you scroll through. If you're not in that shortlist, most buyers never know you exist.
-          </p>
-          <div data-animate="hero-cta" className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-5">
-            <Link
-              href="/ai-audit"
-              className="btn-press inline-block bg-[#18b5d8] text-white text-[16px] font-semibold rounded-full px-8 py-4 hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 [touch-action:manipulation]"
+      <section data-scene="hero" className="sbs-hero bg-white overflow-hidden">
+        <div className="sbs-hero-in">
+          {/* Copy */}
+          <div>
+            <p className="text-[#18b5d8] text-[13px] font-semibold tracking-[0.22em] uppercase mb-6">
+              Visibility · Automation · Growth
+            </p>
+            <h1
+              className="text-[#0a0a0a] font-semibold tracking-tight leading-[1.04]"
+              style={{ fontSize: 'clamp(2.3rem, 3.9vw, 3.5rem)', textWrap: 'balance' } as React.CSSProperties}
             >
-              Get My Free AI Audit
-            </Link>
-            <Link
-              href="/book"
-              className="text-[15px] font-semibold text-[#555] hover:text-[#18b5d8] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:rounded focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2"
+              <span className="block">Get found on AI.</span> <span className="block">Be the business it recommends.</span>
+            </h1>
+            <p
+              className="text-[#555] max-w-[520px] mt-6 leading-relaxed"
+              style={{ fontSize: 'clamp(1rem, 1.4vw, 1.2rem)', textWrap: 'pretty' } as React.CSSProperties}
             >
-              Book a Call →
-            </Link>
+              We make your business the one ChatGPT, Google AI Overviews, and Perplexity recommend, then use AI to answer, book, and follow up with every lead.
+            </p>
+            <div className="mt-9 flex flex-wrap items-center gap-6">
+              <Link
+                href="/ai-audit"
+                className="btn-press inline-block bg-[#18b5d8] text-white text-[16px] font-semibold rounded-full px-8 py-4 hover:bg-[#1ec8ee] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2 [touch-action:manipulation]"
+              >
+                Get My Free AI Audit
+              </Link>
+              <Link
+                href="/book"
+                className="text-[15px] font-semibold text-[#555] hover:text-[#18b5d8] motion-safe:transition-colors duration-150 focus-visible:outline-none focus-visible:rounded focus-visible:ring-2 focus-visible:ring-[#18b5d8] focus-visible:ring-offset-2"
+              >
+                Book a Call →
+              </Link>
+            </div>
           </div>
-          <p className="text-[14px] text-[#555] mb-2">
-            <span className="font-semibold text-[#0a0a0a]">#9 → #1 on Google Maps in 30 days.</span> Wesley Chapel restoration company, no ads.
-          </p>
-          <p className="text-[13px] text-[#aaa] tracking-wide">
-            Serving regional and multi-location businesses nationwide
-          </p>
-        </div>
 
-        {/* Hero image, full bleed below text */}
-        <div className="px-4 sm:px-8 pb-0">
-          <div className="max-w-[1280px] mx-auto relative rounded-3xl overflow-hidden bg-[#e2e8ed]" style={{ aspectRatio: '16/9' }}>
-            <Image
-              src="/ai-visibility-hero.webp"
-              alt="AI Visibility Platform showing business rankings across ChatGPT, Google AI Overviews, and Perplexity"
-              fill
-              className="object-cover object-center"
-              sizes="(max-width: 1280px) 100vw, 1280px"
-            />
+          {/* Devices on a gray stage panel: found in AI search, then cited in AI answers */}
+          <div className="sbs-devices" aria-label="A customer finds your business in an AI search, then sees it cited in an AI answer">
+            <figure className="sbs-laptop">
+              <div className="sbs-screen">
+                <div className="sbs-win-dots" aria-hidden="true"><i /><i /><i /></div>
+                <div className="sbs-search">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3c4043" strokeWidth="2.2" strokeLinecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>
+                  best HVAC company near me
+                </div>
+                <div className="sbs-tabs"><span className="sbs-ai">✦ AI Overview</span><span>All</span><span>Images</span><span>Maps</span><span>News</span><span>More</span></div>
+                <div className="sbs-result">
+                  <Image src="/hero-photo-search.webp" alt="Service van outside a home" width={192} height={104} priority />
+                  <div className="sbs-rec"><b>Your Business</b><b>Recommended by AI</b><i aria-hidden="true" /></div>
+                </div>
+                <div className="sbs-skel" aria-hidden="true"><span className="sq" /><span className="ln"><i /><i /></span></div>
+                <div className="sbs-skel" aria-hidden="true"><span className="sq" /><span className="ln"><i /><i /></span></div>
+              </div>
+              <div className="sbs-deck" aria-hidden="true" />
+              <figcaption><span>1</span>Get found on AI platforms</figcaption>
+            </figure>
+
+            <figure className="sbs-phone">
+              <div className="sbs-handset">
+                <div className="sbs-island" aria-hidden="true" />
+                <div className="sbs-status" aria-hidden="true"><span>1:11</span><span className="sig"><i /><i /><i /></span></div>
+                <div className="sbs-msgs">
+                  <p className="sbs-ai-app"><span className="sbs-ai-dot" aria-hidden="true">✦</span>AI Assistant</p>
+                  <p className="sbs-m">Who’s the best HVAC company near me?</p>
+                  <div className="sbs-answer">
+                    <p>Top pick nearby is <b>Your Business</b>, known for same-day service<sup>1</sup> and excellent reviews.<sup>2</sup></p>
+                    <div className="sbs-cites" aria-label="Sources">
+                      <span className="sbs-cite"><i>1</i>yourbusiness.com</span>
+                      <span className="sbs-cite"><i>2</i>Google Reviews</span>
+                    </div>
+                  </div>
+                  <div className="sbs-src">
+                    <Image src="/hero-photo-chat.webp" alt="Homes on a tree-lined street" width={194} height={98} />
+                    <p><b>Your Business</b><small>Cited source</small></p>
+                  </div>
+                </div>
+              </div>
+              <figcaption><span>2</span>Cited in AI answers</figcaption>
+            </figure>
           </div>
         </div>
       </section>
